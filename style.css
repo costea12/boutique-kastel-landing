@@ -563,7 +563,7 @@ footer {
 .footer-col ul { display: flex; flex-direction: column; gap: 0.65rem; }
 .footer-col a, .footer-col li { font-size: 0.86rem; }
 .footer-col a:hover { color: var(--gold-bright); }
-.footer-social { display: flex; gap: 0.8rem; margin-top: 1.2rem; }
+.footer-social { display: flex; gap: 0.8rem; margin-bottom: 1.3rem; }
 .footer-social a {
   width: 34px; height: 34px;
   border: 1px solid var(--white-faint);
@@ -572,36 +572,6 @@ footer {
 }
 .footer-social a:hover { border-color: var(--gold-bright); color: var(--gold-bright); }
 .footer-social svg { width: 15px; height: 15px; }
-
-/* Contact column: phone with icon */
-.footer-contact .phone-block {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 1.1rem;
-}
-.phone-icon {
-  width: 38px; height: 38px;
-  flex-shrink: 0;
-  border: 1px solid var(--gold-dim);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  color: var(--gold-bright);
-}
-.phone-icon svg { width: 17px; height: 17px; }
-.footer-contact .phone-block a {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  color: var(--white);
-}
-.footer-contact .phone-block a:hover { color: var(--gold-bright); }
-.phone-hours {
-  display: block;
-  font-size: 0.74rem;
-  color: var(--white-faint);
-  margin-top: 0.2rem;
-}
 
 .footer-bottom {
   border-top: 1px solid rgba(251,247,239,0.1);
