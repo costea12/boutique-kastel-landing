@@ -29,15 +29,23 @@ function getConcentrationLabel(name) {
   return null;
 }
 
+function renderNoteTags(notes) {
+  if (!notes) return '';
+  return notes.split(',').map((n) => `<span class="note-tag">${n.trim()}</span>`).join('');
+}
+
 function renderSpecs(p) {
   if (!p.family) return '';
 
-  const rows = [
-    ['Miros', p.family],
-    ['Zi/Noapte', p.mood],
+  const tiers = [
     ['Note de vârf', p.notes_top],
     ['Note de mijloc', p.notes_mid],
     ['Note de bază', p.notes_base],
+  ].filter(([, value]) => value);
+
+  const facts = [
+    ['Miros', p.family],
+    ['Zi/Noapte', p.mood],
     ['Sezonalitate', p.season],
     ['Tip parfum', getConcentrationLabel(p.name)],
     ['Gen', p.gender],
@@ -45,11 +53,29 @@ function renderSpecs(p) {
   ].filter(([, value]) => value);
 
   return `
-    <div class="product-description-block">
+    <div class="product-story">
+      <div class="flourish story-flourish">
+        <span class="line"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2c2 2.5 4 5.8 4 9a4 4 0 0 1-8 0c0-3.2 2-6.5 4-9Z"/></svg>
+        <span class="line rev"></span>
+      </div>
+
       ${p.description ? `<p class="product-description">${p.description}</p>` : ''}
-      <dl class="product-specs">
-        ${rows.map(([label, value]) => `
-          <div class="spec-row">
+
+      ${tiers.length ? `
+        <div class="notes-pyramid">
+          ${tiers.map(([label, value]) => `
+            <div class="notes-tier">
+              <span class="notes-tier-label">${label}</span>
+              <div class="notes-tags">${renderNoteTags(value)}</div>
+            </div>
+          `).join('')}
+        </div>
+      ` : ''}
+
+      <dl class="product-facts">
+        ${facts.map(([label, value]) => `
+          <div class="fact-item">
             <dt>${label}</dt>
             <dd>${value}</dd>
           </div>
