@@ -15,6 +15,50 @@ function getUnitPrice(name, price) {
   return unit === 'ml' ? `${formatted} Lei/L` : `${formatted} Lei/Kg`;
 }
 
+function getConcentrationLabel(name) {
+  const labels = [
+    [/\bEDP\b/i, 'Apă de parfum'],
+    [/\bEDT\b/i, 'Apă de toaletă'],
+    [/\bEDC\b/i, 'Apă de colonie'],
+    [/\bCologne\b/i, 'Apă de colonie'],
+    [/\bParfum\b/i, 'Extract de parfum'],
+  ];
+  for (const [re, label] of labels) {
+    if (re.test(name)) return label;
+  }
+  return null;
+}
+
+function renderSpecs(p) {
+  if (!p.family) return '';
+
+  const rows = [
+    ['Miros', p.family],
+    ['Zi/Noapte', p.mood],
+    ['Note de vârf', p.notes_top],
+    ['Note de mijloc', p.notes_mid],
+    ['Note de bază', p.notes_base],
+    ['Sezonalitate', p.season],
+    ['Tip parfum', getConcentrationLabel(p.name)],
+    ['Gen', p.gender],
+    ['An lansare', p.year],
+  ].filter(([, value]) => value);
+
+  return `
+    <div class="product-description-block">
+      ${p.description ? `<p class="product-description">${p.description}</p>` : ''}
+      <dl class="product-specs">
+        ${rows.map(([label, value]) => `
+          <div class="spec-row">
+            <dt>${label}</dt>
+            <dd>${value}</dd>
+          </div>
+        `).join('')}
+      </dl>
+    </div>
+  `;
+}
+
 function renderProduct(p) {
   const main = document.getElementById('productMain');
   const images = [p.bottle_image, p.box_image].filter(Boolean);
@@ -58,6 +102,8 @@ function renderProduct(p) {
           ${p.stock > 0 ? 'Adaugă în coș' : 'Stoc epuizat'}
         </button>
         <p class="cart-confirm" id="cartConfirm" hidden>Adăugat în coș ✓</p>
+
+        ${renderSpecs(p)}
 
         <a href="parfumuri.html" class="back-link">← Înapoi la Parfumuri</a>
       </div>

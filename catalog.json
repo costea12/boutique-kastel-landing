@@ -249,7 +249,16 @@
     "category_label": "Parfumuri",
     "price": 219.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616302023707-bottle.jpg"
+    "bottle_image": "assets/products/3616302023707-bottle.jpg",
+    "family": "Oriental Vanilat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2023,
+    "notes_top": "Bergamotă",
+    "notes_mid": "Iasomie Sambac",
+    "notes_base": "Vanilie Bourbon, Chihlimbar",
+    "description": "Cald, vanilat și senzual - cel mai recent parfum-semnătură Burberry, gândit pentru serile de toamnă."
   },
   {
     "cod": "3616302020652",
@@ -259,7 +268,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 2,
-    "bottle_image": "assets/products/3616302020652-bottle.jpg"
+    "bottle_image": "assets/products/3616302020652-bottle.jpg",
+    "family": "Oriental Vanilat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2023,
+    "notes_top": "Bergamotă",
+    "notes_mid": "Iasomie Sambac",
+    "notes_base": "Vanilie Bourbon, Chihlimbar",
+    "description": "Cald, vanilat și senzual - cel mai recent parfum-semnătură Burberry, gândit pentru serile de toamnă."
   },
   {
     "cod": "3616302020645",
@@ -269,7 +287,16 @@
     "category_label": "Parfumuri",
     "price": 319.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616302020645-bottle.jpg"
+    "bottle_image": "assets/products/3616302020645-bottle.jpg",
+    "family": "Oriental Vanilat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2023,
+    "notes_top": "Bergamotă",
+    "notes_mid": "Iasomie Sambac",
+    "notes_base": "Vanilie Bourbon, Chihlimbar",
+    "description": "Cald, vanilat și senzual - cel mai recent parfum-semnătură Burberry, gândit pentru serile de toamnă."
   },
   {
     "cod": "3616302020676",
@@ -279,7 +306,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 2,
-    "bottle_image": "assets/products/3616302020676-bottle.jpg"
+    "bottle_image": "assets/products/3616302020676-bottle.jpg",
+    "family": "Oriental Vanilat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2023,
+    "notes_top": "Bergamotă",
+    "notes_mid": "Iasomie Sambac",
+    "notes_base": "Vanilie Bourbon, Chihlimbar",
+    "description": "Cald, vanilat și senzual - cel mai recent parfum-semnătură Burberry, gândit pentru serile de toamnă."
   },
   {
     "cod": "3616304967122",
@@ -320,7 +356,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614227693876-bottle.jpg"
+    "bottle_image": "assets/products/3614227693876-bottle.jpg",
+    "family": "Fructat Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Vară, Toamnă",
+    "year": 2018,
+    "notes_top": "Căpșuni, Zmeură, Coacăze negre",
+    "notes_mid": "Violete",
+    "notes_base": "Mușețel, Chihlimbar",
+    "description": "Fructat, jucăuș și modern - Her aduce energia stradală Londoneză într-o sticlă roșie iconică."
   },
   {
     "cod": "3616305181060",
@@ -350,7 +395,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616304974540-bottle.jpg"
+    "bottle_image": "assets/products/3616304974540-bottle.jpg",
+    "family": "Fructat Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Vară, Toamnă",
+    "year": 2018,
+    "notes_top": "Căpșuni, Zmeură, Coacăze negre",
+    "notes_mid": "Violete",
+    "notes_base": "Mușețel, Chihlimbar",
+    "description": "Fructat, jucăuș și modern - Her aduce energia stradală Londoneză într-o sticlă roșie iconică."
   },
   {
     "cod": "3614229820805",
@@ -494,7 +548,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/783320413858-bottle.jpg"
+    "bottle_image": "assets/products/783320413858-bottle.jpg",
+    "family": "Oriental Spicy",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2014,
+    "notes_top": "Acord de Rom, Condimente",
+    "notes_mid": "Iris, Piele",
+    "notes_base": "Fasole tonka, Lemn de guaiac, Chihlimbar",
+    "description": "Îndrăzneț și picant, cu un acord de rom neobișnuit. Man in Black e gândit pentru bărbatul care nu trece neobservat."
   },
   {
     "cod": "783320423437",
@@ -504,7 +567,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/783320423437-bottle.jpg"
+    "bottle_image": "assets/products/783320423437-bottle.jpg",
+    "family": "Oriental Spicy",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2014,
+    "notes_top": "Acord de Rom, Condimente",
+    "notes_mid": "Iris, Piele",
+    "notes_base": "Fasole tonka, Lemn de guaiac, Chihlimbar",
+    "description": "Îndrăzneț și picant, cu un acord de rom neobișnuit. Man in Black e gândit pentru bărbatul care nu trece neobservat."
   },
   {
     "cod": "783320419461",
@@ -544,7 +616,16 @@
     "category_label": "Parfumuri",
     "price": 249.0,
     "stock": 1,
-    "bottle_image": "assets/products/783320402869-bottle.jpg"
+    "bottle_image": "assets/products/783320402869-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Vară",
+    "year": 2013,
+    "notes_top": "Grepfrut roz, Litchi",
+    "notes_mid": "Magnolie, Flori de portocal",
+    "notes_base": "Lemn de santal, Mosc",
+    "description": "Fructat, vesel și luminos, potrivit pentru zilele de vară."
   },
   {
     "cod": "783320421198",
@@ -554,7 +635,16 @@
     "category_label": "Parfumuri",
     "price": 749.0,
     "stock": 1,
-    "bottle_image": "assets/products/783320421198-bottle.jpg"
+    "bottle_image": "assets/products/783320421198-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Vară",
+    "year": 2013,
+    "notes_top": "Grepfrut roz, Litchi",
+    "notes_mid": "Magnolie, Flori de portocal",
+    "notes_base": "Lemn de santal, Mosc",
+    "description": "Fructat, vesel și luminos, potrivit pentru zilele de vară."
   },
   {
     "cod": "783320424199",
@@ -564,7 +654,16 @@
     "category_label": "Parfumuri",
     "price": 749.0,
     "stock": 1,
-    "bottle_image": "assets/products/783320424199-bottle.jpg"
+    "bottle_image": "assets/products/783320424199-bottle.jpg",
+    "family": "Floral Woody Musk",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2005,
+    "notes_top": "Nufăr, Mandarine verde",
+    "notes_mid": "Lotus alb",
+    "notes_base": "Bambus, Mosc",
+    "description": "Cristalin și transparent, un floral acvatic ușor pentru zilele calde."
   },
   {
     "cod": "783320833700",
@@ -688,7 +787,16 @@
     "category_label": "Parfumuri",
     "price": 229.0,
     "stock": 1,
-    "bottle_image": "assets/products/088300605514-bottle.jpg"
+    "bottle_image": "assets/products/088300605514-bottle.jpg",
+    "family": "Floral Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Toate anotimpurile",
+    "year": 1989,
+    "notes_top": "Mandarine, Salvie, Frunze verzi",
+    "notes_mid": "Iasomie, Muscadă, Trandafir",
+    "notes_base": "Lemn de santal, Chihlimbar, Mosc",
+    "description": "Un clasic Calvin Klein, proaspăt și floral-lemnos, purtat de generații întregi."
   },
   {
     "cod": "3614229135145",
@@ -699,7 +807,16 @@
     "price": 299.0,
     "stock": 1,
     "bottle_image": "assets/products/3614229135145-bottle.jpg",
-    "box_image": "assets/products/3614229135145-box.jpg"
+    "box_image": "assets/products/3614229135145-box.jpg",
+    "family": "Floral Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Toate anotimpurile",
+    "year": 1989,
+    "notes_top": "Mandarine, Salvie, Frunze verzi",
+    "notes_mid": "Iasomie, Muscadă, Trandafir",
+    "notes_base": "Lemn de santal, Chihlimbar, Mosc",
+    "description": "Un clasic Calvin Klein, proaspăt și floral-lemnos, purtat de generații întregi."
   },
   {
     "cod": "088300178285",
@@ -709,7 +826,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/088300178285-bottle.jpg"
+    "bottle_image": "assets/products/088300178285-bottle.jpg",
+    "family": "Oriental Woody",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2005,
+    "notes_top": "Rodie, Ghimbir verde",
+    "notes_mid": "Șofran, Salvie",
+    "notes_base": "Lemn de gaiac, Vetiver",
+    "description": "Intens și șofran-lemnos, Euphoria Men e o alegere sigură pentru serile reci."
   },
   {
     "cod": "088300178278",
@@ -719,7 +845,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/088300178278-bottle.jpg"
+    "bottle_image": "assets/products/088300178278-bottle.jpg",
+    "family": "Oriental Woody",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2005,
+    "notes_top": "Rodie, Ghimbir verde",
+    "notes_mid": "Șofran, Salvie",
+    "notes_base": "Lemn de gaiac, Vetiver",
+    "description": "Intens și șofran-lemnos, Euphoria Men e o alegere sigură pentru serile reci."
   },
   {
     "cod": "088300162505",
@@ -729,7 +864,16 @@
     "category_label": "Parfumuri",
     "price": 389.0,
     "stock": 2,
-    "bottle_image": "assets/products/088300162505-bottle.jpg"
+    "bottle_image": "assets/products/088300162505-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2005,
+    "notes_top": "Rodie, Persimmon",
+    "notes_mid": "Orhidee neagră, Lotus mov",
+    "notes_base": "Lemn de mahon, Ambră cremoasă",
+    "description": "Senzual și intens, cu o orhidee neagră misterioasă în inimă. Euphoria rămâne un reper al parfumeriei feminine oriental-florale."
   },
   {
     "cod": "088300162543",
@@ -739,7 +883,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 2,
-    "bottle_image": "assets/products/088300162543-bottle.jpg"
+    "bottle_image": "assets/products/088300162543-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2005,
+    "notes_top": "Rodie, Persimmon",
+    "notes_mid": "Orhidee neagră, Lotus mov",
+    "notes_base": "Lemn de mahon, Ambră cremoasă",
+    "description": "Senzual și intens, cu o orhidee neagră misterioasă în inimă. Euphoria rămâne un reper al parfumeriei feminine oriental-florale."
   },
   {
     "cod": "3607342020849",
@@ -841,7 +994,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/8411061051405-bottle.jpg"
+    "bottle_image": "assets/products/8411061051405-bottle.jpg",
+    "family": "Fructat Gourmand",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2010,
+    "notes_top": "Ghimbir, Grepfrut",
+    "notes_mid": "Acord de vodcă, Mentă",
+    "notes_base": "Tonka, Chihlimbar",
+    "description": "Energic și distractiv, 212 VIP e un parfum de petrecere prin excelență."
   },
   {
     "cod": "8411061099766",
@@ -996,7 +1158,16 @@
     "category_label": "Parfumuri",
     "price": 379.0,
     "stock": 1,
-    "bottle_image": "assets/products/8411061041673-bottle.jpg"
+    "bottle_image": "assets/products/8411061041673-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2016,
+    "notes_top": "Migdale, Cafea",
+    "notes_mid": "Iasomie Sambac, Tuberoză",
+    "notes_base": "Cacao, Fasole tonka",
+    "description": "Cu sticla sa iconică pantof-cu-toc, Good Girl joacă pe contrastul bine-rău: floral cald pe fond de cacao și migdale."
   },
   {
     "cod": "8411061026250",
@@ -1006,7 +1177,16 @@
     "category_label": "Parfumuri",
     "price": 579.0,
     "stock": 1,
-    "bottle_image": "assets/products/8411061026250-bottle.jpg"
+    "bottle_image": "assets/products/8411061026250-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2016,
+    "notes_top": "Migdale, Cafea",
+    "notes_mid": "Iasomie Sambac, Tuberoză",
+    "notes_base": "Cacao, Fasole tonka",
+    "description": "Cu sticla sa iconică pantof-cu-toc, Good Girl joacă pe contrastul bine-rău: floral cald pe fond de cacao și migdale."
   },
   {
     "cod": "8411061026342",
@@ -1016,7 +1196,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 2,
-    "bottle_image": "assets/products/8411061026342-bottle.jpg"
+    "bottle_image": "assets/products/8411061026342-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2016,
+    "notes_top": "Migdale, Cafea",
+    "notes_mid": "Iasomie Sambac, Tuberoză",
+    "notes_base": "Cacao, Fasole tonka",
+    "description": "Cu sticla sa iconică pantof-cu-toc, Good Girl joacă pe contrastul bine-rău: floral cald pe fond de cacao și migdale."
   },
   {
     "cod": "8411061123591",
@@ -1219,7 +1408,16 @@
     "category_label": "Parfumuri",
     "price": 1359.0,
     "stock": 1,
-    "bottle_image": "assets/products/3145891072204-bottle.jpg"
+    "bottle_image": "assets/products/3145891072204-bottle.jpg",
+    "family": "Aromatic Lemnos",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2010,
+    "notes_top": "Grepfrut, Lămâie, Mentă, Piper roz",
+    "notes_mid": "Ghimbir, Nucșoară, Ienupăr, Muscadă",
+    "notes_base": "Lemn de cedru, Lemn de santal, Patchouli, Labdanum, Vetiver, Chihlimbar",
+    "description": "Un parfum aromatic-lemnos construit pe un contrast net între prospețimea citricelor și adâncimea lemnoasă. Versatil și discret, potrivit pentru orice ocazie."
   },
   {
     "cod": "3145891071801",
@@ -1229,7 +1427,16 @@
     "category_label": "Parfumuri",
     "price": 1099.0,
     "stock": 1,
-    "bottle_image": "assets/products/3145891071801-bottle.jpg"
+    "bottle_image": "assets/products/3145891071801-bottle.jpg",
+    "family": "Aromatic Lemnos",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2010,
+    "notes_top": "Grepfrut, Lămâie, Mentă, Piper roz",
+    "notes_mid": "Ghimbir, Nucșoară, Ienupăr, Muscadă",
+    "notes_base": "Lemn de cedru, Lemn de santal, Patchouli, Labdanum, Vetiver, Chihlimbar",
+    "description": "Un parfum aromatic-lemnos construit pe un contrast net între prospețimea citricelor și adâncimea lemnoasă. Versatil și discret, potrivit pentru orice ocazie."
   },
   {
     "cod": "3145891074505",
@@ -1271,7 +1478,16 @@
     "category_label": "Parfumuri",
     "price": 999.0,
     "stock": 1,
-    "bottle_image": "assets/products/3145891165203-bottle.jpg"
+    "bottle_image": "assets/products/3145891165203-bottle.jpg",
+    "family": "Floral Oriental",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2001,
+    "notes_top": "Portocală, Bergamotă, Mandarine roșie",
+    "notes_mid": "Iasomie, Trandafir, Ylang-Ylang, Mimoză",
+    "notes_base": "Patchouli, Vetiver, Vanilie, Mosc alb, Tonka",
+    "description": "O compoziție senzuală și sofisticată, construită în jurul unui acord de patchouli învăluit în vanilie și flori albe. Semnătura unei femei independente și rafinate."
   },
   {
     "cod": "3145891163902",
@@ -1281,7 +1497,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3145891163902-bottle.jpg"
+    "bottle_image": "assets/products/3145891163902-bottle.jpg",
+    "family": "Floral Oriental",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2001,
+    "notes_top": "Portocală, Bergamotă, Mandarine roșie",
+    "notes_mid": "Iasomie, Trandafir, Ylang-Ylang, Mimoză",
+    "notes_base": "Patchouli, Vetiver, Vanilie, Mosc alb, Tonka",
+    "description": "O compoziție senzuală și sofisticată, construită în jurul unui acord de patchouli învăluit în vanilie și flori albe. Semnătura unei femei independente și rafinate."
   },
   {
     "cod": "3145891164206",
@@ -1291,7 +1516,16 @@
     "category_label": "Parfumuri",
     "price": 679.0,
     "stock": 1,
-    "bottle_image": "assets/products/3145891164206-bottle.jpg"
+    "bottle_image": "assets/products/3145891164206-bottle.jpg",
+    "family": "Floral Oriental",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2001,
+    "notes_top": "Portocală, Bergamotă, Mandarine roșie",
+    "notes_mid": "Iasomie, Trandafir, Ylang-Ylang, Mimoză",
+    "notes_base": "Patchouli, Vetiver, Vanilie, Mosc alb, Tonka",
+    "description": "O compoziție senzuală și sofisticată, construită în jurul unui acord de patchouli învăluit în vanilie și flori albe. Semnătura unei femei independente și rafinate."
   },
   {
     "cod": "3145891166606",
@@ -1374,7 +1608,16 @@
     "category_label": "Parfumuri",
     "price": 999.0,
     "stock": 2,
-    "bottle_image": "assets/products/3145891255300-bottle.jpg"
+    "bottle_image": "assets/products/3145891255300-bottle.jpg",
+    "family": "Floral Aldehidat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1921,
+    "notes_top": "Aldehide, Ylang-Ylang, Neroli, Lămâie",
+    "notes_mid": "Iris, Trandafir de mai, Lăcrămioare, Iasomie",
+    "notes_base": "Vetiver, Lemn de santal, Vanilie, Mosc, Patchouli",
+    "description": "Parfumul care a redefinit parfumeria modernă. Aldehidele sale, alături de o inimă florală bogată de iasomie și trandafir, creează o compoziție eleganta, atemporală, purtată la fel de bine ziua ca și seara."
   },
   {
     "cod": "3145891252309",
@@ -1384,7 +1627,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 2,
-    "bottle_image": "assets/products/3145891252309-bottle.jpg"
+    "bottle_image": "assets/products/3145891252309-bottle.jpg",
+    "family": "Floral Aldehidat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1921,
+    "notes_top": "Aldehide, Ylang-Ylang, Neroli, Lămâie",
+    "notes_mid": "Iris, Trandafir de mai, Lăcrămioare, Iasomie",
+    "notes_base": "Vetiver, Lemn de santal, Vanilie, Mosc, Patchouli",
+    "description": "Parfumul care a redefinit parfumeria modernă. Aldehidele sale, alături de o inimă florală bogată de iasomie și trandafir, creează o compoziție eleganta, atemporală, purtată la fel de bine ziua ca și seara."
   },
   {
     "cod": "3145891254303",
@@ -1394,7 +1646,16 @@
     "category_label": "Parfumuri",
     "price": 679.0,
     "stock": 1,
-    "bottle_image": "assets/products/3145891254303-bottle.jpg"
+    "bottle_image": "assets/products/3145891254303-bottle.jpg",
+    "family": "Floral Aldehidat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1921,
+    "notes_top": "Aldehide, Ylang-Ylang, Neroli, Lămâie",
+    "notes_mid": "Iris, Trandafir de mai, Lăcrămioare, Iasomie",
+    "notes_base": "Vetiver, Lemn de santal, Vanilie, Mosc, Patchouli",
+    "description": "Parfumul care a redefinit parfumeria modernă. Aldehidele sale, alături de o inimă florală bogată de iasomie și trandafir, creează o compoziție eleganta, atemporală, purtată la fel de bine ziua ca și seara."
   },
   {
     "cod": "3607346232347",
@@ -1707,7 +1968,16 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348900199699-bottle.jpg"
+    "bottle_image": "assets/products/3348900199699-bottle.jpg",
+    "family": "Woody Amber",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1988,
+    "notes_top": "Lavandă, Muscadă, Mandarine, Bergamotă",
+    "notes_mid": "Violetă, Crin, Nucă moscată",
+    "notes_base": "Piele, Lemn de santal, Vetiver, Patchouli",
+    "description": "Un ambră-lemnos legendar, recognoscibil instant prin acordul său de violetă. Fahrenheit rămâne o alegere îndrăzneață pentru serile reci."
   },
   {
     "cod": "3348900012219",
@@ -1717,7 +1987,16 @@
     "category_label": "Parfumuri",
     "price": 619.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348900012219-bottle.jpg"
+    "bottle_image": "assets/products/3348900012219-bottle.jpg",
+    "family": "Woody Amber",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1988,
+    "notes_top": "Lavandă, Muscadă, Mandarine, Bergamotă",
+    "notes_mid": "Violetă, Crin, Nucă moscată",
+    "notes_base": "Piele, Lemn de santal, Vetiver, Patchouli",
+    "description": "Un ambră-lemnos legendar, recognoscibil instant prin acordul său de violetă. Fahrenheit rămâne o alegere îndrăzneață pentru serile reci."
   },
   {
     "cod": "3348900012189",
@@ -1727,7 +2006,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348900012189-bottle.jpg"
+    "bottle_image": "assets/products/3348900012189-bottle.jpg",
+    "family": "Woody Amber",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1988,
+    "notes_top": "Lavandă, Muscadă, Mandarine, Bergamotă",
+    "notes_mid": "Violetă, Crin, Nucă moscată",
+    "notes_base": "Piele, Lemn de santal, Vetiver, Patchouli",
+    "description": "Un ambră-lemnos legendar, recognoscibil instant prin acordul său de violetă. Fahrenheit rămâne o alegere îndrăzneață pentru serile reci."
   },
   {
     "cod": "3348901419161",
@@ -1737,7 +2025,16 @@
     "category_label": "Parfumuri",
     "price": 369.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901419161-bottle.jpg"
+    "bottle_image": "assets/products/3348901419161-bottle.jpg",
+    "family": "Woody Floral Musk",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2005,
+    "notes_top": "Lavandă",
+    "notes_mid": "Iris, Piele",
+    "notes_base": "Vetiver, Cacao, Lemn de cedru",
+    "description": "Elegant și minimalist, Dior Homme pune irisul pudrat în centrul unei compoziții cu accente de piele fină. Un clasic modern pentru bărbatul rafinat."
   },
   {
     "cod": "3348901419147",
@@ -1747,7 +2044,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901419147-bottle.jpg"
+    "bottle_image": "assets/products/3348901419147-bottle.jpg",
+    "family": "Woody Floral Musk",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2005,
+    "notes_top": "Lavandă",
+    "notes_mid": "Iris, Piele",
+    "notes_base": "Vetiver, Cacao, Lemn de cedru",
+    "description": "Elegant și minimalist, Dior Homme pune irisul pudrat în centrul unei compoziții cu accente de piele fină. Un clasic modern pentru bărbatul rafinat."
   },
   {
     "cod": "3348901682527",
@@ -1757,7 +2063,16 @@
     "category_label": "Parfumuri",
     "price": 659.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901682527-bottle.jpg"
+    "bottle_image": "assets/products/3348901682527-bottle.jpg",
+    "family": "Woody Floral Musk",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2005,
+    "notes_top": "Lavandă",
+    "notes_mid": "Iris, Piele",
+    "notes_base": "Vetiver, Cacao, Lemn de cedru",
+    "description": "Elegant și minimalist, Dior Homme pune irisul pudrat în centrul unei compoziții cu accente de piele fină. Un clasic modern pentru bărbatul rafinat."
   },
   {
     "cod": "3348900378575",
@@ -1777,7 +2092,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348900417885-bottle.jpg"
+    "bottle_image": "assets/products/3348900417885-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1999,
+    "notes_top": "Fructul pasiunii, Melon, Prune, Bergamotă, Mandarine",
+    "notes_mid": "Iasomie, Crin de Casablanca, Frezie, Trandafir, Orhidee",
+    "notes_base": "Mușețel, Mosc, Lemn de cedru",
+    "description": "Un buchet floral luminos și generos, construit din peste douăzeci de flori albe. J'adore rămâne una dintre cele mai recognoscibile compoziții feminine ale ultimelor decenii."
   },
   {
     "cod": "3348901597715",
@@ -1787,7 +2111,16 @@
     "category_label": "Parfumuri",
     "price": 749.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901597715-bottle.jpg"
+    "bottle_image": "assets/products/3348901597715-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1999,
+    "notes_top": "Fructul pasiunii, Melon, Prune, Bergamotă, Mandarine",
+    "notes_mid": "Iasomie, Crin de Casablanca, Frezie, Trandafir, Orhidee",
+    "notes_base": "Mușețel, Mosc, Lemn de cedru",
+    "description": "Un buchet floral luminos și generos, construit din peste douăzeci de flori albe. J'adore rămâne una dintre cele mai recognoscibile compoziții feminine ale ultimelor decenii."
   },
   {
     "cod": "3348901617673",
@@ -1817,7 +2150,16 @@
     "category_label": "Parfumuri",
     "price": 239.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901250276-bottle.jpg"
+    "bottle_image": "assets/products/3348901250276-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "3348901728829",
@@ -1827,7 +2169,16 @@
     "category_label": "Parfumuri",
     "price": 589.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901728829-bottle.jpg"
+    "bottle_image": "assets/products/3348901728829-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "3348901428545",
@@ -1837,7 +2188,16 @@
     "category_label": "Parfumuri",
     "price": 979.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901428545-bottle.jpg"
+    "bottle_image": "assets/products/3348901428545-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "3348901640916",
@@ -1847,7 +2207,16 @@
     "category_label": "Parfumuri",
     "price": 1090.0,
     "stock": 4,
-    "bottle_image": "assets/products/3348901640916-bottle.jpg"
+    "bottle_image": "assets/products/3348901640916-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "3348901567572",
@@ -1857,7 +2226,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901567572-bottle.jpg"
+    "bottle_image": "assets/products/3348901567572-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "3348901368254",
@@ -1867,7 +2245,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 2,
-    "bottle_image": "assets/products/3348901368254-bottle.jpg"
+    "bottle_image": "assets/products/3348901368254-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "3348901486385",
@@ -1877,7 +2264,16 @@
     "category_label": "Parfumuri",
     "price": 899.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901486385-bottle.jpg"
+    "bottle_image": "assets/products/3348901486385-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "3348901486392",
@@ -1887,7 +2283,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901486392-bottle.jpg"
+    "bottle_image": "assets/products/3348901486392-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "3348901553254",
@@ -1897,7 +2302,16 @@
     "category_label": "Parfumuri",
     "price": 279.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901553254-bottle.jpg"
+    "bottle_image": "assets/products/3348901553254-bottle.jpg",
+    "family": "Aromatic Fresh Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Bergamotă de Calabria, Piper de Sichuan",
+    "notes_mid": "Lavandă, Pelargonium, Elemi, Ambroxan",
+    "notes_base": "Ambroxan, Lemn de cedru, Labdanum",
+    "description": "Inspirat de peisajele sălbatice, Sauvage combină o deschidere citrică vibrantă cu o bază minerală de ambroxan. Unul dintre cele mai vândute parfumuri masculine din lume, imposibil de ignorat."
   },
   {
     "cod": "763511100019",
@@ -2197,7 +2611,16 @@
     "category_label": "Parfumuri",
     "price": 519.0,
     "stock": 2,
-    "bottle_image": "assets/products/3360372058878-bottle.jpg"
+    "bottle_image": "assets/products/3360372058878-bottle.jpg",
+    "family": "Aromatic Acvatic",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 1996,
+    "notes_top": "Bergamotă, Lămâie, Mandarine, Note marine",
+    "notes_mid": "Iasomie, Trandafir, Rozmarin, Salvie geraniu",
+    "notes_base": "Patchouli, Lemn de cedru, Mosc alb, Chihlimbar",
+    "description": "Parfumul care a lansat categoria acvatică. Acqua di Giò evocă briza mării și lumina Mediteranei, o alegere sigură pentru zilele calde."
   },
   {
     "cod": "3614274143751",
@@ -2207,7 +2630,16 @@
     "category_label": "Parfumuri",
     "price": 559.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274143751-bottle.jpg"
+    "bottle_image": "assets/products/3614274143751-bottle.jpg",
+    "family": "Aromatic Acvatic",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 1996,
+    "notes_top": "Bergamotă, Lămâie, Mandarine, Note marine",
+    "notes_mid": "Iasomie, Trandafir, Rozmarin, Salvie geraniu",
+    "notes_base": "Patchouli, Lemn de cedru, Mosc alb, Chihlimbar",
+    "description": "Parfumul care a lansat categoria acvatică. Acqua di Giò evocă briza mării și lumina Mediteranei, o alegere sigură pentru zilele calde."
   },
   {
     "cod": "3614273907521",
@@ -2217,7 +2649,16 @@
     "category_label": "Parfumuri",
     "price": 779.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273907521-bottle.jpg"
+    "bottle_image": "assets/products/3614273907521-bottle.jpg",
+    "family": "Aromatic Acvatic",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 1996,
+    "notes_top": "Bergamotă, Lămâie, Mandarine, Note marine",
+    "notes_mid": "Iasomie, Trandafir, Rozmarin, Salvie geraniu",
+    "notes_base": "Patchouli, Lemn de cedru, Mosc alb, Chihlimbar",
+    "description": "Parfumul care a lansat categoria acvatică. Acqua di Giò evocă briza mării și lumina Mediteranei, o alegere sigură pentru zilele calde."
   },
   {
     "cod": "3614272865228",
@@ -2227,7 +2668,16 @@
     "category_label": "Parfumuri",
     "price": 619.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272865228-bottle.jpg"
+    "bottle_image": "assets/products/3614272865228-bottle.jpg",
+    "family": "Aromatic Acvatic Intens",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Vară",
+    "year": 2020,
+    "notes_top": "Bergamotă, Grepfrut de mare",
+    "notes_mid": "Note marine, Rozmarin, Geraniu",
+    "notes_base": "Patchouli, Bob de tonka",
+    "description": "O reinterpretare mai intensă și mai lemnoasă a clasicului Acqua di Giò, pentru cei care vor adâncime marină cu mai mult caracter."
   },
   {
     "cod": "3614273953696",
@@ -2237,7 +2687,16 @@
     "category_label": "Parfumuri",
     "price": 749.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614273953696-bottle.jpg"
+    "bottle_image": "assets/products/3614273953696-bottle.jpg",
+    "family": "Aromatic Acvatic Intens",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Vară",
+    "year": 2020,
+    "notes_top": "Bergamotă, Grepfrut de mare",
+    "notes_mid": "Note marine, Rozmarin, Geraniu",
+    "notes_base": "Patchouli, Bob de tonka",
+    "description": "O reinterpretare mai intensă și mai lemnoasă a clasicului Acqua di Giò, pentru cei care vor adâncime marină cu mai mult caracter."
   },
   {
     "cod": "3614274186079",
@@ -2247,7 +2706,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274186079-bottle.jpg"
+    "bottle_image": "assets/products/3614274186079-bottle.jpg",
+    "family": "Aromatic Acvatic",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 1996,
+    "notes_top": "Bergamotă, Lămâie, Mandarine, Note marine",
+    "notes_mid": "Iasomie, Trandafir, Rozmarin, Salvie geraniu",
+    "notes_base": "Patchouli, Lemn de cedru, Mosc alb, Chihlimbar",
+    "description": "Parfumul care a lansat categoria acvatică. Acqua di Giò evocă briza mării și lumina Mediteranei, o alegere sigură pentru zilele calde."
   },
   {
     "cod": "3614274336931",
@@ -2257,7 +2725,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274336931-bottle.jpg"
+    "bottle_image": "assets/products/3614274336931-bottle.jpg",
+    "family": "Floral Fructat Gourmand",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2010,
+    "notes_top": "Mentă, Petale de mentă",
+    "notes_mid": "Iasomie, Zahăr brun",
+    "notes_base": "Lemn de santal, Patchouli",
+    "description": "Versiunea feminină a familiei Acqua, cu o notă de mentă neașteptată peste o inimă dulce-florală."
   },
   {
     "cod": "3614273636513",
@@ -2297,7 +2774,16 @@
     "category_label": "Parfumuri",
     "price": 569.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614272907676-bottle.jpg"
+    "bottle_image": "assets/products/3614272907676-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2020,
+    "notes_top": "Flori de portocal, Bergamotă",
+    "notes_mid": "Tuberoză, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Chihlimbar, Mosc alb, Lemn de cedru",
+    "description": "Un imn floral senin, dedicat propriului drum. My Way combină tuberoza cu vanilia într-o compoziție caldă și optimistă."
   },
   {
     "cod": "3614272907690",
@@ -2307,7 +2793,16 @@
     "category_label": "Parfumuri",
     "price": 799.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272907690-bottle.jpg"
+    "bottle_image": "assets/products/3614272907690-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2020,
+    "notes_top": "Flori de portocal, Bergamotă",
+    "notes_mid": "Tuberoză, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Chihlimbar, Mosc alb, Lemn de cedru",
+    "description": "Un imn floral senin, dedicat propriului drum. My Way combină tuberoza cu vanilia într-o compoziție caldă și optimistă."
   },
   {
     "cod": "3614273673846",
@@ -2337,7 +2832,16 @@
     "category_label": "Parfumuri",
     "price": 349.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273844673-bottle.jpg"
+    "bottle_image": "assets/products/3614273844673-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2020,
+    "notes_top": "Flori de portocal, Bergamotă",
+    "notes_mid": "Tuberoză, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Chihlimbar, Mosc alb, Lemn de cedru",
+    "description": "Un imn floral senin, dedicat propriului drum. My Way combină tuberoza cu vanilia într-o compoziție caldă și optimistă."
   },
   {
     "cod": "3614273844666",
@@ -2347,7 +2851,16 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273844666-bottle.jpg"
+    "bottle_image": "assets/products/3614273844666-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2020,
+    "notes_top": "Flori de portocal, Bergamotă",
+    "notes_mid": "Tuberoză, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Chihlimbar, Mosc alb, Lemn de cedru",
+    "description": "Un imn floral senin, dedicat propriului drum. My Way combină tuberoza cu vanilia într-o compoziție caldă și optimistă."
   },
   {
     "cod": "3614273927352",
@@ -2357,7 +2870,16 @@
     "category_label": "Parfumuri",
     "price": 689.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273927352-bottle.jpg"
+    "bottle_image": "assets/products/3614273927352-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2020,
+    "notes_top": "Flori de portocal, Bergamotă",
+    "notes_mid": "Tuberoză, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Chihlimbar, Mosc alb, Lemn de cedru",
+    "description": "Un imn floral senin, dedicat propriului drum. My Way combină tuberoza cu vanilia într-o compoziție caldă și optimistă."
   },
   {
     "cod": "3614273734790",
@@ -2507,7 +3029,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3274872423008-bottle.jpg"
+    "bottle_image": "assets/products/3274872423008-bottle.jpg",
+    "family": "Woody Aromatic",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2017,
+    "notes_top": "Piper roz",
+    "notes_mid": "Iris",
+    "notes_base": "Patchouli, Fasole tonka, Vanilie",
+    "description": "Elegant și cald, Gentleman pune irisul pudrat alături de o bază dulce de tonka și vanilie."
   },
   {
     "cod": "3274872439078",
@@ -2517,7 +3048,16 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 1,
-    "bottle_image": "assets/products/3274872439078-bottle.jpg"
+    "bottle_image": "assets/products/3274872439078-bottle.jpg",
+    "family": "Woody Aromatic",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2017,
+    "notes_top": "Piper roz",
+    "notes_mid": "Iris",
+    "notes_base": "Patchouli, Fasole tonka, Vanilie",
+    "description": "Elegant și cald, Gentleman pune irisul pudrat alături de o bază dulce de tonka și vanilie."
   },
   {
     "cod": "3274872448780",
@@ -2567,7 +3107,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3274872372146-bottle.jpg"
+    "bottle_image": "assets/products/3274872372146-bottle.jpg",
+    "family": "Floral Verde",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Bergamotă, Pere",
+    "notes_mid": "Tuberoză, Iasomie Sambac, Flori de portocal",
+    "notes_base": "Vetiver, Patchouli, Vanilie",
+    "description": "Un parfum floral îndrăzneț, cu o tuberoză verde neconvențională. L'Interdit a devenit rapid un reper al parfumeriei moderne."
   },
   {
     "cod": "3274872372153",
@@ -2577,7 +3126,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 2,
-    "bottle_image": "assets/products/3274872372153-bottle.jpg"
+    "bottle_image": "assets/products/3274872372153-bottle.jpg",
+    "family": "Floral Verde",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Bergamotă, Pere",
+    "notes_mid": "Tuberoză, Iasomie Sambac, Flori de portocal",
+    "notes_base": "Vetiver, Patchouli, Vanilie",
+    "description": "Un parfum floral îndrăzneț, cu o tuberoză verde neconvențională. L'Interdit a devenit rapid un reper al parfumeriei moderne."
   },
   {
     "cod": "3274872463172",
@@ -2707,7 +3265,16 @@
     "category_label": "Parfumuri",
     "price": 569.0,
     "stock": 1,
-    "bottle_image": "assets/products/8005610481005-bottle.jpg"
+    "bottle_image": "assets/products/8005610481005-bottle.jpg",
+    "family": "Floral Alb",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2017,
+    "notes_top": "—",
+    "notes_mid": "Tuberoză, Iasomie Sambac, Crin Rangoon",
+    "notes_base": "Mosc alb",
+    "description": "Un buchet de flori albe pur și rafinat, într-o sticlă inspirată de florile presate. Bloom e despre feminitate autentică, fără artificii."
   },
   {
     "cod": "8005610344157",
@@ -2717,7 +3284,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 2,
-    "bottle_image": "assets/products/8005610344157-bottle.jpg"
+    "bottle_image": "assets/products/8005610344157-bottle.jpg",
+    "family": "Floral Woody Amber",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2010,
+    "notes_top": "Piper roz, Mandarine",
+    "notes_mid": "Floare de piersic, Iasomie",
+    "notes_base": "Patchouli, Chihlimbar",
+    "description": "Familia Guilty aduce un floral-ambrat cald și senzual, cu variante atât pentru ea, cât și pentru el."
   },
   {
     "cod": "3616304175916",
@@ -2727,7 +3303,16 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616304175916-bottle.jpg"
+    "bottle_image": "assets/products/3616304175916-bottle.jpg",
+    "family": "Floral Woody Amber",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2010,
+    "notes_top": "Piper roz, Mandarine",
+    "notes_mid": "Floare de piersic, Iasomie",
+    "notes_base": "Patchouli, Chihlimbar",
+    "description": "Familia Guilty aduce un floral-ambrat cald și senzual, cu variante atât pentru ea, cât și pentru el."
   },
   {
     "cod": "3616301794639",
@@ -2737,7 +3322,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616301794639-bottle.jpg"
+    "bottle_image": "assets/products/3616301794639-bottle.jpg",
+    "family": "Floral Woody Amber",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2010,
+    "notes_top": "Piper roz, Mandarine",
+    "notes_mid": "Floare de piersic, Iasomie",
+    "notes_base": "Patchouli, Chihlimbar",
+    "description": "Familia Guilty aduce un floral-ambrat cald și senzual, cu variante atât pentru ea, cât și pentru el."
   },
   {
     "cod": "8005610328799",
@@ -2817,7 +3411,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616305480620-bottle.jpg"
+    "bottle_image": "assets/products/3616305480620-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "737052351186",
@@ -2827,7 +3430,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 3,
-    "bottle_image": "assets/products/737052351186-bottle.jpg"
+    "bottle_image": "assets/products/737052351186-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "3616305847744",
@@ -2857,7 +3469,16 @@
     "category_label": "Parfumuri",
     "price": 99.0,
     "stock": 4,
-    "bottle_image": "assets/products/737052355054-bottle.jpg"
+    "bottle_image": "assets/products/737052355054-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "737052354996",
@@ -2867,7 +3488,16 @@
     "category_label": "Parfumuri",
     "price": 119.0,
     "stock": 1,
-    "bottle_image": "assets/products/737052354996-bottle.jpg"
+    "bottle_image": "assets/products/737052354996-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "3614229828535",
@@ -2877,7 +3507,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614229828535-bottle.jpg"
+    "bottle_image": "assets/products/3614229828535-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "3616304961236",
@@ -2887,7 +3526,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616304961236-bottle.jpg"
+    "bottle_image": "assets/products/3616304961236-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "3616304197826",
@@ -2897,7 +3545,16 @@
     "category_label": "Parfumuri",
     "price": 479.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616304197826-bottle.jpg"
+    "bottle_image": "assets/products/3616304197826-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "3614228220897",
@@ -2947,7 +3604,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616303428495-bottle.jpg"
+    "bottle_image": "assets/products/3616303428495-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "3616305265180",
@@ -2957,7 +3623,16 @@
     "category_label": "Parfumuri",
     "price": 569.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616305265180-bottle.jpg"
+    "bottle_image": "assets/products/3616305265180-bottle.jpg",
+    "family": "Woody Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1998,
+    "notes_top": "Măr, Scorțișoară, Bergamotă, Frunze de portocal",
+    "notes_mid": "Frunze de dafin, Geraniu, Cuișoare",
+    "notes_base": "Lemn de santal, Lemn de cedru, Vetiver, Vanilie",
+    "description": "Parfumul definitoriu al mărcii Hugo Boss: cald, ușor picant și versatil. Bottled a devenit un standard de birou și seri casual deopotrivă."
   },
   {
     "cod": "8005610255668",
@@ -3007,7 +3682,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 2,
-    "bottle_image": "assets/products/737052972305-bottle.jpg"
+    "bottle_image": "assets/products/737052972305-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2015,
+    "notes_top": "Ghimbir, Fructul mankaï",
+    "notes_mid": "Lavandă",
+    "notes_base": "Piele, Cacao",
+    "description": "Un parfum senzual și cald, cu o notă de piele-cacao rar întâlnită. The Scent seduce fără efort."
   },
   {
     "cod": "3616304197970",
@@ -3017,7 +3701,16 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 2,
-    "bottle_image": "assets/products/3616304197970-bottle.jpg"
+    "bottle_image": "assets/products/3616304197970-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2015,
+    "notes_top": "Ghimbir, Fructul mankaï",
+    "notes_mid": "Lavandă",
+    "notes_base": "Piele, Cacao",
+    "description": "Un parfum senzual și cald, cu o notă de piele-cacao rar întâlnită. The Scent seduce fără efort."
   },
   {
     "cod": "737052972268",
@@ -3027,7 +3720,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 2,
-    "bottle_image": "assets/products/737052972268-bottle.jpg"
+    "bottle_image": "assets/products/737052972268-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2015,
+    "notes_top": "Ghimbir, Fructul mankaï",
+    "notes_mid": "Lavandă",
+    "notes_base": "Piele, Cacao",
+    "description": "Un parfum senzual și cald, cu o notă de piele-cacao rar întâlnită. The Scent seduce fără efort."
   },
   {
     "cod": "3616305040626",
@@ -3047,7 +3749,16 @@
     "category_label": "Parfumuri",
     "price": 119.0,
     "stock": 2,
-    "bottle_image": "assets/products/737052992785-bottle.jpg"
+    "bottle_image": "assets/products/737052992785-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2015,
+    "notes_top": "Ghimbir, Fructul mankaï",
+    "notes_mid": "Lavandă",
+    "notes_base": "Piele, Cacao",
+    "description": "Un parfum senzual și cald, cu o notă de piele-cacao rar întâlnită. The Scent seduce fără efort."
   },
   {
     "cod": "3616306969681",
@@ -3077,7 +3788,16 @@
     "category_label": "Parfumuri",
     "price": 149.0,
     "stock": 2,
-    "bottle_image": "assets/products/737052992860-bottle.jpg"
+    "bottle_image": "assets/products/737052992860-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2015,
+    "notes_top": "Ghimbir, Fructul mankaï",
+    "notes_mid": "Lavandă",
+    "notes_base": "Piele, Cacao",
+    "description": "Un parfum senzual și cald, cu o notă de piele-cacao rar întâlnită. The Scent seduce fără efort."
   },
   {
     "cod": "3616304062490",
@@ -3577,7 +4297,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415085076-bottle.jpg"
+    "bottle_image": "assets/products/8435415085076-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1995,
+    "notes_top": "Mentă, Lavandă, Bergamotă",
+    "notes_mid": "Scorțișoară, Anason stelat, Cardamom",
+    "notes_base": "Vanilie, Tonka, Lemn de santal, Chihlimbar",
+    "description": "Un clasic al parfumeriei masculine franceze, purtat în celebra sticlă torso. Le Male combină prospețimea mentolată cu o bază dulce de vanilie."
   },
   {
     "cod": "8435415076944",
@@ -3587,7 +4316,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 2,
-    "bottle_image": "assets/products/8435415076944-bottle.jpg"
+    "bottle_image": "assets/products/8435415076944-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1995,
+    "notes_top": "Mentă, Lavandă, Bergamotă",
+    "notes_mid": "Scorțișoară, Anason stelat, Cardamom",
+    "notes_base": "Vanilie, Tonka, Lemn de santal, Chihlimbar",
+    "description": "Un clasic al parfumeriei masculine franceze, purtat în celebra sticlă torso. Le Male combină prospețimea mentolată cu o bază dulce de vanilie."
   },
   {
     "cod": "8435415076937",
@@ -3597,7 +4335,16 @@
     "category_label": "Parfumuri",
     "price": 569.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415076937-bottle.jpg"
+    "bottle_image": "assets/products/8435415076937-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1995,
+    "notes_top": "Mentă, Lavandă, Bergamotă",
+    "notes_mid": "Scorțișoară, Anason stelat, Cardamom",
+    "notes_base": "Vanilie, Tonka, Lemn de santal, Chihlimbar",
+    "description": "Un clasic al parfumeriei masculine franceze, purtat în celebra sticlă torso. Le Male combină prospețimea mentolată cu o bază dulce de vanilie."
   },
   {
     "cod": "8435415080385",
@@ -3637,7 +4384,16 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415059077-bottle.jpg"
+    "bottle_image": "assets/products/8435415059077-bottle.jpg",
+    "family": "Chypre Gourmand",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2017,
+    "notes_top": "Piersică, Miere",
+    "notes_mid": "Miere, Gardenie",
+    "notes_base": "Patchouli, Caramel",
+    "description": "Un gourmand îndrăzneț și rebel, cu miere și patchouli în prim-plan. Scandal e făcut să iasă în evidență."
   },
   {
     "cod": "8435415059060",
@@ -3647,7 +4403,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 2,
-    "bottle_image": "assets/products/8435415059060-bottle.jpg"
+    "bottle_image": "assets/products/8435415059060-bottle.jpg",
+    "family": "Chypre Gourmand",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2017,
+    "notes_top": "Piersică, Miere",
+    "notes_mid": "Miere, Gardenie",
+    "notes_base": "Patchouli, Caramel",
+    "description": "Un gourmand îndrăzneț și rebel, cu miere și patchouli în prim-plan. Scandal e făcut să iasă în evidență."
   },
   {
     "cod": "8435415114028",
@@ -3707,7 +4472,16 @@
     "category_label": "Parfumuri",
     "price": 579.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415030885-bottle.jpg"
+    "bottle_image": "assets/products/8435415030885-bottle.jpg",
+    "family": "Woody Aromatic",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Grepfrut roz, Lavandă",
+    "notes_mid": "Ghimbir, Piper de Sichuan",
+    "notes_base": "Lemn de gaiac, Cacao, Patchouli",
+    "description": "Versiunea masculină a familiei Scandal, cu o deschidere picantă de ghimbir peste o bază lemnoasă-cacao."
   },
   {
     "cod": "8435415055963",
@@ -3717,7 +4491,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415055963-bottle.jpg"
+    "bottle_image": "assets/products/8435415055963-bottle.jpg",
+    "family": "Woody Aromatic",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Grepfrut roz, Lavandă",
+    "notes_mid": "Ghimbir, Piper de Sichuan",
+    "notes_base": "Lemn de gaiac, Cacao, Patchouli",
+    "description": "Versiunea masculină a familiei Scandal, cu o deschidere picantă de ghimbir peste o bază lemnoasă-cacao."
   },
   {
     "cod": "8435415030908",
@@ -3727,7 +4510,16 @@
     "category_label": "Parfumuri",
     "price": 429.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415030908-bottle.jpg"
+    "bottle_image": "assets/products/8435415030908-bottle.jpg",
+    "family": "Woody Aromatic",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Grepfrut roz, Lavandă",
+    "notes_mid": "Ghimbir, Piper de Sichuan",
+    "notes_base": "Lemn de gaiac, Cacao, Patchouli",
+    "description": "Versiunea masculină a familiei Scandal, cu o deschidere picantă de ghimbir peste o bază lemnoasă-cacao."
   },
   {
     "cod": "8435415082624",
@@ -4027,7 +4819,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614273069175-bottle.jpg"
+    "bottle_image": "assets/products/3614273069175-bottle.jpg",
+    "family": "Floral Musk",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Struguri roz",
+    "notes_mid": "Trandafir, Iasomie",
+    "notes_base": "Mosc alb, Vanilie",
+    "description": "Simplu, curat și modern - Idole e un parfum floral-moscat gândit pentru purtare zilnică."
   },
   {
     "cod": "3614272639638",
@@ -4037,7 +4838,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272639638-bottle.jpg"
+    "bottle_image": "assets/products/3614272639638-bottle.jpg",
+    "family": "Floral Musk",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Struguri roz",
+    "notes_mid": "Trandafir, Iasomie",
+    "notes_base": "Mosc alb, Vanilie",
+    "description": "Simplu, curat și modern - Idole e un parfum floral-moscat gândit pentru purtare zilnică."
   },
   {
     "cod": "3614273203470",
@@ -4097,7 +4907,16 @@
     "category_label": "Parfumuri",
     "price": 769.0,
     "stock": 1,
-    "bottle_image": "assets/products/3605533286555-bottle.jpg"
+    "bottle_image": "assets/products/3605533286555-bottle.jpg",
+    "family": "Floral Fructat Gourmand",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Pere, Coacăze negre",
+    "notes_mid": "Iris, Iasomie, Floare de portocal",
+    "notes_base": "Praline, Vanilie, Patchouli, Fasole tonka",
+    "description": "Un gourmand luminos și optimist, cu praline și vanilie pe fond de iris. La Vie Est Belle rămâne unul dintre cele mai iubite parfumuri feminine."
   },
   {
     "cod": "3614272725201",
@@ -4107,7 +4926,16 @@
     "category_label": "Parfumuri",
     "price": 289.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272725201-bottle.jpg"
+    "bottle_image": "assets/products/3614272725201-bottle.jpg",
+    "family": "Floral Fructat Gourmand",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Pere, Coacăze negre",
+    "notes_mid": "Iris, Iasomie, Floare de portocal",
+    "notes_base": "Praline, Vanilie, Patchouli, Fasole tonka",
+    "description": "Un gourmand luminos și optimist, cu praline și vanilie pe fond de iris. La Vie Est Belle rămâne unul dintre cele mai iubite parfumuri feminine."
   },
   {
     "cod": "3605532612836",
@@ -4117,7 +4945,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 3,
-    "bottle_image": "assets/products/3605532612836-bottle.jpg"
+    "bottle_image": "assets/products/3605532612836-bottle.jpg",
+    "family": "Floral Fructat Gourmand",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Pere, Coacăze negre",
+    "notes_mid": "Iris, Iasomie, Floare de portocal",
+    "notes_base": "Praline, Vanilie, Patchouli, Fasole tonka",
+    "description": "Un gourmand luminos și optimist, cu praline și vanilie pe fond de iris. La Vie Est Belle rămâne unul dintre cele mai iubite parfumuri feminine."
   },
   {
     "cod": "3614274169706",
@@ -4837,7 +5674,16 @@
     "category_label": "Parfumuri",
     "price": 369.0,
     "stock": 1,
-    "bottle_image": "assets/products/3349668612598-bottle.jpg"
+    "bottle_image": "assets/products/3349668612598-bottle.jpg",
+    "family": "Oriental Spicy",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2008,
+    "notes_top": "Grepfrut, Mentă, Mandarine roșie",
+    "notes_mid": "Scorțișoară, Trandafir, Piper roz",
+    "notes_base": "Piele albă, Lemn de santal, Chihlimbar, Patchouli",
+    "description": "Îndrăzneț și dulce-picant, 1 Million rămâne unul dintre cele mai recognoscibile parfumuri masculine ale ultimilor 15 ani."
   },
   {
     "cod": "3349668579822",
@@ -4847,7 +5693,16 @@
     "category_label": "Parfumuri",
     "price": 429.0,
     "stock": 1,
-    "bottle_image": "assets/products/3349668579822-bottle.jpg"
+    "bottle_image": "assets/products/3349668579822-bottle.jpg",
+    "family": "Oriental Spicy",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2008,
+    "notes_top": "Grepfrut, Mentă, Mandarine roșie",
+    "notes_mid": "Scorțișoară, Trandafir, Piper roz",
+    "notes_base": "Piele albă, Lemn de santal, Chihlimbar, Patchouli",
+    "description": "Îndrăzneț și dulce-picant, 1 Million rămâne unul dintre cele mai recognoscibile parfumuri masculine ale ultimilor 15 ani."
   },
   {
     "cod": "3349668617043",
@@ -4887,7 +5742,16 @@
     "category_label": "Parfumuri",
     "price": 529.0,
     "stock": 1,
-    "bottle_image": "assets/products/3349668515660-bottle.jpg"
+    "bottle_image": "assets/products/3349668515660-bottle.jpg",
+    "family": "Woody Marine",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Vară",
+    "year": 2013,
+    "notes_top": "Grepfrut, Mandarine",
+    "notes_mid": "Laur, Iasomie",
+    "notes_base": "Ambră marină, Patchouli, Guaiac",
+    "description": "Un parfum sportiv, proaspăt și lemnos, gândit pentru bărbatul activ. Invictus e o alegere solidă pentru zilele de vară."
   },
   {
     "cod": "3349668627530",
@@ -4897,7 +5761,16 @@
     "category_label": "Parfumuri",
     "price": 679.0,
     "stock": 2,
-    "bottle_image": "assets/products/3349668627530-bottle.jpg"
+    "bottle_image": "assets/products/3349668627530-bottle.jpg",
+    "family": "Woody Marine",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Vară",
+    "year": 2013,
+    "notes_top": "Grepfrut, Mandarine",
+    "notes_mid": "Laur, Iasomie",
+    "notes_base": "Ambră marină, Patchouli, Guaiac",
+    "description": "Un parfum sportiv, proaspăt și lemnos, gândit pentru bărbatul activ. Invictus e o alegere solidă pentru zilele de vară."
   },
   {
     "cod": "3349668627523",
@@ -4907,7 +5780,16 @@
     "category_label": "Parfumuri",
     "price": 489.0,
     "stock": 1,
-    "bottle_image": "assets/products/3349668627523-bottle.jpg"
+    "bottle_image": "assets/products/3349668627523-bottle.jpg",
+    "family": "Woody Marine",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Vară",
+    "year": 2013,
+    "notes_top": "Grepfrut, Mandarine",
+    "notes_mid": "Laur, Iasomie",
+    "notes_base": "Ambră marină, Patchouli, Guaiac",
+    "description": "Un parfum sportiv, proaspăt și lemnos, gândit pentru bărbatul activ. Invictus e o alegere solidă pentru zilele de vară."
   },
   {
     "cod": "3349668515738",
@@ -4917,7 +5799,16 @@
     "category_label": "Parfumuri",
     "price": 179.0,
     "stock": 1,
-    "bottle_image": "assets/products/3349668515738-bottle.jpg"
+    "bottle_image": "assets/products/3349668515738-bottle.jpg",
+    "family": "Woody Marine",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Vară",
+    "year": 2013,
+    "notes_top": "Grepfrut, Mandarine",
+    "notes_mid": "Laur, Iasomie",
+    "notes_base": "Ambră marină, Patchouli, Guaiac",
+    "description": "Un parfum sportiv, proaspăt și lemnos, gândit pentru bărbatul activ. Invictus e o alegere solidă pentru zilele de vară."
   },
   {
     "cod": "3349668641826",
@@ -5067,7 +5958,16 @@
     "category_label": "Parfumuri",
     "price": 419.0,
     "stock": 1,
-    "bottle_image": "assets/products/3349668568093-bottle.jpg"
+    "bottle_image": "assets/products/3349668568093-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2015,
+    "notes_top": "Piper verde, Mandarine",
+    "notes_mid": "Floare de casis, Iasomie Sambac",
+    "notes_base": "Vanilie sărată, Chihlimbar, Lemn de cedru",
+    "description": "Un oriental modern cu o bază de vanilie sărată neconvențională. Olympea e feminin, dar cu caracter."
   },
   {
     "cod": "3349668614455",
@@ -5107,7 +6007,16 @@
     "category_label": "Parfumuri",
     "price": 429.0,
     "stock": 2,
-    "bottle_image": "assets/products/3349668627486-bottle.jpg"
+    "bottle_image": "assets/products/3349668627486-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2015,
+    "notes_top": "Piper verde, Mandarine",
+    "notes_mid": "Floare de casis, Iasomie Sambac",
+    "notes_base": "Vanilie sărată, Chihlimbar, Lemn de cedru",
+    "description": "Un oriental modern cu o bază de vanilie sărată neconvențională. Olympea e feminin, dar cu caracter."
   },
   {
     "cod": "3349668627479",
@@ -5117,7 +6026,16 @@
     "category_label": "Parfumuri",
     "price": 789.0,
     "stock": 1,
-    "bottle_image": "assets/products/3349668627479-bottle.jpg"
+    "bottle_image": "assets/products/3349668627479-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2015,
+    "notes_top": "Piper verde, Mandarine",
+    "notes_mid": "Floare de casis, Iasomie Sambac",
+    "notes_base": "Vanilie sărată, Chihlimbar, Lemn de cedru",
+    "description": "Un oriental modern cu o bază de vanilie sărată neconvențională. Olympea e feminin, dar cu caracter."
   },
   {
     "cod": "3349668599424",
@@ -5187,7 +6105,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274109450-bottle.jpg"
+    "bottle_image": "assets/products/3614274109450-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Lavandă, Bergamotă",
+    "notes_mid": "Ambroxan",
+    "notes_base": "Vetiver, Mosc",
+    "description": "Minimalist și mineral, Luna Rossa Carbon pune ambroxanul în centrul unei compoziții curate și moderne."
   },
   {
     "cod": "3614274172997",
@@ -5237,7 +6164,16 @@
     "category_label": "Parfumuri",
     "price": 849.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273760164-bottle.jpg"
+    "bottle_image": "assets/products/3614273760164-bottle.jpg",
+    "family": "Floral Musk Ambrat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2021,
+    "notes_top": "Neroli",
+    "notes_mid": "Iasomie Sambac",
+    "notes_base": "Mosc alb Ambrette",
+    "description": "O compoziție florală-moscată abstractă, contemporană, în sticla sa geometrică iconică."
   },
   {
     "cod": "3614273961738",
@@ -5847,7 +6783,16 @@
     "category_label": "Parfumuri",
     "price": 989.0,
     "stock": 1,
-    "bottle_image": "assets/products/888066000079-bottle.jpg"
+    "bottle_image": "assets/products/888066000079-bottle.jpg",
+    "family": "Oriental Floral Gourmand",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2006,
+    "notes_top": "Trufe negre, Ylang-Ylang, Coacăze negre, Bergamotă",
+    "notes_mid": "Orhidee neagră, Iasomie fantomă, Lotus, Scorțișoară",
+    "notes_base": "Patchouli, Vanilie, Ciocolată neagră, Tămâie, Lemn de santal, Mosc",
+    "description": "Un parfum obscur și luxuriant, devenit instant un modern classic. Black Orchid rămâne una dintre cele mai îndrăznețe compoziții unisex de pe piață."
   },
   {
     "cod": "888066112727",
@@ -5857,7 +6802,16 @@
     "category_label": "Parfumuri",
     "price": 999.0,
     "stock": 1,
-    "bottle_image": "assets/products/888066112727-bottle.jpg"
+    "bottle_image": "assets/products/888066112727-bottle.jpg",
+    "family": "Oriental Floral Gourmand",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2006,
+    "notes_top": "Trufe negre, Ylang-Ylang, Coacăze negre, Bergamotă",
+    "notes_mid": "Orhidee neagră, Iasomie fantomă, Lotus, Scorțișoară",
+    "notes_base": "Patchouli, Vanilie, Ciocolată neagră, Tămâie, Lemn de santal, Mosc",
+    "description": "Un parfum obscur și luxuriant, devenit instant un modern classic. Black Orchid rămâne una dintre cele mai îndrăznețe compoziții unisex de pe piață."
   },
   {
     "cod": "888066150705",
@@ -5867,7 +6821,16 @@
     "category_label": "Parfumuri",
     "price": 789.0,
     "stock": 1,
-    "bottle_image": "assets/products/888066150705-bottle.jpg"
+    "bottle_image": "assets/products/888066150705-bottle.jpg",
+    "family": "Oriental Floral Gourmand",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2006,
+    "notes_top": "Trufe negre, Ylang-Ylang, Coacăze negre, Bergamotă",
+    "notes_mid": "Orhidee neagră, Iasomie fantomă, Lotus, Scorțișoară",
+    "notes_base": "Patchouli, Vanilie, Ciocolată neagră, Tămâie, Lemn de santal, Mosc",
+    "description": "Un parfum obscur și luxuriant, devenit instant un modern classic. Black Orchid rămâne una dintre cele mai îndrăznețe compoziții unisex de pe piață."
   },
   {
     "cod": "888066015585",
@@ -5957,7 +6920,16 @@
     "category_label": "Parfumuri",
     "price": 1859.0,
     "stock": 1,
-    "bottle_image": "assets/products/888066004503-bottle.jpg"
+    "bottle_image": "assets/products/888066004503-bottle.jpg",
+    "family": "Oriental Spicy",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2007,
+    "notes_top": "Frunze de tutun, Cimbrișor",
+    "notes_mid": "Vanilie, Cacao, Tonka",
+    "notes_base": "Lemn de santal, Chihlimbar, Fructe uscate",
+    "description": "Un gourmand tutun-vanilie cald și îmbrăcat, ca o pătură pentru serile de iarnă. Semnătura unei case de parfumerie de nișă devenită de referință."
   },
   {
     "cod": "888066080705",
@@ -5967,7 +6939,16 @@
     "category_label": "Parfumuri",
     "price": 849.0,
     "stock": 1,
-    "bottle_image": "assets/products/888066080705-bottle.jpg"
+    "bottle_image": "assets/products/888066080705-bottle.jpg",
+    "family": "Oriental Spicy",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2007,
+    "notes_top": "Frunze de tutun, Cimbrișor",
+    "notes_mid": "Vanilie, Cacao, Tonka",
+    "notes_base": "Lemn de santal, Chihlimbar, Fructe uscate",
+    "description": "Un gourmand tutun-vanilie cald și îmbrăcat, ca o pătură pentru serile de iarnă. Semnătura unei case de parfumerie de nișă devenită de referință."
   },
   {
     "cod": "888066023955",
@@ -6237,7 +7218,16 @@
     "category_label": "Parfumuri",
     "price": 249.0,
     "stock": 2,
-    "bottle_image": "assets/products/8011003993802-bottle.jpg"
+    "bottle_image": "assets/products/8011003993802-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2004,
+    "notes_top": "Rodie, Grepfrut Yuzu",
+    "notes_mid": "Bujor, Magnolie, Lotus",
+    "notes_base": "Mosc, Lemn de mahon, Chihlimbar",
+    "description": "Proaspăt, fructat și strălucitor, Bright Crystal e un parfum de zi ușor de purtat, cu o inimă florală delicată de bujor și lotus."
   },
   {
     "cod": "8011003819423",
@@ -6247,7 +7237,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 3,
-    "bottle_image": "assets/products/8011003819423-bottle.jpg"
+    "bottle_image": "assets/products/8011003819423-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2004,
+    "notes_top": "Rodie, Grepfrut Yuzu",
+    "notes_mid": "Bujor, Magnolie, Lotus",
+    "notes_base": "Mosc, Lemn de mahon, Chihlimbar",
+    "description": "Proaspăt, fructat și strălucitor, Bright Crystal e un parfum de zi ușor de purtat, cu o inimă florală delicată de bujor și lotus."
   },
   {
     "cod": "8011003884872",
@@ -6257,7 +7256,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003884872-bottle.jpg"
+    "bottle_image": "assets/products/8011003884872-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2004,
+    "notes_top": "Rodie, Grepfrut Yuzu",
+    "notes_mid": "Bujor, Magnolie, Lotus",
+    "notes_base": "Mosc, Lemn de mahon, Chihlimbar",
+    "description": "Proaspăt, fructat și strălucitor, Bright Crystal e un parfum de zi ușor de purtat, cu o inimă florală delicată de bujor și lotus."
   },
   {
     "cod": "8011003891467",
@@ -6267,7 +7275,16 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003891467-bottle.jpg"
+    "bottle_image": "assets/products/8011003891467-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2004,
+    "notes_top": "Rodie, Grepfrut Yuzu",
+    "notes_mid": "Bujor, Magnolie, Lotus",
+    "notes_base": "Mosc, Lemn de mahon, Chihlimbar",
+    "description": "Proaspăt, fructat și strălucitor, Bright Crystal e un parfum de zi ușor de purtat, cu o inimă florală delicată de bujor și lotus."
   },
   {
     "cod": "8011003906840",
@@ -6337,7 +7354,16 @@
     "category_label": "Parfumuri",
     "price": 419.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003825745-bottle.jpg"
+    "bottle_image": "assets/products/8011003825745-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2016,
+    "notes_top": "Bergamotă de Calabria, Grepfrut, Mentă acvatică",
+    "notes_mid": "Frunze de smochin, Piper roz, Salvie",
+    "notes_base": "Patchouli, Ambroxan, Mosc",
+    "description": "Un fougère modern, cu o inimă verde de frunze de smochin peste o bază minerală de ambroxan. Versatil, potrivit pentru purtare zilnică."
   },
   {
     "cod": "8011003826490",
@@ -6347,7 +7373,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003826490-bottle.jpg"
+    "bottle_image": "assets/products/8011003826490-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2016,
+    "notes_top": "Bergamotă de Calabria, Grepfrut, Mentă acvatică",
+    "notes_mid": "Frunze de smochin, Piper roz, Salvie",
+    "notes_base": "Patchouli, Ambroxan, Mosc",
+    "description": "Un fougère modern, cu o inimă verde de frunze de smochin peste o bază minerală de ambroxan. Versatil, potrivit pentru purtare zilnică."
   },
   {
     "cod": "8011003885145",
@@ -6357,7 +7392,16 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003885145-bottle.jpg"
+    "bottle_image": "assets/products/8011003885145-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2016,
+    "notes_top": "Bergamotă de Calabria, Grepfrut, Mentă acvatică",
+    "notes_mid": "Frunze de smochin, Piper roz, Salvie",
+    "notes_base": "Patchouli, Ambroxan, Mosc",
+    "description": "Un fougère modern, cu o inimă verde de frunze de smochin peste o bază minerală de ambroxan. Versatil, potrivit pentru purtare zilnică."
   },
   {
     "cod": "8011003839117",
@@ -6367,7 +7411,16 @@
     "category_label": "Parfumuri",
     "price": 529.0,
     "stock": 2,
-    "bottle_image": "assets/products/8011003839117-bottle.jpg"
+    "bottle_image": "assets/products/8011003839117-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Coacăze negre, Piper roz",
+    "notes_mid": "Frezie, Petale de bujor",
+    "notes_base": "Mosc alb, Chihlimbar, Lemn de santal",
+    "description": "Contrapartida feminină a lui Dylan Blue, cu o deschidere fructată de coacăze negre peste o bază moscată caldă."
   },
   {
     "cod": "8011003839094",
@@ -6377,7 +7430,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 2,
-    "bottle_image": "assets/products/8011003839094-bottle.jpg"
+    "bottle_image": "assets/products/8011003839094-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Coacăze negre, Piper roz",
+    "notes_mid": "Frezie, Petale de bujor",
+    "notes_base": "Mosc alb, Chihlimbar, Lemn de santal",
+    "description": "Contrapartida feminină a lui Dylan Blue, cu o deschidere fructată de coacăze negre peste o bază moscată caldă."
   },
   {
     "cod": "8011003839100",
@@ -6387,7 +7449,16 @@
     "category_label": "Parfumuri",
     "price": 379.0,
     "stock": 2,
-    "bottle_image": "assets/products/8011003839100-bottle.jpg"
+    "bottle_image": "assets/products/8011003839100-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Coacăze negre, Piper roz",
+    "notes_mid": "Frezie, Petale de bujor",
+    "notes_base": "Mosc alb, Chihlimbar, Lemn de santal",
+    "description": "Contrapartida feminină a lui Dylan Blue, cu o deschidere fructată de coacăze negre peste o bază moscată caldă."
   },
   {
     "cod": "8011003876280",
@@ -6437,7 +7508,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003809219-bottle.jpg"
+    "bottle_image": "assets/products/8011003809219-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003900060",
@@ -6447,7 +7527,16 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 3,
-    "bottle_image": "assets/products/8011003900060-bottle.jpg"
+    "bottle_image": "assets/products/8011003900060-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003845347",
@@ -6457,7 +7546,16 @@
     "category_label": "Parfumuri",
     "price": 319.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003845347-bottle.jpg"
+    "bottle_image": "assets/products/8011003845347-bottle.jpg",
+    "family": "Oriental Spicy",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2018,
+    "notes_top": "Mentă, Piper",
+    "notes_mid": "Muscadă, Lavandă",
+    "notes_base": "Vanilie, Chihlimbar",
+    "description": "Varianta mai intensă și picantă a lui Eros, pentru seri răcoroase."
   },
   {
     "cod": "8011003900039",
@@ -6467,7 +7565,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003900039-bottle.jpg"
+    "bottle_image": "assets/products/8011003900039-bottle.jpg",
+    "family": "Oriental Spicy",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2018,
+    "notes_top": "Mentă, Piper",
+    "notes_mid": "Muscadă, Lavandă",
+    "notes_base": "Vanilie, Chihlimbar",
+    "description": "Varianta mai intensă și picantă a lui Eros, pentru seri răcoroase."
   },
   {
     "cod": "8011003872077",
@@ -6477,7 +7584,16 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003872077-bottle.jpg"
+    "bottle_image": "assets/products/8011003872077-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003900046",
@@ -6487,7 +7603,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003900046-bottle.jpg"
+    "bottle_image": "assets/products/8011003900046-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003895755",
@@ -6497,7 +7622,16 @@
     "category_label": "Parfumuri",
     "price": 739.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003895755-bottle.jpg"
+    "bottle_image": "assets/products/8011003895755-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003823512",
@@ -6507,7 +7641,16 @@
     "category_label": "Parfumuri",
     "price": 319.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003823512-bottle.jpg"
+    "bottle_image": "assets/products/8011003823512-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2014,
+    "notes_top": "Bergamotă, Nectarină",
+    "notes_mid": "Iasomie, Petale de trandafir",
+    "notes_base": "Lemn de santal, Mosc, Vanilie",
+    "description": "Feminin, fructat și senzual, Eros Pour Femme e perechea naturală a celebrului parfum masculin."
   },
   {
     "cod": "8011003810017",
@@ -6517,7 +7660,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003810017-bottle.jpg"
+    "bottle_image": "assets/products/8011003810017-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003861224",
@@ -6527,7 +7679,16 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003861224-bottle.jpg"
+    "bottle_image": "assets/products/8011003861224-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003885237",
@@ -6537,7 +7698,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003885237-bottle.jpg"
+    "bottle_image": "assets/products/8011003885237-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003873623",
@@ -6547,7 +7717,16 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 2,
-    "bottle_image": "assets/products/8011003873623-bottle.jpg"
+    "bottle_image": "assets/products/8011003873623-bottle.jpg",
+    "family": "Aromatic Fougère",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Mentă, Mere verzi, Lămâie italiană",
+    "notes_mid": "Muscadă, Ambroxan, Salvie geraniu",
+    "notes_base": "Vanilie, Chihlimbar, Lemn de cedru virginian, Vetiver",
+    "description": "Proaspăt și dulce în același timp, Eros combină menta și merele verzi cu o bază caldă de vanilie și chihlimbar. Un parfum ușor de purtat, gândit să placă."
   },
   {
     "cod": "8011003884902",
@@ -6797,7 +7976,16 @@
     "category_label": "Parfumuri",
     "price": 489.0,
     "stock": 1,
-    "bottle_image": "assets/products/3365440787919-bottle.jpg"
+    "bottle_image": "assets/products/3365440787919-bottle.jpg",
+    "family": "Oriental Vanilat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2014,
+    "notes_top": "Cafea, Pere, Portocală amăruie",
+    "notes_mid": "Iasomie, Migdale amare, Flori de portocal",
+    "notes_base": "Vanilie, Patchouli, Lemn de cedru, Mosc",
+    "description": "Un gourmand oriental îndrăzneț, construit pe contrastul dintre cafeaua intensă și vanilia dulce. Black Opium e făcut pentru nopți memorabile."
   },
   {
     "cod": "3614272443679",
@@ -6807,7 +7995,16 @@
     "category_label": "Parfumuri",
     "price": 269.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272443679-bottle.jpg"
+    "bottle_image": "assets/products/3614272443679-bottle.jpg",
+    "family": "Oriental Vanilat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2014,
+    "notes_top": "Cafea, Pere, Portocală amăruie",
+    "notes_mid": "Iasomie, Migdale amare, Flori de portocal",
+    "notes_base": "Vanilie, Patchouli, Lemn de cedru, Mosc",
+    "description": "Un gourmand oriental îndrăzneț, construit pe contrastul dintre cafeaua intensă și vanilia dulce. Black Opium e făcut pentru nopți memorabile."
   },
   {
     "cod": "3614274769623",
@@ -6817,7 +8014,16 @@
     "category_label": "Parfumuri",
     "price": 779.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274769623-bottle.jpg"
+    "bottle_image": "assets/products/3614274769623-bottle.jpg",
+    "family": "Oriental Vanilat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2014,
+    "notes_top": "Cafea, Pere, Portocală amăruie",
+    "notes_mid": "Iasomie, Migdale amare, Flori de portocal",
+    "notes_base": "Vanilie, Patchouli, Lemn de cedru, Mosc",
+    "description": "Un gourmand oriental îndrăzneț, construit pe contrastul dintre cafeaua intensă și vanilia dulce. Black Opium e făcut pentru nopți memorabile."
   },
   {
     "cod": "3365440621053",
@@ -6827,7 +8033,16 @@
     "category_label": "Parfumuri",
     "price": 569.0,
     "stock": 1,
-    "bottle_image": "assets/products/3365440621053-bottle.jpg"
+    "bottle_image": "assets/products/3365440621053-bottle.jpg",
+    "family": "Aromatic Spicy",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2009,
+    "notes_top": "Cardamom, Bergamotă",
+    "notes_mid": "Lavandă, Lemn de cedru Virginia",
+    "notes_base": "Vetiver, Cacao",
+    "description": "Un parfum de seară seducător, cu un acord de cacao neobișnuit ce încheie o compoziție aromatică rafinată."
   },
   {
     "cod": "3614274521245",
@@ -6837,7 +8052,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274521245-bottle.jpg"
+    "bottle_image": "assets/products/3614274521245-bottle.jpg",
+    "family": "Floral Aromatic",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Lavandă, Mandarine, Bergamotă",
+    "notes_mid": "Flori de portocal, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Mosc, Lemn de cedru",
+    "description": "Un parfum-manifest, unde lavanda masculină clasică întâlnește o inimă florală feminină. Libre e despre libertate și contradicție asumată."
   },
   {
     "cod": "3614272648432",
@@ -6847,7 +8071,16 @@
     "category_label": "Parfumuri",
     "price": 149.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614272648432-bottle.jpg"
+    "bottle_image": "assets/products/3614272648432-bottle.jpg",
+    "family": "Floral Aromatic",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Lavandă, Mandarine, Bergamotă",
+    "notes_mid": "Flori de portocal, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Mosc, Lemn de cedru",
+    "description": "Un parfum-manifest, unde lavanda masculină clasică întâlnește o inimă florală feminină. Libre e despre libertate și contradicție asumată."
   },
   {
     "cod": "3614272648418",
@@ -6857,7 +8090,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614272648418-bottle.jpg"
+    "bottle_image": "assets/products/3614272648418-bottle.jpg",
+    "family": "Floral Aromatic",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Lavandă, Mandarine, Bergamotă",
+    "notes_mid": "Flori de portocal, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Mosc, Lemn de cedru",
+    "description": "Un parfum-manifest, unde lavanda masculină clasică întâlnește o inimă florală feminină. Libre e despre libertate și contradicție asumată."
   },
   {
     "cod": "3614274151701",
@@ -6867,7 +8109,16 @@
     "category_label": "Parfumuri",
     "price": 799.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274151701-bottle.jpg"
+    "bottle_image": "assets/products/3614274151701-bottle.jpg",
+    "family": "Floral Aromatic",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Lavandă, Mandarine, Bergamotă",
+    "notes_mid": "Flori de portocal, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Mosc, Lemn de cedru",
+    "description": "Un parfum-manifest, unde lavanda masculină clasică întâlnește o inimă florală feminină. Libre e despre libertate și contradicție asumată."
   },
   {
     "cod": "3614274151152",
@@ -6877,7 +8128,16 @@
     "category_label": "Parfumuri",
     "price": 629.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614274151152-bottle.jpg"
+    "bottle_image": "assets/products/3614274151152-bottle.jpg",
+    "family": "Floral Aromatic",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Lavandă, Mandarine, Bergamotă",
+    "notes_mid": "Flori de portocal, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Mosc, Lemn de cedru",
+    "description": "Un parfum-manifest, unde lavanda masculină clasică întâlnește o inimă florală feminină. Libre e despre libertate și contradicție asumată."
   },
   {
     "cod": "3614273069618",
@@ -6887,7 +8147,16 @@
     "category_label": "Parfumuri",
     "price": 169.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273069618-bottle.jpg"
+    "bottle_image": "assets/products/3614273069618-bottle.jpg",
+    "family": "Floral Aromatic",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Lavandă, Mandarine, Bergamotă",
+    "notes_mid": "Flori de portocal, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Mosc, Lemn de cedru",
+    "description": "Un parfum-manifest, unde lavanda masculină clasică întâlnește o inimă florală feminină. Libre e despre libertate și contradicție asumată."
   },
   {
     "cod": "3614273776110",
@@ -6897,7 +8166,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614273776110-bottle.jpg"
+    "bottle_image": "assets/products/3614273776110-bottle.jpg",
+    "family": "Floral Aromatic",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Lavandă, Mandarine, Bergamotă",
+    "notes_mid": "Flori de portocal, Iasomie",
+    "notes_base": "Vanilie de Madagascar, Mosc, Lemn de cedru",
+    "description": "Un parfum-manifest, unde lavanda masculină clasică întâlnește o inimă florală feminină. Libre e despre libertate și contradicție asumată."
   },
   {
     "cod": "3365440226708",

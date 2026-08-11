@@ -1108,6 +1108,38 @@ footer {
 .btn-cart:hover { background: var(--teal-mid); }
 .btn-cart:disabled { background: rgba(22,51,47,0.2); cursor: not-allowed; }
 .cart-confirm { color: #3f7a4f; font-size: 0.88rem; margin-top: 0.8rem; text-align: center; }
+
+.product-description-block {
+  margin-top: 1.8rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--gold-dim);
+}
+.product-description {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 1.2rem;
+}
+.product-specs {
+  display: grid;
+  gap: 0.55rem;
+}
+.spec-row {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1rem;
+  font-size: 0.82rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid rgba(22, 51, 47, 0.08);
+}
+.spec-row dt {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--teal-mid);
+  font-weight: 600;
+}
+.spec-row dd { color: var(--ink); margin: 0; }
+
 .back-link {
   display: inline-block;
   margin-top: 1.6rem;
