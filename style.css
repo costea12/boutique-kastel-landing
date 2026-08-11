@@ -635,6 +635,41 @@ footer {
   margin-bottom: 2.3rem;
 }
 
+.legal-content.legal-doc {
+  max-width: 760px;
+  text-align: left;
+}
+.legal-content.legal-doc .logo,
+.legal-content.legal-doc .flourish,
+.legal-content.legal-doc h1 { text-align: center; }
+.legal-content.legal-doc h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--gold-bright);
+  margin: 2.2rem 0 0.9rem;
+}
+.legal-content.legal-doc h2:first-of-type { margin-top: 0; }
+.legal-content.legal-doc p,
+.legal-content.legal-doc li {
+  color: var(--white-dim);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 0.9rem;
+}
+.legal-content.legal-doc ul {
+  margin: 0 0 0.9rem;
+  padding-left: 1.3rem;
+}
+.legal-content.legal-doc strong { color: var(--white); font-weight: 600; }
+.legal-content.legal-doc a { color: var(--gold-bright); }
+.legal-content.legal-doc .legal-updated {
+  color: var(--white-faint);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+.legal-content.legal-doc .btn { display: block; margin: 2.6rem auto 0; width: fit-content; }
+
 /* ---------- Reveal animation ---------- */
 
 .reveal {
