@@ -21,6 +21,44 @@ mobileNav?.querySelectorAll('a').forEach((a) =>
   a.addEventListener('click', () => mobileNav.classList.remove('open'))
 );
 
+// Live product count + recommended picks (homepage only)
+const RECOMMENDED_CODES = [
+  '3348901428545', // Dior Sauvage EDP 200ml
+  '3145891165203', // Chanel Coco Mademoiselle EDP 100ml
+  '3365440787919', // Ysl Black Opium EDP 50ml
+  '888066000079',  // Tom Ford Black Orchid EDP 100ml
+  '8011003809219', // Versace Eros EDT 100ml
+];
+
+function formatPriceHome(p) {
+  return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
+}
+
+if (document.getElementById('parfumCount') || document.getElementById('recommendedGrid')) {
+  fetch('catalog.json')
+    .then((r) => r.json())
+    .then((data) => {
+      const countEl = document.getElementById('parfumCount');
+      if (countEl) countEl.textContent = `${data.length} produse`;
+
+      const grid = document.getElementById('recommendedGrid');
+      if (!grid) return;
+      const byCode = Object.fromEntries(data.map((p) => [p.cod, p]));
+      const picks = RECOMMENDED_CODES.map((c) => byCode[c]).filter(Boolean);
+      grid.innerHTML = picks.map((p) => `
+        <a class="product-card" href="produs.html?cod=${encodeURIComponent(p.cod)}">
+          <div class="product-card-img">
+            <img src="${p.bottle_image}" alt="${p.name}" loading="lazy">
+          </div>
+          <span class="product-brand">${p.brand}</span>
+          <h3>${p.name}</h3>
+          <span class="product-price">${formatPriceHome(p.price)}</span>
+        </a>
+      `).join('');
+    })
+    .catch(() => {});
+}
+
 // Newsletter form (visual only — will be wired to the n8n backend once it exists)
 const newsletterForm = document.getElementById('newsletterForm');
 const newsletterNote = document.getElementById('newsletterNote');

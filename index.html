@@ -108,6 +108,7 @@
         <span class="num">01</span>
         <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M10 3h4M11 3v3.5c0 .6-.2 1.1-.6 1.5L8 10.5A3 3 0 0 0 7 12.7V19a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6.3a3 3 0 0 0-1-2.2l-2.4-2.5A2 2 0 0 1 13 6.5V3"/></svg>
         <h3>Parfumuri</h3>
+        <span class="cat-count" id="parfumCount"></span>
         <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
 
@@ -149,13 +150,13 @@
   </div>
 </section>
 
-<!-- Preview / coming soon products -->
+<!-- Recommended products -->
 <section class="preview grain">
   <div class="section-inner">
     <div class="section-head reveal">
-      <p class="kicker">Prima colecție</p>
-      <h2>Curând, în vitrină</h2>
-      <p>Catalogul complet se pregătește. Iată câteva dintre categoriile de produse la care lucrăm.</p>
+      <p class="kicker">Selecția noastră</p>
+      <h2>Recomandate</h2>
+      <p>Câteva dintre parfumurile preferate de clienții noștri.</p>
       <div class="flourish">
         <span class="line"></span>
         <svg viewBox="0 0 42 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 8h14M28 8h14M21 2v12M15 8a6 6 0 0 1 12 0"/></svg>
@@ -163,32 +164,7 @@
       </div>
     </div>
 
-    <div class="preview-grid reveal">
-      <div class="preview-card">
-        <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M10 3h4M11 3v3.5c0 .6-.2 1.1-.6 1.5L8 10.5A3 3 0 0 0 7 12.7V19a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6.3a3 3 0 0 0-1-2.2l-2.4-2.5A2 2 0 0 1 13 6.5V3"/></svg>
-        <span class="tag">Parfumuri</span>
-        <h4>Apă de parfum</h4>
-        <span class="status">Disponibil în curând</span>
-      </div>
-      <div class="preview-card">
-        <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2c2 2.5 4 5.8 4 9a4 4 0 0 1-8 0c0-3.2 2-6.5 4-9Z"/></svg>
-        <span class="tag">Niche</span>
-        <h4>Selecție exclusivă</h4>
-        <span class="status">Disponibil în curând</span>
-      </div>
-      <div class="preview-card">
-        <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="13" r="7"/><path d="M9 4h6l-1 3H10L9 4Z"/></svg>
-        <span class="tag">Îngrijire</span>
-        <h4>Ritual de îngrijire</h4>
-        <span class="status">Disponibil în curând</span>
-      </div>
-      <div class="preview-card">
-        <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 3h10l-1.5 5H8.5L7 3Z"/><path d="M8.5 8v11a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V8"/></svg>
-        <span class="tag">Băuturi</span>
-        <h4>Selecție premium</h4>
-        <span class="status">Disponibil în curând</span>
-      </div>
-    </div>
+    <div class="product-grid reveal" id="recommendedGrid"></div>
   </div>
 </section>
 

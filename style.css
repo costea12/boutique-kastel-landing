@@ -385,6 +385,12 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   font-size: clamp(1.15rem, 2vw, 1.6rem);
   margin-bottom: 0.4rem;
 }
+.cat-card .cat-count {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--white-faint);
+  margin-bottom: 0.7rem;
+}
 .cat-card .cat-link {
   font-size: 0.72rem;
   letter-spacing: 0.12em;
