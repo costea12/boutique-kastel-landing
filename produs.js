@@ -35,7 +35,7 @@ function renderNoteTags(notes) {
 }
 
 function renderSpecs(p) {
-  if (!p.family) return '';
+  if (!p.description && !p.family) return '';
 
   const tiers = [
     ['Note de vârf', p.notes_top],
@@ -73,14 +73,16 @@ function renderSpecs(p) {
         </div>
       ` : ''}
 
-      <dl class="product-facts">
-        ${facts.map(([label, value]) => `
-          <div class="fact-item">
-            <dt>${label}</dt>
-            <dd>${value}</dd>
-          </div>
-        `).join('')}
-      </dl>
+      ${facts.length ? `
+        <dl class="product-facts">
+          ${facts.map(([label, value]) => `
+            <div class="fact-item">
+              <dt>${label}</dt>
+              <dd>${value}</dd>
+            </div>
+          `).join('')}
+        </dl>
+      ` : ''}
     </div>
   `;
 }

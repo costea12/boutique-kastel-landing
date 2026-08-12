@@ -45,7 +45,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 2,
-    "bottle_image": "assets/products/6293708004355-bottle.jpg"
+    "bottle_image": "assets/products/6293708004355-bottle.jpg",
+    "family": "Floral Oriental",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2007,
+    "notes_top": "Iasomie, Water Notes",
+    "notes_mid": "Vanilie, Flori de portocal",
+    "notes_base": "Ambră gri, Mosc",
+    "description": "Un parfum floral-oriental cu iasomie și water notes în deschidere, pe fond de ambră gri și mosc."
   },
   {
     "cod": "701666410195",
@@ -149,7 +158,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 1,
-    "bottle_image": "assets/products/6294015131017-bottle.jpg"
+    "bottle_image": "assets/products/6294015131017-bottle.jpg",
+    "family": "Citrice Lemnos",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2025,
+    "notes_top": "Litchi, Bergamotă, Piper roz",
+    "notes_mid": "Orris",
+    "notes_base": "Praline, Lemn de santal, Ambroxan",
+    "description": "Distinctiv prin litchi și bergamotă, acest parfum citric-lemnos se remarcă printr-o bază de praline și lemn de santal."
   },
   {
     "cod": "6294015131024",
@@ -233,7 +251,16 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 2,
-    "bottle_image": "assets/products/6294015196467-bottle.jpg"
+    "bottle_image": "assets/products/6294015196467-bottle.jpg",
+    "family": "Oriental",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2025,
+    "notes_top": "Vanilie, Lavandă",
+    "notes_mid": "Cacao, Ghimbir",
+    "notes_base": "Vanilla Absolute",
+    "description": "Distinctiv prin vanilie și lavandă, acest parfum oriental se remarcă printr-o bază de vanilla absolute."
   },
   {
     "cod": "6295199815151",
@@ -243,7 +270,16 @@
     "category_label": "Parfumuri",
     "price": 269.0,
     "stock": 1,
-    "bottle_image": "assets/products/6295199815151-bottle.jpg"
+    "bottle_image": "assets/products/6295199815151-bottle.jpg",
+    "family": "Citrice Lemnos",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2023,
+    "notes_top": "Mandarine, Portocală, Șofran, Salvie",
+    "notes_mid": "Caramel, Fasole tonka, Gălbenele",
+    "notes_base": "Ambroxan, Lemn de cedru, Vetiver",
+    "description": "O compoziție citric-lemnos, marcată de caramel, fasole tonka și gălbenele și o bază caldă de ambroxan și lemn de cedru."
   },
   {
     "cod": "6294015138320",
@@ -253,7 +289,9 @@
     "category_label": "Parfumuri",
     "price": 249.0,
     "stock": 1,
-    "bottle_image": "assets/products/6294015138320-bottle.jpg"
+    "bottle_image": "assets/products/6294015138320-bottle.jpg",
+    "description": "Un parfum unisex Armaf, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614273874465",
@@ -394,7 +432,9 @@
     "category_label": "Parfumuri",
     "price": 129.0,
     "stock": 2,
-    "bottle_image": "assets/products/3616302020638-bottle.jpg"
+    "bottle_image": "assets/products/3616302020638-bottle.jpg",
+    "description": "Parfum unisex original Burberry, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3616302023707",
@@ -789,7 +829,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614226905963-bottle.jpg"
+    "bottle_image": "assets/products/3614226905963-bottle.jpg",
+    "family": "Fructat Citrice",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2018,
+    "notes_top": "Căpșuni, Zmeură, Mure, Sour Cherry, Coacăze negre, Mandarine, Lămâie",
+    "notes_mid": "Violetă, Iasomie",
+    "notes_base": "Mosc, Vanilie, Cashmeran, Woody Notes, Chihlimbar, Mușchi de stejar, Patchouli",
+    "description": "Un fructat-citric echilibrat, cu violetă și iasomie pe fond de mosc și vanilie."
   },
   {
     "cod": "3614226905284",
@@ -818,7 +867,9 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 2,
-    "bottle_image": "assets/products/783320427152-bottle.jpg"
+    "bottle_image": "assets/products/783320427152-bottle.jpg",
+    "description": "Un parfum masculin Bvlgari, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Bărbați"
   },
   {
     "cod": "783320502507",
@@ -1018,7 +1069,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/783320409592-bottle.jpg"
+    "bottle_image": "assets/products/783320409592-bottle.jpg",
+    "family": "Oriental",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Coacăze negre, Davana",
+    "notes_mid": "Tuberoză",
+    "notes_base": "Vanilla Absolute, Smirnă",
+    "description": "Distinctiv prin coacăze negre și davana, acest parfum oriental se remarcă printr-o bază de vanilla absolute și smirnă."
   },
   {
     "cod": "783320411168",
@@ -1415,7 +1475,9 @@
     "category_label": "Parfumuri",
     "price": 739.0,
     "stock": 1,
-    "bottle_image": "assets/products/8411061113851-bottle.jpg"
+    "bottle_image": "assets/products/8411061113851-bottle.jpg",
+    "description": "O compoziție feminin din colecția Carolina, gândită pentru cei care caută distincție.",
+    "gender": "Femei"
   },
   {
     "cod": "3432240502209",
@@ -1521,7 +1583,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/8411061110096-bottle.jpg"
+    "bottle_image": "assets/products/8411061110096-bottle.jpg",
+    "family": "Lemnos Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2025,
+    "notes_top": "Blue Lavender, Blue Sage, Elemi",
+    "notes_mid": "Trufe, Geraniu, Oud",
+    "notes_base": "Vanilie, Oak, Vetiver",
+    "description": "O compoziție lemnos-aromatic, marcată de trufe, geraniu și oud și o bază caldă de vanilie și oak."
   },
   {
     "cod": "8411061923245",
@@ -1609,7 +1680,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/8411061057056-bottle.jpg"
+    "bottle_image": "assets/products/8411061057056-bottle.jpg",
+    "description": "Un parfum unisex Carolina Herrera, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8411061991886",
@@ -2021,7 +2094,16 @@
     "category_label": "Parfumuri",
     "price": 259.0,
     "stock": 1,
-    "bottle_image": "assets/products/8411061111369-bottle.jpg"
+    "bottle_image": "assets/products/8411061111369-bottle.jpg",
+    "family": "Floral Lemnos",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2025,
+    "notes_top": "Pitahaya",
+    "notes_mid": "Frangipani, Red Peony",
+    "notes_base": "Vanilie, Patchouli",
+    "description": "Carolina Herrera propune o compoziție floral-lemnos, deschisă cu pitahaya peste o inimă de frangipani și red peony."
   },
   {
     "cod": "3145891071702",
@@ -2031,7 +2113,9 @@
     "category_label": "Parfumuri",
     "price": 759.0,
     "stock": 1,
-    "bottle_image": "assets/products/3145891071702-bottle.jpg"
+    "bottle_image": "assets/products/3145891071702-bottle.jpg",
+    "description": "Parfum unisex original Chanel, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3145891124408",
@@ -2196,7 +2280,9 @@
     "price": 649.0,
     "stock": 1,
     "bottle_image": "assets/products/3145891074505-bottle.jpg",
-    "box_image": "assets/products/3145891074505-box.jpg"
+    "box_image": "assets/products/3145891074505-box.jpg",
+    "description": "Chanel aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3145891361506",
@@ -2495,7 +2581,9 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3607346232347-bottle.jpg"
+    "bottle_image": "assets/products/3607346232347-bottle.jpg",
+    "description": "O compoziție feminin din colecția Chloe, gândită pentru cei care caută distincție.",
+    "gender": "Femei"
   },
   {
     "cod": "3616302680955",
@@ -2524,7 +2612,9 @@
     "category_label": "Parfumuri",
     "price": 569.0,
     "stock": 2,
-    "bottle_image": "assets/products/3616305251787-bottle.jpg"
+    "bottle_image": "assets/products/3616305251787-bottle.jpg",
+    "description": "Un set unisex Chloe, ideal pentru a descoperi parfumul în mai multe formate dintr-o dată.",
+    "gender": "Unisex"
   },
   {
     "cod": "3616306128958",
@@ -2535,7 +2625,9 @@
     "price": 499.0,
     "stock": 1,
     "bottle_image": "assets/products/3616306128958-bottle.jpg",
-    "box_image": "assets/products/3616306128958-box.jpg"
+    "box_image": "assets/products/3616306128958-box.jpg",
+    "description": "Chloe propune acest set cadou unisex, o alegere potrivită atât pentru uz zilnic, cât și pentru călătorii.",
+    "gender": "Unisex"
   },
   {
     "cod": "688575201901",
@@ -2546,7 +2638,9 @@
     "price": 299.0,
     "stock": 1,
     "bottle_image": "assets/products/688575201901-bottle.jpg",
-    "box_image": "assets/products/688575201901-box.jpg"
+    "box_image": "assets/products/688575201901-box.jpg",
+    "description": "Chloe aduce o compoziție feminin rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Femei"
   },
   {
     "cod": "3607346232385",
@@ -2557,7 +2651,9 @@
     "price": 499.0,
     "stock": 1,
     "bottle_image": "assets/products/3607346232385-bottle.jpg",
-    "box_image": "assets/products/3607346232385-box.jpg"
+    "box_image": "assets/products/3607346232385-box.jpg",
+    "description": "Chloe aduce o compoziție feminin rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Femei"
   },
   {
     "cod": "7640177366160",
@@ -2643,7 +2739,16 @@
     "category_label": "Parfumuri",
     "price": 379.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460095358-bottle.jpg"
+    "bottle_image": "assets/products/3386460095358-bottle.jpg",
+    "family": "Fructat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2019,
+    "notes_top": "Goji Berries, Grepfrut",
+    "notes_mid": "Bujor, Piersică",
+    "notes_base": "Mosc, White Wood",
+    "description": "Un fructat echilibrat, cu bujor și piersică pe fond de mosc și white wood."
   },
   {
     "cod": "8057971183739",
@@ -2767,7 +2872,16 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 2,
-    "bottle_image": "assets/products/3423473140252-bottle.jpg"
+    "bottle_image": "assets/products/3423473140252-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1999,
+    "notes_top": "Mimoză, Nufăr, Ciclamen, Mandarine",
+    "notes_mid": "Crin, Glicină, Heliotrop, Iasomie, Ylang-Ylang",
+    "notes_base": "Mosc, Lemn de cașmir, Lemn de santal, Vanilie",
+    "description": "Distinctiv prin mimoză și nufăr, acest parfum floral se remarcă printr-o bază de mosc și lemn de cașmir."
   },
   {
     "cod": "3423222015978",
@@ -2834,7 +2948,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/8057971186655-bottle.jpg"
+    "bottle_image": "assets/products/8057971186655-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2020,
+    "notes_top": "Neroli, Green Apple, Italian Mandarin",
+    "notes_mid": "Iasomie, Nucă de cocos, Flori de portocal",
+    "notes_base": "Vanilie, Lemn de cașmir, Lemn de cedru",
+    "description": "Un parfum citric-floral cu neroli și green apple în deschidere, pe fond de vanilie și lemn de cașmir."
   },
   {
     "cod": "3423478966451",
@@ -2844,7 +2967,16 @@
     "category_label": "Parfumuri",
     "price": 379.0,
     "stock": 1,
-    "bottle_image": "assets/products/3423478966451-bottle.jpg"
+    "bottle_image": "assets/products/3423478966451-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2020,
+    "notes_top": "Neroli, Green Apple, Italian Mandarin",
+    "notes_mid": "Iasomie, Nucă de cocos, Flori de portocal",
+    "notes_base": "Vanilie, Lemn de cașmir, Lemn de cedru",
+    "description": "Un parfum citric-floral cu neroli și green apple în deschidere, pe fond de vanilie și lemn de cașmir."
   },
   {
     "cod": "3414200010214",
@@ -2949,7 +3081,9 @@
     "category_label": "Parfumuri",
     "price": 259.0,
     "stock": 1,
-    "bottle_image": "assets/products/3414202011752-bottle.jpg"
+    "bottle_image": "assets/products/3414202011752-bottle.jpg",
+    "description": "Un parfum feminin Davidoff, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Femei"
   },
   {
     "cod": "3607349326135",
@@ -3149,7 +3283,9 @@
     "category_label": "Parfumuri",
     "price": 819.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901617673-bottle.jpg"
+    "bottle_image": "assets/products/3348901617673-bottle.jpg",
+    "description": "Dior propune acest set cadou unisex, o alegere potrivită atât pentru uz zilnic, cât și pentru călătorii.",
+    "gender": "Unisex"
   },
   {
     "cod": "3348901571449",
@@ -3348,7 +3484,9 @@
     "category_label": "Parfumuri",
     "price": 329.0,
     "stock": 1,
-    "bottle_image": "assets/products/763511100019-bottle.jpg"
+    "bottle_image": "assets/products/763511100019-bottle.jpg",
+    "description": "O compoziție feminin din colecția Dkny, gândită pentru cei care caută distincție.",
+    "gender": "Femei"
   },
   {
     "cod": "3605522041486",
@@ -3358,7 +3496,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3605522041486-bottle.jpg"
+    "bottle_image": "assets/products/3605522041486-bottle.jpg",
+    "description": "Parfum unisex original Emporio Armani, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614274752106",
@@ -3368,7 +3508,9 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274752106-bottle.jpg"
+    "bottle_image": "assets/products/3614274752106-bottle.jpg",
+    "description": "Parfum unisex original Emporio Armani, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614274752717",
@@ -3378,7 +3520,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614274752717-bottle.jpg"
+    "bottle_image": "assets/products/3614274752717-bottle.jpg",
+    "description": "Emporio Armani aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614272889590",
@@ -3388,7 +3532,9 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272889590-bottle.jpg"
+    "bottle_image": "assets/products/3614272889590-bottle.jpg",
+    "description": "Parfum unisex original Emporio Armani, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3605522040588",
@@ -3398,7 +3544,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3605522040588-bottle.jpg"
+    "bottle_image": "assets/products/3605522040588-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Piper roz, Ienupăr, Violetă",
+    "notes_mid": "Toffee, Scorțișoară, Lavandă, Salvie",
+    "notes_base": "Vanilie, Chihlimbar, Fasole tonka, Piele întoarsă",
+    "description": "Un oriental-aromatic echilibrat, cu toffee, scorțișoară și lavandă pe fond de vanilie și chihlimbar."
   },
   {
     "cod": "3614272889583",
@@ -3408,7 +3563,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272889583-bottle.jpg"
+    "bottle_image": "assets/products/3614272889583-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Piper roz, Ienupăr, Violetă",
+    "notes_mid": "Toffee, Scorțișoară, Lavandă, Salvie",
+    "notes_base": "Vanilie, Chihlimbar, Fasole tonka, Piele întoarsă",
+    "description": "Un oriental-aromatic echilibrat, cu toffee, scorțișoară și lavandă pe fond de vanilie și chihlimbar."
   },
   {
     "cod": "3614272225718",
@@ -3437,7 +3601,16 @@
     "category_label": "Parfumuri",
     "price": 449.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614273628983-bottle.jpg"
+    "bottle_image": "assets/products/3614273628983-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Piper roz, Ienupăr, Violetă",
+    "notes_mid": "Toffee, Scorțișoară, Lavandă, Salvie",
+    "notes_base": "Vanilie, Chihlimbar, Fasole tonka, Piele întoarsă",
+    "description": "Un oriental-aromatic echilibrat, cu toffee, scorțișoară și lavandă pe fond de vanilie și chihlimbar."
   },
   {
     "cod": "3614273629003",
@@ -3447,7 +3620,16 @@
     "category_label": "Parfumuri",
     "price": 329.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273629003-bottle.jpg"
+    "bottle_image": "assets/products/3614273629003-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Piper roz, Ienupăr, Violetă",
+    "notes_mid": "Toffee, Scorțișoară, Lavandă, Salvie",
+    "notes_base": "Vanilie, Chihlimbar, Fasole tonka, Piele întoarsă",
+    "description": "Un oriental-aromatic echilibrat, cu toffee, scorțișoară și lavandă pe fond de vanilie și chihlimbar."
   },
   {
     "cod": "3614274219579",
@@ -3457,7 +3639,16 @@
     "category_label": "Parfumuri",
     "price": 679.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274219579-bottle.jpg"
+    "bottle_image": "assets/products/3614274219579-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Piper roz, Ienupăr, Violetă",
+    "notes_mid": "Toffee, Scorțișoară, Lavandă, Salvie",
+    "notes_base": "Vanilie, Chihlimbar, Fasole tonka, Piele întoarsă",
+    "description": "Un oriental-aromatic echilibrat, cu toffee, scorțișoară și lavandă pe fond de vanilie și chihlimbar."
   },
   {
     "cod": "3614274747058",
@@ -3467,7 +3658,16 @@
     "category_label": "Parfumuri",
     "price": 629.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274747058-bottle.jpg"
+    "bottle_image": "assets/products/3614274747058-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Piper roz, Ienupăr, Violetă",
+    "notes_mid": "Toffee, Scorțișoară, Lavandă, Salvie",
+    "notes_base": "Vanilie, Chihlimbar, Fasole tonka, Piele întoarsă",
+    "description": "Un oriental-aromatic echilibrat, cu toffee, scorțișoară și lavandă pe fond de vanilie și chihlimbar."
   },
   {
     "cod": "7640233341414",
@@ -3686,7 +3886,9 @@
     "category_label": "Parfumuri",
     "price": 149.0,
     "stock": 5,
-    "bottle_image": "assets/products/6432452224507-bottle.jpg"
+    "bottle_image": "assets/products/6432452224507-bottle.jpg",
+    "description": "O compoziție unisex din colecția Emir, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "6298141922693",
@@ -3696,7 +3898,9 @@
     "category_label": "Parfumuri",
     "price": 149.0,
     "stock": 3,
-    "bottle_image": "assets/products/6298141922693-bottle.jpg"
+    "bottle_image": "assets/products/6298141922693-bottle.jpg",
+    "description": "Emir aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "6296453407969",
@@ -3706,7 +3910,9 @@
     "category_label": "Parfumuri",
     "price": 229.0,
     "stock": 2,
-    "bottle_image": "assets/products/6296453407969-bottle.jpg"
+    "bottle_image": "assets/products/6296453407969-bottle.jpg",
+    "description": "Emir aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3393670000034",
@@ -3716,7 +3922,9 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 2,
-    "bottle_image": "assets/products/3393670000034-bottle.jpg"
+    "bottle_image": "assets/products/3393670000034-bottle.jpg",
+    "description": "Parfum unisex original Escada, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3575070054446",
@@ -3726,7 +3934,9 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/3575070054446-bottle.jpg"
+    "bottle_image": "assets/products/3575070054446-bottle.jpg",
+    "description": "Parfum masculin original Franck, o alegere elegantă pentru orice ocazie.",
+    "gender": "Bărbați"
   },
   {
     "cod": "6290360375601",
@@ -3736,7 +3946,9 @@
     "category_label": "Parfumuri",
     "price": 349.0,
     "stock": 2,
-    "bottle_image": "assets/products/6290360375601-bottle.jpg"
+    "bottle_image": "assets/products/6290360375601-bottle.jpg",
+    "description": "French aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3360372058878",
@@ -3879,7 +4091,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273636513-bottle.jpg"
+    "bottle_image": "assets/products/3614273636513-bottle.jpg",
+    "family": "Citrice Piele",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2004,
+    "notes_top": "Lămâie, Bergamotă",
+    "notes_mid": "Anason stelat, Olive Blossom, Lemn de gaiac",
+    "notes_base": "Piele, Fasole tonka, Tutun",
+    "description": "Un citric-de piele echilibrat, cu anason stelat, olive blossom și lemn de gaiac pe fond de piele și fasole tonka."
   },
   {
     "cod": "3360375010972",
@@ -3889,7 +4110,16 @@
     "category_label": "Parfumuri",
     "price": 539.0,
     "stock": 2,
-    "bottle_image": "assets/products/3360375010972-bottle.jpg"
+    "bottle_image": "assets/products/3360375010972-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2006,
+    "notes_top": "Italian Orange, Iasomie, Bitter Orange",
+    "notes_mid": "Iasomie, Flori de portocal, Ghimbir",
+    "notes_base": "Miere, Vanilie, Lemn de santal",
+    "description": "Distinctiv prin italian orange și iasomie, acest parfum citric-floral se remarcă printr-o bază de miere și vanilie."
   },
   {
     "cod": "3614273604833",
@@ -3899,7 +4129,16 @@
     "category_label": "Parfumuri",
     "price": 529.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273604833-bottle.jpg"
+    "bottle_image": "assets/products/3614273604833-bottle.jpg",
+    "family": "Citrice Lemnos",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2009,
+    "notes_top": "Grepfrut, Neroli, Sea water, Bergamotă",
+    "notes_mid": "Trandafir, Cedru Virginia, Tarragon",
+    "notes_base": "Lemn de gaiac, Chihlimbar, Mosc",
+    "description": "Un citric-lemnos echilibrat, cu trandafir, cedru virginia și tarragon pe fond de lemn de gaiac și chihlimbar."
   },
   {
     "cod": "3614272907676",
@@ -4099,7 +4338,9 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274109832-bottle.jpg"
+    "bottle_image": "assets/products/3614274109832-bottle.jpg",
+    "description": "Set unisex Giorgio Armani, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614273336383",
@@ -4337,7 +4578,9 @@
     "category_label": "Parfumuri",
     "price": 539.0,
     "stock": 1,
-    "bottle_image": "assets/products/3274872448780-bottle.jpg"
+    "bottle_image": "assets/products/3274872448780-bottle.jpg",
+    "description": "Un parfum masculin Givenchy, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Bărbați"
   },
   {
     "cod": "3274872428768",
@@ -4442,7 +4685,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/3274872463172-bottle.jpg"
+    "bottle_image": "assets/products/3274872463172-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1957,
+    "notes_top": "Aldehide, Căpșuni, Spices, Piersică, Bergamotă, Mandarine",
+    "notes_mid": "Iris, Violetă, Narcisă, Rădăcină de iris, Trandafir, Ylang-Ylang, Iasomie, Lăcrămioare",
+    "notes_base": "Lemn de santal, Chihlimbar, Mosc, Benzoe, Vetiver, Fasole tonka",
+    "description": "Distinctiv prin aldehide și căpșuni, acest parfum floral se remarcă printr-o bază de lemn de santal și chihlimbar."
   },
   {
     "cod": "3274872411678",
@@ -4794,7 +5046,9 @@
     "category_label": "Parfumuri",
     "price": 189.0,
     "stock": 3,
-    "bottle_image": "assets/products/6290362162629-bottle.jpg"
+    "bottle_image": "assets/products/6290362162629-bottle.jpg",
+    "description": "Gulf aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3616306096233",
@@ -4804,7 +5058,9 @@
     "category_label": "Parfumuri",
     "price": 179.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616306096233-bottle.jpg"
+    "bottle_image": "assets/products/3616306096233-bottle.jpg",
+    "description": "Hugo Boss aduce o compoziție masculin rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Bărbați"
   },
   {
     "cod": "3616305439451",
@@ -4814,7 +5070,9 @@
     "category_label": "Parfumuri",
     "price": 479.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616305439451-bottle.jpg"
+    "bottle_image": "assets/products/3616305439451-bottle.jpg",
+    "description": "Set unisex Hugo Boss, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3616305160584",
@@ -4824,7 +5082,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616305160584-bottle.jpg"
+    "bottle_image": "assets/products/3616305160584-bottle.jpg",
+    "family": "Lemnos",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2024,
+    "notes_top": "Violet Leaf",
+    "notes_mid": "Vetiver",
+    "notes_base": "Patchouli Leaf",
+    "description": "Hugo Boss propune o compoziție lemnos, deschisă cu violet leaf peste o inimă de vetiver."
   },
   {
     "cod": "3616305480620",
@@ -4891,7 +5158,16 @@
     "category_label": "Parfumuri",
     "price": 419.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616305276308-bottle.jpg"
+    "bottle_image": "assets/products/3616305276308-bottle.jpg",
+    "family": "Condimentat Piele",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2025,
+    "notes_top": "Ghimbir",
+    "notes_mid": "Piele",
+    "notes_base": "Woody Notes",
+    "description": "Un picant-de piele echilibrat, cu piele pe fond de woody notes."
   },
   {
     "cod": "737052355054",
@@ -5034,7 +5310,9 @@
     "category_label": "Parfumuri",
     "price": 339.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616305443571-bottle.jpg"
+    "bottle_image": "assets/products/3616305443571-bottle.jpg",
+    "description": "Un set unisex Hugo Boss, ideal pentru a descoperi parfumul în mai multe formate dintr-o dată.",
+    "gender": "Unisex"
   },
   {
     "cod": "3616304957581",
@@ -5044,7 +5322,9 @@
     "category_label": "Parfumuri",
     "price": 349.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616304957581-bottle.jpg"
+    "bottle_image": "assets/products/3616304957581-bottle.jpg",
+    "description": "Hugo Boss propune acest set cadou unisex, o alegere potrivită atât pentru uz zilnic, cât și pentru călătorii.",
+    "gender": "Unisex"
   },
   {
     "cod": "3616303428495",
@@ -5130,7 +5410,16 @@
     "category_label": "Parfumuri",
     "price": 429.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614228719056-bottle.jpg"
+    "bottle_image": "assets/products/3614228719056-bottle.jpg",
+    "family": "Lemnos Condimentat",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Ghimbir",
+    "notes_mid": "Maninka",
+    "notes_base": "Vetiver",
+    "description": "O compoziție lemnos-picant, marcată de maninka și o bază caldă de vetiver."
   },
   {
     "cod": "3614228719049",
@@ -5140,7 +5429,16 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614228719049-bottle.jpg"
+    "bottle_image": "assets/products/3614228719049-bottle.jpg",
+    "family": "Lemnos Condimentat",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2019,
+    "notes_top": "Ghimbir",
+    "notes_mid": "Maninka",
+    "notes_base": "Vetiver",
+    "description": "O compoziție lemnos-picant, marcată de maninka și o bază caldă de vetiver."
   },
   {
     "cod": "737052972305",
@@ -5207,7 +5505,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 2,
-    "bottle_image": "assets/products/3616305040626-bottle.jpg"
+    "bottle_image": "assets/products/3616305040626-bottle.jpg",
+    "family": "Condimentat",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2017,
+    "notes_top": "Cardamom, Ghimbir",
+    "notes_mid": "Maninka, Lavandă",
+    "notes_base": "Piele, Vanilie, Woody Notes",
+    "description": "O compoziție picant, marcată de maninka și lavandă și o bază caldă de piele și vanilie."
   },
   {
     "cod": "737052992785",
@@ -5236,7 +5543,16 @@
     "category_label": "Parfumuri",
     "price": 519.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616306969681-bottle.jpg"
+    "bottle_image": "assets/products/3616306969681-bottle.jpg",
+    "family": "Floral Fructat",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2016,
+    "notes_top": "Piersică, Frezie",
+    "notes_mid": "Osmanthus",
+    "notes_base": "Cacao",
+    "description": "O compoziție floral-fructat, marcată de osmanthus și o bază caldă de cacao."
   },
   {
     "cod": "3616304957666",
@@ -5246,7 +5562,9 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616304957666-bottle.jpg"
+    "bottle_image": "assets/products/3616304957666-bottle.jpg",
+    "description": "Set unisex Hugo Boss, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "737052992860",
@@ -5275,7 +5593,9 @@
     "category_label": "Parfumuri",
     "price": 349.0,
     "stock": 1,
-    "bottle_image": "assets/products/3616304062490-bottle.jpg"
+    "bottle_image": "assets/products/3616304062490-bottle.jpg",
+    "description": "Parfum unisex original Hugo Boss, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3616304691645",
@@ -5323,7 +5643,16 @@
     "category_label": "Parfumuri",
     "price": 29.0,
     "stock": 3,
-    "bottle_image": "assets/products/737052325002-bottle.jpg"
+    "bottle_image": "assets/products/737052325002-bottle.jpg",
+    "family": "Aromatic Fructat",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2021,
+    "notes_top": "Green Apple",
+    "notes_mid": "Lavandă",
+    "notes_base": "Pin, Woody Notes, Balsam Fir",
+    "description": "Distinctiv prin green apple, acest parfum aromatic-fructat se remarcă printr-o bază de pin și woody notes."
   },
   {
     "cod": "737052893877",
@@ -5409,7 +5738,9 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3346130010166-bottle.jpg"
+    "bottle_image": "assets/products/3346130010166-bottle.jpg",
+    "description": "Parfum unisex original Hermes, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3346133500022",
@@ -5419,7 +5750,9 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3346133500022-bottle.jpg"
+    "bottle_image": "assets/products/3346133500022-bottle.jpg",
+    "description": "Parfum unisex original Hermes, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3346133500046",
@@ -5429,7 +5762,9 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 1,
-    "bottle_image": "assets/products/3346133500046-bottle.jpg"
+    "bottle_image": "assets/products/3346133500046-bottle.jpg",
+    "description": "Parfum unisex original Hermes, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3346131501816",
@@ -5458,7 +5793,16 @@
     "category_label": "Parfumuri",
     "price": 749.0,
     "stock": 2,
-    "bottle_image": "assets/products/3346130022916-bottle.jpg"
+    "bottle_image": "assets/products/3346130022916-bottle.jpg",
+    "family": "Lemnos Citrice",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2006,
+    "notes_top": "Portocală, Grepfrut",
+    "notes_mid": "Piper, Pelargonium, Flint",
+    "notes_base": "Vetiver, Lemn de cedru, Patchouli, Benzoe",
+    "description": "O compoziție lemnos-citric, marcată de piper, pelargonium și flint și o bază caldă de vetiver și lemn de cedru."
   },
   {
     "cod": "3346130009726",
@@ -5506,7 +5850,16 @@
     "category_label": "Parfumuri",
     "price": 449.0,
     "stock": 1,
-    "bottle_image": "assets/products/3346130433712-bottle.jpg"
+    "bottle_image": "assets/products/3346130433712-bottle.jpg",
+    "family": "Lemnos Citrice",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2006,
+    "notes_top": "Portocală, Grepfrut",
+    "notes_mid": "Piper, Pelargonium, Flint",
+    "notes_base": "Vetiver, Lemn de cedru, Patchouli, Benzoe",
+    "description": "Distinctiv prin portocală și grepfrut, acest parfum lemnos-citric se remarcă printr-o bază de vetiver și lemn de cedru."
   },
   {
     "cod": "3346130417187",
@@ -5516,7 +5869,9 @@
     "category_label": "Parfumuri",
     "price": 769.0,
     "stock": 2,
-    "bottle_image": "assets/products/3346130417187-bottle.jpg"
+    "bottle_image": "assets/products/3346130417187-bottle.jpg",
+    "description": "Un set unisex Hermes, ideal pentru a descoperi parfumul în mai multe formate dintr-o dată.",
+    "gender": "Unisex"
   },
   {
     "cod": "3346131430741",
@@ -5602,7 +5957,9 @@
     "category_label": "Parfumuri",
     "price": 799.0,
     "stock": 1,
-    "bottle_image": "assets/products/3348901664653-bottle.jpg"
+    "bottle_image": "assets/products/3348901664653-bottle.jpg",
+    "description": "Jadore aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3414200802192",
@@ -5631,7 +5988,16 @@
     "category_label": "Parfumuri",
     "price": 449.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460097321-bottle.jpg"
+    "bottle_image": "assets/products/3386460097321-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2018,
+    "notes_top": "Prune, Litchi, Grepfrut",
+    "notes_mid": "Heliotrop, Orhidee de vanilie, Iasomie, Flori de portocal",
+    "notes_base": "Fasole tonka, Vanilie, Benzoe, Cafea, Alună, Lemn de santal",
+    "description": "O compoziție oriental-floral, marcată de heliotrop, orhidee de vanilie și iasomie și o bază caldă de fasole tonka și vanilie."
   },
   {
     "cod": "3386460081924",
@@ -5641,7 +6007,9 @@
     "category_label": "Parfumuri",
     "price": 449.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460081924-bottle.jpg"
+    "bottle_image": "assets/products/3386460081924-bottle.jpg",
+    "description": "Un set masculin Jimmy Choo, ideal pentru a descoperi parfumul în mai multe formate dintr-o dată.",
+    "gender": "Bărbați"
   },
   {
     "cod": "3386460149747",
@@ -5651,7 +6019,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460149747-bottle.jpg"
+    "bottle_image": "assets/products/3386460149747-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2023,
+    "notes_top": "Frangipani, Iasomie",
+    "notes_mid": "Lapte de cocos, Orhidee",
+    "notes_base": "Vanilie, Lemn de santal",
+    "description": "Distinctiv prin frangipani și iasomie, acest parfum floral se remarcă printr-o bază de vanilie și lemn de santal."
   },
   {
     "cod": "3386460136549",
@@ -5661,7 +6038,16 @@
     "category_label": "Parfumuri",
     "price": 449.0,
     "stock": 4,
-    "bottle_image": "assets/products/3386460136549-bottle.jpg"
+    "bottle_image": "assets/products/3386460136549-bottle.jpg",
+    "family": "Fructat Lemnos",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2020,
+    "notes_top": "Litchi, Zmeură, Pere",
+    "notes_mid": "Trandafir, Lemn de cedru, White Blossom",
+    "notes_base": "Mosc, Lemn de santal",
+    "description": "Jimmy Choo propune o compoziție fructat-lemnos, deschisă cu litchi și zmeură peste o inimă de trandafir, lemn de cedru și white blossom."
   },
   {
     "cod": "3386460137553",
@@ -5671,7 +6057,16 @@
     "category_label": "Parfumuri",
     "price": 349.0,
     "stock": 2,
-    "bottle_image": "assets/products/3386460137553-bottle.jpg"
+    "bottle_image": "assets/products/3386460137553-bottle.jpg",
+    "family": "Fructat Lemnos",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2020,
+    "notes_top": "Litchi, Zmeură, Pere",
+    "notes_mid": "Trandafir, Lemn de cedru, White Blossom",
+    "notes_base": "Mosc, Lemn de santal",
+    "description": "Jimmy Choo propune o compoziție fructat-lemnos, deschisă cu litchi și zmeură peste o inimă de trandafir, lemn de cedru și white blossom."
   },
   {
     "cod": "3386460146210",
@@ -5681,7 +6076,9 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 2,
-    "bottle_image": "assets/products/3386460146210-bottle.jpg"
+    "bottle_image": "assets/products/3386460146210-bottle.jpg",
+    "description": "Set unisex Jimmy Choo, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614228858045",
@@ -5748,7 +6145,16 @@
     "category_label": "Parfumuri",
     "price": 89.0,
     "stock": 2,
-    "bottle_image": "assets/products/3414206000714-bottle.jpg"
+    "bottle_image": "assets/products/3414206000714-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 1989,
+    "notes_top": "Flori de portocal, Mandarine, Bergamotă, Amalfi Lemon",
+    "notes_mid": "Scorțișoară, Heliotrop, Iasomie, Cardamom, Lăcrămioare",
+    "notes_base": "Vanilie, Fasole tonka, Lemn de santal, Patchouli, Miere, Tutun, Vetiver",
+    "description": "Joop propune o compoziție citric-floral, deschisă cu flori de portocal și mandarine peste o inimă de scorțișoară, heliotrop și iasomie."
   },
   {
     "cod": "3414202772219",
@@ -5834,7 +6240,9 @@
     "category_label": "Parfumuri",
     "price": 779.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415109390-bottle.jpg"
+    "bottle_image": "assets/products/8435415109390-bottle.jpg",
+    "description": "Parfum unisex original Jean Paul Gaultier, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "8435415076838",
@@ -5844,7 +6252,16 @@
     "category_label": "Parfumuri",
     "price": 779.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415076838-bottle.jpg"
+    "bottle_image": "assets/products/8435415076838-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2026,
+    "notes_top": "Zmeură, Citruses, Bergamotă",
+    "notes_mid": "Solar Notes, Ylang Ylang, Meringue, Geraniu, Calone, Iasomie, Pelargonium",
+    "notes_base": "Benzoe, Pine Tree, Vanilie, Chihlimbar, Coumarin",
+    "description": "Un oriental-floral echilibrat, cu solar notes, ylang ylang și meringue pe fond de benzoe și pine tree."
   },
   {
     "cod": "8435415076814",
@@ -5854,7 +6271,16 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415076814-bottle.jpg"
+    "bottle_image": "assets/products/8435415076814-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2026,
+    "notes_top": "Zmeură, Citruses, Bergamotă",
+    "notes_mid": "Solar Notes, Ylang Ylang, Meringue, Geraniu, Calone, Iasomie, Pelargonium",
+    "notes_base": "Benzoe, Pine Tree, Vanilie, Chihlimbar, Coumarin",
+    "description": "Un oriental-floral echilibrat, cu solar notes, ylang ylang și meringue pe fond de benzoe și pine tree."
   },
   {
     "cod": "8435415076821",
@@ -5864,7 +6290,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415076821-bottle.jpg"
+    "bottle_image": "assets/products/8435415076821-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2026,
+    "notes_top": "Zmeură, Citruses, Bergamotă",
+    "notes_mid": "Solar Notes, Ylang Ylang, Meringue, Geraniu, Calone, Iasomie, Pelargonium",
+    "notes_base": "Benzoe, Pine Tree, Vanilie, Chihlimbar, Coumarin",
+    "description": "Un oriental-floral echilibrat, cu solar notes, ylang ylang și meringue pe fond de benzoe și pine tree."
   },
   {
     "cod": "8435415105316",
@@ -5950,7 +6385,16 @@
     "category_label": "Parfumuri",
     "price": 799.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415091251-bottle.jpg"
+    "bottle_image": "assets/products/8435415091251-bottle.jpg",
+    "family": "Oriental",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2021,
+    "notes_top": "Pere",
+    "notes_mid": "Fasole tonka, Iasomie",
+    "notes_base": "Vanilie",
+    "description": "O compoziție oriental, marcată de fasole tonka și iasomie și o bază caldă de vanilie."
   },
   {
     "cod": "8435415017206",
@@ -6321,7 +6765,16 @@
     "category_label": "Parfumuri",
     "price": 629.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415082624-bottle.jpg"
+    "bottle_image": "assets/products/8435415082624-bottle.jpg",
+    "family": "Citrice Lemnos",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2021,
+    "notes_top": "Mandarine, Salvie de Grădină",
+    "notes_mid": "Caramel, Fasole tonka",
+    "notes_base": "Vetiver",
+    "description": "Jean Paul Gaultier propune o compoziție citric-lemnos, deschisă cu mandarine și salvie de grădină peste o inimă de caramel și fasole tonka."
   },
   {
     "cod": "8435415103206",
@@ -6426,7 +6879,16 @@
     "category_label": "Parfumuri",
     "price": 529.0,
     "stock": 2,
-    "bottle_image": "assets/products/8435415050753-bottle.jpg"
+    "bottle_image": "assets/products/8435415050753-bottle.jpg",
+    "family": "Floral Oriental",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2022,
+    "notes_top": "Iasomie",
+    "notes_mid": "Caramel, Sare",
+    "notes_base": "Vanilie",
+    "description": "Un floral-oriental echilibrat, cu caramel și sare pe fond de vanilie."
   },
   {
     "cod": "8435415050760",
@@ -6436,7 +6898,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415050760-bottle.jpg"
+    "bottle_image": "assets/products/8435415050760-bottle.jpg",
+    "family": "Floral Oriental",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2022,
+    "notes_top": "Iasomie",
+    "notes_mid": "Caramel, Sare",
+    "notes_base": "Vanilie",
+    "description": "Un floral-oriental echilibrat, cu caramel și sare pe fond de vanilie."
   },
   {
     "cod": "8435415084918",
@@ -6484,7 +6955,9 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415058711-bottle.jpg"
+    "bottle_image": "assets/products/8435415058711-bottle.jpg",
+    "description": "O compoziție unisex din colecția Jean Paul Gaultier, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "8435415058346",
@@ -6494,7 +6967,9 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415058346-bottle.jpg"
+    "bottle_image": "assets/products/8435415058346-bottle.jpg",
+    "description": "Parfum unisex original Jean Paul Gaultier, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3386460087261",
@@ -6523,7 +6998,9 @@
     "category_label": "Parfumuri",
     "price": 349.0,
     "stock": 4,
-    "bottle_image": "assets/products/3386460087254-bottle.jpg"
+    "bottle_image": "assets/products/3386460087254-bottle.jpg",
+    "description": "Parfum unisex original Karl, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3386460124430",
@@ -6533,7 +7010,16 @@
     "category_label": "Parfumuri",
     "price": 349.0,
     "stock": 2,
-    "bottle_image": "assets/products/3386460124430-bottle.jpg"
+    "bottle_image": "assets/products/3386460124430-bottle.jpg",
+    "family": "Lemnos Oriental",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1978,
+    "notes_top": "Aldehide, Tarragon, Salvie de Grădină, Bergamotă, Lămâie, Note verzi",
+    "notes_mid": "Tutun, Lemn de santal, Rădăcină de iris, Patchouli, Trandafir, Lemn de cedru, Iasomie",
+    "notes_base": "Chihlimbar, Mosc, Vanilie, Mușchi de stejar, Fasole tonka",
+    "description": "Un parfum lemnos-oriental cu aldehide și tarragon în deschidere, pe fond de chihlimbar și mosc."
   },
   {
     "cod": "3700550232971",
@@ -6581,7 +7067,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 5,
-    "bottle_image": "assets/products/3386460165884-bottle.jpg"
+    "bottle_image": "assets/products/3386460165884-bottle.jpg",
+    "family": "Oriental",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2025,
+    "notes_top": "Tangerine, Frankincense",
+    "notes_mid": "Lavandă, Geraniu",
+    "notes_base": "Ambroxan, Vetiver",
+    "description": "Lacoste propune o compoziție oriental, deschisă cu tangerine și frankincense peste o inimă de lavandă și geraniu."
   },
   {
     "cod": "3386460149150",
@@ -6629,7 +7124,9 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 4,
-    "bottle_image": "assets/products/3386460149082-bottle.jpg"
+    "bottle_image": "assets/products/3386460149082-bottle.jpg",
+    "description": "Parfum unisex original Lacoste, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3386460149105",
@@ -6639,7 +7136,9 @@
     "category_label": "Parfumuri",
     "price": 369.0,
     "stock": 3,
-    "bottle_image": "assets/products/3386460149105-bottle.jpg"
+    "bottle_image": "assets/products/3386460149105-bottle.jpg",
+    "description": "Lacoste aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3386460149181",
@@ -6649,7 +7148,16 @@
     "category_label": "Parfumuri",
     "price": 369.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460149181-bottle.jpg"
+    "bottle_image": "assets/products/3386460149181-bottle.jpg",
+    "family": "Floral Condimentat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2004,
+    "notes_top": "Piper, Ghimbir, Cardamom",
+    "notes_mid": "Nucă de cocos, Gardenie, Flori de portocal, Bujor",
+    "notes_base": "Lemn de santal, Mosc, Chihlimbar",
+    "description": "O compoziție floral-picant, marcată de nucă de cocos, gardenie și flori de portocal și o bază caldă de lemn de santal și mosc."
   },
   {
     "cod": "3386460149976",
@@ -6659,7 +7167,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460149976-bottle.jpg"
+    "bottle_image": "assets/products/3386460149976-bottle.jpg",
+    "family": "Lemnos Oriental",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2024,
+    "notes_top": "Bergamotă, Piper roz, Cardamom",
+    "notes_mid": "Salvie de Grădină, Lavandă",
+    "notes_base": "Amber Xtreme, Lemn de santal, Patchouli, Fasole tonka",
+    "description": "O compoziție lemnos-oriental, marcată de salvie de grădină și lavandă și o bază caldă de amber xtreme și lemn de santal."
   },
   {
     "cod": "3386460165969",
@@ -6726,7 +7243,9 @@
     "category_label": "Parfumuri",
     "price": 369.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460165891-bottle.jpg"
+    "bottle_image": "assets/products/3386460165891-bottle.jpg",
+    "description": "O compoziție masculin din colecția Lacoste, gândită pentru cei care caută distincție.",
+    "gender": "Bărbați"
   },
   {
     "cod": "3614273476164",
@@ -6945,7 +7464,16 @@
     "category_label": "Parfumuri",
     "price": 799.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274169706-bottle.jpg"
+    "bottle_image": "assets/products/3614274169706-bottle.jpg",
+    "family": "Lemnos Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2007,
+    "notes_top": "Violetă, Piersică",
+    "notes_mid": "Miere, Bulgarian Rose, Heliotrop, Lemn de cedru",
+    "notes_base": "Lemn de santal, Vanilie, Vetiver, Mosc",
+    "description": "O compoziție lemnos-floral, marcată de miere, bulgarian rose și heliotrop și o bază caldă de lemn de santal și vanilie."
   },
   {
     "cod": "3614272992054",
@@ -6955,7 +7483,9 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272992054-bottle.jpg"
+    "bottle_image": "assets/products/3614272992054-bottle.jpg",
+    "description": "Parfum unisex original Lancome, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614272964679",
@@ -6965,7 +7495,9 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272964679-bottle.jpg"
+    "bottle_image": "assets/products/3614272964679-bottle.jpg",
+    "description": "O compoziție unisex din colecția Lancome, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614273922975",
@@ -6975,7 +7507,16 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 2,
-    "bottle_image": "assets/products/3614273922975-bottle.jpg"
+    "bottle_image": "assets/products/3614273922975-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2023,
+    "notes_top": "Coacăze negre, Smochine, Flori de portocal",
+    "notes_mid": "Flori de portocal, Iasomie",
+    "notes_base": "Iris, Gourmand Accord, Patchouli",
+    "description": "Un parfum floral cu coacăze negre și smochine în deschidere, pe fond de iris și gourmand accord."
   },
   {
     "cod": "3614273924368",
@@ -6985,7 +7526,16 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273924368-bottle.jpg"
+    "bottle_image": "assets/products/3614273924368-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2023,
+    "notes_top": "Frankincense, Red Fruits, Bergamotă",
+    "notes_mid": "Iris Pallida, Trandafir de Damasc",
+    "notes_base": "Oud",
+    "description": "Un floral echilibrat, cu iris pallida și trandafir de damasc pe fond de oud."
   },
   {
     "cod": "3614273924375",
@@ -6995,7 +7545,16 @@
     "category_label": "Parfumuri",
     "price": 659.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273924375-bottle.jpg"
+    "bottle_image": "assets/products/3614273924375-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2023,
+    "notes_top": "Frankincense, Red Fruits, Bergamotă",
+    "notes_mid": "Iris Pallida, Trandafir de Damasc",
+    "notes_base": "Oud",
+    "description": "Un parfum floral cu frankincense și red fruits în deschidere, pe fond de oud."
   },
   {
     "cod": "3614274654134",
@@ -7005,7 +7564,9 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274654134-bottle.jpg"
+    "bottle_image": "assets/products/3614274654134-bottle.jpg",
+    "description": "Set unisex Lancome, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614274397253",
@@ -7015,7 +7576,16 @@
     "category_label": "Parfumuri",
     "price": 829.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274397253-bottle.jpg"
+    "bottle_image": "assets/products/3614274397253-bottle.jpg",
+    "family": "Floral Lemnos",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2025,
+    "notes_top": "Solar Notes, Iasomie",
+    "notes_mid": "Bourbon Vanilla",
+    "notes_base": "Mosc alb, Lemn de santal",
+    "description": "Un floral-lemnos echilibrat, cu bourbon vanilla pe fond de mosc alb și lemn de santal."
   },
   {
     "cod": "3614274397239",
@@ -7025,7 +7595,16 @@
     "category_label": "Parfumuri",
     "price": 469.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274397239-bottle.jpg"
+    "bottle_image": "assets/products/3614274397239-bottle.jpg",
+    "family": "Floral Lemnos",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2025,
+    "notes_top": "Solar Notes, Iasomie",
+    "notes_mid": "Bourbon Vanilla",
+    "notes_base": "Mosc alb, Lemn de santal",
+    "description": "Un floral-lemnos echilibrat, cu bourbon vanilla pe fond de mosc alb și lemn de santal."
   },
   {
     "cod": "3147758155112",
@@ -7054,7 +7633,9 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 2,
-    "bottle_image": "assets/products/6295151500019-bottle.jpg"
+    "bottle_image": "assets/products/6295151500019-bottle.jpg",
+    "description": "O compoziție unisex din colecția Mahab, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "3760265190164",
@@ -7539,7 +8120,16 @@
     "category_label": "Parfumuri",
     "price": 319.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460154949-bottle.jpg"
+    "bottle_image": "assets/products/3386460154949-bottle.jpg",
+    "family": "Floral Lemnos",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2023,
+    "notes_top": "Violet Leaves",
+    "notes_mid": "Salvie de Grădină",
+    "notes_base": "Cedarwood",
+    "description": "Montblanc propune o compoziție floral-lemnos, deschisă cu violet leaves peste o inimă de salvie de grădină."
   },
   {
     "cod": "3386460126274",
@@ -7587,7 +8177,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460074827-bottle.jpg"
+    "bottle_image": "assets/products/3386460074827-bottle.jpg",
+    "family": "Citrice Condimentat",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2016,
+    "notes_top": "Grepfrut, Bergamotă, Piper roz",
+    "notes_mid": "Water Notes, Lavandă, Cardamom",
+    "notes_base": "Mosc alb, White Woods, Lemn de cașmir, Mușchi de stejar",
+    "description": "Distinctiv prin grepfrut și bergamotă, acest parfum citric-picant se remarcă printr-o bază de mosc alb și white woods."
   },
   {
     "cod": "3760260457354",
@@ -7616,7 +8215,9 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 1,
-    "bottle_image": "assets/products/3760260450034-bottle.jpg"
+    "bottle_image": "assets/products/3760260450034-bottle.jpg",
+    "description": "Parfum masculin original Montale, o alegere elegantă pentru orice ocazie.",
+    "gender": "Bărbați"
   },
   {
     "cod": "3760260450065",
@@ -7664,7 +8265,9 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 1,
-    "bottle_image": "assets/products/3760260452717-bottle.jpg"
+    "bottle_image": "assets/products/3760260452717-bottle.jpg",
+    "description": "Montale aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3760260451987",
@@ -7693,7 +8296,16 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3760260457118-bottle.jpg"
+    "bottle_image": "assets/products/3760260457118-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2009,
+    "notes_top": "Caise, Mandarine",
+    "notes_mid": "Iasomie, Neroli, Flori de portocal",
+    "notes_base": "Mosc, Patchouli, Vanilie",
+    "description": "Un citric-floral echilibrat, cu iasomie, neroli și flori de portocal pe fond de mosc și patchouli."
   },
   {
     "cod": "3760260457019",
@@ -7741,7 +8353,9 @@
     "category_label": "Parfumuri",
     "price": 429.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460166973-bottle.jpg"
+    "bottle_image": "assets/products/3386460166973-bottle.jpg",
+    "description": "Set unisex Montblanc, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3386460154598",
@@ -7751,7 +8365,9 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3386460154598-bottle.jpg"
+    "bottle_image": "assets/products/3386460154598-bottle.jpg",
+    "description": "Set unisex Montblanc, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3386460074834",
@@ -7780,7 +8396,9 @@
     "category_label": "Parfumuri",
     "price": 139.0,
     "stock": 1,
-    "bottle_image": "assets/products/7290113146600-bottle.jpg"
+    "bottle_image": "assets/products/7290113146600-bottle.jpg",
+    "description": "Un parfum unisex Moroccanoil, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "7290113141230",
@@ -7790,7 +8408,9 @@
     "category_label": "Parfumuri",
     "price": 159.0,
     "stock": 1,
-    "bottle_image": "assets/products/7290113141230-bottle.jpg"
+    "bottle_image": "assets/products/7290113141230-bottle.jpg",
+    "description": "Parfum unisex original Moroccanoil, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "7290014344372",
@@ -7800,7 +8420,9 @@
     "category_label": "Parfumuri",
     "price": 239.0,
     "stock": 1,
-    "bottle_image": "assets/products/7290014344372-bottle.jpg"
+    "bottle_image": "assets/products/7290014344372-bottle.jpg",
+    "description": "Un parfum unisex Moroccanoil, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8717774840061",
@@ -7924,7 +8546,9 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 3,
-    "bottle_image": "assets/products/6290025488332-bottle.jpg"
+    "bottle_image": "assets/products/6290025488332-bottle.jpg",
+    "description": "Un parfum unisex North, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "6290025488356",
@@ -7934,7 +8558,9 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 2,
-    "bottle_image": "assets/products/6290025488356-bottle.jpg"
+    "bottle_image": "assets/products/6290025488356-bottle.jpg",
+    "description": "Un parfum unisex North, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "6290025488363",
@@ -7944,7 +8570,9 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 2,
-    "bottle_image": "assets/products/6290025488363-bottle.jpg"
+    "bottle_image": "assets/products/6290025488363-bottle.jpg",
+    "description": "O compoziție unisex din colecția North, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "3423222081416",
@@ -7954,7 +8582,9 @@
     "category_label": "Parfumuri",
     "price": 149.0,
     "stock": 2,
-    "bottle_image": "assets/products/3423222081416-bottle.jpg"
+    "bottle_image": "assets/products/3423222081416-bottle.jpg",
+    "description": "Un parfum unisex Nr, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3423222092702",
@@ -7964,7 +8594,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3423222092702-bottle.jpg"
+    "bottle_image": "assets/products/3423222092702-bottle.jpg",
+    "description": "Set unisex Nr, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3423222107604",
@@ -7974,7 +8606,9 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 5,
-    "bottle_image": "assets/products/3423222107604-bottle.jpg"
+    "bottle_image": "assets/products/3423222107604-bottle.jpg",
+    "description": "Un parfum feminin Nr, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Femei"
   },
   {
     "cod": "3349668600304",
@@ -8136,7 +8770,16 @@
     "category_label": "Parfumuri",
     "price": 719.0,
     "stock": 2,
-    "bottle_image": "assets/products/3349668642878-bottle.jpg"
+    "bottle_image": "assets/products/3349668642878-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2022,
+    "notes_top": "Mango, Bergamotă",
+    "notes_mid": "Iasomie, Tămâie",
+    "notes_base": "Vanilie, Lemn de santal",
+    "description": "Un citric-floral echilibrat, cu iasomie și tămâie pe fond de vanilie și lemn de santal."
   },
   {
     "cod": "3349668515660",
@@ -8298,7 +8941,9 @@
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
-    "bottle_image": "assets/products/3349668623624-bottle.jpg"
+    "bottle_image": "assets/products/3349668623624-bottle.jpg",
+    "description": "Set unisex Paco Rabanne, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3349668508587",
@@ -8593,7 +9238,9 @@
     "category_label": "Parfumuri",
     "price": 319.0,
     "stock": 2,
-    "bottle_image": "assets/products/3349668599424-bottle.jpg"
+    "bottle_image": "assets/products/3349668599424-bottle.jpg",
+    "description": "Un parfum unisex Paco Rabanne, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3349668582365",
@@ -8964,7 +9611,9 @@
     "category_label": "Parfumuri",
     "price": 59.0,
     "stock": 5,
-    "bottle_image": "assets/products/309974104012-bottle.jpg"
+    "bottle_image": "assets/products/309974104012-bottle.jpg",
+    "description": "Un parfum unisex Revlon, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "6295151503942",
@@ -9031,7 +9680,16 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 2,
-    "bottle_image": "assets/products/6297001574201-bottle.jpg"
+    "bottle_image": "assets/products/6297001574201-bottle.jpg",
+    "family": "Lemnos Oriental",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2025,
+    "notes_top": "Zahăr, Șofran, Mandarine",
+    "notes_mid": "Fasole tonka, Trandafir de Damasc, Agarwood",
+    "notes_base": "Caramel, Lemn ambrat, Lemn de cedru",
+    "description": "O compoziție lemnos-oriental, marcată de fasole tonka, trandafir de damasc și agarwood și o bază caldă de caramel și lemn ambrat."
   },
   {
     "cod": "6295151503935",
@@ -9041,7 +9699,16 @@
     "category_label": "Parfumuri",
     "price": 219.0,
     "stock": 1,
-    "bottle_image": "assets/products/6295151503935-bottle.jpg"
+    "bottle_image": "assets/products/6295151503935-bottle.jpg",
+    "family": "Citrice Lemnos",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2025,
+    "notes_top": "Lemon Zest, Piper roz, Grepfrut",
+    "notes_mid": "Lemn de cedru, Salvie de Grădină, Ghimbir",
+    "notes_base": "Labdanum, Lemn de santal, Chihlimbar, Resin",
+    "description": "Un parfum citric-lemnos cu lemon zest și piper roz în deschidere, pe fond de labdanum și lemn de santal."
   },
   {
     "cod": "6294015190618",
@@ -9070,7 +9737,9 @@
     "category_label": "Parfumuri",
     "price": 179.0,
     "stock": 3,
-    "bottle_image": "assets/products/6294015198942-bottle.jpg"
+    "bottle_image": "assets/products/6294015198942-bottle.jpg",
+    "description": "Parfum unisex original Risala, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134143348",
@@ -9080,7 +9749,9 @@
     "category_label": "Parfumuri",
     "price": 59.0,
     "stock": 3,
-    "bottle_image": "assets/products/8719134143348-bottle.jpg"
+    "bottle_image": "assets/products/8719134143348-bottle.jpg",
+    "description": "Un parfum unisex Rituals, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134204223",
@@ -9090,7 +9761,9 @@
     "category_label": "Parfumuri",
     "price": 99.0,
     "stock": 2,
-    "bottle_image": "assets/products/8719134204223-bottle.jpg"
+    "bottle_image": "assets/products/8719134204223-bottle.jpg",
+    "description": "O compoziție unisex din colecția Rituals, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134204285",
@@ -9100,7 +9773,9 @@
     "category_label": "Parfumuri",
     "price": 99.0,
     "stock": 2,
-    "bottle_image": "assets/products/8719134204285-bottle.jpg"
+    "bottle_image": "assets/products/8719134204285-bottle.jpg",
+    "description": "Rituals aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134150872",
@@ -9110,7 +9785,9 @@
     "category_label": "Parfumuri",
     "price": 89.0,
     "stock": 1,
-    "bottle_image": "assets/products/8719134150872-bottle.jpg"
+    "bottle_image": "assets/products/8719134150872-bottle.jpg",
+    "description": "Un parfum unisex Rituals, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134152760",
@@ -9120,7 +9797,9 @@
     "category_label": "Parfumuri",
     "price": 99.0,
     "stock": 2,
-    "bottle_image": "assets/products/8719134152760-bottle.jpg"
+    "bottle_image": "assets/products/8719134152760-bottle.jpg",
+    "description": "Un parfum unisex Rituals, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134186192",
@@ -9130,7 +9809,9 @@
     "category_label": "Parfumuri",
     "price": 179.0,
     "stock": 2,
-    "bottle_image": "assets/products/8719134186192-bottle.jpg"
+    "bottle_image": "assets/products/8719134186192-bottle.jpg",
+    "description": "Un parfum unisex Rituals, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134161328",
@@ -9140,7 +9821,9 @@
     "category_label": "Parfumuri",
     "price": 89.0,
     "stock": 1,
-    "bottle_image": "assets/products/8719134161328-bottle.jpg"
+    "bottle_image": "assets/products/8719134161328-bottle.jpg",
+    "description": "Un parfum unisex Rituals, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134208580",
@@ -9150,7 +9833,16 @@
     "category_label": "Parfumuri",
     "price": 349.0,
     "stock": 2,
-    "bottle_image": "assets/products/8719134208580-bottle.jpg"
+    "bottle_image": "assets/products/8719134208580-bottle.jpg",
+    "family": "Floral Lemnos",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1997,
+    "notes_top": "Lavandă, Rozmarin, Bergamotă, Grepfrut, Pomelo, Mandarine, Tangerine",
+    "notes_mid": "Lemn de cedru, Iris, Lăcrămioare, Iasomie",
+    "notes_base": "Mușchi de stejar, Lemn de santal, Vanilie, Patchouli, Chihlimbar",
+    "description": "Un parfum floral-lemnos cu lavandă și rozmarin în deschidere, pe fond de mușchi de stejar și lemn de santal."
   },
   {
     "cod": "8719134201598",
@@ -9160,7 +9852,9 @@
     "category_label": "Parfumuri",
     "price": 149.0,
     "stock": 2,
-    "bottle_image": "assets/products/8719134201598-bottle.jpg"
+    "bottle_image": "assets/products/8719134201598-bottle.jpg",
+    "description": "Rituals propune acest set cadou unisex, o alegere potrivită atât pentru uz zilnic, cât și pentru călătorii.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134177886",
@@ -9170,7 +9864,9 @@
     "category_label": "Parfumuri",
     "price": 119.0,
     "stock": 2,
-    "bottle_image": "assets/products/8719134177886-bottle.jpg"
+    "bottle_image": "assets/products/8719134177886-bottle.jpg",
+    "description": "Parfum unisex original Rituals, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "8719134152562",
@@ -9180,7 +9876,9 @@
     "category_label": "Parfumuri",
     "price": 119.0,
     "stock": 1,
-    "bottle_image": "assets/products/8719134152562-bottle.jpg"
+    "bottle_image": "assets/products/8719134152562-bottle.jpg",
+    "description": "Parfum unisex original Rituals, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "8052464891306",
@@ -9209,7 +9907,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/8052086379336-bottle.jpg"
+    "bottle_image": "assets/products/8052086379336-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2011,
+    "notes_top": "Piper roz, Coacăze negre",
+    "notes_mid": "Trandafir, Bujor, Iasomie",
+    "notes_base": "Panacotta, Mosc, Patchouli",
+    "description": "O compoziție floral, marcată de trandafir, bujor și iasomie și o bază caldă de panacotta și mosc."
   },
   {
     "cod": "8034097959752",
@@ -9352,7 +10059,16 @@
     "category_label": "Parfumuri",
     "price": 179.0,
     "stock": 3,
-    "bottle_image": "assets/products/768614155263-bottle.jpg"
+    "bottle_image": "assets/products/768614155263-bottle.jpg",
+    "family": "Floral",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 1975,
+    "notes_top": "Galbanum, Tangerine, Ananas",
+    "notes_mid": "Piper, Ylang-Ylang, Iasomie, Violetă",
+    "notes_base": "Chihlimbar, Lemn de santal, Mosc",
+    "description": "Un floral echilibrat, cu piper, ylang-ylang și iasomie pe fond de chihlimbar și lemn de santal."
   },
   {
     "cod": "768614102021",
@@ -9381,7 +10097,9 @@
     "category_label": "Parfumuri",
     "price": 679.0,
     "stock": 1,
-    "bottle_image": "assets/products/3346130012245-bottle.jpg"
+    "bottle_image": "assets/products/3346130012245-bottle.jpg",
+    "description": "Terre aduce o compoziție masculin rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Bărbați"
   },
   {
     "cod": "8016741632433",
@@ -9429,7 +10147,16 @@
     "category_label": "Parfumuri",
     "price": 1890.0,
     "stock": 1,
-    "bottle_image": "assets/products/8016741422621-bottle.jpg"
+    "bottle_image": "assets/products/8016741422621-bottle.jpg",
+    "family": "Fructat Floral",
+    "gender": "Unisex",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2020,
+    "notes_top": "Green Apple, Mentă, Pepene galben, Pere, Coacăze negre, Iarbă",
+    "notes_mid": "Ambră gri, Bulgarian Rose, Iasomie Sambac, Heliotrop",
+    "notes_base": "Mosc, Vanilie, Lemn de cedru, Mesteacăn",
+    "description": "O compoziție fructat-floral, marcată de ambră gri, bulgarian rose și iasomie sambac și o bază caldă de mosc și vanilie."
   },
   {
     "cod": "8016741882517",
@@ -9477,7 +10204,16 @@
     "category_label": "Parfumuri",
     "price": 1890.0,
     "stock": 1,
-    "bottle_image": "assets/products/8016741402654-bottle.jpg"
+    "bottle_image": "assets/products/8016741402654-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Unisex",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2021,
+    "notes_top": "Bergamotă de Calabria, Grepfrut, Iris, Green Mandarin",
+    "notes_mid": "Coacăze negre, Iris, Tuscan Iris, Ceai verde",
+    "notes_base": "Mosc, Galbanum, Patchouli, Australian Sandalwood",
+    "description": "Tiziana Terenzi propune o compoziție citric-floral, deschisă cu bergamotă de calabria și grepfrut peste o inimă de coacăze negre, tuscan iris și ceai verde."
   },
   {
     "cod": "3439600055726",
@@ -9487,7 +10223,16 @@
     "category_label": "Parfumuri",
     "price": 479.0,
     "stock": 1,
-    "bottle_image": "assets/products/3439600055726-bottle.jpg"
+    "bottle_image": "assets/products/3439600055726-bottle.jpg",
+    "family": "Floral Lemnos",
+    "gender": "Bărbați",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 1997,
+    "notes_top": "Lavandă, Rozmarin, Bergamotă, Grepfrut, Pomelo, Mandarine, Tangerine",
+    "notes_mid": "Lemn de cedru, Iris, Lăcrămioare, Iasomie",
+    "notes_base": "Mușchi de stejar, Lemn de santal, Vanilie, Patchouli, Chihlimbar",
+    "description": "O compoziție floral-lemnos, marcată de lemn de cedru, iris și lăcrămioare și o bază caldă de mușchi de stejar și lemn de santal."
   },
   {
     "cod": "3439600056907",
@@ -9497,7 +10242,9 @@
     "category_label": "Parfumuri",
     "price": 369.0,
     "stock": 2,
-    "bottle_image": "assets/products/3439600056907-bottle.jpg"
+    "bottle_image": "assets/products/3439600056907-bottle.jpg",
+    "description": "O compoziție unisex din colecția Tom Ford, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "3439600056921",
@@ -9507,7 +10254,9 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 2,
-    "bottle_image": "assets/products/3439600056921-bottle.jpg"
+    "bottle_image": "assets/products/3439600056921-bottle.jpg",
+    "description": "Tom Ford aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3660732597802",
@@ -9517,7 +10266,9 @@
     "category_label": "Parfumuri",
     "price": 789.0,
     "stock": 1,
-    "bottle_image": "assets/products/3660732597802-bottle.jpg"
+    "bottle_image": "assets/products/3660732597802-bottle.jpg",
+    "description": "Tom Ford propune acest set cadou unisex, o alegere potrivită atât pentru uz zilnic, cât și pentru călătorii.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614274289473",
@@ -9527,7 +10278,9 @@
     "category_label": "Parfumuri",
     "price": 799.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274289473-bottle.jpg"
+    "bottle_image": "assets/products/3614274289473-bottle.jpg",
+    "description": "Tom Ford aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3439601204628",
@@ -9537,7 +10290,9 @@
     "category_label": "Parfumuri",
     "price": 529.0,
     "stock": 1,
-    "bottle_image": "assets/products/3439601204628-bottle.jpg"
+    "bottle_image": "assets/products/3439601204628-bottle.jpg",
+    "description": "Un parfum unisex Tom Ford, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614273560405",
@@ -9547,7 +10302,9 @@
     "category_label": "Parfumuri",
     "price": 589.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273560405-bottle.jpg"
+    "bottle_image": "assets/products/3614273560405-bottle.jpg",
+    "description": "Tom Ford aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614273673419",
@@ -9557,7 +10314,9 @@
     "category_label": "Parfumuri",
     "price": 519.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273673419-bottle.jpg"
+    "bottle_image": "assets/products/3614273673419-bottle.jpg",
+    "description": "O compoziție unisex din colecția Tom Ford, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614274066982",
@@ -9567,7 +10326,9 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274066982-bottle.jpg"
+    "bottle_image": "assets/products/3614274066982-bottle.jpg",
+    "description": "Parfum unisex original Tom Ford, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614274503234",
@@ -9577,7 +10338,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274503234-bottle.jpg"
+    "bottle_image": "assets/products/3614274503234-bottle.jpg",
+    "description": "Parfum unisex original Tom Ford, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614274102710",
@@ -9587,7 +10350,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274102710-bottle.jpg"
+    "bottle_image": "assets/products/3614274102710-bottle.jpg",
+    "description": "Set unisex Tom Ford, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614274076745",
@@ -9597,7 +10362,9 @@
     "category_label": "Parfumuri",
     "price": 799.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614274076745-bottle.jpg"
+    "bottle_image": "assets/products/3614274076745-bottle.jpg",
+    "description": "Tom Ford aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "3439600049855",
@@ -9607,7 +10374,9 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3439600049855-bottle.jpg"
+    "bottle_image": "assets/products/3439600049855-bottle.jpg",
+    "description": "O compoziție unisex din colecția Tom Ford, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "3439600018547",
@@ -9617,7 +10386,9 @@
     "category_label": "Parfumuri",
     "price": 179.0,
     "stock": 1,
-    "bottle_image": "assets/products/3439600018547-bottle.jpg"
+    "bottle_image": "assets/products/3439600018547-bottle.jpg",
+    "description": "O compoziție unisex din colecția Tom Ford, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "3439600018417",
@@ -9627,7 +10398,9 @@
     "category_label": "Parfumuri",
     "price": 439.0,
     "stock": 1,
-    "bottle_image": "assets/products/3439600018417-bottle.jpg"
+    "bottle_image": "assets/products/3439600018417-bottle.jpg",
+    "description": "Tom Ford aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "888066000079",
@@ -9713,7 +10486,16 @@
     "category_label": "Parfumuri",
     "price": 1399.0,
     "stock": 1,
-    "bottle_image": "assets/products/888066083379-bottle.jpg"
+    "bottle_image": "assets/products/888066083379-bottle.jpg",
+    "family": "Oriental Aromatic",
+    "gender": "Unisex",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2017,
+    "notes_top": "Lavandă, Salvie de Grădină",
+    "notes_mid": "Piele, Bitter Almond, Vanilie, Orris",
+    "notes_base": "Piele, Fasole tonka, Cashmeran, White Woods, Chihlimbar",
+    "description": "Tom Ford propune o compoziție oriental-aromatic, deschisă cu lavandă și salvie de grădină peste o inimă de piele, bitter almond și vanilie."
   },
   {
     "cod": "888066089272",
@@ -9913,7 +10695,9 @@
     "category_label": "Parfumuri",
     "price": 279.0,
     "stock": 1,
-    "bottle_image": "assets/products/6290361912362-bottle.jpg"
+    "bottle_image": "assets/products/6290361912362-bottle.jpg",
+    "description": "Parfum unisex original Uhud, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3660732521951",
@@ -9923,7 +10707,9 @@
     "category_label": "Parfumuri",
     "price": 589.0,
     "stock": 1,
-    "bottle_image": "assets/products/3660732521951-bottle.jpg"
+    "bottle_image": "assets/products/3660732521951-bottle.jpg",
+    "description": "Set unisex Viktor & Rolf, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614273854092",
@@ -9952,7 +10738,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614270659706-bottle.jpg"
+    "bottle_image": "assets/products/3614270659706-bottle.jpg",
+    "description": "Parfum unisex original Viktor & Rolf, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614273067768",
@@ -9962,7 +10750,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273067768-bottle.jpg"
+    "bottle_image": "assets/products/3614273067768-bottle.jpg",
+    "description": "Un parfum unisex Viktor & Rolf, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3605521962225",
@@ -9972,7 +10762,16 @@
     "category_label": "Parfumuri",
     "price": 229.0,
     "stock": 1,
-    "bottle_image": "assets/products/3605521962225-bottle.jpg"
+    "bottle_image": "assets/products/3605521962225-bottle.jpg",
+    "family": "Condimentat Citrice",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2012,
+    "notes_top": "Piper roz, Elemi, Bergamotă, Grepfrut",
+    "notes_mid": "Scorțișoară, Paprika, Șofran",
+    "notes_base": "Tutun, Piele, Vetiver",
+    "description": "Un parfum picant-citric cu piper roz și elemi în deschidere, pe fond de tutun și piele."
   },
   {
     "cod": "3605521515346",
@@ -9982,7 +10781,9 @@
     "category_label": "Parfumuri",
     "price": 439.0,
     "stock": 1,
-    "bottle_image": "assets/products/3605521515346-bottle.jpg"
+    "bottle_image": "assets/products/3605521515346-bottle.jpg",
+    "description": "Parfum masculin original Viktor & Rolf, o alegere elegantă pentru orice ocazie.",
+    "gender": "Bărbați"
   },
   {
     "cod": "3660732634866",
@@ -10163,7 +10964,9 @@
     "category_label": "Parfumuri",
     "price": 79.0,
     "stock": 5,
-    "bottle_image": "assets/products/3357554720012-bottle.jpg"
+    "bottle_image": "assets/products/3357554720012-bottle.jpg",
+    "description": "Un parfum unisex Gloria Vanderbilt, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3357554210018",
@@ -10173,7 +10976,9 @@
     "category_label": "Parfumuri",
     "price": 29.0,
     "stock": 2,
-    "bottle_image": "assets/products/3357554210018-bottle.jpg"
+    "bottle_image": "assets/products/3357554210018-bottle.jpg",
+    "description": "Parfum unisex original Gloria Vanderbilt, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3600551124902",
@@ -10240,7 +11045,16 @@
     "category_label": "Parfumuri",
     "price": 79.0,
     "stock": 2,
-    "bottle_image": "assets/products/3600551060330-bottle.jpg"
+    "bottle_image": "assets/products/3600551060330-bottle.jpg",
+    "family": "Floral Condimentat",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2010,
+    "notes_top": "Clementine, Bergamotă, Neroli, Hawthorn",
+    "notes_mid": "Trandafir, Ylang-Ylang, Magnolie, Cardamom, Tuberoză, Nucșoară, Cuișoare",
+    "notes_base": "Heliotrop, Vanille, Mosc, Lemn de santal, Fasole tonka",
+    "description": "Un parfum floral-picant cu clementine și bergamotă în deschidere, pe fond de heliotrop și vanille."
   },
   {
     "cod": "8011003890989",
@@ -10269,7 +11083,9 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003884841-bottle.jpg"
+    "bottle_image": "assets/products/8011003884841-bottle.jpg",
+    "description": "Versace propune acest set cadou unisex, o alegere potrivită atât pentru uz zilnic, cât și pentru călătorii.",
+    "gender": "Unisex"
   },
   {
     "cod": "8011003993802",
@@ -10640,7 +11456,16 @@
     "category_label": "Parfumuri",
     "price": 439.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003885060-bottle.jpg"
+    "bottle_image": "assets/products/8011003885060-bottle.jpg",
+    "family": "Condimentat Citrice",
+    "gender": "Bărbați",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2006,
+    "notes_top": "Lămâie, Bergamotă, Carambola (Star Fruit), Cardamom, Brazilian Rosewood",
+    "notes_mid": "Lemn de cedru, Tarragon, Salvie, Piper",
+    "notes_base": "Mosc, Woodsy Notes, Șofran, Chihlimbar, Sycamore",
+    "description": "Un parfum picant-citric cu lămâie și bergamotă în deschidere, pe fond de mosc și woodsy notes."
   },
   {
     "cod": "8011003809219",
@@ -10878,7 +11703,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/8011003884902-bottle.jpg"
+    "bottle_image": "assets/products/8011003884902-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2011,
+    "notes_top": "Amalfi Lemon, Pere, Bergamotă, Neroli",
+    "notes_mid": "Mimoză, Frezie, Nufăr, African Orange Flower",
+    "notes_base": "Mosc, Lemn de gaiac, Chihlimbar",
+    "description": "Distinctiv prin amalfi lemon și pere, acest parfum citric-floral se remarcă printr-o bază de mosc și lemn de gaiac."
   },
   {
     "cod": "3605521879905",
@@ -10907,7 +11741,9 @@
     "category_label": "Parfumuri",
     "price": 999.0,
     "stock": 1,
-    "bottle_image": "assets/products/8033488155186-bottle.jpg"
+    "bottle_image": "assets/products/8033488155186-bottle.jpg",
+    "description": "Parfum unisex original Xerjoff, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "8054320903413",
@@ -10917,7 +11753,9 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 1,
-    "bottle_image": "assets/products/8054320903413-bottle.jpg"
+    "bottle_image": "assets/products/8054320903413-bottle.jpg",
+    "description": "Xerjoff aduce o compoziție unisex rafinată, potrivită pentru purtare zilnică.",
+    "gender": "Unisex"
   },
   {
     "cod": "8054320902553",
@@ -10984,7 +11822,9 @@
     "category_label": "Parfumuri",
     "price": 1299.0,
     "stock": 1,
-    "bottle_image": "assets/products/8033488153595-bottle.jpg"
+    "bottle_image": "assets/products/8033488153595-bottle.jpg",
+    "description": "O compoziție unisex din colecția Xerjoff, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "8033488150112",
@@ -10994,7 +11834,9 @@
     "category_label": "Parfumuri",
     "price": 1299.0,
     "stock": 1,
-    "bottle_image": "assets/products/8033488150112-bottle.jpg"
+    "bottle_image": "assets/products/8033488150112-bottle.jpg",
+    "description": "Un parfum unisex Xerjoff, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8054320902584",
@@ -11080,7 +11922,9 @@
     "category_label": "Parfumuri",
     "price": 849.0,
     "stock": 1,
-    "bottle_image": "assets/products/8033488155124-bottle.jpg"
+    "bottle_image": "assets/products/8033488155124-bottle.jpg",
+    "description": "Un parfum unisex Xerjoff, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "8033488155131",
@@ -11090,7 +11934,9 @@
     "category_label": "Parfumuri",
     "price": 1399.0,
     "stock": 1,
-    "bottle_image": "assets/products/8033488155131-bottle.jpg"
+    "bottle_image": "assets/products/8033488155131-bottle.jpg",
+    "description": "O compoziție unisex din colecția Xerjoff, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "8033488155070",
@@ -11100,7 +11946,16 @@
     "category_label": "Parfumuri",
     "price": 1199.0,
     "stock": 1,
-    "bottle_image": "assets/products/8033488155070-bottle.jpg"
+    "bottle_image": "assets/products/8033488155070-bottle.jpg",
+    "family": "Citrice Oriental",
+    "gender": "Unisex",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2015,
+    "notes_top": "Lavandă, Bergamotă, Lămâie",
+    "notes_mid": "Miere, Scorțișoară, Cashmeran, Iasomie Sambac",
+    "notes_base": "Frunze de tutun, Vanilie, Fasole tonka",
+    "description": "Un parfum citric-oriental cu lavandă și bergamotă în deschidere, pe fond de frunze de tutun și vanilie."
   },
   {
     "cod": "8033488151553",
@@ -11148,7 +12003,16 @@
     "category_label": "Parfumuri",
     "price": 1199.0,
     "stock": 1,
-    "bottle_image": "assets/products/8033488155063-bottle.jpg"
+    "bottle_image": "assets/products/8033488155063-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Unisex",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2011,
+    "notes_top": "Amalfi Lemon, Tangerine, Bergamotă, Petitgrain",
+    "notes_mid": "Mentă, Lăcrămioare, Trandafir",
+    "notes_base": "Mosc, Cedru Virginia, Patchouli, Chihlimbar",
+    "description": "Un citric-floral echilibrat, cu mentă, lăcrămioare și trandafir pe fond de mosc și cedru virginia."
   },
   {
     "cod": "8054320902447",
@@ -11234,7 +12098,9 @@
     "category_label": "Parfumuri",
     "price": 629.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273863360-bottle.jpg"
+    "bottle_image": "assets/products/3614273863360-bottle.jpg",
+    "description": "Un parfum unisex Ysblack, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3365440787919",
@@ -11453,7 +12319,9 @@
     "category_label": "Parfumuri",
     "price": 629.0,
     "stock": 1,
-    "bottle_image": "assets/products/3365440226708-bottle.jpg"
+    "bottle_image": "assets/products/3365440226708-bottle.jpg",
+    "description": "Un parfum unisex Yves Saint Laurent, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3660732086658",
@@ -11463,7 +12331,16 @@
     "category_label": "Parfumuri",
     "price": 529.0,
     "stock": 1,
-    "bottle_image": "assets/products/3660732086658-bottle.jpg"
+    "bottle_image": "assets/products/3660732086658-bottle.jpg",
+    "family": "Floral Citrice",
+    "gender": "Femei",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2016,
+    "notes_top": "Căpșuni, Zmeură, Pere, Portocală, Bergamotă de Calabria, Tangerine, Calone",
+    "notes_mid": "Bujor, Iasomie Sambac, Chinese Jasmine, Datura, Flori de portocal",
+    "notes_base": "Indonesian Patchouli Leaf, Patchouli, Mosc alb, Vanila, Ambroxan, Moss, Lemn de cedru",
+    "description": "Un floral-citric echilibrat, cu bujor, iasomie sambac și chinese jasmine pe fond de indonesian patchouli leaf și patchouli."
   },
   {
     "cod": "3614272141445",
@@ -11473,7 +12350,9 @@
     "category_label": "Parfumuri",
     "price": 599.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614272141445-bottle.jpg"
+    "bottle_image": "assets/products/3614272141445-bottle.jpg",
+    "description": "Set unisex Yves Saint Laurent, o combinație practică pentru cei care vor parfumul preferat oriunde merg.",
+    "gender": "Unisex"
   },
   {
     "cod": "3614271716026",
@@ -11502,7 +12381,16 @@
     "category_label": "Parfumuri",
     "price": 639.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273898478-bottle.jpg"
+    "bottle_image": "assets/products/3614273898478-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2015,
+    "notes_top": "Lămâie, Ananas, Bergamotă, Coacăze negre, Măr",
+    "notes_mid": "Mesteacăn, Iasomie, Trandafir",
+    "notes_base": "Mosc, Ambră gri, Patchouli, Vanilie",
+    "description": "Un citric-floral echilibrat, cu mesteacăn, iasomie și trandafir pe fond de mosc și ambră gri."
   },
   {
     "cod": "3614273898461",
@@ -11512,7 +12400,16 @@
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
-    "bottle_image": "assets/products/3614273898461-bottle.jpg"
+    "bottle_image": "assets/products/3614273898461-bottle.jpg",
+    "family": "Citrice Floral",
+    "gender": "Bărbați",
+    "mood": "Zi",
+    "season": "Primăvară, Vară",
+    "year": 2015,
+    "notes_top": "Lămâie, Ananas, Bergamotă, Coacăze negre, Măr",
+    "notes_mid": "Mesteacăn, Iasomie, Trandafir",
+    "notes_base": "Mosc, Ambră gri, Patchouli, Vanilie",
+    "description": "Un citric-floral echilibrat, cu mesteacăn, iasomie și trandafir pe fond de mosc și ambră gri."
   },
   {
     "cod": "3614274266801",
@@ -11617,7 +12514,9 @@
     "category_label": "Parfumuri",
     "price": 299.0,
     "stock": 1,
-    "bottle_image": "assets/products/3423222118976-bottle.jpg"
+    "bottle_image": "assets/products/3423222118976-bottle.jpg",
+    "description": "Un parfum unisex Zadig & Voltaire, o alegere sigură pentru cei care apreciază calitatea și autenticitatea.",
+    "gender": "Unisex"
   },
   {
     "cod": "3423222119102",
@@ -11627,7 +12526,9 @@
     "category_label": "Parfumuri",
     "price": 549.0,
     "stock": 2,
-    "bottle_image": "assets/products/3423222119102-bottle.jpg"
+    "bottle_image": "assets/products/3423222119102-bottle.jpg",
+    "description": "Parfum unisex original Zadig & Voltaire, o alegere elegantă pentru orice ocazie.",
+    "gender": "Unisex"
   },
   {
     "cod": "3423222125059",
@@ -11637,7 +12538,9 @@
     "category_label": "Parfumuri",
     "price": 159.0,
     "stock": 1,
-    "bottle_image": "assets/products/3423222125059-bottle.jpg"
+    "bottle_image": "assets/products/3423222125059-bottle.jpg",
+    "description": "O compoziție unisex din colecția Zadig & Voltaire, gândită pentru cei care caută distincție.",
+    "gender": "Unisex"
   },
   {
     "cod": "6290171074205",
