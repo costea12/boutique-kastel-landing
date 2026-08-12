@@ -74,7 +74,16 @@
     "category_label": "Parfumuri",
     "price": 219.0,
     "stock": 2,
-    "bottle_image": "assets/products/812256021728-bottle.jpg"
+    "bottle_image": "assets/products/812256021728-bottle.jpg",
+    "family": "Gourmand",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2016,
+    "notes_top": "Mure, Pere, Bergamotă",
+    "notes_mid": "Frișcă, Marshmallow, Coacăze negre, Iasomie, Caprifoi, Frangipani",
+    "notes_base": "Vanilie, Lemn de cașmir",
+    "description": "O compoziție gourmand, marcată de frișcă, marshmallow și coacăze negre și o bază caldă de vanilie și lemn de cașmir."
   },
   {
     "cod": "812256021711",
@@ -1840,7 +1849,16 @@
     "category_label": "Parfumuri",
     "price": 199.0,
     "stock": 1,
-    "bottle_image": "assets/products/8411061841655-bottle.jpg"
+    "bottle_image": "assets/products/8411061841655-bottle.jpg",
+    "family": "Oriental Floral",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2016,
+    "notes_top": "Migdale, Cafea",
+    "notes_mid": "Iasomie Sambac, Tuberoză",
+    "notes_base": "Cacao, Fasole tonka",
+    "description": "Cu sticla sa iconică pantof-cu-toc, Good Girl joacă pe contrastul bine-rău: floral cald pe fond de cacao și migdale."
   },
   {
     "cod": "8411061972151",
@@ -4472,7 +4490,16 @@
     "category_label": "Parfumuri",
     "price": 399.0,
     "stock": 1,
-    "bottle_image": "assets/products/3274872495470-bottle.jpg"
+    "bottle_image": "assets/products/3274872495470-bottle.jpg",
+    "family": "Floral Verde",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Bergamotă, Pere",
+    "notes_mid": "Tuberoză, Iasomie Sambac, Flori de portocal",
+    "notes_base": "Vetiver, Patchouli, Vanilie",
+    "description": "Un parfum floral îndrăzneț, cu o tuberoză verde neconvențională. L'Interdit a devenit rapid un reper al parfumeriei moderne."
   },
   {
     "cod": "3274872495487",
@@ -4482,7 +4509,16 @@
     "category_label": "Parfumuri",
     "price": 649.0,
     "stock": 2,
-    "bottle_image": "assets/products/3274872495487-bottle.jpg"
+    "bottle_image": "assets/products/3274872495487-bottle.jpg",
+    "family": "Floral Verde",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Bergamotă, Pere",
+    "notes_mid": "Tuberoză, Iasomie Sambac, Flori de portocal",
+    "notes_base": "Vetiver, Patchouli, Vanilie",
+    "description": "Un parfum floral îndrăzneț, cu o tuberoză verde neconvențională. L'Interdit a devenit rapid un reper al parfumeriei moderne."
   },
   {
     "cod": "3274872495494",
@@ -4492,7 +4528,16 @@
     "category_label": "Parfumuri",
     "price": 799.0,
     "stock": 1,
-    "bottle_image": "assets/products/3274872495494-bottle.jpg"
+    "bottle_image": "assets/products/3274872495494-bottle.jpg",
+    "family": "Floral Verde",
+    "gender": "Femei",
+    "mood": "Zi, Noapte",
+    "season": "Toate anotimpurile",
+    "year": 2018,
+    "notes_top": "Bergamotă, Pere",
+    "notes_mid": "Tuberoză, Iasomie Sambac, Flori de portocal",
+    "notes_base": "Vetiver, Patchouli, Vanilie",
+    "description": "Un parfum floral îndrăzneț, cu o tuberoză verde neconvențională. L'Interdit a devenit rapid un reper al parfumeriei moderne."
   },
   {
     "cod": "3274872456334",
@@ -6420,7 +6465,16 @@
     "category_label": "Parfumuri",
     "price": 189.0,
     "stock": 1,
-    "bottle_image": "assets/products/8435415007573-bottle.jpg"
+    "bottle_image": "assets/products/8435415007573-bottle.jpg",
+    "family": "Chypre Gourmand",
+    "gender": "Femei",
+    "mood": "Noapte",
+    "season": "Toamnă, Iarnă",
+    "year": 2017,
+    "notes_top": "Piersică, Miere",
+    "notes_mid": "Miere, Gardenie",
+    "notes_base": "Patchouli, Caramel",
+    "description": "Un gourmand îndrăzneț și rebel, cu miere și patchouli în prim-plan. Scandal e făcut să iasă în evidență."
   },
   {
     "cod": "8435415058711",
