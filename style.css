@@ -410,50 +410,10 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 
 /* ---------- Preview products ---------- */
 
-.preview { background: var(--teal-deep); color: var(--white); position: relative; }
-.preview .section-head .kicker { color: var(--gold-bright); }
-.preview .section-head h2 { color: var(--white); }
-.preview .section-head p { color: var(--white-dim); }
-.preview .section-head .flourish { color: var(--gold); }
-
-.preview-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.4rem;
-}
-.preview-card {
-  background: rgba(251,247,239,0.04);
-  border: 1px solid var(--gold-dim);
-  border-radius: 6px;
-  padding: 1.8rem 1.4rem;
-  text-align: center;
-  transition: transform 0.35s ease, background 0.35s ease;
-}
-.preview-card:hover { transform: translateY(-5px); background: rgba(251,247,239,0.07); }
-.preview-card .glyph {
-  width: 46px; height: 46px;
-  margin: 0 auto 1.2rem;
-  color: var(--gold-bright);
-}
-.preview-card .tag {
-  font-size: 0.66rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold-bright);
-  margin-bottom: 0.6rem;
-  display: block;
-}
-.preview-card h4 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
-}
-.preview-card .status {
-  font-size: 0.76rem;
-  color: var(--white-faint);
-  font-style: italic;
-  font-family: var(--font-display);
+.recommended-section { background: var(--ivory); position: relative; }
+.recommended-section .product-grid { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 900px) {
+  .recommended-section .product-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ---------- About / trust ---------- */
@@ -1225,21 +1185,6 @@ footer {
 .cart-note a { color: var(--teal-mid); }
 
 /* ---------- Simple footer (catalog/product/cart pages) ---------- */
-.related-section {
-  background: var(--teal-deep);
-  color: var(--white);
-  padding: clamp(2.5rem, 6vw, 4rem) 0;
-}
-.related-section .section-head .kicker { color: var(--gold-bright); }
-.related-section .section-head h2 { color: var(--white); }
-.related-section .product-grid { grid-template-columns: repeat(5, 1fr); }
-.related-section .product-card { background: rgba(251,247,239,0.06); border-color: var(--gold-dim); }
-.related-section .product-card h3 { color: var(--white); }
-.related-section .product-price { color: var(--gold-bright); }
-@media (max-width: 900px) {
-  .related-section .product-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
 .site-footer-simple { background: var(--teal-darker); padding: 1.6rem 0; }
 .footer-inner {
   max-width: var(--container);
