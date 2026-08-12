@@ -163,6 +163,32 @@ function renderProduct(p) {
   });
 }
 
+function renderRelated(product, data) {
+  const grid = document.getElementById('relatedGrid');
+  const section = document.getElementById('relatedSection');
+  if (!grid || !section) return;
+
+  const sameBrand = data.filter((p) => p.cod !== product.cod && p.brand === product.brand);
+  const others = data.filter((p) => p.cod !== product.cod && p.brand !== product.brand);
+
+  const shuffled = (arr) => arr.slice().sort(() => Math.random() - 0.5);
+  const picks = shuffled(sameBrand).slice(0, 5);
+  if (picks.length < 5) picks.push(...shuffled(others).slice(0, 5 - picks.length));
+  if (!picks.length) return;
+
+  grid.innerHTML = picks.map((p) => `
+    <a class="product-card" href="produs.html?cod=${encodeURIComponent(p.cod)}">
+      <div class="product-card-img">
+        <img src="${p.bottle_image}" alt="${p.name}" loading="lazy">
+      </div>
+      <span class="product-brand">${p.brand}</span>
+      <h3>${p.name}</h3>
+      <span class="product-price">${formatPrice(p.price)}</span>
+    </a>
+  `).join('');
+  section.hidden = false;
+}
+
 const params = new URLSearchParams(window.location.search);
 const cod = params.get('cod');
 
@@ -175,6 +201,7 @@ fetch('catalog.json')
       return;
     }
     renderProduct(product);
+    renderRelated(product, data);
   })
   .catch(() => {
     document.getElementById('productMain').innerHTML = '<p class="product-loading">Catalogul nu a putut fi încărcat.</p>';

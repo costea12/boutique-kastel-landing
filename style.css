@@ -1225,6 +1225,21 @@ footer {
 .cart-note a { color: var(--teal-mid); }
 
 /* ---------- Simple footer (catalog/product/cart pages) ---------- */
+.related-section {
+  background: var(--teal-deep);
+  color: var(--white);
+  padding: clamp(2.5rem, 6vw, 4rem) 0;
+}
+.related-section .section-head .kicker { color: var(--gold-bright); }
+.related-section .section-head h2 { color: var(--white); }
+.related-section .product-grid { grid-template-columns: repeat(5, 1fr); }
+.related-section .product-card { background: rgba(251,247,239,0.06); border-color: var(--gold-dim); }
+.related-section .product-card h3 { color: var(--white); }
+.related-section .product-price { color: var(--gold-bright); }
+@media (max-width: 900px) {
+  .related-section .product-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 .site-footer-simple { background: var(--teal-darker); padding: 1.6rem 0; }
 .footer-inner {
   max-width: var(--container);
