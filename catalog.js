@@ -1,5 +1,6 @@
 let PRODUCTS = [];
 let selectedBrands = new Set();
+const PAGE_CATEGORY = document.body.dataset.category || null;
 
 function formatPrice(p) {
   return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
@@ -30,9 +31,13 @@ function renderGrid(products) {
   `).join('');
 }
 
+function categoryProducts() {
+  return PAGE_CATEGORY ? PRODUCTS.filter((p) => p.category === PAGE_CATEGORY) : PRODUCTS;
+}
+
 function buildBrandList() {
   const counts = {};
-  PRODUCTS.forEach((p) => { counts[p.brand] = (counts[p.brand] || 0) + 1; });
+  categoryProducts().forEach((p) => { counts[p.brand] = (counts[p.brand] || 0) + 1; });
   const brands = Object.keys(counts).sort((a, b) => a.localeCompare(b));
 
   const container = document.getElementById('brandList');
@@ -86,7 +91,7 @@ function applyFilters() {
   const inStockOnly = document.getElementById('inStockOnly')?.checked;
   const sortBy = document.getElementById('sortSelect')?.value || 'name-asc';
 
-  let filtered = PRODUCTS.filter((p) => {
+  let filtered = categoryProducts().filter((p) => {
     if (q && !p.name.toLowerCase().includes(q)) return false;
     if (selectedBrands.size > 0 && !selectedBrands.has(p.brand)) return false;
     if (!isNaN(priceMin) && p.price != null && p.price < priceMin) return false;

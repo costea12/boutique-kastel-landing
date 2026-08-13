@@ -965,7 +965,7 @@ footer {
 .product-price {
   font-family: var(--font-body);
   font-weight: 600;
-  color: var(--teal-mid);
+  color: var(--ink);
   font-size: 0.95rem;
 }
 .catalog-empty { text-align: center; color: var(--ink-soft); padding: 3rem 0; }
@@ -1169,7 +1169,7 @@ footer {
 .cart-item img { width: 64px; height: 64px; object-fit: contain; }
 .cart-item-info h4 { font-family: var(--font-display); font-weight: 500; font-size: 0.92rem; color: var(--ink); margin-bottom: 0.2rem; }
 .cart-item-info span { font-size: 0.8rem; color: var(--ink-soft); }
-.cart-item-total { font-weight: 600; color: var(--teal-mid); }
+.cart-item-total { font-weight: 600; color: var(--ink); }
 .cart-item-remove { background: none; border: none; color: var(--ink-soft); cursor: pointer; font-size: 1rem; }
 .cart-item-remove:hover { color: #a83a3a; }
 .cart-summary {

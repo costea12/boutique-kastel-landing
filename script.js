@@ -34,12 +34,17 @@ function formatPriceHome(p) {
   return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
 }
 
-if (document.getElementById('parfumCount') || document.getElementById('recommendedGrid')) {
+if (document.getElementById('parfumCount') || document.getElementById('bauturiCount') || document.getElementById('recommendedGrid')) {
   fetch('catalog.json')
     .then((r) => r.json())
     .then((data) => {
-      const countEl = document.getElementById('parfumCount');
-      if (countEl) countEl.textContent = `${data.length} produse`;
+      const countByCategory = (cat) => data.filter((p) => p.category === cat).length;
+
+      const parfumCountEl = document.getElementById('parfumCount');
+      if (parfumCountEl) parfumCountEl.textContent = `${countByCategory('PRF')} produse`;
+
+      const bauturiCountEl = document.getElementById('bauturiCount');
+      if (bauturiCountEl) bauturiCountEl.textContent = `${countByCategory('ALC')} produse`;
 
       const grid = document.getElementById('recommendedGrid');
       if (!grid) return;

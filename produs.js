@@ -2,6 +2,35 @@ function formatPrice(p) {
   return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
 }
 
+const CATEGORY_PAGES = { PRF: 'parfumuri.html', ALC: 'bauturi.html' };
+function categoryPage(category) {
+  return CATEGORY_PAGES[category] || 'index.html';
+}
+
+const ALC_TYPE_WORDS = new Set([
+  'Absinth', 'Aperitiv', 'Aperitive', 'Bere', 'Blonda', 'Bitter', 'Brandy', 'Champagne',
+  'Cocktail', 'Cognac', 'Coniac', 'Digestiv', 'Gin', 'Lichior', 'Palinca', 'Prosecco',
+  'Rachiu', 'Rom', 'Sampanie', 'Spumant', 'Tuica', 'Vermut', 'Vin', 'Vinuri', 'Votca',
+  'Vodka', 'Whisky', 'Whiskey', 'Whisy',
+]);
+
+function getAlcType(name) {
+  const first = name.split(' ')[0];
+  return ALC_TYPE_WORDS.has(first) ? first : null;
+}
+
+function getVolume(name) {
+  const m = name.match(/(\d+(?:[.,]\d+)?)\s*(ml|l)\b/i);
+  if (!m) return null;
+  const val = m[1].replace(',', '.');
+  return `${val} ${m[2].toUpperCase()}`;
+}
+
+function getAbv(name) {
+  const m = name.match(/(\d+(?:[.,]\d+)?)\s*%/);
+  return m ? `${m[1].replace(',', '.')}%` : null;
+}
+
 function getUnitPrice(name, price) {
   if (price == null) return null;
   const match = name.match(/(\d+(?:[.,]\d+)?)\s*(ml|gr)\b/i);
@@ -34,7 +63,42 @@ function renderNoteTags(notes) {
   return notes.split(',').map((n) => `<span class="note-tag">${n.trim()}</span>`).join('');
 }
 
+function renderAlcSpecs(p) {
+  const facts = [
+    ['Tip', getAlcType(p.name)],
+    ['Producător', p.brand],
+    ['Volum', getVolume(p.name)],
+    ['Tărie alcoolică', getAbv(p.name)],
+  ].filter(([, value]) => value);
+
+  if (!p.description && !facts.length) return '';
+
+  return `
+    <div class="product-story">
+      <div class="flourish story-flourish">
+        <span class="line"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2c2 2.5 4 5.8 4 9a4 4 0 0 1-8 0c0-3.2 2-6.5 4-9Z"/></svg>
+        <span class="line rev"></span>
+      </div>
+
+      ${p.description ? `<p class="product-description">${p.description}</p>` : ''}
+
+      ${facts.length ? `
+        <dl class="product-facts">
+          ${facts.map(([label, value]) => `
+            <div class="fact-item">
+              <dt>${label}</dt>
+              <dd>${value}</dd>
+            </div>
+          `).join('')}
+        </dl>
+      ` : ''}
+    </div>
+  `;
+}
+
 function renderSpecs(p) {
+  if (p.category === 'ALC') return renderAlcSpecs(p);
   if (!p.description && !p.family) return '';
 
   const tiers = [
@@ -133,7 +197,7 @@ function renderProduct(p) {
 
         ${renderSpecs(p)}
 
-        <a href="parfumuri.html" class="back-link">← Înapoi la Parfumuri</a>
+        <a href="${categoryPage(p.category)}" class="back-link">← Înapoi la ${p.category_label || 'catalog'}</a>
       </div>
     </div>
   `;
@@ -168,8 +232,9 @@ function renderRelated(product, data) {
   const section = document.getElementById('relatedSection');
   if (!grid || !section) return;
 
-  const sameBrand = data.filter((p) => p.cod !== product.cod && p.brand === product.brand);
-  const others = data.filter((p) => p.cod !== product.cod && p.brand !== product.brand);
+  const sameCategory = data.filter((p) => p.cod !== product.cod && p.category === product.category);
+  const sameBrand = sameCategory.filter((p) => p.brand === product.brand);
+  const others = sameCategory.filter((p) => p.brand !== product.brand);
 
   const shuffled = (arr) => arr.slice().sort(() => Math.random() - 0.5);
   const picks = shuffled(sameBrand).slice(0, 5);
