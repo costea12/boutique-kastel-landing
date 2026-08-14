@@ -52,6 +52,7 @@
   </div>
 </header>
 
+<div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" id="navClose" aria-label="Închide meniul">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
@@ -59,9 +60,11 @@
   <a href="parfumuri.html">Parfumuri</a>
   <a href="index.html#categorii">Parfumuri niche</a>
   <a href="index.html#categorii">Îngrijire corporală</a>
-  <a href="index.html#categorii">Băuturi</a>
+  <a href="bauturi.html">Băuturi</a>
   <a href="index.html#categorii">Dulciuri &amp; cafea</a>
   <a href="index.html#categorii">Diverse</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="index.html#despre">Despre noi</a>
 </div>
 
 <main class="product-main section-inner" id="productMain">
@@ -153,9 +156,14 @@
   const navToggle = document.getElementById('navToggle');
   const navClose = document.getElementById('navClose');
   const mobileNav = document.getElementById('mobileNav');
-  navToggle?.addEventListener('click', () => mobileNav.classList.add('open'));
-  navClose?.addEventListener('click', () => mobileNav.classList.remove('open'));
-  mobileNav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+  const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+  const openMobileNav = () => { mobileNav.classList.add('open'); mobileNavBackdrop?.classList.add('open'); };
+  const closeMobileNav = () => { mobileNav.classList.remove('open'); mobileNavBackdrop?.classList.remove('open'); };
+  navToggle?.addEventListener('click', openMobileNav);
+  navClose?.addEventListener('click', closeMobileNav);
+  mobileNavBackdrop?.addEventListener('click', closeMobileNav);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMobileNav(); });
+  mobileNav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMobileNav));
 </script>
 </body>
 </html>

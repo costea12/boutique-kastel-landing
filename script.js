@@ -14,11 +14,23 @@ revealEls.forEach((el) => io.observe(el));
 const navToggle = document.getElementById('navToggle');
 const navClose = document.getElementById('navClose');
 const mobileNav = document.getElementById('mobileNav');
+const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
 
-navToggle?.addEventListener('click', () => mobileNav.classList.add('open'));
-navClose?.addEventListener('click', () => mobileNav.classList.remove('open'));
+function openMobileNav() {
+  mobileNav.classList.add('open');
+  mobileNavBackdrop?.classList.add('open');
+}
+function closeMobileNav() {
+  mobileNav.classList.remove('open');
+  mobileNavBackdrop?.classList.remove('open');
+}
+
+navToggle?.addEventListener('click', openMobileNav);
+navClose?.addEventListener('click', closeMobileNav);
+mobileNavBackdrop?.addEventListener('click', closeMobileNav);
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMobileNav(); });
 mobileNav?.querySelectorAll('a').forEach((a) =>
-  a.addEventListener('click', () => mobileNav.classList.remove('open'))
+  a.addEventListener('click', closeMobileNav)
 );
 
 // Live product count + recommended picks (homepage only)
