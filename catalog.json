@@ -7351,6 +7351,17 @@
     "bottle_image": "assets/products/8000330515030-bottle.jpg"
   },
   {
+    "cod": "8000330511698",
+    "name": "Brandy Vecchia Romagna 30ml 38%",
+    "brand": "Vecchia",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 11.0,
+    "stock": 14,
+    "bottle_image": "assets/products/8000330511698-bottle.jpg",
+    "description": "Brandy italian obtinut din struguri Trebbiano in regiunea Emilia-Romagna, dublu distilat si maturat in lemn de stejar. Eticheta Neagra este mai indrazneata si mai caracteristica decat brandy-urile mai usoare, cu note de fructe tropicale, vanilie si condimente usoare."
+  },
+  {
     "cod": "5949106462907",
     "name": "Brandy Vecchia Romana 30ml 38% SGR",
     "brand": "Vecchia",
@@ -8178,6 +8189,50 @@
     "description": "Lichior italian creat la Bologna in 1885, obtinut din peste 40 de plante botanice impartite in categorii citrice, dulce-amarui si erbacee. Are un gust bogat si placut, echilibrat intre dulce si amar, se poate bea simplu, cu gheata sau in cocktailuri."
   },
   {
+    "cod": "8000330019354",
+    "name": "Lichior Amaro Montenegro 50ml 23%",
+    "brand": "Amaro",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 3,
+    "bottle_image": "assets/products/8000330019354-bottle.jpg",
+    "description": "Amaro italian formulat in 1885 de Stanislao Cobianchi la Bologna din exact 40 de plante, echilibrand note amare si dulci. Numele vine de la Printesa Elena de Muntenegru. Culoare chihlimbar inchis, gust catifelat, dulce-amarui, cu arome de citrice, condimente si plante."
+  },
+  {
+    "cod": "5941935105246",
+    "name": "Lichior Bailey`s 0.7l 17% SGR",
+    "brand": "Bailey`s",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 7,
+    "bottle_image": "assets/products/5941935105246-bottle.jpg",
+    "description": "Primul lichior pe baza de smantana din lume, creat in 1974 la Dublin. Amestec indulgent de whisky irlandez invechit, smantana proaspata, cacao si vanilie, cu o textura catifelata si finisaj cremos-ciocolatiu."
+  },
+  {
+    "cod": "5940597004355",
+    "name": "Lichior Bailey`s 1l 17% SGR",
+    "brand": "Bailey`s",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 12,
+    "bottle_image": "assets/products/5940597004355-bottle.jpg",
+    "description": "Baileys Irish Cream a fost expresia care a inventat categoria lichiorurilor pe baza de smantana in 1974, combinand tehnici de fabricare a inghetatei cu smantana proaspata si spirtoase, fara a se altera. Arome de cafea cremoasa, ciocolata cu lapte, nucsoara si vanilie."
+  },
+  {
+    "cod": "8716000967992",
+    "name": "Lichior Bols Elderflower 0,7l 17%",
+    "brand": "Bols",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 49.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8716000967992-bottle.jpg",
+    "description": "Lichior floral modern cu gust delicat si proaspat de soc, profil aromatic elegant, popular in cocktailuri usoare si racoritoare precum Hugo sau spritz. Compozitie: apa, alcool, zahar, extract de soc negru, aroma, coloranti."
+  },
+  {
     "cod": "5941932109056",
     "name": "Lichior Cardenal Mendoza Angelus 0.7l 40% SGR",
     "brand": "Cardenal",
@@ -8208,6 +8263,61 @@
     "bottle_image": "assets/products/5941937500438-bottle.jpg"
   },
   {
+    "cod": "5948987002301",
+    "name": "Lichior De Kuyper Blue Curacao 0.7l 20% SGR",
+    "brand": "De",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5948987002301-bottle.jpg",
+    "description": "Lichior olandez cu gust fructat, usor amarui si placut de dulce, dominat de arome de portocale si citrice, obtinut din extracte distilate de portocale, lamai si fruct de Curacao. Ideal pentru bauturi tropicale si prajituri."
+  },
+  {
+    "cod": "8710625700606",
+    "name": "Lichior De Kuyper Flori Soc 0.7l 15%",
+    "brand": "De",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 11,
+    "bottle_image": "assets/products/8710625700606-bottle.jpg",
+    "description": "Lichior olandez de flori de soc cu note de miere si accente florale delicate. Aroma dulce-usor intepatoare de soc, completata de nuante de miere, cu finisaj aromatic si sec. Recomandat cu vin spumant, apa tonica sau gin."
+  },
+  {
+    "cod": "8710625438707",
+    "name": "Lichior De Kuyper Pepene Rosu 0.7l 15%",
+    "brand": "De",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8710625438707-bottle.jpg",
+    "description": "Lichior olandez cu aroma de pepene rosu, de la producatorul De Kuyper. Culoare rosie, stralucitoare, cu arome proaspete de pepene copt, o usoara dulceata si o prospetime fructata delicata."
+  },
+  {
+    "cod": "5948987002387",
+    "name": "Lichior De Kuyper Triple Sec 0.7l 40% SGR",
+    "brand": "De",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5948987002387-bottle.jpg",
+    "description": "Lichior olandez de portocale, produs dupa o reteta de inceput de secol XIX, din coji de portocale dulci si amare distilate. Gust dulce, aromat, cu note proaspete de portocale, ideal pentru cocktailuri precum margarita sau cosmopolitan."
+  },
+  {
+    "cod": "8710625535703",
+    "name": "Lichior De Kuyper Zmeura 0.7l 15%",
+    "brand": "De",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8710625535703-bottle.jpg",
+    "description": "Lichior olandez de zmeura, realizat dupa o reteta originala veche de 325 de ani. Arome intense de zmeura proaspata, cu note subtile de vanilie si citrice, gust echilibrat si usor dulce."
+  },
+  {
     "cod": "5011166061052",
     "name": "Lichior Dead Man`s Fingers 0,7l 37,5%",
     "brand": "Dead",
@@ -8216,6 +8326,28 @@
     "price": 89.0,
     "stock": 2,
     "bottle_image": "assets/products/5011166061052-bottle.jpg"
+  },
+  {
+    "cod": "5941935101798",
+    "name": "Lichior Disaronno 0.7l 28% SGR",
+    "brand": "Disaronno",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941935101798-bottle.jpg",
+    "description": "Lichior italian cu gust dulce-amarui de migdale, desi nu contine deloc migdale sau alte nuci. Este obtinut dintr-o infuzie de samburi de caise, zahar caramelizat si un amestec de plante si fructe. Gust si aroma prietenoase, cu efect relaxant."
+  },
+  {
+    "cod": "5941937500544",
+    "name": "Lichior Disaronno 0.7l 28% SGR",
+    "brand": "Disaronno",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937500544-bottle.jpg",
+    "description": "Lichior amaretto italian cu 17 plante in compozitie, alaturi de alcool pur, zahar, fructe si ulei de samburi de caise. Culoare aramie, arome de migdale dulci, marţipan si scortisoara, gust cald de marţipan, vanilie, migdale prajite si caise proaspete."
   },
   {
     "cod": "5941937502746",
@@ -8228,6 +8360,94 @@
     "bottle_image": "assets/products/5941937502746-bottle.jpg"
   },
   {
+    "cod": "7610594252155",
+    "name": "Lichior Kahlua 0.7l 16%",
+    "brand": "Kahlua",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 95.0,
+    "stock": 2,
+    "bottle_image": "assets/products/7610594252155-bottle.jpg",
+    "description": "Lichior mexican de cafea, cu buchet intens de cafea prajita, note de vanilie, ciocolata si caramel. Obtinut din cafea arabica, trestie de zahar si rom, cu tonuri profunde de cafea proaspat preparata, caramel moale si usoare accente de aluna."
+  },
+  {
+    "cod": "5948987003094",
+    "name": "Lichior Kahlua 0.7l 16% SGR",
+    "brand": "Kahlua",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 95.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5948987003094-bottle.jpg",
+    "description": "Lichior de cafea originar din Veracruz, Mexic (din 1936), obtinut din boabe de cafea 100% Arabica si rom. Considerat lichiorul de cafea numarul 1 din lume, ingredient cheie in cocktailuri precum White Russian, Black Russian, Mudslide si Espresso Martini."
+  },
+  {
+    "cod": "5941937503088",
+    "name": "Lichior Limoncello Di Capri 0.7l 30% SGR",
+    "brand": "Limoncello",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941937503088-bottle.jpg",
+    "description": "Lichior italian de lamai din Capri, cu aroma naturala de citrice. Gust proaspat si extrem de fructat de lamaie, aroma clara si proaspata, culoare galben-lamaie lăptos, fara arome sau coloranti artificiali. Premiat cu 90 de puncte la Ultimate Spirits Challenge New York si medalie de aur la International Wine and Spirit Competition."
+  },
+  {
+    "cod": "5940573002047",
+    "name": "Lichior Mozart Cafea 0.5l 17% SGR",
+    "brand": "Mozart",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5940573002047-bottle.jpg",
+    "description": "Lichior austriac ce combina boabe de cacao premium, ciocolata belgiana, fructe si cafea Arabica. Parfum intens de mocha, completat de nuante fine de vanilie si ciocolata, textura catifelata, gust dulce-amarui."
+  },
+  {
+    "cod": "5940573005871",
+    "name": "Lichior Mozart Capsuni 0.5l 15%+pah SGR",
+    "brand": "Mozart",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940573005871-bottle.jpg",
+    "description": "Lichior austriac de ciocolata alba imbogatit cu aroma proaspata de capsuni, textura catifelata, cu note de vanilie Bourbon. Culoare roz, finisaj lung si dulce."
+  },
+  {
+    "cod": "5940573005864",
+    "name": "Lichior Mozart Ciocolata 0.5l 17%+pah SGR",
+    "brand": "Mozart",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940573005864-bottle.jpg",
+    "description": "Lichior austriac care combina ciocolata belgiana imbogatita cu frisca proaspata, arome intense de vanilie de Madagascar si boabe de cacao din Africa de Vest si Caraibe. Aroma intensa de ciocolata cu lapte si caramel, gust bogat de ciocolata fina, caramel si vanilie."
+  },
+  {
+    "cod": "5940573002061",
+    "name": "Lichior Mozart Ciocolata 500ml+pahar 17% SGR",
+    "brand": "Mozart",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940573002061-bottle.jpg",
+    "description": "Lichior austriac de crema de ciocolata cu ciocolata belgiana, frisca proaspata, vanilie de Madagascar si boabe de cacao selectate din Africa de Vest si Caraibe, vandut impreuna cu un pahar. Aroma intensa de ciocolata cu lapte si accente de caramel."
+  },
+  {
+    "cod": "5940573002108",
+    "name": "Lichior Mozart Ciocolata Alba .7l 15% SGR",
+    "brand": "Mozart",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940573002108-bottle.jpg",
+    "description": "Lichior austriac ce imbina vanilie, ciocolata alba, caramel, unt de cacao si frisca proaspata pentru o experienta dulce si indulgenta. Aroma delicata de ciocolata alba, vanilie si caramel, finisaj lung si dulce."
+  },
+  {
     "cod": "5941937507253",
     "name": "Lichior Patron XO Cafe 0.7l 35% SGR",
     "brand": "Patron",
@@ -8236,6 +8456,50 @@
     "price": 279.0,
     "stock": 3,
     "bottle_image": "assets/products/5941937507253-bottle.jpg"
+  },
+  {
+    "cod": "5941937501121",
+    "name": "Lichior Sheridan`s 0.5l 15.5% SGR",
+    "brand": "Sheridan`s",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5941937501121-bottle.jpg",
+    "description": "Combinatie inovatoare intre un lichior de ciocolata cu cafea neagra si un lichior cremos de vanilie. Sticla cu doua compartimente creeaza un efect stratificat asemanator unei cafele irlandeze cand este turnata corect."
+  },
+  {
+    "cod": "5941935104928",
+    "name": "Lichior Sheridans 0.7l 15.5% SGR",
+    "brand": "Sheridans",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941935104928-bottle.jpg",
+    "description": "Lichior irlandez de crema cu design distinctiv in doua camere. Combina arome de crema, cafea si vanilie, gust cremos si dulce cu accent pe cafea, finisaj de la scurt la mediu-lung, cu note persistente de vanilie si cafea."
+  },
+  {
+    "cod": "5941937501145",
+    "name": "Lichior Sheridans 1l 15.5% SGR",
+    "brand": "Sheridans",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 129.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5941937501145-bottle.jpg",
+    "description": "Lichior irlandez cu design distinctiv in doua camere, combinand crema de vanilie alba si lichior de cafea neagra. Arome de cafea si cacao cu subtonuri dulci, amestec neted de cafea, ciocolata, vanilie si crema, finisaj persistent si elegant."
+  },
+  {
+    "cod": "8588003786371",
+    "name": "Lichior Tatratea Citrus 0.7l 32%",
+    "brand": "Tatratea",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 119.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8588003786371-bottle.jpg",
+    "description": "Lichior slovac de plante si ceai, obtinut dintr-un raport echilibrat de alcool fin, extracte naturale de plante si ceai negru, distilate si sucuri de fructe, zahar si apa din Tatra. Extractele de citrice completeaza profilul aromatic, pastrand caracterul de ceai si fructe."
   },
   {
     "cod": "8588007105925",
@@ -8258,6 +8522,61 @@
     "bottle_image": "assets/products/8588002356087-bottle.jpg"
   },
   {
+    "cod": "5995099191720",
+    "name": "Lichior Unicum 0.7l 40%",
+    "brand": "Unicum",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5995099191720-bottle.jpg",
+    "description": "Lichior digestiv unguresc produs la Budapesta din circa 40 de plante si condimente aromatice, maturat in butoaie de stejar timp de 6 luni. Profil aromatic complex cu note de iasomie, chimion, anason si accente de tutun, alaturi de plante medicinale, cafea, lemn dulce si citrice. Culoare maro inchis, finisaj amarui, usor piperat."
+  },
+  {
+    "cod": "8004747007577",
+    "name": "Lichior Volare Piersici 0.7l 20%",
+    "brand": "Volare",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8004747007577-bottle.jpg",
+    "description": "Lichior italian obtinut din sucul celor mai bune piersici, care elibereaza delicatetea tipica a fructului copt la soare. Aroma de piersica, fruct samburos si dulceata usoara; gust dulce si neted de piersica coapta; finisaj moale si persistent cu o nota fructata delicata."
+  },
+  {
+    "cod": "8710194031507",
+    "name": "Lichior Wenneker Cafe` 0,7l 20%",
+    "brand": "Wenneker",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8710194031507-bottle.jpg",
+    "description": "Lichior de cafea, elaborat printr-un proces de extractie folosind diverse soiuri de boabe de cafea puse la macerat in apa si alcool timp de doua saptamani. Culoare maro inchis, poate fi savurat simplu, in cocktailuri, alaturi de cafea sau in deserturi. Medalie de aur la International Wine & Spirit Competition 2022."
+  },
+  {
+    "cod": "8710194032429",
+    "name": "Lichior Wenneker Royal Peach 0,7l 20%",
+    "brand": "Wenneker",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8710194032429-bottle.jpg",
+    "description": "Lichior limpede si extrem de racoritor, cu gust catifelat de piersica. Poate fi savurat peste inghetata, ca aperitiv sau digestiv, simplu, cu gheata sau in cocktailuri. Premiat cu medalii la International Wine & Spirit Competition (bronz 2020, argint 2017, bronz 2012) la categoria Lichior - Fructe."
+  },
+  {
+    "cod": "5941935104638",
+    "name": "Martini Roso 1 L 15% SGR",
+    "brand": "Martini",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5941935104638-bottle.jpg",
+    "description": "Vermut rosu dulce italian, creat sub indrumarea lui Luigi Rossi, obtinut dintr-o selectie dedicata de plante regionale combinate cu caramel natural care ii da culoarea rosie caracteristica. Traditie din 1863, considerat o icoana a Italiei."
+  },
+  {
     "cod": "5941935104621",
     "name": "Martini Bianco 1l 15% SGR",
     "brand": "Martini",
@@ -8276,6 +8595,270 @@
     "price": 69.0,
     "stock": 4,
     "bottle_image": "assets/products/5949389003798-bottle.jpg"
+  },
+  {
+    "cod": "5010677935005",
+    "name": "Martini Extra Dryc 1l 18%",
+    "brand": "Martini",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 59.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5010677935005-bottle.jpg",
+    "description": "Vermut sec italian, lansat in 1900, cu continut mai ridicat de alcool (18% fata de 15% standard) si zahar redus. Aroma de pepene galben dulce, piersica si miere, completata de arome proaspete si usor acrisoare de zmeura, mar si lamaie. Gust bogat de mar, plante aromatice si note lemnoase, finisaj dominat de piersica, mar si scortisoara."
+  },
+  {
+    "cod": "5941937500988",
+    "name": "Metaxa 7 Stele 0.7l 40% SGR",
+    "brand": "Metaxa",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5941937500988-bottle.jpg",
+    "description": "Brandy grecesc, amestec de coniac invechit 7 ani in butoaie de stejar Limousin, vin Muscat de pe insulele grecesti Samos si Lemnos, petale de trandafir, anason si plante mediteraneene. Note elegante de piersici coapte si prune uscate, buchet intens cu miere, anason si stafide, finisaj persistent si catifelat."
+  },
+  {
+    "cod": "5949389004016",
+    "name": "Metaxa Grande Fine Ceramic 0.7l 40% SGR",
+    "brand": "Metaxa",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 389.0,
+    "stock": 4,
+    "bottle_image": "assets/products/5949389004016-bottle.jpg",
+    "description": "Brandy grecesc premium in sticla ceramica cu model traditional grecesc, obtinut din distilate de vin si vinuri Muscat de pe Insulele Egee, invechit pana la 15 ani. Note de miere, fructe uscate si condimente dulci, cu finisaj de stejar."
+  },
+  {
+    "cod": "5940652350212",
+    "name": "Palinca De Ardeal Zetea 50% 0,5l SGR",
+    "brand": "De",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 109.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940652350212-bottle.jpg",
+    "description": "Palinca traditionala romaneasca produsa de distileria Zetea din Medieșul Aurit (jud. Satu Mare), cu traditie de peste o suta de ani. Obtinuta prin distilarea prunelor printr-o metoda proprie, buchet expresiv si aromat, cu gust bogat de prune si finisaj lung, dulceag si viu. Culoare aurie."
+  },
+  {
+    "cod": "5942034005147",
+    "name": "Palinca De Prune Vlad Tepes 700ml 40% SGR",
+    "brand": "De",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5942034005147-bottle.jpg",
+    "description": "Palinca de prune 100% romaneasca si naturala, obtinuta din prune coapte de calitate superioara, distilate folosind tehnici traditionale imbinate cu tehnologie moderna. Arome intense cu note de prune preacoapte si gust bogat, lemnos."
+  },
+  {
+    "cod": "5940597910687",
+    "name": "Prosecco Alb Audax Bortolomiol 0.75l 12% SGR",
+    "brand": "Alb",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940597910687-bottle.jpg",
+    "description": "Prosecco Valdobbiadene Superiore DOCG Extra Brut, cu un nivel de zahar rezidual foarte apropiat de zero. Reprezinta intreaga experienta spumantelor casei Bortolomiol si onoreaza munca de pionierat a fondatorului Giuliano Bortolomiol, care in anii 1960 a fost primul care a produs o versiune brut de Valdobbiadene. Sec dar catifelat, fructat si rotund, buchet delicat, usor floral si armonios."
+  },
+  {
+    "cod": "5940597912827",
+    "name": "Prosecco Alb Bandarossa Bortolomiol 3l 11.5% SGR",
+    "brand": "Alb",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 399.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5940597912827-bottle.jpg",
+    "description": "Prosecco Valdobbiadene Superiore DOCG Extra Dry Millesimato. 'Banda rossa' (banda rosie) a fost initial semnul pe care fondatorul Giuliano Bortolomiol il punea doar pe sticlele cu cel mai bun extra dry al anului. Arome bogate si placute de mar galben pudrat si para, alaturi de note usoare de citrice si flori. Gust usor dulceag, echilibrat si catifelat. Disponibil in formate 0.375L, 75cl, Magnum si Jeroboam (3L)."
+  },
+  {
+    "cod": "5940597911950",
+    "name": "Prosecco Borga Brut 1.5l 11.5% SGR",
+    "brand": "Borga",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 129.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940597911950-bottle.jpg",
+    "description": "Prosecco DOC din regiunea Treviso (Marca Trevigiana), fermentat prin metoda Martinotti (Charmat) la 16-18 grade C timp de aproximativ 60 de zile. Profil fragant si elegant, descris de producator ca 'lumina calauzitoare: elegant, racoritor si stralucitor'. Disponibil in formate de 750ml si 1500ml."
+  },
+  {
+    "cod": "5940597915200",
+    "name": "Prosecco Borga Extra Brut 0.75l 11% SGR",
+    "brand": "Borga",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 49.0,
+    "stock": 10,
+    "bottle_image": "assets/products/5940597915200-bottle.jpg",
+    "description": "Prosecco DOC din provincia Treviso, spumant sec cu note citrice. Obtinut prin fermentatie secundara cu metoda Charmat timp de aproximativ 60 de zile, din struguri cultivati pe soluri argiloase in Chiarano, cu apa si minerale furnizate de raul Piave si afluentii sai."
+  },
+  {
+    "cod": "8010447501000",
+    "name": "Prosecco Bortolomiol Bandarossa 1.5l 11.5%",
+    "brand": "Bortolomiol",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 189.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8010447501000-bottle.jpg",
+    "description": "Prosecco Superiore DOCG Conegliano Valdobbiadene, format Magnum (1.5L), stil Extra Dry, 11.5% alcool. Recomandat ca aperitiv, servit la 6 grade C."
+  },
+  {
+    "cod": "8010447543000",
+    "name": "Prosecco Bortolomiol Senior 11.5% 1.5l",
+    "brand": "Bortolomiol",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 169.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8010447543000-bottle.jpg",
+    "description": "Prosecco Valdobbiadene Superiore DOCG Extra Dry din struguri Glera. Caracterizat printr-un reziduu de zahar fin echilibrat si arome imbratisatoare care creeaza moliciune si versatilitate. Buchet delicat, fructat si aromat, gust proaspat, tipic, echilibrat si catifelat. Al doilea in ordinea de la sec la dulce in linia traditionala a casei."
+  },
+  {
+    "cod": "59498124",
+    "name": "Prosecco Brilla Alb 0.2l 11% SGR",
+    "brand": "Brilla",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 11,
+    "bottle_image": "assets/products/59498124-bottle.jpg",
+    "description": "Prosecco italian din regiunea Veneto, cu buchet delicat si complex, note fructate de piersica si mar verde, completate de note de salcam si liliac. Produs de Botter, casa fondata in 1928 langa Venetia."
+  },
+  {
+    "cod": "5940597910304",
+    "name": "Prosecco Brilla Alb Extra Dry 0.75l 11.5% SGR",
+    "brand": "Brilla",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 59.0,
+    "stock": 19,
+    "bottle_image": "assets/products/5940597910304-bottle.jpg",
+    "description": "Prosecco DOC Extra Dry, culoare galben pai, note fructate de piersica si mar verde, cu accente de salcam si liliac, aciditate echilibrata, finish persistent. Produs de Botter, Veneto, Italia."
+  },
+  {
+    "cod": "59498131",
+    "name": "Prosecco Brilla Rose 0.2l 11% SGR",
+    "brand": "Brilla",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 10,
+    "bottle_image": "assets/products/59498131-bottle.jpg",
+    "description": "Prosecco rose cu bule persistente, arome de piersica, mar verde si lamaie, gust usor cu aciditate echilibrata. Se potriveste cu peste, supe si preparate cu ciuperci."
+  },
+  {
+    "cod": "5940597910311",
+    "name": "Prosecco Brilla Rose 0.75l11% SGR",
+    "brand": "Brilla",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 59.0,
+    "stock": 20,
+    "bottle_image": "assets/products/5940597910311-bottle.jpg",
+    "description": "Prosecco rose cu culoare roz si bule persistente, arome fructate de piersica, mar verde si lamaie, gust usor echilibrat. Spumant realizat prin metoda Charmat, Veneto, Italia."
+  },
+  {
+    "cod": "8034097961533",
+    "name": "Prosecco Epsilon Doc Treviso 0.75l 11%",
+    "brand": "Epsilon",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8034097961533-bottle.jpg",
+    "description": "Prosecco DOC Treviso Extra Dry, 100% Glera, cu perlaj fin si persistent, culoare galben pai. Note elegante de mar verde si flori (glicina, paducel). Produs de Ca' di Rajo, Veneto."
+  },
+  {
+    "cod": "8034097961540",
+    "name": "Prosecco Epsilon Pinot Grigio 0.75l 11.5%",
+    "brand": "Epsilon",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 5,
+    "bottle_image": "assets/products/8034097961540-bottle.jpg",
+    "description": "Spumant din struguri Pinot Grigio, sec, plin, armonios, cu note de fruct alb (para, mar auriu) si un final usor picant. Produs de Ca' di Rajo."
+  },
+  {
+    "cod": "8032927221321",
+    "name": "Prosecco Pitars Brut 1.5l 11.5%",
+    "brand": "Pitars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 179.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8032927221321-bottle.jpg",
+    "description": "Prosecco DOC Brut, culoare galben pai cu nuante verzui, arome fructate de mar necopt, lamaie si grapefruit, cu note de glicina si salcam. Produs de familia Pitars, Grave del Friuli, traditie din 1644."
+  },
+  {
+    "cod": "5940597913411",
+    "name": "Prosecco Pitars Colors Red 0.75l 11.5% SGR",
+    "brand": "Pitars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5940597913411-bottle.jpg",
+    "description": "Prosecco Brut in sticla metalizata rosie, editie limitata Pitars Colors. Elegant, cu note de citrice si mar."
+  },
+  {
+    "cod": "5940597911646",
+    "name": "Prosecco Pitars Gold 0.75l 11.5% SGR",
+    "brand": "Pitars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5940597911646-bottle.jpg",
+    "description": "Prosecco Colors Gold Millesimato Extra Dry, amestec de note florale si fructate, cu un final proaspat si racoritor. Editie Pitars in sticla aurie."
+  },
+  {
+    "cod": "08766139",
+    "name": "Prosecco Pitars Millesimato 1.5l 11.5%.",
+    "brand": "Pitars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 179.0,
+    "stock": 1,
+    "bottle_image": "assets/products/08766139-bottle.jpg",
+    "description": "Prosecco DOC Millesimato Extra Dry, culoare galben pai cu nuante verzui, arome de mar necopt, lamaie, grapefruit, glicina si salcam, aciditate placuta, gust proaspat si sec."
+  },
+  {
+    "cod": "5940597911639",
+    "name": "Prosecco Pitars Nature 0.75l 11.5% SGR",
+    "brand": "Pitars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 55.0,
+    "stock": 23,
+    "bottle_image": "assets/products/5940597911639-bottle.jpg",
+    "description": "Prosecco DOC Millesimato Brut Nature, galben pai deschis cu spuma delicata, note coapte de mar, cu accente de banana si ananas, gust cremos si curat."
+  },
+  {
+    "cod": "5940597914630",
+    "name": "Prosecco Pitars Nature Brut 1.5l 11.5% SGR",
+    "brand": "Pitars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 109.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940597914630-bottle.jpg",
+    "description": "Prosecco DOC Millesimato Brut Nature, galben pai deschis cu spuma delicata, note coapte de mar, cu accente de banana si ananas, gust cremos si curat."
+  },
+  {
+    "cod": "5940597912810",
+    "name": "Prosecco Pitars Rose 0.75l 11.5% SGR",
+    "brand": "Pitars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 7,
+    "bottle_image": "assets/products/5940597912810-bottle.jpg",
+    "description": "Prosecco Rose Spumante Brut, culoare roz stralucitor, perlaj fin si persistent, arome florale si de fructe de padure, cu note de zmeura si flori de piersic. Amestec de 89% Glera si 11% Pinot Nero."
   },
   {
     "cod": "5940597910670",
@@ -8449,6 +9032,17 @@
     "description": "Rom întunecat Bumbu XO din Panama, 40% alcool, învechit până la 18 ani în butoaie de bourbon și finisat în butoaie spaniole de sherry. Arome de caramel, stejar prăjit, vanilie, coajă de portocală, piper și cafea."
   },
   {
+    "cod": "5949096509521",
+    "name": "Rom Canerrock 0.7l 40% SGR",
+    "brand": "Canerrock",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 189.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5949096509521-bottle.jpg",
+    "description": "Rom condimentat din Barbados, combina rromuri invechite cu ingrediente locale selectate, note de vanilie, fructe confiate si tanini, culoare chihlimbar inchis, arome de cafea, ciocolata neagra, cocos si vanilie."
+  },
+  {
     "cod": "5941935102818",
     "name": "Rom Captain Morgan Black 0.7l 40 % SGR",
     "brand": "Captain",
@@ -8479,6 +9073,17 @@
     "bottle_image": "assets/products/5941937500339-bottle.jpg"
   },
   {
+    "cod": "5940541750802",
+    "name": "Rom Coniac Thoreau 0.7l 40% SGR",
+    "brand": "Thoreau",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 329.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5940541750802-bottle.jpg",
+    "description": "Bautura spirtoasa pe baza de rom guatemalez (70%) si coniac V.S.O.P. (30%), 40% alc. Culoare aurie cu reflexii de bronz, arome de crema brulee, scortisoara si flori de portocal, cu note delicate de trandafir si iasomie."
+  },
+  {
     "cod": "5941934701708",
     "name": "Rom Dead Man Fingers Spiced 0.7l 37.5% SGR",
     "brand": "Dead",
@@ -8487,6 +9092,50 @@
     "price": 69.0,
     "stock": 2,
     "bottle_image": "assets/products/5941934701708-bottle.jpg"
+  },
+  {
+    "cod": "5942122002348",
+    "name": "Rom Dictador 10y 0.7l 40% SGR",
+    "brand": "Dictador",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 159.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5942122002348-bottle.jpg",
+    "description": "Rom columbian imbatranit 10 ani in butoaie ex-bourbon din stejar alb american, note de vanilie, caramel si cafea prajita, cu o urma de toffee si fructe coapte, finish cald si de lunga durata."
+  },
+  {
+    "cod": "5941935109251",
+    "name": "Rom Dictador 12 Y 0.7l 40% SGR",
+    "brand": "Dictador",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 199.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5941935109251-bottle.jpg",
+    "description": "Rom solera columbian, amestec de rromuri intre 8 si 14 ani, cu o medie de 12 ani, distilat din sirop de trestie de zahar si invechit in butoaie americane de whisky. Note de caramel moale, miere, cafea si cacao."
+  },
+  {
+    "cod": "5941935107462",
+    "name": "Rom Dictador 20 Y 0.7l 40% SGR",
+    "brand": "Dictador",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941935107462-bottle.jpg",
+    "description": "Rom columbian invechit prin sistem Solera, sticla neagra mata iconica, arome intense si persistente de caramel si vanilie, cafea, o urma de toffee si lemn."
+  },
+  {
+    "cod": "5942122002355",
+    "name": "Rom Dictador Reserva Colombiana 0.7l 38% SGR",
+    "brand": "Dictador",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 129.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5942122002355-bottle.jpg",
+    "description": "Rom columbian creat sub supravegherea Master Blender Hernan Parra, familie aflata la a treia generatie in productia de rom. Note aromatice de cafea, ciocolata, vanilie, panela si caramel."
   },
   {
     "cod": "5941937500025",
@@ -8559,6 +9208,17 @@
     "bottle_image": "assets/products/5941937500575-bottle.jpg"
   },
   {
+    "cod": "5941932130524",
+    "name": "Rom French Overseas XO 0.7l 43% SGR",
+    "brand": "French",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 299.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941932130524-bottle.jpg",
+    "description": "Rom XO, amestec de rromuri agricole si din melasa, provenind din distileriile Riviere du Mat (Reunion) si Galion (Martinica), invechit in butoaie de stejar american si francez, fara coloranti sau arome adaugate. Note de trestie de zahar, scortisoara si crema caramel, cu stafide si fructe tropicale."
+  },
+  {
     "cod": "8501110080439",
     "name": "Rom Havana Club Anejo 7 0,7l 40%",
     "brand": "Havana",
@@ -8589,6 +9249,17 @@
     "bottle_image": "assets/products/8501110080927-bottle.jpg"
   },
   {
+    "cod": "8501110080231",
+    "name": "Rom Havana Club Original 3 Ani 0,7l 40%",
+    "brand": "Havana",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8501110080231-bottle.jpg",
+    "description": "Rom cubanez usor si sec, cu gust si aroma constante, ideal pentru cocktailuri clasice precum Mojito, Daiquiri si Cuba Libre."
+  },
+  {
     "cod": "766094070052",
     "name": "Rom Matusalem Clasico 10yo 0.7l 40%",
     "brand": "Matusalem",
@@ -8597,6 +9268,50 @@
     "price": 119.0,
     "stock": 1,
     "bottle_image": "assets/products/766094070052-bottle.jpg"
+  },
+  {
+    "cod": "5941932100749",
+    "name": "Rom Naud Hidden Loot Dark 0.7l 41% SGR",
+    "brand": "Naud",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 199.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941932100749-bottle.jpg",
+    "description": "Rom condimentat premium, 10 fructe si condimente ce amintesc de Panama, amestecate cu rom de 2 ani distilat in coloana din regiunea Arco Seco. Culoare chihlimbar auriu, arome de portocala amara, vanilie si stejar prajit, cu note de fasole tonka; final delicat de ardei iute."
+  },
+  {
+    "cod": "5941932100114",
+    "name": "Rom Naud Hidden Loot Original 0.7l 40% SGR",
+    "brand": "Naud",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 169.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941932100114-bottle.jpg",
+    "description": "Rom condimentat originar din Panama, trestie de zahar distilata si invechita in butoaie de bourbon inainte de a ajunge in Franta. Culoare aurie-chihlimbar, arome de vanilie, banana si cocos, cu note de rom invechit si lemn; gust moale, dulce si fructat."
+  },
+  {
+    "cod": "3460410529862",
+    "name": "Rom Plantation Pineapple 0.7l 40%",
+    "brand": "Plantation",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 179.0,
+    "stock": 2,
+    "bottle_image": "assets/products/3460410529862-bottle.jpg",
+    "description": "Rom din Barbados, amestec de rom alb si rom negru infuzat cu ananas Queen Victoria macerat, distilat in alambic cu rom negru timp de trei luni. Note exotice de fructe, corp plin si dulce."
+  },
+  {
+    "cod": "5949389004504",
+    "name": "Rom Plantation XO 0.7l 40% SGR",
+    "brand": "Plantation",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 259.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5949389004504-bottle.jpg",
+    "description": "Rom XO editie aniversara 20 de ani a Master Blenderului Alexandre Gabriel, amestec de rromuri extra-vechi din Barbados (8-15 ani) invechite in butoaie de bourbon, apoi finisate in butoaie de coniac Ferrand in sud-vestul Frantei. Note de ciocolata, vanilie, banana coapta, cocos prajit si mango."
   },
   {
     "cod": "5940597820788",
@@ -8810,6 +9525,28 @@
     "description": "Veuve Clicquot Yellow Label (Eticheta galbenă), recreată în fiecare an datorită colecției de vinuri de rezervă. Amestec de 30-45% vinuri de rezervă, din struguri proveniți din 50-60 de vii, predominant Pinot Noir (50-55%) pentru structură, Chardonnay (28-33%) pentru eleganță și Meunier (15-20%). Maturată minimum 3 ani în pivnițe, rezultând o șampanie mătăsoasă."
   },
   {
+    "cod": "5949024607336",
+    "name": "Tequila Camino Gold 0.7l 40%",
+    "brand": "Tequila",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5949024607336-bottle.jpg",
+    "description": "Tequila mexicana Gold (Joven/Oro), culoare aurie, note de agave si melasa de trestie, gust de agave albastra si caramel dulce."
+  },
+  {
+    "cod": "5941935101699",
+    "name": "Tequila Camino Gold 0.7l 40% SGR",
+    "brand": "Tequila",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 4,
+    "bottle_image": "assets/products/5941935101699-bottle.jpg",
+    "description": "Tequila mexicana Gold (Joven/Oro), culoare aurie, note de agave si melasa de trestie, gust de agave albastra si caramel dulce."
+  },
+  {
     "cod": "5941937505679",
     "name": "Tequila Don Julio Reposado 0.7l 38% SGR",
     "brand": "Tequila",
@@ -8848,6 +9585,292 @@
     "price": 79.0,
     "stock": 1,
     "bottle_image": "assets/products/5942039004749-bottle.jpg"
+  },
+  {
+    "cod": "5942034005222",
+    "name": "Tuica Vlad Tepes 700ml 45%",
+    "brand": "Vlad",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5942034005222-bottle.jpg",
+    "description": "Tuica traditionala romaneasca de prune, obtinuta prin dubla distilare, din prune culese la maturitate deplina pentru un gust intens si aromat."
+  },
+  {
+    "cod": "59493655",
+    "name": "Unicum 0.1l 40% Vol. SGR",
+    "brand": "Unicum",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 25.0,
+    "stock": 5,
+    "bottle_image": "assets/products/59493655-bottle.jpg",
+    "description": "Zwack Unicum, licior de plante unguresc, creat dupa reteta secreta a familiei Zwack din 1790, cu peste 40 de plante medicinale si condimente, maturat in butoaie de stejar."
+  },
+  {
+    "cod": "5940579001501",
+    "name": "Unicum Orange Bitter 0.5l 34.5% Vol. SGR",
+    "brand": "Unicum",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5940579001501-bottle.jpg",
+    "description": "Unicum Orange Bitter combina baza clasica Unicum cu distilat si extract de portocala, maturat in butoaie de stejar; o parte din coaja de portocala provine din soiul Sanguinello (portocala rosie siciliana). Se serveste cel mai bine cu gheata si o felie de portocala."
+  },
+  {
+    "cod": "8005829981655",
+    "name": "Vermouth Bottega Bianco 0.75l 16%",
+    "brand": "Vermouth",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8005829981655-bottle.jpg",
+    "description": "Vermouth alb pe baza de Pinot Grigio, cu extract natural dintr-o reteta secreta cu peste 30 de plante, flori si condimente (soc, pelin roman, scortisoara de Ceylon, nucsoara, galanga, coaja de portocala amara). Culoare pala cu nuante usor galbui, buchet elegant si complex, note picante si citrice delicate."
+  },
+  {
+    "cod": "8000020000013",
+    "name": "Vermouth Cinzano Bianco 1l 15%",
+    "brand": "Vermouth",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 59.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8000020000013-bottle.jpg",
+    "description": "Vermouth alb italian, culoare galben deschis, aroma parfumata, plina si delicata, dulce si versatila. Traditie Cinzano din 1757, Torino, Piemont."
+  },
+  {
+    "cod": "8000020000020",
+    "name": "Vermouth Cinzano Rosso 1l 15%",
+    "brand": "Vermouth",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 49.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8000020000020-bottle.jpg",
+    "description": "Vermouth rosu italian, culoare rosu rubiniu, echilibru intre dulceata naturala si o usoara amareala, cu note de rozmarin, salvie, citrice si condimente. Ideal pentru Negroni sau Manhattan."
+  },
+  {
+    "cod": "8004730000028",
+    "name": "Vin Rosu Florio Marsala 0.75l 18%",
+    "brand": "Rosu",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8004730000028-bottle.jpg",
+    "description": "Vin fortificat rosu Marsala Superiore Dulce, din struguri Grillo si Catarratto, culoare rosu inchis cu reflexii bronz, note de smochine, castane, nuci prajite, visine negre, stafide, cardamom si vanilie."
+  },
+  {
+    "cod": "5940674069000",
+    "name": "Vin 1000 Chipuri Cupaj Alb 0.75l 13.2% SGR",
+    "brand": "1000",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 59.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940674069000-bottle.jpg",
+    "description": "Vin alb sec, culoare galben pai, cupaj sofisticat de Feteasca Alba, Riesling Italian, Chardonnay, Sauvignon Blanc si Tamaioasa Romaneasca, cu prospetime si echilibru. Din podgoriile Dealu Mare (D.O.C.)."
+  },
+  {
+    "cod": "5940674069185",
+    "name": "Vin 1000 Chipuri De Fintesti Shiraz 0.75l 16% SGR",
+    "brand": "1000",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 139.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940674069185-bottle.jpg",
+    "description": "Vin rosu sec obtinut din struguri Shiraz, D.O.C. Dealu Mare."
+  },
+  {
+    "cod": "684811794350",
+    "name": "Vin 1000 Chipuri Fet.neagra Fintesti 0.75l15.5% SGR",
+    "brand": "1000",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/684811794350-bottle.jpg",
+    "description": "Vin rosu sec din struguri Feteasca Neagra, invechit 18 luni in butoaie de stejar si 6 luni in sticla. D.O.C. Dealu Mare."
+  },
+  {
+    "cod": "5940674069048",
+    "name": "Vin 1000 Chipuri Iordache 0.75l 12% SGR",
+    "brand": "1000",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 4,
+    "bottle_image": "assets/products/5940674069048-bottle.jpg",
+    "description": "Vin alb sec din struguri Feteasca Alba (Iordache), D.O.C.-C.M.D. Dealu Mare."
+  },
+  {
+    "cod": "5940674069116",
+    "name": "Vin 1000chipuri Cabernet&cabernet 0.75l 15.5% SGR",
+    "brand": "1000chipuri",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5940674069116-bottle.jpg",
+    "description": "Vin rosu sec, cupaj de Cabernet Sauvignon si Cabernet Franc, maturat 12 luni in butoaie de stejar. D.O.C. Dealu Mare."
+  },
+  {
+    "cod": "5940674069192",
+    "name": "Vin 1000chpuri Feteasca Neagra 0.75l 16% SGR",
+    "brand": "1000chpuri",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 149.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5940674069192-bottle.jpg",
+    "description": "Vin rosu sec obtinut din struguri de Feteasca Neagra. D.O.C.-C.M.D. Dealu Mare."
+  },
+  {
+    "cod": "5940597911394",
+    "name": "Vin Alb Donnaluce Lazio 0.75l 13% SGR",
+    "brand": "Alb",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 11,
+    "bottle_image": "assets/products/5940597911394-bottle.jpg",
+    "description": "Vin alb din Lazio (Italia), sortiment din Greco Bianco, Malvasia del Lazio si Chardonnay, cu arome de caise, piersici, litchi si mandarine, gust catifelat, proaspat si fructat, cu final de migdale."
+  },
+  {
+    "cod": "5940597912926",
+    "name": "Vin Alb Linistit Fina Taif Igp 0.75 L 13% SGR",
+    "brand": "Alb",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940597912926-bottle.jpg",
+    "description": "Vin alb sicilian din struguri Zibibbo, culoare galben-pai stralucitor, arome de piersica alba, flori de portocal si ghimbir, echilibrat, cu aciditate placuta."
+  },
+  {
+    "cod": "8008530068172",
+    "name": "Vin Allenico 2019 Rosu 0.75l 14,5%",
+    "brand": "Allenico",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 55.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8008530068172-bottle.jpg",
+    "description": "Vin rosu italian, Primitivo di Manduria DOP, 100% Primitivo, culoare rosu rubiniu intens cu reflexii violet, arome de smochine uscate si fructe rosii coapte cu note de vanilie, sec, cald si catifelat, final lung."
+  },
+  {
+    "cod": "5940597914777",
+    "name": "Vin Amami Primitivo 0.75l 13.5% SGR",
+    "brand": "Amami",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 4,
+    "bottle_image": "assets/products/5940597914777-bottle.jpg",
+    "description": "Vin rosu italian din Puglia, 100% Primitivo, culoare violet intens ce vireaza spre chihlimbariu odata cu maturarea, structura solida, taninuri catifelate echilibrate de aciditate, 13.5% alcool, maturat in cuve de inox. Eticheta este o inima de ceramica inspirata din traditia olaritului din Vietri sul Mare."
+  },
+  {
+    "cod": "5940597912360",
+    "name": "Vin Amarone Tommasi 0.75l 15% SGR",
+    "brand": "Amarone",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 279.0,
+    "stock": 4,
+    "bottle_image": "assets/products/5940597912360-bottle.jpg",
+    "description": "Vin rosu Amarone della Valpolicella Classico DOCG din Veneto, sortiment din Corvina, Corvinone, Oseleta si Rondinella, arome intense de visine coapte si fructe de padure cu note usor picante, sec si catifelat, echilibru bun intre aciditate si taninuri. Producator: Tommasi, 15% alcool."
+  },
+  {
+    "cod": "5940597911097",
+    "name": "Vin Appassiamento Quattro Passi 0.75l 14% SGR",
+    "brand": "Appassiamento",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 49.0,
+    "stock": 8,
+    "bottle_image": "assets/products/5940597911097-bottle.jpg",
+    "description": "Vin rosu din Veneto realizat prin metoda Appassimento (struguri uscati 90 de zile pentru concentrarea aromelor), sortiment din Corvina si Rondinella cu Cabernet Sauvignon si Merlot. Moale, cu rotunjime placuta, usor condimentat, structura corpolenta si final lung. Producator: Villa degli Olmi, 14% alcool."
+  },
+  {
+    "cod": "5940628709112",
+    "name": "Vin Apriori Can Perlant Roze Dulce 0.25l 7% Doza SGR",
+    "brand": "Apriori",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 11,
+    "bottle_image": "assets/products/5940628709112-bottle.jpg",
+    "description": "Vin spumant roze dulce, sortiment Muscat de Hamburg si Muscat Ottonel, cu bule fine si arome florale de camp proaspete, 7% alcool, doza 250ml. Recomandat ca aperitiv, alaturi de gustari usoare, fructe proaspete si deserturi delicate."
+  },
+  {
+    "cod": "5940628709129",
+    "name": "Vin Apriori Can Perlant Sec Alb 0.25l 12% Doza SGR",
+    "brand": "Apriori",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 11,
+    "bottle_image": "assets/products/5940628709129-bottle.jpg",
+    "description": "Vin spumant alb sec din struguri Glera, cu arome de mere si flori de camp, prospetime echilibrata cu carbonatare fina, 12% alcool, doza 250ml. Produs de Apriori Wine."
+  },
+  {
+    "cod": "8022931502172",
+    "name": "Vin Argiano Brunello 0.75l 14.5%",
+    "brand": "Argiano",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 389.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8022931502172-bottle.jpg",
+    "description": "Vin toscan din Montalcino, Brunello di Montalcino, 100% Sangiovese, maturat majoritar in butoaie mari de stejar. Arome intense de cirese, violete, cedru si ierburi uscate, taninuri fine si aciditate vibranta."
+  },
+  {
+    "cod": "5940597910939",
+    "name": "Vin Argiolas Costamolino 0.75l 13.5% SGR",
+    "brand": "Argiolas",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940597910939-bottle.jpg",
+    "description": "Vermentino di Sardegna DOC, culoare galben-pai cu reflexii verzui, arome subtile, intense si delicate. Gust proaspat, sec, sapid, cu senzatie fina si delicata. Fermentat la temperatura controlata, cu maturare scurta pe drojdie."
+  },
+  {
+    "cod": "5941974800607",
+    "name": "Vin Aurelia Visinescu 3 Fete Negre 0.75l 15%",
+    "brand": "Aurelia",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 149.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941974800607-bottle.jpg",
+    "description": "Vin rosu romanesc din Dealu Mare, Aurelia Visinescu - Domeniile Sahateni, din struguri Feteasca Neagra. Caracter generos, corpolent, textura catifelata, arome de coacaze negre completate de note de vanilie din stejar, 14.5% alcool."
+  },
+  {
+    "cod": "5941979900128",
+    "name": "Vin Avincis Cramposie Alb 0,75 L 13%",
+    "brand": "Avincis",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 65.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941979900128-bottle.jpg",
+    "description": "Vin alb romanesc din Dragasani, din soiul autohton Cramposie Selectionata, culoare galbena stralucitoare cu reflexii verzui, arome proaspete de para si mar verde, gust cu note de mar verde, para alba, caisa si lime."
+  },
+  {
+    "cod": "5940597911653",
+    "name": "Vin Bakan Montepulciano D`abruzzo 0.75l 14.5% SGR",
+    "brand": "Bakan",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940597911653-bottle.jpg",
+    "description": "Vin rosu organic din Abruzzo (Controguerra, Teramo), 100% Montepulciano d'Abruzzo, culoare rosu rubiniu luminos, 14.5% alcool. Arome de violete, trandafiri, mure si prune coapte, cu note de gem de visine negre, cacao si cafea. Fermentat la temperatura controlata, 6 luni in cuve de ciment, 18 luni in butoaie de stejar de 50hl. Medalie de Bronz la Decanter World Wine Awards 2019."
   },
   {
     "cod": "5940597911745",
@@ -8916,6 +9939,17 @@
     "description": "Vin alb Chardonnay Veneto, galben paielor intens și luminos, arome de măr, piersică și pară, gust cald și moale, echilibrat de note minerale proaspete."
   },
   {
+    "cod": "8033331540527",
+    "name": "Vin Borga Bag In Box Pinot G. 5l",
+    "brand": "Borga",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 5,
+    "bottle_image": "assets/products/8033331540527-bottle.jpg",
+    "description": "Pinot Grigio delle Venezie DOC, produs de Cantine Borga (Chiarano, Treviso). Vin proaspat, fructat, cu profil echilibrat. Struguri dezciorchinati si presati usor, fermentare la 16-18C timp de 10 zile, maturare in inox 5-6 luni."
+  },
+  {
     "cod": "8033331540152",
     "name": "Vin Borga Bag In Box Rose 5l 11%",
     "brand": "Borga",
@@ -8925,6 +9959,226 @@
     "stock": 29,
     "bottle_image": "assets/products/8033331540152-bottle.jpg",
     "description": "Vin roze Veneto IGT, culoare roz luminoasă, arome de măr, piersică, citrice, iasomie și salcâm, gust cald și moale, echilibrat de note proaspete și sapide."
+  },
+  {
+    "cod": "8033331540213",
+    "name": "Vin Borga Bag In Box Rosu Demi Dulce 5l 12%",
+    "brand": "Borga",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8033331540213-bottle.jpg",
+    "description": "Vin rosu Merlot din Veneto, 12% alcool, culoare rosu rubiniu intens, arome de fructe de padure proaspete (zmeura, cirese, capsuni) cu note vegetale si florale. Structura echilibrata, prospetime vie, taninuri rotunjite. Clasificat demidulce, format Bag-in-Box 5 litri. Producator: Cantine Borga."
+  },
+  {
+    "cod": "8033331540978",
+    "name": "Vin Borga Bag In Box Rosu Sec 5l 12%",
+    "brand": "Borga",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8033331540978-bottle.jpg",
+    "description": "Vin rosu Cabernet Sauvignon din Veneto, culoare rubinie, arome de fructe rosii coapte, prune si cirese, cu note usor erbacee si picante. Gust moale, echilibrat intre prospetime si taninuri tinere. Vin sec, 12% alcool, format Bag-in-Box 5 litri. Producator: Cantine Borga."
+  },
+  {
+    "cod": "5940597911219",
+    "name": "Vin Brilla Pinot Grigio 0.75l 12.5% SGR",
+    "brand": "Brilla",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5940597911219-bottle.jpg",
+    "description": "Pinot Grigio delle Venezie DOC, culoare galben-pai cu reflexii aurii, note florale si de fructe cu pulpa galbena, echilibru pronuntat intre aciditate si mineralitate, cu o moliciune si persistenta neasteptate. 12.5% alcool. Producator: Brilla! (parte din grupul Argea)."
+  },
+  {
+    "cod": "5940541820185",
+    "name": "Vin Budureasca Noble 0.75l 14% SGR",
+    "brand": "Budureasca",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940541820185-bottle.jpg",
+    "description": "Vin rosu Budureasca Noble 5 (Five), din Dealu Mare, cupaj de Cabernet Sauvignon, Pinot Noir, Merlot, Syrah si Feteasca Neagra. Culoare rosu rubiniu intens, arome de coacaze negre, visine coapte si prune uscate, cu note de vanilie din maturarea in stejar, taninuri moi si final persistent. 14.5% alcool."
+  },
+  {
+    "cod": "5940540830635",
+    "name": "Vin C.mircesti Bardul Din Mir.fume Blanc 0.75l13.5% SGR",
+    "brand": "C.mircesti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5940540830635-bottle.jpg",
+    "description": "Vin alb sec, Bardul din Mircesti Fume Blanc, 100% Sauvignon Blanc, din podgoriile satului Mircesti (Moldova centrala), maturat 5 luni sur lie in butoaie de salcam. Arome de iasomie si fagure de miere, cu accente de pepene galben, gust corpolent si intens fructat, cu nuante erbacee."
+  },
+  {
+    "cod": "5940540830666",
+    "name": "Vin C.mircesti Bardul Din Mirc.s.b 0.375l 11.5% SGR",
+    "brand": "C.mircesti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940540830666-bottle.jpg",
+    "description": "Vin alb dulce, Bardul din Mircesti Sauvignon Blanc Late Harvest, culoare alb-verzuie, arome de pere si pepene galben, din struguri Sauvignon Blanc culesi manual, supramaturati. Maturat 2 luni in butoaie de salcam, 118 g/l zahar rezidual, profil fructat si savuros. Format 0.375L."
+  },
+  {
+    "cod": "5940540830628",
+    "name": "Vin C.mircesti Fet.neagra&sapperavi 0.75l 15% SGR",
+    "brand": "C.mircesti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5940540830628-bottle.jpg",
+    "description": "Vin rosu sec, cupaj de Feteasca Neagra (78%) si Saperavi georgian (22%), din satul Mircesti, Moldova (podgorii la 300m altitudine). Arome intense de fructe de padure, mure, afine, visine negre, piper negru si vanilie, corp plin si condimentat. Maturat 12 luni in butoaie de stejar, potential de invechire 5-10+ ani. 15% alcool."
+  },
+  {
+    "cod": "5940540830611",
+    "name": "Vin C.mircesti Pinot Noir 0.75l 14% SGR",
+    "brand": "C.mircesti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5940540830611-bottle.jpg",
+    "description": "Vin rosu moldovenesc, Pinot Noir, din satul Mircesti (regiunea Codru), culoare rosiatic-caramizie, arome fructate de cirese, capsuni si vanilie. Maturat 12 luni in butoaie de lemn. Note de cirese, zmeura, ciuperci, vanilie si hibiscus."
+  },
+  {
+    "cod": "5940540834213",
+    "name": "Vin C.mircesti Pripa Fet.neagra 0.75l 14.9% SGR",
+    "brand": "C.mircesti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940540834213-bottle.jpg",
+    "description": "Vin rosu sec din Republica Moldova (Stefan Voda), 100% Feteasca Neagra, produs de Vinaria Pripa. Struguri culesi manual din vii plantate in 2014, fermentare in inox, maturare 12 luni in butoaie noi de stejar moldovenesc. 14.9% alcool."
+  },
+  {
+    "cod": "5940540834220",
+    "name": "Vin C.mircesti Pripa Rara Neagra 0.75l 15.5% SGR",
+    "brand": "C.mircesti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5940540834220-bottle.jpg",
+    "description": "Vin rosu sec, Rara Neagra, produs de Vinaria Pripa, cu arome complexe si note elegante dupa 11 luni de maturare in butoaie noi de stejar moldovenesc. Gust bogat, potrivit pentru preparate din carne rosie sau branzeturi maturate. Expresie autentica a terroir-ului Stefan Voda din Moldova. 15.5% alcool."
+  },
+  {
+    "cod": "5940540830604",
+    "name": "Vin C.mircesti Rara Neagra 0.75l 14.5% SGR",
+    "brand": "C.mircesti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5940540830604-bottle.jpg",
+    "description": "Vin rosu sec, 100% Rara Neagra, din podgoriile Mircesti (Moldova, 285m altitudine). Culoare rosu rubiniu, arome de visine, tutun si ardei dulce, maturat 12 luni in stejar, gust rotund, delicat si condimentat."
+  },
+  {
+    "cod": "5940540830574",
+    "name": "Vin C.mircesti Riesling Alb 0.75l 12.5% SGR",
+    "brand": "C.mircesti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5940540830574-bottle.jpg",
+    "description": "Vin alb sec, Riesling, culoare galbena cu reflexii verzui, arome florale, de mar si citrice exotice, gust fructat si suculent cu mineralitate pronuntata si textura crocanta. Din podgoriile Mircesti (Moldova, 320m altitudine), maturat 4 luni in inox."
+  },
+  {
+    "cod": "5941935121369",
+    "name": "Vin Ca Dei Frati Lugana 0.75l 13% SGR",
+    "brand": "Ca",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 22,
+    "bottle_image": "assets/products/5941935121369-bottle.jpg",
+    "description": "Vin alb din Lombardia, Lugana DOC \"I Frati\", din struguri Turbiana, cu arome de citrice proaspete, mar verde si o usoara nota de migdale, alaturi de note florale si minerale. Culoare galben-pai cu reflexii stralucitoare, fermentat in inox la temperatura controlata. Produs de familia istorica Dal Cero. 13% alcool."
+  },
+  {
+    "cod": "5941935121376",
+    "name": "Vin Ca Dei Frati Rose 0.75l 12.5%",
+    "brand": "Ca",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 10,
+    "bottle_image": "assets/products/5941935121376-bottle.jpg",
+    "description": "Rosa dei Frati, vin roze din Lugana di Sirmione (Brescia), proaspat, delicat si sprintar, cu arome de flori de paducel, mar verde si visine salbatice. Gust savuros si proaspat, cu aciditate vie si note de fructe rosii mici. 12.5% alcool, 750ml."
+  },
+  {
+    "cod": "8005415056989",
+    "name": "Vin Canti Pinot Grigio 0,75l 12%",
+    "brand": "Canti",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 39.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8005415056989-bottle.jpg",
+    "description": "Vin alb italian Canti Pinot Grigio, culoare galben-lamaie palid cu reflexii verzui, arome de fructe de livada si pere, gust sec cu note de mar verde si citrice, final proaspat si echilibrat. Produs de o cunoscuta familie de vinificatori din zona Lacului Garda, Veneto."
+  },
+  {
+    "cod": "5940597913565",
+    "name": "Vin Casino Nitti Greco Di Tufo Puddinghe 0.75l13.5% SGR",
+    "brand": "Casino",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940597913565-bottle.jpg",
+    "description": "Vin alb din Campania, Puddinghe, Greco di Tufo DOCG, produs de Casino Nitti, 13.5% alcool. Arome ample de piersica, cedru si ghimbir, condimentate cu note de alune de padure, menta, salvie, piper alb, vanilie, cretă si ierburi. Produs intr-una din cele mai mici zone DOCG din Italia."
+  },
+  {
+    "cod": "5940597910984",
+    "name": "Vin Casisano Brunello Mont. 0.75l 14% SGR",
+    "brand": "Casisano",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 249.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5940597910984-bottle.jpg",
+    "description": "Brunello di Montalcino DOCG, 100% Sangiovese Grosso, din domeniul Casisano (480m altitudine). Culoare rosu rubiniu intens, complexitate eleganta cu arome de fructe rosii proaspete si note picante. Macerare pe coji circa 25 zile, maturare 3 ani in butoaie de stejar de Slavonia, plus minim 6 luni in sticla. Structura taninica puternica, aciditate excelenta, potential mare de invechire."
+  },
+  {
+    "cod": "7794450025029",
+    "name": "Vin Catena Chardonnay 0.75l 13.5%",
+    "brand": "Catena",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 2,
+    "bottle_image": "assets/products/7794450025029-bottle.jpg",
+    "description": "Vin alb argentinian, 100% Chardonnay, din podgorii de altitudine din Mendoza, produs de Bodega Catena Zapata. Maturat 10-12 luni in stejar francez, cu note de vanilie si textura catifelata. Arome de fructe tropicale (ananas, piersica), stejar prajit si unt, cu aciditate echilibrata. 13.5% alcool."
+  },
+  {
+    "cod": "7794450008169",
+    "name": "Vin Catena Zapata Chard.alta 0.75l 13.5%",
+    "brand": "Catena",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 129.0,
+    "stock": 2,
+    "bottle_image": "assets/products/7794450008169-bottle.jpg",
+    "description": "Catena Alta Chardonnay, vin alb argentinian din podgoriile de altitudine ale Vaii Uco, Mendoza (predominant din via Adrianna, la 1450m, cu soluri calcaroase). Presat in boabe intregi, fermentat 100% in stejar francez cu drojdii naturale la temperaturi joase, maturat 10-14 luni in stejar francez pe drojdie. 100% Chardonnay, 13.5% alcool, mineralitate distincta."
+  },
+  {
+    "cod": "56620202022",
+    "name": "Vin Cavit Chardonnay 0.75l 13%",
+    "brand": "Cavit",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 3,
+    "bottle_image": "assets/products/56620202022-bottle.jpg",
+    "description": "Vin alb italian din Trentino (regiunea raului Adige), 100% Chardonnay, produs de Cavit Collection (stil Oak Zero, nematurat in stejar). Struguri culesi manual, fermentati sur lie. Arome de mar, citrice si fructe tropicale. Vegan, fara gluten, eco-certificat."
   },
   {
     "cod": "5941930900198",
