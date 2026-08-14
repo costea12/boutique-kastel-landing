@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boutique Kastel — Duty Free Concept | Hunedoara</title>
-<meta name="description" content="Boutique Kastel — parfumuri, parfumuri niche, îngrijire corporală, băuturi, dulciuri și cafea, la Hunedoara. Descoperă calitatea la preț corect.">
+<title>Despre noi | Boutique Kastel</title>
+<meta name="description" content="Povestea, valorile și magazinul fizic din spatele Boutique Kastel — Duty Free Concept, Hunedoara.">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#0a464e">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Utility bar -->
 <div class="utility-bar">
   <div class="wrap">
     <span>Bulevardul Libertății 6, Hunedoara</span>
@@ -19,21 +18,20 @@
   </div>
 </div>
 
-<!-- Header -->
 <header class="site-header">
   <div class="header-wrap">
-    <a href="#top" class="logo">
+    <a href="index.html" class="logo">
       <span class="mark">BK</span>
       <span class="word">Boutique Kastel<span>DUTY FREE CONCEPT</span></span>
     </a>
 
     <nav class="main-nav">
       <a href="parfumuri.html">Parfumuri</a>
-      <a href="#categorii">Parfumuri niche</a>
-      <a href="#categorii">Îngrijire corporală</a>
+      <a href="index.html#categorii">Parfumuri niche</a>
+      <a href="index.html#categorii">Îngrijire corporală</a>
       <a href="bauturi.html">Băuturi</a>
-      <a href="#categorii">Dulciuri &amp; cafea</a>
-      <a href="#categorii">Diverse</a>
+      <a href="index.html#categorii">Dulciuri &amp; cafea</a>
+      <a href="index.html#categorii">Diverse</a>
     </nav>
 
     <div class="header-icons">
@@ -44,10 +42,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.6-4 5-6 8-6s6.4 2 8 6"/></svg>
         <span class="tooltip">Magazin online în curând</span>
       </button>
-      <button aria-label="Coș">
+      <a href="cos.html" class="cart-btn" aria-label="Coș">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
-        <span class="tooltip">Magazin online în curând</span>
-      </button>
+        <span class="cart-badge" id="cartCount">0</span>
+      </a>
       <button class="nav-toggle" id="navToggle" aria-label="Meniu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -55,124 +53,22 @@
   </div>
 </header>
 
-<!-- Mobile nav -->
 <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" id="navClose" aria-label="Închide meniul">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
   </button>
   <a href="parfumuri.html">Parfumuri</a>
-  <a href="#categorii">Parfumuri niche</a>
-  <a href="#categorii">Îngrijire corporală</a>
+  <a href="index.html#categorii">Parfumuri niche</a>
+  <a href="index.html#categorii">Îngrijire corporală</a>
   <a href="bauturi.html">Băuturi</a>
-  <a href="#categorii">Dulciuri &amp; cafea</a>
-  <a href="#categorii">Diverse</a>
+  <a href="index.html#categorii">Dulciuri &amp; cafea</a>
+  <a href="index.html#categorii">Diverse</a>
   <div class="mobile-nav-divider"></div>
-  <a href="despre-noi.html">Despre noi</a>
+  <a href="despre-noi.html" class="nav-active">Despre noi</a>
 </div>
 
-<!-- Hero -->
-<section class="hero grain" id="top">
-  <svg class="hero-corner tl" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 40 Q2 2 40 2"/><circle cx="40" cy="2" r="2" fill="currentColor" stroke="none"/><circle cx="2" cy="40" r="2" fill="currentColor" stroke="none"/></svg>
-  <svg class="hero-corner br" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 40 Q2 2 40 2"/><circle cx="40" cy="2" r="2" fill="currentColor" stroke="none"/><circle cx="2" cy="40" r="2" fill="currentColor" stroke="none"/></svg>
-
-  <div class="hero-inner">
-    <p class="kicker">Hunedoara · Colecție Exclusivă</p>
-    <h1>Boutique Kastel<br>— Duty Free Concept</h1>
-    <p class="sub">Descoperă calitatea la preț corect!</p>
-    <div class="flourish">
-      <span class="line"></span>
-      <svg viewBox="0 0 42 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 8h14M28 8h14M21 2v12M15 8a6 6 0 0 1 12 0"/></svg>
-      <span class="line rev"></span>
-    </div>
-    <div class="hero-ctas">
-      <a href="#categorii" class="btn btn-gold">Explorează colecția</a>
-      <a href="#despre" class="btn btn-outline">Despre concept</a>
-    </div>
-  </div>
-</section>
-
-<!-- Categories -->
-<section class="categories" id="categorii">
-  <div class="section-inner">
-    <div class="section-head reveal">
-      <p class="kicker">Colecții</p>
-      <h2>Universul Boutique Kastel</h2>
-      <p>Șase lumi, o singură adresă. Parfumerie fină, îngrijire, băuturi și mici răsfățuri — toate la Hunedoara.</p>
-      <div class="flourish">
-        <span class="line"></span>
-        <svg viewBox="0 0 42 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 8h14M28 8h14M21 2v12M15 8a6 6 0 0 1 12 0"/></svg>
-        <span class="line rev"></span>
-      </div>
-    </div>
-
-    <div class="cat-grid reveal">
-      <a href="parfumuri.html" class="cat-card featured">
-        <span class="num">01</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M10 3h4M11 3v3.5c0 .6-.2 1.1-.6 1.5L8 10.5A3 3 0 0 0 7 12.7V19a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6.3a3 3 0 0 0-1-2.2l-2.4-2.5A2 2 0 0 1 13 6.5V3"/></svg>
-        <h3>Parfumuri</h3>
-        <span class="cat-count" id="parfumCount"></span>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="#" class="cat-card">
-        <span class="num">02</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2c2 2.5 4 5.8 4 9a4 4 0 0 1-8 0c0-3.2 2-6.5 4-9Z"/></svg>
-        <h3>Parfumuri niche</h3>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="#" class="cat-card">
-        <span class="num">03</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="13" r="7"/><path d="M9 4h6l-1 3H10L9 4Z"/></svg>
-        <h3>Îngrijire corporală</h3>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="bauturi.html" class="cat-card">
-        <span class="num">04</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M7 3h10l-1.5 5H8.5L7 3Z"/><path d="M8.5 8v11a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V8"/></svg>
-        <h3>Băuturi</h3>
-        <span class="cat-count" id="bauturiCount"></span>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="#" class="cat-card">
-        <span class="num">05</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 9h16l-1.5 10.2A2 2 0 0 1 16.5 21h-9a2 2 0 0 1-2-1.8L4 9Z"/><path d="M8 9V7a4 4 0 0 1 8 0v2"/></svg>
-        <h3>Dulciuri &amp; cafea</h3>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="#" class="cat-card">
-        <span class="num">06</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M12 4v4M12 12v9"/></svg>
-        <h3>Diverse</h3>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Recommended products -->
-<section class="recommended-section">
-  <div class="section-inner">
-    <div class="section-head reveal">
-      <p class="kicker">Selecția noastră</p>
-      <h2>Recomandate</h2>
-      <p>Câteva dintre parfumurile preferate de clienții noștri.</p>
-      <div class="flourish">
-        <span class="line"></span>
-        <svg viewBox="0 0 42 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 8h14M28 8h14M21 2v12M15 8a6 6 0 0 1 12 0"/></svg>
-        <span class="line rev"></span>
-      </div>
-    </div>
-
-    <div class="product-grid reveal" id="recommendedGrid"></div>
-  </div>
-</section>
-
-<!-- About / trust -->
+<main>
 <section class="about" id="despre">
   <div class="section-inner about-grid">
     <div class="reveal">
@@ -288,30 +184,12 @@
     <p>Acestea sunt principiile pe care construim Boutique Kastel. Fie că alegi un parfum, o cafea specială, o sticlă de vin, o băutură premium sau un cadou, vrem să ai încrederea că produsul pe care îl primești este atent ales și autentic.</p>
   </div>
 </section>
+</main>
 
-<!-- Newsletter -->
-<section class="newsletter grain">
-  <div class="section-inner">
-    <div class="flourish reveal">
-      <span class="line"></span>
-      <svg viewBox="0 0 42 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 8h14M28 8h14M21 2v12M15 8a6 6 0 0 1 12 0"/></svg>
-      <span class="line rev"></span>
-    </div>
-    <h2 class="reveal">Fii primul care află</h2>
-    <p class="reveal">Abonează-te și află când lansăm magazinul online Boutique Kastel.</p>
-    <form class="newsletter-form reveal" id="newsletterForm">
-      <input type="email" placeholder="Adresa ta de email" required>
-      <button type="submit" class="btn btn-gold">Abonează-te</button>
-    </form>
-    <p class="newsletter-note" id="newsletterNote"></p>
-  </div>
-</section>
-
-<!-- Footer -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="#top" class="logo">
+      <a href="index.html" class="logo">
         <span class="mark">BK</span>
         <span class="word">Boutique Kastel<span>DUTY FREE CONCEPT</span></span>
       </a>
@@ -322,11 +200,11 @@
       <h5>Colecții</h5>
       <ul>
         <li><a href="parfumuri.html">Parfumuri</a></li>
-        <li><a href="#categorii">Parfumuri niche</a></li>
-        <li><a href="#categorii">Îngrijire corporală</a></li>
+        <li><a href="index.html#categorii">Parfumuri niche</a></li>
+        <li><a href="index.html#categorii">Îngrijire corporală</a></li>
         <li><a href="bauturi.html">Băuturi</a></li>
-        <li><a href="#categorii">Dulciuri &amp; cafea</a></li>
-        <li><a href="#categorii">Diverse</a></li>
+        <li><a href="index.html#categorii">Dulciuri &amp; cafea</a></li>
+        <li><a href="index.html#categorii">Diverse</a></li>
       </ul>
     </div>
 
@@ -377,6 +255,7 @@
   <div class="footer-legal-entity">SUPREM BRAND S.R.L. · Str. Nicolae Bălcescu, Nr. 1, Municipiul Hunedoara, Jud. Hunedoara · CUI 33803839 · Reg. Com. J2014000935200 · Plătitoare de TVA</div>
 </footer>
 
+<script src="cart.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
