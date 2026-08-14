@@ -458,6 +458,56 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 .trust-item h4 { font-family: var(--font-display); font-weight: 500; font-size: 1.02rem; margin-bottom: 0.25rem; }
 .trust-item p { font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
 
+/* About - extra story/offer/store blocks below the intro grid */
+.about-block {
+  max-width: 900px;
+  margin: clamp(3.5rem, 7vw, 5.5rem) auto 0;
+}
+.about-block .flourish { margin-bottom: 2rem; }
+.about-block h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+  margin-bottom: 1.1rem;
+  color: var(--ink);
+}
+.about-block p { color: var(--ink-soft); font-size: 0.98rem; margin-bottom: 0.9rem; line-height: 1.65; }
+.about-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--teal-mid);
+  margin: 1.3rem 0 !important;
+}
+.about-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ink);
+  border-left: 3px solid var(--gold);
+  padding-left: 1.1rem;
+  margin: 1.2rem 0 !important;
+}
+
+.offer-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+  margin: 1.3rem 0;
+}
+.offer-list li { color: var(--ink-soft); font-size: 0.95rem; line-height: 1.55; }
+.offer-list strong { color: var(--ink); font-family: var(--font-display); font-weight: 500; }
+@media (max-width: 640px) { .offer-list { grid-template-columns: 1fr; } }
+
+.about-store address {
+  font-style: normal;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin: 0.8rem 0 1rem;
+}
+
 /* ---------- Newsletter ---------- */
 
 .newsletter {
