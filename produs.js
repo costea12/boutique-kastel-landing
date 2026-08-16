@@ -2,7 +2,7 @@ function formatPrice(p) {
   return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
 }
 
-const CATEGORY_PAGES = { PRF: 'parfumuri.html', ALC: 'bauturi.html' };
+const CATEGORY_PAGES = { PRF: 'parfumuri.html', ALC: 'bauturi.html', DLC: 'dulciuri.html' };
 function categoryPage(category) {
   return CATEGORY_PAGES[category] || 'index.html';
 }
@@ -42,6 +42,58 @@ function getUnitPrice(name, price) {
   const formatted = Math.round(perKilo).toLocaleString('ro-RO');
 
   return unit === 'ml' ? `${formatted} Lei/L` : `${formatted} Lei/Kg`;
+}
+
+const DLC_TYPE_WORDS = new Set([
+  'Acadele', 'Bomboane', 'Jeleuri', 'Jeleuiri', 'Biscuiti', 'Biscuti', 'Napolitane',
+  'Caramele', 'Ceai', 'Crema', 'Budinca', 'Drajeuri', 'Foietaj', 'Fursecuri', 'Guma',
+  'Trufe', 'Marshmallow', 'Mousse', 'Muffin', 'Prajitura', 'Sirop', 'Popcorn',
+  'Creioane', 'Dropsuri', 'Praline', 'Batoane', 'Ciocolata', 'Alune',
+]);
+
+function getDlcType(name) {
+  const first = name.split(' ')[0];
+  return DLC_TYPE_WORDS.has(first) ? first : null;
+}
+
+function getWeight(name) {
+  const m = name.match(/(\d+(?:[.,]\d+)?)\s*(gr|kg)\b/i);
+  if (!m) return null;
+  const val = m[1].replace(',', '.');
+  return `${val} ${m[2].toUpperCase()}`;
+}
+
+function renderDlcSpecs(p) {
+  const facts = [
+    ['Tip', getDlcType(p.name)],
+    ['Producător', p.brand],
+    ['Greutate', getWeight(p.name)],
+  ].filter(([, value]) => value);
+
+  if (!p.description && !facts.length) return '';
+
+  return `
+    <div class="product-story">
+      <div class="flourish story-flourish">
+        <span class="line"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2c2 2.5 4 5.8 4 9a4 4 0 0 1-8 0c0-3.2 2-6.5 4-9Z"/></svg>
+        <span class="line rev"></span>
+      </div>
+
+      ${p.description ? `<p class="product-description">${p.description}</p>` : ''}
+
+      ${facts.length ? `
+        <dl class="product-facts">
+          ${facts.map(([label, value]) => `
+            <div class="fact-item">
+              <dt>${label}</dt>
+              <dd>${value}</dd>
+            </div>
+          `).join('')}
+        </dl>
+      ` : ''}
+    </div>
+  `;
 }
 
 function getConcentrationLabel(name) {
@@ -99,6 +151,7 @@ function renderAlcSpecs(p) {
 
 function renderSpecs(p) {
   if (p.category === 'ALC') return renderAlcSpecs(p);
+  if (p.category === 'DLC') return renderDlcSpecs(p);
   if (!p.description && !p.family) return '';
 
   const tiers = [
