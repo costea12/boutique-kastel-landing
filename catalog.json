@@ -13628,8 +13628,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 2,
-    "bottle_image": "assets/products/4061459807233-bottle.jpg",
-    "description": "Chocolate-covered peanuts from the Choceur brand (Lidl private label), Germany. Contine zahar, arahide, pasta de cacao, lapte praf integral, unt de cacao."
+    "bottle_image": "assets/products/4061459807233-bottle.jpg"
   },
   {
     "cod": "8001100067209",
@@ -13771,8 +13770,7 @@
     "category_label": "Dulciuri",
     "price": 19.0,
     "stock": 8,
-    "bottle_image": "assets/products/5410126716016-bottle.jpg",
-    "description": "Lotus Biscoff, the original caramelised biscuit, 250g."
+    "bottle_image": "assets/products/5410126716016-bottle.jpg"
   },
   {
     "cod": "8594002834692",
@@ -14090,8 +14088,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 3,
-    "bottle_image": "assets/products/8003340049212-bottle.jpg",
-    "description": "Preparato per budino al cioccolato al latte Lindt, 4 porzioni, 95g."
+    "bottle_image": "assets/products/8003340049212-bottle.jpg"
   },
   {
     "cod": "8003340049731",
@@ -14101,8 +14098,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 2,
-    "bottle_image": "assets/products/8003340049731-bottle.jpg",
-    "description": "Preparato per budino al cioccolato fondente Lindt, 95g."
+    "bottle_image": "assets/products/8003340049731-bottle.jpg"
   },
   {
     "cod": "8003340038858",
@@ -14506,8 +14502,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 2,
-    "bottle_image": "assets/products/8003340037943-bottle.jpg",
-    "description": "Lindt Excellence - cioccolato extra fondente 72% cacao, formato snack, 38g."
+    "bottle_image": "assets/products/8003340037943-bottle.jpg"
   },
   {
     "cod": "7610400111805",
@@ -14605,8 +14600,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 4,
-    "bottle_image": "assets/products/7610400110655-bottle.jpg",
-    "description": "Dark chocolate infused with spicy red chili, Lindt Excellence Chili, 100g bar."
+    "bottle_image": "assets/products/7610400110655-bottle.jpg"
   },
   {
     "cod": "3046920021289",
@@ -14891,8 +14885,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 1,
-    "bottle_image": "assets/products/4061458021630-bottle.jpg",
-    "description": "Ciocolata amaruie Moser Roth 85% cacao, 5 x 25g, 125g total."
+    "bottle_image": "assets/products/4061458021630-bottle.jpg"
   },
   {
     "cod": "4061464008533",
@@ -15166,8 +15159,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 1,
-    "bottle_image": "assets/products/4000417620613-bottle.jpg",
-    "description": "Ritter Sport Smarties, 100g."
+    "bottle_image": "assets/products/4000417620613-bottle.jpg"
   },
   {
     "cod": "4000417602114",
@@ -15298,8 +15290,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 2,
-    "bottle_image": "assets/products/5410126726947-bottle.jpg",
-    "description": "Lotus Biscoff Crunchy spread, 380g."
+    "bottle_image": "assets/products/5410126726947-bottle.jpg"
   },
   {
     "cod": "8003340853840",
@@ -15419,8 +15410,7 @@
     "category_label": "Dulciuri",
     "price": 11.0,
     "stock": 4,
-    "bottle_image": "assets/products/9002859131240-bottle.jpg",
-    "description": "Piacelli Pasticceria puff pastry with vanilla cream filling (40%), made in Italy."
+    "bottle_image": "assets/products/9002859131240-bottle.jpg"
   },
   {
     "cod": "5310206001783",
@@ -15583,8 +15573,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 2,
-    "bottle_image": "assets/products/9002975002417-bottle.jpg",
-    "description": "Haribo Beerentraum - jeleuri cu fructe de padure (zmeura, afine, mure), 160g."
+    "bottle_image": "assets/products/9002975002417-bottle.jpg"
   },
   {
     "cod": "4001686327845",
@@ -15649,8 +15638,7 @@
     "category_label": "Dulciuri",
     "price": 69.0,
     "stock": 1,
-    "bottle_image": "assets/products/4001686011843-bottle.jpg",
-    "description": "Haribo Wilde Erdbeeren (capsuni) - jeleuri cu aroma de capsuni salbatice."
+    "bottle_image": "assets/products/4001686011843-bottle.jpg"
   },
   {
     "cod": "4001686103272",
@@ -15693,8 +15681,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 1,
-    "bottle_image": "assets/products/8426617119515-bottle.jpg",
-    "description": "Haribo Spaghetti Happy Cola - jeleuri sub forma de spaghete cu aroma de cola, 200g."
+    "bottle_image": "assets/products/8426617119515-bottle.jpg"
   },
   {
     "cod": "4001686721483",
@@ -15902,8 +15889,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 2,
-    "bottle_image": "assets/products/4001686806272-bottle.jpg",
-    "description": "Haribo Perl-Kugeln, jeleuri sferice."
+    "bottle_image": "assets/products/4001686806272-bottle.jpg"
   },
   {
     "cod": "4001686327579",
@@ -16034,8 +16020,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 1,
-    "bottle_image": "assets/products/4001686372852-bottle.jpg",
-    "description": "Haribo Roulette 150g - jeleuri cu sirop de glucoza, zahar, gelatina, dextroza, acid citric."
+    "bottle_image": "assets/products/4001686372852-bottle.jpg"
   },
   {
     "cod": "9002975002516",
@@ -16045,8 +16030,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 2,
-    "bottle_image": "assets/products/9002975002516-bottle.jpg",
-    "description": "Haribo Sauer Brenner - jeleuri acrisoare, 160g, continut ridicat de zahar."
+    "bottle_image": "assets/products/9002975002516-bottle.jpg"
   },
   {
     "cod": "4001686807132",
@@ -16056,8 +16040,7 @@
     "category_label": "Dulciuri",
     "price": 39.0,
     "stock": 2,
-    "bottle_image": "assets/products/4001686807132-bottle.jpg",
-    "description": "Haribo Summer Feeling Sauer - jeleuri acrisoare de vara, 650g."
+    "bottle_image": "assets/products/4001686807132-bottle.jpg"
   },
   {
     "cod": "4001686344897",
@@ -16177,8 +16160,7 @@
     "category_label": "Dulciuri",
     "price": 25.0,
     "stock": 3,
-    "bottle_image": "assets/products/5011061115720-bottle.jpg",
-    "description": "Juicy Jems, jeleuri de la Zed Candy."
+    "bottle_image": "assets/products/5011061115720-bottle.jpg"
   },
   {
     "cod": "4014400937718",
@@ -16263,8 +16245,7 @@
     "category_label": "Dulciuri",
     "price": 12.0,
     "stock": 4,
-    "bottle_image": "assets/products/5310206001899-bottle.jpg",
-    "description": "Leona Caramel Coated Mini Peanuts Bites, batoane mini cu alune si caramel."
+    "bottle_image": "assets/products/5310206001899-bottle.jpg"
   },
   {
     "cod": "8003340038865",
@@ -16274,8 +16255,7 @@
     "category_label": "Dulciuri",
     "price": 29.0,
     "stock": 3,
-    "bottle_image": "assets/products/8003340038865-bottle.jpg",
-    "description": "Lindt Patisserie preparat pentru Mousse au Chocolat, 110g."
+    "bottle_image": "assets/products/8003340038865-bottle.jpg"
   },
   {
     "cod": "8003340030609",
@@ -16296,8 +16276,7 @@
     "category_label": "Dulciuri",
     "price": 29.0,
     "stock": 4,
-    "bottle_image": "assets/products/8000500272480-bottle.jpg",
-    "description": "Ferrero Hanuta Haselnuss-Schnitte, napolitane cu crema de alune, pachet 10+1 gratis."
+    "bottle_image": "assets/products/8000500272480-bottle.jpg"
   },
   {
     "cod": "4014400929836",
@@ -16406,8 +16385,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 4,
-    "bottle_image": "assets/products/4069365042045-bottle.jpg",
-    "description": "Choceur Milk Jumbo Classic, napolitane cu crema de lapte invelite in ciocolata cu lapte, 150g."
+    "bottle_image": "assets/products/4069365042045-bottle.jpg"
   },
   {
     "cod": "4069365042205",
@@ -16450,8 +16428,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 3,
-    "bottle_image": "assets/products/4014400935677-bottle.jpg",
-    "description": "Werther's Original Sweet & Salty Caramel Popcorn, 140g."
+    "bottle_image": "assets/products/4014400935677-bottle.jpg"
   },
   {
     "cod": "4069365427897",
@@ -16912,8 +16889,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 3,
-    "bottle_image": "assets/products/4000539154669-bottle.jpg",
-    "description": "White chocolate Lindor balls with passion fruit and mango cream filling (44%), 137g bag."
+    "bottle_image": "assets/products/4000539154669-bottle.jpg"
   },
   {
     "cod": "8003340804798",
@@ -17033,8 +17009,7 @@
     "category_label": "Dulciuri",
     "price": 45.0,
     "stock": 4,
-    "bottle_image": "assets/products/4000539103766-bottle.jpg",
-    "description": "Lindt Mini Pralinés, 100g (blue ribbon gift box)."
+    "bottle_image": "assets/products/4000539103766-bottle.jpg"
   },
   {
     "cod": "4000539320804",
@@ -17044,8 +17019,7 @@
     "category_label": "Dulciuri",
     "price": 99.0,
     "stock": 1,
-    "bottle_image": "assets/products/4000539320804-bottle.jpg",
-    "description": "Lindt Mini Gianduja / hazelnut-nougat pralines, 165g."
+    "bottle_image": "assets/products/4000539320804-bottle.jpg"
   },
   {
     "cod": "4000539147982",
@@ -17066,8 +17040,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 6,
-    "bottle_image": "assets/products/4000539148248-bottle.jpg",
-    "description": "Lindt Spezialitäten / Pralinés Classic - assorted chocolate praline specialties, 125g box."
+    "bottle_image": "assets/products/4000539148248-bottle.jpg"
   },
   {
     "cod": "7610400067553",
@@ -17077,8 +17050,7 @@
     "category_label": "Dulciuri",
     "price": 99.0,
     "stock": 1,
-    "bottle_image": "assets/products/7610400067553-bottle.jpg",
-    "description": "Lindt Swiss Premium Chocolate pralines, minimum 31% cocoa, milk chocolate with cocoa mass and cocoa butter."
+    "bottle_image": "assets/products/7610400067553-bottle.jpg"
   },
   {
     "cod": "5904637000820",
@@ -17088,8 +17060,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 1,
-    "bottle_image": "assets/products/5904637000820-bottle.jpg",
-    "description": "Magnat Petit chocolate flower pralines, 80g box."
+    "bottle_image": "assets/products/5904637000820-bottle.jpg"
   },
   {
     "cod": "8000500326091",
@@ -17176,8 +17147,7 @@
     "category_label": "Dulciuri",
     "price": null,
     "stock": 1,
-    "bottle_image": "assets/products/4000161170310-bottle.jpg",
-    "description": "Niederegger Crispy Waffel pralines, 100g."
+    "bottle_image": "assets/products/4000161170310-bottle.jpg"
   },
   {
     "cod": "4000161170334",
@@ -17286,8 +17256,7 @@
     "category_label": "Dulciuri",
     "price": 159.0,
     "stock": 2,
-    "bottle_image": "assets/products/4101730002275-bottle.jpg",
-    "description": "Reber Praliné-Törtchen Auslese - assortment of 11 differently filled pralines including genuine Reber Mozart-Kugeln (dark chocolate) and Constanze Mozart balls (milk chocolate), 340g, contains alcohol."
+    "bottle_image": "assets/products/4101730002275-bottle.jpg"
   },
   {
     "cod": "3052910056223",
