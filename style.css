@@ -335,68 +335,77 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 }
 .section-head .flourish { margin-top: 1.2rem; color: var(--teal-mid); }
 
-/* ---------- Promo carousel ---------- */
+/* ---------- Promo carousel (big, full-bleed, clickable banners) ---------- */
 
-.promo-carousel {
-  background: radial-gradient(120% 140% at 50% -10%, var(--teal-mid), var(--teal-deep) 60%, var(--teal-darker) 130%);
-  padding: clamp(2.5rem, 6vw, 4.5rem) 0;
+.promo-carousel-big {
   position: relative;
+  background: var(--teal-darker);
 }
-.promo-track {
+.promo-carousel-big .promo-track {
   position: relative;
+  height: min(78vh, 640px);
   min-height: 420px;
 }
-.promo-slide {
+.promo-carousel-big .promo-slide {
   position: absolute;
   inset: 0;
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  align-items: center;
-  gap: clamp(2rem, 5vw, 4rem);
+  display: block;
   opacity: 0;
   pointer-events: none;
-  transform: translateX(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: scale(1.02);
+  transition: opacity 0.7s ease, transform 0.9s ease;
 }
-.promo-slide.is-active {
+.promo-carousel-big .promo-slide.is-active {
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(0);
+  transform: scale(1);
 }
-.promo-media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 380px;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-}
-.promo-media img {
+.promo-carousel-big .promo-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
-.promo-copy .kicker { color: var(--gold-bright); margin-bottom: 1rem; }
-.promo-copy h2 {
+.promo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  background: linear-gradient(0deg, rgba(6, 20, 20, 0.88) 0%, rgba(6, 20, 20, 0.45) 42%, rgba(6, 20, 20, 0) 68%);
+}
+.promo-overlay .kicker { color: var(--gold-bright); margin-bottom: 0.9rem; }
+.promo-overlay h2 {
   font-family: var(--font-display);
   color: var(--ivory);
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  margin-bottom: 0.9rem;
-}
-.promo-copy p {
-  color: rgba(246, 241, 230, 0.78);
-  font-size: 1.02rem;
-  line-height: 1.65;
-  margin-bottom: 1.4rem;
-  max-width: 46ch;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  margin-bottom: 0.7rem;
 }
 .promo-price {
   font-family: var(--font-display);
   color: var(--gold-bright);
-  font-size: 1.6rem;
-  margin-bottom: 1.6rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
 }
+.promo-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: fit-content;
+  color: var(--teal-darker);
+  background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+  padding: 0.85rem 1.7rem;
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: gap 0.25s ease, box-shadow 0.25s ease;
+}
+.promo-cta svg { width: 16px; height: 16px; }
+.promo-slide:hover .promo-cta { gap: 0.95rem; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3); }
 .promo-arrow {
   position: absolute;
   top: 50%;
@@ -416,20 +425,22 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 }
 .promo-arrow:hover { border-color: var(--gold-bright); background: rgba(6, 47, 52, 0.85); }
 .promo-arrow svg { width: 20px; height: 20px; }
-.promo-arrow-prev { left: -10px; }
-.promo-arrow-next { right: -10px; }
+.promo-arrow-prev { left: clamp(0.8rem, 3vw, 2rem); }
+.promo-arrow-next { right: clamp(0.8rem, 3vw, 2rem); }
 .promo-dots {
+  position: absolute;
+  bottom: clamp(1.2rem, 3vw, 2rem);
+  right: clamp(2rem, 6vw, 4.5rem);
   display: flex;
-  justify-content: center;
   gap: 0.6rem;
-  margin-top: 2.2rem;
+  z-index: 2;
 }
 .promo-dots button {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   border: none;
-  background: var(--gold-dim);
+  background: rgba(246, 241, 230, 0.4);
   cursor: pointer;
   padding: 0;
   transition: background 0.25s ease, transform 0.25s ease;
@@ -437,13 +448,9 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 .promo-dots button.is-active { background: var(--gold-bright); transform: scale(1.3); }
 
 @media (max-width: 860px) {
-  .promo-slide { grid-template-columns: 1fr; text-align: center; position: static; display: none; }
-  .promo-slide.is-active { display: grid; }
-  .promo-track { min-height: unset; }
-  .promo-media { height: 280px; }
-  .promo-copy p { margin-left: auto; margin-right: auto; }
-  .promo-arrow-prev { left: 4px; }
-  .promo-arrow-next { right: 4px; }
+  .promo-carousel-big .promo-track { height: 78vh; min-height: 460px; }
+  .promo-overlay { padding: 1.5rem; }
+  .promo-dots { right: 1.5rem; }
 }
 
 /* ---------- Categories ---------- */

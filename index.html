@@ -86,129 +86,57 @@
       <span class="line rev"></span>
     </div>
     <div class="hero-ctas">
-      <a href="#categorii" class="btn btn-gold">Explorează colecția</a>
+      <a href="#promoCarousel" class="btn btn-gold">Explorează colecția</a>
       <a href="#despre" class="btn btn-outline">Despre concept</a>
     </div>
   </div>
 </section>
 
 <!-- Promo carousel -->
-<section class="promo-carousel" id="promoCarousel">
-  <div class="section-inner">
-    <div class="promo-track" id="promoTrack">
+<span id="categorii" aria-hidden="true"></span>
+<section class="promo-carousel promo-carousel-big" id="promoCarousel" aria-label="Produse recomandate">
+  <div class="promo-track" id="promoTrack">
 
-      <div class="promo-slide is-active" data-cod="8011003809219">
-        <div class="promo-media">
-          <img src="assets/promo/versace-eros.jpg" alt="Versace Eros EDT 100ml" loading="lazy">
-        </div>
-        <div class="promo-copy">
-          <p class="kicker">Parfumuri &middot; Versace</p>
-          <h2>Versace Eros</h2>
-          <p>O aromă intensă, îndrăzneață, pentru bărbatul care nu trece neobservat. Eau de Toilette 100ml.</p>
-          <div class="promo-price">499,00 Lei</div>
-          <a href="produs.html?cod=8011003809219" class="btn btn-gold">Vezi produsul</a>
-        </div>
+    <a href="produs.html?cod=8011003809219" class="promo-slide is-active" data-cod="8011003809219">
+      <img src="assets/promo/versace-eros.jpg" alt="Versace Eros EDT 100ml">
+      <div class="promo-overlay">
+        <p class="kicker">Parfumuri &middot; Versace</p>
+        <h2>Versace Eros</h2>
+        <div class="promo-price">499,00 Lei</div>
+        <span class="promo-cta">Vezi produsul <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
+    </a>
 
-      <div class="promo-slide" data-cod="8720892188335">
-        <div class="promo-media">
-          <img src="assets/promo/chupa-popcorn.jpg" alt="Chupa Chups Pop Corn Căpșuni 135gr" loading="lazy">
-        </div>
-        <div class="promo-copy">
-          <p class="kicker">Dulciuri &middot; Chupa Chups</p>
-          <h2>Pop Corn Căpșuni</h2>
-          <p>Popcorn crocant cu înveliș de zahăr aromat cu căpșuni — o gustare dulce, ideală pentru orice moment din zi.</p>
-          <div class="promo-price">29,00 Lei</div>
-          <a href="produs.html?cod=8720892188335" class="btn btn-gold">Vezi produsul</a>
-        </div>
+    <a href="produs.html?cod=8720892188335" class="promo-slide" data-cod="8720892188335">
+      <img src="assets/promo/chupa-popcorn.jpg" alt="Chupa Chups Pop Corn Căpșuni 135gr">
+      <div class="promo-overlay">
+        <p class="kicker">Dulciuri &middot; Chupa Chups</p>
+        <h2>Pop Corn Căpșuni</h2>
+        <div class="promo-price">29,00 Lei</div>
+        <span class="promo-cta">Vezi produsul <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
+    </a>
 
-      <div class="promo-slide" data-cod="5940597000876">
-        <div class="promo-media">
-          <img src="assets/promo/dom-perignon.jpg" alt="Dom Pérignon Champagne 0.75l" loading="lazy">
-        </div>
-        <div class="promo-copy">
-          <p class="kicker">Băuturi &middot; Dom Pérignon</p>
-          <h2>Dom Pérignon Brut</h2>
-          <p>Un șampanie de referință, rezultat al unui millésime de excepție — alegerea firească pentru momentele care merită sărbătorite.</p>
-          <div class="promo-price">1.299,00 Lei</div>
-          <a href="produs.html?cod=5940597000876" class="btn btn-gold">Vezi produsul</a>
-        </div>
+    <a href="produs.html?cod=5940597000876" class="promo-slide" data-cod="5940597000876">
+      <img src="assets/promo/dom-perignon.jpg" alt="Dom Pérignon Champagne 0.75l">
+      <div class="promo-overlay">
+        <p class="kicker">Băuturi &middot; Dom Pérignon</p>
+        <h2>Dom Pérignon Brut</h2>
+        <div class="promo-price">1.299,00 Lei</div>
+        <span class="promo-cta">Vezi produsul <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
+    </a>
 
-    </div>
-
-    <button class="promo-arrow promo-arrow-prev" id="promoPrev" aria-label="Produsul anterior">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-    </button>
-    <button class="promo-arrow promo-arrow-next" id="promoNext" aria-label="Produsul următor">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-    </button>
-
-    <div class="promo-dots" id="promoDots"></div>
   </div>
-</section>
 
-<!-- Categories -->
-<section class="categories" id="categorii">
-  <div class="section-inner">
-    <div class="section-head reveal">
-      <p class="kicker">Colecții</p>
-      <h2>Universul Boutique Kastel</h2>
-      <p>Șase lumi, o singură adresă. Parfumerie fină, îngrijire, băuturi și mici răsfățuri — toate la Hunedoara.</p>
-      <div class="flourish">
-        <span class="line"></span>
-        <svg viewBox="0 0 42 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 8h14M28 8h14M21 2v12M15 8a6 6 0 0 1 12 0"/></svg>
-        <span class="line rev"></span>
-      </div>
-    </div>
+  <button class="promo-arrow promo-arrow-prev" id="promoPrev" aria-label="Produsul anterior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="promo-arrow promo-arrow-next" id="promoNext" aria-label="Produsul următor">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
 
-    <div class="cat-grid reveal">
-      <a href="parfumuri.html" class="cat-card featured">
-        <span class="num">01</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M10 3h4M11 3v3.5c0 .6-.2 1.1-.6 1.5L8 10.5A3 3 0 0 0 7 12.7V19a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6.3a3 3 0 0 0-1-2.2l-2.4-2.5A2 2 0 0 1 13 6.5V3"/></svg>
-        <h3>Parfumuri</h3>
-        <span class="cat-count" id="parfumCount"></span>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="#" class="cat-card">
-        <span class="num">02</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2c2 2.5 4 5.8 4 9a4 4 0 0 1-8 0c0-3.2 2-6.5 4-9Z"/></svg>
-        <h3>Parfumuri niche</h3>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="#" class="cat-card">
-        <span class="num">03</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="13" r="7"/><path d="M9 4h6l-1 3H10L9 4Z"/></svg>
-        <h3>Îngrijire corporală</h3>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="bauturi.html" class="cat-card">
-        <span class="num">04</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M7 3h10l-1.5 5H8.5L7 3Z"/><path d="M8.5 8v11a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V8"/></svg>
-        <h3>Băuturi</h3>
-        <span class="cat-count" id="bauturiCount"></span>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="#" class="cat-card">
-        <span class="num">05</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 9h16l-1.5 10.2A2 2 0 0 1 16.5 21h-9a2 2 0 0 1-2-1.8L4 9Z"/><path d="M8 9V7a4 4 0 0 1 8 0v2"/></svg>
-        <h3>Dulciuri &amp; cafea</h3>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-
-      <a href="#" class="cat-card">
-        <span class="num">06</span>
-        <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M12 4v4M12 12v9"/></svg>
-        <h3>Diverse</h3>
-        <span class="cat-link">Vezi colecția <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-      </a>
-    </div>
-  </div>
+  <div class="promo-dots" id="promoDots"></div>
 </section>
 
 <!-- Recommended products -->
