@@ -14466,6 +14466,17 @@
     "description": "Laurence Marzipan Classic - marzipan invelit in ciocolata neagra, 8 batoane, 140g, produs grecesc artizanal."
   },
   {
+    "cod": "5200126403708",
+    "name": "Ciocolata Laurence Martipan Orange 140gr",
+    "brand": "Laurence",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 39.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5200126403708-bottle.jpg",
+    "description": "Laurence (Greek chocolatier) candied orange marzipan pieces enrobed in chocolate, 140g / 8 pieces."
+  },
+  {
     "cod": "5200126403692",
     "name": "Ciocolata Laurence Martipan Wild Cherry 140gr",
     "brand": "Laurence",
@@ -15236,6 +15247,28 @@
     "description": "Snickers x10, 10x50g = 500g."
   },
   {
+    "cod": "5000159608718",
+    "name": "Ciocolata Twix Alune 460gr",
+    "brand": "Twix",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/5000159608718-bottle.jpg",
+    "description": "Twix Hazelnut multipack chocolate bars."
+  },
+  {
+    "cod": "5000159557658",
+    "name": "Ciocolata Twix Gold 500gr",
+    "brand": "Twix",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/5000159557658-bottle.jpg",
+    "description": "Twix (Mars) chocolate biscuit bar, 500g multipack."
+  },
+  {
     "cod": "8594019882389",
     "name": "Creioane Ciocolata 90gr",
     "brand": "Creioane",
@@ -15388,6 +15421,17 @@
     "stock": 4,
     "bottle_image": "assets/products/9002859131240-bottle.jpg",
     "description": "Piacelli Pasticceria puff pastry with vanilla cream filling (40%), made in Italy."
+  },
+  {
+    "cod": "5310206001783",
+    "name": "Fursecuri Leona Figaro Choko&cocos 300gr",
+    "brand": "Leona",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 10.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5310206001783-bottle.jpg",
+    "description": "Leona Figaro shortcrust cookies with cocoa and coconut flavour, 300g."
   },
   {
     "cod": "5310206002841",
@@ -16663,6 +16707,17 @@
     "description": "Hochfein assortment with hazelnut, almond, walnut and pistachio varieties, champagne, kirsch and fruit flavours, 350g box."
   },
   {
+    "cod": "4000539148149",
+    "name": "Praline Lindt Hochfein 350gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 199.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4000539148149-bottle.jpg",
+    "description": "Lindt Pralinés Hochfein - fine assortment of nougat, Marc de Champagne truffle, nut and marzipan pralines, 350g."
+  },
+  {
     "cod": "4000539148088",
     "name": "Praline Lindt Hochfein 500 Gr",
     "brand": "Lindt",
@@ -16707,6 +16762,17 @@
     "description": "Lindor truffles with 70% dark chocolate shell and soft melting dark chocolate center, 500g."
   },
   {
+    "cod": "4000539147562",
+    "name": "Praline Lindt Lindor Asort 187gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4000539147562-bottle.jpg",
+    "description": "Lindt Lindor Präsent Box Mischung - assorted Lindor truffles (milk, nut, white, 60% dark) gift box, 187g."
+  },
+  {
     "cod": "8003340807775",
     "name": "Praline Lindt Lindor Asortate 137g",
     "brand": "Lindt",
@@ -16749,6 +16815,17 @@
     "stock": 2,
     "bottle_image": "assets/products/4000539154522-bottle.jpg",
     "description": "Lindor Golden Caramel: white chocolate balls with molten caramel filling and hazelnut pieces, 137g."
+  },
+  {
+    "cod": "8003340804828",
+    "name": "Praline Lindt Lindor Caramel Sarat 337gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 119.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8003340804828-bottle.jpg",
+    "description": "Lindt Lindor Salted Caramel milk chocolate truffles box, 337g."
   },
   {
     "cod": "8003340804774",
@@ -16848,5 +16925,390 @@
     "stock": 2,
     "bottle_image": "assets/products/4000539146862-bottle.jpg",
     "description": "Limited-edition white chocolate Lindor balls with strawberry powder coating and cherry blossom (sakura) flavoured melting centre, 11 pieces, 137g."
+  },
+  {
+    "cod": "4000539144127",
+    "name": "Praline Lindt Lindor Sommermix 137 Gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4000539144127-bottle.jpg",
+    "description": "Lindt Lindor Sommer-Mix - strawberry cream, cheesecake, coconut and raspberry cream truffles, 137g."
+  },
+  {
+    "cod": "4000539113383",
+    "name": "Praline Lindt Lindor Zmeura 137gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 3,
+    "bottle_image": "assets/products/4000539113383-bottle.jpg",
+    "description": "Lindt Lindor Himbeer-Sahne (Raspberry Cream) truffles, 137g."
+  },
+  {
+    "cod": "4000539141485",
+    "name": "Praline Lindt Mini 100gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 45.0,
+    "stock": 6,
+    "bottle_image": "assets/products/4000539141485-bottle.jpg",
+    "description": "Lindt Mini Pralines Selection box - 20 mini pralines in 9 varieties (milk, dark, white chocolate), 100g."
+  },
+  {
+    "cod": "4000539155529",
+    "name": "Praline Lindt Mini Fioretto Asortate 115 Gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 3,
+    "bottle_image": "assets/products/4000539155529-bottle.jpg",
+    "description": "Lindt Fioretto Minis Mischung - assorted mini crispy pralines (nougat, marzipan, cappuccino), 115g."
+  },
+  {
+    "cod": "4000539155444",
+    "name": "Praline Lindt Mini Fioretto Car.sarat 115 Gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 3,
+    "bottle_image": "assets/products/4000539155444-bottle.jpg",
+    "description": "Lindt Fioretto Minis Caramel & Salz - crispy pralines with salted caramel filling, 115g."
+  },
+  {
+    "cod": "4000539155468",
+    "name": "Praline Lindt Mini Fioretto Martipan 115 Gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 4,
+    "bottle_image": "assets/products/4000539155468-bottle.jpg",
+    "description": "Lindt Fioretto Minis Marzipan - crispy pralines with marzipan filling and almond pieces, 115g."
+  },
+  {
+    "cod": "4000539155628",
+    "name": "Praline Lindt Mini Fioretto Zabaione 115gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 3,
+    "bottle_image": "assets/products/4000539155628-bottle.jpg",
+    "description": "Lindt Fioretto Minis Zabaione - crispy pralines with airy zabaione truffle filling, 115g."
+  },
+  {
+    "cod": "4000539103766",
+    "name": "Praline Lindt Mini Funda Albastra 100gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 45.0,
+    "stock": 4,
+    "bottle_image": "assets/products/4000539103766-bottle.jpg",
+    "description": "Lindt Mini Pralinés, 100g (blue ribbon gift box)."
+  },
+  {
+    "cod": "4000539320804",
+    "name": "Praline Lindt Mini Nougat 165gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 99.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4000539320804-bottle.jpg",
+    "description": "Lindt Mini Gianduja / hazelnut-nougat pralines, 165g."
+  },
+  {
+    "cod": "4000539147982",
+    "name": "Praline Lindt Nougat 200gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4000539147982-bottle.jpg",
+    "description": "Lindt Pralinés Nougat, 200g."
+  },
+  {
+    "cod": "4000539148248",
+    "name": "Praline Lindt Specialitate 125gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 6,
+    "bottle_image": "assets/products/4000539148248-bottle.jpg",
+    "description": "Lindt Spezialitäten / Pralinés Classic - assorted chocolate praline specialties, 125g box."
+  },
+  {
+    "cod": "7610400067553",
+    "name": "Praline Lindt Swiss 142gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 99.0,
+    "stock": 1,
+    "bottle_image": "assets/products/7610400067553-bottle.jpg",
+    "description": "Lindt Swiss Premium Chocolate pralines, minimum 31% cocoa, milk chocolate with cocoa mass and cocoa butter."
+  },
+  {
+    "cod": "5904637000820",
+    "name": "Praline Magnat Petite 80 Gr",
+    "brand": "Magnat",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/5904637000820-bottle.jpg",
+    "description": "Magnat Petit chocolate flower pralines, 80g box."
+  },
+  {
+    "cod": "8000500326091",
+    "name": "Praline Mon Cheri Vodka 157gr",
+    "brand": "Mon",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 29.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8000500326091-bottle.jpg",
+    "description": "Ferrero Mon Chéri Cherry Club Vodka - semi-dark chocolate shell (49%) with cherry (18%) and vodka (2.5%) filling."
+  },
+  {
+    "cod": "4061464203433",
+    "name": "Praline Moser Roth Delice Capsuni 140gr",
+    "brand": "Moser Roth",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 29.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4061464203433-bottle.jpg",
+    "description": "Moser Roth (Aldi) Délice Erdbeere - white chocolate with strawberry powder and fine strawberry cream filling (44%), 140g."
+  },
+  {
+    "cod": "4061464203518",
+    "name": "Praline Moser Roth Delice Cocos 140gr",
+    "brand": "Moser Roth",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 29.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4061464203518-bottle.jpg",
+    "description": "Moser Roth (Aldi) Délice Cocos - milk chocolate with coconut cream filling (44%), min 31% cocoa, 140g."
+  },
+  {
+    "cod": "4061464203471",
+    "name": "Praline Moser Roth Delice Mango 140gr",
+    "brand": "Moser Roth",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 29.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4061464203471-bottle.jpg",
+    "description": "Moser Roth (Aldi) Délice Mango - chocolate with concentrated mango puree cream filling, 140g."
+  },
+  {
+    "cod": "4061464203457",
+    "name": "Praline Moser Roth Delice Sommer",
+    "brand": "Moser Roth",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 29.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4061464203457-bottle.jpg",
+    "description": "Moser Roth (Aldi) Délice Sommer Collection - assorted summer-fruit praline selection (mango, strawberry)."
+  },
+  {
+    "cod": "9002859118593",
+    "name": "Praline Mt Mozart Alba 200 Gr",
+    "brand": "Mt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/9002859118593-bottle.jpg",
+    "description": "Maître Truffout Mozart Kugeln (Mozart Balls) with white chocolate - pistachio marzipan center, 200g box."
+  },
+  {
+    "cod": "4000161160366",
+    "name": "Praline Niederegger Minis 112 Gr",
+    "brand": "Niederegger",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 45.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4000161160366-bottle.jpg",
+    "description": "Niederegger Minis Marzipan Vielfalt - assorted mini marzipan chocolates, 112g."
+  },
+  {
+    "cod": "4000161170310",
+    "name": "Praline Niederreger Crispy Waffel 100gr",
+    "brand": "Niederreger",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/4000161170310-bottle.jpg",
+    "description": "Niederegger Crispy Waffel pralines, 100g."
+  },
+  {
+    "cod": "4000161170334",
+    "name": "Praline Niederreger Double Choc 100gr",
+    "brand": "Niederreger",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4000161170334-bottle.jpg",
+    "description": "Niederegger Pralinen \"Double Choc\" - melting cocoa cream with fine chocolate pieces wrapped in crispy dark chocolate, 100g."
+  },
+  {
+    "cod": "4000161020523",
+    "name": "Praline Niederreger Mouse 100gr",
+    "brand": "Niederreger",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/4000161020523-bottle.jpg",
+    "description": "Niederegger Pralinen \"Mousse au Chocolat\", 100g."
+  },
+  {
+    "cod": "4008400180724",
+    "name": "Praline Raffaello 260gr",
+    "brand": "Raffaello",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4008400180724-bottle.jpg",
+    "description": "Ferrero Raffaello - fine coconut-covered wafer pralines with whole almond center, 260g."
+  },
+  {
+    "cod": "4101730002268",
+    "name": "Praline Reber Constanz 240gr",
+    "brand": "Reber",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 99.0,
+    "stock": 4,
+    "bottle_image": "assets/products/4101730002268-bottle.jpg",
+    "description": "Reber Constanze Mozart-Kugeln - pistachio marzipan/hazelnut nougat balls in milk chocolate, 12-piece portrait box, 240g."
+  },
+  {
+    "cod": "4101730004248",
+    "name": "Praline Reber Limoncello 120 Gr",
+    "brand": "Reber",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 49.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4101730004248-bottle.jpg",
+    "description": "Reber Constanze Mozart-Kugel \"Limoncello Barock\" - white chocolate with lemon liqueur marzipan and hazelnut nougat, limited summer edition, 6-piece pack, 120g."
+  },
+  {
+    "cod": "4101730003029",
+    "name": "Praline Reber Mozart 380gr",
+    "brand": "Reber",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 199.0,
+    "stock": 3,
+    "bottle_image": "assets/products/4101730003029-bottle.jpg",
+    "description": "Reber Spezialitäten-Kassette - 11-piece gift assortment of Reber classics (marzipan, nougat, truffle, Mozart-Kugeln, Constanze balls), 380g."
+  },
+  {
+    "cod": "4101730003609",
+    "name": "Praline Reber Mozart Barok 300gr",
+    "brand": "Reber",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 139.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4101730003609-bottle.jpg",
+    "description": "Reber Mozart-Barock - 15-piece box of genuine Mozart-Kugeln (pistachio marzipan, hazelnut nougat, milk/dark chocolate), 300g."
+  },
+  {
+    "cod": "4101730002879",
+    "name": "Praline Reber Mozart Herz`l 240gr",
+    "brand": "Reber",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 99.0,
+    "stock": 3,
+    "bottle_image": "assets/products/4101730002879-bottle.jpg",
+    "description": "Reber Mozart Herzl - heart-shaped Mozart-Kugeln praline box, 240g."
+  },
+  {
+    "cod": "4101730003661",
+    "name": "Praline Reber Mozart Kugeln 300gr",
+    "brand": "Reber",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 119.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4101730003661-bottle.jpg",
+    "description": "Reber Mozart Gift Tin - 15-piece luxury tin of Mozart-Kugeln, 300g."
+  },
+  {
+    "cod": "4101730002275",
+    "name": "Praline Reber Torchen Auslese 340gr",
+    "brand": "Reber",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 159.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4101730002275-bottle.jpg",
+    "description": "Reber Praliné-Törtchen Auslese - assortment of 11 differently filled pralines including genuine Reber Mozart-Kugeln (dark chocolate) and Constanze Mozart balls (milk chocolate), 340g, contains alcohol."
+  },
+  {
+    "cod": "3052910056223",
+    "name": "Sirop Monin Green Mint 0.7l",
+    "brand": "Monin",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 49.0,
+    "stock": 3,
+    "bottle_image": "assets/products/3052910056223-bottle.jpg",
+    "description": "Monin Sirop Menthe Verte (Green Mint Syrup), 70cl."
+  },
+  {
+    "cod": "8000500341797",
+    "name": "Tic Tac 60 Mini Mixed 60*3.8gr",
+    "brand": "60",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 79.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8000500341797-bottle.jpg",
+    "description": "Tic Tac Travels - box of 60 individual mini boxes in assorted flavors (mint, orange, spearmint, peach & passion fruit), 228g total."
+  },
+  {
+    "cod": "4061462516276",
+    "name": "Trufe Moser Roth Cu Alcool 200gr",
+    "brand": "Moser Roth",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 49.0,
+    "stock": 4,
+    "bottle_image": "assets/products/4061462516276-bottle.jpg",
+    "description": "Moser Roth (Aldi/Wiebold) Premium-Trüffel mit Alkohol - premium chocolate truffles with alcohol, 200g."
+  },
+  {
+    "cod": "4061462516306",
+    "name": "Trufe Moser Roth Fara Alcool 200gr",
+    "brand": "Moser Roth",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 49.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4061462516306-bottle.jpg",
+    "description": "Moser Roth (Aldi/Wiebold) Premium-Trüffel ohne Alkohol - premium chocolate truffles without alcohol, 200g."
   }
 ]
