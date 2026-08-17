@@ -100,19 +100,14 @@ function shuffledPick(arr, count, rng) {
   return copy.slice(0, count);
 }
 
-// Picks a diversified daily selection: 2 from each main category (falls back to
-// whatever's available if a category is short) instead of a fixed hand-picked list.
+// Picks a diversified daily selection: 5 products shuffled from across all categories
+// (falls back to the full catalog if not enough in-stock items) instead of a fixed
+// hand-picked list.
 function pickDailyRecommended(data) {
   const rng = seededRandom(todaySeed());
-  const categories = ['PRF', 'ALC', 'DLC'];
-  const perCategory = 2;
-  let picks = [];
-  categories.forEach((cat) => {
-    const inStock = data.filter((p) => p.category === cat && p.stock > 0);
-    const pool = inStock.length >= perCategory ? inStock : data.filter((p) => p.category === cat);
-    picks = picks.concat(shuffledPick(pool, perCategory, rng));
-  });
-  return shuffledPick(picks, picks.length, rng); // shuffle the combined order too
+  const inStock = data.filter((p) => p.stock > 0);
+  const pool = inStock.length >= 5 ? inStock : data;
+  return shuffledPick(pool, 5, rng);
 }
 
 function formatPriceHome(p) {
