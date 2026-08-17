@@ -13621,6 +13621,17 @@
     "description": "Assorted flavour mini lollipops, 20 pieces, 120g."
   },
   {
+    "cod": "4061459807233",
+    "name": "Alune In Ciocolata Choceur 300gr",
+    "brand": "Choceur",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4061459807233-bottle.jpg",
+    "description": "Chocolate-covered peanuts from the Choceur brand (Lidl private label), Germany. Contine zahar, arahide, pasta de cacao, lapte praf integral, unt de cacao."
+  },
+  {
     "cod": "8001100067209",
     "name": "Biscuiti Balocco Bastoncini 350 Gr",
     "brand": "Balocco",
@@ -13764,6 +13775,17 @@
     "description": "Lotus Biscoff, the original caramelised biscuit, 250g."
   },
   {
+    "cod": "8594002834692",
+    "name": "Biscuiti Mokate Meura 150gr",
+    "brand": "Mokate",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 4,
+    "bottle_image": "assets/products/8594002834692-bottle.jpg",
+    "description": "Ciasteczka ring z nadzieniem malinowym (ring-shaped cookies with raspberry filling), Mokate brand, 150g."
+  },
+  {
     "cod": "8594002834715",
     "name": "Biscuiti Mokate Sunshine 160gr",
     "brand": "Mokate",
@@ -13841,6 +13863,28 @@
     "description": "Prinzen Rolle Cremys Zitrone-Buttermilch-Style, biscuiti crocanti cu crema aroma de lamaie-zara si crema de cacao, 172g."
   },
   {
+    "cod": "799729017948",
+    "name": "Biscuti Loison Caramel 200gr",
+    "brand": "Loison",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 45.0,
+    "stock": 1,
+    "bottle_image": "assets/products/799729017948-bottle.jpg",
+    "description": "Canestrelli italienesti cu aroma de caramel, biscuiti Loison din unt proaspat, in ambalaje individuale."
+  },
+  {
+    "cod": "799729011786",
+    "name": "Biscuti Loison Pere 200gr",
+    "brand": "Loison",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 45.0,
+    "stock": 2,
+    "bottle_image": "assets/products/799729011786-bottle.jpg",
+    "description": "Biscuiti italienesti cu aroma de pere (Poire), din unt proaspat, pere Williams si vanilie de Madagascar, cutie 200g."
+  },
+  {
     "cod": "8007692058816",
     "name": "Bomboane Baratti&milano Fructe 200gr",
     "brand": "Baratti&milano",
@@ -13885,6 +13929,17 @@
     "description": "Zed Candy Gob Smackers Theatre Box, bomboane tari cu 5 arome fructate (lamaie, cola, afine, cirese, coacaze negre), 120g."
   },
   {
+    "cod": "5996071707700",
+    "name": "Bomboane Jelly Bittes 60gr",
+    "brand": "Jelly",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/5996071707700-bottle.jpg",
+    "description": "Jelly Bites Rainbow Mix - bomboane gumate cu perle glazurate si bucati de jeleu cu fructe, mai multe culori."
+  },
+  {
     "cod": "4001686019399",
     "name": "Bomboane Maoam Kracher Berry 200gr",
     "brand": "Maoam",
@@ -13927,6 +13982,17 @@
     "stock": 4,
     "bottle_image": "assets/products/4014400917772-bottle.jpg",
     "description": "Storck Nimm2 Fruchtbonbons, bomboane multivitaminice cu aroma de portocala si lamaie si umplutura lichida de suc de fructe, 429g."
+  },
+  {
+    "cod": "4014400918229",
+    "name": "Bomboane Nimm2 Soft Brause 345gr",
+    "brand": "Nimm2",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4014400918229-bottle.jpg",
+    "description": "Nimm2 Soft mit Brause - bomboane moi cu umplutura efervescenta si suc de fructe, Storck, 345g, 70 bucati."
   },
   {
     "cod": "5011061115737",
@@ -14972,6 +15038,39 @@
     "description": "Hershey's Reese's Peanut Butter Cups - ciocolata Hershey's cu unt de arahide, ambalate individual, 200g."
   },
   {
+    "cod": "5310206002841",
+    "name": "Fursecuri Leona Figaro Cocos 300gr",
+    "brand": "Leona",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 10.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5310206002841-bottle.jpg",
+    "description": "Leona Figaro - fursecuri fragede din aluat cu ciocolata, cocos si vanilie, 300g."
+  },
+  {
+    "cod": "80922964",
+    "name": "Guma Chupa Chups Cola 27.6gr",
+    "brand": "Chupa Chups",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 5.0,
+    "stock": 12,
+    "bottle_image": "assets/products/80922964-bottle.jpg",
+    "description": "Chupa Chups Big Babol bubble gum, cola-lemon flavour, plump and juicy with big bouncy bubbles, 27.6g."
+  },
+  {
+    "cod": "80969907",
+    "name": "Guma Chupa Chups Zmeura 27.6gr",
+    "brand": "Chupa Chups",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 5.0,
+    "stock": 6,
+    "bottle_image": "assets/products/80969907-bottle.jpg",
+    "description": "Chupa Chups Big Babol bubble gum, aroma zmeura albastra (blue raspberry), guma moale ce coloreaza usor limba, 27.6g."
+  },
+  {
     "cod": "4001686725467",
     "name": "Haribo & Maoam Duopack Sour 653gr",
     "brand": "Haribo",
@@ -14980,6 +15079,435 @@
     "price": 89.0,
     "stock": 2,
     "bottle_image": "assets/products/4001686725467-bottle.jpg"
+  },
+  {
+    "cod": "8007692058489",
+    "name": "Jeleuiri Baratti&milano Ct.tb 85gr",
+    "brand": "Baratti&milano",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 49.0,
+    "stock": 9,
+    "bottle_image": "assets/products/8007692058489-bottle.jpg",
+    "description": "Baratti & Milano - gelatine alla frutta assortite in latta, 85g, gluten free, Made in Italy."
+  },
+  {
+    "cod": "8007692058663",
+    "name": "Jeleuri Baratti&milano 400gr",
+    "brand": "Baratti&milano",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8007692058663-bottle.jpg",
+    "description": "Baratti & Milano - confezione gelatine alla frutta assortite, 400g, EAN 8007692058663."
+  },
+  {
+    "cod": "8007692058625",
+    "name": "Jeleuri Baratti&milano Ct.tb 280gr",
+    "brand": "Baratti&milano",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8007692058625-bottle.jpg",
+    "description": "Baratti & Milano - Latta Storica Gelee Giada Assortite, gelatine morbide con 22% succo di frutta, 280g."
+  },
+  {
+    "cod": "8007692058632",
+    "name": "Jeleuri Baratti&milano Fructe 200gr",
+    "brand": "Baratti&milano",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 45.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8007692058632-bottle.jpg",
+    "description": "Baratti & Milano - Caramellona Gelee Giada Assortite, gelatine morbide alla frutta, 200g."
+  },
+  {
+    "cod": "4001686331415",
+    "name": "Jeleuri Haribo Tangfastics 425 Gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686331415-bottle.jpg",
+    "description": "Haribo Tangfastics - amestec acru-dulce cu sticle de cola, cirese acre, suzete si crocodili acrisori."
+  },
+  {
+    "cod": "4001686330678",
+    "name": "Jeleuri Haribo 450 Gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686330678-bottle.jpg",
+    "description": "Haribo Goldbears - ursuleti de gumă cu fructe, editie de calatorie."
+  },
+  {
+    "cod": "4001686480267",
+    "name": "Jeleuri Haribo Anaconda 1.2kg",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686480267-bottle.jpg",
+    "description": "Haribo Anaconda Riesenschlangen - serpi uriasi de 35cm, jeleu cu spuma de zahar, 30 buc, 1.2kg."
+  },
+  {
+    "cod": "4001686423066",
+    "name": "Jeleuri Haribo Bananas 1.05kg",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686423066-bottle.jpg",
+    "description": "Haribo Bananas - bezele cu aroma de banana, 150 bucati, 1.05kg."
+  },
+  {
+    "cod": "9002975002417",
+    "name": "Jeleuri Haribo Beerentraum 160gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/9002975002417-bottle.jpg",
+    "description": "Haribo Beerentraum - jeleuri cu fructe de padure (zmeura, afine, mure), 160g."
+  },
+  {
+    "cod": "4001686327845",
+    "name": "Jeleuri Haribo Berries 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 7,
+    "bottle_image": "assets/products/4001686327845-bottle.jpg",
+    "description": "Haribo Berries - jeleuri cu forma de zmeura si mura, acoperite cu crocant."
+  },
+  {
+    "cod": "4001686019573",
+    "name": "Jeleuri Haribo Blaue Tute 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686019573-bottle.jpg",
+    "description": "Haribo Blaue Tute - amestec de jeleuri si bezele albastre."
+  },
+  {
+    "cod": "4001686335321",
+    "name": "Jeleuri Haribo Blumen 1.02kg",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686335321-bottle.jpg",
+    "description": "Haribo Bunte Blumen - flori de bezea cu aroma de maracuja, cirese si zmeura-coacaze, 150 buc."
+  },
+  {
+    "cod": "4001686318423",
+    "name": "Jeleuri Haribo Bunte Blumchen 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4001686318423-bottle.jpg",
+    "description": "Haribo Bunte Blumchen - jeleuri in forma de floricele colorate, 175g."
+  },
+  {
+    "cod": "4001686002421",
+    "name": "Jeleuri Haribo Bunte Schnecken 160gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686002421-bottle.jpg",
+    "description": "Haribo Bunte Schnecken - jeleuri in forma de melcisori colorati, 160g."
+  },
+  {
+    "cod": "4001686011843",
+    "name": "Jeleuri Haribo Capsuni 1.2kg",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686011843-bottle.jpg",
+    "description": "Haribo Wilde Erdbeeren (capsuni) - jeleuri cu aroma de capsuni salbatice."
+  },
+  {
+    "cod": "4001686103272",
+    "name": "Jeleuri Haribo Castravete 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4001686103272-bottle.jpg",
+    "description": "Haribo Super Gurken (castraveti) - jeleuri in forma de castravete, 175g."
+  },
+  {
+    "cod": "4001686322871",
+    "name": "Jeleuri Haribo Cirese 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 9,
+    "bottle_image": "assets/products/4001686322871-bottle.jpg",
+    "description": "Haribo Happy Cherries (cirese) - jeleuri cu aroma de cirese, 175g."
+  },
+  {
+    "cod": "4001686327517",
+    "name": "Jeleuri Haribo Coca Cola 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 5,
+    "bottle_image": "assets/products/4001686327517-bottle.jpg",
+    "description": "Haribo Happy-Cola - jeleuri in forma de sticlute de cola, 175g."
+  },
+  {
+    "cod": "8426617119515",
+    "name": "Jeleuri Haribo Cola Spaghetti 200gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/8426617119515-bottle.jpg",
+    "description": "Haribo Spaghetti Happy Cola - jeleuri sub forma de spaghete cu aroma de cola, 200g."
+  },
+  {
+    "cod": "4001686721483",
+    "name": "Jeleuri Haribo Color Rado 1kg",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686721483-bottle.jpg",
+    "description": "Haribo - jeleuri mix colorate, 1kg."
+  },
+  {
+    "cod": "4001686013960",
+    "name": "Jeleuri Haribo Pico Balla Sauer 160gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4001686013960-bottle.jpg",
+    "description": "Jeleuri acrisoare Haribo Pico-Balla Sauer, cu zahar, sirop de glucoza, amidon, agent de umezire sorbitol, faina de grau."
+  },
+  {
+    "cod": "4001686376829",
+    "name": "Jeleuri Haribo Pixel 160gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4001686376829-bottle.jpg",
+    "description": "Haribo Rainbow Pixel - jeleuri acrisoare (sour gummy candies), cu zahar, sirop de glucoza, amidon, acidifianti acid citric si acid malic."
+  },
+  {
+    "cod": "4001686329870",
+    "name": "Jeleuri Haribo Pommes 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4001686329870-bottle.jpg",
+    "description": "Haribo Saure Pommes - jeleuri acrisoare in forma de cartofi prajiti, 175g."
+  },
+  {
+    "cod": "4001686405574",
+    "name": "Jeleuri Haribo Primavera 1.15kg",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686405574-bottle.jpg",
+    "description": "Haribo Primavera - jeleuri cu capsuni si spuma de zahar, sortiment 1.15kg."
+  },
+  {
+    "cod": "4001686327609",
+    "name": "Jeleuri Haribo Primavera 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 4,
+    "bottle_image": "assets/products/4001686327609-bottle.jpg",
+    "description": "Haribo Primavera 175g - jeleuri cu gelatina, acid citric, concentrate de fructe si plante (morcov), aroma de morcov."
+  },
+  {
+    "cod": "4001686409510",
+    "name": "Jeleuri Haribo Raupe Xxl 960 Gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 69.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686409510-bottle.jpg",
+    "description": "Haribo Raupe XXL, 30 x 32g = 960g, fabricat in UE."
+  },
+  {
+    "cod": "4001686807071",
+    "name": "Jeleuri Haribo Road Trip 600 Gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 39.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686807071-bottle.jpg",
+    "description": "Haribo Road Trip, sortiment de jeleuri 600g."
+  },
+  {
+    "cod": "4001686372852",
+    "name": "Jeleuri Haribo Roulette 150 Gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686372852-bottle.jpg",
+    "description": "Haribo Roulette 150g - jeleuri cu sirop de glucoza, zahar, gelatina, dextroza, acid citric."
+  },
+  {
+    "cod": "9002975002516",
+    "name": "Jeleuri Haribo Sauer Brenner 160 Gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/9002975002516-bottle.jpg",
+    "description": "Haribo Sauer Brenner - jeleuri acrisoare, 160g, continut ridicat de zahar."
+  },
+  {
+    "cod": "4001686807132",
+    "name": "Jeleuri Haribo Sommer 650 Gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 39.0,
+    "stock": 2,
+    "bottle_image": "assets/products/4001686807132-bottle.jpg",
+    "description": "Haribo Summer Feeling Sauer - jeleuri acrisoare de vara, 650g."
+  },
+  {
+    "cod": "4001686344897",
+    "name": "Jeleuri Haribo Spiegeleier 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 3,
+    "bottle_image": "assets/products/4001686344897-bottle.jpg",
+    "description": "Haribo Spiegeleier - jeleuri in forma de ochiuri (oua), 175g."
+  },
+  {
+    "cod": "4001686322932",
+    "name": "Jeleuri Haribo Starmix 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 4,
+    "bottle_image": "assets/products/4001686322932-bottle.jpg",
+    "description": "Haribo Starmix - fruchtgummi mit Schaumzucker, jeleuri mixte cu spuma de zahar, unele cu aroma de cola."
+  },
+  {
+    "cod": "4001686329849",
+    "name": "Jeleuri Haribo Starmix 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686329849-bottle.jpg",
+    "description": "Haribo Wine Gums (englezesti), 175g, cu sirop de glucoza, zahar, amidon, gelatina."
+  },
+  {
+    "cod": "4001686731536",
+    "name": "Jeleuri Haribo Travel Parade 700gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 59.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4001686731536-bottle.jpg",
+    "description": "Haribo Gummy Travel / Travel Parade, sortiment de jeleuri, comercializat inclusiv in Uruguay."
+  },
+  {
+    "cod": "4001686322963",
+    "name": "Jeleuri Haribo Tropifrutti 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 5,
+    "bottle_image": "assets/products/4001686322963-bottle.jpg",
+    "description": "Haribo Tropifrutti - jeleuri cu zahar, sirop de glucoza, concentrate de plante (sofran, spirulina, mar, morcov, afine), gelatina, fara coloranti artificiali."
+  },
+  {
+    "cod": "4001686011782",
+    "name": "Jeleuri Haribo Unicorn 175 Gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/4001686011782-bottle.jpg",
+    "description": "Haribo Unicorn World - jeleuri cu tematica unicorn, 175g."
+  },
+  {
+    "cod": "4001686327456",
+    "name": "Jeleuri Haribo Vampire 175gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 6,
+    "bottle_image": "assets/products/4001686327456-bottle.jpg",
+    "description": "Haribo Vampire - jeleuri cu sirop de glucoza, zahar, gelatina, sirop de zahar brun, concentrate de fructe si plante (morcov, spirulina, mar, hibiscus)."
+  },
+  {
+    "cod": "9002975378895",
+    "name": "Jeleuri Haribo Zitrone 160gr",
+    "brand": "Haribo",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": null,
+    "stock": 5,
+    "bottle_image": "assets/products/9002975378895-bottle.jpg",
+    "description": "Haribo Ingwer Zitrone - jeleuri cu ghimbir si lamaie, suc de lamaie din concentrat (2,3%), concentrate de fructe (sofran, portocala, lamaie, soc)."
+  },
+  {
+    "cod": "5011061115720",
+    "name": "Jeleuri Juicy Jems 140gr",
+    "brand": "Juicy",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 25.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5011061115720-bottle.jpg",
+    "description": "Juicy Jems, jeleuri de la Zed Candy."
   },
   {
     "cod": "3614274068818",
