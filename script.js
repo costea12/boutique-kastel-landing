@@ -10,6 +10,45 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 revealEls.forEach((el) => io.observe(el));
 
+// Promo carousel (homepage) - auto-advances, plus manual arrow/dot navigation
+const promoTrack = document.getElementById('promoTrack');
+if (promoTrack) {
+  const slides = Array.from(promoTrack.querySelectorAll('.promo-slide'));
+  const dotsWrap = document.getElementById('promoDots');
+  let current = slides.findIndex((s) => s.classList.contains('is-active'));
+  if (current < 0) current = 0;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.setAttribute('aria-label', `Produsul ${i + 1}`);
+    if (i === current) dot.classList.add('is-active');
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  function render() {
+    slides.forEach((s, i) => s.classList.toggle('is-active', i === current));
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+  }
+
+  function goTo(i) {
+    current = (i + slides.length) % slides.length;
+    render();
+    resetTimer();
+  }
+
+  document.getElementById('promoPrev')?.addEventListener('click', () => goTo(current - 1));
+  document.getElementById('promoNext')?.addEventListener('click', () => goTo(current + 1));
+
+  let timer;
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 60000); // auto-advance every 60s
+  }
+  resetTimer();
+}
+
 // Mobile nav
 const navToggle = document.getElementById('navToggle');
 const navClose = document.getElementById('navClose');
