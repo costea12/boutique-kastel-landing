@@ -5450,6 +5450,26 @@
     "bottle_image": "assets/products/8719134152760-bottle.jpg"
   },
   {
+    "cod": "8719134220278",
+    "name": "Rituals Lumanare Parf Jing 290gr",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 119.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134220278-bottle.jpg"
+  },
+  {
+    "cod": "8719134187823",
+    "name": "Rituals Parfum De Interior Ayurveda 400ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 179.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134187823-bottle.jpg"
+  },
+  {
     "cod": "8719134186192",
     "name": "Rituals Parfum De Interior Jing 400ml",
     "brand": "Rituals",
@@ -5460,6 +5480,26 @@
     "bottle_image": "assets/products/8719134186192-bottle.jpg"
   },
   {
+    "cod": "8719134186185",
+    "name": "Rituals Parfum De Interior Karma 400ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 179.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134186185-bottle.jpg"
+  },
+  {
+    "cod": "8719134171617",
+    "name": "Rituals Sakura Body Lotion Mousse 150ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 69.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134171617-bottle.jpg"
+  },
+  {
     "cod": "8719134161328",
     "name": "Rituals Sakura Body Scrub 250gr",
     "brand": "Rituals",
@@ -5468,6 +5508,36 @@
     "price": 89.0,
     "stock": 1,
     "bottle_image": "assets/products/8719134161328-bottle.jpg"
+  },
+  {
+    "cod": "8719134143324",
+    "name": "Rituals Sakura Crema De Maini 70ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134143324-bottle.jpg"
+  },
+  {
+    "cod": "8719134164138",
+    "name": "Rituals Sapun De Maini Amsterdam 300ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 79.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134164138-bottle.jpg"
+  },
+  {
+    "cod": "8719134164329",
+    "name": "Rituals Sapun De Maini Ayurveda 300ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134164329-bottle.jpg"
   },
   {
     "cod": "8719134208580",
