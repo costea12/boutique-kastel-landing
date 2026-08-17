@@ -16674,6 +16674,17 @@
     "description": "Tender hazelnut nougat filling (29%) with roasted hazelnut pieces and cereal crisp, 6 pieces, 138g."
   },
   {
+    "cod": "8003340804781",
+    "name": "Praline Lindt Fistic 337gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 119.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8003340804781-bottle.jpg",
+    "description": "Lindt Lindor Pistachio (Fistic) milk chocolate truffles."
+  },
+  {
     "cod": "4000539147845",
     "name": "Praline Lindt Hell 200gr",
     "brand": "Lindt",
@@ -16947,6 +16958,17 @@
     "stock": 3,
     "bottle_image": "assets/products/4000539113383-bottle.jpg",
     "description": "Lindt Lindor Himbeer-Sahne (Raspberry Cream) truffles, 137g."
+  },
+  {
+    "cod": "8003340804859",
+    "name": "Praline Lindt Lindor Zmeura 337gr",
+    "brand": "Lindt",
+    "category": "DLC",
+    "category_label": "Dulciuri",
+    "price": 119.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8003340804859-bottle.jpg",
+    "description": "Lindt Lindor Raspberry & Cream milk chocolate truffles box."
   },
   {
     "cod": "4000539141485",
