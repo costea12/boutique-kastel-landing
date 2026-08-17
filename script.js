@@ -73,13 +73,47 @@ mobileNav?.querySelectorAll('a').forEach((a) =>
 );
 
 // Live product count + recommended picks (homepage only)
-const RECOMMENDED_CODES = [
-  '3348901428545', // Dior Sauvage EDP 200ml
-  '3145891165203', // Chanel Coco Mademoiselle EDP 100ml
-  '3365440787919', // Ysl Black Opium EDP 50ml
-  '888066000079',  // Tom Ford Black Orchid EDP 100ml
-  '8011003809219', // Versace Eros EDT 100ml
-];
+
+// Seeded RNG (mulberry32) so the picks are stable all day but reshuffle the next day -
+// seed comes from today's date, not the clock, so it doesn't change on every page load.
+function seededRandom(seed) {
+  return function () {
+    seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function todaySeed() {
+  const d = new Date();
+  const dateStr = `${d.getFullYear()}${d.getMonth()}${d.getDate()}`;
+  let hash = 0;
+  for (let i = 0; i < dateStr.length; i++) hash = (hash * 31 + dateStr.charCodeAt(i)) | 0;
+  return hash;
+}
+function shuffledPick(arr, count, rng) {
+  const copy = arr.slice();
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy.slice(0, count);
+}
+
+// Picks a diversified daily selection: 2 from each main category (falls back to
+// whatever's available if a category is short) instead of a fixed hand-picked list.
+function pickDailyRecommended(data) {
+  const rng = seededRandom(todaySeed());
+  const categories = ['PRF', 'ALC', 'DLC'];
+  const perCategory = 2;
+  let picks = [];
+  categories.forEach((cat) => {
+    const inStock = data.filter((p) => p.category === cat && p.stock > 0);
+    const pool = inStock.length >= perCategory ? inStock : data.filter((p) => p.category === cat);
+    picks = picks.concat(shuffledPick(pool, perCategory, rng));
+  });
+  return shuffledPick(picks, picks.length, rng); // shuffle the combined order too
+}
 
 function formatPriceHome(p) {
   return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
@@ -99,8 +133,7 @@ if (document.getElementById('parfumCount') || document.getElementById('bauturiCo
 
       const grid = document.getElementById('recommendedGrid');
       if (!grid) return;
-      const byCode = Object.fromEntries(data.map((p) => [p.cod, p]));
-      const picks = RECOMMENDED_CODES.map((c) => byCode[c]).filter(Boolean);
+      const picks = pickDailyRecommended(data);
       grid.innerHTML = picks.map((p) => `
         <a class="product-card" href="produs.html?cod=${encodeURIComponent(p.cod)}">
           <div class="product-card-img">
