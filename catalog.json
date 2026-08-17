@@ -282,6 +282,16 @@
     "bottle_image": "assets/products/3616302020676-bottle.jpg"
   },
   {
+    "cod": "3616302023721",
+    "name": "Burberry Goddess Gel Dus 200 Ml",
+    "brand": "Burberry",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 199.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3616302023721-bottle.jpg"
+  },
+  {
     "cod": "3616304967122",
     "name": "Burberry Goddess Intens EDP 100ml",
     "brand": "Burberry",
@@ -671,6 +681,26 @@
     "bottle_image": "assets/products/3607340216008-bottle.jpg"
   },
   {
+    "cod": "3607348195466",
+    "name": "Calvin Klein Ck Eternity Summer Man EDT 100ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 199.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3607348195466-bottle.jpg"
+  },
+  {
+    "cod": "3607342401426",
+    "name": "Calvin Klein Ck One Shock Man EDT 200ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3607342401426-bottle.jpg"
+  },
+  {
     "cod": "3616302016648",
     "name": "Calvin Klein Defy EDP 100ml",
     "brand": "Calvin Klein",
@@ -700,6 +730,16 @@
     "stock": 1,
     "bottle_image": "assets/products/3614229135145-bottle.jpg",
     "box_image": "assets/products/3614229135145-box.jpg"
+  },
+  {
+    "cod": "088300162581",
+    "name": "Calvin Klein Euphoria Edp15ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 79.0,
+    "stock": 1,
+    "bottle_image": "assets/products/088300162581-bottle.jpg"
   },
   {
     "cod": "088300178285",
@@ -742,6 +782,16 @@
     "bottle_image": "assets/products/088300162543-bottle.jpg"
   },
   {
+    "cod": "088300162567",
+    "name": "Calvin Klein Euphoria Women EDP 30ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 219.0,
+    "stock": 2,
+    "bottle_image": "assets/products/088300162567-bottle.jpg"
+  },
+  {
     "cod": "3607342020849",
     "name": "Calvin Klein Free Deo Stick 75gr",
     "brand": "Calvin Klein",
@@ -750,6 +800,26 @@
     "price": 79.0,
     "stock": 1,
     "bottle_image": "assets/products/3607342020849-bottle.jpg"
+  },
+  {
+    "cod": "088300196890",
+    "name": "Calvin Klein In2u Men EDT 100ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 169.0,
+    "stock": 1,
+    "bottle_image": "assets/products/088300196890-bottle.jpg"
+  },
+  {
+    "cod": "088300196814",
+    "name": "Calvin Klein In2u Women EDT 100ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 199.0,
+    "stock": 2,
+    "bottle_image": "assets/products/088300196814-bottle.jpg"
   },
   {
     "cod": "3616304478246",
@@ -771,6 +841,36 @@
     "price": 219.0,
     "stock": 2,
     "bottle_image": "assets/products/3607342402065-bottle.jpg"
+  },
+  {
+    "cod": "3607342401341",
+    "name": "Calvin Klein One Shock Man EDT 100ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 219.0,
+    "stock": 2,
+    "bottle_image": "assets/products/3607342401341-bottle.jpg"
+  },
+  {
+    "cod": "3607342401822",
+    "name": "Calvin Klein One Shock W EDT 100ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3607342401822-bottle.jpg"
+  },
+  {
+    "cod": "3607342838116",
+    "name": "Calvin Klein Reveal Man EDT 50ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 199.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3607342838116-bottle.jpg"
   },
   {
     "cod": "3614225356933",
@@ -1264,6 +1364,16 @@
     "box_image": "assets/products/3145891362107-box.jpg"
   },
   {
+    "cod": "3145891264203",
+    "name": "Chanel Chance EDP 50ml",
+    "brand": "Chanel",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 699.0,
+    "stock": 2,
+    "bottle_image": "assets/products/3145891264203-bottle.jpg"
+  },
+  {
     "cod": "3145891165203",
     "name": "Chanel Coco Mademoiselle EDP 100ml",
     "brand": "Chanel",
@@ -1397,6 +1507,16 @@
     "bottle_image": "assets/products/3145891254303-bottle.jpg"
   },
   {
+    "cod": "3145891057683",
+    "name": "Chanel No5 SG 200ml",
+    "brand": "Chanel",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 399.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3145891057683-bottle.jpg"
+  },
+  {
     "cod": "3607346232347",
     "name": "Chloe Woman EDP 50ml",
     "brand": "Chloe",
@@ -1470,6 +1590,26 @@
     "bottle_image": "assets/products/7640177366160-bottle.jpg"
   },
   {
+    "cod": "088300605705",
+    "name": "Ck Eternity Man Deostick 75gr",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 79.0,
+    "stock": 1,
+    "bottle_image": "assets/products/088300605705-bottle.jpg"
+  },
+  {
+    "cod": "156156",
+    "name": "Ck Free For Men EDT 10ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 39.0,
+    "stock": 5,
+    "bottle_image": "assets/products/156156-bottle.jpg"
+  },
+  {
     "cod": "031655644851",
     "name": "Ck Man EDT 100ml",
     "brand": "Calvin Klein",
@@ -1478,6 +1618,26 @@
     "price": 199.0,
     "stock": 3,
     "bottle_image": "assets/products/031655644851-bottle.jpg"
+  },
+  {
+    "cod": "3607342401389",
+    "name": "Ck One Shock Man EDT 50ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3607342401389-bottle.jpg"
+  },
+  {
+    "cod": "3607342401945",
+    "name": "Ck One Shock W EDT 50ml",
+    "brand": "Calvin Klein",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3607342401945-bottle.jpg"
   },
   {
     "cod": "3386460151979",
@@ -1510,6 +1670,26 @@
     "bottle_image": "assets/products/3386460095358-bottle.jpg"
   },
   {
+    "cod": "3386460078306",
+    "name": "Coach New York EDP 90ml",
+    "brand": "Coach",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 529.0,
+    "stock": 5,
+    "bottle_image": "assets/products/3386460078306-bottle.jpg"
+  },
+  {
+    "cod": "6290362163077",
+    "name": "Culf Orchid Cherry Vibe EDP 100ml",
+    "brand": "Culf",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 1,
+    "bottle_image": "assets/products/6290362163077-bottle.jpg"
+  },
+  {
     "cod": "8057971183739",
     "name": "D&g Devotion EDP 100ml",
     "brand": "Dolce & Gabbana",
@@ -1530,6 +1710,16 @@
     "bottle_image": "assets/products/8057971183722-bottle.jpg"
   },
   {
+    "cod": "8054754401073",
+    "name": "D&g Devotion Men EDP 10ml",
+    "brand": "Dolce & Gabbana",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 199.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8054754401073-bottle.jpg"
+  },
+  {
     "cod": "8054754404739",
     "name": "D&g Devotion Men EDP 50ml",
     "brand": "Dolce & Gabbana",
@@ -1548,6 +1738,16 @@
     "price": 399.0,
     "stock": 2,
     "bottle_image": "assets/products/8057971183791-bottle.jpg"
+  },
+  {
+    "cod": "3423473042853",
+    "name": "D&g K Man EDT 50ml",
+    "brand": "Dolce & Gabbana",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 289.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3423473042853-bottle.jpg"
   },
   {
     "cod": "3423473101253",
@@ -1590,6 +1790,36 @@
     "bottle_image": "assets/products/3423222015978-bottle.jpg"
   },
   {
+    "cod": "3423222066086",
+    "name": "D&g Light Blue SET Edt75ml+asb 50ml",
+    "brand": "Dolce & Gabbana",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 399.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3423222066086-bottle.jpg"
+  },
+  {
+    "cod": "3423473020264",
+    "name": "D&g Light Blue W EDT 50ml",
+    "brand": "Dolce & Gabbana",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 379.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3423473020264-bottle.jpg"
+  },
+  {
+    "cod": "737052074320",
+    "name": "D&g Light Blue Woman EDT 100ml",
+    "brand": "Dolce & Gabbana",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 499.0,
+    "stock": 1,
+    "bottle_image": "assets/products/737052074320-bottle.jpg"
+  },
+  {
     "cod": "8057971183661",
     "name": "D&g Q EDP 100ml",
     "brand": "Dolce & Gabbana",
@@ -1598,6 +1828,16 @@
     "price": 659.0,
     "stock": 1,
     "bottle_image": "assets/products/8057971183661-bottle.jpg"
+  },
+  {
+    "cod": "8057971181568",
+    "name": "D&g The One Intense Men EDP 100ml",
+    "brand": "Dolce & Gabbana",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 479.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8057971181568-bottle.jpg"
   },
   {
     "cod": "8057971184910",
@@ -2180,6 +2420,16 @@
     "bottle_image": "assets/products/3575070054446-bottle.jpg"
   },
   {
+    "cod": "3760333770441",
+    "name": "Franck Bocket Cocaine Extr.parfum Man 4*20l",
+    "brand": "Franck",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 499.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3760333770441-bottle.jpg"
+  },
+  {
     "cod": "6290360375601",
     "name": "French Avenue Royal Blend Extr.prf 100ml",
     "brand": "French",
@@ -2208,6 +2458,16 @@
     "price": 559.0,
     "stock": 1,
     "bottle_image": "assets/products/3614274143751-bottle.jpg"
+  },
+  {
+    "cod": "3614274437140",
+    "name": "Ga Acqua Di Gio Men SET Edt50mlsg 75ml",
+    "brand": "Giorgio Armani",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 399.0,
+    "stock": 2,
+    "bottle_image": "assets/products/3614274437140-bottle.jpg"
   },
   {
     "cod": "3614273907521",
@@ -3090,6 +3350,16 @@
     "bottle_image": "assets/products/3616304062490-bottle.jpg"
   },
   {
+    "cod": "3616304198045",
+    "name": "Hb Bossma Vie SET Edp30ml+bl 50ml",
+    "brand": "Hugo Boss",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 2,
+    "bottle_image": "assets/products/3616304198045-bottle.jpg"
+  },
+  {
     "cod": "3616304691645",
     "name": "Hb Bottled Elixir EDP 100ml",
     "brand": "Hugo Boss",
@@ -3228,6 +3498,16 @@
     "price": 649.0,
     "stock": 1,
     "bottle_image": "assets/products/3346130424116-bottle.jpg"
+  },
+  {
+    "cod": "3346130415282",
+    "name": "Hermes Terre D`hermes EDT 100ml",
+    "brand": "Hermes",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 599.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3346130415282-bottle.jpg"
   },
   {
     "cod": "3346130433712",
@@ -3378,6 +3658,16 @@
     "price": 269.0,
     "stock": 1,
     "bottle_image": "assets/products/3614228858045-bottle.jpg"
+  },
+  {
+    "cod": "3614228244541",
+    "name": "Joop Wow Women SET Edt60ml+sg 250ml",
+    "brand": "Joop",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 249.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3614228244541-bottle.jpg"
   },
   {
     "cod": "3414206000608",
@@ -3860,6 +4150,26 @@
     "bottle_image": "assets/products/3386460087261-bottle.jpg"
   },
   {
+    "cod": "3386460063401",
+    "name": "Karl Lagerfeld Classic Homme Deo Spray 150ml",
+    "brand": "Karl",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 89.0,
+    "stock": 4,
+    "bottle_image": "assets/products/3386460063401-bottle.jpg"
+  },
+  {
+    "cod": "3386460059107",
+    "name": "Karl Lagerfeld Deo Stick 75gr",
+    "brand": "Karl",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 69.0,
+    "stock": 3,
+    "bottle_image": "assets/products/3386460059107-bottle.jpg"
+  },
+  {
     "cod": "3386460087254",
     "name": "Karl Lagerfeld Fleurde Pecher EDP 100ml",
     "brand": "Karl",
@@ -4220,6 +4530,16 @@
     "bottle_image": "assets/products/3147758155112-bottle.jpg"
   },
   {
+    "cod": "799729007789",
+    "name": "Loison Decorative M133 Difuzor Ambiente Primavera Rosa Peo 180 Ml",
+    "brand": "Loison",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 79.0,
+    "stock": 2,
+    "bottle_image": "assets/products/799729007789-bottle.jpg"
+  },
+  {
     "cod": "6295151500019",
     "name": "Mahab Nusuk Extr.parf 100ml",
     "brand": "Mahab",
@@ -4478,6 +4798,16 @@
     "price": 469.0,
     "stock": 1,
     "bottle_image": "assets/products/3760265194407-bottle.jpg"
+  },
+  {
+    "cod": "5051389044869",
+    "name": "Mitchum Men Deo Spray 150ml",
+    "brand": "Mitchum",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 19.5,
+    "stock": 6,
+    "bottle_image": "assets/products/5051389044869-bottle.jpg"
   },
   {
     "cod": "3386460154949",
