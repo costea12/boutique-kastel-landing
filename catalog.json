@@ -1870,6 +1870,16 @@
     "bottle_image": "assets/products/8057971181568-bottle.jpg"
   },
   {
+    "cod": "3423473034445",
+    "name": "D&g The One Man SET EDT 100ml",
+    "brand": "Dolce & Gabbana",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 499.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3423473034445-bottle.jpg"
+  },
+  {
     "cod": "8057971184910",
     "name": "D&g The Only One EDP 100ml",
     "brand": "Dolce & Gabbana",
@@ -5040,6 +5050,16 @@
     "bottle_image": "assets/products/7290113146600-bottle.jpg"
   },
   {
+    "cod": "7290013627001",
+    "name": "Moroccanoil Gel Dus 200ml",
+    "brand": "Moroccanoil",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 89.0,
+    "stock": 1,
+    "bottle_image": "assets/products/7290013627001-bottle.jpg"
+  },
+  {
     "cod": "7290113141230",
     "name": "Moroccanoil Spray Par Si Corp 100 Ml",
     "brand": "Moroccanoil",
@@ -5058,6 +5078,16 @@
     "price": 239.0,
     "stock": 1,
     "bottle_image": "assets/products/7290014344372-bottle.jpg"
+  },
+  {
+    "cod": "8011003885657",
+    "name": "Moschino Toy 2 Edp100ml+10ml+bl100ml+sg100ml",
+    "brand": "Moschino",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 449.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8011003885657-bottle.jpg"
   },
   {
     "cod": "8717774840061",
@@ -5250,6 +5280,16 @@
     "bottle_image": "assets/products/3349668617043-bottle.jpg"
   },
   {
+    "cod": "3349668642946",
+    "name": "Pr 1 Millon Gold SET EDP 100ml+10ml+deo 150ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 749.0,
+    "stock": 3,
+    "bottle_image": "assets/products/3349668642946-bottle.jpg"
+  },
+  {
     "cod": "3349668630417",
     "name": "Pr Fame Couture EDP 80 Ml",
     "brand": "Paco Rabanne",
@@ -5258,6 +5298,16 @@
     "price": 799.0,
     "stock": 1,
     "bottle_image": "assets/products/3349668630417-bottle.jpg"
+  },
+  {
+    "cod": "3349668623532",
+    "name": "Pr Fame Edp80ml+bl100ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 719.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3349668623532-bottle.jpg"
   },
   {
     "cod": "3349668642878",
@@ -5278,6 +5328,16 @@
     "price": 529.0,
     "stock": 1,
     "bottle_image": "assets/products/3349668515660-bottle.jpg"
+  },
+  {
+    "cod": "3349668662678",
+    "name": "Pr Invictus Elixir Parfum 50 Ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 499.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3349668662678-bottle.jpg"
   },
   {
     "cod": "3349668627530",
@@ -5370,6 +5430,16 @@
     "bottle_image": "assets/products/3349668508587-bottle.jpg"
   },
   {
+    "cod": "3349668613649",
+    "name": "Pr Lady Million Edp80ml+bl100ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 699.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3349668613649-bottle.jpg"
+  },
+  {
     "cod": "3349668592449",
     "name": "Pr Lady Million Fabulous EDP 30ml",
     "brand": "Paco Rabanne",
@@ -5420,6 +5490,26 @@
     "bottle_image": "assets/products/3349668644957-bottle.jpg"
   },
   {
+    "cod": "3349668645220",
+    "name": "Pr Million Gold For Her Parfum 30ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 439.0,
+    "stock": 2,
+    "bottle_image": "assets/products/3349668645220-bottle.jpg"
+  },
+  {
+    "cod": "3349668645213",
+    "name": "Pr Million Gold For Her Parfum 50ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 649.0,
+    "stock": 3,
+    "bottle_image": "assets/products/3349668645213-bottle.jpg"
+  },
+  {
     "cod": "3349668645206",
     "name": "Pr Million Gold For Her Parfum 90 Ml",
     "brand": "Paco Rabanne",
@@ -5428,6 +5518,36 @@
     "price": 829.0,
     "stock": 2,
     "bottle_image": "assets/products/3349668645206-bottle.jpg"
+  },
+  {
+    "cod": "3349668635344",
+    "name": "Pr Million Gold SET EDP 50ml+bl100ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 629.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3349668635344-bottle.jpg"
+  },
+  {
+    "cod": "3349668554768",
+    "name": "Pr Million Men SG 150ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 199.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3349668554768-bottle.jpg"
+  },
+  {
+    "cod": "3349668641758",
+    "name": "Pr Olympea Absolu Parfum W 30ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 439.0,
+    "stock": 2,
+    "bottle_image": "assets/products/3349668641758-bottle.jpg"
   },
   {
     "cod": "3349668641765",
@@ -5520,6 +5640,16 @@
     "bottle_image": "assets/products/3349668599424-bottle.jpg"
   },
   {
+    "cod": "3349668675432",
+    "name": "Pr Paco Rose EDT 100ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 109.0,
+    "stock": 3,
+    "bottle_image": "assets/products/3349668675432-bottle.jpg"
+  },
+  {
     "cod": "3349668582365",
     "name": "Pr Phantom EDT 50ml",
     "brand": "Paco Rabanne",
@@ -5540,6 +5670,16 @@
     "bottle_image": "assets/products/3349668661640-bottle.jpg"
   },
   {
+    "cod": "3349668642687",
+    "name": "Pr Phantom Intense SET EDP 100ml+10ml+deo 150ml",
+    "brand": "Paco Rabanne",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 649.0,
+    "stock": 2,
+    "bottle_image": "assets/products/3349668642687-bottle.jpg"
+  },
+  {
     "cod": "3349668583218",
     "name": "Pr Phantom Shower Gel 150ml",
     "brand": "Paco Rabanne",
@@ -5548,6 +5688,16 @@
     "price": 189.0,
     "stock": 1,
     "bottle_image": "assets/products/3349668583218-bottle.jpg"
+  },
+  {
+    "cod": "8435137780075",
+    "name": "Prada Candy Edp80ml+7ml+bl75ml",
+    "brand": "Prada",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 579.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8435137780075-bottle.jpg"
   },
   {
     "cod": "8435137765362",
@@ -5568,6 +5718,16 @@
     "price": 649.0,
     "stock": 1,
     "bottle_image": "assets/products/8435137749287-bottle.jpg"
+  },
+  {
+    "cod": "8435137771639",
+    "name": "Prada La Femme SET EDP 100 Ml",
+    "brand": "Prada",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 699.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8435137771639-bottle.jpg"
   },
   {
     "cod": "3614274109450",
@@ -5730,6 +5890,16 @@
     "bottle_image": "assets/products/6295151503942-bottle.jpg"
   },
   {
+    "cod": "6292257644791",
+    "name": "Riiffs Costa De Amalfi Ext Prf 100ml",
+    "brand": "Riiffs",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 159.0,
+    "stock": 3,
+    "bottle_image": "assets/products/6292257644791-bottle.jpg"
+  },
+  {
     "cod": "6297001574133",
     "name": "Riiffs Fleurie Emerald EDP 100ml",
     "brand": "Riiffs",
@@ -5788,6 +5958,46 @@
     "price": 179.0,
     "stock": 3,
     "bottle_image": "assets/products/6294015198942-bottle.jpg"
+  },
+  {
+    "cod": "8719134187670",
+    "name": "Rituals Crema De Corp Ayurveda 220ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 119.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134187670-bottle.jpg"
+  },
+  {
+    "cod": "8719134187731",
+    "name": "Rituals Crema De Corp Sakura 220ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 119.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134187731-bottle.jpg"
+  },
+  {
+    "cod": "8719134202915",
+    "name": "Rituals After Shave Balsam 100ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 129.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134202915-bottle.jpg"
+  },
+  {
+    "cod": "8719134198201",
+    "name": "Rituals Amsterdam SET Colecction",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 189.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134198201-bottle.jpg"
   },
   {
     "cod": "8719134160802",
@@ -5890,6 +6100,176 @@
     "bottle_image": "assets/products/8719134134711-bottle.jpg"
   },
   {
+    "cod": "8719134200782",
+    "name": "Rituals Deo Spray Jing 150ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 49.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134200782-bottle.jpg"
+  },
+  {
+    "cod": "8719134181838",
+    "name": "Rituals Deo Spray Karma 75ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 49.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134181838-bottle.jpg"
+  },
+  {
+    "cod": "8719134181852",
+    "name": "Rituals Deo Spray Sakura 75ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 49.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134181852-bottle.jpg"
+  },
+  {
+    "cod": "8719134160826",
+    "name": "Rituals Gel De Dus Ayurveda 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134160826-bottle.jpg"
+  },
+  {
+    "cod": "8719134155617",
+    "name": "Rituals Gel Dus Amsterdam 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 5,
+    "bottle_image": "assets/products/8719134155617-bottle.jpg"
+  },
+  {
+    "cod": "8719134202380",
+    "name": "Rituals Gel Dus Ayurveda 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134202380-bottle.jpg"
+  },
+  {
+    "cod": "8719134190731",
+    "name": "Rituals Gel Dus Homme 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134190731-bottle.jpg"
+  },
+  {
+    "cod": "8719134155778",
+    "name": "Rituals Gel Dus Jing 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134155778-bottle.jpg"
+  },
+  {
+    "cod": "8719134199604",
+    "name": "Rituals Gel Dus Jing 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134199604-bottle.jpg"
+  },
+  {
+    "cod": "8719134202502",
+    "name": "Rituals Gel Dus Karma 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 4,
+    "bottle_image": "assets/products/8719134202502-bottle.jpg"
+  },
+  {
+    "cod": "8719134155822",
+    "name": "Rituals Gel Dus Mehr 200 Ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134155822-bottle.jpg"
+  },
+  {
+    "cod": "8719134155792",
+    "name": "Rituals Gel Dus Of Jing 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134155792-bottle.jpg"
+  },
+  {
+    "cod": "8719134155860",
+    "name": "Rituals Gel Dus Sakura 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134155860-bottle.jpg"
+  },
+  {
+    "cod": "8719134201789",
+    "name": "Rituals Jing SET Mediu",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 219.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134201789-bottle.jpg"
+  },
+  {
+    "cod": "8719134152487",
+    "name": "Rituals Karma Sun Spray 200 Ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134152487-bottle.jpg"
+  },
+  {
+    "cod": "8719134182972",
+    "name": "Rituals Lotiune Corp Spuma Karma 150ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 69.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134182972-bottle.jpg"
+  },
+  {
+    "cod": "8719134212020",
+    "name": "Rituals Lumanare Parf Ayurveda 290gr",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 119.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134212020-bottle.jpg"
+  },
+  {
     "cod": "8719134220278",
     "name": "Rituals Lumanare Parf Jing 290gr",
     "brand": "Rituals",
@@ -5988,6 +6368,76 @@
     "price": 349.0,
     "stock": 2,
     "bottle_image": "assets/products/8719134208580-bottle.jpg"
+  },
+  {
+    "cod": "8719134203318",
+    "name": "Rituals SET Large Karma+geanta",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134203318-bottle.jpg"
+  },
+  {
+    "cod": "8719134212273",
+    "name": "Rituals SET Large Mehr",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134212273-bottle.jpg"
+  },
+  {
+    "cod": "8719134198256",
+    "name": "Rituals SET Mare Amsterdam",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134198256-bottle.jpg"
+  },
+  {
+    "cod": "8719134203240",
+    "name": "Rituals SET Mare Ayurveda+geanta",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134203240-bottle.jpg"
+  },
+  {
+    "cod": "8719134184587",
+    "name": "Rituals SET Mare Jing",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 279.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134184587-bottle.jpg"
+  },
+  {
+    "cod": "8719134203271",
+    "name": "Rituals SET Mare Jing+geanta",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134203271-bottle.jpg"
+  },
+  {
+    "cod": "8719134203349",
+    "name": "Rituals SET Mare Sakura+geanta",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134203349-bottle.jpg"
   },
   {
     "cod": "8719134201765",
@@ -6218,6 +6668,16 @@
     "price": 89.0,
     "stock": 2,
     "bottle_image": "assets/products/8034097959752-bottle.jpg"
+  },
+  {
+    "cod": "5016365100540",
+    "name": "Scottish Fine Soaps Men EDT 50ml",
+    "brand": "Scottish",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 139.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5016365100540-bottle.jpg"
   },
   {
     "cod": "768614220480",
@@ -6810,6 +7270,16 @@
     "bottle_image": "assets/products/3614274337365-bottle.jpg"
   },
   {
+    "cod": "3614274337358",
+    "name": "Valentino Donna Born In Roma Ivory EDP 50ml",
+    "brand": "Valentino",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 569.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3614274337358-bottle.jpg"
+  },
+  {
     "cod": "3660732673070",
     "name": "Valentino Donna Born In Roma SET EDP 100ml+10ml",
     "brand": "Valentino",
@@ -7060,6 +7530,16 @@
     "bottle_image": "assets/products/8011003839094-bottle.jpg"
   },
   {
+    "cod": "8011003843787",
+    "name": "Versace Dylan Blue W SET EDP 100ml",
+    "brand": "Versace",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 599.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8011003843787-bottle.jpg"
+  },
+  {
     "cod": "8011003839100",
     "name": "Versace Dylan Blue W.edp 50ml",
     "brand": "Versace",
@@ -7068,6 +7548,16 @@
     "price": 379.0,
     "stock": 2,
     "bottle_image": "assets/products/8011003839100-bottle.jpg"
+  },
+  {
+    "cod": "8011003847556",
+    "name": "Versace Dylan Blue W.set EDP 50 Ml",
+    "brand": "Versace",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 429.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8011003847556-bottle.jpg"
   },
   {
     "cod": "8011003876280",
@@ -7230,6 +7720,16 @@
     "bottle_image": "assets/products/8011003873623-bottle.jpg"
   },
   {
+    "cod": "8011003885107",
+    "name": "Versace Pour Homme SET Edt100ml+10ml+borseta",
+    "brand": "Versace",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 499.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8011003885107-bottle.jpg"
+  },
+  {
     "cod": "8011003884902",
     "name": "Versace Yellow Diamond Edt90ml+sg100ml+bl100ml",
     "brand": "Versace",
@@ -7248,6 +7748,16 @@
     "price": 399.0,
     "stock": 1,
     "bottle_image": "assets/products/3605521879905-bottle.jpg"
+  },
+  {
+    "cod": "5941935109220",
+    "name": "Whisky Tamdhu 12y 0.7l 43% SGR",
+    "brand": "Whisky",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941935109220-bottle.jpg"
   },
   {
     "cod": "8033488155186",
@@ -7580,6 +8090,16 @@
     "bottle_image": "assets/products/3614273776110-bottle.jpg"
   },
   {
+    "cod": "3614274769722",
+    "name": "Ysl Libre SET EDP 90ml+10ml+ruj",
+    "brand": "Yves Saint Laurent",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 799.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3614274769722-bottle.jpg"
+  },
+  {
     "cod": "3365440226708",
     "name": "Ysl Maifesto Edpm 90ml",
     "brand": "Yves Saint Laurent",
@@ -7598,6 +8118,16 @@
     "price": 529.0,
     "stock": 1,
     "bottle_image": "assets/products/3660732086658-bottle.jpg"
+  },
+  {
+    "cod": "3614274643275",
+    "name": "Ysl SET Miniaturi Men 3*10ml",
+    "brand": "Yves Saint Laurent",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3614274643275-bottle.jpg"
   },
   {
     "cod": "3614272141445",
