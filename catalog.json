@@ -10578,6 +10578,16 @@
     "description": "Pinot Grigio delle Venezie DOC, culoare galben-pai cu reflexii aurii, note florale si de fructe cu pulpa galbena, echilibru pronuntat intre aciditate si mineralitate, cu o moliciune si persistenta neasteptate. 12.5% alcool. Producator: Brilla! (parte din grupul Argea)."
   },
   {
+    "cod": "5942073127022",
+    "name": "Vin Bucium Muscat Ottonel 0.75l 11,4% SGR",
+    "brand": "Bucium",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 119.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5942073127022-bottle.jpg"
+  },
+  {
     "cod": "5940541820185",
     "name": "Vin Budureasca Noble 0.75l 14% SGR",
     "brand": "Budureasca",
@@ -13182,6 +13192,16 @@
     "description": "Vin spumant Riondo Collezione Garda DOC Brut, din struguri Garganega (Veneto), maturat pana la 30 de luni pe drojdie prin metoda Charmat. Culoare galben-pai stralucitor cu reflexii verzui, arome delicate de salcam, mar si miere, cu note de coaja de paine si perlaj persistent."
   },
   {
+    "cod": "5940597912896",
+    "name": "Vin Spumant Rose Ro Si Susumaniello Masca Del Tacco 0.75 L 12% SGR",
+    "brand": "Rose",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 49.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5940597912896-bottle.jpg"
+  },
+  {
     "cod": "5941932105966",
     "name": "Vin Spumant Tenuta Ulissse Pecorino Brut 0.75l 12% SGR",
     "brand": "Tenuta",
@@ -13772,6 +13792,56 @@
     "bottle_image": "assets/products/5942122012590-bottle.jpg"
   },
   {
+    "cod": "5942091002752",
+    "name": "Vinars Jidvei 0.7l 42% SGR",
+    "brand": "Vinars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 17,
+    "bottle_image": "assets/products/5942091002752-bottle.jpg"
+  },
+  {
+    "cod": "5942091004879",
+    "name": "Vinars Jidvei XO 40% 0,7l SGR",
+    "brand": "Vinars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 389.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5942091004879-bottle.jpg"
+  },
+  {
+    "cod": "5942094430743",
+    "name": "Vinars Miorita VS 0.7l 40% SGR",
+    "brand": "Vinars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 119.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5942094430743-bottle.jpg"
+  },
+  {
+    "cod": "5942094430842",
+    "name": "Vinars Miorita VSOP 0.7l 40% SGR",
+    "brand": "Vinars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 149.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5942094430842-bottle.jpg"
+  },
+  {
+    "cod": "5942094430941",
+    "name": "Vinars Miorita XO Extra Old 0.7l 40% SGR",
+    "brand": "Vinars",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5942094430941-bottle.jpg"
+  },
+  {
     "cod": "5941934707465",
     "name": "Vodca Beluga Gold Line 0.5l 40% SGR",
     "brand": "Vodca",
@@ -13802,6 +13872,56 @@
     "bottle_image": "assets/products/5901811521072-bottle.jpg"
   },
   {
+    "cod": "5948987001540",
+    "name": "Vodka Absolut 0.7l 40% SGR",
+    "brand": "Absolut",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 27,
+    "bottle_image": "assets/products/5948987001540-bottle.jpg"
+  },
+  {
+    "cod": "5948987001557",
+    "name": "Vodka Absolut 1l 40% SGR",
+    "brand": "Absolut",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 13,
+    "bottle_image": "assets/products/5948987001557-bottle.jpg"
+  },
+  {
+    "cod": "5941934706574",
+    "name": "Vodka Beluga Celebration 0.7l 40% SGR",
+    "brand": "Beluga",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 239.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941934706574-bottle.jpg"
+  },
+  {
+    "cod": "5941934707489",
+    "name": "Vodka Beluga Huting 0.7l 38% SGR",
+    "brand": "Beluga",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 159.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941934707489-bottle.jpg"
+  },
+  {
+    "cod": "5941934704600",
+    "name": "Vodka Beluga Navy Blue 0.7l 40% SGR",
+    "brand": "Beluga",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 239.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941934704600-bottle.jpg"
+  },
+  {
     "cod": "5941935103839",
     "name": "Vodka Beluga Noble 0.7l 40% SGR",
     "brand": "Beluga",
@@ -13812,6 +13932,36 @@
     "bottle_image": "assets/products/5941935103839-bottle.jpg"
   },
   {
+    "cod": "5941935106281",
+    "name": "Vodka Belvedere 0.7l 40% SGR",
+    "brand": "Belvedere",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 219.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5941935106281-bottle.jpg"
+  },
+  {
+    "cod": "91919191",
+    "name": "Vodka Belvedere Neon 0.7l 40%",
+    "brand": "Belvedere",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 229.0,
+    "stock": 5,
+    "bottle_image": "assets/products/91919191-bottle.jpg"
+  },
+  {
+    "cod": "5010103916738",
+    "name": "Vodka Ciroc 0.7l 40%",
+    "brand": "Ciroc",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 159.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5010103916738-bottle.jpg"
+  },
+  {
     "cod": "5788686123514",
     "name": "Vodka Danzka Red 1l 40%",
     "brand": "Danzka",
@@ -13820,6 +13970,26 @@
     "price": 69.0,
     "stock": 2,
     "bottle_image": "assets/products/5788686123514-bottle.jpg"
+  },
+  {
+    "cod": "5941935102870",
+    "name": "Vodka Finlandia 1 L 40% SGR",
+    "brand": "Finlandia",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 12,
+    "bottle_image": "assets/products/5941935102870-bottle.jpg"
+  },
+  {
+    "cod": "5949108001616",
+    "name": "Vodka Finlandia 1l 40% SGR",
+    "brand": "Finlandia",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5949108001616-bottle.jpg"
   },
   {
     "cod": "5941935104560",
@@ -13842,6 +14012,76 @@
     "bottle_image": "assets/products/5949389014060-bottle.jpg"
   },
   {
+    "cod": "8436562150136",
+    "name": "Vodka Mont Blanc Pure Diamond 0.7l 40%",
+    "brand": "Montblanc",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 199.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8436562150136-bottle.jpg"
+  },
+  {
+    "cod": "7350043200015",
+    "name": "Vodka Purity 34 Organic 0,7l 40%",
+    "brand": "Purity",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 139.0,
+    "stock": 3,
+    "bottle_image": "assets/products/7350043200015-bottle.jpg"
+  },
+  {
+    "cod": "4250699810510",
+    "name": "Vodka Rammstein 0.7l 40%",
+    "brand": "Rammstein",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 199.0,
+    "stock": 1,
+    "bottle_image": "assets/products/4250699810510-bottle.jpg"
+  },
+  {
+    "cod": "5948987001908",
+    "name": "Whiskey Ballantine`s 7ani 40%0,7l SGR",
+    "brand": "Ballantine`s",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5948987001908-bottle.jpg"
+  },
+  {
+    "cod": "5000299628034",
+    "name": "Whiskey Ballantines 7yo 0.7l 40%",
+    "brand": "Ballantines",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5000299628034-bottle.jpg"
+  },
+  {
+    "cod": "5941937504832",
+    "name": "Whiskey Balvenie Doublewood 12y 0.7l 40% SGR",
+    "brand": "Balvenie",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 389.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937504832-bottle.jpg"
+  },
+  {
+    "cod": "082000789628",
+    "name": "Whiskey Bulleit 95 Rye 0.7l 45%",
+    "brand": "Bulleit",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 149.0,
+    "stock": 1,
+    "bottle_image": "assets/products/082000789628-bottle.jpg"
+  },
+  {
     "cod": "5941935101682",
     "name": "Whiskey Bushmills Original 0.7l 40% Sr",
     "brand": "Bushmills",
@@ -13850,6 +14090,36 @@
     "price": 89.0,
     "stock": 1,
     "bottle_image": "assets/products/5941935101682-bottle.jpg"
+  },
+  {
+    "cod": "5941935106465",
+    "name": "Whiskey Cardhu 12y 0.7l 40% SGR",
+    "brand": "Cardhu",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 299.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941935106465-bottle.jpg"
+  },
+  {
+    "cod": "5940597004362",
+    "name": "Whiskey Cardhu 15y 0.7l 405 SGR",
+    "brand": "Cardhu",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 349.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5940597004362-bottle.jpg"
+  },
+  {
+    "cod": "5941937508847",
+    "name": "Whiskey Elijah Craig Small Batch 47% 0.7l SGR",
+    "brand": "Elijah",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 209.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941937508847-bottle.jpg"
   },
   {
     "cod": "5941935101583",
@@ -13872,6 +14142,16 @@
     "bottle_image": "assets/products/5949024606223-bottle.jpg"
   },
   {
+    "cod": "5941935103105",
+    "name": "Whiskey Glenfiddich 12y 0.7l 40% SGR Ds",
+    "brand": "Glenfiddich",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 199.0,
+    "stock": 5,
+    "bottle_image": "assets/products/5941935103105-bottle.jpg"
+  },
+  {
     "cod": "5949389002180",
     "name": "Whiskey Glenfiddich Gran Reserva 21y 0.7l 43% SGR",
     "brand": "Glenfiddich",
@@ -13880,6 +14160,26 @@
     "price": 1190.0,
     "stock": 1,
     "bottle_image": "assets/products/5949389002180-bottle.jpg"
+  },
+  {
+    "cod": "5949055304679",
+    "name": "Whiskey Glenmorangie 12y 0.7l 40% SGR",
+    "brand": "Glenmorangie",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 249.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5949055304679-bottle.jpg"
+  },
+  {
+    "cod": "5949013505254",
+    "name": "Whiskey J&b Rare 0.7l 40% SGR",
+    "brand": "J&b",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 8,
+    "bottle_image": "assets/products/5949013505254-bottle.jpg"
   },
   {
     "cod": "5941937500834",
@@ -13902,6 +14202,26 @@
     "bottle_image": "assets/products/5949024606285-bottle.jpg"
   },
   {
+    "cod": "5099873001394",
+    "name": "Whiskey Jack Daniel`s Honey 50ml 35%",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 8,
+    "bottle_image": "assets/products/5099873001394-bottle.jpg"
+  },
+  {
+    "cod": "5949024606230",
+    "name": "Whiskey Jack Daniels 0.5l 40% SGR",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 4,
+    "bottle_image": "assets/products/5949024606230-bottle.jpg"
+  },
+  {
     "cod": "5940541090021",
     "name": "Whiskey Jack Daniels Apple 0.7l 35% SGR",
     "brand": "Jack",
@@ -13910,6 +14230,56 @@
     "price": 119.0,
     "stock": 2,
     "bottle_image": "assets/products/5940541090021-bottle.jpg"
+  },
+  {
+    "cod": "5949024600160",
+    "name": "Whiskey Jack Daniels 0.05l 40%",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 1,
+    "bottle_image": "assets/products/5949024600160-bottle.jpg"
+  },
+  {
+    "cod": "5941935104119",
+    "name": "Whiskey Jack Daniels 0.7l 40% SGR",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 99.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5941935104119-bottle.jpg"
+  },
+  {
+    "cod": "5949024606254",
+    "name": "Whiskey Jack Daniels 0.7l 40% SGR",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 109.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5949024606254-bottle.jpg"
+  },
+  {
+    "cod": "5941935103556",
+    "name": "Whiskey Jack Daniels 1l 40% SGR",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 129.0,
+    "stock": 19,
+    "bottle_image": "assets/products/5941935103556-bottle.jpg"
+  },
+  {
+    "cod": "5099873006504",
+    "name": "Whiskey Jack Daniels Fire 0.7l 35%",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 119.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5099873006504-bottle.jpg"
   },
   {
     "cod": "5099873212691",
@@ -13922,6 +14292,26 @@
     "bottle_image": "assets/products/5099873212691-bottle.jpg"
   },
   {
+    "cod": "5099873023365",
+    "name": "Whiskey Jack Daniels Triple Mash 0.7 50%",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 219.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5099873023365-bottle.jpg"
+  },
+  {
+    "cod": "5948987001663",
+    "name": "Whiskey Jameson 0.7l 40% SGR",
+    "brand": "Jameson",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 8,
+    "bottle_image": "assets/products/5948987001663-bottle.jpg"
+  },
+  {
     "cod": "5949096509279",
     "name": "Whiskey Jim Beam 0.7l 40% SGR",
     "brand": "Jim",
@@ -13930,6 +14320,26 @@
     "price": 69.0,
     "stock": 3,
     "bottle_image": "assets/products/5949096509279-bottle.jpg"
+  },
+  {
+    "cod": "5940628461997",
+    "name": "Whiskey Johnnie Walker Red Label 3l 40% SGR",
+    "brand": "Johnnie",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 469.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5940628461997-bottle.jpg"
+  },
+  {
+    "cod": "5010019640260",
+    "name": "Whiskey Laphroaig 10y 0.7l",
+    "brand": "Laphroaig",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 269.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5010019640260-bottle.jpg"
   },
   {
     "cod": "5941935104478",
@@ -13960,6 +14370,76 @@
     "price": 179.0,
     "stock": 1,
     "bottle_image": "assets/products/5941937503736-bottle.jpg"
+  },
+  {
+    "cod": "5948987001816",
+    "name": "Whisky Aberlour 12y 0.7l 405 SGR",
+    "brand": "Aberlour",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 299.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5948987001816-bottle.jpg"
+  },
+  {
+    "cod": "5941937506836",
+    "name": "Whisky Ardberg 10ani 0.7l46% SGR",
+    "brand": "Ardberg",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 289.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941937506836-bottle.jpg"
+  },
+  {
+    "cod": "5948987001847",
+    "name": "Whisky Ballantine`s 200ml 40% SGR",
+    "brand": "Ballantine`s",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 25.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5948987001847-bottle.jpg"
+  },
+  {
+    "cod": "5948987004497",
+    "name": "Whisky Ballantine`s Sw.30% 0,7l SGR",
+    "brand": "Ballantine`s",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 79.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5948987004497-bottle.jpg"
+  },
+  {
+    "cod": "5010106113912",
+    "name": "Whisky Ballantine's 0,05l 40%",
+    "brand": "Ballantine's",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 7,
+    "bottle_image": "assets/products/5010106113912-bottle.jpg"
+  },
+  {
+    "cod": "5948987001878",
+    "name": "Whisky Ballantines 0.7l 40% SGR",
+    "brand": "Ballantines",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 69.0,
+    "stock": 8,
+    "bottle_image": "assets/products/5948987001878-bottle.jpg"
+  },
+  {
+    "cod": "5940597000302",
+    "name": "Whisky Balvenie 12y 0.7l 40% SGR",
+    "brand": "Balvenie",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 389.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5940597000302-bottle.jpg"
   },
   {
     "cod": "5941937501442",
@@ -14119,6 +14599,146 @@
     "description": "Lichior pe bază de whisky canadian cu aromă naturală de scorțișoară, cu arome intense de scorțișoară și zahăr, gust inițial de scorțișoară urmat de un final dulce cu iuțeală."
   },
   {
+    "cod": "5941937502531",
+    "name": "Whisky Glen Elgin 12y 0.7l 43% SGR",
+    "brand": "Glen",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 269.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937502531-bottle.jpg"
+  },
+  {
+    "cod": "5016840772262",
+    "name": "Whisky Glen Scotia 10y 0.7l 40%",
+    "brand": "Glen",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 189.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5016840772262-bottle.jpg"
+  },
+  {
+    "cod": "5941932101968",
+    "name": "Whisky Glenallachie 12y 0.7l 46% SGR",
+    "brand": "Glenallachie",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 289.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941932101968-bottle.jpg"
+  },
+  {
+    "cod": "5941935103112",
+    "name": "Whisky Glenfiddich 15y 0.7l 40% SGR",
+    "brand": "Glenfiddich",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 399.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941935103112-bottle.jpg"
+  },
+  {
+    "cod": "5941937504955",
+    "name": "Whisky Glenfiddich 15y 0.7l 40% SGR",
+    "brand": "Glenfiddich",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 399.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937504955-bottle.jpg"
+  },
+  {
+    "cod": "5941937506546",
+    "name": "Whisky Glenfiddich 18y 0.7l40% SGR",
+    "brand": "Glenfiddich",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 579.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941937506546-bottle.jpg"
+  },
+  {
+    "cod": "5010327325606",
+    "name": "Whisky Glenfiddich Ipa 0.7l 43%",
+    "brand": "Glenfiddich",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 459.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5010327325606-bottle.jpg"
+  },
+  {
+    "cod": "5941937505259",
+    "name": "Whisky Glenfiddich Project Xx Yo 0.7l 47% SGR",
+    "brand": "Glenfiddich",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 479.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937505259-bottle.jpg"
+  },
+  {
+    "cod": "5941935103051",
+    "name": "Whisky Glenlivet 12 Y 0.7l 40% SGR",
+    "brand": "Glenlivet",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 229.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941935103051-bottle.jpg"
+  },
+  {
+    "cod": "5948987002080",
+    "name": "Whisky Glenlivet 12y 0.7l 40% SGR",
+    "brand": "Glenlivet",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 229.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5948987002080-bottle.jpg"
+  },
+  {
+    "cod": "5948987002097",
+    "name": "Whisky Glenlivet 15y 0.7l 40% SGR",
+    "brand": "Glenlivet",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 289.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5948987002097-bottle.jpg"
+  },
+  {
+    "cod": "5949055301487",
+    "name": "Whisky Glenmorangie 14y 0.7l 46% SGR",
+    "brand": "Glenmorangie",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5949055301487-bottle.jpg"
+  },
+  {
+    "cod": "5941935103570",
+    "name": "Whisky Grant's 1l 40% SGR",
+    "brand": "Grant's",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941935103570-bottle.jpg"
+  },
+  {
+    "cod": "5949013500136",
+    "name": "Whisky J&b 0,05l 40%",
+    "brand": "J&b",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 10.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5949013500136-bottle.jpg"
+  },
+  {
     "cod": "5000267115245",
     "name": "Whisky J.walker Blue Label 0.7l 40%",
     "brand": "J.walker",
@@ -14169,6 +14789,16 @@
     "bottle_image": "assets/products/5941937505310-bottle.jpg"
   },
   {
+    "cod": "5949024606353",
+    "name": "Whisky Jack Daniel`s Honey 200ml 35% SGR",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": null,
+    "stock": 2,
+    "bottle_image": "assets/products/5949024606353-bottle.jpg"
+  },
+  {
     "cod": "5941935106984",
     "name": "Whisky Jack Daniel`s Single Barrel 0.7l 45% SGR",
     "brand": "Jack",
@@ -14199,6 +14829,36 @@
     "bottle_image": "assets/products/5941937507765-bottle.jpg"
   },
   {
+    "cod": "5940597003204",
+    "name": "Whisky Jack Daniels 1l 40% SGR",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 129.0,
+    "stock": 6,
+    "bottle_image": "assets/products/5940597003204-bottle.jpg"
+  },
+  {
+    "cod": "5941934010671",
+    "name": "Whisky Jack Daniels 1l 40% SGR",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 129.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941934010671-bottle.jpg"
+  },
+  {
+    "cod": "5941937504689",
+    "name": "Whisky Jack Daniels Fire 0.7l35% SGR",
+    "brand": "Jack",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 119.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937504689-bottle.jpg"
+  },
+  {
     "cod": "5000267024202",
     "name": "Whisky Johnnie Walker Black Label 12y 0,7l 40%",
     "brand": "Johnnie",
@@ -14227,6 +14887,36 @@
     "price": 189.0,
     "stock": 1,
     "bottle_image": "assets/products/5941937500810-bottle.jpg"
+  },
+  {
+    "cod": "5941937506911",
+    "name": "Whisky Lagavulin 10y 0.7l 43% SGR",
+    "brand": "Lagavulin",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 459.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5941937506911-bottle.jpg"
+  },
+  {
+    "cod": "5941937501480",
+    "name": "Whisky Lagavulin 16y 0.7l 43% SGR",
+    "brand": "Lagavulin",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 499.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937501480-bottle.jpg"
+  },
+  {
+    "cod": "5941937501473",
+    "name": "Whisky Lagavulin 8 Y 0.7l 48% SGR",
+    "brand": "Lagavulin",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 399.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937501473-bottle.jpg"
   },
   {
     "cod": "5941937503064",
@@ -14279,6 +14969,76 @@
     "bottle_image": "assets/products/5941937501497-bottle.jpg"
   },
   {
+    "cod": "5948987002516",
+    "name": "Whisky Red Breast 12y 0.7l 40% SGR",
+    "brand": "Red",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 249.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5948987002516-bottle.jpg"
+  },
+  {
+    "cod": "5941937501152",
+    "name": "Whisky Singleton 12y 0.7l 40% SGR",
+    "brand": "Singleton",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 169.0,
+    "stock": 3,
+    "bottle_image": "assets/products/5941937501152-bottle.jpg"
+  },
+  {
+    "cod": "5941937506430",
+    "name": "Whisky Singleton 15y 0.7l 40% SGR",
+    "brand": "Singleton",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 299.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937506430-bottle.jpg"
+  },
+  {
+    "cod": "5000281021621",
+    "name": "Whisky Singleton Dufftown 12y 0,7l 40%",
+    "brand": "Singleton",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 169.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5000281021621-bottle.jpg"
+  },
+  {
+    "cod": "5941937503514",
+    "name": "Whisky Talisker Port Ruighe 0.7l 45.8% SGR",
+    "brand": "Talisker",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 289.0,
+    "stock": 1,
+    "bottle_image": "assets/products/5941937503514-bottle.jpg"
+  },
+  {
+    "cod": "5941937508182",
+    "name": "Whisky Teacher`s 0.7l 40% SGR",
+    "brand": "Teacher`s",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 59.0,
+    "stock": 7,
+    "bottle_image": "assets/products/5941937508182-bottle.jpg"
+  },
+  {
+    "cod": "5949024606476",
+    "name": "Whisky Wooodford Reserve 0.7l 43.02% SGR",
+    "brand": "Wooodford",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 179.0,
+    "stock": 2,
+    "bottle_image": "assets/products/5949024606476-bottle.jpg"
+  },
+  {
     "cod": "5948987002073",
     "name": "Whisy Glenlivet Reserve 0.7l 40% SGR",
     "brand": "Glenlivet",
@@ -14287,6 +15047,16 @@
     "price": 189.0,
     "stock": 1,
     "bottle_image": "assets/products/5948987002073-bottle.jpg"
+  },
+  {
+    "cod": "8697530211239",
+    "name": "Yeni Raki Ala 0.7l 47%",
+    "brand": "Yeni",
+    "category": "ALC",
+    "category_label": "Băuturi",
+    "price": 129.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8697530211239-bottle.jpg"
   },
   {
     "cod": "8410031977240",
