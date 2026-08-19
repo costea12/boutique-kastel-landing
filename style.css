@@ -343,8 +343,8 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 }
 .promo-carousel-big .promo-track {
   position: relative;
-  height: min(78vh, 640px);
-  min-height: 420px;
+  height: min(calc(100vh - 84px), 880px);
+  min-height: 480px;
 }
 .promo-carousel-big .promo-slide {
   position: absolute;
