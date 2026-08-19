@@ -934,6 +934,16 @@
     "bottle_image": "assets/products/5050456522736-bottle.jpg"
   },
   {
+    "cod": "8411061871966",
+    "name": "Ch Hc Man EDT 100ml + Deo 150ml",
+    "brand": "Carolina Herrera",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 549.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8411061871966-bottle.jpg"
+  },
+  {
     "cod": "8411061051405",
     "name": "Ch 212 Vip Black SET Edp100ml+10ml+sg100ml",
     "brand": "Carolina Herrera",
@@ -1177,6 +1187,16 @@
     "price": 739.0,
     "stock": 1,
     "bottle_image": "assets/products/8411061995754-bottle.jpg"
+  },
+  {
+    "cod": "8411061064535",
+    "name": "Ch Good Girl Very Edp50ml+bl75ml",
+    "brand": "Carolina Herrera",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 649.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8411061064535-bottle.jpg"
   },
   {
     "cod": "8411061106204",
@@ -1688,6 +1708,16 @@
     "price": 149.0,
     "stock": 1,
     "bottle_image": "assets/products/6290362163077-bottle.jpg"
+  },
+  {
+    "cod": "6290362163060",
+    "name": "Culf Orchid Juicy Peach EDP 100ml",
+    "brand": "Culf",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 2,
+    "bottle_image": "assets/products/6290362163060-bottle.jpg"
   },
   {
     "cod": "8057971183739",
@@ -3380,6 +3410,16 @@
     "bottle_image": "assets/products/3616304691652-bottle.jpg"
   },
   {
+    "cod": "8005610340784",
+    "name": "Hb Hugo Man Deo Spray 150ml",
+    "brand": "Hugo Boss",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8005610340784-bottle.jpg"
+  },
+  {
     "cod": "737052325002",
     "name": "Hb Hugo Man EDT 5ml",
     "brand": "Hugo Boss",
@@ -4800,6 +4840,16 @@
     "bottle_image": "assets/products/3760265194407-bottle.jpg"
   },
   {
+    "cod": "6291107019208",
+    "name": "Memwa Bouquet Red EDP 100ml",
+    "brand": "Memwa",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 1,
+    "bottle_image": "assets/products/6291107019208-bottle.jpg"
+  },
+  {
     "cod": "5051389044869",
     "name": "Mitchum Men Deo Spray 150ml",
     "brand": "Mitchum",
@@ -4808,6 +4858,16 @@
     "price": 19.5,
     "stock": 6,
     "bottle_image": "assets/products/5051389044869-bottle.jpg"
+  },
+  {
+    "cod": "3346470146952",
+    "name": "Mon Guerlain La Petite Robe Noire Edp50ml+5ml+bl75ml",
+    "brand": "Mon",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 659.0,
+    "stock": 1,
+    "bottle_image": "assets/products/3346470146952-bottle.jpg"
   },
   {
     "cod": "3386460154949",
@@ -5730,6 +5790,16 @@
     "bottle_image": "assets/products/6294015198942-bottle.jpg"
   },
   {
+    "cod": "8719134160802",
+    "name": "Rituals Ayurveda Body Scrub 300gr",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134160802-bottle.jpg"
+  },
+  {
     "cod": "8719134143348",
     "name": "Rituals Ayurveda Crema De Maini 70ml",
     "brand": "Rituals",
@@ -5738,6 +5808,16 @@
     "price": 59.0,
     "stock": 3,
     "bottle_image": "assets/products/8719134143348-bottle.jpg"
+  },
+  {
+    "cod": "8719134211221",
+    "name": "Rituals Bete Parfumate Amsterdam 70ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134211221-bottle.jpg"
   },
   {
     "cod": "8719134204223",
@@ -5778,6 +5858,36 @@
     "price": 99.0,
     "stock": 2,
     "bottle_image": "assets/products/8719134152760-bottle.jpg"
+  },
+  {
+    "cod": "8719134149586",
+    "name": "Rituals Crema De Corp Ayurveda 220ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134149586-bottle.jpg"
+  },
+  {
+    "cod": "8719134152432",
+    "name": "Rituals Crema De Corp Karma 220 Ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134152432-bottle.jpg"
+  },
+  {
+    "cod": "8719134134711",
+    "name": "Rituals Deo Spray Homme 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 69.0,
+    "stock": 4,
+    "bottle_image": "assets/products/8719134134711-bottle.jpg"
   },
   {
     "cod": "8719134220278",
@@ -5880,6 +5990,66 @@
     "bottle_image": "assets/products/8719134208580-bottle.jpg"
   },
   {
+    "cod": "8719134201765",
+    "name": "Rituals SET Mediu Homme",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 219.0,
+    "stock": 4,
+    "bottle_image": "assets/products/8719134201765-bottle.jpg"
+  },
+  {
+    "cod": "8719134201727",
+    "name": "Rituals SET Medium Ayurveda",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 219.0,
+    "stock": 4,
+    "bottle_image": "assets/products/8719134201727-bottle.jpg"
+  },
+  {
+    "cod": "8719134202038",
+    "name": "Rituals SET Medium Sakura",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 219.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134202038-bottle.jpg"
+  },
+  {
+    "cod": "8719134201512",
+    "name": "Rituals SET Small Ayurveda",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134201512-bottle.jpg"
+  },
+  {
+    "cod": "8719134201567",
+    "name": "Rituals SET Small Homme",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134201567-bottle.jpg"
+  },
+  {
+    "cod": "8719134201574",
+    "name": "Rituals SET Small Jing",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 5,
+    "bottle_image": "assets/products/8719134201574-bottle.jpg"
+  },
+  {
     "cod": "8719134201598",
     "name": "Rituals SET Small Karma",
     "brand": "Rituals",
@@ -5888,6 +6058,86 @@
     "price": 149.0,
     "stock": 2,
     "bottle_image": "assets/products/8719134201598-bottle.jpg"
+  },
+  {
+    "cod": "8719134201659",
+    "name": "Rituals SET Small Sakura",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 149.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134201659-bottle.jpg"
+  },
+  {
+    "cod": "8719134205442",
+    "name": "Rituals SET Trial Ayurveda",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134205442-bottle.jpg"
+  },
+  {
+    "cod": "8719134185249",
+    "name": "Rituals SET Trial Homme",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134185249-bottle.jpg"
+  },
+  {
+    "cod": "8719134205459",
+    "name": "Rituals SET Trial Jing",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134205459-bottle.jpg"
+  },
+  {
+    "cod": "8719134205466",
+    "name": "Rituals SET Trial Karma",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134205466-bottle.jpg"
+  },
+  {
+    "cod": "8719134205473",
+    "name": "Rituals SET Trial Sakura",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 99.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134205473-bottle.jpg"
+  },
+  {
+    "cod": "8719134161083",
+    "name": "Rituals Shave Foam 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 59.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134161083-bottle.jpg"
+  },
+  {
+    "cod": "8719134194470",
+    "name": "Rituals Spray De Corp Sakura 150ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 89.0,
+    "stock": 2,
+    "bottle_image": "assets/products/8719134194470-bottle.jpg"
   },
   {
     "cod": "8719134177886",
@@ -5908,6 +6158,36 @@
     "price": 119.0,
     "stock": 1,
     "bottle_image": "assets/products/8719134152562-bottle.jpg"
+  },
+  {
+    "cod": "8719134153347",
+    "name": "Rituals Ulei De Dus Karma 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 49.0,
+    "stock": 1,
+    "bottle_image": "assets/products/8719134153347-bottle.jpg"
+  },
+  {
+    "cod": "8719134153354",
+    "name": "Rituals Ulei De Dus Sakura 200ml",
+    "brand": "Rituals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 49.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134153354-bottle.jpg"
+  },
+  {
+    "cod": "8719134201819",
+    "name": "Rtuals SET Mediu Karma",
+    "brand": "Rtuals",
+    "category": "PRF",
+    "category_label": "Parfumuri",
+    "price": 219.0,
+    "stock": 3,
+    "bottle_image": "assets/products/8719134201819-bottle.jpg"
   },
   {
     "cod": "8052464891306",
