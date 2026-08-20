@@ -632,6 +632,7 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   line-height: 1.7;
   margin: 0.8rem 0 1rem;
 }
+.about-store address a:hover { color: var(--teal-mid); }
 
 /* ---------- Newsletter ---------- */
 
