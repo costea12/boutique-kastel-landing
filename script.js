@@ -10,6 +10,11 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 revealEls.forEach((el) => io.observe(el));
 
+// Stagger the category grid tiles so they fade in one after another instead of all at once
+document.querySelectorAll('.cat-grid .cat-card').forEach((el, i) => {
+  el.style.transitionDelay = `${i * 70}ms`;
+});
+
 // Promo carousel (homepage) - auto-advances, plus manual arrow/dot navigation
 const promoTrack = document.getElementById('promoTrack');
 if (promoTrack) {
