@@ -120,6 +120,66 @@ function renderNoteTags(notes) {
   return notes.split(',').map((n) => `<span class="note-tag">${n.trim()}</span>`).join('');
 }
 
+// ---------- Fallback description for perfumes without one in the catalog ----------
+// We don't have real note pyramids/fragrance-family data for most SKUs, so this never
+// invents specific scent claims - it only uses facts already derivable from the name
+// (brand, gender cue, concentration) to produce honest, varied copy.
+function detectGender(name) {
+  const n = name.toLowerCase();
+  if (/\bunisex\b/.test(n)) return 'unisex';
+  if (/\b(man|men|homme|him|barbati)\b/.test(n)) return 'men';
+  if (/\b(women|woman|femme|her|lady|femei)\b/.test(n) || /\bw\b/.test(n)) return 'women';
+  return 'unisex';
+}
+const GENDER_WORD = { men: 'bărbați', women: 'femei', unisex: 'el și ea' };
+
+function hashCode(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
+
+// "apă de parfum/toaletă/colonie" is feminine in Romanian ("această"), "extract de
+// parfum" is neuter/masculine ("acest") - build the correctly-gendered noun phrase
+// once instead of gluing "Acest"/"Această" onto a lowercased label.
+const CONCENTRATION_PHRASE = {
+  'Apă de parfum': 'Această apă de parfum',
+  'Apă de toaletă': 'Această apă de toaletă',
+  'Apă de colonie': 'Această apă de colonie',
+  'Extract de parfum': 'Acest extract de parfum',
+};
+function concentrationPhrase(name) {
+  const label = getConcentrationLabel(name);
+  return (label && CONCENTRATION_PHRASE[label]) || 'Acest parfum';
+}
+// "Această apă ..." is feminine, "Acest parfum/extract" is masculine/neuter - pick the
+// matching adjective ending so "gândit(ă)"/"neobservat(ă)" agree with the noun phrase.
+function agree(cp, masc, fem) {
+  return cp.startsWith('Această') ? fem : masc;
+}
+
+const MAINSTREAM_DESC_TEMPLATES = [
+  (b, g, cp) => `${b} este unul dintre numele consacrate ale parfumeriei internaționale. ${cp}, ${agree(cp, 'gândit', 'gândită')} pentru ${g}, păstrează eleganța clasică pentru care brandul este cunoscut.`,
+  (b, g, cp) => `O compoziție semnată ${b}, potrivită pentru ${g}, la fel de bună pentru purtat zilnic cât și pentru ocazii speciale.`,
+  (b, g, cp) => `${b} rămâne una dintre casele de parfumerie preferate la nivel internațional. ${cp} este alegerea potrivită pentru ${g} care caută un miros rafinat, fără compromisuri.`,
+  (b, g, cp) => `Parte din colecția ${b}, acest parfum pentru ${g} aduce eleganța și rafinamentul unui brand recunoscut la nivel mondial, la un preț corect.`,
+  (b, g, cp) => `${b} este o alegere sigură atunci când vrei un parfum de calitate. ${cp} este ${agree(cp, 'gândit', 'gândită')} pentru ${g}.`,
+];
+const NICHE_DESC_TEMPLATES = [
+  (b, g, cp) => `${b} este una dintre casele de parfumerie de nișă apreciate de cunoscători, cu compoziții intense și distinctive. ${cp} pentru ${g} nu trece ${agree(cp, 'neobservat', 'neobservată')}.`,
+  (b, g, cp) => `Un parfum de nișă semnat ${b}, gândit pentru ${g} care caută ceva diferit de parfumeria de masă, o compoziție cu personalitate puternică.`,
+  (b, g, cp) => `${b} construiește parfumuri de nișă cu concentrații ridicate și ingrediente premium. ${cp} este alegerea ideală pentru ${g} pasionați de parfumerie exclusivistă.`,
+  (b, g, cp) => `Din segmentul parfumeriei de nișă, ${b} propune o compoziție rafinată pentru ${g}, cu o amprentă olfactivă memorabilă.`,
+];
+
+function generatePerfumeDescription(p) {
+  const gender = GENDER_WORD[detectGender(p.name)];
+  const cp = concentrationPhrase(p.name);
+  const templates = p.niche ? NICHE_DESC_TEMPLATES : MAINSTREAM_DESC_TEMPLATES;
+  const idx = hashCode(p.cod) % templates.length;
+  return templates[idx](p.brand, gender, cp);
+}
+
 function renderAlcSpecs(p) {
   const facts = [
     ['Tip', getAlcType(p.name)],
@@ -157,7 +217,8 @@ function renderAlcSpecs(p) {
 function renderSpecs(p) {
   if (p.category === 'ALC') return renderAlcSpecs(p);
   if (p.category === 'DLC') return renderDlcSpecs(p);
-  if (!p.description && !p.family) return '';
+
+  const description = p.description || generatePerfumeDescription(p);
 
   const tiers = [
     ['Note de vârf', p.notes_top],
@@ -182,7 +243,7 @@ function renderSpecs(p) {
         <span class="line rev"></span>
       </div>
 
-      ${p.description ? `<p class="product-description">${p.description}</p>` : ''}
+      ${description ? `<p class="product-description">${description}</p>` : ''}
 
       ${tiers.length ? `
         <div class="notes-pyramid">

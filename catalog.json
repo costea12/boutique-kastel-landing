@@ -984,7 +984,7 @@
   {
     "cod": "8411061113851",
     "name": "Carolina Herrera Good Girl Bowtastic W EDP 80 Ml",
-    "brand": "Carolina",
+    "brand": "Carolina Herrera",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 739.0,
@@ -1868,8 +1868,8 @@
   },
   {
     "cod": "6290362163077",
-    "name": "Culf Orchid Cherry Vibe EDP 100ml",
-    "brand": "Culf",
+    "name": "Gulf Orchid Cherry Vibe EDP 100ml",
+    "brand": "Gulf",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 149.0,
@@ -1879,8 +1879,8 @@
   },
   {
     "cod": "6290362163060",
-    "name": "Culf Orchid Juicy Peach EDP 100ml",
-    "brand": "Culf",
+    "name": "Gulf Orchid Juicy Peach EDP 100ml",
+    "brand": "Gulf",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 149.0,
@@ -2693,30 +2693,30 @@
   },
   {
     "cod": "3575070054446",
-    "name": "Franck Bocket Cocaine Extr.parfum Man 100ml",
-    "brand": "Franck",
+    "name": "Franck Boclet Cocaine Extr.parfum Man 100ml",
+    "brand": "Franck Boclet",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 699.0,
     "stock": 1,
     "bottle_image": "assets/products/3575070054446-bottle.jpg",
-    "niche": false
+    "niche": true
   },
   {
     "cod": "3760333770441",
-    "name": "Franck Bocket Cocaine Extr.parfum Man 4*20l",
-    "brand": "Franck",
+    "name": "Franck Boclet Cocaine Extr.parfum Man 4*20l",
+    "brand": "Franck Boclet",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 499.0,
     "stock": 1,
     "bottle_image": "assets/products/3760333770441-bottle.jpg",
-    "niche": false
+    "niche": true
   },
   {
     "cod": "6290360375601",
     "name": "French Avenue Royal Blend Extr.prf 100ml",
-    "brand": "French",
+    "brand": "French Avenue",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 349.0,
@@ -3981,7 +3981,7 @@
   {
     "cod": "3348901664653",
     "name": "Jadore L`or EDP 50ml",
-    "brand": "Jadore",
+    "brand": "Dior",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 799.0,
@@ -4608,7 +4608,7 @@
   {
     "cod": "3386460087261",
     "name": "Karl Lagerfeld Bois De Vetiver EDT 100ml",
-    "brand": "Karl",
+    "brand": "Karl Lagerfeld",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 349.0,
@@ -4619,7 +4619,7 @@
   {
     "cod": "3386460063401",
     "name": "Karl Lagerfeld Classic Homme Deo Spray 150ml",
-    "brand": "Karl",
+    "brand": "Karl Lagerfeld",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 89.0,
@@ -4630,7 +4630,7 @@
   {
     "cod": "3386460059107",
     "name": "Karl Lagerfeld Deo Stick 75gr",
-    "brand": "Karl",
+    "brand": "Karl Lagerfeld",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 69.0,
@@ -4641,7 +4641,7 @@
   {
     "cod": "3386460087254",
     "name": "Karl Lagerfeld Fleurde Pecher EDP 100ml",
-    "brand": "Karl",
+    "brand": "Karl Lagerfeld",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 349.0,
@@ -4652,7 +4652,7 @@
   {
     "cod": "3386460124430",
     "name": "Karl Lagerfeld Tokyo EDP 100ml",
-    "brand": "Karl",
+    "brand": "Karl Lagerfeld",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 349.0,
@@ -5356,7 +5356,7 @@
   {
     "cod": "3346470146952",
     "name": "Mon Guerlain La Petite Robe Noire Edp50ml+5ml+bl75ml",
-    "brand": "Mon",
+    "brand": "Guerlain",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 659.0,
@@ -5696,8 +5696,8 @@
   },
   {
     "cod": "3423222081416",
-    "name": "Nr All Of Me Gel Dus 200 Ml",
-    "brand": "Nr",
+    "name": "Narciso Rodriguez All Of Me Gel Dus 200 Ml",
+    "brand": "Narciso Rodriguez",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 149.0,
@@ -5707,8 +5707,8 @@
   },
   {
     "cod": "3423222092702",
-    "name": "Nr Musc Noir SET EDP SET EDP 100+10ml+bl 50ml",
-    "brand": "Nr",
+    "name": "Narciso Rodriguez Musc Noir SET EDP SET EDP 100+10ml+bl 50ml",
+    "brand": "Narciso Rodriguez",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 599.0,
@@ -5718,8 +5718,8 @@
   },
   {
     "cod": "3423222107604",
-    "name": "Nr Musc Nude For Her EDP 30ml",
-    "brand": "Nr",
+    "name": "Narciso Rodriguez Musc Nude For Her EDP 30ml",
+    "brand": "Narciso Rodriguez",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 299.0,
@@ -7292,7 +7292,7 @@
   {
     "cod": "8719134201819",
     "name": "Rtuals SET Mediu Karma",
-    "brand": "Rtuals",
+    "brand": "Rituals",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 219.0,
@@ -7336,7 +7336,7 @@
   {
     "cod": "5016365100540",
     "name": "Scottish Fine Soaps Men EDT 50ml",
-    "brand": "Scottish",
+    "brand": "Scottish Fine Soaps",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 139.0,
@@ -7435,7 +7435,7 @@
   {
     "cod": "3346130012245",
     "name": "Terre D`hermes Eau Givree Men EDP 100ml",
-    "brand": "Terre",
+    "brand": "Hermes",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 679.0,
@@ -8765,8 +8765,8 @@
   },
   {
     "cod": "3614273863360",
-    "name": "Ysblack Opium Le Parfum 90ml",
-    "brand": "Ysblack",
+    "name": "Yves Saint Laurent Black Opium Le Parfum 90ml",
+    "brand": "Yves Saint Laurent",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 629.0,
@@ -19498,8 +19498,8 @@
   },
   {
     "cod": "3423222107635",
-    "name": "Nr Musc Nude W EDP 100ml",
-    "brand": "Nr",
+    "name": "Narciso Rodriguez Musc Nude W EDP 100ml",
+    "brand": "Narciso Rodriguez",
     "category": "PRF",
     "category_label": "Parfumuri",
     "price": 599.0,
