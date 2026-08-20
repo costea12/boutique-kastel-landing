@@ -634,55 +634,6 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 }
 .about-store address a:hover { color: var(--teal-mid); }
 
-/* Homepage category grid sits inside .about-block but needs the full container
-   width, not the 900px prose cap - .about-block.cat-section wins on specificity
-   regardless of source order. */
-.about-block.cat-section { max-width: var(--container); }
-.cat-card.soon {
-  opacity: 0.55;
-  cursor: default;
-  pointer-events: none;
-}
-.cat-card.soon:hover { transform: none; box-shadow: none; border-color: transparent; }
-
-.store-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.1rem;
-  margin-top: 1.5rem;
-}
-.store-photo {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  border-radius: 6px;
-  overflow: hidden;
-  background: linear-gradient(155deg, var(--teal-mid), var(--teal-deep));
-}
-.store-photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.store-photo-label {
-  display: none;
-  position: absolute;
-  inset: 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--white-faint);
-}
-.store-photo.is-empty .store-photo-label { display: flex; }
-@media (max-width: 640px) {
-  .store-gallery { grid-template-columns: 1fr; }
-}
-
 /* ---------- Newsletter ---------- */
 
 .newsletter {
