@@ -3,8 +3,13 @@ function formatPrice(p) {
 }
 
 const CATEGORY_PAGES = { PRF: 'parfumuri.html', ALC: 'bauturi.html', DLC: 'dulciuri.html' };
-function categoryPage(category) {
+function categoryPage(category, niche) {
+  if (category === 'PRF' && niche) return 'parfumuri-niche.html';
   return CATEGORY_PAGES[category] || 'index.html';
+}
+function categoryLabel(p) {
+  if (p.category === 'PRF' && p.niche) return 'Parfumuri Niche';
+  return p.category_label || '';
 }
 
 const ALC_TYPE_WORDS = new Set([
@@ -226,7 +231,7 @@ function renderProduct(p) {
       </div>
 
       <div class="product-info">
-        <p class="product-category">${p.category_label || ''}</p>
+        <p class="product-category">${categoryLabel(p)}</p>
         <h1>${p.name}</h1>
         <p class="product-price">${formatPrice(p.price)}</p>
         ${getUnitPrice(p.name, p.price) ? `<p class="product-unit-price">${getUnitPrice(p.name, p.price)}</p>` : ''}
@@ -250,7 +255,7 @@ function renderProduct(p) {
 
         ${renderSpecs(p)}
 
-        <a href="${categoryPage(p.category)}" class="back-link">← Înapoi la ${p.category_label || 'catalog'}</a>
+        <a href="${categoryPage(p.category, p.niche)}" class="back-link">← Înapoi la ${categoryLabel(p) || 'catalog'}</a>
       </div>
     </div>
   `;
@@ -285,7 +290,8 @@ function renderRelated(product, data) {
   const section = document.getElementById('relatedSection');
   if (!grid || !section) return;
 
-  const sameCategory = data.filter((p) => p.cod !== product.cod && p.category === product.category);
+  const sameCategory = data.filter((p) => p.cod !== product.cod && p.category === product.category
+    && (product.category !== 'PRF' || Boolean(p.niche) === Boolean(product.niche)));
   const sameBrand = sameCategory.filter((p) => p.brand === product.brand);
   const others = sameCategory.filter((p) => p.brand !== product.brand);
 

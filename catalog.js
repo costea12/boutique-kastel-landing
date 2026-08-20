@@ -1,6 +1,7 @@
 let PRODUCTS = [];
 let selectedBrands = new Set();
 const PAGE_CATEGORY = document.body.dataset.category || null;
+const PAGE_NICHE = document.body.dataset.niche || null; // "true" = niche only, "false" = mainstream only, unset = both
 
 // ---------- Fuzzy/typo-tolerant search ----------
 // Strips diacritics (so "bautura" matches "băutură") and tolerates small misspellings
@@ -77,7 +78,10 @@ function renderGrid(products) {
 }
 
 function categoryProducts() {
-  return PAGE_CATEGORY ? PRODUCTS.filter((p) => p.category === PAGE_CATEGORY) : PRODUCTS;
+  let list = PAGE_CATEGORY ? PRODUCTS.filter((p) => p.category === PAGE_CATEGORY) : PRODUCTS;
+  if (PAGE_NICHE === 'true') list = list.filter((p) => p.niche === true);
+  else if (PAGE_NICHE === 'false') list = list.filter((p) => p.niche !== true);
+  return list;
 }
 
 function buildBrandList() {
