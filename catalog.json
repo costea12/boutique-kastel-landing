@@ -8386,7 +8386,7 @@
     "brand": "Leffe",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 7.5,
     "stock": 48,
     "bottle_image": "assets/products/5940573001453-bottle.jpg"
   },
@@ -8396,7 +8396,7 @@
     "brand": "Budweiser",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 7.9,
     "stock": 22,
     "bottle_image": "assets/products/5940573001446-bottle.jpg"
   },
@@ -8406,7 +8406,7 @@
     "brand": "Corona",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 6.9,
     "stock": 18,
     "bottle_image": "assets/products/5948562511006-bottle.jpg"
   },
@@ -8416,7 +8416,7 @@
     "brand": "Corona",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 5.5,
     "stock": 60,
     "bottle_image": "assets/products/5940741710002-bottle.jpg"
   },
@@ -8436,7 +8436,7 @@
     "brand": "Estrella",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 6.5,
     "stock": 24,
     "bottle_image": "assets/products/5940573001583-bottle.jpg"
   },
@@ -8446,7 +8446,7 @@
     "brand": "Modelo",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 8.9,
     "stock": 14,
     "bottle_image": "assets/products/5940573006205-bottle.jpg"
   },
@@ -8456,7 +8456,7 @@
     "brand": "Paulaner",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 9.5,
     "stock": 10,
     "bottle_image": "assets/products/5940573001552-bottle.jpg"
   },
@@ -8466,7 +8466,7 @@
     "brand": "Stella",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 6.9,
     "stock": 2,
     "bottle_image": "assets/products/5940573001538-bottle.jpg"
   },
@@ -8476,7 +8476,7 @@
     "brand": "Warsteiner",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 5.9,
     "stock": 51,
     "bottle_image": "assets/products/5940573001613-bottle.jpg"
   },
@@ -9380,7 +9380,7 @@
     "brand": "Jagermeister",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 7.5,
     "stock": 1,
     "bottle_image": "assets/products/40677781-bottle.jpg"
   },
@@ -9433,7 +9433,7 @@
     "brand": "Amaro",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 9.5,
     "stock": 3,
     "bottle_image": "assets/products/8000330019354-bottle.jpg",
     "description": "Amaro italian formulat in 1885 de Stanislao Cobianchi la Bologna din exact 40 de plante, echilibrand note amare si dulci. Numele vine de la Printesa Elena de Muntenegru. Culoare chihlimbar inchis, gust catifelat, dulce-amarui, cu arome de citrice, condimente si plante."
@@ -10002,7 +10002,7 @@
     "brand": "Brilla",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 23.5,
     "stock": 11,
     "bottle_image": "assets/products/59498124-bottle.jpg",
     "description": "Prosecco italian din regiunea Veneto, cu buchet delicat si complex, note fructate de piersica si mar verde, completate de note de salcam si liliac. Produs de Botter, casa fondata in 1928 langa Venetia."
@@ -10024,7 +10024,7 @@
     "brand": "Brilla",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 23.5,
     "stock": 10,
     "bottle_image": "assets/products/59498131-bottle.jpg",
     "description": "Prosecco rose cu bule persistente, arome de piersica, mar verde si lamaie, gust usor cu aciditate echilibrata. Se potriveste cu peste, supe si preparate cu ciuperci."
@@ -10187,7 +10187,7 @@
     "brand": "Serenissima",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 19.5,
     "stock": 6,
     "bottle_image": "assets/products/8003030990138-bottle.jpg",
     "description": "Vin spumant italian din Veneto, cu arome armonioase, fine și elegante, în care se remarcă note fructate, măr verde și flori. Recomandat cu pește și carne albă, servit rece la 4-6°C."
@@ -11164,7 +11164,7 @@
     "brand": "Apriori",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 8.9,
     "stock": 11,
     "bottle_image": "assets/products/5940628709112-bottle.jpg",
     "description": "Vin spumant roze dulce, sortiment Muscat de Hamburg si Muscat Ottonel, cu bule fine si arome florale de camp proaspete, 7% alcool, doza 250ml. Recomandat ca aperitiv, alaturi de gustari usoare, fructe proaspete si deserturi delicate."
@@ -11175,7 +11175,7 @@
     "brand": "Apriori",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 8.9,
     "stock": 11,
     "bottle_image": "assets/products/5940628709129-bottle.jpg",
     "description": "Vin spumant alb sec din struguri Glera, cu arome de mere si flori de camp, prospetime echilibrata cu carbonatare fina, 12% alcool, doza 250ml. Produs de Apriori Wine."
@@ -11688,7 +11688,7 @@
     "brand": "Chateau",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 17.5,
     "stock": 13,
     "bottle_image": "assets/products/5941930900198-bottle.jpg",
     "description": "Vin roze sec din struguri Merlot, din gama Petit a producatorului moldovean Chateau Cristi, vinificat in stil modern pentru prospetime si finete. Arome fructate proaspete cu accente florale. Se serveste la 8-12°C."
@@ -11699,7 +11699,7 @@
     "brand": "Chateau",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 17.5,
     "stock": 25,
     "bottle_image": "assets/products/5941930900181-bottle.jpg",
     "description": "Vin alb sec Sauvignon Blanc, din gama Petit a producatorului moldovean Chateau Cristi. Arome proaspete si fructate de coacaze verzi si lamaie, cu aciditate bine pronuntata. Se serveste la 8-12°C."
@@ -12927,7 +12927,7 @@
     "brand": "Pirovano",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 12.5,
     "stock": 20,
     "bottle_image": "assets/products/8000013021483-bottle.jpg",
     "description": "Castelli Romani Bianco DOC de la Cantine Pirovano (Malvasia si Trebbiano), culoare galben-paie, arome delicate de fructe cu miez alb, gust sapid, corp mediu."
@@ -12938,7 +12938,7 @@
     "brand": "Pirovano",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 12.5,
     "stock": 9,
     "bottle_image": "assets/products/8000013006176-bottle.jpg",
     "description": "Montepulciano d'Abruzzo DOC de la Cantine Pirovano. Roșu rubiniu intens cu nuanțe violet, arome vinoase de fructe roșii, gust sec și structurat, cu tanini catifelați, 12,5% alcool."
@@ -12993,7 +12993,7 @@
     "brand": "Purcari",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 33.5,
     "stock": 2,
     "bottle_image": "assets/products/5941963006102-bottle.jpg",
     "description": "1827 Cabernet Sauvignon de Purcari, vin rosu sec 100% Cabernet Sauvignon din sud-estul Moldovei, colectia exclusivista 1827 a cramei Purcari. Arome de visine negre si prune cu note fine de condimente exotice; gust plin si complex, cu note de fructe coapte, ciocolata, vanilie si stafide, tanini catifelati. Maturat 6 luni in butoi de stejar francez."
@@ -13004,7 +13004,7 @@
     "brand": "Purcari",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 33.5,
     "stock": 26,
     "bottle_image": "assets/products/5941963006041-bottle.jpg",
     "description": "1827 Chardonnay de Purcari, vin alb sec sofisticat, maturat 6 luni in stejar francez. Arome intense de flori exotice si fructe, gust plin, opulent, complex, cu nuante de migdale si vanilie; culoare aurie deschisa cu tonuri de chihlimbar."
@@ -13015,7 +13015,7 @@
     "brand": "Purcari",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 33.5,
     "stock": 14,
     "bottle_image": "assets/products/5941963006065-bottle.jpg",
     "description": "1827 Pinot Grigio de Purcari, vin alb sec cu arome proaspete de mar verde si pere, gust fructat si racoritor, maturat aproximativ 6 luni in stejar francez."
@@ -13026,7 +13026,7 @@
     "brand": "Purcari",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 33.5,
     "stock": 14,
     "bottle_image": "assets/products/5941963006089-bottle.jpg",
     "description": "1827 Pinot Noir de Purcari, vin rosu sec, usor si delicat \"ca matasea fina\", din struguri culesi manual, maturat 6 luni in stejar francez. Arome complexe de capsuni, violete si zmeura, gust catifelat, plin si persistent."
@@ -13037,7 +13037,7 @@
     "brand": "Purcari",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 33.5,
     "stock": 5,
     "bottle_image": "assets/products/5941963006119-bottle.jpg",
     "description": "1827 Rara Neagra - Saperavi de Purcari (51% Rara Neagra, 49% Saperavi), vin rosu sec cu nuante rubinii-granat, buchet complex cu accente de ciocolata si prune, gust catifelat cu note de fructe uscate si vanilie, final persistent cu nuante subtile de stejar. Maturat 6 luni in butoi de stejar francez."
@@ -13048,7 +13048,7 @@
     "brand": "Purcari",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 36.5,
     "stock": 32,
     "bottle_image": "assets/products/5941963006072-bottle.jpg",
     "description": "1827 Rose de Purcari (55% Cabernet Sauvignon, 40% Merlot, 5% Rara Neagra), vin roze sec din colectia exclusivista 1827. Buchet complex cu arome de papaya, piersica si coacaze negre, completat de note subtile de zmeura si capsuni; gust racoritor cu aciditate vibranta si textura catifelata."
@@ -13059,7 +13059,7 @@
     "brand": "Purcari",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 33.5,
     "stock": 45,
     "bottle_image": "assets/products/5941963006058-bottle.jpg",
     "description": "1827 Sauvignon Blanc de Purcari, vin alb sec 100% Sauvignon Blanc, colectia exclusivista 1827. Arome intense de flori si fructe exotice, note citrice de grapefruit si lime; gust proaspat si racoritor cu final lung, fermentat in inox."
@@ -13889,7 +13889,7 @@
     "brand": "Imperial",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 49.5,
     "stock": 2,
     "bottle_image": "assets/products/9005702003008-bottle.jpg"
   },
@@ -15007,7 +15007,7 @@
     "brand": "Jack",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 39.5,
     "stock": 1,
     "bottle_image": "assets/products/5949024606285-bottle.jpg"
   },
@@ -15017,7 +15017,7 @@
     "brand": "Jack",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 13.5,
     "stock": 8,
     "bottle_image": "assets/products/5099873001394-bottle.jpg"
   },
@@ -15047,7 +15047,7 @@
     "brand": "Jack",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 16.5,
     "stock": 1,
     "bottle_image": "assets/products/5949024600160-bottle.jpg"
   },
@@ -15227,7 +15227,7 @@
     "brand": "Ballantine's",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 9.5,
     "stock": 7,
     "bottle_image": "assets/products/5010106113912-bottle.jpg"
   },
@@ -15329,7 +15329,7 @@
     "brand": "Chivas",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 25.5,
     "stock": 12,
     "bottle_image": "assets/products/080432400340-bottle.jpg"
   },
@@ -15604,7 +15604,7 @@
     "brand": "Jack",
     "category": "ALC",
     "category_label": "Băuturi",
-    "price": null,
+    "price": 39.5,
     "stock": 2,
     "bottle_image": "assets/products/5949024606353-bottle.jpg"
   },
@@ -15885,7 +15885,7 @@
     "brand": "Chupa Chups",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 13.5,
     "stock": 1,
     "bottle_image": "assets/products/8410031972719-bottle.jpg",
     "description": "Assorted flavour mini lollipops, 20 pieces, 120g."
@@ -15896,7 +15896,7 @@
     "brand": "Choceur",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 17.5,
     "stock": 2,
     "bottle_image": "assets/products/4061459807233-bottle.jpg"
   },
@@ -15906,7 +15906,7 @@
     "brand": "Balocco",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 15.5,
     "stock": 1,
     "bottle_image": "assets/products/8001100067209-bottle.jpg",
     "description": "Frollini Balocco Bastoncini con uova fresche, biscotti croccanti a forma di bastoncino, 350g, senza olio di palma."
@@ -15928,7 +15928,7 @@
     "brand": "Balocco",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 15.5,
     "stock": 3,
     "bottle_image": "assets/products/8001100067179-bottle.jpg",
     "description": "Frollini Balocco Pastefrolle con uova fresche, farina di frumento 63%, zucchero, olio di semi di girasole, 350g."
@@ -15972,7 +15972,7 @@
     "brand": "Blatter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 13.5,
     "stock": 4,
     "bottle_image": "assets/products/4069365684931-bottle.jpg",
     "description": "Blätterteigebäck Vanille, biscuiti din foietaj cu aromă de vanilie, Aldi/Biscotto, 112g."
@@ -15983,7 +15983,7 @@
     "brand": "Take",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 16.5,
     "stock": 5,
     "bottle_image": "assets/products/4061459047004-bottle.jpg",
     "description": "Take Away Milchschokolade, biscuiți sandwich cu ciocolată cu lapte 45%, Aldi/Biscotto, 135g."
@@ -15994,7 +15994,7 @@
     "brand": "Gullon",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 3,
     "bottle_image": "assets/products/8410376037821-bottle.jpg",
     "description": "Biscuiți Gullon fără zahăr, cu proteină de soia și bucăți de ciocolată, bogați în fibre, 144g."
@@ -16005,7 +16005,7 @@
     "brand": "La Fabrique",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/7610216530586-bottle.jpg",
     "description": "Biscuiți palmier dulci cu unt, aluat foietaj odihnit minim 8 ore la frigider apoi caramelizat la cuptor, 100g."
@@ -16027,7 +16027,7 @@
     "brand": "Lotus",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 12,
     "bottle_image": "assets/products/5410126006339-bottle.jpg",
     "description": "Lotus Biscoff, caramelised speculoos biscuits, individually wrapped, made in Belgium, 124g."
@@ -16048,7 +16048,7 @@
     "brand": "Mokate",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 7.9,
     "stock": 4,
     "bottle_image": "assets/products/8594002834692-bottle.jpg",
     "description": "Ciasteczka ring z nadzieniem malinowym (ring-shaped cookies with raspberry filling), Mokate brand, 150g."
@@ -16059,7 +16059,7 @@
     "brand": "Mokate",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 7.9,
     "stock": 2,
     "bottle_image": "assets/products/8594002834715-bottle.jpg",
     "description": "Caffetteria Mokate Cookies Sunshine Rings, ring-shaped crispy cookies, 160g."
@@ -16070,7 +16070,7 @@
     "brand": "Mulino",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 1,
     "bottle_image": "assets/products/8076809572828-bottle.jpg",
     "description": "Biscotti Tarallucci Mulino Bianco con uova fresche, 55% meno grassi saturi della media dei biscotti più venduti, senza olio di palma, 350g."
@@ -16092,7 +16092,7 @@
     "brand": "Pick Up",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 2,
     "bottle_image": "assets/products/4017100284212-bottle.jpg",
     "description": "Pick Up! Salted Caramel by Bahlsen, biscuiti sandwich cu crema de caramel sarat, 11x28g, 308g."
@@ -16103,7 +16103,7 @@
     "brand": "Pick Up",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 3,
     "bottle_image": "assets/products/4017100381317-bottle.jpg",
     "description": "Pick Up! Original Bahlsen, mix de ciocolata crocanta intre doi biscuiti, pachet de 24 bucati."
@@ -16114,7 +16114,7 @@
     "brand": "Prinzen Rolle",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 17.5,
     "stock": 2,
     "bottle_image": "assets/products/4001518117811-bottle.jpg",
     "description": "Prinzen Rolle Cremys Erdbeer-Joghurt mit Kakaocreme, biscuiti crocanti cu crema de iaurt de capsuni si crema de cacao, 172g."
@@ -16125,7 +16125,7 @@
     "brand": "Prinzen Rolle",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 17.5,
     "stock": 3,
     "bottle_image": "assets/products/4001518118856-bottle.jpg",
     "description": "Prinzen Rolle Cremys Zitrone-Buttermilch-Style, biscuiti crocanti cu crema aroma de lamaie-zara si crema de cacao, 172g."
@@ -16169,7 +16169,7 @@
     "brand": "Campino",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 21.5,
     "stock": 3,
     "bottle_image": "assets/products/4014400904406-bottle.jpg",
     "description": "Storck Campino Früchte, bomboane cu fructe in 4 arome (lamaie, portocala, cirese, coacaze negre), fara grasime, 56 bucati, 325g."
@@ -16180,7 +16180,7 @@
     "brand": "Choco",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 4,
     "bottle_image": "assets/products/4014400937336-bottle.jpg",
     "description": "Storck Mint Chocs, bomboane de menta cu crema de ciocolata in interior."
@@ -16202,7 +16202,7 @@
     "brand": "Jelly",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 13.5,
     "stock": 1,
     "bottle_image": "assets/products/5996071707700-bottle.jpg",
     "description": "Jelly Bites Rainbow Mix - bomboane gumate cu perle glazurate si bucati de jeleu cu fructe, mai multe culori."
@@ -16213,7 +16213,7 @@
     "brand": "Maoam",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686019399-bottle.jpg",
     "description": "Maoam Kracher Berry Shake, bomboane masticabile cu invelis crocant si umplutura efervescenta, arome de capsuni, cirese si mure, 200g, HARIBO."
@@ -16224,7 +16224,7 @@
     "brand": "Nimm2",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 16.5,
     "stock": 3,
     "bottle_image": "assets/products/4014400931785-bottle.jpg",
     "description": "Nimm2 bomboane cu fructe si vitamine (C, B6, B12), exterior crocant cu miez lichid, 240g, Storck."
@@ -16235,7 +16235,7 @@
     "brand": "Nimm2",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 21.5,
     "stock": 3,
     "bottle_image": "assets/products/4014400917789-bottle.jpg",
     "description": "nimm2 Soft, bomboane masticabile umplute cu suc de fructe si vitamine, arome de lamaie, portocala, cirese si capsuni, 345g."
@@ -16246,7 +16246,7 @@
     "brand": "Nimm2",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 21.5,
     "stock": 4,
     "bottle_image": "assets/products/4014400917772-bottle.jpg",
     "description": "Storck Nimm2 Fruchtbonbons, bomboane multivitaminice cu aroma de portocala si lamaie si umplutura lichida de suc de fructe, 429g."
@@ -16257,7 +16257,7 @@
     "brand": "Nimm2",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 21.5,
     "stock": 2,
     "bottle_image": "assets/products/4014400918229-bottle.jpg",
     "description": "Nimm2 Soft mit Brause - bomboane moi cu umplutura efervescenta si suc de fructe, Storck, 345g, 70 bucati."
@@ -16301,7 +16301,7 @@
     "brand": "Storck",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 1,
     "bottle_image": "assets/products/4014400904390-bottle.jpg",
     "description": "Storck Vollmilch Brocken, bomboane cu coaja de caramel si crema de lapte integral (24%), 45 bucati, 325g."
@@ -16312,7 +16312,7 @@
     "brand": "Super",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 6.5,
     "stock": 3,
     "bottle_image": "assets/products/4262393721689-bottle.jpg",
     "description": "Super Sour Chewy Candy, drajeuri acre cu arome fructate intense, 60g."
@@ -16323,7 +16323,7 @@
     "brand": "Vivil",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 9.5,
     "stock": 3,
     "bottle_image": "assets/products/4020400008709-bottle.jpg",
     "description": "Vivil Creme Life, dropsuri cremoase cu aroma de capsuni, fara zahar (cu indulcitori), 60g."
@@ -16334,7 +16334,7 @@
     "brand": "Werthers",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 18.5,
     "stock": 2,
     "bottle_image": "assets/products/4014400909906-bottle.jpg",
     "description": "Werther's Original Caramel & Creme, bomboane cu coaja tare de caramel si miez cremos de caramel (24%), 225g, Storck."
@@ -16345,7 +16345,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 2,
     "bottle_image": "assets/products/8003340038841-bottle.jpg",
     "description": "Lindt Budino al Cioccolato Bianco, preparat pentru budinca cu ciocolata alba 56%, 4 portii, 95g."
@@ -16356,7 +16356,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 3,
     "bottle_image": "assets/products/8003340049212-bottle.jpg"
   },
@@ -16366,7 +16366,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 2,
     "bottle_image": "assets/products/8003340049731-bottle.jpg"
   },
@@ -16376,7 +16376,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 2,
     "bottle_image": "assets/products/8003340038858-bottle.jpg",
     "description": "Preparato per budino al cioccolato gianduja Lindt, 4 porzioni, 95g."
@@ -16419,7 +16419,7 @@
     "brand": "Mamba",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 13.5,
     "stock": 3,
     "bottle_image": "assets/products/4014400933420-bottle.jpg",
     "description": "Mamba Fruit Surfer, gumy rozpuszczalne o smakach owocowych (truskawka, malina, pomarancza, cytryna), 140g, Storck."
@@ -16430,7 +16430,7 @@
     "brand": "Mamba",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 2,
     "bottle_image": "assets/products/4014400937008-bottle.jpg",
     "description": "Mamba Fruit Party - funtiger Kaubonbon-Mix mit 5 Fruchtsorten (Erdbeere, Zitrone, Himbeere, Kirsche, Orange), 290g, 48 Stueck."
@@ -16452,7 +16452,7 @@
     "brand": "Riesen",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 4,
     "bottle_image": "assets/products/4014400924008-bottle.jpg",
     "description": "Riesen - bomboane cu miez de caramel invelite in ciocolata neagra (dark chocolate - kraftiges Karamell), Storck, 231g."
@@ -16463,7 +16463,7 @@
     "brand": "Schoko",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 2,
     "bottle_image": "assets/products/4014400937190-bottle.jpg",
     "description": "Storck Schoko Toffees - bomboane moi tip toffee invelite in ciocolata (30% ciocolata semi-neagra), ambalate individual."
@@ -16474,7 +16474,7 @@
     "brand": "Toffee",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 21.5,
     "stock": 2,
     "bottle_image": "assets/products/4014400937206-bottle.jpg",
     "description": "Toffee Melange - assortment of soft caramel toffees by Storck."
@@ -16485,7 +16485,7 @@
     "brand": "Werther's",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 17.5,
     "stock": 1,
     "bottle_image": "assets/products/4014400925944-bottle.jpg",
     "description": "Werther's Original Schoko Toffees - miez moale de caramel invelit in ciocolata cu lapte, 180g, Storck."
@@ -16507,7 +16507,7 @@
     "brand": "Casali",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 2,
     "bottle_image": "assets/products/9000332813607-bottle.jpg",
     "description": "Casali Original Rum-Kokos - praline de ciocolata cu miez lichid de rom si fulgi de cocos, 100g."
@@ -16518,7 +16518,7 @@
     "brand": "Casali",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 3,
     "bottle_image": "assets/products/9000332813973-bottle.jpg",
     "description": "Casali Rum Kokos - praline de ciocolata cu miez de rom si cocos, invelite in ciocolata cu lapte, 175g."
@@ -16529,7 +16529,7 @@
     "brand": "Pfanner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 7.5,
     "stock": 3,
     "bottle_image": "assets/products/9006900227531-bottle.jpg",
     "description": "Pfanner Eistee Wildkirsche - infuzie de macese si hibiscus cu suc concentrat de visine si aronia, 0.75L."
@@ -16540,7 +16540,7 @@
     "brand": "Pfanner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 2,
     "bottle_image": "assets/products/9006900231033-bottle.jpg",
     "description": "Pfanner Eistee Tutti Frutti Jubilaeums Edition, 2L."
@@ -16551,7 +16551,7 @@
     "brand": "Pfanner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 2,
     "bottle_image": "assets/products/9006900014858-bottle.jpg",
     "description": "Pfanner Der Gruene - ceai verde proaspat infuzat cu lamaie si smochina indiana (cactus fig), 2L."
@@ -16562,7 +16562,7 @@
     "brand": "Pfanner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 7.5,
     "stock": 3,
     "bottle_image": "assets/products/9006900227548-bottle.jpg",
     "description": "Pfanner Eistee Wassermelone - infuzie de hibiscus, macese si ceai negru cu suc de pepene verde, 0.75L."
@@ -16573,7 +16573,7 @@
     "brand": "Pfanner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 7.5,
     "stock": 3,
     "bottle_image": "assets/products/9006900227524-bottle.jpg",
     "description": "Pfanner Eistee Pfirsich - ceai negru cu gust de piersici, infuzat din macese si hibiscus, 0.75L."
@@ -16584,7 +16584,7 @@
     "brand": "Pfanner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 2,
     "bottle_image": "assets/products/9006900212131-bottle.jpg",
     "description": "Pfanner Der Weisse - ceai alb cu flori de soc si lamaie, 2L."
@@ -16627,7 +16627,7 @@
     "brand": "Baratti&milano",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 4,
     "bottle_image": "assets/products/8007692042242-bottle.jpg",
     "description": "Tavoletta cioccolato fondente 70% cacao con caffe arabica, Baratti & Milano, 75g."
@@ -16638,7 +16638,7 @@
     "brand": "Baratti&milano",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 4,
     "bottle_image": "assets/products/8007692042228-bottle.jpg",
     "description": "Tavoletta cioccolato al latte finissimo, cremoso e vellutato, Baratti & Milano, 75g."
@@ -16649,7 +16649,7 @@
     "brand": "Baratti&milano",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 4,
     "bottle_image": "assets/products/8007692042204-bottle.jpg",
     "description": "Tavoletta cioccolato al latte con mais caramellato croccante, Baratti & Milano, 75g."
@@ -16682,7 +16682,7 @@
     "brand": "Camille Bloch",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 4,
     "bottle_image": "assets/products/7610008638001-bottle.jpg",
     "description": "Camille Bloch - ciocolata elvetiana cu lapte, umplutura lichida de Cointreau (10%), 100g."
@@ -16693,7 +16693,7 @@
     "brand": "Camille Bloch",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 3,
     "bottle_image": "assets/products/7610008068136-bottle.jpg",
     "description": "Camille Bloch Cognac - ciocolata elvetiana cu umplutura lichida de coniac (10%), 100g."
@@ -16704,7 +16704,7 @@
     "brand": "Camille Bloch",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 2,
     "bottle_image": "assets/products/7610008621508-bottle.jpg",
     "description": "Camille Bloch Mousse Chocolat - ciocolata elvetiana cu lapte, umpluta cu mousse de ciocolata pufos, 100g."
@@ -16759,7 +16759,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 1,
     "bottle_image": "assets/products/7610400097093-bottle.jpg",
     "description": "Ciocolata Lindt Lindor cu lapte, cu miez fin si cremos, 100g."
@@ -16770,7 +16770,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 9.5,
     "stock": 2,
     "bottle_image": "assets/products/8003340037943-bottle.jpg"
   },
@@ -16802,7 +16802,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 9.5,
     "stock": 1,
     "bottle_image": "assets/products/4000539241505-bottle.jpg",
     "description": "Lindt Snack - ciocolata cu lapte umpluta cu caramel (16%) si crema brownie (25%) cu bucati de biscuiti, baton 39g."
@@ -16824,7 +16824,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 9.5,
     "stock": 6,
     "bottle_image": "assets/products/4000539241604-bottle.jpg",
     "description": "Lindt Lindor Gamme Bleue Snack - baton de ciocolata cu lapte cu crema si bucati de biscuiti crocanti, 39g."
@@ -16857,7 +16857,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 6,
     "bottle_image": "assets/products/3046920020886-bottle.jpg",
     "description": "Lindt Excellence Cacao Pur 82%, ciocolata amaruie din masa de cacao, unt de cacao si pulpa uscata de fructe de cacao, fabricata in Franta."
@@ -16868,7 +16868,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 4,
     "bottle_image": "assets/products/7610400110655-bottle.jpg"
   },
@@ -16878,7 +16878,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 4,
     "bottle_image": "assets/products/3046920021289-bottle.jpg",
     "description": "Lindt Extra Creamy Milk Salted Caramel - ciocolata cu lapte cremoasa cu bucati de caramel sarat, 80g."
@@ -16889,7 +16889,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 3,
     "bottle_image": "assets/products/3046920021265-bottle.jpg",
     "description": "Ciocolata fina cu lapte Lindt Extra Creamy, textura extrem de cremoasa si gust rafinat, 80g."
@@ -16900,7 +16900,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 11,
     "bottle_image": "assets/products/3046920021470-bottle.jpg",
     "description": "Ciocolata fina neagra Lindt Extra Creamy, minim 47% cacao, textura cremoasa, 80g."
@@ -16922,7 +16922,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 5,
     "bottle_image": "assets/products/7610400066204-bottle.jpg",
     "description": "Lindt Les Grandes, ciocolata cu lapte cu 34% alune, 150g."
@@ -16955,7 +16955,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 39.5,
     "stock": 2,
     "bottle_image": "assets/products/7610400110853-bottle.jpg",
     "description": "Tableta de ciocolata alba cu aroma de migdale, Lindt Les Grandes, 32% migdale, 150g."
@@ -16966,7 +16966,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 3,
     "bottle_image": "assets/products/8003340801070-bottle.jpg",
     "description": "Lindt Lindor ciocolata neagra 60% cacao cu umplutura fondanta, 100g."
@@ -16977,7 +16977,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 5,
     "bottle_image": "assets/products/7610400092180-bottle.jpg",
     "description": "Lindt Lindor Milk Salted Caramel - ciocolata cu lapte cu umplutura de caramel sarat, 100g."
@@ -16988,7 +16988,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 9.5,
     "stock": 1,
     "bottle_image": "assets/products/4000539280108-bottle.jpg",
     "description": "Lindt Lindor Salted Caramel Milk Chocolate treat bar, 38g."
@@ -16999,7 +16999,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 9.5,
     "stock": 1,
     "bottle_image": "assets/products/8003340041100-bottle.jpg",
     "description": "Lindt Lindor snack cu ciocolata cu lapte si umplutura de fistic, 38g."
@@ -17131,7 +17131,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 2,
     "bottle_image": "assets/products/4061459743456-bottle.jpg",
     "description": "Moser Roth Chocolat Noisettes Edel Nougat & Crisp - ciocolata cu lapte umpluta cu nuga de alune si bucati crocante, 150g."
@@ -17142,7 +17142,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 3,
     "bottle_image": "assets/products/4061458021593-bottle.jpg",
     "description": "Ciocolata amaruie Moser Roth 70% cacao, 5 tablete individuale de 25g, 125g total."
@@ -17153,7 +17153,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 1,
     "bottle_image": "assets/products/4061458021630-bottle.jpg"
   },
@@ -17174,7 +17174,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 1,
     "bottle_image": "assets/products/4069365243787-bottle.jpg",
     "description": "Moser Roth Eiscafé - ciocolata cu lapte umpluta cu crema de lapte (25%) si crema de cafea (20%), 150g."
@@ -17185,7 +17185,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 6,
     "bottle_image": "assets/products/4061458021579-bottle.jpg",
     "description": "Moser Roth Edel-Vollmilch - ciocolata cu lapte, minim 32% cacao, 125g."
@@ -17196,7 +17196,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 4,
     "bottle_image": "assets/products/4047247000024-bottle.jpg",
     "description": "Moser Roth Edelzartbitter-Schokolade Geröstete Haselnuss - ciocolata neagra cu alune prajite, 5x25g, 125g total."
@@ -17207,7 +17207,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 7,
     "bottle_image": "assets/products/4061462044663-bottle.jpg",
     "description": "Moser Roth Ingwer-Limette - ciocolata neagra cu ghimbir (11.2%) si lime, 125g."
@@ -17218,7 +17218,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 5,
     "bottle_image": "assets/products/4061463024589-bottle.jpg",
     "description": "Moser Roth Mousse au Chocolat Orange - ciocolata neagra umpluta cu mousse aromata cu portocale, 5x30g, 150g."
@@ -17229,7 +17229,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 7,
     "bottle_image": "assets/products/4061463025029-bottle.jpg",
     "description": "Moser Roth Mousse au Chocolat Sauerkirsch-Chili - ciocolata neagra 85% umpluta cu mousse de visine acre si chili, 5x30g, 150g."
@@ -17240,7 +17240,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 5,
     "bottle_image": "assets/products/4061459776867-bottle.jpg",
     "description": "Moser Roth ciocolata alba editie de vara, 150g."
@@ -17251,7 +17251,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 3,
     "bottle_image": "assets/products/4061459743371-bottle.jpg",
     "description": "Moser Roth Mousse au Chocolat Chocoladen-Trüffel - ciocolata neagra 85% cu mousse (25%) si trufe de ciocolata (20%), 150g."
@@ -17262,7 +17262,7 @@
     "brand": "Moser Roth",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 2,
     "bottle_image": "assets/products/4061458021609-bottle.jpg",
     "description": "Moser Roth ciocolata alba cu vanilie bourbon, 125g."
@@ -17317,7 +17317,7 @@
     "brand": "Raffaello",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 3,
     "bottle_image": "assets/products/8000500463208-bottle.jpg",
     "description": "Raffaello Kokos & Mango - ciocolata alba (60%) umpluta cu crema de migdale (37%) cu aroma de mango, fulgi de cocos, editie de vara, 90g."
@@ -17339,7 +17339,7 @@
     "brand": "Reeses",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 1,
     "bottle_image": "assets/products/034000446612-bottle.jpg",
     "description": "Reese's Peanut Butter Bar, 90g."
@@ -17350,7 +17350,7 @@
     "brand": "Reeses",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 5,
     "bottle_image": "assets/products/034000446636-bottle.jpg",
     "description": "Reese's Peanut Butter Bar White, 90g."
@@ -17361,7 +17361,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 2,
     "bottle_image": "assets/products/4000417601513-bottle.jpg",
     "description": "Filled whole milk chocolate with hazelnut cream (40.5%) and waffle pieces (4.5%)."
@@ -17372,7 +17372,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 1,
     "bottle_image": "assets/products/4000417663016-bottle.jpg",
     "description": "Ritter Sport Crispy, tableta mare 218g."
@@ -17383,7 +17383,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 1,
     "bottle_image": "assets/products/4000417622211-bottle.jpg",
     "description": "Ritter Sport Haselnuss (hazelnut), 100g."
@@ -17394,7 +17394,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 3,
     "bottle_image": "assets/products/4000417601810-bottle.jpg",
     "description": "Ritter Sport Alpenmilch, 100g."
@@ -17405,7 +17405,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 2,
     "bottle_image": "assets/products/4000417119605-bottle.jpg",
     "description": "Ritter Sport Minis - Bunter Mix, 150g (9x16.66g)."
@@ -17416,7 +17416,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 4,
     "bottle_image": "assets/products/4000417117304-bottle.jpg",
     "description": "Ritter Sport mini Voll-Nuss Mix (mini hazelnut/nut mix), 7x16.67g."
@@ -17427,7 +17427,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 1,
     "bottle_image": "assets/products/4000417620613-bottle.jpg"
   },
@@ -17437,7 +17437,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 3,
     "bottle_image": "assets/products/4000417602114-bottle.jpg",
     "description": "Ritter Sport Edel-Vollmilch, 100g."
@@ -17448,7 +17448,7 @@
     "brand": "Ritter",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 3,
     "bottle_image": "assets/products/4000417663115-bottle.jpg",
     "description": "Ritter Sport with berries (raspberry & blueberry), 218g."
@@ -17459,7 +17459,7 @@
     "brand": "Romy",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 5,
     "bottle_image": "assets/products/4021700903053-bottle.jpg",
     "description": "ROMY Kokos Schoko, 200g."
@@ -17470,7 +17470,7 @@
     "brand": "Schwarze",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 17.5,
     "stock": 5,
     "bottle_image": "assets/products/4030387760637-bottle.jpg",
     "description": "Sarotti Schwarze Herren Schokolade Edelbitter (extra dark chocolate), 100g, made by Stollwerck."
@@ -17503,7 +17503,7 @@
     "brand": "Snickers",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 39.5,
     "stock": 2,
     "bottle_image": "assets/products/5000159560863-bottle.jpg",
     "description": "Snickers x10, 10x50g = 500g."
@@ -17514,7 +17514,7 @@
     "brand": "Twix",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 39.5,
     "stock": 1,
     "bottle_image": "assets/products/5000159608718-bottle.jpg",
     "description": "Twix Hazelnut multipack chocolate bars."
@@ -17525,7 +17525,7 @@
     "brand": "Twix",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 39.5,
     "stock": 2,
     "bottle_image": "assets/products/5000159557658-bottle.jpg",
     "description": "Twix (Mars) chocolate biscuit bar, 500g multipack."
@@ -17536,7 +17536,7 @@
     "brand": "Creioane",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 39.5,
     "stock": 15,
     "bottle_image": "assets/products/8594019882389-bottle.jpg",
     "description": "Creioane colorate din ciocolata belgiana cu lapte, THE CHOCOLATE, cu coloranti naturali (piper, morcov, spirulina, sofran, lamaie, mar, sfecla, coacaze negre), min. 32% cacao."
@@ -17558,7 +17558,7 @@
     "brand": "Cioc",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 2,
     "bottle_image": "assets/products/5410126726947-bottle.jpg"
   },
@@ -17568,7 +17568,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 39.5,
     "stock": 3,
     "bottle_image": "assets/products/8003340853840-bottle.jpg",
     "description": "Lindt Fondentissima dark chocolate spread, 200g."
@@ -17579,7 +17579,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 39.5,
     "stock": 2,
     "bottle_image": "assets/products/8003340005089-bottle.jpg",
     "description": "Lindt Nocciole hazelnut chocolate spread, 200g."
@@ -17612,7 +17612,7 @@
     "brand": "Baileys",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 2,
     "bottle_image": "assets/products/5099872018003-bottle.jpg",
     "description": "Baileys Mini Delights - Strawberries & Cream, 102g."
@@ -17623,7 +17623,7 @@
     "brand": "Baileys",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 2,
     "bottle_image": "assets/products/5099872013206-bottle.jpg",
     "description": "Baileys praline pouch, Original, 102g."
@@ -17656,7 +17656,7 @@
     "brand": "Ferrero",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 2,
     "bottle_image": "assets/products/8000500003787-bottle.jpg",
     "description": "Ferrero Rocher, 200g."
@@ -17797,7 +17797,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686331415-bottle.jpg",
     "description": "Haribo Tangfastics - amestec acru-dulce cu sticle de cola, cirese acre, suzete si crocodili acrisori."
@@ -17808,7 +17808,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 26.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686330678-bottle.jpg",
     "description": "Haribo Goldbears - ursuleti de gumă cu fructe, editie de calatorie."
@@ -17841,7 +17841,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/9002975002417-bottle.jpg"
   },
@@ -17851,7 +17851,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 7,
     "bottle_image": "assets/products/4001686327845-bottle.jpg",
     "description": "Haribo Berries - jeleuri cu forma de zmeura si mura, acoperite cu crocant."
@@ -17862,7 +17862,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686019573-bottle.jpg",
     "description": "Haribo Blaue Tute - amestec de jeleuri si bezele albastre."
@@ -17884,7 +17884,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686318423-bottle.jpg",
     "description": "Haribo Bunte Blumchen - jeleuri in forma de floricele colorate, 175g."
@@ -17895,7 +17895,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686002421-bottle.jpg",
     "description": "Haribo Bunte Schnecken - jeleuri in forma de melcisori colorati, 160g."
@@ -17916,7 +17916,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686103272-bottle.jpg",
     "description": "Haribo Super Gurken (castraveti) - jeleuri in forma de castravete, 175g."
@@ -17927,7 +17927,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 9,
     "bottle_image": "assets/products/4001686322871-bottle.jpg",
     "description": "Haribo Happy Cherries (cirese) - jeleuri cu aroma de cirese, 175g."
@@ -17938,7 +17938,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 5,
     "bottle_image": "assets/products/4001686327517-bottle.jpg",
     "description": "Haribo Happy-Cola - jeleuri in forma de sticlute de cola, 175g."
@@ -17949,7 +17949,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 15.9,
     "stock": 1,
     "bottle_image": "assets/products/8426617119515-bottle.jpg"
   },
@@ -17970,7 +17970,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686013854-bottle.jpg",
     "description": "Haribo Fruity-Fruits, 160g."
@@ -17992,7 +17992,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 6,
     "bottle_image": "assets/products/4001686322840-bottle.jpg",
     "description": "Haribo Goldbaren gummy bears, 175g."
@@ -18003,7 +18003,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 1,
     "bottle_image": "assets/products/9002975301268-bottle.jpg",
     "description": "Haribo Goldbaren gummy bears, 200g."
@@ -18014,7 +18014,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 4,
     "bottle_image": "assets/products/4001686004500-bottle.jpg",
     "description": "Haribo Hoppi Karotti (carrot-shaped gummies), 175g."
@@ -18025,7 +18025,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 4,
     "bottle_image": "assets/products/4001686018484-bottle.jpg",
     "description": "Haribo Harry Potter jeleuri (gume), editie sub licenta Harry Potter."
@@ -18036,7 +18036,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/9002975002523-bottle.jpg",
     "description": "Haribo Jelly Beans, boabe de jeleu asortate, vegan."
@@ -18047,7 +18047,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 4,
     "bottle_image": "assets/products/4001686331842-bottle.jpg",
     "description": "Haribo Kirsch-Cola, jeleuri cu aroma de cirese si cola."
@@ -18058,7 +18058,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 4,
     "bottle_image": "assets/products/4001686151105-bottle.jpg",
     "description": "Haribo Konfekt, jeleuri asortate 175g."
@@ -18069,7 +18069,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 3,
     "bottle_image": "assets/products/4001686009932-bottle.jpg",
     "description": "Haribo Konfetti, jeleuri asortate 160g."
@@ -18091,7 +18091,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686012291-bottle.jpg",
     "description": "Haribo Miami Fizz, jeleuri acidulate asortate."
@@ -18102,7 +18102,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686808849-bottle.jpg",
     "description": "Haribo Monsterjagd, jeleuri cu forme de monstri."
@@ -18124,7 +18124,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686806364-bottle.jpg",
     "description": "Haribo Frohes Naschen / Party Box, asortiment de jeleuri."
@@ -18135,7 +18135,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686009635-bottle.jpg",
     "description": "Haribo Pasta Basta Sauer, jeleuri acrisoare."
@@ -18146,7 +18146,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 26.5,
     "stock": 2,
     "bottle_image": "assets/products/5996379320373-bottle.jpg",
     "description": "Haribo Peaches, jeleuri catifelate cu aroma de piersica, editie Travel/duty-free, 450g."
@@ -18157,7 +18157,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686806272-bottle.jpg"
   },
@@ -18167,7 +18167,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 3,
     "bottle_image": "assets/products/4001686327579-bottle.jpg",
     "description": "Haribo Fruchtgummi Pfirsich, jeleuri cu aroma de piersica, 175g."
@@ -18189,7 +18189,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686120132-bottle.jpg",
     "description": "Haribo Pico-Balla, jeleuri rotunde asortate."
@@ -18200,7 +18200,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686013960-bottle.jpg",
     "description": "Jeleuri acrisoare Haribo Pico-Balla Sauer, cu zahar, sirop de glucoza, amidon, agent de umezire sorbitol, faina de grau."
@@ -18211,7 +18211,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686376829-bottle.jpg",
     "description": "Haribo Rainbow Pixel - jeleuri acrisoare (sour gummy candies), cu zahar, sirop de glucoza, amidon, acidifianti acid citric si acid malic."
@@ -18222,7 +18222,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686329870-bottle.jpg",
     "description": "Haribo Saure Pommes - jeleuri acrisoare in forma de cartofi prajiti, 175g."
@@ -18244,7 +18244,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 4,
     "bottle_image": "assets/products/4001686327609-bottle.jpg",
     "description": "Haribo Primavera 175g - jeleuri cu gelatina, acid citric, concentrate de fructe si plante (morcov), aroma de morcov."
@@ -18288,7 +18288,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686372852-bottle.jpg"
   },
@@ -18298,7 +18298,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/9002975002516-bottle.jpg"
   },
@@ -18318,7 +18318,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 3,
     "bottle_image": "assets/products/4001686344897-bottle.jpg",
     "description": "Haribo Spiegeleier - jeleuri in forma de ochiuri (oua), 175g."
@@ -18329,7 +18329,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 4,
     "bottle_image": "assets/products/4001686322932-bottle.jpg",
     "description": "Haribo Starmix - fruchtgummi mit Schaumzucker, jeleuri mixte cu spuma de zahar, unele cu aroma de cola."
@@ -18340,7 +18340,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 1,
     "bottle_image": "assets/products/4001686329849-bottle.jpg",
     "description": "Haribo Wine Gums (englezesti), 175g, cu sirop de glucoza, zahar, amidon, gelatina."
@@ -18362,7 +18362,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 5,
     "bottle_image": "assets/products/4001686322963-bottle.jpg",
     "description": "Haribo Tropifrutti - jeleuri cu zahar, sirop de glucoza, concentrate de plante (sofran, spirulina, mar, morcov, afine), gelatina, fara coloranti artificiali."
@@ -18373,7 +18373,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 27.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686330579-bottle.jpg",
     "description": "Haribo Tropifrutti, jeleuri cu arome exotice tropicale, 450g."
@@ -18384,7 +18384,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686011782-bottle.jpg",
     "description": "Haribo Unicorn World - jeleuri cu tematica unicorn, 175g."
@@ -18395,7 +18395,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 6,
     "bottle_image": "assets/products/4001686327456-bottle.jpg",
     "description": "Haribo Vampire - jeleuri cu sirop de glucoza, zahar, gelatina, sirop de zahar brun, concentrate de fructe si plante (morcov, spirulina, mar, hibiscus)."
@@ -18406,7 +18406,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 3,
     "bottle_image": "assets/products/4001686020920-bottle.jpg",
     "description": "Haribo Super Wummis Sauer, jeleuri acrisoare in forma de vierme, vegan, 175g."
@@ -18417,7 +18417,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 5,
     "bottle_image": "assets/products/9002975378895-bottle.jpg",
     "description": "Haribo Ingwer Zitrone - jeleuri cu ghimbir si lamaie, suc de lamaie din concentrat (2,3%), concentrate de fructe (sofran, portocala, lamaie, soc)."
@@ -18480,7 +18480,7 @@
     "brand": "Maoam",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686579176-bottle.jpg",
     "description": "Maoam Pinballs, bomboane masticabile, 200g."
@@ -18491,7 +18491,7 @@
     "brand": "Maoam",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 4,
     "bottle_image": "assets/products/4001686018668-bottle.jpg",
     "description": "Maoam The Grinch (Merry Grinchmas), bomboane masticabile cu umplutura efervescenta, editie de Craciun, 175g."
@@ -18502,7 +18502,7 @@
     "brand": "Haribo",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 11.5,
     "stock": 2,
     "bottle_image": "assets/products/4001686329757-bottle.jpg",
     "description": "Haribo Süße Mäuse, marshmallow, 175g."
@@ -18554,7 +18554,7 @@
     "brand": "Knoppers",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 22.5,
     "stock": 4,
     "bottle_image": "assets/products/4014400929836-bottle.jpg",
     "description": "Knoppers, napolitane cu crema de lapte si alune, pachet 8+1 gratis x 25g."
@@ -18576,7 +18576,7 @@
     "brand": "Loacker",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 17.5,
     "stock": 1,
     "bottle_image": "assets/products/8000380203482-bottle.jpg",
     "description": "Loacker Quadratini Gingerbread, napolitane cu crema de turta dulce."
@@ -18587,7 +18587,7 @@
     "brand": "Loacker",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 17.5,
     "stock": 2,
     "bottle_image": "assets/products/8000380202911-bottle.jpg",
     "description": "Loacker Quadratini Cinnamon, napolitane cu crema de scortisoara, 250g."
@@ -18598,7 +18598,7 @@
     "brand": "Manner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 3,
     "bottle_image": "assets/products/9015810000622-bottle.jpg",
     "description": "Manner Winterglück à la Kokosmakrone, napolitane cu aroma de macarons de cocos, 185g."
@@ -18609,7 +18609,7 @@
     "brand": "Manner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 1,
     "bottle_image": "assets/products/9000331628356-bottle.jpg",
     "description": "Manner Himbeere Sommerglück, napolitane cu crema de zmeura, 185g."
@@ -18620,7 +18620,7 @@
     "brand": "Manner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 2,
     "bottle_image": "assets/products/9000331628363-bottle.jpg",
     "description": "Manner Pfirsich Sommerglück, napolitane cu crema de piersica, 185g."
@@ -18631,7 +18631,7 @@
     "brand": "Manner",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 1,
     "bottle_image": "assets/products/9015810000608-bottle.jpg",
     "description": "Manner Winterglück Bratapfel-Zimt, napolitane cu crema de mar copt si scortisoara, 185g."
@@ -18642,7 +18642,7 @@
     "brand": "Milk",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 16.5,
     "stock": 4,
     "bottle_image": "assets/products/4069365041499-bottle.jpg",
     "description": "Choceur Milk Jumbo Hazelnut, napolitane cu crema de lapte si alune, invelite in ciocolata cu lapte, 150g."
@@ -18653,7 +18653,7 @@
     "brand": "Milk",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 16.5,
     "stock": 4,
     "bottle_image": "assets/products/4069365042045-bottle.jpg"
   },
@@ -18663,7 +18663,7 @@
     "brand": "Milk",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 16.5,
     "stock": 6,
     "bottle_image": "assets/products/4069365042205-bottle.jpg",
     "description": "Choceur Milk Jumbo Cocos, napolitane cu crema de cocos invelite in ciocolata cu lapte, 150g."
@@ -18685,7 +18685,7 @@
     "brand": "Werthers",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 22.5,
     "stock": 5,
     "bottle_image": "assets/products/4014400925319-bottle.jpg",
     "description": "Werther's Original Caramel Popcorn Classic, 140g."
@@ -18696,7 +18696,7 @@
     "brand": "Werthers",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 22.5,
     "stock": 3,
     "bottle_image": "assets/products/4014400935677-bottle.jpg"
   },
@@ -18706,7 +18706,7 @@
     "brand": "Baumkuchen",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 2,
     "bottle_image": "assets/products/4069365427897-bottle.jpg",
     "description": "Oster Phantasie Baumkuchen-Spitzen mit Zartbitterschokolade, fara alcool, 150g."
@@ -18750,7 +18750,7 @@
     "brand": "Baileys",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 23.5,
     "stock": 1,
     "bottle_image": "assets/products/5099872016528-bottle.jpg",
     "description": "Mini milk chocolate truffles with a salted caramel filling and a hint of Baileys flavour, 102g pouch."
@@ -18860,7 +18860,7 @@
     "brand": "Joyco",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 29.5,
     "stock": 2,
     "bottle_image": "assets/products/4850022431742-bottle.jpg",
     "description": "Chocolate-covered assorted dried fruits and nuts, 9 pieces, 157g, made in Armenia."
@@ -18871,7 +18871,7 @@
     "brand": "Knoppers",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 26.5,
     "stock": 4,
     "bottle_image": "assets/products/4014400937053-bottle.jpg",
     "description": "Crispy wafer balls with milk cream and nougat filling, wrapped in premium milk chocolate."
@@ -18992,7 +18992,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 59.5,
     "stock": 1,
     "bottle_image": "assets/products/9003600470540-bottle.jpg",
     "description": "Viennese confectionery pralines gift box themed around Mozart and the city of Vienna, 123g."
@@ -19036,7 +19036,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 14,
     "bottle_image": "assets/products/8003340807775-bottle.jpg",
     "description": "Assorted Lindor chocolate truffles (milk, dark, white), 137g cornet."
@@ -19069,7 +19069,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 2,
     "bottle_image": "assets/products/4000539154522-bottle.jpg",
     "description": "Lindor Golden Caramel: white chocolate balls with molten caramel filling and hazelnut pieces, 137g."
@@ -19102,7 +19102,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 3,
     "bottle_image": "assets/products/4000539094804-bottle.jpg",
     "description": "Lindor coconut-flavour chocolate balls with smooth melting centre and coconut shavings, resealable bag."
@@ -19124,7 +19124,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 12,
     "bottle_image": "assets/products/8003340807751-bottle.jpg",
     "description": "Lindor milk chocolate truffle balls with smooth melting centre, 137g bag."
@@ -19157,7 +19157,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 3,
     "bottle_image": "assets/products/4000539154669-bottle.jpg"
   },
@@ -19178,7 +19178,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 2,
     "bottle_image": "assets/products/4000539146862-bottle.jpg",
     "description": "Limited-edition white chocolate Lindor balls with strawberry powder coating and cherry blossom (sakura) flavoured melting centre, 11 pieces, 137g."
@@ -19189,7 +19189,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 2,
     "bottle_image": "assets/products/4000539144127-bottle.jpg",
     "description": "Lindt Lindor Sommer-Mix - strawberry cream, cheesecake, coconut and raspberry cream truffles, 137g."
@@ -19200,7 +19200,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 3,
     "bottle_image": "assets/products/4000539113383-bottle.jpg",
     "description": "Lindt Lindor Himbeer-Sahne (Raspberry Cream) truffles, 137g."
@@ -19233,7 +19233,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 3,
     "bottle_image": "assets/products/4000539155529-bottle.jpg",
     "description": "Lindt Fioretto Minis Mischung - assorted mini crispy pralines (nougat, marzipan, cappuccino), 115g."
@@ -19244,7 +19244,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 3,
     "bottle_image": "assets/products/4000539155444-bottle.jpg",
     "description": "Lindt Fioretto Minis Caramel & Salz - crispy pralines with salted caramel filling, 115g."
@@ -19255,7 +19255,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 4,
     "bottle_image": "assets/products/4000539155468-bottle.jpg",
     "description": "Lindt Fioretto Minis Marzipan - crispy pralines with marzipan filling and almond pieces, 115g."
@@ -19266,7 +19266,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 49.5,
     "stock": 3,
     "bottle_image": "assets/products/4000539155628-bottle.jpg",
     "description": "Lindt Fioretto Minis Zabaione - crispy pralines with airy zabaione truffle filling, 115g."
@@ -19308,7 +19308,7 @@
     "brand": "Lindt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 59.5,
     "stock": 6,
     "bottle_image": "assets/products/4000539148248-bottle.jpg"
   },
@@ -19328,7 +19328,7 @@
     "brand": "Magnat",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 12.5,
     "stock": 1,
     "bottle_image": "assets/products/5904637000820-bottle.jpg"
   },
@@ -19393,7 +19393,7 @@
     "brand": "Mt",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 19.5,
     "stock": 1,
     "bottle_image": "assets/products/9002859118593-bottle.jpg",
     "description": "Maître Truffout Mozart Kugeln (Mozart Balls) with white chocolate - pistachio marzipan center, 200g box."
@@ -19415,7 +19415,7 @@
     "brand": "Niederreger",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 1,
     "bottle_image": "assets/products/4000161170310-bottle.jpg"
   },
@@ -19425,7 +19425,7 @@
     "brand": "Niederreger",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 2,
     "bottle_image": "assets/products/4000161170334-bottle.jpg",
     "description": "Niederegger Pralinen \"Double Choc\" - melting cocoa cream with fine chocolate pieces wrapped in crispy dark chocolate, 100g."
@@ -19436,7 +19436,7 @@
     "brand": "Niederreger",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 1,
     "bottle_image": "assets/products/4000161020523-bottle.jpg",
     "description": "Niederegger Pralinen \"Mousse au Chocolat\", 100g."
@@ -19447,7 +19447,7 @@
     "brand": "Raffaello",
     "category": "DLC",
     "category_label": "Dulciuri",
-    "price": null,
+    "price": 32.5,
     "stock": 2,
     "bottle_image": "assets/products/4008400180724-bottle.jpg",
     "description": "Ferrero Raffaello - fine coconut-covered wafer pralines with whole almond center, 260g."
