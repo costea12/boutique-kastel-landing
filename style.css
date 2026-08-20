@@ -102,15 +102,22 @@ ul { list-style: none; }
   color: var(--white-dim);
   font-size: 0.76rem;
   letter-spacing: 0.03em;
+  font-weight: 600;
 }
 .utility-bar .wrap {
   max-width: var(--container);
   margin: 0 auto;
   padding: 0.55rem var(--edge);
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
   flex-wrap: wrap;
+}
+.utility-bar .wrap span::after {
+  content: '·';
+  margin-left: 0.7rem;
+  color: var(--gold-dim);
 }
 .utility-bar a:hover { color: var(--gold-bright); }
 
