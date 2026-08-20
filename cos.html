@@ -134,7 +134,12 @@ function renderCart() {
           <img src="${item.image}" alt="${item.name}">
           <div class="cart-item-info">
             <h4>${item.name}</h4>
-            <span>${formatPrice(item.price)} × ${item.qty}</span>
+            <span>${formatPrice(item.price)} / buc</span>
+          </div>
+          <div class="qty-control qty-control-sm" data-cod="${item.cod}">
+            <button type="button" class="qty-minus" aria-label="Scade cantitatea">−</button>
+            <input type="number" class="qty-input" value="${item.qty}" min="1">
+            <button type="button" class="qty-plus" aria-label="Crește cantitatea">+</button>
           </div>
           <span class="cart-item-total">${formatPrice(item.price * item.qty)}</span>
           <button class="cart-item-remove" data-cod="${item.cod}" aria-label="Elimină">✕</button>
@@ -152,6 +157,23 @@ function renderCart() {
   el.querySelectorAll('.cart-item-remove').forEach((btn) => {
     btn.addEventListener('click', () => {
       removeFromCart(btn.dataset.cod);
+      renderCart();
+    });
+  });
+
+  el.querySelectorAll('.qty-control').forEach((control) => {
+    const cod = control.dataset.cod;
+    const input = control.querySelector('.qty-input');
+    control.querySelector('.qty-minus').addEventListener('click', () => {
+      setQty(cod, Math.max(0, parseInt(input.value || '1') - 1));
+      renderCart();
+    });
+    control.querySelector('.qty-plus').addEventListener('click', () => {
+      setQty(cod, parseInt(input.value || '1') + 1);
+      renderCart();
+    });
+    input.addEventListener('change', () => {
+      setQty(cod, Math.max(0, parseInt(input.value || '1')));
       renderCart();
     });
   });

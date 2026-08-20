@@ -31,6 +31,18 @@ function removeFromCart(cod) {
   saveCart(getCart().filter((i) => i.cod !== cod));
 }
 
+function setQty(cod, qty) {
+  const cart = getCart();
+  const item = cart.find((i) => i.cod === cod);
+  if (!item) return;
+  if (qty <= 0) {
+    saveCart(cart.filter((i) => i.cod !== cod));
+    return;
+  }
+  item.qty = qty;
+  saveCart(cart);
+}
+
 function cartCount() {
   return getCart().reduce((sum, i) => sum + i.qty, 0);
 }
