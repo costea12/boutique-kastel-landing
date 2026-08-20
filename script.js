@@ -143,7 +143,7 @@ if (document.getElementById('parfumCount') || document.getElementById('bauturiCo
     .catch(() => {});
 }
 
-// Newsletter form (visual only — will be wired to the n8n backend once it exists)
+// Newsletter form (visual only, will be wired to the n8n backend once it exists)
 const newsletterForm = document.getElementById('newsletterForm');
 const newsletterNote = document.getElementById('newsletterNote');
 
