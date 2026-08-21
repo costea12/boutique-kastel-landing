@@ -1067,7 +1067,7 @@ footer {
 .main-nav a.nav-active { color: var(--gold-bright); }
 
 /* ---------- Catalog listing (Parfumuri, etc.) ---------- */
-.catalog-main { background: var(--ivory); padding: clamp(2.5rem, 6vw, 4.5rem) 0 5rem; min-height: 60vh; }
+.catalog-main { background: var(--ivory); padding: clamp(2.5rem, 6vw, 4.5rem) var(--edge) 5rem; min-height: 60vh; }
 .catalog-hero { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
 .catalog-hero .kicker { color: var(--teal-mid); }
 .catalog-hero h1 {
@@ -1307,7 +1307,7 @@ footer {
 .catalog-empty { text-align: center; color: var(--ink-soft); padding: 3rem 0; }
 
 /* ---------- Product detail page ---------- */
-.product-main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 5rem; background: var(--ivory); min-height: 60vh; }
+.product-main { padding: clamp(2.5rem, 6vw, 4.5rem) var(--edge) 5rem; background: var(--ivory); min-height: 60vh; }
 .product-loading { text-align: center; color: var(--ink-soft); padding: 4rem 0; }
 .product-detail {
   display: grid;
@@ -1482,7 +1482,7 @@ footer {
 .back-link:hover { color: var(--teal-mid); }
 
 /* ---------- Cart page ---------- */
-.cart-main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 5rem; background: var(--ivory); min-height: 60vh; }
+.cart-main { padding: clamp(2.5rem, 6vw, 4.5rem) var(--edge) 5rem; background: var(--ivory); min-height: 60vh; }
 .cart-main h1 {
   font-family: var(--font-display);
   font-weight: 500;
