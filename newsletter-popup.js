@@ -1,5 +1,5 @@
 // Newsletter popup - shared across every page.
-// Shows once, 5 seconds after the site is first opened (whichever page
+// Shows once, 7 seconds after the site is first opened (whichever page
 // that happens to be), then remembers via localStorage so it never shows
 // again on that device, whether closed or subscribed to.
 (function () {
@@ -70,7 +70,7 @@
     setTimeout(() => {
       overlay.hidden = false;
       markSeen();
-    }, 5000);
+    }, 7000);
   }
 
   if (document.readyState === 'loading') {
