@@ -288,6 +288,92 @@ nav.main-nav a:hover::after { transform: scaleX(1); }
 .header-search-close:hover { color: var(--teal-mid); }
 .header-search-close svg { width: 18px; height: 18px; }
 
+.header-search-results {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 var(--edge) 0.6rem;
+  max-width: var(--container);
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.header-search-results[hidden] { display: none; }
+
+.header-search-item + .header-search-item { border-top: 1px solid rgba(22,51,47,0.08); }
+
+.header-search-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  padding: 0.6rem 0.3rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+}
+.header-search-link:hover,
+.header-search-link:focus-visible,
+.header-search-link.is-active {
+  background: var(--ivory-warm);
+}
+.header-search-link:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+
+.header-search-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.header-search-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header-search-brand {
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-search-thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: var(--ivory);
+  border-radius: 8px;
+}
+
+.header-search-seeall-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.65rem 0.3rem;
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--teal-mid);
+  cursor: pointer;
+  border-radius: 8px;
+}
+.header-search-seeall-btn:hover,
+.header-search-seeall-btn:focus-visible,
+.header-search-seeall-btn.is-active { background: var(--ivory-warm); }
+
+.header-search-empty,
+.header-search-loading {
+  padding: 1.2rem var(--edge);
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
