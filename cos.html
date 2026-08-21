@@ -32,11 +32,24 @@
       <a href="index.html#categorii">Diverse</a>
     </nav>
     <div class="header-icons">
+      <button aria-label="Caută" id="searchToggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
       <a href="cos.html" class="cart-btn nav-active" aria-label="Coș">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
         <span class="cart-badge" id="cartCount">0</span>
       </a>
     </div>
+  </div>
+
+  <div class="header-search" id="headerSearch" hidden>
+    <form class="header-search-form" id="headerSearchForm" role="search">
+      <svg class="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="headerSearchInput" placeholder="Caută un produs..." autocomplete="off">
+      <button type="button" class="header-search-close" id="headerSearchClose" aria-label="Închide căutarea">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+      </button>
+    </form>
   </div>
 </header>
 
@@ -116,6 +129,7 @@
 </footer>
 
 <script src="cart.js"></script>
+<script src="header-search.js"></script>
 <script>
 function formatPrice(p) { return `${p.toFixed(2).replace('.', ',')} Lei`; }
 

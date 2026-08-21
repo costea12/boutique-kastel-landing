@@ -183,6 +183,14 @@ function clearFilters() {
   applyFilters();
 }
 
+// Prefill from a header-search redirect (e.g. parfumuri.html?q=eros) landing here
+// from a page that has no catalog of its own.
+const initialQuery = new URLSearchParams(window.location.search).get('q');
+if (initialQuery) {
+  const searchBoxEl = document.getElementById('searchBox');
+  if (searchBoxEl) searchBoxEl.value = initialQuery;
+}
+
 fetch('catalog.json')
   .then((r) => r.json())
   .then((data) => {

@@ -35,7 +35,7 @@
     </nav>
 
     <div class="header-icons">
-      <button aria-label="Caută">
+      <button aria-label="Caută" id="searchToggle">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
       <button aria-label="Cont">
@@ -50,6 +50,16 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
+  </div>
+
+  <div class="header-search" id="headerSearch" hidden>
+    <form class="header-search-form" id="headerSearchForm" role="search">
+      <svg class="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="headerSearchInput" placeholder="Caută un produs..." autocomplete="off">
+      <button type="button" class="header-search-close" id="headerSearchClose" aria-label="Închide căutarea">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+      </button>
+    </form>
   </div>
 </header>
 
@@ -260,5 +270,6 @@
 
 <script src="cart.js"></script>
 <script src="script.js"></script>
+<script src="header-search.js"></script>
 </body>
 </html>
