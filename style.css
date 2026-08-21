@@ -1417,14 +1417,12 @@ footer {
 }
 .story-flourish { margin-bottom: 1.5rem; color: var(--gold); }
 .product-description {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.05rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.02rem;
   line-height: 1.7;
   color: var(--ink);
   margin-bottom: 1.8rem;
-  padding-left: 1.1rem;
-  border-left: 2px solid var(--gold);
 }
 .notes-pyramid {
   display: flex;
