@@ -1502,9 +1502,13 @@ footer {
   border-radius: 12px;
   padding: 0.9rem 1.1rem;
 }
+.cart-item-link { display: contents; }
+.cart-item-link img,
+.cart-item-link .cart-item-info { cursor: pointer; }
 .cart-item img { width: 64px; height: 64px; object-fit: contain; }
 .cart-item-info h4 { font-family: var(--font-display); font-weight: 500; font-size: 0.92rem; color: var(--ink); margin-bottom: 0.2rem; }
 .cart-item-info span { font-size: 0.8rem; color: var(--ink-soft); }
+.cart-item-link:hover .cart-item-info h4 { color: var(--teal-mid); }
 .cart-item-total { font-weight: 600; color: var(--ink); min-width: 5.5rem; text-align: right; }
 .cart-item-remove { background: none; border: none; color: var(--ink-soft); cursor: pointer; font-size: 1rem; }
 .cart-item-remove:hover { color: #a83a3a; }

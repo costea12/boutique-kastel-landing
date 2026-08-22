@@ -149,11 +149,13 @@ function renderCart() {
     <div class="cart-items">
       ${cart.map((item) => `
         <div class="cart-item">
-          <img src="${item.image}" alt="${item.name}">
-          <div class="cart-item-info">
-            <h4>${item.name}</h4>
-            <span>${formatPrice(item.price)} / buc</span>
-          </div>
+          <a href="produs.html?cod=${encodeURIComponent(item.cod)}" class="cart-item-link">
+            <img src="${item.image}" alt="${item.name}">
+            <div class="cart-item-info">
+              <h4>${item.name}</h4>
+              <span>${formatPrice(item.price)} / buc</span>
+            </div>
+          </a>
           <div class="qty-control qty-control-sm" data-cod="${item.cod}">
             <button type="button" class="qty-minus" aria-label="Scade cantitatea">−</button>
             <input type="number" class="qty-input" value="${item.qty}" min="1">
