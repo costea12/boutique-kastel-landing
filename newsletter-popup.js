@@ -1,6 +1,18 @@
 // Newsletter popup - shared across every page.
-// Shows 7 seconds after landing on any page, every time someone visits.
+// Shows once, 7 seconds after the site is first opened (whichever page
+// that happens to be), then stays quiet for the rest of that visit -
+// using sessionStorage so it comes back fresh on a new visit/tab, but
+// won't repeat while someone keeps browsing around the site.
 (function () {
+  const STORAGE_KEY = 'bkNewsletterPopupShown';
+  let alreadyShownThisVisit = false;
+  try { alreadyShownThisVisit = !!sessionStorage.getItem(STORAGE_KEY); } catch (e) {}
+  if (alreadyShownThisVisit) return;
+
+  function markShown() {
+    try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+  }
+
   function buildPopup() {
     const overlay = document.createElement('div');
     overlay.className = 'popup-overlay';
@@ -35,6 +47,7 @@
 
     function close() {
       overlay.hidden = true;
+      markShown();
     }
 
     closeBtn.addEventListener('click', close);
@@ -51,11 +64,13 @@
         <p class="popup-kicker kicker">Ofertă exclusivă</p>
         <p class="popup-confirm">Mulțumim! Vei fi primul care află despre ofertele noastre.</p>
       `;
+      markShown();
       setTimeout(close, 2200);
     });
 
     setTimeout(() => {
       overlay.hidden = false;
+      markShown();
     }, 7000);
   }
 
