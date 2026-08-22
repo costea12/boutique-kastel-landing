@@ -1,16 +1,22 @@
 // Newsletter popup - shared across every page.
-// Shows once, 7 seconds after the site is first opened (whichever page
-// that happens to be), then stays quiet for the rest of that visit -
-// using sessionStorage so it comes back fresh on a new visit/tab, but
-// won't repeat while someone keeps browsing around the site.
+// Shows once, 7 seconds after the site is first opened, then stays quiet
+// for 24 hours - no matter how many products/pages/tabs someone opens in
+// that time - using localStorage with a timestamp (not sessionStorage,
+// which resets per-tab and would reappear if a link opens in a new tab).
+// After 24 hours it's treated as a new visit and can show once again.
 (function () {
-  const STORAGE_KEY = 'bkNewsletterPopupShown';
-  let alreadyShownThisVisit = false;
-  try { alreadyShownThisVisit = !!sessionStorage.getItem(STORAGE_KEY); } catch (e) {}
-  if (alreadyShownThisVisit) return;
+  const STORAGE_KEY = 'bkNewsletterPopupShownAt';
+  const QUIET_PERIOD_MS = 24 * 60 * 60 * 1000;
+
+  let shownRecently = false;
+  try {
+    const lastShown = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
+    shownRecently = Date.now() - lastShown < QUIET_PERIOD_MS;
+  } catch (e) {}
+  if (shownRecently) return;
 
   function markShown() {
-    try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+    try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch (e) {}
   }
 
   function buildPopup() {
