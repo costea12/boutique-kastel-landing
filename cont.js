@@ -2,6 +2,15 @@
 (function () {
   if (!window.firebase || !firebase.auth) return;
 
+  // Order/address fields (city, name, notes, etc.) are typed by whoever owns
+  // the account - never trust them when building innerHTML, even though today
+  // only the owner can read their own orders. Escape before interpolating.
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
   const auth = firebase.auth();
   const db = firebase.firestore();
 
@@ -43,7 +52,8 @@
       'auth/email-already-in-use': 'Există deja un cont cu acest e-mail. Încearcă să te autentifici.',
       'auth/invalid-email': 'Adresa de e-mail nu este validă.',
       'auth/weak-password': 'Parola trebuie să aibă cel puțin 6 caractere.',
-      'auth/user-not-found': 'Nu există niciun cont cu acest e-mail.',
+      // Same wording for both - don't reveal whether an email is registered.
+      'auth/user-not-found': 'E-mail sau parolă incorectă.',
       'auth/wrong-password': 'E-mail sau parolă incorectă.',
       'auth/invalid-credential': 'E-mail sau parolă incorectă.',
       'auth/too-many-requests': 'Prea multe încercări. Încearcă din nou mai târziu.',
@@ -167,7 +177,7 @@
           const itemCount = (o.items || []).reduce(function (sum, i) { return sum + (i.qty || 1); }, 0);
           const date = o.createdAt ? o.createdAt.toDate().toLocaleDateString('ro-RO') : '';
           const status = statusLabels[o.status] || 'În așteptare confirmare';
-          const city = o.shipping && o.shipping.city ? ' · livrare în ' + o.shipping.city : '';
+          const city = o.shipping && o.shipping.city ? ' · livrare în ' + escapeHtml(o.shipping.city) : '';
           return '<div class="order-item">'
             + '<div class="order-item-top"><strong>' + (o.total ? o.total.toFixed(2).replace('.', ',') + ' Lei' : '') + '</strong><span class="order-status">' + status + '</span></div>'
             + '<div class="order-item-meta">' + itemCount + ' produs' + (itemCount === 1 ? '' : 'e') + (date ? ' · ' + date : '') + city + '</div>'

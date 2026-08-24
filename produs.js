@@ -2,6 +2,13 @@ function formatPrice(p) {
   return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
 }
 
+// Romania's SGR (Sistem Garanție-Returnare) deposit - flat 0,50 Lei per
+// returnable container (PET/glass/metal, 0.1-3L). Products carrying it have
+// "SGR" in their product name in the real POS data, which is how we detect it.
+function sgrPriceLine(name) {
+  return /\bSGR\b/i.test(name) ? '<span class="sgr-note">+ 0,50 Lei garanție SGR</span>' : '';
+}
+
 const CATEGORY_PAGES = { PRF: 'parfumuri.html', ALC: 'bauturi.html', DLC: 'dulciuri.html', CAF: 'cafea.html', ICP: 'ingrijire-corporala.html' };
 function categoryPage(category, niche) {
   if (category === 'PRF' && niche) return 'parfumuri-niche.html';
@@ -489,6 +496,7 @@ function renderProduct(p) {
         <p class="product-category">${categoryLabel(p)}</p>
         <h1>${p.name}</h1>
         <p class="product-price">${formatPrice(p.price)}</p>
+        ${sgrPriceLine(p.name)}
         ${getUnitPrice(p.name, p.price) ? `<p class="product-unit-price">${getUnitPrice(p.name, p.price)}</p>` : ''}
         <p class="product-stock ${p.stock > 0 ? 'in-stock' : 'out-of-stock'}">
           ${p.stock > 0 ? 'În stoc' : 'Stoc epuizat'}
@@ -563,6 +571,7 @@ function renderRelated(product, data) {
       <span class="product-brand">${p.brand}</span>
       <h3>${p.name}</h3>
       <span class="product-price">${formatPrice(p.price)}</span>
+      ${sgrPriceLine(p.name)}
     </a>
   `).join('');
   section.hidden = false;

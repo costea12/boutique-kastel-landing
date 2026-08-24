@@ -6,6 +6,13 @@ const PAGE_NICHE = document.body.dataset.niche || null; // "true" = niche only, 
 // normalizeText/fuzzyMatch/formatPrice etc. now live in search-utils.js
 // (loaded before this file), shared with header-search.js's suggestions.
 
+// Romania's SGR (Sistem Garanție-Returnare) deposit - flat 0,50 Lei per
+// returnable container (PET/glass/metal, 0.1-3L). Products carrying it have
+// "SGR" in their product name in the real POS data, which is how we detect it.
+function sgrPriceLine(name) {
+  return /\bSGR\b/i.test(name) ? '<span class="sgr-note">+ 0,50 Lei garanție SGR</span>' : '';
+}
+
 function renderGrid(products) {
   const grid = document.getElementById('productGrid');
   const empty = document.getElementById('emptyState');
@@ -27,6 +34,7 @@ function renderGrid(products) {
       <span class="product-brand">${p.brand}</span>
       <h3>${p.name}</h3>
       <span class="product-price">${formatPrice(p.price)}</span>
+      ${sgrPriceLine(p.name)}
     </a>
   `).join('');
 }

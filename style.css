@@ -1364,6 +1364,7 @@ footer {
   font-size: 0.95rem;
 }
 .catalog-empty { text-align: center; color: var(--ink-soft); padding: 3rem 0; }
+.sgr-note { display: block; font-size: 0.74rem; color: var(--ink-soft); margin-top: 0.15rem; }
 
 /* ---------- Product detail page ---------- */
 .product-main { padding: clamp(2.5rem, 6vw, 4.5rem) var(--edge) 5rem; background: var(--ivory); min-height: 60vh; }
