@@ -53,7 +53,7 @@ const DLC_TYPE_WORDS = new Set([
   'Acadele', 'Bomboane', 'Jeleuri', 'Jeleuiri', 'Biscuiti', 'Biscuti', 'Napolitane',
   'Caramele', 'Ceai', 'Crema', 'Budinca', 'Drajeuri', 'Foietaj', 'Fursecuri', 'Guma',
   'Trufe', 'Marshmallow', 'Mousse', 'Muffin', 'Prajitura', 'Sirop', 'Popcorn',
-  'Creioane', 'Dropsuri', 'Praline', 'Batoane', 'Ciocolata', 'Alune',
+  'Creioane', 'Dropsuri', 'Praline', 'Batoane', 'Ciocolata', 'Alune', 'Cafea',
 ]);
 
 function getDlcType(name) {
