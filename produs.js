@@ -2,7 +2,7 @@ function formatPrice(p) {
   return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
 }
 
-const CATEGORY_PAGES = { PRF: 'parfumuri.html', ALC: 'bauturi.html', DLC: 'dulciuri.html' };
+const CATEGORY_PAGES = { PRF: 'parfumuri.html', ALC: 'bauturi.html', DLC: 'dulciuri.html', CAF: 'cafea.html' };
 function categoryPage(category, niche) {
   if (category === 'PRF' && niche) return 'parfumuri-niche.html';
   return CATEGORY_PAGES[category] || 'index.html';
@@ -369,7 +369,7 @@ function renderAlcSpecs(p) {
 
 function renderSpecs(p) {
   if (p.category === 'ALC') return renderAlcSpecs(p);
-  if (p.category === 'DLC') return renderDlcSpecs(p);
+  if (p.category === 'DLC' || p.category === 'CAF') return renderDlcSpecs(p);
 
   const description = p.description || generatePerfumeDescription(p);
 
