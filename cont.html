@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coșul tău | Boutique Kastel</title>
+<title>Contul meu | Boutique Kastel</title>
+<meta name="description" content="Autentifică-te sau creează un cont Boutique Kastel pentru a-ți vedea istoricul comenzilor.">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#0a464e">
 <link rel="stylesheet" href="style.css">
@@ -23,26 +24,31 @@
       <span class="mark">BK</span>
       <span class="word">Boutique Kastel<span>DUTY FREE CONCEPT</span></span>
     </a>
+
     <nav class="main-nav">
       <a href="parfumuri.html">Parfumuri</a>
       <a href="parfumuri-niche.html">Parfumuri niche</a>
       <a href="ingrijire-corporala.html">Îngrijire corporală</a>
-      <a href="index.html#categorii">Băuturi</a>
+      <a href="bauturi.html">Băuturi</a>
       <a href="dulciuri.html">Dulciuri</a>
       <a href="cafea.html">Cafea</a>
     </nav>
+
     <div class="header-icons">
       <button aria-label="Caută" id="searchToggle">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
-      <a href="cont.html" aria-label="Cont" id="accountBtn">
+      <a href="cont.html" aria-label="Cont" id="accountBtn" class="nav-active">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.6-4 5-6 8-6s6.4 2 8 6"/></svg>
         <span class="tooltip">Autentificare</span>
       </a>
-      <a href="cos.html" class="cart-btn nav-active" aria-label="Coș">
+      <a href="cos.html" class="cart-btn" aria-label="Coș">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
         <span class="cart-badge" id="cartCount">0</span>
       </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Meniu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
   </div>
 
@@ -58,9 +64,85 @@
   </div>
 </header>
 
-<main class="cart-main section-inner">
-  <h1>Coșul tău</h1>
-  <div id="cartContents"></div>
+<div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="navClose" aria-label="Închide meniul">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+  </button>
+  <a href="parfumuri.html">Parfumuri</a>
+  <a href="parfumuri-niche.html">Parfumuri niche</a>
+  <a href="ingrijire-corporala.html">Îngrijire corporală</a>
+  <a href="bauturi.html">Băuturi</a>
+  <a href="dulciuri.html">Dulciuri</a>
+  <a href="cafea.html">Cafea</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="despre-noi.html">Despre noi</a>
+  <a href="cont.html">Contul meu</a>
+</div>
+
+<main class="account-main">
+  <div class="account-box">
+
+    <div id="accountLoggedOut">
+      <div class="account-tabs">
+        <button type="button" class="account-tab is-active" id="tabLogin">Autentificare</button>
+        <button type="button" class="account-tab" id="tabSignup">Creează cont</button>
+      </div>
+
+      <form id="loginForm" class="account-form">
+        <label>
+          <span>Adresă de e-mail</span>
+          <input type="email" id="loginEmail" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Parolă</span>
+          <input type="password" id="loginPassword" name="password" autocomplete="current-password" required>
+        </label>
+        <p class="account-error" id="loginError" hidden></p>
+        <button type="submit" class="btn btn-gold">Autentificare</button>
+      </form>
+
+      <form id="signupForm" class="account-form" hidden>
+        <label>
+          <span>Nume</span>
+          <input type="text" id="signupName" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          <span>Adresă de e-mail</span>
+          <input type="email" id="signupEmail" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Parolă</span>
+          <input type="password" id="signupPassword" name="password" autocomplete="new-password" minlength="6" required>
+        </label>
+        <label>
+          <span>Confirmă parola</span>
+          <input type="password" id="signupPasswordConfirm" name="passwordConfirm" autocomplete="new-password" minlength="6" required>
+        </label>
+        <label class="consent-check">
+          <input type="checkbox" id="signupConsent" required>
+          <span>Sunt de acord ca datele mele (nume, e-mail) să fie prelucrate pentru crearea și administrarea contului meu, conform <a href="confidentialitate.html" target="_blank" rel="noopener">Politicii de confidențialitate</a>.</span>
+        </label>
+        <p class="account-error" id="signupError" hidden></p>
+        <button type="submit" class="btn btn-gold">Creează cont</button>
+      </form>
+    </div>
+
+    <div id="accountLoggedIn" hidden>
+      <p class="kicker">Contul meu</p>
+      <h1 id="accountGreeting">Bună!</h1>
+      <p class="account-email" id="accountEmail"></p>
+
+      <div class="account-orders">
+        <h2>Istoric comenzi</h2>
+        <p class="account-orders-empty" id="ordersEmpty">Nu ai încă nicio comandă. Comenzile plasate online vor apărea aici.</p>
+        <div id="ordersList"></div>
+      </div>
+
+      <button type="button" class="btn btn-outline" id="logoutBtn">Deconectare</button>
+    </div>
+
+  </div>
 </main>
 
 <footer>
@@ -79,7 +161,7 @@
         <li><a href="parfumuri.html">Parfumuri</a></li>
         <li><a href="parfumuri-niche.html">Parfumuri niche</a></li>
         <li><a href="ingrijire-corporala.html">Îngrijire corporală</a></li>
-        <li><a href="index.html#categorii">Băuturi</a></li>
+        <li><a href="bauturi.html">Băuturi</a></li>
         <li><a href="dulciuri.html">Dulciuri</a></li>
         <li><a href="cafea.html">Cafea</a></li>
       </ul>
@@ -131,6 +213,7 @@
     </div>
   </div>
   <div class="footer-legal-entity">SUPREM BRAND S.R.L. · Str. Nicolae Bălcescu, Nr. 1, Municipiul Hunedoara, Jud. Hunedoara · CUI 33803839 · Reg. Com. J2014000935200 · Plătitoare de TVA</div>
+
   <div class="footer-creator">
     <p class="footer-creator-label">Site realizat de <strong>Alex Costea</strong></p>
     <p class="footer-creator-bio">Freelancer în automatizări, dezvoltare web și content creation.</p>
@@ -156,77 +239,23 @@
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
 <script src="firebase-config.js"></script>
 <script src="auth.js"></script>
+<script src="cont.js"></script>
 <script src="cart.js"></script>
 <script src="search-utils.js"></script>
 <script src="header-search.js"></script>
 <script src="newsletter-popup.js?v=3"></script>
 <script>
-function formatPrice(p) { return `${p.toFixed(2).replace('.', ',')} Lei`; }
-
-function renderCart() {
-  const cart = getCart();
-  const el = document.getElementById('cartContents');
-
-  if (cart.length === 0) {
-    el.innerHTML = '<p class="cart-empty">Coșul tău este gol. <a href="parfumuri.html">Vezi parfumurile</a></p>';
-    return;
-  }
-
-  el.innerHTML = `
-    <div class="cart-items">
-      ${cart.map((item) => `
-        <div class="cart-item">
-          <a href="produs.html?cod=${encodeURIComponent(item.cod)}" class="cart-item-link">
-            <img src="${item.image}" alt="${item.name}">
-            <div class="cart-item-info">
-              <h4>${item.name}</h4>
-              <span>${formatPrice(item.price)} / buc</span>
-            </div>
-          </a>
-          <div class="qty-control qty-control-sm" data-cod="${item.cod}">
-            <button type="button" class="qty-minus" aria-label="Scade cantitatea">−</button>
-            <input type="number" class="qty-input" value="${item.qty}" min="1">
-            <button type="button" class="qty-plus" aria-label="Crește cantitatea">+</button>
-          </div>
-          <span class="cart-item-total">${formatPrice(item.price * item.qty)}</span>
-          <button class="cart-item-remove" data-cod="${item.cod}" aria-label="Elimină">✕</button>
-        </div>
-      `).join('')}
-    </div>
-    <div class="cart-summary">
-      <span>Total</span>
-      <strong>${formatPrice(cartTotal())}</strong>
-    </div>
-    <button class="btn btn-cart" id="checkoutBtn" disabled title="Plata online va fi disponibilă în curând">Finalizează comanda</button>
-    <p class="cart-note">Plata online va fi disponibilă în curând. Pentru comenzi, sună la <a href="tel:0744377651">0744 377 651</a>.</p>
-  `;
-
-  el.querySelectorAll('.cart-item-remove').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      removeFromCart(btn.dataset.cod);
-      renderCart();
-    });
-  });
-
-  el.querySelectorAll('.qty-control').forEach((control) => {
-    const cod = control.dataset.cod;
-    const input = control.querySelector('.qty-input');
-    control.querySelector('.qty-minus').addEventListener('click', () => {
-      setQty(cod, Math.max(0, parseInt(input.value || '1') - 1));
-      renderCart();
-    });
-    control.querySelector('.qty-plus').addEventListener('click', () => {
-      setQty(cod, parseInt(input.value || '1') + 1);
-      renderCart();
-    });
-    input.addEventListener('change', () => {
-      setQty(cod, Math.max(0, parseInt(input.value || '1')));
-      renderCart();
-    });
-  });
-}
-
-renderCart();
+  const navToggle = document.getElementById('navToggle');
+  const navClose = document.getElementById('navClose');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+  const openMobileNav = () => { mobileNav.classList.add('open'); mobileNavBackdrop?.classList.add('open'); };
+  const closeMobileNav = () => { mobileNav.classList.remove('open'); mobileNavBackdrop?.classList.remove('open'); };
+  navToggle?.addEventListener('click', openMobileNav);
+  navClose?.addEventListener('click', closeMobileNav);
+  mobileNavBackdrop?.addEventListener('click', closeMobileNav);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMobileNav(); });
+  mobileNav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMobileNav));
 </script>
 </body>
 </html>
