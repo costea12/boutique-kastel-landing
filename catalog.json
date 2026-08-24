@@ -269,12 +269,12 @@
     "cod": "3616302023707",
     "name": "Burberry Goddess Body Lotion 200ml",
     "brand": "Burberry",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 219,
     "stock": 1,
     "bottle_image": "assets/products/3616302023707-bottle.jpg",
-    "niche": false
+    "description": "Loțiune de corp parfumată, gourmand, cu vanilie și lavandă. 200ml."
   },
   {
     "cod": "3616302020652",
@@ -311,14 +311,14 @@
   },
   {
     "cod": "3616302023721",
-    "name": "Burberry Goddess Gel Dus 200 Ml",
+    "name": "Burberry Goddess Gel Dus 200ml",
     "brand": "Burberry",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 199,
     "stock": 1,
     "bottle_image": "assets/products/3616302023721-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș parfumat, aromă gourmand cu vanilie și lavandă. 200ml."
   },
   {
     "cod": "3616304967122",
@@ -1263,14 +1263,14 @@
   },
   {
     "cod": "8411061841655",
-    "name": "Ch Good Girl Shower Gel 200ml",
+    "name": "Carolina Herrera Good Girl Shower Gel 200ml",
     "brand": "Carolina Herrera",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 199,
     "stock": 1,
     "bottle_image": "assets/products/8411061841655-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș parfumat cu note florale-orientale de migdale, cafea și vanilie. 200ml."
   },
   {
     "cod": "8411061972151",
@@ -1374,14 +1374,14 @@
   },
   {
     "cod": "8411061111369",
-    "name": "Ch La Bomba Ulei De Corp 150 Ml",
+    "name": "Carolina Herrera La Bomba Ulei de Corp 150ml",
     "brand": "Carolina Herrera",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 259,
     "stock": 1,
     "bottle_image": "assets/products/8411061111369-bottle.jpg",
-    "niche": false
+    "description": "Ulei de corp cu particule șimering, notă tropicală de pitaya și frangipani. 150ml."
   },
   {
     "cod": "3145891071702",
@@ -3441,14 +3441,14 @@
   },
   {
     "cod": "3616305847744",
-    "name": "Hb Boss Bottled Beyond Deo Spray 150ml",
+    "name": "Hugo Boss Bottled Beyond Deo Spray 150ml",
     "brand": "Hugo Boss",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 139,
     "stock": 1,
     "bottle_image": "assets/products/3616305847744-bottle.jpg",
-    "niche": false
+    "description": "Deodorant spray, din gama Bottled Beyond. 150ml."
   },
   {
     "cod": "3616305276308",
@@ -3474,14 +3474,14 @@
   },
   {
     "cod": "737052354996",
-    "name": "Hb Boss Bottled Deo Stick 75gr",
+    "name": "Hugo Boss Bottled Deo Stick 75gr",
     "brand": "Hugo Boss",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 119,
     "stock": 1,
     "bottle_image": "assets/products/737052354996-bottle.jpg",
-    "niche": false
+    "description": "Deodorant stick, notă fructat-lemnoasă de măr, scorțișoară și cedru. 75g."
   },
   {
     "cod": "3614229828535",
@@ -4574,14 +4574,14 @@
   },
   {
     "cod": "8435415007573",
-    "name": "Jpg Scandal Shower Gel 200ml",
+    "name": "Jean Paul Gaultier Scandal Shower Gel 200ml",
     "brand": "Jean Paul Gaultier",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 189,
     "stock": 1,
     "bottle_image": "assets/products/8435415007573-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș parfumat, notă gourmand-florală de miere. 200ml."
   },
   {
     "cod": "8435415058711",
@@ -5388,14 +5388,14 @@
   },
   {
     "cod": "3386460124201",
-    "name": "Mont Blanc Explorer Ultra Blue Deo Stick 75gr",
+    "name": "Montblanc Explorer Ultra Blue Deo Stick 75gr",
     "brand": "Montblanc",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 69,
     "stock": 1,
     "bottle_image": "assets/products/3386460124201-bottle.jpg",
-    "niche": false
+    "description": "Deodorant stick, notă lemnoasă-aromatică cu bergamotă și piper roz. 75g."
   },
   {
     "cod": "3386460074827",
@@ -5542,25 +5542,25 @@
   },
   {
     "cod": "7290113146600",
-    "name": "Moroccanoil Crema De Corp 360 Ml",
+    "name": "Moroccanoil Crema de Corp 360ml",
     "brand": "Moroccanoil",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 139,
     "stock": 1,
     "bottle_image": "assets/products/7290113146600-bottle.jpg",
-    "niche": false
+    "description": "Loțiune de corp ușoară cu ulei de argan și extract de aloe. 360ml."
   },
   {
     "cod": "7290013627001",
     "name": "Moroccanoil Gel Dus 200ml",
     "brand": "Moroccanoil",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 89,
     "stock": 1,
     "bottle_image": "assets/products/7290013627001-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș cu ulei de argan, formulă delicată care curăță și hrănește. 200ml."
   },
   {
     "cod": "7290113141230",
@@ -5575,14 +5575,14 @@
   },
   {
     "cod": "7290014344372",
-    "name": "Moroccanoil Ulei De Corp 100 Ml",
+    "name": "Moroccanoil Ulei de Corp 100ml",
     "brand": "Moroccanoil",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 239,
     "stock": 1,
     "bottle_image": "assets/products/7290014344372-bottle.jpg",
-    "niche": false
+    "description": "Ulei de corp uscat cu ulei de argan, măsline și avocado. 100ml."
   },
   {
     "cod": "8011003885657",
@@ -5696,14 +5696,14 @@
   },
   {
     "cod": "3423222081416",
-    "name": "Narciso Rodriguez All Of Me Gel Dus 200 Ml",
+    "name": "Narciso Rodriguez All Of Me Gel Dus 200ml",
     "brand": "Narciso Rodriguez",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 149,
     "stock": 2,
     "bottle_image": "assets/products/3423222081416-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș parfumat, spumă fină, parfum semnătură All Of Me. 200ml."
   },
   {
     "cod": "3423222092702",
@@ -6246,14 +6246,14 @@
   },
   {
     "cod": "3349668583218",
-    "name": "Pr Phantom Shower Gel 150ml",
+    "name": "Paco Rabanne Phantom Shower Gel 150ml",
     "brand": "Paco Rabanne",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 189,
     "stock": 1,
     "bottle_image": "assets/products/3349668583218-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș parfumat, prospețime de lămâie și lavandă cremoasă. 150ml."
   },
   {
     "cod": "8435137780075",
@@ -6554,36 +6554,36 @@
   },
   {
     "cod": "8719134187670",
-    "name": "Rituals Crema De Corp Ayurveda 220ml",
+    "name": "Rituals Crema de Corp Ayurveda 220ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 119,
     "stock": 2,
     "bottle_image": "assets/products/8719134187670-bottle.jpg",
-    "niche": false
+    "description": "Cremă de corp cu textură pufoasă, migdale dulci și trandafir indian. 220ml."
   },
   {
     "cod": "8719134187731",
-    "name": "Rituals Crema De Corp Sakura 220ml",
+    "name": "Rituals Crema de Corp Sakura 220ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 119,
     "stock": 2,
     "bottle_image": "assets/products/8719134187731-bottle.jpg",
-    "niche": false
+    "description": "Cremă de corp cu floare de cireș și lapte de orez, textură pufoasă. 220ml."
   },
   {
     "cod": "8719134202915",
     "name": "Rituals After Shave Balsam 100ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 129,
     "stock": 2,
     "bottle_image": "assets/products/8719134202915-bottle.jpg",
-    "niche": false
+    "description": "Balsam după bărbierit, calmant, fără alcool, cu ginseng. 100ml."
   },
   {
     "cod": "8719134198201",
@@ -6600,23 +6600,23 @@
     "cod": "8719134160802",
     "name": "Rituals Ayurveda Body Scrub 300gr",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 89,
     "stock": 2,
     "bottle_image": "assets/products/8719134160802-bottle.jpg",
-    "niche": false
+    "description": "Exfoliant de corp cu sare roz și migdale dulci. 300g."
   },
   {
     "cod": "8719134143348",
-    "name": "Rituals Ayurveda Crema De Maini 70ml",
+    "name": "Rituals Ayurveda Crema de Maini 70ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 3,
     "bottle_image": "assets/products/8719134143348-bottle.jpg",
-    "niche": false
+    "description": "Balsam de mâini cu migdale dulci și trandafir indian. 70ml."
   },
   {
     "cod": "8719134211221",
@@ -6666,34 +6666,34 @@
     "cod": "8719134152760",
     "name": "Rituals Body Scrub Karma 300gr",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 99,
     "stock": 2,
     "bottle_image": "assets/products/8719134152760-bottle.jpg",
-    "niche": false
+    "description": "Exfoliant de corp cu sare de mare, din gama Karma. 300g."
   },
   {
     "cod": "8719134149586",
-    "name": "Rituals Crema De Corp Ayurveda 220ml",
+    "name": "Rituals Crema de Corp Ayurveda 220ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 99,
     "stock": 1,
     "bottle_image": "assets/products/8719134149586-bottle.jpg",
-    "niche": false
+    "description": "Cremă de corp cu textură pufoasă, migdale dulci și trandafir indian. 220ml."
   },
   {
     "cod": "8719134152432",
-    "name": "Rituals Crema De Corp Karma 220 Ml",
+    "name": "Rituals Crema de Corp Karma 220ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 99,
     "stock": 2,
     "bottle_image": "assets/products/8719134152432-bottle.jpg",
-    "niche": false
+    "description": "Cremă de corp cu floare de lotus și ceai alb, textură pufoasă. 220ml."
   },
   {
     "cod": "8719134134711",
@@ -6710,12 +6710,12 @@
     "cod": "8719134200782",
     "name": "Rituals Deo Spray Jing 150ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 49,
     "stock": 3,
     "bottle_image": "assets/products/8719134200782-bottle.jpg",
-    "niche": false
+    "description": "Deodorant antiperspirant spray, notă de lotus și jujubă. 150ml."
   },
   {
     "cod": "8719134181838",
@@ -6741,36 +6741,36 @@
   },
   {
     "cod": "8719134160826",
-    "name": "Rituals Gel De Dus Ayurveda 200ml",
+    "name": "Rituals Gel de Dus Ayurveda 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 1,
     "bottle_image": "assets/products/8719134160826-bottle.jpg",
-    "niche": false
+    "description": "Ulei de duș, migdale dulci și trandafir indian. 200ml."
   },
   {
     "cod": "8719134155617",
     "name": "Rituals Gel Dus Amsterdam 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 5,
     "bottle_image": "assets/products/8719134155617-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș spumant, din Amsterdam Collection. 200ml."
   },
   {
     "cod": "8719134202380",
     "name": "Rituals Gel Dus Ayurveda 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 3,
     "bottle_image": "assets/products/8719134202380-bottle.jpg",
-    "niche": false
+    "description": "Ulei de duș, migdale dulci și trandafir indian. 200ml."
   },
   {
     "cod": "8719134190731",
@@ -6787,67 +6787,67 @@
     "cod": "8719134155778",
     "name": "Rituals Gel Dus Jing 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 2,
     "bottle_image": "assets/products/8719134155778-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș spumant, notă de lotus și jujubă. 200ml."
   },
   {
     "cod": "8719134199604",
     "name": "Rituals Gel Dus Jing 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 3,
     "bottle_image": "assets/products/8719134199604-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș spumant, notă de lotus și jujubă. 200ml."
   },
   {
     "cod": "8719134202502",
     "name": "Rituals Gel Dus Karma 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 4,
     "bottle_image": "assets/products/8719134202502-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș spumant, floare de lotus și ceai alb. 200ml."
   },
   {
     "cod": "8719134155822",
-    "name": "Rituals Gel Dus Mehr 200 Ml",
+    "name": "Rituals Gel Dus Mehr 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 3,
     "bottle_image": "assets/products/8719134155822-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș spumant, notă de portocală dulce și cedru. 200ml."
   },
   {
     "cod": "8719134155792",
-    "name": "Rituals Gel Dus Of Jing 200ml",
+    "name": "Rituals Gel Dus Jing 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 1,
     "bottle_image": "assets/products/8719134155792-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș spumant, notă de lotus și jujubă. 200ml."
   },
   {
     "cod": "8719134155860",
     "name": "Rituals Gel Dus Sakura 200ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 3,
     "bottle_image": "assets/products/8719134155860-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș spumant, floare de cireș și lapte de orez. 200ml."
   },
   {
     "cod": "8719134201789",
@@ -6941,45 +6941,45 @@
     "cod": "8719134171617",
     "name": "Rituals Sakura Body Lotion Mousse 150ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 69,
     "stock": 2,
     "bottle_image": "assets/products/8719134171617-bottle.jpg",
-    "niche": false
+    "description": "Spumă de corp hidratantă, floare de cireș și lapte de orez. 150ml."
   },
   {
     "cod": "8719134161328",
     "name": "Rituals Sakura Body Scrub 250gr",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 89,
     "stock": 1,
     "bottle_image": "assets/products/8719134161328-bottle.jpg",
-    "niche": false
+    "description": "Exfoliant de corp cu zahăr, floare de cireș și lapte de orez. 250g."
   },
   {
     "cod": "8719134143324",
-    "name": "Rituals Sakura Crema De Maini 70ml",
+    "name": "Rituals Sakura Crema de Maini 70ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 59,
     "stock": 1,
     "bottle_image": "assets/products/8719134143324-bottle.jpg",
-    "niche": false
+    "description": "Balsam de mâini cu floare de cireș și lapte de orez. 70ml."
   },
   {
     "cod": "8719134164138",
-    "name": "Rituals Sapun De Maini Amsterdam 300ml",
+    "name": "Rituals Sapun de Maini Amsterdam 300ml",
     "brand": "Rituals",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 79,
     "stock": 1,
     "bottle_image": "assets/products/8719134164138-bottle.jpg",
-    "niche": false
+    "description": "Săpun lichid de mâini, din Amsterdam Collection. 300ml."
   },
   {
     "cod": "8719134164329",
@@ -7370,12 +7370,12 @@
     "cod": "768614155270",
     "name": "Shiseido Ginza Deo Spray 100ml",
     "brand": "Shiseido",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 169,
     "stock": 3,
     "bottle_image": "assets/products/768614155270-bottle.jpg",
-    "niche": false
+    "description": "Deodorant spray parfumat, din colecția Ginza. 100ml."
   },
   {
     "cod": "768614155225",
@@ -7414,12 +7414,12 @@
     "cod": "768614155263",
     "name": "Shiseido Ginza Shower Cream 200ml",
     "brand": "Shiseido",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 179,
     "stock": 3,
     "bottle_image": "assets/products/768614155263-bottle.jpg",
-    "niche": false
+    "description": "Cremă de duș parfumată, se transformă într-o spumă fină. 200ml."
   },
   {
     "cod": "768614102021",
@@ -8448,12 +8448,12 @@
     "cod": "8011003810017",
     "name": "Versace Eros Pour Homme After Shave 100ml",
     "brand": "Versace",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 299,
     "stock": 1,
     "bottle_image": "assets/products/8011003810017-bottle.jpg",
-    "niche": false
+    "description": "After shave balsam calmant, notă acvatică-lemnoasă. 100ml."
   },
   {
     "cod": "8011003861224",
@@ -9062,14 +9062,14 @@
   },
   {
     "cod": "3423222125059",
-    "name": "Z&v Zadig Gel Dus 200 Ml",
+    "name": "Zadig & Voltaire Zadig Gel Dus 200ml",
     "brand": "Zadig & Voltaire",
-    "category": "PRF",
-    "category_label": "Parfumuri",
+    "category": "ICP",
+    "category_label": "Îngrijire corporală",
     "price": 159,
     "stock": 1,
     "bottle_image": "assets/products/3423222125059-bottle.jpg",
-    "niche": false
+    "description": "Gel de duș parfumat, notă lemnoasă-florală. 200ml."
   },
   {
     "cod": "6290171074205",
