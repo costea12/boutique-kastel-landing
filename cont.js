@@ -69,6 +69,7 @@
     const password = document.getElementById('signupPassword').value;
     const passwordConfirm = document.getElementById('signupPasswordConfirm').value;
     const consent = document.getElementById('signupConsent').checked;
+    const newsletterOptIn = document.getElementById('signupNewsletter').checked;
 
     if (password !== passwordConfirm) {
       signupError.textContent = 'Parolele nu coincid.';
@@ -89,6 +90,8 @@
             email: email,
             consentAt: firebase.firestore.FieldValue.serverTimestamp(),
             createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+            newsletterOptIn: newsletterOptIn,
+            newsletterOptInAt: newsletterOptIn ? firebase.firestore.FieldValue.serverTimestamp() : null,
           });
         }).then(function () {
           // onAuthStateChanged can fire before updateProfile resolves, with a
