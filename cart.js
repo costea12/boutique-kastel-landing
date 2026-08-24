@@ -43,6 +43,10 @@ function setQty(cod, qty) {
   saveCart(cart);
 }
 
+function clearCart() {
+  saveCart([]);
+}
+
 function cartCount() {
   return getCart().reduce((sum, i) => sum + i.qty, 0);
 }

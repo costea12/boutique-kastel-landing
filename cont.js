@@ -121,9 +121,16 @@
           return;
         }
         ordersEmpty.hidden = true;
+        const statusLabels = { noua: 'În așteptare confirmare', confirmata: 'Confirmată', livrata: 'Livrată', anulata: 'Anulată' };
         ordersList.innerHTML = snap.docs.map(function (doc) {
           const o = doc.data();
-          return '<div class="order-item"><strong>' + (o.total ? o.total + ' Lei' : '') + '</strong></div>';
+          const itemCount = (o.items || []).reduce(function (sum, i) { return sum + (i.qty || 1); }, 0);
+          const date = o.createdAt ? o.createdAt.toDate().toLocaleDateString('ro-RO') : '';
+          const status = statusLabels[o.status] || 'În așteptare confirmare';
+          return '<div class="order-item">'
+            + '<div class="order-item-top"><strong>' + (o.total ? o.total.toFixed(2).replace('.', ',') + ' Lei' : '') + '</strong><span class="order-status">' + status + '</span></div>'
+            + '<div class="order-item-meta">' + itemCount + ' produs' + (itemCount === 1 ? '' : 'e') + (date ? ' · ' + date : '') + '</div>'
+            + '</div>';
         }).join('');
       })
       .catch(function () {

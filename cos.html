@@ -156,7 +156,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
 <script src="firebase-config.js"></script>
 <script src="auth.js"></script>
-<script src="cart.js"></script>
+<script src="cart.js?v=2"></script>
 <script src="search-utils.js"></script>
 <script src="header-search.js"></script>
 <script src="newsletter-popup.js?v=3"></script>
@@ -197,9 +197,11 @@ function renderCart() {
       <span>Total</span>
       <strong>${formatPrice(cartTotal())}</strong>
     </div>
-    <button class="btn btn-cart" id="checkoutBtn" disabled title="Plata online va fi disponibilă în curând">Finalizează comanda</button>
-    <p class="cart-note">Plata online va fi disponibilă în curând. Pentru comenzi, sună la <a href="tel:0744377651">0744 377 651</a>.</p>
+    <button class="btn btn-cart" id="checkoutBtn">Finalizează comanda</button>
+    <p class="cart-note">Plata online va fi disponibilă în curând - comanda ta va fi confirmată telefonic. Trebuie să fii autentificat pentru a plasa o comandă. Sau sună direct la <a href="tel:0744377651">0744 377 651</a>.</p>
   `;
+
+  document.getElementById('checkoutBtn')?.addEventListener('click', handleCheckout);
 
   el.querySelectorAll('.cart-item-remove').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -223,6 +225,43 @@ function renderCart() {
       setQty(cod, Math.max(0, parseInt(input.value || '1')));
       renderCart();
     });
+  });
+}
+
+function handleCheckout() {
+  const user = firebase.auth().currentUser;
+  if (!user) {
+    // Not logged in - an account is required to place an order. Cart stays in
+    // localStorage, so nothing is lost while they log in / sign up.
+    window.location.href = 'cont.html';
+    return;
+  }
+
+  const cart = getCart();
+  if (cart.length === 0) return;
+
+  const btn = document.getElementById('checkoutBtn');
+  if (btn) { btn.disabled = true; btn.textContent = 'Se trimite...'; }
+
+  firebase.firestore().collection('users').doc(user.uid).collection('orders').add({
+    items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty })),
+    total: cartTotal(),
+    status: 'noua',
+    customerName: user.displayName || '',
+    customerEmail: user.email,
+    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+  }).then(function () {
+    clearCart();
+    document.getElementById('cartContents').innerHTML = `
+      <div class="cart-confirm-block">
+        <h2>Comanda a fost înregistrată!</h2>
+        <p>Îți mulțumim! Te vom contacta telefonic pentru confirmarea comenzii și modalitatea de plată.</p>
+        <a href="cont.html" class="btn btn-outline">Vezi istoricul comenzilor</a>
+      </div>
+    `;
+  }).catch(function () {
+    if (btn) { btn.disabled = false; btn.textContent = 'Finalizează comanda'; }
+    alert('A apărut o eroare la trimiterea comenzii. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
   });
 }
 
