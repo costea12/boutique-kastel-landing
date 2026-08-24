@@ -815,6 +815,30 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   min-height: 1.2em;
 }
 
+.consent-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-align: left;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.consent-check input[type="checkbox"] {
+  margin-top: 0.2rem;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  accent-color: var(--gold-bright);
+  cursor: pointer;
+}
+.newsletter-form .consent-check {
+  flex-basis: 100%;
+  color: var(--white-faint);
+}
+.newsletter-form .consent-check a { color: var(--white-dim); text-decoration: underline; }
+.newsletter-form .consent-check a:hover { color: var(--gold-bright); }
+
 /* ---------- Footer ---------- */
 
 footer {
@@ -1674,6 +1698,9 @@ footer {
 }
 .popup-form input:focus { border-color: var(--gold); }
 .popup-form .btn { justify-content: center; }
+.popup-form .consent-check { color: var(--ink-soft); }
+.popup-form .consent-check a { color: var(--ink); text-decoration: underline; }
+.popup-form .consent-check a:hover { color: var(--gold); }
 
 .popup-note {
   margin-top: 0.9rem;

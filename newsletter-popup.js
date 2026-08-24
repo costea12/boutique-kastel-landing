@@ -35,6 +35,10 @@
           <p>Abonează-te la newsletter și fii primul care află despre reduceri, colecții noi și oferte exclusive Boutique Kastel.</p>
           <form class="popup-form">
             <input type="email" id="popupEmail" name="email" autocomplete="email" placeholder="Adresa ta de email" required>
+            <label class="consent-check">
+              <input type="checkbox" id="popupConsent" required>
+              <span>Sunt de acord ca adresa mea de e-mail să fie prelucrată pentru a primi acest newsletter, conform <a href="confidentialitate.html" target="_blank" rel="noopener">Politicii de confidențialitate</a>.</span>
+            </label>
             <button type="submit" class="btn btn-gold">Abonează-te</button>
           </form>
           <p class="popup-note">Fără spam. Te poți dezabona oricând.</p>
