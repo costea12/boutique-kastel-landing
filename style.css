@@ -1593,6 +1593,16 @@ footer {
 }
 .cart-note { text-align: center; font-size: 0.82rem; color: var(--ink-soft); margin-top: 0.9rem; }
 .cart-note a { color: var(--teal-mid); }
+.cart-address-warning {
+  text-align: center;
+  font-size: 0.84rem;
+  color: #b23a3a;
+  background: rgba(178,58,58,0.08);
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  margin-top: 0.9rem;
+}
+.cart-address-warning a { color: #b23a3a; text-decoration: underline; }
 
 .cart-confirm-block { text-align: center; padding: 2.5rem 0; }
 .cart-confirm-block h2 {
@@ -1801,6 +1811,21 @@ footer {
   color: var(--ink);
 }
 .account-email { color: var(--ink-soft); font-size: 0.88rem; margin-top: 0.3rem; }
+
+.account-address {
+  margin-top: 2.2rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(22,51,47,0.1);
+}
+.account-address h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+.account-address-note { color: var(--ink-soft); font-size: 0.82rem; margin-bottom: 1.2rem; }
+.account-address-saved { color: var(--teal-mid); font-size: 0.84rem; }
 
 .account-orders {
   margin: 2.2rem 0;

@@ -243,14 +243,34 @@ function handleCheckout() {
   const btn = document.getElementById('checkoutBtn');
   if (btn) { btn.disabled = true; btn.textContent = 'Se trimite...'; }
 
-  firebase.firestore().collection('users').doc(user.uid).collection('orders').add({
-    items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty })),
-    total: cartTotal(),
-    status: 'noua',
-    customerName: user.displayName || '',
-    customerEmail: user.email,
-    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-  }).then(function () {
+  const db = firebase.firestore();
+  db.collection('users').doc(user.uid).get().then(function (doc) {
+    const d = doc.data() || {};
+    const required = ['shipName', 'shipPhone', 'shipAddress', 'shipCity', 'shipCounty', 'shipPostalCode', 'shipCountry'];
+    const hasAddress = required.every((k) => d[k] && d[k].trim());
+
+    if (!hasAddress) {
+      if (btn) { btn.disabled = false; btn.textContent = 'Finalizează comanda'; }
+      document.getElementById('cartContents').insertAdjacentHTML('beforeend',
+        '<p class="cart-address-warning">Completează adresa de livrare din <a href="cont.html">contul tău</a> înainte de a plasa comanda.</p>');
+      return null;
+    }
+
+    return db.collection('users').doc(user.uid).collection('orders').add({
+      items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty })),
+      total: cartTotal(),
+      status: 'noua',
+      customerName: user.displayName || '',
+      customerEmail: user.email,
+      shipping: {
+        name: d.shipName, phone: d.shipPhone, address: d.shipAddress,
+        city: d.shipCity, county: d.shipCounty, postalCode: d.shipPostalCode,
+        country: d.shipCountry, notes: d.shipNotes || '',
+      },
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    });
+  }).then(function (ref) {
+    if (!ref) return;
     clearCart();
     document.getElementById('cartContents').innerHTML = `
       <div class="cart-confirm-block">

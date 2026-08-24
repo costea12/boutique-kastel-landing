@@ -22,6 +22,9 @@
   const ordersList = document.getElementById('ordersList');
   const logoutBtn = document.getElementById('logoutBtn');
 
+  const addressForm = document.getElementById('addressForm');
+  const addressSaved = document.getElementById('addressSaved');
+
   function showTab(tab) {
     const isLogin = tab === 'login';
     tabLogin.classList.toggle('is-active', isLogin);
@@ -110,6 +113,43 @@
     auth.signOut();
   });
 
+  function loadAddress(user) {
+    db.collection('users').doc(user.uid).get().then(function (doc) {
+      const d = doc.data() || {};
+      document.getElementById('shipName').value = d.shipName || user.displayName || '';
+      document.getElementById('shipPhone').value = d.shipPhone || '';
+      document.getElementById('shipAddress').value = d.shipAddress || '';
+      document.getElementById('shipCity').value = d.shipCity || '';
+      document.getElementById('shipCounty').value = d.shipCounty || '';
+      document.getElementById('shipPostalCode').value = d.shipPostalCode || '';
+      document.getElementById('shipCountry').value = d.shipCountry || 'România';
+      document.getElementById('shipNotes').value = d.shipNotes || '';
+    });
+  }
+
+  addressForm?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const user = auth.currentUser;
+    if (!user) return;
+    addressSaved.hidden = true;
+
+    const address = {
+      shipName: document.getElementById('shipName').value.trim(),
+      shipPhone: document.getElementById('shipPhone').value.trim(),
+      shipAddress: document.getElementById('shipAddress').value.trim(),
+      shipCity: document.getElementById('shipCity').value.trim(),
+      shipCounty: document.getElementById('shipCounty').value.trim(),
+      shipPostalCode: document.getElementById('shipPostalCode').value.trim(),
+      shipCountry: document.getElementById('shipCountry').value.trim(),
+      shipNotes: document.getElementById('shipNotes').value.trim(),
+    };
+
+    db.collection('users').doc(user.uid).set(address, { merge: true }).then(function () {
+      addressSaved.hidden = false;
+      setTimeout(function () { addressSaved.hidden = true; }, 2500);
+    });
+  });
+
   function loadOrders(uid) {
     db.collection('users').doc(uid).collection('orders')
       .orderBy('createdAt', 'desc')
@@ -127,9 +167,10 @@
           const itemCount = (o.items || []).reduce(function (sum, i) { return sum + (i.qty || 1); }, 0);
           const date = o.createdAt ? o.createdAt.toDate().toLocaleDateString('ro-RO') : '';
           const status = statusLabels[o.status] || 'În așteptare confirmare';
+          const city = o.shipping && o.shipping.city ? ' · livrare în ' + o.shipping.city : '';
           return '<div class="order-item">'
             + '<div class="order-item-top"><strong>' + (o.total ? o.total.toFixed(2).replace('.', ',') + ' Lei' : '') + '</strong><span class="order-status">' + status + '</span></div>'
-            + '<div class="order-item-meta">' + itemCount + ' produs' + (itemCount === 1 ? '' : 'e') + (date ? ' · ' + date : '') + '</div>'
+            + '<div class="order-item-meta">' + itemCount + ' produs' + (itemCount === 1 ? '' : 'e') + (date ? ' · ' + date : '') + city + '</div>'
             + '</div>';
         }).join('');
       })
@@ -144,6 +185,7 @@
     loggedInView.hidden = false;
     accountGreeting.textContent = 'Bună, ' + (user.displayName || 'acolo') + '!';
     accountEmail.textContent = user.email;
+    loadAddress(user);
     loadOrders(user.uid);
   }
 

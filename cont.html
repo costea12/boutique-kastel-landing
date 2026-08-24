@@ -137,6 +137,47 @@
       <h1 id="accountGreeting">Bună!</h1>
       <p class="account-email" id="accountEmail"></p>
 
+      <div class="account-address">
+        <h2>Adresă de livrare</h2>
+        <p class="account-address-note">Aceste date sunt folosite pentru livrarea comenzilor. Le poți completa sau actualiza oricând.</p>
+        <form id="addressForm" class="account-form">
+          <label>
+            <span>Nume destinatar</span>
+            <input type="text" id="shipName" name="shipName" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Telefon</span>
+            <input type="tel" id="shipPhone" name="shipPhone" autocomplete="tel" required>
+          </label>
+          <label>
+            <span>Adresă (stradă, număr, bloc/apt.)</span>
+            <input type="text" id="shipAddress" name="shipAddress" autocomplete="street-address" required>
+          </label>
+          <label>
+            <span>Localitate</span>
+            <input type="text" id="shipCity" name="shipCity" autocomplete="address-level2" required>
+          </label>
+          <label>
+            <span>Județ</span>
+            <input type="text" id="shipCounty" name="shipCounty" autocomplete="address-level1" required>
+          </label>
+          <label>
+            <span>Cod poștal</span>
+            <input type="text" id="shipPostalCode" name="shipPostalCode" autocomplete="postal-code" required>
+          </label>
+          <label>
+            <span>Țară</span>
+            <input type="text" id="shipCountry" name="shipCountry" autocomplete="country-name" value="România" required>
+          </label>
+          <label>
+            <span>Observații livrare (opțional)</span>
+            <input type="text" id="shipNotes" name="shipNotes" placeholder="ex: sunați înainte de livrare">
+          </label>
+          <p class="account-address-saved" id="addressSaved" hidden>Adresa a fost salvată.</p>
+          <button type="submit" class="btn btn-gold">Salvează adresa</button>
+        </form>
+      </div>
+
       <div class="account-orders">
         <h2>Istoric comenzi</h2>
         <p class="account-orders-empty" id="ordersEmpty">Nu ai încă nicio comandă. Comenzile plasate online vor apărea aici.</p>
