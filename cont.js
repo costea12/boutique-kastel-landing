@@ -176,11 +176,16 @@
           const o = doc.data();
           const itemCount = (o.items || []).reduce(function (sum, i) { return sum + (i.qty || 1); }, 0);
           const date = o.createdAt ? o.createdAt.toDate().toLocaleDateString('ro-RO') : '';
+          const isPending = !o.status || o.status === 'noua';
           const status = statusLabels[o.status] || 'În așteptare confirmare';
           const city = o.shipping && o.shipping.city ? ' · livrare în ' + escapeHtml(o.shipping.city) : '';
+          const cancelBtn = isPending
+            ? '<button type="button" class="order-cancel-btn" data-order-id="' + doc.id + '">Anulează comanda</button>'
+            : '';
           return '<div class="order-item">'
             + '<div class="order-item-top"><strong>' + (o.total ? o.total.toFixed(2).replace('.', ',') + ' Lei' : '') + '</strong><span class="order-status">' + status + '</span></div>'
             + '<div class="order-item-meta">' + itemCount + ' produs' + (itemCount === 1 ? '' : 'e') + (date ? ' · ' + date : '') + city + '</div>'
+            + cancelBtn
             + '</div>';
         }).join('');
       })
@@ -189,6 +194,29 @@
         ordersEmpty.hidden = false;
       });
   }
+
+  // Event delegation - order items get re-rendered on every loadOrders() call,
+  // so a single listener on the (stable) container is simpler than re-binding
+  // a fresh listener to each button every time.
+  ordersList?.addEventListener('click', function (e) {
+    const btn = e.target.closest('.order-cancel-btn');
+    if (!btn) return;
+    const user = auth.currentUser;
+    if (!user) return;
+
+    if (!window.confirm('Ești sigur că vrei să anulezi această comandă?')) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Se anulează...';
+    db.collection('users').doc(user.uid).collection('orders').doc(btn.dataset.orderId)
+      .update({ status: 'anulata', canceledAt: firebase.firestore.FieldValue.serverTimestamp() })
+      .then(function () { loadOrders(user.uid); })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = 'Anulează comanda';
+        alert('Nu am putut anula comanda. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
+      });
+  });
 
   function showLoggedIn(user) {
     loggedOutView.hidden = true;

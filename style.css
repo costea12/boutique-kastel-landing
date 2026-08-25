@@ -1866,6 +1866,19 @@ footer {
 .order-item-top { display: flex; justify-content: space-between; align-items: center; }
 .order-status { font-size: 0.76rem; color: var(--teal-mid); }
 .order-item-meta { color: var(--ink-soft); font-size: 0.8rem; margin-top: 0.2rem; }
+.order-cancel-btn {
+  margin-top: 0.6rem;
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: #b23a3a;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.order-cancel-btn:hover { color: #8f2e2e; }
+.order-cancel-btn:disabled { color: var(--ink-soft); cursor: default; text-decoration: none; }
 
 .header-icons a.is-logged-in { color: var(--gold-bright); }
 
