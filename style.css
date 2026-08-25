@@ -1101,6 +1101,21 @@ footer {
   background: rgba(255,255,255,0.15);
   margin: 0.3rem 0;
 }
+.mobile-nav-help { display: flex; flex-direction: column; gap: 0.6rem; }
+.mobile-nav-help-title {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+}
+.mobile-nav-help a {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--white-dim);
+  line-height: 1.4;
+}
+.mobile-nav-help a:hover { color: var(--gold-bright); }
 
 /* ---------- Cart icon (header) ---------- */
 .cart-btn {
