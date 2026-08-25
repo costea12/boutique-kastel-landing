@@ -114,6 +114,24 @@ function formatPriceHome(p) {
   return p != null ? `${p.toFixed(2).replace('.', ',')} Lei` : '';
 }
 
+function sgrPriceLineHome(name) {
+  return /\bSGR\b/i.test(name) ? '<span class="sgr-note">+ 0,50 Lei garanție SGR</span>' : '';
+}
+
+function getUnitPriceHome(name, price) {
+  if (price == null) return null;
+  const match = name.match(/(\d+(?:[.,]\d+)?)\s*(ml|l|cl|gr|kg)(?=[^a-zA-Z]|$)/i);
+  if (!match) return null;
+  const amount = parseFloat(match[1].replace(',', '.'));
+  const unit = match[2].toLowerCase();
+  if (unit === 'ml' || unit === 'l' || unit === 'cl') {
+    const liters = unit === 'ml' ? amount / 1000 : unit === 'cl' ? amount / 100 : amount;
+    return `${Math.round(price / liters).toLocaleString('ro-RO')} Lei/L`;
+  }
+  const kg = unit === 'gr' ? amount / 1000 : amount;
+  return `${Math.round(price / kg).toLocaleString('ro-RO')} Lei/Kg`;
+}
+
 if (document.getElementById('parfumCount') || document.getElementById('bauturiCount') || document.getElementById('recommendedGrid')) {
   fetch('catalog.json')
     .then((r) => r.json())
@@ -133,12 +151,16 @@ if (document.getElementById('parfumCount') || document.getElementById('bauturiCo
         <a class="product-card" href="produs.html?cod=${encodeURIComponent(p.cod)}">
           <div class="product-card-img">
             <img src="${p.bottle_image}" alt="${p.name}" loading="lazy">
+            ${window.favoriteButtonHtml ? window.favoriteButtonHtml(p.cod) : ''}
           </div>
           <span class="product-brand">${p.brand}</span>
           <h3>${p.name}</h3>
           <span class="product-price">${formatPriceHome(p.price)}</span>
+          ${getUnitPriceHome(p.name, p.price) ? `<span class="product-unit-price-sm">${getUnitPriceHome(p.name, p.price)}</span>` : ''}
+          ${sgrPriceLineHome(p.name)}
         </a>
       `).join('');
+      if (window.syncFavoriteHearts) window.syncFavoriteHearts();
     })
     .catch(() => {});
 }

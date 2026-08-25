@@ -34,6 +34,17 @@
   const addressForm = document.getElementById('addressForm');
   const addressSaved = document.getElementById('addressSaved');
 
+  const favoritesEmpty = document.getElementById('favoritesEmpty');
+  const favoritesList = document.getElementById('favoritesList');
+  let catalogCache = null;
+  function getCatalog() {
+    if (catalogCache) return Promise.resolve(catalogCache);
+    return fetch('catalog.json').then(function (r) { return r.json(); }).then(function (data) {
+      catalogCache = data;
+      return data;
+    });
+  }
+
   function showTab(tab) {
     const isLogin = tab === 'login';
     tabLogin.classList.toggle('is-active', isLogin);
@@ -123,6 +134,30 @@
     auth.signOut();
   });
 
+  function renderFavorites(cods) {
+    if (!cods || !cods.length) {
+      favoritesEmpty.hidden = false;
+      favoritesList.innerHTML = '';
+      return;
+    }
+    getCatalog().then(function (data) {
+      const products = cods.map(function (c) { return data.find(function (p) { return p.cod === c; }); }).filter(Boolean);
+      if (!products.length) {
+        favoritesEmpty.hidden = false;
+        favoritesList.innerHTML = '';
+        return;
+      }
+      favoritesEmpty.hidden = true;
+      favoritesList.innerHTML = products.map(function (p) {
+        return '<a class="favorites-item" href="produs.html?cod=' + encodeURIComponent(p.cod) + '">'
+          + '<img src="' + p.bottle_image + '" alt="' + escapeHtml(p.name) + '" loading="lazy">'
+          + '<span class="favorites-item-name">' + escapeHtml(p.name) + '</span>'
+          + '<span class="favorites-item-price">' + p.price.toFixed(2).replace('.', ',') + ' Lei</span>'
+          + '</a>';
+      }).join('');
+    });
+  }
+
   function loadAddress(user) {
     db.collection('users').doc(user.uid).get().then(function (doc) {
       const d = doc.data() || {};
@@ -134,6 +169,7 @@
       document.getElementById('shipPostalCode').value = d.shipPostalCode || '';
       document.getElementById('shipCountry').value = d.shipCountry || 'România';
       document.getElementById('shipNotes').value = d.shipNotes || '';
+      renderFavorites(d.favorites || []);
     });
   }
 
@@ -226,6 +262,13 @@
     accountEmail.textContent = user.email;
     loadAddress(user);
     loadOrders(user.uid);
+
+    // The section is hidden until login resolves, so a direct #favorites
+    // link (from the header heart icon) needs a manual scroll here - the
+    // browser's automatic anchor-scroll already ran once, before this.
+    if (window.location.hash === '#favorites') {
+      document.getElementById('favorites')?.scrollIntoView();
+    }
   }
 
   auth.onAuthStateChanged(function (user) {

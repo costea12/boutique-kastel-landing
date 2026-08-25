@@ -45,15 +45,21 @@ function getAbv(name) {
 
 function getUnitPrice(name, price) {
   if (price == null) return null;
-  const match = name.match(/(\d+(?:[.,]\d+)?)\s*(ml|gr)\b/i);
+  // Most bottles/cans in the real data are labeled in liters ("0.7l"), not
+  // milliliters - the lookahead (instead of \b) is needed because names like
+  // "0.7l40% SGR" have no space/boundary between the unit and the next number.
+  const match = name.match(/(\d+(?:[.,]\d+)?)\s*(ml|l|cl|gr|kg)(?=[^a-zA-Z]|$)/i);
   if (!match) return null;
 
-  const volume = parseFloat(match[1].replace(',', '.'));
+  const amount = parseFloat(match[1].replace(',', '.'));
   const unit = match[2].toLowerCase();
-  const perKilo = price / (volume / 1000);
-  const formatted = Math.round(perKilo).toLocaleString('ro-RO');
 
-  return unit === 'ml' ? `${formatted} Lei/L` : `${formatted} Lei/Kg`;
+  if (unit === 'ml' || unit === 'l' || unit === 'cl') {
+    const liters = unit === 'ml' ? amount / 1000 : unit === 'cl' ? amount / 100 : amount;
+    return `${Math.round(price / liters).toLocaleString('ro-RO')} Lei/L`;
+  }
+  const kg = unit === 'gr' ? amount / 1000 : amount;
+  return `${Math.round(price / kg).toLocaleString('ro-RO')} Lei/Kg`;
 }
 
 const DLC_TYPE_WORDS = new Set([
@@ -480,6 +486,7 @@ function renderProduct(p) {
       <div class="product-gallery">
         <div class="product-gallery-main">
           <img id="mainImg" src="${images[0]}" alt="${p.name}">
+          ${window.favoriteButtonHtml ? window.favoriteButtonHtml(p.cod) : ''}
         </div>
         ${images.length > 1 ? `
           <div class="product-gallery-thumbs">
@@ -546,6 +553,8 @@ function renderProduct(p) {
     confirm.hidden = false;
     setTimeout(() => { confirm.hidden = true; }, 2500);
   });
+
+  if (window.syncFavoriteHearts) window.syncFavoriteHearts();
 }
 
 function renderRelated(product, data) {
@@ -567,14 +576,17 @@ function renderRelated(product, data) {
     <a class="product-card" href="produs.html?cod=${encodeURIComponent(p.cod)}">
       <div class="product-card-img">
         <img src="${p.bottle_image}" alt="${p.name}" loading="lazy">
+        ${window.favoriteButtonHtml ? window.favoriteButtonHtml(p.cod) : ''}
       </div>
       <span class="product-brand">${p.brand}</span>
       <h3>${p.name}</h3>
       <span class="product-price">${formatPrice(p.price)}</span>
+      ${getUnitPrice(p.name, p.price) ? `<span class="product-unit-price-sm">${getUnitPrice(p.name, p.price)}</span>` : ''}
       ${sgrPriceLine(p.name)}
     </a>
   `).join('');
   section.hidden = false;
+  if (window.syncFavoriteHearts) window.syncFavoriteHearts();
 }
 
 const params = new URLSearchParams(window.location.search);

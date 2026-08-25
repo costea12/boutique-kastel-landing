@@ -13,6 +13,25 @@ function sgrPriceLine(name) {
   return /\bSGR\b/i.test(name) ? '<span class="sgr-note">+ 0,50 Lei garanție SGR</span>' : '';
 }
 
+// Most bottles/cans in the real data are labeled in liters ("0.7l"), not
+// milliliters - the lookahead (instead of \b) is needed because names like
+// "0.7l40% SGR" have no space/boundary between the unit and the next number.
+function getUnitPrice(name, price) {
+  if (price == null) return null;
+  const match = name.match(/(\d+(?:[.,]\d+)?)\s*(ml|l|cl|gr|kg)(?=[^a-zA-Z]|$)/i);
+  if (!match) return null;
+
+  const amount = parseFloat(match[1].replace(',', '.'));
+  const unit = match[2].toLowerCase();
+
+  if (unit === 'ml' || unit === 'l' || unit === 'cl') {
+    const liters = unit === 'ml' ? amount / 1000 : unit === 'cl' ? amount / 100 : amount;
+    return `${Math.round(price / liters).toLocaleString('ro-RO')} Lei/L`;
+  }
+  const kg = unit === 'gr' ? amount / 1000 : amount;
+  return `${Math.round(price / kg).toLocaleString('ro-RO')} Lei/Kg`;
+}
+
 function renderGrid(products) {
   const grid = document.getElementById('productGrid');
   const empty = document.getElementById('emptyState');
@@ -30,13 +49,16 @@ function renderGrid(products) {
       <div class="product-card-img">
         <img src="${p.bottle_image}" alt="${p.name}" loading="lazy">
         ${p.stock <= 0 ? '<span class="stock-badge out">Stoc epuizat</span>' : ''}
+        ${window.favoriteButtonHtml ? window.favoriteButtonHtml(p.cod) : ''}
       </div>
       <span class="product-brand">${p.brand}</span>
       <h3>${p.name}</h3>
       <span class="product-price">${formatPrice(p.price)}</span>
+      ${getUnitPrice(p.name, p.price) ? `<span class="product-unit-price-sm">${getUnitPrice(p.name, p.price)}</span>` : ''}
       ${sgrPriceLine(p.name)}
     </a>
   `).join('');
+  if (window.syncFavoriteHearts) window.syncFavoriteHearts();
 }
 
 function categoryProducts() {
