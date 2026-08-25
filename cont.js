@@ -182,8 +182,9 @@
           const cancelBtn = isPending
             ? '<button type="button" class="order-cancel-btn" data-order-id="' + doc.id + '">Anulează comanda</button>'
             : '';
+          const numberLabel = o.orderNumber ? '#' + String(o.orderNumber).padStart(4, '0') + ' · ' : '';
           return '<div class="order-item">'
-            + '<div class="order-item-top"><strong>' + (o.total ? o.total.toFixed(2).replace('.', ',') + ' Lei' : '') + '</strong><span class="order-status">' + status + '</span></div>'
+            + '<div class="order-item-top"><strong>' + numberLabel + (o.total ? o.total.toFixed(2).replace('.', ',') + ' Lei' : '') + '</strong><span class="order-status">' + status + '</span></div>'
             + '<div class="order-item-meta">' + itemCount + ' produs' + (itemCount === 1 ? '' : 'e') + (date ? ' · ' + date : '') + city + '</div>'
             + cancelBtn
             + '</div>';

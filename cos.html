@@ -254,25 +254,40 @@ function handleCheckout() {
       return null;
     }
 
-    return db.collection('users').doc(user.uid).collection('orders').add({
-      items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty })),
-      total: cartTotal(),
-      status: 'noua',
-      customerName: user.displayName || '',
-      customerEmail: user.email,
-      shipping: {
-        name: d.shipName, phone: d.shipPhone, address: d.shipAddress,
-        city: d.shipCity, county: d.shipCounty, postalCode: d.shipPostalCode,
-        country: d.shipCountry, notes: d.shipNotes || '',
-      },
-      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    // Order numbers are a simple shared counter (counters/orders, field
+    // "count"), incremented atomically in a transaction so two checkouts at
+    // the same instant never get the same number.
+    const counterRef = db.collection('counters').doc('orders');
+    const orderRef = db.collection('users').doc(user.uid).collection('orders').doc();
+
+    return db.runTransaction(function (t) {
+      return t.get(counterRef).then(function (counterDoc) {
+        const next = (counterDoc.exists ? counterDoc.data().count : 0) + 1;
+        t.set(counterRef, { count: next }, { merge: true });
+        t.set(orderRef, {
+          orderNumber: next,
+          items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty })),
+          total: cartTotal(),
+          status: 'noua',
+          customerName: user.displayName || '',
+          customerEmail: user.email,
+          shipping: {
+            name: d.shipName, phone: d.shipPhone, address: d.shipAddress,
+            city: d.shipCity, county: d.shipCounty, postalCode: d.shipPostalCode,
+            country: d.shipCountry, notes: d.shipNotes || '',
+          },
+          createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+        });
+        return next;
+      });
     });
-  }).then(function (ref) {
-    if (!ref) return;
+  }).then(function (orderNumber) {
+    if (!orderNumber) return;
     clearCart();
+    const numberLabel = String(orderNumber).padStart(4, '0');
     document.getElementById('cartContents').innerHTML = `
       <div class="cart-confirm-block">
-        <h2>Comanda a fost înregistrată!</h2>
+        <h2>Comanda #${numberLabel} a fost înregistrată!</h2>
         <p>Îți mulțumim! Te vom contacta telefonic pentru confirmarea comenzii și modalitatea de plată.</p>
         <a href="cont.html" class="btn btn-outline">Vezi istoricul comenzilor</a>
       </div>
