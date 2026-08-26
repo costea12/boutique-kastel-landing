@@ -4,9 +4,9 @@
 // contact@kastelboutique.ro) exists - see emailjs.com. Until then the form
 // shows a friendly fallback instead of pretending to send.
 (function () {
-  const EMAILJS_PUBLIC_KEY = '';
-  const EMAILJS_SERVICE_ID = '';
-  const EMAILJS_TEMPLATE_ID = '';
+  const EMAILJS_PUBLIC_KEY = '9Mbki2DmUiHBnyM4V';
+  const EMAILJS_SERVICE_ID = 'service_c4mndvh';
+  const EMAILJS_TEMPLATE_ID = 'template_e7fvgyl';
 
   const form = document.getElementById('contactForm');
   const note = document.getElementById('contactNote');
@@ -34,8 +34,14 @@
     btn.textContent = 'Se trimite...';
 
     emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-      from_email: email,
+      // Matches the "Contact Us" EmailJS template's placeholders
+      // ({{name}}, {{email}}, {{message}}, {{title}}, {{time}}). The form
+      // only collects an email, so it doubles as the "name" shown too.
+      name: email,
+      email: email,
       message: message,
+      title: 'Mesaj nou de pe site',
+      time: new Date().toLocaleString('ro-RO'),
     }).then(function () {
       form.reset();
       note.textContent = 'Mesajul a fost trimis! Îți vom răspunde cât mai curând.';
