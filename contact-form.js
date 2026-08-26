@@ -1,7 +1,7 @@
 // Contact form (mobile nav "Contact" block) - sends via EmailJS, which works
 // straight from any visitor's browser with no server of our own involved.
 // Fill in the three constants below once the EmailJS account (connected to
-// contact@kastelboutique.ro) exists - see emailjs.com. Until then the form
+// boutiquekasteldutyfreeconcept@gmail.com) exists - see emailjs.com. Until then the form
 // shows a friendly fallback instead of pretending to send.
 (function () {
   const EMAILJS_PUBLIC_KEY = '9Mbki2DmUiHBnyM4V';
@@ -21,7 +21,7 @@
     note.hidden = true;
 
     if (!EMAILJS_PUBLIC_KEY || !window.emailjs) {
-      note.textContent = 'Formularul nu este încă activat. Te rugăm scrie-ne direct la contact@kastelboutique.ro.';
+      note.textContent = 'Formularul nu este încă activat. Te rugăm scrie-ne direct la boutiquekasteldutyfreeconcept@gmail.com.';
       note.hidden = false;
       return;
     }
@@ -47,7 +47,7 @@
       note.textContent = 'Mesajul a fost trimis! Îți vom răspunde cât mai curând.';
       note.hidden = false;
     }).catch(function () {
-      note.textContent = 'A apărut o eroare. Te rugăm scrie-ne direct la contact@kastelboutique.ro.';
+      note.textContent = 'A apărut o eroare. Te rugăm scrie-ne direct la boutiquekasteldutyfreeconcept@gmail.com.';
       note.hidden = false;
     }).finally(function () {
       btn.disabled = false;
