@@ -825,7 +825,7 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   margin-inline: auto;
   flex-wrap: wrap;
 }
-.newsletter-form input {
+.newsletter-form > input {
   flex: 1 1 240px;
   background: rgba(251,247,239,0.06);
   border: 1px solid var(--white-faint);
@@ -847,17 +847,20 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 .consent-check {
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 0.6rem;
   text-align: left;
-  font-size: 0.72rem;
-  line-height: 1.4;
+  font-size: 0.78rem;
+  line-height: 1.5;
   cursor: pointer;
 }
 .consent-check input[type="checkbox"] {
-  margin-top: 0.2rem;
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
+  /* Locked to a fixed flex-basis so a broader "input" rule on an ancestor
+     form can never stretch this into an invisible full-width box again. */
+  flex: 0 0 17px;
+  margin-top: 0.15rem;
+  width: 17px;
+  height: 17px;
+  border-radius: 4px;
   accent-color: var(--gold-bright);
   cursor: pointer;
 }
@@ -1772,7 +1775,7 @@ footer {
   flex-direction: column;
   gap: 0.7rem;
 }
-.popup-form input {
+.popup-form > input {
   padding: 0.85rem 1.1rem;
   border: 1px solid rgba(22,51,47,0.15);
   border-radius: 999px;
@@ -1784,7 +1787,7 @@ footer {
   text-align: center;
   transition: border-color 0.2s;
 }
-.popup-form input:focus { border-color: var(--gold); }
+.popup-form > input:focus { border-color: var(--gold); }
 .popup-form .btn { justify-content: center; }
 .popup-form .consent-check { color: var(--ink-soft); }
 .popup-form .consent-check a { color: var(--ink); text-decoration: underline; }
