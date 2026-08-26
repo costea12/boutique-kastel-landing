@@ -84,9 +84,15 @@
   <a href="cont.html">Contul meu</a>
   <div class="mobile-nav-divider"></div>
   <div class="mobile-nav-help">
-    <p class="mobile-nav-help-title">Ajutor</p>
+    <p class="mobile-nav-help-title">Contact</p>
     <a href="https://wa.me/40744377651" target="_blank" rel="noopener">Ne puteți contacta pe WhatsApp la numărul 0744 377 651</a>
     <a href="mailto:contact@kastelboutique.ro">contact@kastelboutique.ro</a>
+    <form class="contact-form" id="contactForm">
+      <input type="email" id="contactEmail" name="email" placeholder="Adresa ta de email" autocomplete="email" required>
+      <textarea id="contactMessage" name="message" placeholder="Scrie-ne întrebarea ta..." rows="3" required></textarea>
+      <button type="submit" class="btn btn-gold">Trimite</button>
+      <p class="contact-form-note" id="contactNote" hidden></p>
+    </form>
   </div>
 </div>
 
@@ -252,6 +258,8 @@
 <script src="catalog.js"></script>
 <script src="header-search.js"></script>
 <script src="newsletter-popup.js?v=3"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="contact-form.js"></script>
 <script>
   const navToggle = document.getElementById('navToggle');
   const navClose = document.getElementById('navClose');
