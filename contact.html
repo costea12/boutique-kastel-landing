@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cafea | Boutique Kastel</title>
-<meta name="description" content="Colecția de cafea Boutique Kastel, Duty Free Concept, Hunedoara.">
+<title>Contact | Boutique Kastel</title>
+<meta name="description" content="Contactează Boutique Kastel pe WhatsApp, e-mail sau prin formularul de mai jos. Îți răspundem cât mai curând posibil.">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#0a464e">
 <link rel="stylesheet" href="style.css">
 </head>
-<body data-category="CAF">
+<body>
 
 <div class="utility-bar">
   <div class="wrap">
@@ -31,7 +31,7 @@
       <a href="ingrijire-corporala.html">Îngrijire corporală</a>
       <a href="bauturi.html">Băuturi</a>
       <a href="dulciuri.html">Dulciuri</a>
-      <a href="cafea.html" class="nav-active">Cafea</a>
+      <a href="cafea.html">Cafea</a>
     </nav>
 
     <div class="header-icons">
@@ -85,68 +85,35 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<main class="catalog-main">
-  <div class="section-inner">
-    <div class="catalog-hero">
-      <p class="kicker">Colecție</p>
-      <h1>Cafea</h1>
-      <p id="catalogSubtitle">Se încarcă produsele...</p>
+<main class="account-main">
+  <div class="account-box">
+    <p class="kicker">Contact</p>
+    <h1>Scrie-ne</h1>
+    <p class="account-address-note">Ai o întrebare despre un produs sau o comandă? Ne poți contacta direct sau ne poți trimite mesajul tău mai jos - îți răspundem cât mai curând.</p>
+
+    <div class="contact-details">
+      <a href="https://wa.me/40744377651" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.1 7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+        WhatsApp: 0744 377 651
+      </a>
+      <a href="mailto:contact@kastelboutique.ro">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+        contact@kastelboutique.ro
+      </a>
     </div>
 
-    <div class="catalog-filters">
-      <input type="search" id="searchBox" placeholder="Caută o cafea...">
-      <button class="btn-filter-toggle" id="filterToggle">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/><circle cx="9" cy="7" r="2" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="10" cy="17" r="2" fill="currentColor" stroke="none"/></svg>
-        Filtrează
-        <span class="filter-active-badge" id="filterActiveBadge" hidden>0</span>
-      </button>
-    </div>
-
-    <div class="filters-panel" id="filtersPanel" hidden>
-      <div class="filters-panel-grid">
-        <div class="filter-group">
-          <h4>Sortează</h4>
-          <select id="sortSelect">
-            <option value="name-asc">Nume A-Z</option>
-            <option value="price-asc">Preț crescător</option>
-            <option value="price-desc">Preț descrescător</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <h4>Preț</h4>
-          <div class="price-range">
-            <input type="number" id="priceMin" placeholder="Min">
-            <span>-</span>
-            <input type="number" id="priceMax" placeholder="Max">
-          </div>
-        </div>
-
-        <div class="filter-group">
-          <h4>Disponibilitate</h4>
-          <label class="filter-checkbox">
-            <input type="checkbox" id="inStockOnly">
-            <span>Doar produse în stoc</span>
-          </label>
-        </div>
-
-        <div class="filter-group filter-group-brand">
-          <h4>Brand</h4>
-          <input type="search" id="brandSearch" class="brand-search" placeholder="Caută brand...">
-          <div class="brand-list" id="brandList"></div>
-        </div>
-      </div>
-
-      <div class="filters-panel-actions">
-        <button class="btn-clear-filters" id="clearFilters">Șterge filtrele</button>
-        <button class="btn-apply-filters" id="applyFilters">Vezi rezultatele</button>
-      </div>
-    </div>
-
-    <div class="catalog-results">
-      <div class="product-grid" id="productGrid"></div>
-      <p class="catalog-empty" id="emptyState" hidden>Niciun produs găsit pentru această căutare.</p>
-    </div>
+    <form class="account-form" id="contactForm">
+      <label>
+        <span>Adresa ta de email</span>
+        <input type="email" id="contactEmail" name="email" autocomplete="email" required>
+      </label>
+      <label>
+        <span>Întrebarea ta</span>
+        <textarea id="contactMessage" name="message" rows="5" placeholder="Scrie-ne întrebarea ta..." required></textarea>
+      </label>
+      <button type="submit" class="btn btn-gold">Trimite</button>
+      <p class="contact-form-note" id="contactNote" hidden></p>
+    </form>
   </div>
 </main>
 
@@ -216,6 +183,7 @@
     </div>
   </div>
   <div class="footer-legal-entity">SUPREM BRAND S.R.L. · Str. Nicolae Bălcescu, Nr. 1, Municipiul Hunedoara, Jud. Hunedoara · CUI 33803839 · Reg. Com. J2014000935200 · Plătitoare de TVA</div>
+
   <div class="footer-creator">
     <p class="footer-creator-label">Site realizat de <strong>Alex Costea</strong></p>
     <p class="footer-creator-bio">Freelancer în automatizări, dezvoltare web și content creation.</p>
@@ -243,22 +211,11 @@
 <script src="auth.js"></script>
 <script src="favorites.js"></script>
 <script src="cart.js?v=2"></script>
+<script src="script.js"></script>
 <script src="search-utils.js"></script>
-<script src="catalog.js"></script>
 <script src="header-search.js"></script>
 <script src="newsletter-popup.js?v=3"></script>
-<script>
-  const navToggle = document.getElementById('navToggle');
-  const navClose = document.getElementById('navClose');
-  const mobileNav = document.getElementById('mobileNav');
-  const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
-  const openMobileNav = () => { mobileNav.classList.add('open'); mobileNavBackdrop?.classList.add('open'); };
-  const closeMobileNav = () => { mobileNav.classList.remove('open'); mobileNavBackdrop?.classList.remove('open'); };
-  navToggle?.addEventListener('click', openMobileNav);
-  navClose?.addEventListener('click', closeMobileNav);
-  mobileNavBackdrop?.addEventListener('click', closeMobileNav);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMobileNav(); });
-  mobileNav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMobileNav));
-</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="contact-form.js"></script>
 </body>
 </html>

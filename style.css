@@ -1130,49 +1130,6 @@ footer {
   background: rgba(255,255,255,0.15);
   margin: 0.3rem 0;
 }
-.mobile-nav-help { display: flex; flex-direction: column; gap: 0.6rem; }
-.mobile-nav-help-title {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gold-bright);
-}
-.mobile-nav-help a {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--white-dim);
-  line-height: 1.4;
-}
-.mobile-nav-help a:hover { color: var(--gold-bright); }
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
-  margin-top: 0.3rem;
-}
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.55rem 0.7rem;
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.06);
-  color: var(--white);
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  resize: vertical;
-}
-.contact-form input::placeholder,
-.contact-form textarea::placeholder { color: var(--white-faint); }
-.contact-form input:focus,
-.contact-form textarea:focus { outline: none; border-color: var(--gold-bright); }
-.contact-form .btn {
-  padding: 0.6rem 1rem;
-  font-size: 0.76rem;
-  justify-content: center;
-}
 .contact-form-note {
   font-size: 0.76rem;
   color: var(--white-dim);
@@ -1890,7 +1847,8 @@ footer {
 }
 .account-form input[type="text"],
 .account-form input[type="email"],
-.account-form input[type="password"] {
+.account-form input[type="password"],
+.account-form textarea {
   padding: 0.75rem 0.9rem;
   border: 1px solid rgba(22,51,47,0.15);
   border-radius: 8px;
@@ -1898,8 +1856,31 @@ footer {
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--ink);
+  resize: vertical;
 }
-.account-form input:focus { outline: none; border-color: var(--gold); }
+.account-form input:focus,
+.account-form textarea:focus { outline: none; border-color: var(--gold); }
+
+/* Contact page (contact.html) - WhatsApp/email details above the form */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 1.4rem 0 1.8rem;
+  padding: 1.1rem 1.2rem;
+  background: rgba(22,51,47,0.04);
+  border-radius: 10px;
+}
+.contact-details a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.contact-details a:hover { color: var(--gold); }
+.contact-details svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--teal-mid); }
+.account-box .contact-form-note { color: var(--ink-soft); }
 .account-form .consent-check { color: var(--ink-soft); }
 .account-form .consent-check a { color: var(--ink); text-decoration: underline; }
 .account-form .consent-check a:hover { color: var(--gold); }
