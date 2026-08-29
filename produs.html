@@ -88,6 +88,38 @@
   <p class="product-loading">Se încarcă produsul...</p>
 </main>
 
+<section class="reviews-section" id="reviewsSection">
+  <div class="section-inner">
+    <div class="reviews-head">
+      <h2>Recenziile acestui produs <span class="reviews-count">(<span id="reviewsCount">0</span> recenzii)</span></h2>
+      <div class="reviews-average" id="reviewsAverage" hidden>
+        <span class="review-stars" id="reviewsAverageStars"></span>
+        <span id="reviewsAverageValue"></span>
+      </div>
+    </div>
+
+    <div class="reviews-list" id="reviewsList"></div>
+    <p class="reviews-empty" id="reviewsEmpty">Acest produs nu are momentan nicio recenzie.</p>
+
+    <div class="review-form-wrap">
+      <h3>Lasă o recenzie</h3>
+      <p class="review-login-prompt" id="reviewLoginPrompt">Trebuie să fii <a href="cont.html">autentificat</a> pentru a lăsa o recenzie.</p>
+      <form id="reviewForm" hidden>
+        <div class="review-star-input" id="reviewStarInput">
+          <button type="button" data-star="1" aria-label="1 stea">★</button>
+          <button type="button" data-star="2" aria-label="2 stele">★</button>
+          <button type="button" data-star="3" aria-label="3 stele">★</button>
+          <button type="button" data-star="4" aria-label="4 stele">★</button>
+          <button type="button" data-star="5" aria-label="5 stele">★</button>
+        </div>
+        <textarea id="reviewText" placeholder="Scrie părerea ta despre acest produs..." rows="4" maxlength="1000" required></textarea>
+        <button type="submit" class="btn btn-gold">Trimite recenzia</button>
+        <p class="review-form-note" id="reviewFormNote" hidden></p>
+      </form>
+    </div>
+  </div>
+</section>
+
 <section class="recommended-section" id="relatedSection" hidden>
   <div class="section-inner">
     <div class="section-head">
@@ -192,6 +224,7 @@
 <script src="favorites.js"></script>
 <script src="cart.js?v=2"></script>
 <script src="produs.js"></script>
+<script src="reviews.js"></script>
 <script src="search-utils.js"></script>
 <script src="header-search.js"></script>
 <script src="newsletter-popup.js?v=3"></script>
