@@ -1058,6 +1058,9 @@ footer {
   transform: translateY(24px);
   will-change: opacity, transform;
 }
+.reveal-scroll-photo {
+  transform: translateY(24px) scale(0.94);
+}
 
 .hero-inner > * {
   opacity: 0;

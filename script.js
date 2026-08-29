@@ -23,10 +23,17 @@ if (scrollRevealEls.length) {
     const start = vh * 0.92; // element top at 92% down the viewport -> progress 0
     const end = vh * 0.55;   // element top at 55% down the viewport -> progress 1
     scrollRevealEls.forEach((el) => {
-      const top = el.getBoundingClientRect().top;
+      // A data-reveal-delay (in viewport-height fractions) staggers siblings
+      // that sit at the same vertical position (e.g. two photos side by
+      // side), which otherwise share the same scroll progress.
+      const delay = parseFloat(el.dataset.revealDelay || '0') * vh;
+      const top = el.getBoundingClientRect().top + delay;
       const progress = clamp((start - top) / (start - end), 0, 1);
+      const y = (1 - progress) * 24;
       el.style.opacity = progress;
-      el.style.transform = `translateY(${(1 - progress) * 24}px)`;
+      el.style.transform = el.classList.contains('reveal-scroll-photo')
+        ? `translateY(${y}px) scale(${0.94 + progress * 0.06})`
+        : `translateY(${y}px)`;
     });
   }
   let ticking = false;
