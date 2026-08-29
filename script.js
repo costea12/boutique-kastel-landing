@@ -20,8 +20,8 @@ if (scrollRevealEls.length) {
   const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
   function updateScrollReveal() {
     const vh = window.innerHeight;
-    const start = vh * 0.92; // element top at 92% down the viewport -> progress 0
-    const end = vh * 0.55;   // element top at 55% down the viewport -> progress 1
+    const start = vh * 0.88; // element top at 88% down the viewport -> progress 0
+    const end = vh * 0.68;   // element top at 68% down the viewport -> progress 1
     scrollRevealEls.forEach((el) => {
       // A data-reveal-delay (in viewport-height fractions) staggers siblings
       // that sit at the same vertical position (e.g. two photos side by
