@@ -10,6 +10,36 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 revealEls.forEach((el) => io.observe(el));
 
+// Scroll-linked reveal - unlike .reveal above (which plays a fixed-length
+// CSS transition once triggered), .reveal-scroll elements track scroll
+// position directly: opacity/offset are recomputed on every scroll frame,
+// so the text visibly fades in at the same speed you're scrolling, not on
+// its own separate timer.
+const scrollRevealEls = document.querySelectorAll('.reveal-scroll');
+if (scrollRevealEls.length) {
+  const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
+  function updateScrollReveal() {
+    const vh = window.innerHeight;
+    const start = vh * 0.92; // element top at 92% down the viewport -> progress 0
+    const end = vh * 0.55;   // element top at 55% down the viewport -> progress 1
+    scrollRevealEls.forEach((el) => {
+      const top = el.getBoundingClientRect().top;
+      const progress = clamp((start - top) / (start - end), 0, 1);
+      el.style.opacity = progress;
+      el.style.transform = `translateY(${(1 - progress) * 24}px)`;
+    });
+  }
+  let ticking = false;
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => { updateScrollReveal(); ticking = false; });
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', updateScrollReveal);
+  updateScrollReveal();
+}
+
 // Promo carousel (homepage) - auto-advances, plus manual arrow/dot navigation
 const promoTrack = document.getElementById('promoTrack');
 if (promoTrack) {

@@ -1050,6 +1050,15 @@ footer {
 }
 .reveal.in { opacity: 1; transform: translateY(0); }
 
+/* Scroll-linked reveal - opacity/position track scroll progress directly
+   (set inline by JS every frame) instead of a fixed-duration transition,
+   so the text visibly appears at the same pace you're scrolling. */
+.reveal-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  will-change: opacity, transform;
+}
+
 .hero-inner > * {
   opacity: 0;
   animation: heroUp 0.9s cubic-bezier(.2,.7,.2,1) forwards;
