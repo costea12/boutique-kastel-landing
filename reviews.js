@@ -13,7 +13,16 @@
   const auth = firebase.auth();
   const db = firebase.firestore();
 
-  const countEl = document.getElementById('reviewsCount');
+  // Collapsed by default - only the heading + arrow show until tapped.
+  const toggle = document.getElementById('reviewsToggle');
+  const body = document.getElementById('reviewsBody');
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    toggle.classList.toggle('is-open', !expanded);
+    body.hidden = expanded;
+  });
+
   const avgWrap = document.getElementById('reviewsAverage');
   const avgStarsEl = document.getElementById('reviewsAverageStars');
   const avgValueEl = document.getElementById('reviewsAverageValue');
@@ -41,7 +50,6 @@
   }
 
   function renderReviews(reviews) {
-    countEl.textContent = reviews.length;
     if (!reviews.length) {
       emptyEl.hidden = false;
       listEl.innerHTML = '';
