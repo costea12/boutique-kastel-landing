@@ -13,16 +13,20 @@ revealEls.forEach((el) => io.observe(el));
 // Scroll-linked reveal - unlike .reveal above (which plays a fixed-length
 // CSS transition once triggered), .reveal-scroll elements track scroll
 // position directly: opacity/offset are recomputed on every scroll frame,
-// so the text visibly fades in at the same speed you're scrolling, not on
-// its own separate timer.
-const scrollRevealEls = document.querySelectorAll('.reveal-scroll');
-if (scrollRevealEls.length) {
+// so the text visibly fades in at the same speed you're scrolling.
+//
+// One-time-only rule: once an element reaches full opacity it's marked
+// "settled" and never recomputed again - so scrolling back up and down
+// past it later just shows it normally, no re-fade. This only plays out
+// as a first-pass-down-the-page effect, not every time you scroll.
+let scrollRevealPending = Array.from(document.querySelectorAll('.reveal-scroll'));
+if (scrollRevealPending.length) {
   const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
   function updateScrollReveal() {
     const vh = window.innerHeight;
     const start = vh * 0.88; // element top at 88% down the viewport -> progress 0
     const end = vh * 0.68;   // element top at 68% down the viewport -> progress 1
-    scrollRevealEls.forEach((el) => {
+    scrollRevealPending = scrollRevealPending.filter((el) => {
       // A data-reveal-delay (in viewport-height fractions) staggers siblings
       // that sit at the same vertical position (e.g. two photos side by
       // side), which otherwise share the same scroll progress.
@@ -34,10 +38,15 @@ if (scrollRevealEls.length) {
       el.style.transform = el.classList.contains('reveal-scroll-photo')
         ? `translateY(${y}px) scale(${0.94 + progress * 0.06})`
         : `translateY(${y}px)`;
+      return progress < 1; // settled elements drop out and stay put
     });
+    if (!scrollRevealPending.length) {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', updateScrollReveal);
+    }
   }
   let ticking = false;
-  const onScroll = () => {
+  var onScroll = () => {
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(() => { updateScrollReveal(); ticking = false; });
