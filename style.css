@@ -678,7 +678,7 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 .reviews-toggle {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.5rem;
   width: 100%;
   background: none;
   border: none;
@@ -686,9 +686,10 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   padding-bottom: 1.2rem;
   cursor: pointer;
   text-align: left;
+  font-size: 1.3rem;
 }
 .reviews-toggle-arrow {
-  width: 18px; height: 18px;
+  width: 1em; height: 1em;
   color: var(--ink-soft);
   flex-shrink: 0;
   transition: transform 0.25s ease;
@@ -697,7 +698,7 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 .reviews-toggle h2 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: inherit;
   color: var(--ink);
 }
 .reviews-body { padding-top: 1.6rem; }
