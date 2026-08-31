@@ -1,0 +1,34 @@
+name: Deploy to kastelboutique.ro
+
+# Runs on every push to main - mirrors the site onto the real hosting
+# (Claus Web / romania-webhosting.com) over FTP, same content that's
+# already live on GitHub Pages. Uses ftp-deploy-action, which does a
+# proper sync (only changed files) rather than wiping and re-uploading
+# everything every time.
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ftp-deploy:
+    name: FTP deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync files to server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          server-dir: /public_html/
+          # Don't touch anything the host manages itself or that isn't part
+          # of the static site (e.g. if mail/cPanel-generated folders exist).
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/node_modules/**
