@@ -1957,6 +1957,7 @@ footer {
 .account-form input[type="text"],
 .account-form input[type="email"],
 .account-form input[type="password"],
+.account-form input[type="tel"],
 .account-form textarea {
   padding: 0.75rem 0.9rem;
   border: 1px solid rgba(22,51,47,0.15);
@@ -1969,6 +1970,24 @@ footer {
 }
 .account-form input:focus,
 .account-form textarea:focus { outline: none; border-color: var(--gold); }
+
+.password-field { position: relative; display: flex; }
+.password-field input { flex: 1; padding-right: 4.2rem; }
+.password-toggle {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: var(--teal-mid);
+  font-size: 0.76rem;
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+}
+.password-toggle:hover { color: var(--gold); }
 
 /* Contact page (contact.html) - WhatsApp/email details above the form */
 .contact-details {
@@ -1994,6 +2013,15 @@ footer {
 .account-form .consent-check a { color: var(--ink); text-decoration: underline; }
 .account-form .consent-check a:hover { color: var(--gold); }
 .account-form .btn { width: 100%; justify-content: center; margin-top: 0.3rem; }
+
+.account-forgot-link {
+  align-self: flex-start;
+  margin-top: -0.5rem;
+  font-size: 0.8rem;
+  color: var(--teal-mid);
+  text-decoration: underline;
+}
+.account-forgot-link:hover { color: var(--gold); }
 
 .account-error {
   font-size: 0.82rem;
@@ -2025,6 +2053,16 @@ footer {
 }
 .account-address-note { color: var(--ink-soft); font-size: 0.82rem; margin-bottom: 1.2rem; }
 .account-address-saved { color: var(--teal-mid); font-size: 0.84rem; }
+
+.account-company-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding: 1rem 1.1rem;
+  background: rgba(22,51,47,0.04);
+  border-radius: 10px;
+}
+.account-company-fields[hidden] { display: none; }
 
 .account-orders {
   margin: 2.2rem 0;

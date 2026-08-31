@@ -169,15 +169,32 @@
       document.getElementById('shipPostalCode').value = d.shipPostalCode || '';
       document.getElementById('shipCountry').value = d.shipCountry || 'România';
       document.getElementById('shipNotes').value = d.shipNotes || '';
+
+      const isCompanyBox = document.getElementById('isCompanyOrder');
+      const companyFields = document.getElementById('companyFields');
+      isCompanyBox.checked = !!d.isCompanyOrder;
+      companyFields.hidden = !d.isCompanyOrder;
+      document.getElementById('companyName').value = d.companyName || '';
+      document.getElementById('companyCUI').value = d.companyCUI || '';
+      document.getElementById('companyRegCom').value = d.companyRegCom || '';
+      document.getElementById('companyAddress').value = d.companyAddress || '';
+
       renderFavorites(d.favorites || []);
     });
   }
+
+  // Show/hide company invoice fields as the checkbox is toggled (also runs on load via loadAddress above).
+  document.getElementById('isCompanyOrder')?.addEventListener('change', function () {
+    document.getElementById('companyFields').hidden = !this.checked;
+  });
 
   addressForm?.addEventListener('submit', function (e) {
     e.preventDefault();
     const user = auth.currentUser;
     if (!user) return;
     addressSaved.hidden = true;
+
+    const isCompanyOrder = document.getElementById('isCompanyOrder').checked;
 
     const address = {
       shipName: document.getElementById('shipName').value.trim(),
@@ -188,7 +205,18 @@
       shipPostalCode: document.getElementById('shipPostalCode').value.trim(),
       shipCountry: document.getElementById('shipCountry').value.trim(),
       shipNotes: document.getElementById('shipNotes').value.trim(),
+      isCompanyOrder: isCompanyOrder,
+      companyName: isCompanyOrder ? document.getElementById('companyName').value.trim() : '',
+      companyCUI: isCompanyOrder ? document.getElementById('companyCUI').value.trim() : '',
+      companyRegCom: isCompanyOrder ? document.getElementById('companyRegCom').value.trim() : '',
+      companyAddress: isCompanyOrder ? document.getElementById('companyAddress').value.trim() : '',
     };
+
+    if (isCompanyOrder && (!address.companyName || !address.companyCUI)) {
+      addressSaved.hidden = true;
+      alert('Pentru factură pe firmă, completează cel puțin denumirea firmei și CUI/CIF.');
+      return;
+    }
 
     db.collection('users').doc(user.uid).set(address, { merge: true }).then(function () {
       addressSaved.hidden = false;
@@ -279,5 +307,17 @@
       loggedInView.hidden = true;
       showTab('login');
     }
+  });
+
+  // Show/hide password toggle buttons (login, signup, confirm password).
+  document.querySelectorAll('.password-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const input = document.getElementById(btn.dataset.target);
+      if (!input) return;
+      const isHidden = input.type === 'password';
+      input.type = isHidden ? 'text' : 'password';
+      btn.textContent = isHidden ? 'Ascunde' : 'Arată';
+      btn.setAttribute('aria-label', isHidden ? 'Ascunde parola' : 'Arată parola');
+    });
   });
 })();

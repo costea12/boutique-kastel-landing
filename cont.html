@@ -101,9 +101,13 @@
         </label>
         <label>
           <span>Parolă</span>
-          <input type="password" id="loginPassword" name="password" autocomplete="current-password" required>
+          <div class="password-field">
+            <input type="password" id="loginPassword" name="password" autocomplete="current-password" required>
+            <button type="button" class="password-toggle" data-target="loginPassword" aria-label="Arată parola">Arată</button>
+          </div>
         </label>
         <p class="account-error" id="loginError" hidden></p>
+        <a href="parola-uitata.html" class="account-forgot-link">Ai uitat parola?</a>
         <button type="submit" class="btn btn-gold">Autentificare</button>
       </form>
 
@@ -118,11 +122,17 @@
         </label>
         <label>
           <span>Parolă</span>
-          <input type="password" id="signupPassword" name="password" autocomplete="new-password" minlength="6" required>
+          <div class="password-field">
+            <input type="password" id="signupPassword" name="password" autocomplete="new-password" minlength="6" required>
+            <button type="button" class="password-toggle" data-target="signupPassword" aria-label="Arată parola">Arată</button>
+          </div>
         </label>
         <label>
           <span>Confirmă parola</span>
-          <input type="password" id="signupPasswordConfirm" name="passwordConfirm" autocomplete="new-password" minlength="6" required>
+          <div class="password-field">
+            <input type="password" id="signupPasswordConfirm" name="passwordConfirm" autocomplete="new-password" minlength="6" required>
+            <button type="button" class="password-toggle" data-target="signupPasswordConfirm" aria-label="Arată parola">Arată</button>
+          </div>
         </label>
         <label class="consent-check">
           <input type="checkbox" id="signupConsent" required>
@@ -178,6 +188,31 @@
             <span>Observații livrare (opțional)</span>
             <input type="text" id="shipNotes" name="shipNotes" placeholder="ex: sunați înainte de livrare">
           </label>
+
+          <label class="consent-check">
+            <input type="checkbox" id="isCompanyOrder" name="isCompanyOrder">
+            <span>Doresc factură pe firmă</span>
+          </label>
+
+          <div id="companyFields" class="account-company-fields" hidden>
+            <label>
+              <span>Denumire firmă</span>
+              <input type="text" id="companyName" name="companyName">
+            </label>
+            <label>
+              <span>CUI / CIF</span>
+              <input type="text" id="companyCUI" name="companyCUI" placeholder="ex: RO12345678">
+            </label>
+            <label>
+              <span>Nr. Reg. Comerțului</span>
+              <input type="text" id="companyRegCom" name="companyRegCom" placeholder="ex: J40/1234/2020">
+            </label>
+            <label>
+              <span>Adresă sediu social (dacă diferă de adresa de livrare)</span>
+              <input type="text" id="companyAddress" name="companyAddress">
+            </label>
+          </div>
+
           <p class="account-address-saved" id="addressSaved" hidden>Adresa a fost salvată.</p>
           <button type="submit" class="btn btn-gold">Salvează adresa</button>
         </form>
