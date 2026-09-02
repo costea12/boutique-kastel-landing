@@ -2076,26 +2076,34 @@ footer {
 .account-sidebar-user-info { min-width: 0; }
 .account-sidebar-user-info .kicker { margin-bottom: 0.1rem; }
 
-.account-nav { display: flex; flex-direction: column; gap: 0.2rem; }
+.account-nav { display: flex; flex-direction: column; gap: 0.5rem; }
 .account-nav-item {
   display: flex;
   align-items: center;
   gap: 0.7rem;
   width: 100%;
-  padding: 0.7rem 0.7rem;
-  border: none;
-  border-radius: 9px;
-  background: none;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(22,51,47,0.12);
+  border-radius: 10px;
+  background: var(--ivory);
+  box-shadow: 0 1px 2px rgba(10,70,78,0.06);
   font-family: var(--font-body);
   font-size: 0.88rem;
   color: var(--ink-soft);
   text-align: left;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s, box-shadow 0.15s, transform 0.1s;
 }
 .account-nav-item svg { width: 19px; height: 19px; flex-shrink: 0; }
-.account-nav-item:hover { background: rgba(22,51,47,0.05); color: var(--ink); }
-.account-nav-item.is-active { background: var(--teal-deep); color: var(--gold-bright); font-weight: 600; }
+.account-nav-item:hover { border-color: var(--gold); color: var(--ink); box-shadow: 0 2px 6px rgba(10,70,78,0.1); }
+.account-nav-item:active { transform: scale(0.97); box-shadow: 0 1px 2px rgba(10,70,78,0.06); }
+.account-nav-item.is-active {
+  background: var(--teal-deep);
+  border-color: var(--teal-deep);
+  color: var(--gold-bright);
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(10,70,78,0.18);
+}
 
 .account-logout { margin-top: 0.2rem; }
 
