@@ -88,7 +88,7 @@
 <main class="account-main">
   <div class="account-box">
 
-    <div id="accountLoggedOut">
+    <div id="accountLoggedOut" class="account-box-narrow">
       <div class="account-tabs">
         <button type="button" class="account-tab is-active" id="tabLogin">Autentificare</button>
         <button type="button" class="account-tab" id="tabSignup">Creează cont</button>
@@ -147,94 +147,144 @@
       </form>
     </div>
 
-    <div id="accountLoggedIn" hidden>
-      <p class="kicker">Contul meu</p>
-      <h1 id="accountGreeting">Bună!</h1>
-      <p class="account-email" id="accountEmail"></p>
+    <div id="accountLoggedIn" hidden class="account-dashboard">
 
-      <div class="account-address">
-        <h2>Adresă de livrare</h2>
-        <p class="account-address-note">Aceste date sunt folosite pentru livrarea comenzilor. Le poți completa sau actualiza oricând.</p>
-        <form id="addressForm" class="account-form">
-          <label>
-            <span>Nume destinatar</span>
-            <input type="text" id="shipName" name="shipName" autocomplete="name" required>
-          </label>
-          <label>
-            <span>Telefon</span>
-            <input type="tel" id="shipPhone" name="shipPhone" autocomplete="tel" required>
-          </label>
-          <label>
-            <span>Adresă (stradă, număr, bloc/apt.)</span>
-            <input type="text" id="shipAddress" name="shipAddress" autocomplete="street-address" required>
-          </label>
-          <label>
-            <span>Localitate</span>
-            <input type="text" id="shipCity" name="shipCity" autocomplete="address-level2" required>
-          </label>
-          <label>
-            <span>Județ</span>
-            <input type="text" id="shipCounty" name="shipCounty" autocomplete="address-level1" required>
-          </label>
-          <label>
-            <span>Cod poștal</span>
-            <input type="text" id="shipPostalCode" name="shipPostalCode" autocomplete="postal-code" required>
-          </label>
-          <label>
-            <span>Țară</span>
-            <input type="text" id="shipCountry" name="shipCountry" autocomplete="country-name" value="România" required>
-          </label>
-          <label>
-            <span>Observații livrare (opțional)</span>
-            <input type="text" id="shipNotes" name="shipNotes" placeholder="ex: sunați înainte de livrare">
-          </label>
-
-          <label class="consent-check">
-            <input type="checkbox" id="isCompanyOrder" name="isCompanyOrder">
-            <span>Doresc factură pe firmă</span>
-          </label>
-
-          <div id="companyFields" class="account-company-fields" hidden>
-            <label>
-              <span>Denumire firmă</span>
-              <input type="text" id="companyName" name="companyName">
-            </label>
-            <label>
-              <span>CUI / CIF</span>
-              <input type="text" id="companyCUI" name="companyCUI" placeholder="ex: RO12345678">
-            </label>
-            <label>
-              <span>Nr. Reg. Comerțului</span>
-              <input type="text" id="companyRegCom" name="companyRegCom" placeholder="ex: J40/1234/2020">
-            </label>
-            <label>
-              <span>Adresă sediu social (dacă diferă de adresa de livrare)</span>
-              <input type="text" id="companyAddress" name="companyAddress">
-            </label>
+      <aside class="account-sidebar">
+        <div class="account-sidebar-user">
+          <div class="account-avatar" id="accountAvatar">B</div>
+          <div class="account-sidebar-user-info">
+            <p class="kicker">Contul meu</p>
+            <h1 id="accountGreeting">Bună!</h1>
+            <p class="account-email" id="accountEmail"></p>
           </div>
+        </div>
 
-          <p class="account-address-saved" id="addressSaved" hidden>Adresa a fost salvată.</p>
-          <button type="submit" class="btn btn-gold">Salvează adresa</button>
-        </form>
+        <nav class="account-nav" id="accountNav" aria-label="Secțiuni cont">
+          <button type="button" class="account-nav-item is-active" data-panel="address">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 12 3.5 6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+            <span>Adresă de livrare</span>
+          </button>
+          <button type="button" class="account-nav-item" data-panel="orders">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="6.5" width="17" height="14" rx="1.6"/><path d="M8 6.5V5a4 4 0 0 1 8 0v1.5"/><line x1="3.5" y1="11" x2="20.5" y2="11"/></svg>
+            <span>Istoric comenzi</span>
+          </button>
+          <button type="button" class="account-nav-item" data-panel="favorites">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.5 8.4 2 5 5.5 5c2 0 3.4 1.1 4.2 2.3.4.6.6.9 1 .9s.6-.3 1-.9C12.5 6.1 13.9 5 15.9 5 19.4 5 21 8.4 19.4 11.7 17.9 16.4 12 21 12 21z"/></svg>
+            <span>Produse favorite</span>
+          </button>
+        </nav>
+
+        <button type="button" class="btn btn-outline account-logout" id="logoutBtn">Deconectare</button>
+      </aside>
+
+      <div class="account-content">
+
+        <section class="account-panel is-active" id="panel-address" data-panel="address">
+          <h2>Adresă de livrare</h2>
+          <p class="account-address-note">Aceste date sunt folosite pentru livrarea comenzilor. Le poți completa sau actualiza oricând.</p>
+          <form id="addressForm" class="account-form">
+            <label>
+              <span>Nume destinatar</span>
+              <input type="text" id="shipName" name="shipName" autocomplete="name" required>
+            </label>
+            <label>
+              <span>Telefon</span>
+              <input type="tel" id="shipPhone" name="shipPhone" autocomplete="tel" required>
+            </label>
+            <label>
+              <span>Adresă (stradă, număr, bloc/apt.)</span>
+              <input type="text" id="shipAddress" name="shipAddress" autocomplete="street-address" required>
+            </label>
+            <label>
+              <span>Localitate</span>
+              <input type="text" id="shipCity" name="shipCity" autocomplete="address-level2" required>
+            </label>
+            <label>
+              <span>Județ</span>
+              <input type="text" id="shipCounty" name="shipCounty" autocomplete="address-level1" required>
+            </label>
+            <label>
+              <span>Cod poștal</span>
+              <input type="text" id="shipPostalCode" name="shipPostalCode" autocomplete="postal-code" required>
+            </label>
+            <label>
+              <span>Țară</span>
+              <input type="text" id="shipCountry" name="shipCountry" autocomplete="country-name" value="România" required>
+            </label>
+            <label>
+              <span>Observații livrare (opțional)</span>
+              <input type="text" id="shipNotes" name="shipNotes" placeholder="ex: sunați înainte de livrare">
+            </label>
+
+            <label class="consent-check">
+              <input type="checkbox" id="isCompanyOrder" name="isCompanyOrder">
+              <span>Doresc factură pe firmă</span>
+            </label>
+
+            <div id="companyFields" class="account-company-fields" hidden>
+              <label>
+                <span>Denumire firmă</span>
+                <input type="text" id="companyName" name="companyName">
+              </label>
+              <label>
+                <span>CUI / CIF</span>
+                <input type="text" id="companyCUI" name="companyCUI" placeholder="ex: RO12345678">
+              </label>
+              <label>
+                <span>Nr. Reg. Comerțului</span>
+                <input type="text" id="companyRegCom" name="companyRegCom" placeholder="ex: J40/1234/2020">
+              </label>
+              <label>
+                <span>Adresă sediu social (dacă diferă de adresa de livrare)</span>
+                <input type="text" id="companyAddress" name="companyAddress">
+              </label>
+            </div>
+
+            <p class="account-address-saved" id="addressSaved" hidden>Adresa a fost salvată.</p>
+            <button type="submit" class="btn btn-gold">Salvează adresa</button>
+          </form>
+        </section>
+
+        <section class="account-panel" id="panel-orders" data-panel="orders">
+          <h2>Istoric comenzi</h2>
+          <p class="account-orders-empty" id="ordersEmpty">Nu ai încă nicio comandă. Comenzile plasate online vor apărea aici.</p>
+          <div id="ordersList"></div>
+        </section>
+
+        <section class="account-panel" id="panel-favorites" data-panel="favorites">
+          <div id="favorites">
+            <h2>Produse favorite</h2>
+            <p class="account-favorites-empty" id="favoritesEmpty">Nu ai încă niciun produs favorit. Apasă pe inimioară de pe orice produs pentru a-l salva aici.</p>
+            <div class="favorites-grid" id="favoritesList"></div>
+          </div>
+        </section>
+
       </div>
-
-      <div class="account-favorites" id="favorites">
-        <h2>Produse favorite</h2>
-        <p class="account-favorites-empty" id="favoritesEmpty">Nu ai încă niciun produs favorit. Apasă pe inimioară de pe orice produs pentru a-l salva aici.</p>
-        <div class="favorites-grid" id="favoritesList"></div>
-      </div>
-
-      <div class="account-orders">
-        <h2>Istoric comenzi</h2>
-        <p class="account-orders-empty" id="ordersEmpty">Nu ai încă nicio comandă. Comenzile plasate online vor apărea aici.</p>
-        <div id="ordersList"></div>
-      </div>
-
-      <button type="button" class="btn btn-outline" id="logoutBtn">Deconectare</button>
     </div>
 
   </div>
 </main>
+
+<script>
+  (function () {
+    const nav = document.getElementById('accountNav');
+    const panels = document.querySelectorAll('.account-panel');
+    function showPanel(name) {
+      nav.querySelectorAll('.account-nav-item').forEach((btn) => {
+        btn.classList.toggle('is-active', btn.dataset.panel === name);
+      });
+      panels.forEach((p) => p.classList.toggle('is-active', p.dataset.panel === name));
+    }
+    nav?.addEventListener('click', (e) => {
+      const btn = e.target.closest('.account-nav-item');
+      if (!btn) return;
+      showPanel(btn.dataset.panel);
+      history.replaceState(null, '', btn.dataset.panel === 'favorites' ? '#favorites' : '#' + btn.dataset.panel);
+    });
+    if (window.location.hash === '#favorites') showPanel('favorites');
+    if (window.location.hash === '#orders') showPanel('orders');
+  })();
+</script>
 
 <footer>
   <div class="footer-grid">

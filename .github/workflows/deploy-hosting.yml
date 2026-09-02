@@ -1,5 +1,10 @@
 name: Deploy to kastelboutique.ro
 
+# Runs on every push to main - mirrors the site onto the real hosting
+# (Claus Web / romania-webhosting.com) over FTP, same content that's
+# already live on GitHub Pages. Uses ftp-deploy-action, which does a
+# proper sync (only changed files) rather than wiping and re-uploading
+# everything every time.
 on:
   push:
     branches: [main]
@@ -20,6 +25,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           server-dir: /public_html/
+          # Don't touch anything the host manages itself or that isn't part
+          # of the static site (e.g. if mail/cPanel-generated folders exist).
           exclude: |
             **/.git*
             **/.git*/**
