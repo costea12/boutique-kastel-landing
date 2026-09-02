@@ -1925,6 +1925,8 @@ footer {
   width: 100%;
   max-width: 440px;
 }
+.account-box:has(#accountLoggedIn:not([hidden])) { max-width: 1080px; }
+.account-box-narrow { max-width: 440px; margin: 0 auto; }
 .account-tabs {
   display: flex;
   gap: 0.5rem;
@@ -2034,25 +2036,120 @@ footer {
 #accountGreeting {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(1.6rem, 3.6vw, 2rem);
+  font-size: clamp(1.25rem, 2.4vw, 1.5rem);
   color: var(--ink);
 }
-.account-email { color: var(--ink-soft); font-size: 0.88rem; margin-top: 0.3rem; }
+.account-email { color: var(--ink-soft); font-size: 0.85rem; margin-top: 0.15rem; word-break: break-all; }
 
-.account-address {
-  margin-top: 2.2rem;
-  padding-top: 1.6rem;
-  border-top: 1px solid rgba(22,51,47,0.1);
+/* ---- Account dashboard: sidebar + panel layout ---- */
+.account-dashboard {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: start;
+  gap: 2.5rem;
 }
-.account-address h2 {
+.account-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem;
+  background: var(--white);
+  border: 1px solid rgba(22,51,47,0.1);
+  border-radius: 14px;
+  position: sticky;
+  top: 1.5rem;
+}
+.account-sidebar-user { display: flex; align-items: center; gap: 0.8rem; }
+.account-avatar {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--teal-deep);
+  color: var(--gold-bright);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-sidebar-user-info { min-width: 0; }
+.account-sidebar-user-info .kicker { margin-bottom: 0.1rem; }
+
+.account-nav { display: flex; flex-direction: column; gap: 0.2rem; }
+.account-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 0.7rem 0.7rem;
+  border: none;
+  border-radius: 9px;
+  background: none;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.account-nav-item svg { width: 19px; height: 19px; flex-shrink: 0; }
+.account-nav-item:hover { background: rgba(22,51,47,0.05); color: var(--ink); }
+.account-nav-item.is-active { background: var(--teal-deep); color: var(--gold-bright); font-weight: 600; }
+
+.account-logout { margin-top: 0.2rem; }
+
+.account-content { min-width: 0; }
+.account-panel {
+  display: none;
+  padding: 1.8rem 2rem;
+  background: var(--white);
+  border: 1px solid rgba(22,51,47,0.1);
+  border-radius: 14px;
+}
+.account-panel.is-active { display: block; }
+
+.account-panel h2 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: var(--ink);
   margin-bottom: 0.4rem;
 }
 .account-address-note { color: var(--ink-soft); font-size: 0.82rem; margin-bottom: 1.2rem; }
 .account-address-saved { color: var(--teal-mid); font-size: 0.84rem; }
+
+#panel-address .account-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem 1rem;
+}
+#panel-address .account-form label:has(input#shipAddress),
+#panel-address .account-form label:has(input#shipNotes),
+#panel-address .account-form .consent-check,
+#panel-address .account-form .account-company-fields,
+#panel-address .account-form .account-address-saved,
+#panel-address .account-form .btn { grid-column: 1 / -1; }
+@media (max-width: 560px) {
+  #panel-address .account-form { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 800px) {
+  .account-dashboard { display: block; }
+  .account-sidebar {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.4rem;
+    padding: 1.2rem;
+  }
+  .account-sidebar-user { flex: 1 1 100%; }
+  .account-nav { flex: 1 1 100%; flex-direction: row; flex-wrap: wrap; gap: 0.4rem; padding-top: 0.6rem; border-top: 1px solid rgba(22,51,47,0.08); }
+  .account-nav-item { flex: 1 1 auto; justify-content: center; white-space: nowrap; padding: 0.65rem 0.7rem; font-size: 0.82rem; }
+  .account-logout { flex: 1 1 100%; }
+  .account-panel { padding: 1.4rem 1.2rem; }
+}
 
 .account-company-fields {
   display: flex;
@@ -2064,38 +2161,14 @@ footer {
 }
 .account-company-fields[hidden] { display: none; }
 
-.account-orders {
-  margin: 2.2rem 0;
-  padding: 1.6rem 0;
-  border-top: 1px solid rgba(22,51,47,0.1);
-  border-bottom: 1px solid rgba(22,51,47,0.1);
-}
-.account-orders h2 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 1.15rem;
-  color: var(--ink);
-  margin-bottom: 0.8rem;
-}
-.account-orders-empty { color: var(--ink-soft); font-size: 0.88rem; }
+.account-orders-empty { color: var(--ink-soft); font-size: 0.88rem; margin-bottom: 0.4rem; }
 
-.account-favorites {
-  margin-top: 2.2rem;
-  padding-top: 1.6rem;
-  border-top: 1px solid rgba(22,51,47,0.1);
-}
-.account-favorites h2 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 1.15rem;
-  color: var(--ink);
-  margin-bottom: 0.8rem;
-}
-.account-favorites-empty { color: var(--ink-soft); font-size: 0.88rem; }
+.account-favorites-empty { color: var(--ink-soft); font-size: 0.88rem; margin-bottom: 0.4rem; }
 .favorites-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 0.9rem;
+  margin-top: 0.8rem;
 }
 .favorites-item {
   display: flex;

@@ -288,6 +288,8 @@
     loggedInView.hidden = false;
     accountGreeting.textContent = 'Bună, ' + (user.displayName || 'acolo') + '!';
     accountEmail.textContent = user.email;
+    const avatarEl = document.getElementById('accountAvatar');
+    if (avatarEl) avatarEl.textContent = (user.displayName || user.email || '?').trim().charAt(0).toUpperCase();
     loadAddress(user);
     loadOrders(user.uid);
 
