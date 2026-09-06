@@ -83,7 +83,10 @@
 </div>
 
 <main class="cart-main section-inner">
-  <h1>Coșul tău</h1>
+  <div class="cart-heading">
+    <h1><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg> Coșul tău</h1>
+    <span class="cart-heading-count" id="cartHeadingCount"></span>
+  </div>
   <div id="cartContents"></div>
 </main>
 
@@ -189,6 +192,9 @@ function formatPrice(p) { return `${p.toFixed(2).replace('.', ',')} Lei`; }
 function renderCart() {
   const cart = getCart();
   const el = document.getElementById('cartContents');
+  const countEl = document.getElementById('cartHeadingCount');
+  const itemCount = cart.reduce((sum, i) => sum + i.qty, 0);
+  if (countEl) countEl.textContent = itemCount ? `${itemCount} ${itemCount === 1 ? 'produs' : 'produse'}` : '';
 
   if (cart.length === 0) {
     el.innerHTML = '<p class="cart-empty">Coșul tău este gol. <a href="parfumuri.html">Vezi parfumurile</a></p>';
@@ -215,6 +221,16 @@ function renderCart() {
           <button class="cart-item-remove" data-cod="${item.cod}" aria-label="Elimină">✕</button>
         </div>
       `).join('')}
+    </div>
+    <div class="cart-breakdown">
+      <div class="cart-breakdown-line">
+        <span>Subtotal</span>
+        <span>${formatPrice(cartTotal())}</span>
+      </div>
+      <div class="cart-breakdown-line">
+        <span>Livrare</span>
+        <span class="cart-breakdown-tbd">se calculează la finalizare</span>
+      </div>
     </div>
     <div class="cart-summary">
       <span>Total</span>
