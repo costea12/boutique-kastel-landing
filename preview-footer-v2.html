@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preview — Footer v2 (nu e live)</title>
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* --- preview-only wrapper, not part of the site --- */
+  body { background: var(--teal-darker); }
+  .preview-banner {
+    background: #b8860b; color: #fff; text-align: center;
+    font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
+    padding: 0.7rem 1rem; letter-spacing: 0.03em;
+  }
+
+  /* --- Footer v2 (new layout, same brand tokens) --- */
+  .footer-v2 {
+    background: var(--teal-darker);
+    color: var(--white-dim);
+    border-top: 1px solid var(--gold-dim);
+  }
+  .footer-v2-grid {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: clamp(3rem, 6vw, 4.5rem) var(--edge) 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+  .footer-v2-col h5 {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    margin-bottom: 1.1rem;
+  }
+  .footer-v2-col ul { display: flex; flex-direction: column; gap: 0.65rem; list-style: none; padding: 0; margin: 0; }
+  .footer-v2-col a, .footer-v2-col li { font-size: 0.86rem; color: var(--white-dim); text-decoration: none; }
+  .footer-v2-col a:hover { color: var(--gold-bright); }
+
+  .footer-v2-divider { height: 1px; background: rgba(251,247,239,0.1); max-width: var(--container); margin: 0 auto; }
+
+  .footer-v2-social-row {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 1.3rem var(--edge);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-v2-social { display: flex; gap: 0.7rem; }
+  .footer-v2-social a {
+    width: 38px; height: 38px;
+    border: 1px solid var(--white-faint);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white-dim);
+  }
+  .footer-v2-social a:hover { border-color: var(--gold-bright); color: var(--gold-bright); }
+  .footer-v2-social svg { width: 16px; height: 16px; }
+
+  .footer-v2-contact {
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+    font-size: 0.86rem;
+  }
+  .footer-v2-contact a { color: var(--white-dim); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+  .footer-v2-contact a:hover { color: var(--gold-bright); }
+  .footer-v2-contact svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+  .footer-v2-bottom {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 1.4rem var(--edge) 1.6rem;
+    text-align: center;
+    font-size: 0.76rem;
+    color: var(--white-faint);
+  }
+  .footer-v2-bottom a { color: var(--white-faint); text-decoration: underline; }
+  .footer-v2-bottom a:hover { color: var(--gold-bright); }
+
+  @media (max-width: 860px) {
+    .footer-v2-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .footer-v2-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-banner">PREVIEW ONLY — footer v2, not linked into the live site yet</div>
+
+<footer class="footer-v2">
+  <div class="footer-v2-grid">
+    <div class="footer-v2-col">
+      <h5>Colecții</h5>
+      <ul>
+        <li><a href="parfumuri.html">Parfumuri</a></li>
+        <li><a href="parfumuri-niche.html">Parfumuri niche</a></li>
+        <li><a href="ingrijire-corporala.html">Îngrijire corporală</a></li>
+        <li><a href="bauturi.html">Băuturi</a></li>
+        <li><a href="dulciuri.html">Dulciuri</a></li>
+        <li><a href="cafea.html">Cafea</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-v2-col">
+      <h5>Program</h5>
+      <ul>
+        <li>Luni-Vineri: 10:00-19:00</li>
+        <li>Sâmbătă: 10:00-15:00</li>
+        <li>Duminică: închis</li>
+      </ul>
+    </div>
+
+    <div class="footer-v2-col">
+      <h5>Legal &amp; utile</h5>
+      <ul>
+        <li><a href="despre-noi.html">Despre noi</a></li>
+        <li><a href="termeni.html">Termeni și condiții</a></li>
+        <li><a href="confidentialitate.html">Politica de confidențialitate</a></li>
+        <li><a href="retur.html">Politica de retur</a></li>
+        <li><a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener">ANPC</a></li>
+        <li><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">SOL</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-v2-col">
+      <h5>Contactează-ne</h5>
+      <div class="footer-v2-contact" style="flex-direction: column; gap: 0.65rem;">
+        <a href="https://www.google.com/maps/search/?api=1&query=Boutique%20Kastel%2C%20Bulevardul%20Libert%C4%83%C8%9Bii%206%2C%20Hunedoara" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Bulevardul Libertății 6, Hunedoara
+        </a>
+        <a href="mailto:boutiquekasteldutyfreeconcept@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+          boutiquekasteldutyfreeconcept@gmail.com
+        </a>
+        <a href="tel:0744377651">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          0744 377 651
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-v2-divider"></div>
+
+  <div class="footer-v2-social-row">
+    <div class="footer-v2-social">
+      <a href="https://www.facebook.com/DutyFreeConceptHunedoara" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V4Z"/></svg>
+      </a>
+      <a href="https://instagram.com/_costeaa_" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+    </div>
+    <div style="font-family: var(--font-display); color: var(--gold-bright); font-size: 1.1rem;">
+      Boutique Kastel <span style="color: var(--white-faint); font-family: var(--font-body); font-size: 0.7rem; letter-spacing: 0.1em;">DUTY FREE CONCEPT</span>
+    </div>
+  </div>
+
+  <div class="footer-v2-divider"></div>
+
+  <div class="footer-v2-bottom">
+    <p>© 2026 Boutique Kastel · SUPREM BRAND S.R.L. · CUI 33803839 · Reg. Com. J2014000935200</p>
+    <p style="margin-top:0.4rem;">Site realizat de <strong style="color: var(--gold-bright);">Alex Costea</strong> — <a href="mailto:alex.costyd@gmail.com">alex.costyd@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
