@@ -47,6 +47,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
         <span class="cart-badge" id="cartCount">0</span>
       </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Meniu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
   </div>
 
@@ -61,6 +64,23 @@
     <ul class="header-search-results" id="headerSearchResults" hidden></ul>
   </div>
 </header>
+
+<div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="navClose" aria-label="Închide meniul">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+  </button>
+  <a href="parfumuri.html">Parfumuri</a>
+  <a href="parfumuri-niche.html">Parfumuri niche</a>
+  <a href="ingrijire-corporala.html">Îngrijire corporală</a>
+  <a href="bauturi.html">Băuturi</a>
+  <a href="dulciuri.html">Dulciuri</a>
+  <a href="cafea.html">Cafea</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="despre-noi.html">Despre noi</a>
+  <a href="cont.html">Contul meu</a>
+  <a href="contact.html">Contact</a>
+</div>
 
 <main class="cart-main section-inner">
   <h1>Coșul tău</h1>
@@ -314,6 +334,18 @@ function handleCheckout() {
 }
 
 renderCart();
+
+const navToggle = document.getElementById('navToggle');
+const navClose = document.getElementById('navClose');
+const mobileNav = document.getElementById('mobileNav');
+const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+const openMobileNav = () => { mobileNav.classList.add('open'); mobileNavBackdrop?.classList.add('open'); };
+const closeMobileNav = () => { mobileNav.classList.remove('open'); mobileNavBackdrop?.classList.remove('open'); };
+navToggle?.addEventListener('click', openMobileNav);
+navClose?.addEventListener('click', closeMobileNav);
+mobileNavBackdrop?.addEventListener('click', closeMobileNav);
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMobileNav(); });
+mobileNav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMobileNav));
 </script>
 </body>
 </html>
