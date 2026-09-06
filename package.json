@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/costea12/boutique-kastel-landing#readme",
   "devDependencies": {
-    "puppeteer": "^25.10.0"
+    "puppeteer": "^25.10.0",
+    "sharp": "^0.35.4"
   }
 }
