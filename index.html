@@ -8,6 +8,7 @@
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#0a464e">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
 
@@ -299,6 +300,9 @@
         <img src="assets/magazin-fizic-2.jpg" alt="Interiorul magazinului Boutique Kastel din Hunedoara" loading="lazy">
       </div>
     </div>
+
+    <h3 class="store-map-heading">Unde ne găsiți</h3>
+    <div id="storeMap" class="store-map" role="application" aria-label="Hartă interactivă cu locația Boutique Kastel"></div>
   </div>
 
   <div class="section-inner about-block reveal">
@@ -421,6 +425,8 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="store-map.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>

@@ -895,6 +895,37 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   .store-gallery-item { height: 220px; }
 }
 
+.store-map-heading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin: 2.6rem 0 1rem;
+}
+.store-map {
+  height: 360px;
+  border-radius: 14px;
+  border: 1px solid var(--gold-dim);
+  box-shadow: 0 16px 34px rgba(22, 51, 47, 0.14);
+  background: var(--white);
+  z-index: 0;
+}
+.store-map .leaflet-popup-content { font-family: var(--font-body, inherit); font-size: 0.85rem; line-height: 1.5; }
+.store-map .leaflet-popup-content a { color: var(--teal-mid); }
+.store-map-marker span {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: var(--teal-deep, var(--ink));
+  border: 2px solid var(--gold-bright);
+  box-shadow: 0 4px 10px rgba(22, 51, 47, 0.35);
+}
+@media (max-width: 640px) {
+  .store-map { height: 280px; }
+}
+
 /* ---------- Newsletter ---------- */
 
 .newsletter {
