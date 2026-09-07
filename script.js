@@ -103,6 +103,19 @@ if (fanTrack) {
     return map;
   }
 
+  // Each card's current base (non-hover) transform pieces, so hover can
+  // layer a lift + extra scale on top instead of overwriting x/y/rotate
+  // (which is what caused the chaotic jump-to-center glitch on hover).
+  const baseFor = new Map();
+
+  function applyTransform(card, base, hovered) {
+    const lift = hovered ? -0.7 : 0;
+    const scale = hovered ? base.scale * 1.08 : base.scale;
+    card.style.transform =
+      `translate(-50%, -50%) translate(${base.x}rem, ${base.y + lift}rem) rotate(${base.rot}deg) scale(${scale})`;
+    card.style.zIndex = hovered ? '30' : String(base.z);
+  }
+
   function render() {
     const mult = responsiveMultiplier();
     const map = visibleMap();
@@ -113,14 +126,15 @@ if (fanTrack) {
         card.style.pointerEvents = 'none';
         card.style.transform = 'translate(-50%, -50%) scale(0.5)';
         card.style.zIndex = '0';
+        baseFor.delete(card);
         return;
       }
       const p = FAN_POSITIONS[slot];
+      const base = { x: p.x * mult, y: p.y * mult, rot: p.rot, scale: p.scale, z: p.z };
+      baseFor.set(card, base);
       card.style.opacity = '1';
       card.style.pointerEvents = 'auto';
-      card.style.zIndex = String(p.z);
-      card.style.transform =
-        `translate(-50%, -50%) translate(${p.x * mult}rem, ${p.y * mult}rem) rotate(${p.rot}deg) scale(${p.scale})`;
+      applyTransform(card, base, false);
     });
     dots.forEach((d, i) => d.classList.toggle('is-active', i === centerIndex));
   }
@@ -145,6 +159,17 @@ if (fanTrack) {
   document.getElementById('fanPrev')?.addEventListener('click', () => cycle(-1));
   document.getElementById('fanNext')?.addEventListener('click', () => cycle(1));
   window.addEventListener('resize', render);
+
+  cards.forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      const base = baseFor.get(card);
+      if (base) applyTransform(card, base, true);
+    });
+    card.addEventListener('mouseleave', () => {
+      const base = baseFor.get(card);
+      if (base) applyTransform(card, base, false);
+    });
+  });
 
   render();
 }
