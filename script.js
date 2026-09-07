@@ -108,12 +108,16 @@ if (fanTrack) {
   // (which is what caused the chaotic jump-to-center glitch on hover).
   const baseFor = new Map();
 
+  // Hover only changes z-index and a CSS class (glow + caption, see
+  // .fan-card.is-hovered in style.css) - it never touches the transform.
+  // Moving/scaling the card under the cursor was what caused the vibration:
+  // the card's edge would shift away from the pointer, firing mouseleave,
+  // which reset it, which fired mouseenter again, looping rapidly.
   function applyTransform(card, base, hovered) {
-    const lift = hovered ? -0.7 : 0;
-    const scale = hovered ? base.scale * 1.08 : base.scale;
     card.style.transform =
-      `translate(-50%, -50%) translate(${base.x}rem, ${base.y + lift}rem) rotate(${base.rot}deg) scale(${scale})`;
+      `translate(-50%, -50%) translate(${base.x}rem, ${base.y}rem) rotate(${base.rot}deg) scale(${base.scale})`;
     card.style.zIndex = hovered ? '30' : String(base.z);
+    card.classList.toggle('is-hovered', hovered);
   }
 
   function render() {

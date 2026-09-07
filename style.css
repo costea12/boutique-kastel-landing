@@ -521,8 +521,15 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   background: var(--white);
   border: 1px solid var(--gold-dim);
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.35);
-  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   transform: translate(-50%, -50%);
+}
+/* Hover never touches transform/size - only a glow, so the card's edges
+   never shift under the cursor (that shifting was causing a rapid
+   enter/leave flicker - see the note in script.js). */
+.fan-card.is-hovered {
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.45), 0 0 0 2px var(--gold-bright);
+  border-color: var(--gold-bright);
 }
 .fan-card img {
   width: 100%;
@@ -536,10 +543,9 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   padding: 0.9rem 1rem 1rem;
   background: linear-gradient(0deg, rgba(6, 20, 20, 0.9) 0%, rgba(6, 20, 20, 0.5) 55%, rgba(6, 20, 20, 0) 100%);
   opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease;
 }
-.fan-card:hover .fan-card-info { opacity: 1; transform: translateY(0); }
+.fan-card.is-hovered .fan-card-info { opacity: 1; }
 .fan-card-info .kicker { color: var(--gold-bright); font-size: 0.62rem; margin-bottom: 0.3rem; }
 .fan-card-info h3 { font-family: var(--font-display); color: var(--ivory); font-size: 0.95rem; font-weight: 500; }
 
