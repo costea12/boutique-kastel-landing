@@ -56,43 +56,97 @@ if (scrollRevealPending.length) {
   updateScrollReveal();
 }
 
-// Promo carousel (homepage) - auto-advances, plus manual arrow/dot navigation
-const promoTrack = document.getElementById('promoTrack');
-if (promoTrack) {
-  const slides = Array.from(promoTrack.querySelectorAll('.promo-slide'));
-  const dotsWrap = document.getElementById('promoDots');
-  let current = slides.findIndex((s) => s.classList.contains('is-active'));
-  if (current < 0) current = 0;
+// Fan carousel (homepage) - a hand of product cards fanned out around a
+// center card, cycling 7-at-a-time through a longer product list. Plain
+// CSS transforms/transitions - same visual idea as the GSAP card-fan-carousel
+// component, no React/build step needed for this static site.
+const fanTrack = document.getElementById('fanTrack');
+if (fanTrack) {
+  const cards = Array.from(fanTrack.querySelectorAll('.fan-card'));
+  const total = cards.length;
+  const MAX_VISIBLE = 7;
+  const HALF = 3;
+  const needsPagination = total > MAX_VISIBLE;
 
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.setAttribute('aria-label', `Produsul ${i + 1}`);
-    if (i === current) dot.classList.add('is-active');
-    dot.addEventListener('click', () => goTo(i));
-    dotsWrap.appendChild(dot);
-  });
-  const dots = Array.from(dotsWrap.children);
+  // Angle/scale/offset per fan slot, mirroring the reference component.
+  const FAN_POSITIONS = [
+    { rot: -21, scale: 0.7756, x: -30, y: 7.3, z: 1 },
+    { rot: -14, scale: 0.8498, x: -22, y: 4.0, z: 2 },
+    { rot: -7,  scale: 0.9346, x: -11, y: 1.3, z: 3 },
+    { rot: 0,   scale: 1.0,    x: 0,   y: 0.0, z: 10 },
+    { rot: 7,   scale: 0.9346, x: 11,  y: 1.3, z: 3 },
+    { rot: 14,  scale: 0.8498, x: 22,  y: 4.0, z: 2 },
+    { rot: 21,  scale: 0.7756, x: 30,  y: 7.3, z: 1 },
+  ];
+
+  function responsiveMultiplier() {
+    const w = window.innerWidth;
+    if (w < 480) return 0.34;
+    if (w < 640) return 0.46;
+    if (w < 768) return 0.6;
+    if (w < 1024) return 0.8;
+    return 1.0;
+  }
+
+  let centerIndex = needsPagination ? HALF : total >> 1;
+
+  function visibleMap() {
+    const map = new Map();
+    if (!needsPagination) {
+      cards.forEach((_, i) => map.set(i, i));
+      return map;
+    }
+    for (let slot = 0; slot < MAX_VISIBLE; slot++) {
+      const idx = ((centerIndex + slot - HALF) % total + total) % total;
+      map.set(idx, slot);
+    }
+    return map;
+  }
 
   function render() {
-    slides.forEach((s, i) => s.classList.toggle('is-active', i === current));
-    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+    const mult = responsiveMultiplier();
+    const map = visibleMap();
+    cards.forEach((card, i) => {
+      const slot = map.get(i);
+      if (slot === undefined) {
+        card.style.opacity = '0';
+        card.style.pointerEvents = 'none';
+        card.style.transform = 'translate(-50%, -50%) scale(0.5)';
+        card.style.zIndex = '0';
+        return;
+      }
+      const p = FAN_POSITIONS[slot];
+      card.style.opacity = '1';
+      card.style.pointerEvents = 'auto';
+      card.style.zIndex = String(p.z);
+      card.style.transform =
+        `translate(-50%, -50%) translate(${p.x * mult}rem, ${p.y * mult}rem) rotate(${p.rot}deg) scale(${p.scale})`;
+    });
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === centerIndex));
   }
 
-  function goTo(i) {
-    current = (i + slides.length) % slides.length;
+  function cycle(dir) {
+    centerIndex = (centerIndex + dir + total) % total;
     render();
-    resetTimer();
   }
 
-  document.getElementById('promoPrev')?.addEventListener('click', () => goTo(current - 1));
-  document.getElementById('promoNext')?.addEventListener('click', () => goTo(current + 1));
-
-  let timer;
-  function resetTimer() {
-    clearInterval(timer);
-    timer = setInterval(() => goTo(current + 1), 60000); // auto-advance every 60s
+  const dotsWrap = document.getElementById('fanDots');
+  const dots = [];
+  if (needsPagination) {
+    cards.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.setAttribute('aria-label', `Produsul ${i + 1}`);
+      dot.addEventListener('click', () => { centerIndex = i; render(); });
+      dotsWrap.appendChild(dot);
+      dots.push(dot);
+    });
   }
-  resetTimer();
+
+  document.getElementById('fanPrev')?.addEventListener('click', () => cycle(-1));
+  document.getElementById('fanNext')?.addEventListener('click', () => cycle(1));
+  window.addEventListener('resize', render);
+
+  render();
 }
 
 // Mobile nav

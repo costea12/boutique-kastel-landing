@@ -480,81 +480,71 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 }
 .section-head .flourish { margin-top: 1.2rem; color: var(--teal-mid); }
 
-/* ---------- Promo carousel (big, full-bleed, clickable banners) ---------- */
+/* ---------- Fan carousel (fanned product cards, homepage hero) ---------- */
 
-.promo-carousel-big {
+.fan-carousel-section {
   position: relative;
   background: var(--teal-darker);
+  padding: clamp(3rem, 7vw, 5.5rem) var(--edge) clamp(2rem, 5vw, 3rem);
+  overflow: hidden;
 }
-.promo-carousel-big .promo-track {
+.fan-carousel {
   position: relative;
-  height: min(calc(100vh - 84px), 880px);
-  min-height: 480px;
+  height: clamp(22rem, 38vw, 34rem);
+  max-width: 78rem;
+  margin: 0 auto;
 }
-.promo-carousel-big .promo-slide {
+.fan-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fan-card {
   position: absolute;
-  inset: 0;
+  top: 50%;
+  left: 50%;
   display: block;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(1.02);
-  transition: opacity 0.7s ease, transform 0.9s ease;
+  width: clamp(9.5rem, 15vw, 13.5rem);
+  height: clamp(13rem, 20vw, 18rem);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--gold-dim);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.35);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease, z-index 0s;
+  transform: translate(-50%, -50%);
 }
-.promo-carousel-big .promo-slide.is-active {
-  opacity: 1;
-  pointer-events: auto;
-  transform: scale(1);
+.fan-card:hover {
+  transform: translate(-50%, -50%) translateY(-0.6rem) scale(1.06) !important;
+  z-index: 20 !important;
 }
-.promo-carousel-big .promo-slide img {
+.fan-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.promo-overlay {
+.fan-card-info {
   position: absolute;
-  inset: 0;
+  inset: auto 0 0 0;
+  padding: 0.9rem 1rem 1rem;
+  background: linear-gradient(0deg, rgba(6, 20, 20, 0.9) 0%, rgba(6, 20, 20, 0.5) 55%, rgba(6, 20, 20, 0) 100%);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.fan-card:hover .fan-card-info { opacity: 1; transform: translateY(0); }
+.fan-card-info .kicker { color: var(--gold-bright); font-size: 0.62rem; margin-bottom: 0.3rem; }
+.fan-card-info h3 { font-family: var(--font-display); color: var(--ivory); font-size: 0.95rem; font-weight: 500; }
+
+.fan-nav {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: clamp(2rem, 6vw, 4.5rem);
-  background: linear-gradient(0deg, rgba(6, 20, 20, 0.88) 0%, rgba(6, 20, 20, 0.45) 42%, rgba(6, 20, 20, 0) 68%);
-}
-.promo-overlay .kicker { color: var(--gold-bright); margin-bottom: 0.9rem; }
-.promo-overlay h2 {
-  font-family: var(--font-display);
-  color: var(--ivory);
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  margin-bottom: 0.7rem;
-}
-.promo-price {
-  font-family: var(--font-display);
-  color: var(--gold-bright);
-  font-size: 1.5rem;
-  margin-bottom: 1.2rem;
-}
-.promo-cta {
-  display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  width: fit-content;
-  color: var(--teal-darker);
-  background: linear-gradient(180deg, var(--gold-bright), var(--gold));
-  padding: 0.85rem 1.7rem;
-  border-radius: 2px;
-  font-family: var(--font-body);
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  transition: gap 0.25s ease, box-shadow 0.25s ease;
+  justify-content: center;
+  gap: 1.4rem;
+  margin-top: clamp(1.2rem, 3vw, 2rem);
 }
-.promo-cta svg { width: 16px; height: 16px; }
-.promo-slide:hover .promo-cta { gap: 0.95rem; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3); }
-.promo-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.fan-arrow {
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -566,21 +556,11 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   justify-content: center;
   cursor: pointer;
   transition: border-color 0.25s ease, background 0.25s ease;
-  z-index: 2;
 }
-.promo-arrow:hover { border-color: var(--gold-bright); background: rgba(6, 47, 52, 0.85); }
-.promo-arrow svg { width: 20px; height: 20px; }
-.promo-arrow-prev { left: clamp(0.8rem, 3vw, 2rem); }
-.promo-arrow-next { right: clamp(0.8rem, 3vw, 2rem); }
-.promo-dots {
-  position: absolute;
-  bottom: clamp(1.2rem, 3vw, 2rem);
-  right: clamp(2rem, 6vw, 4.5rem);
-  display: flex;
-  gap: 0.6rem;
-  z-index: 2;
-}
-.promo-dots button {
+.fan-arrow:hover { border-color: var(--gold-bright); background: rgba(6, 47, 52, 0.85); }
+.fan-arrow svg { width: 18px; height: 18px; }
+.fan-dots { display: flex; gap: 0.55rem; }
+.fan-dots button {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -590,12 +570,11 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   padding: 0;
   transition: background 0.25s ease, transform 0.25s ease;
 }
-.promo-dots button.is-active { background: var(--gold-bright); transform: scale(1.3); }
+.fan-dots button.is-active { background: var(--gold-bright); transform: scale(1.3); }
 
-@media (max-width: 860px) {
-  .promo-carousel-big .promo-track { height: 78vh; min-height: 460px; }
-  .promo-overlay { padding: 1.5rem; }
-  .promo-dots { right: 1.5rem; }
+@media (max-width: 640px) {
+  .fan-carousel { height: clamp(16rem, 62vw, 22rem); }
+  .fan-card { width: clamp(6.5rem, 24vw, 8.5rem); height: clamp(9rem, 32vw, 12rem); }
 }
 
 /* ---------- Categories ---------- */
