@@ -518,10 +518,14 @@ function renderProduct(p) {
           </div>
         </div>
 
-        <button class="btn btn-cart" id="addToCartBtn" ${p.stock <= 0 ? 'disabled' : ''}>
-          ${p.stock > 0 ? 'Adaugă în coș' : 'Stoc epuizat'}
-        </button>
-        <p class="cart-confirm" id="cartConfirm" hidden>Adăugat în coș ✓</p>
+        ${p.category === 'ALC' && window.bkIsMinor && window.bkIsMinor() ? `
+          <p class="age-restricted-notice">🔞 Trebuie să ai peste 18 ani pentru a comanda acest produs.</p>
+        ` : `
+          <button class="btn btn-cart" id="addToCartBtn" ${p.stock <= 0 ? 'disabled' : ''}>
+            ${p.stock > 0 ? 'Adaugă în coș' : 'Stoc epuizat'}
+          </button>
+          <p class="cart-confirm" id="cartConfirm" hidden>Adăugat în coș ✓</p>
+        `}
 
         ${renderSpecs(p)}
 
@@ -548,7 +552,7 @@ function renderProduct(p) {
 
   document.getElementById('addToCartBtn')?.addEventListener('click', () => {
     const qty = parseInt(qtyInput.value || '1');
-    addToCart(p.cod, p.name, p.price, p.bottle_image, qty);
+    addToCart(p.cod, p.name, p.price, p.bottle_image, qty, p.category);
     const confirm = document.getElementById('cartConfirm');
     confirm.hidden = false;
     setTimeout(() => { confirm.hidden = true; }, 2500);

@@ -2173,6 +2173,34 @@ footer {
   color: var(--teal-mid);
 }
 
+/* Age gate (age-gate.js) - sits above the newsletter popup and everything
+   else (no close/dismiss affordance, so it must always win visually). */
+.age-gate-overlay { z-index: 400; animation: none; }
+.age-gate-card { animation: none; }
+body.age-gate-lock { overflow: hidden; }
+.age-gate-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+.age-gate-actions .btn { width: 100%; justify-content: center; }
+.age-gate-actions .btn-outline { border-color: rgba(22,51,47,0.25); color: var(--ink); }
+.age-gate-actions .btn-outline:hover { border-color: var(--teal-mid); color: var(--teal-mid); }
+
+/* Shown wherever an alcohol purchase is blocked for a visitor who confirmed
+   they're under 18 (produs.html's add-to-cart, bauturi.html, cos.html). */
+.age-restricted-notice {
+  background: rgba(178,58,58,0.08);
+  color: #8a3030;
+  border: 1px solid rgba(178,58,58,0.2);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
 /* ---------- Account page (cont.html) ---------- */
 
 .account-main {

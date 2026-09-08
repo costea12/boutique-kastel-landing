@@ -177,6 +177,7 @@
   </div>
 </footer>
 
+<script src="age-gate.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
@@ -390,6 +391,17 @@ function handleCheckout() {
 
   const cart = getCart();
   if (cart.length === 0) return;
+
+  // Safety net for the age check: produs.js already hides the "add to cart"
+  // button for alcohol (category "ALC") once someone has confirmed they're
+  // under 18, but if an item somehow ended up in the cart anyway (e.g.
+  // added before answering the age gate), block it here too rather than
+  // trusting only the earlier UI gate.
+  if (window.bkIsMinor && window.bkIsMinor() && cart.some((i) => i.category === 'ALC')) {
+    document.getElementById('cartContents').insertAdjacentHTML('beforeend',
+      '<p class="age-restricted-notice">🔞 Coșul conține produse cu conținut alcoolic, iar contul tău e marcat sub 18 ani. Elimină aceste produse din coș pentru a putea finaliza comanda.</p>');
+    return;
+  }
 
   const btn = document.getElementById('checkoutBtn');
   if (btn) { btn.disabled = true; btn.textContent = 'Se trimite...'; }

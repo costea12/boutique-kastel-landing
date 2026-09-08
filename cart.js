@@ -16,13 +16,16 @@ function saveCart(cart) {
   updateCartBadge();
 }
 
-function addToCart(cod, name, price, image, qty = 1) {
+// category is optional (only produs.js passes it) - used by the age-gate
+// checkout safety net to catch alcohol items (category "Băuturi") without
+// needing a separate catalog lookup at checkout time.
+function addToCart(cod, name, price, image, qty = 1, category) {
   const cart = getCart();
   const existing = cart.find((i) => i.cod === cod);
   if (existing) {
     existing.qty += qty;
   } else {
-    cart.push({ cod, name, price, image, qty });
+    cart.push({ cod, name, price, image, qty, category });
   }
   saveCart(cart);
 }

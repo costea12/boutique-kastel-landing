@@ -93,6 +93,8 @@
       <p id="catalogSubtitle">Se încarcă produsele...</p>
     </div>
 
+    <p class="age-restricted-notice" id="bauturiAgeNotice" hidden>🔞 Ai confirmat că ai sub 18 ani - poți răsfoi, dar nu poți comanda produse din această categorie.</p>
+
     <div class="catalog-filters">
       <input type="search" id="searchBox" placeholder="Caută o băutură...">
       <button class="btn-filter-toggle" id="filterToggle">
@@ -237,6 +239,7 @@
   </div>
 </footer>
 
+<script src="age-gate.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
@@ -249,6 +252,11 @@
 <script src="header-search.js"></script>
 <script src="newsletter-popup.js?v=3"></script>
 <script>
+  if (window.bkIsMinor && window.bkIsMinor()) {
+    const notice = document.getElementById('bauturiAgeNotice');
+    if (notice) notice.hidden = false;
+  }
+
   const navToggle = document.getElementById('navToggle');
   const navClose = document.getElementById('navClose');
   const mobileNav = document.getElementById('mobileNav');
