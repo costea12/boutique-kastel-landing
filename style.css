@@ -1863,6 +1863,13 @@ footer {
   display: block;
   margin-bottom: 0.2rem;
 }
+.product-vat-note {
+  font-size: 0.72rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--ink-soft);
+  vertical-align: middle;
+}
 .product-unit-price {
   font-size: 0.82rem;
   color: var(--ink-soft);

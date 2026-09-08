@@ -502,7 +502,7 @@ function renderProduct(p) {
       <div class="product-info">
         <p class="product-category">${categoryLabel(p)}</p>
         <h1>${p.name}</h1>
-        <p class="product-price">${formatPrice(p.price)}</p>
+        <p class="product-price">${formatPrice(p.price)} <span class="product-vat-note">TVA inclus</span></p>
         ${sgrPriceLine(p.name)}
         ${getUnitPrice(p.name, p.price) ? `<p class="product-unit-price">${getUnitPrice(p.name, p.price)}</p>` : ''}
         <p class="product-stock ${p.stock > 0 ? 'in-stock' : 'out-of-stock'}">
