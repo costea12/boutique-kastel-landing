@@ -2201,6 +2201,37 @@ body.age-gate-lock { overflow: hidden; }
   margin: 1rem 0;
 }
 
+/* Cookie consent banner (cookie-consent.js) - a non-blocking bottom bar,
+   unlike the age gate: the site is fully usable behind/around it. */
+.cookie-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 150;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  background: var(--teal-darker);
+  color: var(--white-dim);
+  padding: 1rem clamp(1rem, 4vw, 2.5rem);
+  box-shadow: 0 -8px 24px rgba(0,0,0,0.2);
+  animation: cookieBarIn 0.35s ease;
+}
+@keyframes cookieBarIn { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.cookie-bar p { max-width: 640px; font-size: 0.82rem; line-height: 1.5; margin: 0; }
+.cookie-bar p a { color: var(--gold-bright); text-decoration: underline; }
+.cookie-bar-actions { display: flex; gap: 0.7rem; flex-shrink: 0; }
+.cookie-bar-actions .btn { padding: 0.65rem 1.2rem; font-size: 0.8rem; white-space: nowrap; }
+.cookie-bar-actions .btn-outline { border-color: var(--white-faint); color: var(--white); }
+.cookie-bar-actions .btn-outline:hover { border-color: var(--gold-bright); color: var(--gold-bright); }
+@media (max-width: 640px) {
+  .cookie-bar { flex-direction: column; align-items: stretch; text-align: center; }
+  .cookie-bar-actions { justify-content: center; }
+}
+
 /* ---------- Account page (cont.html) ---------- */
 
 .account-main {
