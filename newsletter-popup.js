@@ -41,7 +41,7 @@
             </label>
             <button type="submit" class="btn btn-gold">Abonează-te</button>
           </form>
-          <p class="popup-note">Fără spam. Te poți dezabona oricând.</p>
+          <p class="popup-note">Fără spam. Dacă ai cont, poți schimba oricând preferința de newsletter din <a href="cont.html" target="_blank" rel="noopener">contul tău</a>.</p>
         </div>
       </div>
     `;

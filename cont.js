@@ -170,6 +170,9 @@
       document.getElementById('shipCountry').value = d.shipCountry || 'România';
       document.getElementById('shipNotes').value = d.shipNotes || '';
 
+      const newsletterBox = document.getElementById('accountNewsletter');
+      if (newsletterBox) newsletterBox.checked = !!d.newsletterOptIn;
+
       const isCompanyBox = document.getElementById('isCompanyOrder');
       const companyFields = document.getElementById('companyFields');
       isCompanyBox.checked = !!d.isCompanyOrder;
@@ -195,6 +198,7 @@
     addressSaved.hidden = true;
 
     const isCompanyOrder = document.getElementById('isCompanyOrder').checked;
+    const newsletterOptIn = document.getElementById('accountNewsletter')?.checked || false;
 
     const address = {
       shipName: document.getElementById('shipName').value.trim(),
@@ -205,6 +209,8 @@
       shipPostalCode: document.getElementById('shipPostalCode').value.trim(),
       shipCountry: document.getElementById('shipCountry').value.trim(),
       shipNotes: document.getElementById('shipNotes').value.trim(),
+      newsletterOptIn: newsletterOptIn,
+      newsletterOptInAt: newsletterOptIn ? firebase.firestore.FieldValue.serverTimestamp() : null,
       isCompanyOrder: isCompanyOrder,
       companyName: isCompanyOrder ? document.getElementById('companyName').value.trim() : '',
       companyCUI: isCompanyOrder ? document.getElementById('companyCUI').value.trim() : '',
