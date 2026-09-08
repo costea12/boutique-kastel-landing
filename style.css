@@ -816,12 +816,6 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 /* ---------- About / trust ---------- */
 
 .about { background: var(--ivory-warm); }
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: clamp(2.5rem, 6vw, 5rem);
-  align-items: center;
-}
 .about .kicker { color: var(--teal-mid); }
 .about h2 {
   font-family: var(--font-display);
@@ -841,19 +835,94 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
   margin-bottom: 0.4rem;
 }
 
-.trust-list { display: flex; flex-direction: column; gap: 1.3rem; }
-.trust-item {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  background: var(--white);
-  padding: 1.2rem 1.3rem;
-  border-radius: 6px;
-  border: 1px solid rgba(22,51,47,0.08);
+/* Short homepage intro (full story lives on despre-noi.html) */
+.about-intro { max-width: 640px; margin-bottom: clamp(2.5rem, 6vw, 4rem); }
+.about-intro-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--teal-mid);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  transition: gap 0.25s ease, color 0.2s ease;
 }
-.trust-item svg { width: 26px; height: 26px; color: var(--teal-mid); flex-shrink: 0; margin-top: 2px; }
-.trust-item h4 { font-family: var(--font-display); font-weight: 500; font-size: 1.02rem; margin-bottom: 0.25rem; }
-.trust-item p { font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
+.about-intro-link svg { width: 15px; height: 15px; }
+.about-intro-link:hover { gap: 0.75rem; color: var(--gold-bright); }
+
+/* Trust cards - gradient tiles replacing the old plain trust-list rows */
+.trust-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+}
+.trust-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 1.8rem 1.6rem;
+  border: 1px solid rgba(22, 51, 47, 0.08);
+  box-shadow: 0 14px 32px rgba(22, 51, 47, 0.1);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+.trust-card:hover { transform: translateY(-6px); box-shadow: 0 22px 44px rgba(22, 51, 47, 0.16); }
+.trust-card-icon {
+  position: absolute;
+  right: -0.8rem;
+  bottom: -0.8rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  opacity: 0.1;
+  pointer-events: none;
+}
+.trust-card-gold { background: linear-gradient(155deg, #fdf3de, #f3dfae 130%); }
+.trust-card-gold .trust-card-icon, .trust-card-gold .trust-card-badge span { color: var(--gold); }
+.trust-card-teal { background: linear-gradient(155deg, #e4eeed, #bcd6d4 130%); }
+.trust-card-teal .trust-card-icon, .trust-card-teal .trust-card-badge span { color: var(--teal-mid); }
+.trust-card-ivory { background: linear-gradient(155deg, var(--white), #ece3d1 130%); }
+.trust-card-ivory .trust-card-icon, .trust-card-ivory .trust-card-badge span { color: #a9825a; }
+.trust-card-deep { background: linear-gradient(155deg, #dce7e6, #9fbdba 130%); }
+.trust-card-deep .trust-card-icon, .trust-card-deep .trust-card-badge span { color: var(--teal-deep); }
+.trust-card-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 1.1rem;
+}
+.trust-card-badge span { width: 7px; height: 7px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+.trust-card h4 {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.18rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.trust-card p {
+  position: relative;
+  z-index: 1;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 22ch;
+}
+@media (max-width: 900px) {
+  .trust-cards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .trust-cards { grid-template-columns: 1fr; }
+}
 
 /* About - extra story/offer/store blocks below the intro grid */
 .about-block {
