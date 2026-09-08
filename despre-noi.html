@@ -70,21 +70,58 @@
 </header>
 
 <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
-<div class="mobile-nav" id="mobileNav">
-  <button class="mobile-nav-close" id="navClose" aria-label="Închide meniul">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
-  </button>
-  <a href="parfumuri.html">Parfumuri</a>
-  <a href="parfumuri-niche.html">Parfumuri niche</a>
-  <a href="ingrijire-corporala.html">Îngrijire corporală</a>
-  <a href="bauturi.html">Băuturi</a>
-  <a href="dulciuri.html">Dulciuri</a>
-  <a href="cafea.html">Cafea</a>
+<aside class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-header">
+    <span class="mobile-nav-logo"><span class="mark">BK</span></span>
+    <button class="mobile-nav-close" id="navClose" aria-label="Închide meniul">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+  </div>
+
+  <nav class="mobile-nav-list">
+    <a href="parfumuri.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 2h4M10 2v3.5a2 2 0 0 1-.6 1.4L8 8.3A3 3 0 0 0 7 10.5V20a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-9.5a3 3 0 0 0-1-2.2L14.6 6.9A2 2 0 0 1 14 5.5V2"/></svg>
+      <span>Parfumuri</span>
+    </a>
+    <a href="parfumuri-niche.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg>
+      <span>Parfumuri niche</span>
+    </a>
+    <a href="ingrijire-corporala.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="9" width="10" height="12" rx="2"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+      <span>Îngrijire corporală</span>
+    </a>
+    <a href="bauturi.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h12l-1.2 15.5A2 2 0 0 1 14.8 20H9.2a2 2 0 0 1-2-1.5L6 3z"/><path d="M6.8 8h10.4"/></svg>
+      <span>Băuturi</span>
+    </a>
+    <a href="dulciuri.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="5"/><path d="M12 13v8"/></svg>
+      <span>Dulciuri</span>
+    </a>
+    <a href="cafea.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3c0 1-1 1-1 2M12 3c0 1-1 1-1 2"/></svg>
+      <span>Cafea</span>
+    </a>
+  </nav>
+
   <div class="mobile-nav-divider"></div>
-  <a href="despre-noi.html" class="nav-active">Despre noi</a>
-  <a href="cont.html">Contul meu</a>
-  <a href="contact.html">Contact</a>
-</div>
+
+  <nav class="mobile-nav-list mobile-nav-list-secondary">
+    <a href="despre-noi.html" class="mobile-nav-link mobile-nav-link-plain">Despre noi</a>
+    <a href="contact.html" class="mobile-nav-link mobile-nav-link-plain">Contact</a>
+  </nav>
+
+  <div class="mobile-nav-footer">
+    <a href="cont.html" class="mobile-nav-account">
+      <span class="mobile-nav-avatar" id="mobileNavAvatar">?</span>
+      <span class="mobile-nav-account-info">
+        <span class="mobile-nav-account-name" id="mobileNavName">Autentificare</span>
+        <span class="mobile-nav-account-email" id="mobileNavEmail">Intră în contul tău</span>
+      </span>
+    </a>
+  </div>
+</aside>
 
 <main>
 <section class="about" id="despre">

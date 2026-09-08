@@ -201,6 +201,12 @@ mobileNav?.querySelectorAll('a').forEach((a) =>
   a.addEventListener('click', closeMobileNav)
 );
 
+// Highlight the current page's link in the sidebar
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+mobileNav?.querySelectorAll('.mobile-nav-link').forEach((a) => {
+  if (a.getAttribute('href') === currentPage) a.classList.add('is-active');
+});
+
 // Live product count + recommended picks (homepage only)
 
 // Seeded RNG (mulberry32) so the picks are stable all day but reshuffle the next day -
