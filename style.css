@@ -207,9 +207,56 @@ nav.main-nav a:hover::after { transform: scaleX(1); }
   color: inherit;
   display: flex;
   position: relative;
+  transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease;
+  transform-origin: bottom center;
 }
 .header-icons button:hover, .header-icons a:hover { color: var(--gold-bright); }
 .header-icons svg { width: 19px; height: 19px; }
+
+/* Dock-style magnify: the hovered icon grows, its immediate neighbor
+   grows a little too (falls off with distance), like a macOS dock -
+   same idea as React Bits' <Dock/>, done with :has() instead of
+   motion/JS since this site has no build step. */
+.header-icons button:hover, .header-icons a:hover { transform: scale(1.32) translateY(-3px); z-index: 3; }
+.header-icons:has(> :nth-child(1):hover) > :nth-child(2),
+.header-icons:has(> :nth-child(2):hover) > :nth-child(1),
+.header-icons:has(> :nth-child(2):hover) > :nth-child(3),
+.header-icons:has(> :nth-child(3):hover) > :nth-child(2),
+.header-icons:has(> :nth-child(3):hover) > :nth-child(4),
+.header-icons:has(> :nth-child(4):hover) > :nth-child(3),
+.header-icons:has(> :nth-child(4):hover) > :nth-child(5),
+.header-icons:has(> :nth-child(5):hover) > :nth-child(4) {
+  transform: scale(1.14) translateY(-1px);
+}
+
+/* Tooltip pulled from each icon's aria-label - accountBtn already has
+   its own dynamic .tooltip span (login-state text), so this is skipped
+   there via :not(:has(.tooltip)). */
+.header-icons button:not(:has(.tooltip))::after,
+.header-icons a:not(:has(.tooltip))::after {
+  content: attr(aria-label);
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 0.68rem;
+  padding: 0.4rem 0.65rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+.header-icons button:hover:not(:has(.tooltip))::after,
+.header-icons a:hover:not(:has(.tooltip))::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 
 .tooltip {
   position: absolute;
