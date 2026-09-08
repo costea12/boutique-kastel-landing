@@ -1428,7 +1428,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.6rem var(--edge);
+  /* Matches .mobile-nav-list's padding (0.9rem) + .mobile-nav-link's own
+     left padding (0.9rem), so the logo lines up with the icons below
+     instead of sitting at the wider page --edge value. */
+  padding: 1.4rem 1.8rem;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .mobile-nav-logo .mark {
