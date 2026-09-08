@@ -237,11 +237,13 @@ function renderCart() {
       <span>Total</span>
       <strong>${formatPrice(cartTotal())}</strong>
     </div>
+    <div id="checkoutAddress"></div>
     <button class="btn btn-cart" id="checkoutBtn">Finalizează comanda</button>
     <p class="cart-note">Plata online va fi disponibilă în curând - comanda ta va fi confirmată telefonic. Trebuie să fii autentificat pentru a plasa o comandă. Sau sună direct la <a href="tel:0744377651">0744 377 651</a>.</p>
   `;
 
   document.getElementById('checkoutBtn')?.addEventListener('click', handleCheckout);
+  renderAddressBlock();
 
   el.querySelectorAll('.cart-item-remove').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -267,6 +269,115 @@ function renderCart() {
     });
   });
 }
+
+// Shipping address review at checkout - shows the address already saved on
+// the account (cont.html) read-only, with an "Editează" button to change it
+// inline for this order, instead of silently using whatever's on file or
+// bouncing the customer to a separate page. Writes go to the same
+// users/{uid} doc that cont.html's address form uses, so both stay in sync.
+let addressState = { user: null, data: null, editing: false };
+
+const ADDRESS_FIELDS = [
+  { key: 'shipName', label: 'Nume complet', type: 'text' },
+  { key: 'shipPhone', label: 'Telefon', type: 'tel' },
+  { key: 'shipAddress', label: 'Adresă', type: 'text' },
+  { key: 'shipCity', label: 'Oraș', type: 'text' },
+  { key: 'shipCounty', label: 'Județ', type: 'text' },
+  { key: 'shipPostalCode', label: 'Cod poștal', type: 'text' },
+  { key: 'shipCountry', label: 'Țară', type: 'text' },
+];
+
+function hasCompleteAddress(d) {
+  return !!d && ADDRESS_FIELDS.every((f) => d[f.key] && d[f.key].trim());
+}
+
+function renderAddressBlock() {
+  const el = document.getElementById('checkoutAddress');
+  if (!el) return; // cart is empty, nothing to show
+
+  if (!addressState.user) {
+    el.innerHTML = '';
+    return;
+  }
+
+  const d = addressState.data || {};
+  const complete = hasCompleteAddress(d);
+
+  if (addressState.editing || !complete) {
+    el.innerHTML = `
+      <div class="checkout-address">
+        <h3>Adresă de livrare</h3>
+        <form class="account-form" id="checkoutAddressForm">
+          ${ADDRESS_FIELDS.map((f) => `
+            <label>
+              <span>${f.label}</span>
+              <input type="${f.type}" id="ca-${f.key}" value="${(d[f.key] || '').replace(/"/g, '&quot;')}" required>
+            </label>
+          `).join('')}
+          <div class="checkout-address-actions">
+            <button type="submit" class="btn btn-outline">Salvează adresa</button>
+            ${complete ? '<button type="button" class="btn-text" id="checkoutAddressCancel">Anulează</button>' : ''}
+          </div>
+        </form>
+      </div>
+    `;
+    document.getElementById('checkoutAddressForm').addEventListener('submit', saveCheckoutAddress);
+    document.getElementById('checkoutAddressCancel')?.addEventListener('click', () => {
+      addressState.editing = false;
+      renderAddressBlock();
+    });
+  } else {
+    el.innerHTML = `
+      <div class="checkout-address checkout-address-view">
+        <h3>Adresă de livrare</h3>
+        <address>
+          ${d.shipName}<br>
+          ${d.shipAddress}, ${d.shipCity}, ${d.shipCounty}, ${d.shipPostalCode}<br>
+          ${d.shipCountry} &middot; ${d.shipPhone}
+        </address>
+        <button type="button" class="btn-text" id="checkoutAddressEdit">Editează</button>
+      </div>
+    `;
+    document.getElementById('checkoutAddressEdit').addEventListener('click', () => {
+      addressState.editing = true;
+      renderAddressBlock();
+    });
+  }
+}
+
+function saveCheckoutAddress(e) {
+  e.preventDefault();
+  const user = addressState.user;
+  if (!user) return;
+
+  const address = {};
+  ADDRESS_FIELDS.forEach((f) => {
+    address[f.key] = document.getElementById(`ca-${f.key}`).value.trim();
+  });
+
+  const btn = e.target.querySelector('button[type="submit"]');
+  if (btn) { btn.disabled = true; btn.textContent = 'Se salvează...'; }
+
+  firebase.firestore().collection('users').doc(user.uid).set(address, { merge: true }).then(() => {
+    addressState.data = Object.assign({}, addressState.data, address);
+    addressState.editing = false;
+    renderAddressBlock();
+  }).catch(() => {
+    if (btn) { btn.disabled = false; btn.textContent = 'Salvează adresa'; }
+    alert('Nu am putut salva adresa. Încearcă din nou.');
+  });
+}
+
+firebase.auth().onAuthStateChanged((user) => {
+  addressState.user = user;
+  addressState.data = null;
+  addressState.editing = false;
+  if (!user) { renderAddressBlock(); return; }
+  firebase.firestore().collection('users').doc(user.uid).get().then((doc) => {
+    addressState.data = doc.data() || {};
+    renderAddressBlock();
+  });
+});
 
 function handleCheckout() {
   const user = firebase.auth().currentUser;

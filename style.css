@@ -1993,6 +1993,42 @@ footer {
 }
 .cart-note { text-align: center; font-size: 0.82rem; color: var(--ink-soft); margin-top: 0.9rem; }
 .cart-note a { color: var(--teal-mid); }
+
+.checkout-address {
+  background: var(--white);
+  border: 1px solid rgba(22,51,47,0.1);
+  border-radius: 10px;
+  padding: 1.2rem 1.3rem;
+  margin-bottom: 1.3rem;
+}
+.checkout-address h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: 0.7rem;
+}
+.checkout-address-view address {
+  font-style: normal;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+.checkout-address form.account-form { gap: 0.8rem; }
+.checkout-address-actions { display: flex; align-items: center; gap: 1rem; }
+.checkout-address-actions .btn { width: auto; flex: 1; }
+.btn-text {
+  background: none;
+  border: none;
+  color: var(--teal-mid);
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+.btn-text:hover { color: var(--gold-bright); }
 .cart-address-warning {
   text-align: center;
   font-size: 0.84rem;
