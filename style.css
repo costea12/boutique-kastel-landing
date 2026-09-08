@@ -2188,6 +2188,59 @@ footer {
 }
 .account-box:has(#accountLoggedIn:not([hidden])) { max-width: 1080px; }
 .account-box-narrow { max-width: 440px; margin: 0 auto; }
+
+/* ---- Admin panel (panou-8f2k1.html) ---- */
+.admin-header .header-wrap { justify-content: flex-start; gap: 1.2rem; }
+.admin-header-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--white);
+  font-size: 1.05rem;
+  flex: 1;
+}
+.admin-header .btn-text { color: var(--white-dim); }
+.admin-header .btn-text:hover { color: var(--gold-bright); }
+.admin-h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 1.4rem;
+  text-align: center;
+}
+#adminPanel { width: 100%; max-width: 900px; margin: 0 auto; }
+.admin-orders { display: flex; flex-direction: column; gap: 1rem; }
+.admin-order {
+  background: var(--white);
+  border: 1px solid rgba(22,51,47,0.1);
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem;
+}
+.admin-order-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  font-family: var(--font-display);
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.admin-order-top strong { font-size: 1.05rem; }
+.admin-order-top span { font-size: 0.85rem; color: var(--ink-soft); font-family: var(--font-body); }
+.admin-order-status {
+  margin-left: auto;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(22,51,47,0.15);
+  border-radius: 6px;
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+.admin-order-customer { font-size: 0.88rem; color: var(--ink); margin-bottom: 0.3rem; }
+.admin-order-shipping { font-size: 0.82rem; color: var(--ink-soft); margin-bottom: 0.6rem; }
+.admin-order-items { font-size: 0.85rem; color: var(--ink-soft); padding-left: 1.1rem; }
+.admin-orders-empty { text-align: center; color: var(--ink-soft); }
 .account-tabs {
   display: flex;
   gap: 0.5rem;

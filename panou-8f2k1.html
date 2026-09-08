@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panou comenzi | Boutique Kastel</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#0a464e">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header admin-header">
+  <div class="header-wrap">
+    <a href="index.html" class="logo">
+      <span class="mark">BK</span>
+    </a>
+    <span class="admin-header-title">Panou comenzi</span>
+    <button type="button" class="btn-text" id="adminLogoutBtn" hidden>Deconectare</button>
+  </div>
+</header>
+
+<main class="account-main">
+  <div class="account-box account-box-narrow" id="adminLoggedOut">
+    <h1 class="admin-h1">Autentificare</h1>
+    <form id="adminLoginForm" class="account-form">
+      <label>
+        <span>Adresă de e-mail</span>
+        <input type="email" id="adminEmail" name="email" autocomplete="email" required>
+      </label>
+      <label>
+        <span>Parolă</span>
+        <input type="password" id="adminPassword" name="password" autocomplete="current-password" required>
+      </label>
+      <p class="account-error" id="adminLoginError" hidden></p>
+      <button type="submit" class="btn btn-gold">Autentificare</button>
+    </form>
+  </div>
+
+  <div class="account-box-narrow" id="adminNoAccess" hidden>
+    <p class="account-error">Acest cont nu are acces la panoul de comenzi.</p>
+  </div>
+
+  <div id="adminPanel" hidden>
+    <div class="admin-orders" id="adminOrdersList"></div>
+    <p class="admin-orders-empty" id="adminOrdersEmpty" hidden>Nicio comandă momentan.</p>
+  </div>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="panou-admin.js"></script>
+</body>
+</html>
