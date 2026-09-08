@@ -2201,6 +2201,17 @@ body.age-gate-lock { overflow: hidden; }
   margin: 1rem 0;
 }
 
+.gpsr-note {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin: 1.2rem 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(22,51,47,0.08);
+}
+.gpsr-note a { color: var(--teal-mid); text-decoration: underline; }
+.gpsr-note a:hover { color: var(--gold); }
+
 /* Cookie consent banner (cookie-consent.js) - a non-blocking bottom bar,
    unlike the age gate: the site is fully usable behind/around it. */
 .cookie-bar {

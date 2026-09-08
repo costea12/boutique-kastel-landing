@@ -529,6 +529,8 @@ function renderProduct(p) {
 
         ${renderSpecs(p)}
 
+        <p class="gpsr-note">Informații de siguranță: consultă eticheta/ambalajul produsului. Boutique Kastel este punctul de contact pentru sesizări de siguranță conform GPSR — <a href="termeni.html#gpsr">detalii</a>.</p>
+
         <a href="${categoryPage(p.category, p.niche)}" class="back-link">← Înapoi la ${categoryLabel(p) || 'catalog'}</a>
       </div>
     </div>
