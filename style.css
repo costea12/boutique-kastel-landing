@@ -697,22 +697,9 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 #reviewForm .btn { width: fit-content; }
 .review-form-note { font-size: 0.85rem; color: var(--teal-mid); }
 
-/* ---------- Editorial spotlight (test section, Parfumuri only) ---------- */
+/* ---------- Editorial spotlight (Parfumuri, Băuturi, Cafea, Dulciuri) ---------- */
 
 .editorial-spotlight { background: var(--ivory); padding: clamp(3rem, 6vw, 5rem) 0; }
-
-/* Băuturi/Cafea use a dark variant instead of the light one Parfumuri
-   keeps - fits the moodier whisky/coffee photography better, and breaks
-   up three light sections in a row. Two slightly different dark shades
-   so they don't read as one flat block either. */
-.editorial-spotlight-dark { background: var(--teal-darker); }
-.editorial-spotlight-dark-alt { background: var(--teal-deep); }
-.editorial-spotlight-dark .editorial-spotlight-photo { box-shadow: 0 24px 50px rgba(0,0,0,0.4); }
-.editorial-spotlight-dark .editorial-spotlight-content .kicker { color: var(--gold-bright); }
-.editorial-spotlight-dark .editorial-spotlight-content h2 { color: var(--white); }
-.editorial-spotlight-dark .editorial-spotlight-content > p { color: var(--white-dim); }
-.editorial-spotlight-dark .editorial-spotlight-dots button { background: rgba(255,255,255,0.25); }
-.editorial-spotlight-dark .editorial-spotlight-dots button.is-active { background: var(--gold-bright); }
 .editorial-spotlight-split {
   display: grid;
   grid-template-columns: 1fr 0.85fr;
