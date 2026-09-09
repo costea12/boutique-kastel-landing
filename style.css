@@ -793,7 +793,7 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 
 /* ---------- About / trust ---------- */
 
-.about { background: var(--ivory-warm); }
+.about { background: var(--ivory); }
 .about .kicker { color: var(--teal-mid); }
 .about h2 {
   font-family: var(--font-display);
