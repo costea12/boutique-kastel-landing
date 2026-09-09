@@ -56,128 +56,6 @@ if (scrollRevealPending.length) {
   updateScrollReveal();
 }
 
-// Fan carousel (homepage) - a hand of product cards fanned out around a
-// center card, cycling 7-at-a-time through a longer product list. Plain
-// CSS transforms/transitions - same visual idea as the GSAP card-fan-carousel
-// component, no React/build step needed for this static site.
-const fanTrack = document.getElementById('fanTrack');
-if (fanTrack) {
-  const cards = Array.from(fanTrack.querySelectorAll('.fan-card'));
-  const total = cards.length;
-  const MAX_VISIBLE = 7;
-  const HALF = 3;
-  const needsPagination = total > MAX_VISIBLE;
-
-  // Angle/scale/offset per fan slot, mirroring the reference component.
-  const FAN_POSITIONS = [
-    { rot: -21, scale: 0.7756, x: -30, y: 7.3, z: 1 },
-    { rot: -14, scale: 0.8498, x: -22, y: 4.0, z: 2 },
-    { rot: -7,  scale: 0.9346, x: -11, y: 1.3, z: 3 },
-    { rot: 0,   scale: 1.0,    x: 0,   y: 0.0, z: 10 },
-    { rot: 7,   scale: 0.9346, x: 11,  y: 1.3, z: 3 },
-    { rot: 14,  scale: 0.8498, x: 22,  y: 4.0, z: 2 },
-    { rot: 21,  scale: 0.7756, x: 30,  y: 7.3, z: 1 },
-  ];
-
-  function responsiveMultiplier() {
-    const w = window.innerWidth;
-    if (w < 480) return 0.34;
-    if (w < 640) return 0.46;
-    if (w < 768) return 0.6;
-    if (w < 1024) return 0.8;
-    return 1.0;
-  }
-
-  let centerIndex = needsPagination ? HALF : total >> 1;
-
-  function visibleMap() {
-    const map = new Map();
-    if (!needsPagination) {
-      cards.forEach((_, i) => map.set(i, i));
-      return map;
-    }
-    for (let slot = 0; slot < MAX_VISIBLE; slot++) {
-      const idx = ((centerIndex + slot - HALF) % total + total) % total;
-      map.set(idx, slot);
-    }
-    return map;
-  }
-
-  // Each card's current base (non-hover) transform pieces, so hover can
-  // layer a lift + extra scale on top instead of overwriting x/y/rotate
-  // (which is what caused the chaotic jump-to-center glitch on hover).
-  const baseFor = new Map();
-
-  // Hover only changes z-index and a CSS class (glow + caption, see
-  // .fan-card.is-hovered in style.css) - it never touches the transform.
-  // Moving/scaling the card under the cursor was what caused the vibration:
-  // the card's edge would shift away from the pointer, firing mouseleave,
-  // which reset it, which fired mouseenter again, looping rapidly.
-  function applyTransform(card, base, hovered) {
-    card.style.transform =
-      `translate(-50%, -50%) translate(${base.x}rem, ${base.y}rem) rotate(${base.rot}deg) scale(${base.scale})`;
-    card.style.zIndex = hovered ? '30' : String(base.z);
-    card.classList.toggle('is-hovered', hovered);
-  }
-
-  function render() {
-    const mult = responsiveMultiplier();
-    const map = visibleMap();
-    cards.forEach((card, i) => {
-      const slot = map.get(i);
-      if (slot === undefined) {
-        card.style.opacity = '0';
-        card.style.pointerEvents = 'none';
-        card.style.transform = 'translate(-50%, -50%) scale(0.5)';
-        card.style.zIndex = '0';
-        baseFor.delete(card);
-        return;
-      }
-      const p = FAN_POSITIONS[slot];
-      const base = { x: p.x * mult, y: p.y * mult, rot: p.rot, scale: p.scale, z: p.z };
-      baseFor.set(card, base);
-      card.style.opacity = '1';
-      card.style.pointerEvents = 'auto';
-      applyTransform(card, base, false);
-    });
-    dots.forEach((d, i) => d.classList.toggle('is-active', i === centerIndex));
-  }
-
-  function cycle(dir) {
-    centerIndex = (centerIndex + dir + total) % total;
-    render();
-  }
-
-  const dotsWrap = document.getElementById('fanDots');
-  const dots = [];
-  if (needsPagination) {
-    cards.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.setAttribute('aria-label', `Produsul ${i + 1}`);
-      dot.addEventListener('click', () => { centerIndex = i; render(); });
-      dotsWrap.appendChild(dot);
-      dots.push(dot);
-    });
-  }
-
-  document.getElementById('fanPrev')?.addEventListener('click', () => cycle(-1));
-  document.getElementById('fanNext')?.addEventListener('click', () => cycle(1));
-  window.addEventListener('resize', render);
-
-  cards.forEach((card) => {
-    card.addEventListener('mouseenter', () => {
-      const base = baseFor.get(card);
-      if (base) applyTransform(card, base, true);
-    });
-    card.addEventListener('mouseleave', () => {
-      const base = baseFor.get(card);
-      if (base) applyTransform(card, base, false);
-    });
-  });
-
-  render();
-}
-
 // Mobile nav
 const navToggle = document.getElementById('navToggle');
 const navClose = document.getElementById('navClose');
@@ -205,6 +83,44 @@ mobileNav?.querySelectorAll('a').forEach((a) =>
 const currentPage = location.pathname.split('/').pop() || 'index.html';
 mobileNav?.querySelectorAll('.mobile-nav-link').forEach((a) => {
   if (a.getAttribute('href') === currentPage) a.classList.add('is-active');
+});
+
+// Editorial spotlight "more products" rows (homepage only, one per category
+// section - Parfumuri/Băuturi/Cafea). On mobile each becomes its own
+// one-card-at-a-time carousel that auto-advances every 30s, staying on a
+// single line rather than stacking; on desktop all cards show at once as a
+// static grid (CSS handles that side, this only runs the mobile rotation).
+// Each section gets its own independent timer/index via the closure below.
+document.querySelectorAll('.editorial-spotlight').forEach((section) => {
+  const wrap = section.querySelector('.editorial-spotlight-more');
+  const dotsWrap = section.querySelector('.editorial-spotlight-dots');
+  if (!wrap || !dotsWrap) return;
+
+  const cards = Array.from(wrap.querySelectorAll('.product-card'));
+  if (cards.length < 2) return;
+
+  cards.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.setAttribute('aria-label', `Produsul ${i + 1}`);
+    dot.addEventListener('click', () => { current = i; render(); resetTimer(); });
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  let current = 0;
+  function render() {
+    cards.forEach((c, i) => c.classList.toggle('is-shown', i === current));
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+  }
+
+  let timer;
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => { current = (current + 1) % cards.length; render(); }, 30000);
+  }
+
+  render();
+  resetTimer();
 });
 
 // Live product count + recommended picks (homepage only)

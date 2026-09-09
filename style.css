@@ -530,117 +530,6 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 }
 .section-head .flourish { margin-top: 1.2rem; color: var(--teal-mid); }
 
-/* ---------- Fan carousel (fanned product cards, homepage hero) ---------- */
-
-.fan-carousel-section {
-  position: relative;
-  background: radial-gradient(130% 160% at 50% -20%, var(--teal-mid), var(--teal-deep) 55%, var(--teal-darker) 120%);
-  padding: clamp(3.5rem, 7vw, 6rem) var(--edge) clamp(2.2rem, 5vw, 3.2rem);
-  overflow: hidden;
-}
-.fan-carousel-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(55% 55% at 12% 15%, var(--gold-dim), transparent 60%),
-    radial-gradient(45% 45% at 92% 85%, rgba(232, 201, 135, 0.16), transparent 60%);
-  pointer-events: none;
-}
-.fan-carousel {
-  position: relative;
-  z-index: 1;
-  height: clamp(30rem, 50vw, 44rem);
-  max-width: 88rem;
-  margin: 0 auto;
-}
-.fan-track {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.fan-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: clamp(14rem, 21vw, 19.5rem);
-  height: clamp(19rem, 28vw, 26.5rem);
-  border-radius: 18px;
-  overflow: hidden;
-  background: var(--white);
-  border: 1px solid var(--gold-dim);
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.35);
-  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  transform: translate(-50%, -50%);
-}
-/* Hover never touches transform/size - only a glow, so the card's edges
-   never shift under the cursor (that shifting was causing a rapid
-   enter/leave flicker - see the note in script.js). */
-.fan-card.is-hovered {
-  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.45), 0 0 0 2px var(--gold-bright);
-  border-color: var(--gold-bright);
-}
-.fan-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.fan-card-info {
-  position: absolute;
-  inset: auto 0 0 0;
-  padding: 0.9rem 1rem 1rem;
-  background: linear-gradient(0deg, rgba(6, 20, 20, 0.9) 0%, rgba(6, 20, 20, 0.5) 55%, rgba(6, 20, 20, 0) 100%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.fan-card.is-hovered .fan-card-info { opacity: 1; }
-.fan-card-info .kicker { color: var(--gold-bright); font-size: 0.62rem; margin-bottom: 0.3rem; }
-.fan-card-info h3 { font-family: var(--font-display); color: var(--ivory); font-size: 0.95rem; font-weight: 500; }
-
-.fan-nav {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.4rem;
-  margin-top: clamp(1.2rem, 3vw, 2rem);
-}
-.fan-arrow {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  border: 1px solid var(--gold-dim);
-  background: rgba(6, 47, 52, 0.55);
-  color: var(--gold-bright);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border-color 0.25s ease, background 0.25s ease;
-}
-.fan-arrow:hover { border-color: var(--gold-bright); background: rgba(6, 47, 52, 0.85); }
-.fan-arrow svg { width: 18px; height: 18px; }
-.fan-dots { display: flex; gap: 0.55rem; }
-.fan-dots button {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(246, 241, 230, 0.4);
-  cursor: pointer;
-  padding: 0;
-  transition: background 0.25s ease, transform 0.25s ease;
-}
-.fan-dots button.is-active { background: var(--gold-bright); transform: scale(1.3); }
-
-@media (max-width: 640px) {
-  .fan-carousel { height: clamp(19rem, 72vw, 25rem); }
-  .fan-card { width: clamp(8.5rem, 30vw, 10.5rem); height: clamp(11.5rem, 40vw, 14.5rem); }
-}
-
 /* ---------- Categories ---------- */
 
 .categories { background: var(--ivory); }
@@ -807,6 +696,105 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 #reviewForm textarea:focus { outline: none; border-color: var(--gold); }
 #reviewForm .btn { width: fit-content; }
 .review-form-note { font-size: 0.85rem; color: var(--teal-mid); }
+
+/* ---------- Editorial spotlight (test section, Parfumuri only) ---------- */
+
+.editorial-spotlight { background: var(--ivory); padding: clamp(3rem, 6vw, 5rem) 0; }
+
+/* Băuturi/Cafea use a dark variant instead of the light one Parfumuri
+   keeps - fits the moodier whisky/coffee photography better, and breaks
+   up three light sections in a row. Two slightly different dark shades
+   so they don't read as one flat block either. */
+.editorial-spotlight-dark { background: var(--teal-darker); }
+.editorial-spotlight-dark-alt { background: var(--teal-deep); }
+.editorial-spotlight-dark .editorial-spotlight-photo { box-shadow: 0 24px 50px rgba(0,0,0,0.4); }
+.editorial-spotlight-dark .editorial-spotlight-content .kicker { color: var(--gold-bright); }
+.editorial-spotlight-dark .editorial-spotlight-content h2 { color: var(--white); }
+.editorial-spotlight-dark .editorial-spotlight-content > p { color: var(--white-dim); }
+.editorial-spotlight-dark .editorial-spotlight-dots button { background: rgba(255,255,255,0.25); }
+.editorial-spotlight-dark .editorial-spotlight-dots button.is-active { background: var(--gold-bright); }
+.editorial-spotlight-split {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+.editorial-spotlight-photo {
+  border-radius: 18px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  box-shadow: 0 16px 34px rgba(22, 51, 47, 0.14);
+}
+.editorial-spotlight-photo img { width: 100%; height: 100%; object-fit: cover; }
+.editorial-spotlight-content .kicker { color: var(--teal-mid); margin-bottom: 0.9rem; }
+.editorial-spotlight-content h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  color: var(--ink);
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+.editorial-spotlight-content > p { color: var(--ink-soft); margin-bottom: 1.6rem; max-width: 32ch; }
+
+/* Featured product - a bigger, more prominent card than the plain
+   .product-card thumbnails below, since this is the one product being
+   spotlighted next to the lifestyle photo. */
+.editorial-featured-card {
+  display: block;
+  max-width: 260px;
+  background: var(--white);
+  border: 1px solid rgba(22,51,47,0.08);
+  border-radius: 16px;
+  padding: 1.3rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0 14px 30px rgba(22,51,47,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.editorial-featured-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(22,51,47,0.16); }
+.editorial-featured-card-img {
+  aspect-ratio: 1 / 1;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+}
+.editorial-featured-card-img img { width: 100%; height: 100%; object-fit: contain; }
+.editorial-featured-card .product-brand { display: block; }
+.editorial-featured-card h3 { font-family: var(--font-display); font-weight: 500; font-size: 1.1rem; color: var(--ink); margin: 0.3rem 0; }
+.editorial-featured-card .product-price { font-family: var(--font-display); color: var(--ink); font-weight: 500; }
+
+/* Products below - a static full row on desktop, a one-at-a-time
+   auto-advancing carousel on mobile (see the script at the bottom of
+   index.html). */
+.editorial-spotlight-more {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+}
+.editorial-spotlight-dots { display: none; justify-content: center; gap: 0.5rem; margin-top: 1.2rem; }
+.editorial-spotlight-dots button {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(22,51,47,0.2);
+  cursor: pointer;
+  padding: 0;
+}
+.editorial-spotlight-dots button.is-active { background: var(--teal-mid); }
+
+@media (max-width: 860px) {
+  .editorial-spotlight-split { grid-template-columns: 1fr; }
+  .editorial-spotlight-photo { aspect-ratio: 16 / 10; }
+  .editorial-featured-card { max-width: 100%; }
+}
+@media (max-width: 640px) {
+  /* One card visible at a time, JS toggles which one via .is-shown -
+     stays a single row/line as requested, doesn't stack into a column. */
+  .editorial-spotlight-more { grid-template-columns: 1fr; }
+  .editorial-spotlight-more .product-card { display: none; }
+  .editorial-spotlight-more .product-card.is-shown { display: block; }
+  .editorial-spotlight-dots { display: flex; }
+}
 
 /* ---------- Preview products ---------- */
 
