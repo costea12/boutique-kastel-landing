@@ -229,6 +229,17 @@
 <script>
 function formatPrice(p) { return `${p.toFixed(2).replace('.', ',')} Lei`; }
 
+// Same helper duplicated in cont.js/panou-admin.js - cart items and the
+// saved shipping address are still someone-controlled data being built into
+// innerHTML, even though today they only ever come from this site's own
+// catalog.json / the account owner's own form. Escape anyway, matching the
+// policy used everywhere else this kind of data gets rendered.
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
 function renderCart() {
   const cart = getCart();
   const el = document.getElementById('cartContents');
@@ -246,9 +257,9 @@ function renderCart() {
       ${cart.map((item) => `
         <div class="cart-item">
           <a href="produs.html?cod=${encodeURIComponent(item.cod)}" class="cart-item-link">
-            <img src="${item.image}" alt="${item.name}">
+            <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}">
             <div class="cart-item-info">
-              <h4>${item.name}</h4>
+              <h4>${escapeHtml(item.name)}</h4>
               <span>${formatPrice(item.price)} / buc</span>
             </div>
           </a>
@@ -350,7 +361,7 @@ function renderAddressBlock() {
           ${ADDRESS_FIELDS.map((f) => `
             <label>
               <span>${f.label}</span>
-              <input type="${f.type}" id="ca-${f.key}" value="${(d[f.key] || '').replace(/"/g, '&quot;')}" required>
+              <input type="${f.type}" id="ca-${f.key}" value="${escapeHtml(d[f.key] || '')}" required>
             </label>
           `).join('')}
           <div class="checkout-address-actions">
@@ -370,9 +381,9 @@ function renderAddressBlock() {
       <div class="checkout-address checkout-address-view">
         <h3>Adresă de livrare</h3>
         <address>
-          ${d.shipName}<br>
-          ${d.shipAddress}, ${d.shipCity}, ${d.shipCounty}, ${d.shipPostalCode}<br>
-          ${d.shipCountry} &middot; ${d.shipPhone}
+          ${escapeHtml(d.shipName)}<br>
+          ${escapeHtml(d.shipAddress)}, ${escapeHtml(d.shipCity)}, ${escapeHtml(d.shipCounty)}, ${escapeHtml(d.shipPostalCode)}<br>
+          ${escapeHtml(d.shipCountry)} &middot; ${escapeHtml(d.shipPhone)}
         </address>
         <button type="button" class="btn-text" id="checkoutAddressEdit">Editează</button>
       </div>

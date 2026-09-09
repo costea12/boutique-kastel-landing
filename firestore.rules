@@ -63,9 +63,42 @@ service cloud.firestore {
     }
 
     match /counters/{counterId} {
-      allow read: if true;
+      // Was publicly readable (allow read: if true) - anyone, no account
+      // needed, could read the exact running order count as free sales-
+      // volume intel. Login is already required to read it now; can't
+      // restrict further without breaking checkout, since cos.html's
+      // transaction reads this doc as any logged-in customer to compute
+      // the next order number - a real fix would move the increment into
+      // a Cloud Function, out of scope while this project has none.
+      allow read: if request.auth != null;
+      // Only checks the new value is +1 of the old - doesn't verify a
+      // matching order was actually created in the same write, so any
+      // logged-in user can still burn through order numbers by calling
+      // this repeatedly without ever placing an order (griefing, not a
+      // data-exposure risk). Same Cloud-Function caveat as above.
       allow update: if request.auth != null &&
         request.resource.data.count == resource.data.count + 1;
+    }
+
+    // Product reviews (reviews.js) - had NO rule at all before, meaning
+    // every read/write was silently rejected by Firestore's default-deny
+    // (the feature never actually worked). Public read (reviews are meant
+    // to be seen by anyone), but create is locked down: must be logged in,
+    // authorUid must match the real requester (no impersonation), rating
+    // bounded 1-5, text non-empty and capped, and only these exact fields
+    // - no update/delete, so a review can't be edited/vandalized after
+    // posting (matches how this feature was actually designed to work).
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if request.auth != null &&
+        request.resource.data.authorUid == request.auth.uid &&
+        request.resource.data.cod is string &&
+        request.resource.data.rating is int &&
+        request.resource.data.rating >= 1 && request.resource.data.rating <= 5 &&
+        request.resource.data.text is string &&
+        request.resource.data.text.size() > 0 && request.resource.data.text.size() <= 2000 &&
+        request.resource.data.keys().hasOnly(['cod', 'rating', 'text', 'authorName', 'authorUid', 'createdAt']);
+      allow update, delete: if false;
     }
   }
 }
