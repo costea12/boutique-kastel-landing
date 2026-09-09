@@ -17,7 +17,6 @@
       <span class="mark">BK</span>
     </a>
     <span class="admin-header-title">Panou comenzi</span>
-    <button type="button" class="btn-text" id="adminLogoutBtn" hidden>Deconectare</button>
   </div>
 </header>
 
@@ -42,9 +41,36 @@
     <p class="account-error">Acest cont nu are acces la panoul de comenzi.</p>
   </div>
 
-  <div id="adminPanel" hidden>
-    <div class="admin-orders" id="adminOrdersList"></div>
-    <p class="admin-orders-empty" id="adminOrdersEmpty" hidden>Nicio comandă momentan.</p>
+  <div class="admin-dashboard" id="adminPanel" hidden>
+    <aside class="admin-sidebar">
+      <nav class="admin-sidebar-nav">
+        <button type="button" class="admin-sidebar-link is-active" data-section="orders">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+          <span>Comenzi</span>
+          <span class="admin-sidebar-badge" id="badgeOrders" hidden>0</span>
+        </button>
+        <button type="button" class="admin-sidebar-link" data-section="returns">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+          <span>Cereri de retur</span>
+          <span class="admin-sidebar-badge" id="badgeReturns" hidden>0</span>
+        </button>
+      </nav>
+      <button type="button" class="btn-text admin-sidebar-logout" id="adminLogoutBtn">Deconectare</button>
+    </aside>
+
+    <div class="admin-content">
+      <section class="admin-panel-section is-active" id="section-orders">
+        <h2 class="admin-section-title">Comenzi</h2>
+        <div class="admin-orders" id="adminOrdersList"></div>
+        <p class="admin-orders-empty" id="adminOrdersEmpty" hidden>Nicio comandă momentan.</p>
+      </section>
+
+      <section class="admin-panel-section" id="section-returns">
+        <h2 class="admin-section-title">Cereri de retur</h2>
+        <div class="admin-orders" id="adminReturnsList"></div>
+        <p class="admin-orders-empty" id="adminReturnsEmpty" hidden>Nicio cerere de retur momentan.</p>
+      </section>
+    </div>
   </div>
 </main>
 

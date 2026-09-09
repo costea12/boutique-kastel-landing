@@ -25,8 +25,11 @@
 
   const ordersList = document.getElementById('adminOrdersList');
   const ordersEmpty = document.getElementById('adminOrdersEmpty');
+  const returnsList = document.getElementById('adminReturnsList');
+  const returnsEmpty = document.getElementById('adminReturnsEmpty');
 
   const STATUS_LABELS = { noua: 'În așteptare confirmare', confirmata: 'Confirmată', livrata: 'Livrată', anulata: 'Anulată' };
+  const RETURN_STATUS_LABELS = { noua: 'Nouă', rezolvata: 'Rezolvată' };
 
   function friendlyError(code) {
     const map = {
@@ -51,7 +54,27 @@
 
   logoutBtn?.addEventListener('click', function () { auth.signOut(); });
 
+  // Sidebar section switching
+  const sidebarLinks = document.querySelectorAll('.admin-sidebar-link');
+  const sections = document.querySelectorAll('.admin-panel-section');
+  sidebarLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      sidebarLinks.forEach(function (l) { l.classList.remove('is-active'); });
+      sections.forEach(function (s) { s.classList.remove('is-active'); });
+      link.classList.add('is-active');
+      document.getElementById('section-' + link.dataset.section)?.classList.add('is-active');
+    });
+  });
+
+  function setBadge(id, count) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (count > 0) { el.textContent = String(count); el.hidden = false; }
+    else { el.hidden = true; }
+  }
+
   function renderOrders(docs) {
+    setBadge('badgeOrders', docs.filter(function (d) { return (d.data().status || 'noua') === 'noua'; }).length);
     if (!docs.length) {
       ordersEmpty.hidden = false;
       ordersList.innerHTML = '';
@@ -112,6 +135,59 @@
       });
   }
 
+  function renderReturns(docs) {
+    setBadge('badgeReturns', docs.filter(function (d) { return (d.data().status || 'noua') === 'noua'; }).length);
+    if (!docs.length) {
+      returnsEmpty.hidden = false;
+      returnsList.innerHTML = '';
+      return;
+    }
+    returnsEmpty.hidden = true;
+    returnsList.innerHTML = docs.map(function (doc) {
+      const r = doc.data();
+      const date = r.createdAt ? r.createdAt.toDate().toLocaleString('ro-RO') : '';
+      const status = r.status || 'noua';
+      const numberLabel = r.orderNumber ? '#' + String(r.orderNumber).padStart(4, '0') : r.orderId;
+
+      return '<div class="admin-order" data-return-id="' + doc.id + '">'
+        + '<div class="admin-order-top">'
+        + '<strong>Comanda ' + numberLabel + '</strong>'
+        + '<span>' + escapeHtml(r.reason || '') + '</span>'
+        + '<span>' + date + '</span>'
+        + '<select class="admin-return-status" data-return-id="' + doc.id + '">'
+        + Object.keys(RETURN_STATUS_LABELS).map(function (key) {
+          return '<option value="' + key + '"' + (key === status ? ' selected' : '') + '>' + RETURN_STATUS_LABELS[key] + '</option>';
+        }).join('')
+        + '</select>'
+        + '</div>'
+        + '<div class="admin-order-customer">' + escapeHtml(r.customerName || '') + ' &middot; ' + escapeHtml(r.customerEmail || '') + '</div>'
+        + (r.message ? '<div class="admin-order-shipping">' + escapeHtml(r.message) + '</div>' : '')
+        + '</div>';
+    }).join('');
+  }
+
+  returnsList?.addEventListener('change', function (e) {
+    const select = e.target.closest('.admin-return-status');
+    if (!select) return;
+    select.disabled = true;
+    db.collection('returnRequests').doc(select.dataset.returnId)
+      .update({ status: select.value })
+      .catch(function () {
+        alert('Nu am putut actualiza statusul. Încearcă din nou.');
+      })
+      .finally(function () { select.disabled = false; });
+  });
+
+  function loadAllReturns() {
+    db.collection('returnRequests').orderBy('createdAt', 'desc').get()
+      .then(function (snap) { renderReturns(snap.docs); })
+      .catch(function (err) {
+        console.error('Nu am putut încărca cererile de retur:', err);
+        returnsEmpty.hidden = false;
+        returnsEmpty.textContent = 'Nu am putut încărca cererile de retur.';
+      });
+  }
+
   auth.onAuthStateChanged(function (user) {
     loginForm.reset();
     loginError.hidden = true;
@@ -136,6 +212,7 @@
       noAccessView.hidden = true;
       panelView.hidden = false;
       loadAllOrders();
+      loadAllReturns();
     }).catch(function () {
       // Firestore rules deny read (not an admin), or a network error - either
       // way, fail closed rather than showing the panel.

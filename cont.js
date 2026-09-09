@@ -247,16 +247,47 @@
           const itemCount = (o.items || []).reduce(function (sum, i) { return sum + (i.qty || 1); }, 0);
           const date = o.createdAt ? o.createdAt.toDate().toLocaleDateString('ro-RO') : '';
           const isPending = !o.status || o.status === 'noua';
+          const isDelivered = o.status === 'livrata';
           const status = statusLabels[o.status] || 'În așteptare confirmare';
           const city = o.shipping && o.shipping.city ? ' · livrare în ' + escapeHtml(o.shipping.city) : '';
           const cancelBtn = isPending
             ? '<button type="button" class="order-cancel-btn" data-order-id="' + doc.id + '">Anulează comanda</button>'
             : '';
           const numberLabel = o.orderNumber ? '#' + String(o.orderNumber).padStart(4, '0') + ' · ' : '';
+
+          // 14-day withdrawal right (OUG 34/2014 art. 11¹) - an actual online
+          // mechanism to exercise it, not just a phone/email instruction like
+          // retur.html used to be the only option for.
+          let returnSection = '';
+          if (isDelivered) {
+            if (o.returnRequested) {
+              returnSection = '<p class="order-return-sent">Cerere de retur trimisă. Te contactăm în curând.</p>';
+            } else {
+              returnSection = ''
+                + '<button type="button" class="order-return-toggle" data-order-id="' + doc.id + '">Solicită retur</button>'
+                + '<form class="order-return-form" id="return-form-' + doc.id + '" data-order-id="' + doc.id + '" data-order-number="' + (o.orderNumber || '') + '" hidden>'
+                + '<label><span>Motiv</span>'
+                + '<select class="order-return-reason" required>'
+                + '<option value="">Alege un motiv</option>'
+                + '<option value="Nu corespunde așteptărilor">Nu corespunde așteptărilor</option>'
+                + '<option value="Produs defect/deteriorat">Produs defect/deteriorat</option>'
+                + '<option value="Produs greșit livrat">Produs greșit livrat</option>'
+                + '<option value="Altul">Altul</option>'
+                + '</select></label>'
+                + '<label><span>Detalii (opțional)</span><textarea class="order-return-message" rows="3"></textarea></label>'
+                + '<div class="order-return-actions">'
+                + '<button type="submit" class="btn btn-outline">Trimite cererea</button>'
+                + '<button type="button" class="btn-text order-return-cancel">Anulează</button>'
+                + '</div>'
+                + '</form>';
+            }
+          }
+
           return '<div class="order-item">'
             + '<div class="order-item-top"><strong>' + numberLabel + (o.total ? o.total.toFixed(2).replace('.', ',') + ' Lei' : '') + '</strong><span class="order-status">' + status + '</span></div>'
             + '<div class="order-item-meta">' + itemCount + ' produs' + (itemCount === 1 ? '' : 'e') + (date ? ' · ' + date : '') + city + '</div>'
             + cancelBtn
+            + returnSection
             + '</div>';
         }).join('');
       })
@@ -287,6 +318,61 @@
         btn.textContent = 'Anulează comanda';
         alert('Nu am putut anula comanda. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
       });
+  });
+
+  // Return-request toggle/cancel (show/hide the inline form) - separate
+  // listener since these don't touch Firestore, just UI state.
+  ordersList?.addEventListener('click', function (e) {
+    const toggleBtn = e.target.closest('.order-return-toggle');
+    if (toggleBtn) {
+      const form = document.getElementById('return-form-' + toggleBtn.dataset.orderId);
+      if (form) { form.hidden = false; toggleBtn.hidden = true; }
+      return;
+    }
+    const cancelBtn = e.target.closest('.order-return-cancel');
+    if (cancelBtn) {
+      const form = cancelBtn.closest('.order-return-form');
+      form.hidden = true;
+      form.previousElementSibling?.removeAttribute('hidden');
+    }
+  });
+
+  ordersList?.addEventListener('submit', function (e) {
+    const form = e.target.closest('.order-return-form');
+    if (!form) return;
+    e.preventDefault();
+    const user = auth.currentUser;
+    if (!user) return;
+
+    const orderId = form.dataset.orderId;
+    const reason = form.querySelector('.order-return-reason').value;
+    const message = form.querySelector('.order-return-message').value.trim();
+    if (!reason) return;
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Se trimite...';
+
+    db.collection('returnRequests').add({
+      orderId: orderId,
+      orderNumber: form.dataset.orderNumber ? parseInt(form.dataset.orderNumber, 10) : null,
+      userId: user.uid,
+      customerName: user.displayName || '',
+      customerEmail: user.email || '',
+      reason: reason,
+      message: message,
+      status: 'noua',
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    }).then(function () {
+      return db.collection('users').doc(user.uid).collection('orders').doc(orderId)
+        .update({ returnRequested: true });
+    }).then(function () {
+      loadOrders(user.uid);
+    }).catch(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Trimite cererea';
+      alert('Nu am putut trimite cererea de retur. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
+    });
   });
 
   function showLoggedIn(user) {

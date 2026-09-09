@@ -26,19 +26,40 @@ service cloud.firestore {
         allow create: if request.auth != null && request.auth.uid == userId;
 
         // Owner may only cancel their own order (status -> 'anulata',
-        // matching cont.js's existing cancel button). An admin may only
+        // matching cont.js's existing cancel button) or flag a return
+        // request as submitted (returnRequested -> true, set right after a
+        // returnRequests doc is created - see below). An admin may only
         // change the status field (confirmata/livrata/etc, admin panel).
         // Neither can rewrite items/total/shipping after the fact.
         allow update: if request.auth != null && (
           (request.auth.uid == userId &&
             request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'canceledAt']) &&
             request.resource.data.status == 'anulata') ||
+          (request.auth.uid == userId &&
+            request.resource.data.diff(resource.data).affectedKeys().hasOnly(['returnRequested']) &&
+            request.resource.data.returnRequested == true) ||
           (exists(/databases/$(database)/documents/admins/$(request.auth.uid)) &&
             request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status']))
         );
 
         allow delete: if false;
       }
+    }
+
+    // 14-day withdrawal-right requests (retur.html / cont.html's order
+    // history "Solicită retur" button) - a real online mechanism per OUG
+    // 34/2014 art. 11¹, instead of email/phone only.
+    match /returnRequests/{requestId} {
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+      allow read: if request.auth != null &&
+        (resource.data.userId == request.auth.uid ||
+          exists(/databases/$(database)/documents/admins/$(request.auth.uid)));
+      // Only an admin can change status (e.g. mark it handled); the
+      // requester never edits their own request after submitting it.
+      allow update: if request.auth != null &&
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status']);
+      allow delete: if false;
     }
 
     match /counters/{counterId} {
