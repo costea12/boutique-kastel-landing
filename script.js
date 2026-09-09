@@ -86,11 +86,12 @@ mobileNav?.querySelectorAll('.mobile-nav-link').forEach((a) => {
 });
 
 // Editorial spotlight "more products" rows (homepage only, one per category
-// section - Parfumuri/Băuturi/Cafea). On mobile each becomes its own
-// one-card-at-a-time carousel that auto-advances every 30s, staying on a
-// single line rather than stacking; on desktop all cards show at once as a
-// static grid (CSS handles that side, this only runs the mobile rotation).
-// Each section gets its own independent timer/index via the closure below.
+// section - Parfumuri/Băuturi/Cafea/Dulciuri). On mobile each becomes its own
+// one-card-at-a-time carousel that auto-advances every 30s and also responds
+// to a left/right swipe, staying on a single line rather than stacking; on
+// desktop all cards show at once as a static grid (CSS handles that side,
+// this only runs the mobile rotation/swipe). Each section gets its own
+// independent timer/index via the closure below.
 document.querySelectorAll('.editorial-spotlight').forEach((section) => {
   const wrap = section.querySelector('.editorial-spotlight-more');
   const dotsWrap = section.querySelector('.editorial-spotlight-dots');
@@ -118,6 +119,26 @@ document.querySelectorAll('.editorial-spotlight').forEach((section) => {
     clearInterval(timer);
     timer = setInterval(() => { current = (current + 1) % cards.length; render(); }, 30000);
   }
+
+  // Swipe: left goes to the next card, right goes to the previous one.
+  // Only horizontal swipes trigger a change - a mostly-vertical drag (page
+  // scroll) is ignored so scrolling past the section still works normally.
+  let touchStartX = 0;
+  let touchStartY = 0;
+  wrap.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+  }, { passive: true });
+  wrap.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].screenX - touchStartX;
+    const dy = e.changedTouches[0].screenY - touchStartY;
+    if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+    current = dx < 0
+      ? (current + 1) % cards.length
+      : (current - 1 + cards.length) % cards.length;
+    render();
+    resetTimer();
+  }, { passive: true });
 
   render();
   resetTimer();
