@@ -1443,7 +1443,7 @@ footer {
   color: var(--white-dim);
   transition: background 0.2s ease, color 0.2s ease;
 }
-.mobile-nav-link svg { width: 19px; height: 19px; flex-shrink: 0; color: inherit; }
+.mobile-nav-link svg { display: none; }
 .mobile-nav-link:hover { background: rgba(255,255,255,0.06); color: var(--white); }
 .mobile-nav-link.is-active {
   background: linear-gradient(135deg, var(--teal-mid), var(--teal-deep));
