@@ -1209,6 +1209,14 @@ footer {
   flex-wrap: wrap;
 }
 .footer-badges img { display: block; height: 44px; width: auto; }
+.footer-badge-netopia {
+  display: inline-flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+}
+.footer-badge-netopia img { height: 24px; }
 .footer-legal-entity {
   max-width: var(--container);
   margin: 0 auto;
