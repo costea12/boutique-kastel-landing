@@ -1315,6 +1315,15 @@ footer {
   margin-bottom: 2rem;
 }
 .legal-content.legal-doc .btn { display: block; margin: 2.6rem auto 0; width: fit-content; }
+.legal-return-form {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.legal-return-form p { margin-bottom: 0.7rem; }
+.legal-return-form p:first-child { color: var(--white-faint); font-size: 0.88rem; margin-bottom: 1rem; }
 
 /* ---------- Reveal animation ---------- */
 
