@@ -2,6 +2,7 @@
 <html lang="ro">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.google.com https://unpkg.com https://mny.ro https://cdn.jsdelivr.net; style-src 'self' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com https://*.tile.openstreetmap.org; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.googleapis.com https://mny.ro https://api.emailjs.com; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parfumuri | Boutique Kastel</title>
 <meta name="description" content="Colecția de parfumuri Boutique Kastel, Duty Free Concept, Hunedoara.">
@@ -286,20 +287,6 @@
 <script src="catalog.js"></script>
 <script src="header-search.js"></script>
 <script src="newsletter-popup.js?v=3"></script>
-<script>
-  const navToggle = document.getElementById('navToggle');
-  const navClose = document.getElementById('navClose');
-  const mobileNav = document.getElementById('mobileNav');
-  const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
-  const openMobileNav = () => { mobileNav.classList.add('open'); mobileNavBackdrop?.classList.add('open'); };
-  const closeMobileNav = () => { mobileNav.classList.remove('open'); mobileNavBackdrop?.classList.remove('open'); };
-  navToggle?.addEventListener('click', openMobileNav);
-  navClose?.addEventListener('click', closeMobileNav);
-  mobileNavBackdrop?.addEventListener('click', closeMobileNav);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMobileNav(); });
-  mobileNav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMobileNav));
-  const currentPage = location.pathname.split('/').pop() || 'index.html';
-  mobileNav?.querySelectorAll('.mobile-nav-link').forEach((a) => { if (a.getAttribute('href') === currentPage) a.classList.add('is-active'); });
-</script>
+<script src="mobile-nav.js"></script>
 </body>
 </html>
