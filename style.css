@@ -14,6 +14,12 @@
   --gold: #cda05e;
   --gold-bright: #e8c987;
   --gold-dim: rgba(232, 201, 135, 0.35);
+  /* --gold fails WCAG AA (2.1:1) as small text on the ivory/white product
+     cards - use this darker variant for any readable gold text on a light
+     background (e.g. .product-brand). --gold itself stays fine for
+     decorative icons/flourishes and for gold text on the dark teal
+     sections, where contrast is already good. */
+  --gold-deep: #7d5a27;
 
   --ivory: #f6f1e6;
   --ivory-warm: #efe4cd;
@@ -330,6 +336,10 @@ nav.main-nav a:hover::after { transform: scaleX(1); }
   color: var(--ink);
 }
 .header-search-form input::placeholder { color: var(--ink-soft); }
+/* No visible border to shift on :focus like the other search-style inputs
+   (catalog filters, popup) - this one's borderless by design, so give
+   keyboard focus its own indicator instead of silently dropping it. */
+.header-search-form input:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 4px; }
 .header-search-close {
   color: var(--ink-soft);
   display: flex;
@@ -1710,7 +1720,7 @@ footer {
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--gold);
+  color: var(--gold-deep);
   margin-bottom: 0.25rem;
 }
 
@@ -2188,7 +2198,7 @@ footer {
 .popup-close svg { width: 15px; height: 15px; }
 
 .popup-body { padding: 1.8rem 1.9rem 2rem; text-align: center; }
-.popup-kicker { color: var(--gold); margin-bottom: 0.7rem; }
+.popup-kicker { color: var(--gold-deep); margin-bottom: 0.7rem; }
 .popup-body h3 {
   font-family: var(--font-display);
   font-weight: 500;
