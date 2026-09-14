@@ -1333,15 +1333,33 @@ footer {
   margin-bottom: 2rem;
 }
 .legal-content.legal-doc .btn { display: block; margin: 2.6rem auto 0; width: fit-content; }
-.legal-return-form {
+.legal-return-form-fields {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 12px;
   padding: 1.4rem 1.6rem;
   margin-bottom: 1.6rem;
 }
-.legal-return-form p { margin-bottom: 0.7rem; }
-.legal-return-form p:first-child { color: var(--white-faint); font-size: 0.88rem; margin-bottom: 1rem; }
+.legal-return-form-fields label span { color: var(--white-dim); }
+.legal-return-form-fields input[type="date"] {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(22,51,47,0.15);
+  border-radius: 8px;
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.legal-return-form-fields input:focus { outline: none; border-color: var(--gold); }
+.legal-return-form-fields .btn { width: 100%; }
+.legal-return-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+@media (max-width: 560px) {
+  .legal-return-form-row { grid-template-columns: 1fr; }
+}
 
 /* ---------- Reveal animation ---------- */
 

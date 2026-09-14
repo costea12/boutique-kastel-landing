@@ -74,24 +74,53 @@
 
     <h2>8. Formular de retragere</h2>
     <p>
-      Cel mai simplu mod de a vă exercita dreptul de retragere este butonul <strong>„Solicită retur"</strong> din contul dumneavoastră (secțiunea 2). Dacă preferați, puteți completa și trimite modelul standard de mai jos, prin e-mail, la <a href="mailto:boutiquekasteldutyfreeconcept@gmail.com">boutiquekasteldutyfreeconcept@gmail.com</a> — acesta nu este obligatoriu, dar poate fi folosit conform legislației privind protecția consumatorilor.
+      Dacă aveți deja cont, cel mai simplu mod de a vă exercita dreptul de retragere este butonul <strong>„Solicită retur"</strong> din <a href="cont.html">contul dumneavoastră</a> (secțiunea 2). Dacă preferați, puteți completa formularul de mai jos — nu necesită cont — sau îl puteți trimite prin e-mail la <a href="mailto:boutiquekasteldutyfreeconcept@gmail.com">boutiquekasteldutyfreeconcept@gmail.com</a>. Completarea acestui formular nu este obligatorie, dar poate fi folosită conform legislației privind protecția consumatorilor.
     </p>
-    <div class="legal-return-form">
-      <p><em>(completați și trimiteți acest formular doar dacă doriți să vă retrageți din contract)</em></p>
-      <p>Către: <strong>SUPREM BRAND S.R.L.</strong>, boutiquekasteldutyfreeconcept@gmail.com, 0744 377 651</p>
-      <p>Prin prezenta notific retragerea mea din contractul privind vânzarea următorului produs/produse:</p>
-      <p>_________________________________________________</p>
-      <p>Comandat la data de: _______________ &nbsp;&nbsp;&nbsp; Primit la data de: _______________</p>
-      <p>Numărul comenzii: _______________</p>
-      <p>Numele consumatorului: _______________</p>
-      <p>Adresa consumatorului: _______________</p>
-      <p>IBAN pentru rambursare (opțional): _______________</p>
-      <p>Semnătura consumatorului (numai în cazul în care prezentul formular este notificat pe hârtie): _______________ &nbsp;&nbsp;&nbsp; Data: _______________</p>
-    </div>
+    <p>Către: <strong>SUPREM BRAND S.R.L.</strong>, boutiquekasteldutyfreeconcept@gmail.com, 0744 377 651</p>
+    <form class="account-form legal-return-form-fields" id="returnForm">
+      <label>
+        <span>Produs(e) pentru care solicitați retragerea</span>
+        <input type="text" id="returnProduct" name="product" required>
+      </label>
+      <div class="legal-return-form-row">
+        <label>
+          <span>Comandat la data de</span>
+          <input type="date" id="returnOrderDate" name="orderDate">
+        </label>
+        <label>
+          <span>Primit la data de</span>
+          <input type="date" id="returnReceivedDate" name="receivedDate">
+        </label>
+      </div>
+      <label>
+        <span>Numărul comenzii</span>
+        <input type="text" id="returnOrderNumber" name="orderNumber" required>
+      </label>
+      <label>
+        <span>Numele dumneavoastră</span>
+        <input type="text" id="returnName" name="name" required>
+      </label>
+      <label>
+        <span>Adresa dumneavoastră de email</span>
+        <input type="email" id="returnEmail" name="email" autocomplete="email" required>
+      </label>
+      <label>
+        <span>Adresa dumneavoastră (opțional)</span>
+        <input type="text" id="returnAddress" name="address">
+      </label>
+      <label>
+        <span>IBAN pentru rambursare (opțional)</span>
+        <input type="text" id="returnIban" name="iban">
+      </label>
+      <button type="submit" class="btn btn-gold">Trimite cererea de retur</button>
+      <p class="contact-form-note" id="returnFormNote" hidden></p>
+    </form>
 
     <a href="index.html" class="btn btn-outline">← Înapoi la site</a>
   </div>
 <script src="age-gate.js"></script>
 <script src="cookie-consent.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="return-form.js"></script>
 </body>
 </html>
