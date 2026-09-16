@@ -1,13 +1,14 @@
-# Boutique Kastel — Cloud Functions (NETOPIA payment)
+# Boutique Kastel — Cloud Functions (NETOPIA payment + order emails)
 
 This is the small piece of server code the static site (GitHub Pages) can't
 run on its own: initiating a card payment with NETOPIA (needs our private
-key, which must never reach the browser) and receiving NETOPIA's payment
-confirmation (IPN).
+key, which must never reach the browser), receiving NETOPIA's payment
+confirmation (IPN), and sending the order confirmation email reliably
+(from Google's servers, not the customer's browser).
 
-Built ahead of the NETOPIA merchant account being approved, so it's ready
-to wire up and test as soon as the point of sale is live. **Not yet
-deployed, not yet connected to the site's checkout flow.**
+The NETOPIA piece was built ahead of the merchant account being approved,
+so it's ready to wire up and test as soon as the point of sale is live.
+**Not yet deployed, not yet connected to the site's checkout flow.**
 
 ## Files
 
@@ -25,6 +26,12 @@ deployed, not yet connected to the site's checkout flow.**
   notification, updates the matching order's `paymentStatus` in Firestore.
   This is the only trustworthy source of "did they actually pay" — never
   the browser return URL alone.
+- `orderConfirmationEmail.js` — `sendOrderConfirmationEmail`, a Firestore
+  trigger that fires automatically the instant a new order document is
+  written under `users/{uid}/orders/{orderId}` (by `cos.js`). Sends the
+  confirmation email via Resend. Runs server-side, so it fires even if the
+  customer closes the tab right after checkout — unlike EmailJS (used for
+  the contact form and return requests), which only runs in the browser.
 
 ## One-time setup (once the NETOPIA account is approved)
 
@@ -40,6 +47,29 @@ firebase functions:secrets:set NETOPIA_SIGNATURE
 firebase functions:secrets:set NETOPIA_PRIVATE_KEY
 firebase functions:secrets:set NETOPIA_PUBLIC_KEY
 ```
+
+## Order confirmation email setup (Resend)
+
+1. Create a free account at resend.com (3,000 emails/month free).
+2. Verify a domain there (e.g. the shop's real domain), or use the default
+   `onboarding@resend.dev` sender for testing until that's done.
+3. Get the API key from the Resend dashboard, then:
+
+```bash
+firebase functions:secrets:set RESEND_API_KEY
+```
+
+4. Once a domain is verified, set the real "from" address:
+
+```bash
+firebase functions:config:set order_email.from="Boutique Kastel <comenzi@yourdomain.ro>"
+```
+
+(or set the `ORDER_EMAIL_FROM` env var directly at deploy time — see
+`orderConfirmationEmail.js`.)
+
+5. Deploy (see below). No changes needed on the site/browser side — this
+   is a Firestore trigger, not something `cos.js` calls directly.
 
 ## Deploy
 
