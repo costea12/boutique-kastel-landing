@@ -277,11 +277,12 @@ function handleCheckout() {
           } : { isCompanyOrder: false },
           createdAt: firebase.firestore.FieldValue.serverTimestamp(),
         });
-        return next;
+        return { orderNumber: next, orderId: orderRef.id };
       });
     });
-  }).then(function (orderNumber) {
-    if (!orderNumber) return;
+  }).then(function (result) {
+    if (!result) return;
+    const { orderNumber, orderId } = result;
     clearCart();
     const numberLabel = String(orderNumber).padStart(4, '0');
     document.getElementById('cartContents').innerHTML = `
@@ -291,6 +292,17 @@ function handleCheckout() {
         <a href="cont.html" class="btn btn-outline">Vezi istoricul comenzilor</a>
       </div>
     `;
+    // Confirmation email, sent server-side (see vercel-api/api/send-order-email.js)
+    // so it doesn't depend on this tab staying open. Fire-and-forget: a
+    // failed email must never block or roll back an order that's already
+    // safely in Firestore.
+    user.getIdToken().then(function (idToken) {
+      fetch('https://boutique-kastel-api.vercel.app/api/send-order-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+        body: JSON.stringify({ orderId }),
+      }).catch(function () { /* logged server-side; never surfaced to the customer */ });
+    });
   }).catch(function () {
     if (btn) { btn.disabled = false; btn.textContent = 'Finalizează comanda'; }
     alert('A apărut o eroare la trimiterea comenzii. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
