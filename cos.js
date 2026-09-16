@@ -255,7 +255,7 @@ function handleCheckout() {
         t.set(counterRef, { count: next }, { merge: true });
         t.set(orderRef, {
           orderNumber: next,
-          items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty })),
+          items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty, image: i.image || '' })),
           total: cartTotal(),
           status: 'noua',
           customerName: user.displayName || '',
