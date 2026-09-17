@@ -2091,6 +2091,31 @@ footer {
 .cart-note { text-align: center; font-size: 0.82rem; color: var(--ink-soft); margin-top: 0.9rem; }
 .cart-note a { color: var(--teal-mid); }
 
+.checkout-payment-method {
+  background: var(--white);
+  border: 1px solid rgba(22,51,47,0.1);
+  border-radius: 10px;
+  padding: 1.2rem 1.3rem;
+  margin-bottom: 1.3rem;
+}
+.checkout-payment-method h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: 0.7rem;
+}
+.payment-method-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0;
+  font-size: 0.92rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+.payment-method-option input { accent-color: var(--teal-mid); width: 1.05rem; height: 1.05rem; }
+
 .checkout-address {
   background: var(--white);
   border: 1px solid rgba(22,51,47,0.1);

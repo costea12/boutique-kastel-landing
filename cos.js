@@ -63,8 +63,19 @@ function renderCart() {
       <strong>${formatPrice(cartTotal())}</strong>
     </div>
     <div id="checkoutAddress"></div>
+    <div class="checkout-payment-method">
+      <h3>Modalitate de plată</h3>
+      <label class="payment-method-option">
+        <input type="radio" name="paymentMethod" value="card" checked>
+        <span>Plătește online cu cardul</span>
+      </label>
+      <label class="payment-method-option">
+        <input type="radio" name="paymentMethod" value="ramburs">
+        <span>Ramburs (numerar la livrare / confirmare telefonică)</span>
+      </label>
+    </div>
     <button class="btn btn-cart" id="checkoutBtn">Finalizează comanda</button>
-    <p class="cart-note">Plata online va fi disponibilă în curând - comanda ta va fi confirmată telefonic. Trebuie să fii autentificat pentru a plasa o comandă. Sau sună direct la <a href="tel:0744377651">0744 377 651</a>.</p>
+    <p class="cart-note">Trebuie să fii autentificat pentru a plasa o comandă. Sau sună direct la <a href="tel:0744377651">0744 377 651</a>.</p>
   `;
 
   document.getElementById('checkoutBtn')?.addEventListener('click', handleCheckout);
@@ -213,6 +224,9 @@ function handleCheckout() {
     return;
   }
 
+  const paymentMethodInput = document.querySelector('input[name="paymentMethod"]:checked');
+  const paymentMethod = paymentMethodInput ? paymentMethodInput.value : 'ramburs';
+
   const cart = getCart();
   if (cart.length === 0) return;
 
@@ -285,21 +299,12 @@ function handleCheckout() {
     const { orderNumber, orderId } = result;
     clearCart();
     const numberLabel = String(orderNumber).padStart(4, '0');
-    document.getElementById('cartContents').innerHTML = `
-      <div class="cart-confirm-block">
-        <h2>Comanda #${numberLabel} a fost înregistrată!</h2>
-        <p>Îți mulțumim! Poți plăti online cu cardul mai jos, sau te contactăm telefonic pentru confirmare.</p>
-        <button class="btn btn-cart" id="payWithCardBtn">Plătește online cu cardul</button>
-        <a href="cont.html" class="btn btn-outline">Vezi istoricul comenzilor</a>
-      </div>
-    `;
-    document.getElementById('payWithCardBtn')?.addEventListener('click', function () {
-      startCardPayment(orderId, this);
-    });
+
     // Confirmation email, sent server-side (see vercel-api/api/send-order-email.js)
     // so it doesn't depend on this tab staying open. Fire-and-forget: a
     // failed email must never block or roll back an order that's already
-    // safely in Firestore.
+    // safely in Firestore. Sent for both payment methods, right away -
+    // this confirms the order was placed, not that it was paid.
     user.getIdToken().then(function (idToken) {
       fetch('https://boutique-kastel-api.vercel.app/api/send-order-email', {
         method: 'POST',
@@ -307,6 +312,27 @@ function handleCheckout() {
         body: JSON.stringify({ orderId }),
       }).catch(function () { /* logged server-side; never surfaced to the customer */ });
     });
+
+    if (paymentMethod === 'card') {
+      // Straight to NETOPIA, no intermediate screen - the "order placed"
+      // confirmation only makes sense to show once payment is actually
+      // resolved (plata-finalizata.html), not before.
+      document.getElementById('cartContents').innerHTML = `
+        <div class="cart-confirm-block">
+          <h2>Comanda #${numberLabel} a fost înregistrată</h2>
+          <p>Te redirecționăm către pagina de plată...</p>
+        </div>
+      `;
+      startCardPayment(orderId, null);
+    } else {
+      document.getElementById('cartContents').innerHTML = `
+        <div class="cart-confirm-block">
+          <h2>Comanda #${numberLabel} a fost înregistrată!</h2>
+          <p>Îți mulțumim! Te vom contacta telefonic pentru confirmarea comenzii și modalitatea de plată.</p>
+          <a href="cont.html" class="btn btn-outline">Vezi istoricul comenzilor</a>
+        </div>
+      `;
+    }
   }).catch(function () {
     if (btn) { btn.disabled = false; btn.textContent = 'Finalizează comanda'; }
     alert('A apărut o eroare la trimiterea comenzii. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
