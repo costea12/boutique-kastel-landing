@@ -288,10 +288,14 @@ function handleCheckout() {
     document.getElementById('cartContents').innerHTML = `
       <div class="cart-confirm-block">
         <h2>Comanda #${numberLabel} a fost înregistrată!</h2>
-        <p>Îți mulțumim! Te vom contacta telefonic pentru confirmarea comenzii și modalitatea de plată.</p>
+        <p>Îți mulțumim! Poți plăti online cu cardul mai jos, sau te contactăm telefonic pentru confirmare.</p>
+        <button class="btn btn-cart" id="payWithCardBtn">Plătește online cu cardul</button>
         <a href="cont.html" class="btn btn-outline">Vezi istoricul comenzilor</a>
       </div>
     `;
+    document.getElementById('payWithCardBtn')?.addEventListener('click', function () {
+      startCardPayment(orderId, this);
+    });
     // Confirmation email, sent server-side (see vercel-api/api/send-order-email.js)
     // so it doesn't depend on this tab staying open. Fire-and-forget: a
     // failed email must never block or roll back an order that's already
@@ -306,6 +310,44 @@ function handleCheckout() {
   }).catch(function () {
     if (btn) { btn.disabled = false; btn.textContent = 'Finalizează comanda'; }
     alert('A apărut o eroare la trimiterea comenzii. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
+  });
+}
+
+// Calls start-netopia-payment (vercel-api), then auto-submits the returned
+// encrypted payload as a hidden form POST to NETOPIA's own hosted payment
+// page - we never see/handle the card number ourselves, NETOPIA's page
+// does. See vercel-api/api/start-netopia-payment.js.
+function startCardPayment(orderId, btn) {
+  const user = firebase.auth().currentUser;
+  if (!user) return;
+
+  if (btn) { btn.disabled = true; btn.textContent = 'Se redirecționează...'; }
+
+  user.getIdToken().then(function (idToken) {
+    return fetch('https://boutique-kastel-api.vercel.app/api/start-netopia-payment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+      body: JSON.stringify({ orderId }),
+    });
+  }).then(function (res) {
+    if (!res.ok) throw new Error('payment-init-failed');
+    return res.json();
+  }).then(function (data) {
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = data.action;
+    ['env_key', 'data', 'iv', 'cipher'].forEach(function (key) {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = key;
+      input.value = data[key];
+      form.appendChild(input);
+    });
+    document.body.appendChild(form);
+    form.submit();
+  }).catch(function () {
+    if (btn) { btn.disabled = false; btn.textContent = 'Plătește online cu cardul'; }
+    alert('Nu am putut iniția plata online. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
   });
 }
 

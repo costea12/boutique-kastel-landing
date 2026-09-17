@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.google.com https://unpkg.com https://mny.ro https://cdn.jsdelivr.net; style-src 'self' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com https://*.tile.openstreetmap.org; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.googleapis.com https://mny.ro https://api.emailjs.com https://boutique-kastel-api.vercel.app; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plata finalizată | Boutique Kastel</title>
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#0a464e">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="wrap">
+    <span><a href="https://www.google.com/maps/search/?api=1&query=Boutique%20Kastel%2C%20Bulevardul%20Libert%C4%83%C8%9Bii%206%2C%20Hunedoara" target="_blank" rel="noopener">Bulevardul Libertății 6, Hunedoara</a></span>
+    <a href="tel:0744377651">0744 377 651</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-wrap">
+    <a href="index.html" class="logo">
+      <span class="mark">BK</span>
+      <span class="word">Boutique Kastel<span>DUTY FREE CONCEPT</span></span>
+    </a>
+    <nav class="main-nav">
+      <a href="parfumuri.html">Parfumuri</a>
+      <a href="parfumuri-niche.html">Parfumuri niche</a>
+      <a href="ingrijire-corporala.html">Îngrijire corporală</a>
+      <a href="bauturi.html">Băuturi</a>
+      <a href="dulciuri.html">Dulciuri</a>
+      <a href="cafea.html">Cafea</a>
+    </nav>
+    <div class="header-icons">
+      <a href="cont.html" aria-label="Cont" id="accountBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.6-4 5-6 8-6s6.4 2 8 6"/></svg>
+        <span class="tooltip">Autentificare</span>
+      </a>
+      <a href="cos.html" class="cart-btn" aria-label="Coș">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-badge" id="cartCount">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="cart-main section-inner">
+  <div class="cart-heading">
+    <h1>Plata comenzii</h1>
+  </div>
+  <div id="paymentStatus" class="cart-confirm-block">
+    <h2>Se verifică plata...</h2>
+    <p>Un moment, te rugăm - confirmăm rezultatul cu NETOPIA.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col footer-contact">
+      <h5>Contactează-ne</h5>
+      <ul>
+        <li><a href="mailto:boutiquekasteldutyfreeconcept@gmail.com">boutiquekasteldutyfreeconcept@gmail.com</a></li>
+        <li><a href="tel:0744377651">0744 377 651</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-legal-entity">SUPREM BRAND S.R.L. · Str. Nicolae Bălcescu, Nr. 1, Municipiul Hunedoara, Jud. Hunedoara · CUI 33803839 · Reg. Com. J2014000935200 · Plătitoare de TVA</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script src="cart.js?v=2"></script>
+<script src="plata-finalizata.js"></script>
+</body>
+</html>
