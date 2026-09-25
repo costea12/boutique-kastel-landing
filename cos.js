@@ -272,6 +272,7 @@ function handleCheckout() {
           items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty, image: i.image || '' })),
           total: cartTotal(),
           status: 'noua',
+          paymentMethod: paymentMethod,
           customerName: user.displayName || '',
           customerEmail: user.email,
           shipping: {
@@ -303,24 +304,25 @@ function handleCheckout() {
     // Confirmation email, sent server-side (see vercel-api/api/send-order-email.js)
     // so it doesn't depend on this tab staying open. Fire-and-forget: a
     // failed email must never block or roll back an order that's already
-    // safely in Firestore. Sent for both payment methods, right away -
-    // this confirms the order was placed, not that it was paid.
-    user.getIdToken().then(function (idToken) {
-      fetch('https://boutique-kastel-api.vercel.app/api/send-order-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
-        body: JSON.stringify({ orderId }),
-      }).catch(function () { /* logged server-side; never surfaced to the customer */ });
-    });
+    // safely in Firestore. Only for ramburs: a card order is emailed by the
+    // NETOPIA IPN handler once the payment is actually confirmed.
+    if (paymentMethod !== 'card') {
+      user.getIdToken().then(function (idToken) {
+        fetch('https://boutique-kastel-api.vercel.app/api/send-order-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+          body: JSON.stringify({ orderId }),
+        }).catch(function () { /* logged server-side; never surfaced to the customer */ });
+      });
+    }
 
     if (paymentMethod === 'card') {
-      // Straight to NETOPIA, no intermediate screen - the "order placed"
-      // confirmation only makes sense to show once payment is actually
-      // resolved (plata-finalizata.html), not before.
+      // Straight to NETOPIA. Nothing here says the order is "done": it
+      // isn't until the payment is confirmed (plata-finalizata.html).
       document.getElementById('cartContents').innerHTML = `
         <div class="cart-confirm-block">
-          <h2>Comanda #${numberLabel} a fost înregistrată</h2>
-          <p>Te redirecționăm către pagina de plată...</p>
+          <h2>Se procesează plata...</h2>
+          <p>Te redirecționăm către pagina de plată securizată NETOPIA. Te rugăm nu închide această pagină.</p>
         </div>
       `;
       startCardPayment(orderId, null);
@@ -373,6 +375,15 @@ function startCardPayment(orderId, btn) {
     form.submit();
   }).catch(function () {
     if (btn) { btn.disabled = false; btn.textContent = 'Plătește online cu cardul'; }
+    else {
+      document.getElementById('cartContents').innerHTML = `
+        <div class="cart-confirm-block">
+          <h2>Nu am putut porni plata online</h2>
+          <p>Comanda ta este înregistrată, dar plata nu a pornit. Te contactăm telefonic pentru plată, sau sună-ne la <a href="tel:0744377651">0744 377 651</a>.</p>
+          <a href="cont.html" class="btn btn-outline">Vezi istoricul comenzilor</a>
+        </div>
+      `;
+    }
     alert('Nu am putut iniția plata online. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
   });
 }
