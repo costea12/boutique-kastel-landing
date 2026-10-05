@@ -477,7 +477,53 @@ function renderSpecs(p) {
   `;
 }
 
+function setProductSeo(p) {
+  const siteOrigin = 'https://costea12.github.io/boutique-kastel-landing';
+  const canonicalUrl = `${siteOrigin}/produs.html?cod=${encodeURIComponent(p.cod)}`;
+
+  document.title = `${p.name} | Boutique Kastel`;
+
+  const descEl = document.getElementById('metaDescription');
+  if (descEl) {
+    descEl.setAttribute(
+      'content',
+      `${p.name} - ${formatPrice(p.price)}, TVA inclus. Disponibil la Boutique Kastel, Hunedoara. ${p.stock > 0 ? 'În stoc.' : 'Stoc epuizat.'}`
+    );
+  }
+
+  const canonicalEl = document.getElementById('canonicalLink');
+  if (canonicalEl) canonicalEl.setAttribute('href', canonicalUrl);
+
+  const images = [p.bottle_image, p.box_image].filter(Boolean).map((img) => `${siteOrigin}/${img}`);
+  const jsonLd = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: p.name,
+    brand: p.brand ? { '@type': 'Brand', name: p.brand } : undefined,
+    image: images,
+    url: canonicalUrl,
+    sku: p.cod,
+    offers: {
+      '@type': 'Offer',
+      url: canonicalUrl,
+      priceCurrency: 'RON',
+      price: p.price,
+      availability: p.stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+    },
+  };
+
+  let script = document.getElementById('productJsonLd');
+  if (!script) {
+    script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'productJsonLd';
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(jsonLd);
+}
+
 function renderProduct(p) {
+  setProductSeo(p);
   const main = document.getElementById('productMain');
   const images = [p.bottle_image, p.box_image].filter(Boolean);
 
