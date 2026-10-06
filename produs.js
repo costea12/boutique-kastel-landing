@@ -478,7 +478,7 @@ function renderSpecs(p) {
 }
 
 function setProductSeo(p) {
-  const siteOrigin = 'https://costea12.github.io/boutique-kastel-landing';
+  const siteOrigin = 'https://kastelboutique.ro';
   const canonicalUrl = `${siteOrigin}/produs.html?cod=${encodeURIComponent(p.cod)}`;
 
   document.title = `${p.name} | Boutique Kastel`;

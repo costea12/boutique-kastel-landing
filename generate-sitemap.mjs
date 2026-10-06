@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
 
-const BASE = 'https://costea12.github.io/boutique-kastel-landing';
+const BASE = 'https://kastelboutique.ro';
 
 const staticPages = [
   { url: '', priority: '1.0' },

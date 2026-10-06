@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://costea12.github.io/boutique-kastel-landing/sitemap.xml
+Sitemap: https://kastelboutique.ro/sitemap.xml
