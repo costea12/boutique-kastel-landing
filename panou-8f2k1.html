@@ -151,6 +151,11 @@
               <input type="file" id="apImage" accept="image/*">
             </label>
             <img id="apImagePreview" class="admin-modal-preview" hidden>
+            <label>
+              <span>Descriere (opțional)</span>
+              <textarea id="apDescription" rows="3" placeholder="Las-o goală și apasă „Generează cu AI” mai jos, sau scrie-o tu."></textarea>
+            </label>
+            <button type="button" class="btn btn-outline admin-generate-desc-btn" id="apGenerateDescBtn">Generează cu AI</button>
             <p class="account-error" id="adminProductFormError" hidden></p>
             <button type="submit" class="btn btn-gold" id="adminProductFormSubmit">Salvează produsul</button>
           </form>

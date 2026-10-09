@@ -20,6 +20,7 @@ function applyProductOverrides(products) {
           stock: typeof o.stock === 'number' ? o.stock : p.stock,
           active: o.active !== false,
           bottle_image: o.image || p.bottle_image,
+          description: o.description || p.description,
         });
       });
 
@@ -40,6 +41,7 @@ function applyProductOverrides(products) {
           price: typeof o.price === 'number' ? o.price : null,
           stock: typeof o.stock === 'number' ? o.stock : 0,
           bottle_image: o.image || '',
+          description: o.description || '',
           active: o.active,
         });
       });

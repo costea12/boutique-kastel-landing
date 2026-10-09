@@ -376,6 +376,42 @@
   const productFormError = document.getElementById('adminProductFormError');
   const apImageInput = document.getElementById('apImage');
   const apImagePreview = document.getElementById('apImagePreview');
+  const apDescriptionInput = document.getElementById('apDescription');
+  const apGenerateDescBtn = document.getElementById('apGenerateDescBtn');
+  const DESCRIPTION_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/generate-product-description';
+
+  apGenerateDescBtn?.addEventListener('click', function () {
+    const name = document.getElementById('apName').value.trim();
+    const brand = document.getElementById('apBrand').value.trim();
+    const category = document.getElementById('apCategory').value;
+    if (!name) {
+      productFormError.textContent = 'Completează numele produsului înainte de a genera descrierea.';
+      productFormError.hidden = false;
+      return;
+    }
+    productFormError.hidden = true;
+    apGenerateDescBtn.disabled = true;
+    apGenerateDescBtn.textContent = 'Se generează...';
+
+    auth.currentUser.getIdToken().then(function (idToken) {
+      return fetch(DESCRIPTION_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
+        body: JSON.stringify({ name: name, brand: brand, category: category === 'PRF-niche' ? 'PRF' : category }),
+      });
+    }).then(function (res) {
+      if (!res.ok) return res.json().then(function (j) { throw new Error(j.error || 'generate-failed'); });
+      return res.json();
+    }).then(function (data) {
+      apDescriptionInput.value = data.description;
+    }).catch(function () {
+      productFormError.textContent = 'Nu am putut genera descrierea. Încearcă din nou.';
+      productFormError.hidden = false;
+    }).finally(function () {
+      apGenerateDescBtn.disabled = false;
+      apGenerateDescBtn.textContent = 'Generează cu AI';
+    });
+  });
 
   function openProductModal() {
     productForm.reset();
@@ -439,6 +475,7 @@
         price: price,
         stock: stock,
         image: imageUrl,
+        description: apDescriptionInput.value.trim(),
         active: true,
       });
     }).then(function () {
