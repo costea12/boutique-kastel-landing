@@ -2409,6 +2409,11 @@ body.age-gate-lock { overflow: hidden; }
   gap: 2.5rem;
   align-items: start;
 }
+/* An author rule with `display: grid` on this ID always beats the `hidden`
+   attribute's UA-stylesheet `display: none` (author CSS wins over UA CSS
+   regardless of specificity) - without this, the panel stayed visible to
+   logged-out/non-admin visitors even while `hidden` was set. */
+#adminPanel[hidden] { display: none; }
 .admin-sidebar {
   background: var(--white);
   border-radius: 10px;
