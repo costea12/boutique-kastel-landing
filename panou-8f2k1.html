@@ -2,7 +2,7 @@
 <html lang="ro">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.google.com https://unpkg.com https://mny.ro https://cdn.jsdelivr.net; style-src 'self' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com https://*.tile.openstreetmap.org; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.googleapis.com https://mny.ro https://api.emailjs.com https://boutique-kastel-api.vercel.app; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.google.com https://unpkg.com https://mny.ro https://cdn.jsdelivr.net; style-src 'self' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com https://res.cloudinary.com https://*.tile.openstreetmap.org; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.googleapis.com https://mny.ro https://api.emailjs.com https://boutique-kastel-api.vercel.app; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Panou control | Boutique Kastel</title>
 <meta name="robots" content="noindex, nofollow">
@@ -98,12 +98,60 @@
             <span>Doar stoc epuizat</span>
           </label>
           <span class="admin-products-count" id="adminProductCount"></span>
+          <button type="button" class="btn btn-gold admin-products-add-btn" id="adminAddProductBtn">+ Produs nou</button>
         </div>
 
         <div class="admin-products-grid" id="adminProductsGrid"></div>
         <p class="admin-orders-empty" id="adminProductsEmpty" hidden>Niciun produs găsit.</p>
         <p class="admin-orders-empty" id="adminProductsLoading">Se încarcă produsele…</p>
       </section>
+
+      <div class="admin-modal-overlay" id="adminProductModalOverlay" hidden>
+        <div class="admin-modal">
+          <button type="button" class="admin-modal-close" id="adminProductModalClose" aria-label="Închide">✕</button>
+          <h2 id="adminProductModalTitle">Produs nou</h2>
+          <form id="adminProductForm" class="account-form">
+            <label>
+              <span>Cod produs</span>
+              <input type="text" id="apCod" required>
+            </label>
+            <label>
+              <span>Nume produs</span>
+              <input type="text" id="apName" required>
+            </label>
+            <label>
+              <span>Brand</span>
+              <input type="text" id="apBrand">
+            </label>
+            <label>
+              <span>Categorie</span>
+              <select id="apCategory" required>
+                <option value="PRF">Parfumuri</option>
+                <option value="PRF-niche">Parfumuri niche</option>
+                <option value="ICP">Îngrijire corporală</option>
+                <option value="ALC">Băuturi</option>
+                <option value="DLC">Dulciuri</option>
+                <option value="CAF">Cafea</option>
+              </select>
+            </label>
+            <label>
+              <span>Preț (Lei)</span>
+              <input type="number" id="apPrice" min="0" step="0.01" required>
+            </label>
+            <label>
+              <span>Stoc</span>
+              <input type="number" id="apStock" min="0" step="1" required>
+            </label>
+            <label>
+              <span>Poză produs</span>
+              <input type="file" id="apImage" accept="image/*">
+            </label>
+            <img id="apImagePreview" class="admin-modal-preview" hidden>
+            <p class="account-error" id="adminProductFormError" hidden></p>
+            <button type="submit" class="btn btn-gold" id="adminProductFormSubmit">Salvează produsul</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </main>

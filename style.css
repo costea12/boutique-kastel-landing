@@ -2658,6 +2658,75 @@ body.age-gate-lock { overflow: hidden; }
   font-size: 0.74rem;
   color: #3a7a4f;
 }
+.admin-product-photo-btn {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid rgba(22,51,47,0.15);
+  border-radius: 8px;
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.admin-product-photo-btn:hover { background: var(--ivory-warm); color: var(--ink); }
+.admin-product-noimg {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.admin-products-add-btn { white-space: nowrap; padding: 0.6rem 1.1rem; font-size: 0.85rem; }
+
+.admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(22,51,47,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 100;
+}
+.admin-modal {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--white);
+  border-radius: 14px;
+  padding: 2rem;
+}
+.admin-modal h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin: 0 0 1.2rem;
+}
+.admin-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: var(--ivory-warm);
+  border-radius: 50%;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.admin-modal-close:hover { color: var(--ink); }
+.admin-modal-preview {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  background: var(--ivory-warm);
+  border-radius: 10px;
+  margin-top: -0.5rem;
+}
 .account-tabs {
   display: flex;
   gap: 0.5rem;

@@ -11,16 +11,40 @@ function applyProductOverrides(products) {
       const overrides = {};
       snap.forEach((doc) => { overrides[doc.id] = doc.data(); });
 
-      return products
-        .map((p) => {
-          const o = overrides[p.cod];
-          if (!o) return p;
-          return Object.assign({}, p, {
-            stock: typeof o.stock === 'number' ? o.stock : p.stock,
-            active: o.active !== false,
-          });
-        })
-        .filter((p) => p.active !== false);
+      const known = new Set(products.map((p) => p.cod));
+
+      const merged = products.map((p) => {
+        const o = overrides[p.cod];
+        if (!o) return p;
+        return Object.assign({}, p, {
+          stock: typeof o.stock === 'number' ? o.stock : p.stock,
+          active: o.active !== false,
+          bottle_image: o.image || p.bottle_image,
+        });
+      });
+
+      // Brand-new products added from the admin panel live only in
+      // Firestore (never written to catalog.json), so they're not in the
+      // `products` array fetched above - add them here.
+      Object.keys(overrides).forEach((cod) => {
+        if (known.has(cod)) return;
+        const o = overrides[cod];
+        if (!o.isNew || !o.name) return;
+        merged.push({
+          cod,
+          name: o.name,
+          brand: o.brand || '',
+          category: o.category || '',
+          category_label: o.category_label || '',
+          niche: !!o.niche,
+          price: typeof o.price === 'number' ? o.price : null,
+          stock: typeof o.stock === 'number' ? o.stock : 0,
+          bottle_image: o.image || '',
+          active: o.active,
+        });
+      });
+
+      return merged.filter((p) => p.active !== false);
     })
     .catch(() => products);
 }

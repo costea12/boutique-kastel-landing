@@ -217,7 +217,7 @@
     const isInactive = p.active === false;
     return '<div class="admin-product-card' + (isInactive ? ' is-inactive' : '') + '" data-cod="' + p.cod + '">'
       + '<div class="admin-product-img">'
-      + '<img src="' + p.bottle_image + '" alt="' + escapeHtml(p.name) + '" loading="lazy">'
+      + (p.bottle_image ? '<img src="' + p.bottle_image + '" alt="' + escapeHtml(p.name) + '" loading="lazy">' : '<span class="admin-product-noimg">Fără poză</span>')
       + (isOut ? '<span class="stock-badge out">Stoc epuizat</span>' : '')
       + (isInactive ? '<span class="admin-product-offbadge">Scos din vânzare</span>' : '')
       + '</div>'
@@ -228,6 +228,9 @@
       + '<label class="admin-product-stock-label">Stoc'
       + '<input type="number" min="0" step="1" class="admin-product-stock-input" data-cod="' + p.cod + '" value="' + (p.stock != null ? p.stock : 0) + '">'
       + '</label>'
+      + '<label class="admin-product-photo-btn">Schimbă poza'
+      + '<input type="file" accept="image/*" class="admin-product-photo-input" data-cod="' + p.cod + '" hidden>'
+      + '</label>'
       + '<button type="button" class="admin-product-toggle" data-cod="' + p.cod + '" data-active="' + (isInactive ? 'false' : 'true') + '">'
       + (isInactive ? 'Repune în vânzare' : 'Scoate din vânzare')
       + '</button>'
@@ -235,6 +238,168 @@
       + '</div>'
       + '</div>';
   }
+
+  // Resize/compress to keep uploads fast and under the server's size limit -
+  // a raw phone photo can be 5-10MB, far more than needed for a product shot.
+  function compressImageFile(file, maxDim) {
+    maxDim = maxDim || 1200;
+    return new Promise(function (resolve, reject) {
+      const img = new Image();
+      const reader = new FileReader();
+      reader.onload = function () {
+        img.onload = function () {
+          let w = img.width, h = img.height;
+          if (w > h && w > maxDim) { h = Math.round(h * maxDim / w); w = maxDim; }
+          else if (h > maxDim) { w = Math.round(w * maxDim / h); h = maxDim; }
+          const canvas = document.createElement('canvas');
+          canvas.width = w; canvas.height = h;
+          canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+          resolve(canvas.toDataURL('image/jpeg', 0.85));
+        };
+        img.onerror = reject;
+        img.src = reader.result;
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  const UPLOAD_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/upload-product-image';
+
+  function uploadProductImage(cod, dataUrl) {
+    return auth.currentUser.getIdToken().then(function (idToken) {
+      return fetch(UPLOAD_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
+        body: JSON.stringify({ cod: cod, imageDataUrl: dataUrl }),
+      });
+    }).then(function (res) {
+      if (!res.ok) return res.json().then(function (j) { throw new Error(j.error || 'upload-failed'); });
+      return res.json();
+    }).then(function (data) { return data.url; });
+  }
+
+  productsGrid?.addEventListener('change', function (e) {
+    const fileInput = e.target.closest('.admin-product-photo-input');
+    if (!fileInput || !fileInput.files[0]) return;
+    const cod = fileInput.dataset.cod;
+    const card = productsGrid.querySelector('.admin-product-card[data-cod="' + cod + '"]');
+    const label = fileInput.closest('.admin-product-photo-btn');
+    const originalText = label.firstChild.textContent;
+    label.firstChild.textContent = 'Se încarcă...';
+    fileInput.disabled = true;
+
+    compressImageFile(fileInput.files[0])
+      .then(function (dataUrl) { return uploadProductImage(cod, dataUrl); })
+      .then(function (url) {
+        return db.collection('products').doc(cod).set({ image: url }, { merge: true }).then(function () { return url; });
+      })
+      .then(function (url) {
+        const p = ALL_PRODUCTS.find(function (x) { return x.cod === cod; });
+        if (p) p.bottle_image = url;
+        const imgWrap = card?.querySelector('.admin-product-img');
+        if (imgWrap) {
+          const existingImg = imgWrap.querySelector('img');
+          if (existingImg) existingImg.src = url;
+          else imgWrap.insertAdjacentHTML('afterbegin', '<img src="' + url + '" alt="">');
+          imgWrap.querySelector('.admin-product-noimg')?.remove();
+        }
+      })
+      .catch(function () {
+        alert('Nu am putut încărca poza. Încearcă din nou.');
+      })
+      .finally(function () {
+        label.firstChild.textContent = originalText;
+        fileInput.disabled = false;
+        fileInput.value = '';
+      });
+  });
+
+  // ---------- Add new product ----------
+  const addProductBtn = document.getElementById('adminAddProductBtn');
+  const modalOverlay = document.getElementById('adminProductModalOverlay');
+  const modalClose = document.getElementById('adminProductModalClose');
+  const productForm = document.getElementById('adminProductForm');
+  const productFormError = document.getElementById('adminProductFormError');
+  const apImageInput = document.getElementById('apImage');
+  const apImagePreview = document.getElementById('apImagePreview');
+
+  function openProductModal() {
+    productForm.reset();
+    productFormError.hidden = true;
+    apImagePreview.hidden = true;
+    modalOverlay.hidden = false;
+  }
+  function closeProductModal() { modalOverlay.hidden = true; }
+
+  addProductBtn?.addEventListener('click', openProductModal);
+  modalClose?.addEventListener('click', closeProductModal);
+  modalOverlay?.addEventListener('click', function (e) { if (e.target === modalOverlay) closeProductModal(); });
+
+  apImageInput?.addEventListener('change', function () {
+    const file = apImageInput.files[0];
+    if (!file) { apImagePreview.hidden = true; return; }
+    const reader = new FileReader();
+    reader.onload = function () { apImagePreview.src = reader.result; apImagePreview.hidden = false; };
+    reader.readAsDataURL(file);
+  });
+
+  productForm?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    productFormError.hidden = true;
+
+    const cod = document.getElementById('apCod').value.trim();
+    const name = document.getElementById('apName').value.trim();
+    const brand = document.getElementById('apBrand').value.trim();
+    const categoryRaw = document.getElementById('apCategory').value;
+    const price = parseFloat(document.getElementById('apPrice').value);
+    const stock = parseInt(document.getElementById('apStock').value, 10);
+    const file = apImageInput.files[0];
+
+    if (!cod || !name || isNaN(price) || isNaN(stock)) {
+      productFormError.textContent = 'Completează toate câmpurile obligatorii.';
+      productFormError.hidden = false;
+      return;
+    }
+    if (ALL_PRODUCTS.some(function (p) { return p.cod === cod; })) {
+      productFormError.textContent = 'Există deja un produs cu acest cod.';
+      productFormError.hidden = false;
+      return;
+    }
+
+    const niche = categoryRaw === 'PRF-niche';
+    const category = niche ? 'PRF' : categoryRaw;
+    const submitBtn = document.getElementById('adminProductFormSubmit');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Se salvează...';
+
+    const imageStep = file ? compressImageFile(file).then(function (dataUrl) { return uploadProductImage(cod, dataUrl); }) : Promise.resolve('');
+
+    imageStep.then(function (imageUrl) {
+      return db.collection('products').doc(cod).set({
+        isNew: true,
+        name: name,
+        brand: brand,
+        category: category,
+        category_label: CATEGORY_LABELS[categoryRaw] || '',
+        niche: niche,
+        price: price,
+        stock: stock,
+        image: imageUrl,
+        active: true,
+      });
+    }).then(function () {
+      closeProductModal();
+      productsLoaded = false; // force a refetch so the new product shows up
+      loadProducts();
+    }).catch(function () {
+      productFormError.textContent = 'Nu am putut salva produsul. Încearcă din nou.';
+      productFormError.hidden = false;
+    }).finally(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Salvează produsul';
+    });
+  });
 
   function applyProductFilters() {
     const q = (productSearch?.value || '').trim();
