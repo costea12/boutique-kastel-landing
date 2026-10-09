@@ -55,6 +55,10 @@
           <span>Cereri de retur</span>
           <span class="admin-sidebar-badge" id="badgeReturns" hidden>0</span>
         </button>
+        <button type="button" class="admin-sidebar-link" data-section="products">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 7 12 3 4 7v10l8 4 8-4V7Z"/><path d="M4 7l8 4 8-4"/><path d="M12 11v10"/></svg>
+          <span>Produse</span>
+        </button>
       </nav>
       <button type="button" class="btn-text admin-sidebar-logout" id="adminLogoutBtn">Deconectare</button>
     </aside>
@@ -71,6 +75,35 @@
         <div class="admin-orders" id="adminReturnsList"></div>
         <p class="admin-orders-empty" id="adminReturnsEmpty" hidden>Nicio cerere de retur momentan.</p>
       </section>
+
+      <section class="admin-panel-section" id="section-products">
+        <h2 class="admin-section-title">Produse</h2>
+
+        <div class="admin-products-toolbar">
+          <div class="admin-products-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="adminProductSearch" placeholder="Caută după nume sau brand…">
+          </div>
+          <select id="adminProductCategory">
+            <option value="">Toate categoriile</option>
+            <option value="PRF">Parfumuri</option>
+            <option value="PRF-niche">Parfumuri niche</option>
+            <option value="ICP">Îngrijire corporală</option>
+            <option value="ALC">Băuturi</option>
+            <option value="DLC">Dulciuri</option>
+            <option value="CAF">Cafea</option>
+          </select>
+          <label class="admin-products-outofstock-toggle">
+            <input type="checkbox" id="adminProductOutOnly">
+            <span>Doar stoc epuizat</span>
+          </label>
+          <span class="admin-products-count" id="adminProductCount"></span>
+        </div>
+
+        <div class="admin-products-grid" id="adminProductsGrid"></div>
+        <p class="admin-orders-empty" id="adminProductsEmpty" hidden>Niciun produs găsit.</p>
+        <p class="admin-orders-empty" id="adminProductsLoading">Se încarcă produsele…</p>
+      </section>
     </div>
   </div>
 </main>
@@ -79,6 +112,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
 <script src="firebase-config.js"></script>
+<script src="search-utils.js"></script>
 <script src="panou-admin.js"></script>
 </body>
 </html>

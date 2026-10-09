@@ -646,6 +646,7 @@ const cod = params.get('cod');
 
 fetch('catalog.json')
   .then((r) => r.json())
+  .then((data) => applyProductOverrides(data))
   .then((data) => {
     const product = data.find((p) => p.cod === cod);
     if (!product) {

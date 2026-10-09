@@ -177,6 +177,7 @@ if (initialQuery) {
 
 fetch('catalog.json')
   .then((r) => r.json())
+  .then((data) => applyProductOverrides(data))
   .then((data) => {
     PRODUCTS = data;
     buildBrandList();

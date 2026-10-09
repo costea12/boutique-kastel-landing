@@ -63,6 +63,7 @@
       sections.forEach(function (s) { s.classList.remove('is-active'); });
       link.classList.add('is-active');
       document.getElementById('section-' + link.dataset.section)?.classList.add('is-active');
+      if (link.dataset.section === 'products') loadProducts();
     });
   });
 
@@ -187,6 +188,159 @@
         returnsEmpty.textContent = 'Nu am putut încărca cererile de retur.';
       });
   }
+
+  // ---------- Products section ----------
+  const CATEGORY_LABELS = {
+    PRF: 'Parfumuri', 'PRF-niche': 'Parfumuri niche',
+    ICP: 'Îngrijire corporală', ALC: 'Băuturi', DLC: 'Dulciuri', CAF: 'Cafea',
+  };
+  function categoryKey(p) { return p.category === 'PRF' && p.niche ? 'PRF-niche' : p.category; }
+
+  const productsGrid = document.getElementById('adminProductsGrid');
+  const productsEmpty = document.getElementById('adminProductsEmpty');
+  const productsLoading = document.getElementById('adminProductsLoading');
+  const productsCount = document.getElementById('adminProductCount');
+  const productSearch = document.getElementById('adminProductSearch');
+  const productCategory = document.getElementById('adminProductCategory');
+  const productOutOnly = document.getElementById('adminProductOutOnly');
+
+  let ALL_PRODUCTS = [];
+  let productsLoaded = false;
+  const pendingStockSaves = {};
+
+  function formatPriceAdmin(p) {
+    return p != null ? p.toFixed(2).replace('.', ',') + ' Lei' : '';
+  }
+
+  function renderProductCard(p) {
+    const isOut = (p.stock || 0) <= 0;
+    const isInactive = p.active === false;
+    return '<div class="admin-product-card' + (isInactive ? ' is-inactive' : '') + '" data-cod="' + p.cod + '">'
+      + '<div class="admin-product-img">'
+      + '<img src="' + p.bottle_image + '" alt="' + escapeHtml(p.name) + '" loading="lazy">'
+      + (isOut ? '<span class="stock-badge out">Stoc epuizat</span>' : '')
+      + (isInactive ? '<span class="admin-product-offbadge">Scos din vânzare</span>' : '')
+      + '</div>'
+      + '<div class="admin-product-info">'
+      + '<span class="product-brand">' + escapeHtml(p.brand || '') + '</span>'
+      + '<h3>' + escapeHtml(p.name) + '</h3>'
+      + '<span class="product-price">' + formatPriceAdmin(p.price) + '</span>'
+      + '<label class="admin-product-stock-label">Stoc'
+      + '<input type="number" min="0" step="1" class="admin-product-stock-input" data-cod="' + p.cod + '" value="' + (p.stock != null ? p.stock : 0) + '">'
+      + '</label>'
+      + '<button type="button" class="admin-product-toggle" data-cod="' + p.cod + '" data-active="' + (isInactive ? 'false' : 'true') + '">'
+      + (isInactive ? 'Repune în vânzare' : 'Scoate din vânzare')
+      + '</button>'
+      + '<span class="admin-product-saved" data-cod-saved="' + p.cod + '" hidden>Salvat ✓</span>'
+      + '</div>'
+      + '</div>';
+  }
+
+  function applyProductFilters() {
+    const q = (productSearch?.value || '').trim();
+    const cat = productCategory?.value || '';
+    const outOnly = !!productOutOnly?.checked;
+
+    const filtered = ALL_PRODUCTS.filter(function (p) {
+      if (cat && categoryKey(p) !== cat) return false;
+      if (outOnly && (p.stock || 0) > 0) return false;
+      if (q && !fuzzyMatch(q, p.name) && !fuzzyMatch(q, p.brand || '')) return false;
+      return true;
+    });
+
+    productsCount.textContent = filtered.length + (filtered.length === 1 ? ' produs' : ' produse');
+
+    if (!filtered.length) {
+      productsEmpty.hidden = false;
+      productsGrid.innerHTML = '';
+      return;
+    }
+    productsEmpty.hidden = true;
+    productsGrid.innerHTML = filtered.map(renderProductCard).join('');
+  }
+
+  function loadProducts() {
+    if (productsLoaded) { applyProductFilters(); return; }
+    productsLoading.hidden = false;
+    Promise.all([
+      fetch('catalog.json').then(function (r) { return r.json(); }),
+      db.collection('products').get(),
+    ]).then(function (results) {
+      const catalog = results[0];
+      const overridesSnap = results[1];
+      const overrides = {};
+      overridesSnap.forEach(function (doc) { overrides[doc.id] = doc.data(); });
+
+      ALL_PRODUCTS = catalog.map(function (p) {
+        const o = overrides[p.cod];
+        if (!o) return p;
+        return Object.assign({}, p, {
+          stock: typeof o.stock === 'number' ? o.stock : p.stock,
+          active: o.active !== false,
+        });
+      });
+      productsLoaded = true;
+      productsLoading.hidden = true;
+      applyProductFilters();
+    }).catch(function () {
+      productsLoading.textContent = 'Nu am putut încărca produsele.';
+    });
+  }
+
+  function saveStock(cod, value) {
+    const card = productsGrid.querySelector('.admin-product-card[data-cod="' + cod + '"]');
+    const savedEl = productsGrid.querySelector('[data-cod-saved="' + cod + '"]');
+    db.collection('products').doc(cod).set({ stock: value }, { merge: true })
+      .then(function () {
+        const p = ALL_PRODUCTS.find(function (x) { return x.cod === cod; });
+        if (p) p.stock = value;
+        const badge = card?.querySelector('.stock-badge.out');
+        if (value <= 0 && !badge && card) {
+          card.querySelector('.admin-product-img').insertAdjacentHTML('afterbegin', '<span class="stock-badge out">Stoc epuizat</span>');
+        } else if (value > 0 && badge) {
+          badge.remove();
+        }
+        if (savedEl) {
+          savedEl.hidden = false;
+          setTimeout(function () { savedEl.hidden = true; }, 1500);
+        }
+      })
+      .catch(function () {
+        alert('Nu am putut salva stocul. Încearcă din nou.');
+      });
+  }
+
+  productsGrid?.addEventListener('change', function (e) {
+    const input = e.target.closest('.admin-product-stock-input');
+    if (!input) return;
+    const cod = input.dataset.cod;
+    const value = Math.max(0, parseInt(input.value, 10) || 0);
+    input.value = value;
+    clearTimeout(pendingStockSaves[cod]);
+    pendingStockSaves[cod] = setTimeout(function () { saveStock(cod, value); }, 400);
+  });
+
+  productsGrid?.addEventListener('click', function (e) {
+    const btn = e.target.closest('.admin-product-toggle');
+    if (!btn) return;
+    const cod = btn.dataset.cod;
+    const willBeActive = btn.dataset.active === 'false';
+    btn.disabled = true;
+    db.collection('products').doc(cod).set({ active: willBeActive }, { merge: true })
+      .then(function () {
+        const p = ALL_PRODUCTS.find(function (x) { return x.cod === cod; });
+        if (p) p.active = willBeActive;
+        applyProductFilters();
+      })
+      .catch(function () {
+        alert('Nu am putut actualiza produsul. Încearcă din nou.');
+      })
+      .finally(function () { btn.disabled = false; });
+  });
+
+  productSearch?.addEventListener('input', applyProductFilters);
+  productCategory?.addEventListener('change', applyProductFilters);
+  productOutOnly?.addEventListener('change', applyProductFilters);
 
   auth.onAuthStateChanged(function (user) {
     loginForm.reset();
