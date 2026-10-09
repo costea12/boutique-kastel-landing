@@ -2382,6 +2382,7 @@ body.age-gate-lock { overflow: hidden; }
 .account-box-narrow { max-width: 440px; margin: 0 auto; }
 
 /* ---- Admin panel (panou-8f2k1.html) ---- */
+.account-main:has(#adminPanel:not([hidden])) { justify-content: flex-start; }
 .admin-header .header-wrap { justify-content: flex-start; gap: 1.2rem; }
 .admin-header-title {
   font-family: var(--font-display);
@@ -2404,7 +2405,7 @@ body.age-gate-lock { overflow: hidden; }
 #adminPanel.admin-dashboard {
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0;
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 2.5rem;
