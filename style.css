@@ -2392,6 +2392,7 @@ body.age-gate-lock { overflow: hidden; }
 }
 .admin-header .btn-text { color: var(--white-dim); }
 .admin-header .btn-text:hover { color: var(--gold-bright); }
+.admin-header-logout { margin-left: auto; }
 .admin-h1 {
   font-family: var(--font-display);
   font-weight: 500;

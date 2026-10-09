@@ -20,7 +20,10 @@
 
   function ensureCatalogLoaded() {
     if (!catalogPromise) {
-      catalogPromise = fetch('catalog.json').then((r) => r.json()).catch(() => []);
+      catalogPromise = fetch('catalog.json')
+        .then((r) => r.json())
+        .then((data) => (window.applyProductOverrides ? applyProductOverrides(data) : data))
+        .catch(() => []);
       catalogPromise.then(() => {
         if (input.value.trim()) renderSuggestions();
       });

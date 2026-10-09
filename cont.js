@@ -39,10 +39,13 @@
   let catalogCache = null;
   function getCatalog() {
     if (catalogCache) return Promise.resolve(catalogCache);
-    return fetch('catalog.json').then(function (r) { return r.json(); }).then(function (data) {
-      catalogCache = data;
-      return data;
-    });
+    return fetch('catalog.json')
+      .then(function (r) { return r.json(); })
+      .then(function (data) { return window.applyProductOverrides ? applyProductOverrides(data) : data; })
+      .then(function (data) {
+        catalogCache = data;
+        return data;
+      });
   }
 
   function showTab(tab) {
