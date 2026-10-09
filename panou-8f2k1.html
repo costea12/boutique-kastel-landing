@@ -98,6 +98,10 @@
             <span>Doar stoc epuizat</span>
           </label>
           <span class="admin-products-count" id="adminProductCount"></span>
+          <label class="admin-products-outofstock-toggle">
+            <input type="checkbox" id="adminAiRestyle" checked>
+            <span>Restilizează poze cu AI (stil catalog)</span>
+          </label>
           <button type="button" class="btn btn-gold admin-products-add-btn" id="adminAddProductBtn">+ Produs nou</button>
         </div>
 
@@ -150,6 +154,22 @@
             <p class="account-error" id="adminProductFormError" hidden></p>
             <button type="submit" class="btn btn-gold" id="adminProductFormSubmit">Salvează produsul</button>
           </form>
+        </div>
+      </div>
+
+      <div class="admin-modal-overlay" id="adminPhotoPickerOverlay" hidden>
+        <div class="admin-modal admin-photo-picker">
+          <h2>Alege poza pentru produs</h2>
+          <div class="admin-photo-picker-options">
+            <button type="button" class="admin-photo-picker-option" id="pickerOriginalBtn">
+              <img id="pickerOriginalImg" alt="Poza originală">
+              <span>Poza originală</span>
+            </button>
+            <button type="button" class="admin-photo-picker-option" id="pickerRestyledBtn">
+              <img id="pickerRestyledImg" alt="Poza AI">
+              <span>Poza AI (stil catalog)</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

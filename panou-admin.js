@@ -265,6 +265,8 @@
   }
 
   const UPLOAD_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/upload-product-image';
+  const RESTYLE_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/restyle-product-image';
+  const aiRestyleToggle = document.getElementById('adminAiRestyle');
 
   function uploadProductImage(cod, dataUrl) {
     return auth.currentUser.getIdToken().then(function (idToken) {
@@ -279,6 +281,57 @@
     }).then(function (data) { return data.url; });
   }
 
+  function restyleProductImage(cod, dataUrl) {
+    return auth.currentUser.getIdToken().then(function (idToken) {
+      return fetch(RESTYLE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
+        body: JSON.stringify({ cod: cod, imageDataUrl: dataUrl }),
+      });
+    }).then(function (res) {
+      if (!res.ok) return res.json().then(function (j) { throw new Error(j.error || 'restyle-failed'); });
+      return res.json();
+    });
+  }
+
+  // Shows the AI result next to the original and lets the owner pick one,
+  // rather than silently trusting the AI restyle - resolves with the chosen URL.
+  const pickerOverlay = document.getElementById('adminPhotoPickerOverlay');
+  const pickerOriginalImg = document.getElementById('pickerOriginalImg');
+  const pickerRestyledImg = document.getElementById('pickerRestyledImg');
+  const pickerOriginalBtn = document.getElementById('pickerOriginalBtn');
+  const pickerRestyledBtn = document.getElementById('pickerRestyledBtn');
+
+  function pickPhoto(originalUrl, restyledUrl) {
+    return new Promise(function (resolve) {
+      pickerOriginalImg.src = originalUrl;
+      pickerRestyledImg.src = restyledUrl;
+      pickerOverlay.hidden = false;
+      function cleanup(choice) {
+        pickerOverlay.hidden = true;
+        pickerOriginalBtn.removeEventListener('click', onOriginal);
+        pickerRestyledBtn.removeEventListener('click', onRestyled);
+        resolve(choice);
+      }
+      function onOriginal() { cleanup(originalUrl); }
+      function onRestyled() { cleanup(restyledUrl); }
+      pickerOriginalBtn.addEventListener('click', onOriginal);
+      pickerRestyledBtn.addEventListener('click', onRestyled);
+    });
+  }
+
+  // Either restyles with AI (owner then picks original vs AI result) or does
+  // a plain upload, depending on the "Restilizează cu AI" toggle. Resolves
+  // with the final Cloudinary URL to save.
+  function processProductImage(cod, dataUrl) {
+    if (aiRestyleToggle && aiRestyleToggle.checked) {
+      return restyleProductImage(cod, dataUrl).then(function (result) {
+        return pickPhoto(result.originalUrl, result.restyledUrl);
+      });
+    }
+    return uploadProductImage(cod, dataUrl);
+  }
+
   productsGrid?.addEventListener('change', function (e) {
     const fileInput = e.target.closest('.admin-product-photo-input');
     if (!fileInput || !fileInput.files[0]) return;
@@ -286,11 +339,11 @@
     const card = productsGrid.querySelector('.admin-product-card[data-cod="' + cod + '"]');
     const label = fileInput.closest('.admin-product-photo-btn');
     const originalText = label.firstChild.textContent;
-    label.firstChild.textContent = 'Se încarcă...';
+    label.firstChild.textContent = 'Se procesează...';
     fileInput.disabled = true;
 
     compressImageFile(fileInput.files[0])
-      .then(function (dataUrl) { return uploadProductImage(cod, dataUrl); })
+      .then(function (dataUrl) { return processProductImage(cod, dataUrl); })
       .then(function (url) {
         return db.collection('products').doc(cod).set({ image: url }, { merge: true }).then(function () { return url; });
       })
@@ -373,7 +426,7 @@
     submitBtn.disabled = true;
     submitBtn.textContent = 'Se salvează...';
 
-    const imageStep = file ? compressImageFile(file).then(function (dataUrl) { return uploadProductImage(cod, dataUrl); }) : Promise.resolve('');
+    const imageStep = file ? compressImageFile(file).then(function (dataUrl) { return processProductImage(cod, dataUrl); }) : Promise.resolve('');
 
     imageStep.then(function (imageUrl) {
       return db.collection('products').doc(cod).set({
