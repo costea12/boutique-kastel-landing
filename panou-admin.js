@@ -94,6 +94,19 @@
       const s = o.shipping || {};
       const shipping = [s.name, s.address, s.city, s.county, s.postalCode, s.country].filter(Boolean).map(escapeHtml).join(', ');
 
+      let awbLine;
+      if (o.awbNumber) {
+        awbLine = '<span class="admin-order-awb is-ok">AWB: ' + escapeHtml(String(o.awbNumber)) + '</span>';
+      } else if (o.awbError) {
+        awbLine = '<span class="admin-order-awb is-error">AWB: eroare la generare</span>'
+          + '<button type="button" class="btn-text admin-order-awb-retry" data-uid="' + uid + '" data-order-id="' + doc.id + '">Reîncearcă AWB</button>';
+      } else if (o.paymentMethod === 'card' && o.paymentStatus !== 'paid') {
+        awbLine = '<span class="admin-order-awb">AWB: se generează după plată</span>';
+      } else {
+        awbLine = '<span class="admin-order-awb">AWB: în curs de generare</span>'
+          + '<button type="button" class="btn-text admin-order-awb-retry" data-uid="' + uid + '" data-order-id="' + doc.id + '">Generează AWB</button>';
+      }
+
       return '<div class="admin-order" data-uid="' + uid + '" data-order-id="' + doc.id + '">'
         + '<div class="admin-order-top">'
         + '<strong>' + numberLabel + '</strong>'
@@ -107,6 +120,7 @@
         + '</div>'
         + '<div class="admin-order-customer">' + escapeHtml(o.customerName || '') + ' &middot; ' + escapeHtml(o.customerEmail || '') + '</div>'
         + '<div class="admin-order-shipping">' + shipping + '</div>'
+        + '<div class="admin-order-awb-line">' + awbLine + '</div>'
         + '<ul class="admin-order-items">' + items + '</ul>'
         + '</div>';
     }).join('');
@@ -124,6 +138,36 @@
         alert('Nu am putut actualiza statusul. Încearcă din nou.');
       })
       .finally(function () { select.disabled = false; });
+  });
+
+  const RETRY_AWB_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/retry-order-awb';
+
+  ordersList?.addEventListener('click', function (e) {
+    const btn = e.target.closest('.admin-order-awb-retry');
+    if (!btn) return;
+    const uid = btn.dataset.uid;
+    const orderId = btn.dataset.orderId;
+    btn.disabled = true;
+    btn.textContent = 'Se generează...';
+
+    auth.currentUser.getIdToken().then(function (idToken) {
+      return fetch(RETRY_AWB_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
+        body: JSON.stringify({ uid: uid, orderId: orderId }),
+      });
+    }).then(function (res) { return res.json(); })
+      .then(function (result) {
+        if (!result.created && result.reason !== 'already-has-awb') {
+          alert('Nu am putut genera AWB-ul. Verifică adresa comenzii sau încearcă din nou.');
+        }
+        loadAllOrders();
+      })
+      .catch(function () {
+        alert('Nu am putut genera AWB-ul. Încearcă din nou.');
+        btn.disabled = false;
+        btn.textContent = 'Reîncearcă AWB';
+      });
   });
 
   function loadAllOrders() {

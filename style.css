@@ -2514,6 +2514,12 @@ body.age-gate-lock { overflow: hidden; }
 }
 .admin-order-customer { font-size: 0.88rem; color: var(--ink); margin-bottom: 0.3rem; }
 .admin-order-shipping { font-size: 0.82rem; color: var(--ink-soft); margin-bottom: 0.6rem; }
+.admin-order-awb-line { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem; }
+.admin-order-awb { font-size: 0.78rem; color: var(--ink-soft); }
+.admin-order-awb.is-ok { color: #3a7a4f; font-weight: 600; }
+.admin-order-awb.is-error { color: #a83a3a; font-weight: 600; }
+.admin-order-awb-retry { font-size: 0.76rem; color: var(--teal-mid); text-decoration: underline; cursor: pointer; }
+.admin-order-awb-retry:disabled { opacity: 0.6; cursor: wait; }
 .admin-order-items { font-size: 0.85rem; color: var(--ink-soft); padding-left: 1.1rem; }
 .admin-orders-empty { text-align: center; color: var(--ink-soft); }
 

@@ -313,6 +313,16 @@ function handleCheckout() {
           headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
           body: JSON.stringify({ orderId }),
         }).catch(function () { /* logged server-side; never surfaced to the customer */ });
+
+        // AWB creation, same fire-and-forget pattern - safe to do now since
+        // ramburs has no payment that could still fail. Card orders get
+        // their AWB from the NETOPIA IPN handler after payment confirms,
+        // never from here.
+        fetch('https://boutique-kastel-api.vercel.app/api/create-order-awb', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+          body: JSON.stringify({ orderId }),
+        }).catch(function () { /* logged server-side; owner can create the AWB manually as a fallback */ });
       });
     }
 
