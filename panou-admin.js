@@ -96,7 +96,8 @@
 
       let awbLine;
       if (o.awbNumber) {
-        awbLine = '<span class="admin-order-awb is-ok">AWB: ' + escapeHtml(String(o.awbNumber)) + '</span>';
+        awbLine = '<span class="admin-order-awb is-ok">AWB: ' + escapeHtml(String(o.awbNumber)) + '</span>'
+          + '<button type="button" class="btn-text admin-order-awb-label" data-awb="' + escapeHtml(String(o.awbNumber)) + '">Tipărește eticheta</button>';
       } else if (o.awbError) {
         awbLine = '<span class="admin-order-awb is-error">AWB: eroare la generare</span>'
           + '<button type="button" class="btn-text admin-order-awb-retry" data-uid="' + uid + '" data-order-id="' + doc.id + '">Reîncearcă AWB</button>';
@@ -141,6 +142,32 @@
   });
 
   const RETRY_AWB_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/retry-order-awb';
+  const LABEL_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/get-awb-label';
+
+  ordersList?.addEventListener('click', function (e) {
+    const labelBtn = e.target.closest('.admin-order-awb-label');
+    if (!labelBtn) return;
+    const awb = labelBtn.dataset.awb;
+    labelBtn.disabled = true;
+    labelBtn.textContent = 'Se încarcă...';
+
+    auth.currentUser.getIdToken().then(function (idToken) {
+      return fetch(LABEL_ENDPOINT + '?awb=' + encodeURIComponent(awb), {
+        headers: { Authorization: 'Bearer ' + idToken },
+      });
+    }).then(function (res) {
+      if (!res.ok) throw new Error('label-failed');
+      return res.blob();
+    }).then(function (blob) {
+      const url = URL.createObjectURL(blob);
+      window.open(url, '_blank');
+    }).catch(function () {
+      alert('Nu am putut genera eticheta. Încearcă din nou.');
+    }).finally(function () {
+      labelBtn.disabled = false;
+      labelBtn.textContent = 'Tipărește eticheta';
+    });
+  });
 
   ordersList?.addEventListener('click', function (e) {
     const btn = e.target.closest('.admin-order-awb-retry');

@@ -2520,6 +2520,8 @@ body.age-gate-lock { overflow: hidden; }
 .admin-order-awb.is-error { color: #a83a3a; font-weight: 600; }
 .admin-order-awb-retry { font-size: 0.76rem; color: var(--teal-mid); text-decoration: underline; cursor: pointer; }
 .admin-order-awb-retry:disabled { opacity: 0.6; cursor: wait; }
+.admin-order-awb-label { font-size: 0.76rem; color: var(--gold-deep); text-decoration: underline; cursor: pointer; }
+.admin-order-awb-label:disabled { opacity: 0.6; cursor: wait; }
 .admin-order-items { font-size: 0.85rem; color: var(--ink-soft); padding-left: 1.1rem; }
 .admin-orders-empty { text-align: center; color: var(--ink-soft); }
 
