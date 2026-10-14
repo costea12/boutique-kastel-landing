@@ -313,9 +313,19 @@
 
     btn.disabled = true;
     btn.textContent = 'Se anulează...';
-    db.collection('users').doc(user.uid).collection('orders').doc(btn.dataset.orderId)
-      .update({ status: 'anulata', canceledAt: firebase.firestore.FieldValue.serverTimestamp() })
-      .then(function () { loadOrders(user.uid); })
+    // Routed through the server (not a direct Firestore write) so a
+    // cancellation also cancels any already-created FAN Courier AWB and
+    // notifies the owner - see vercel-api/api/cancel-order.js.
+    user.getIdToken().then(function (idToken) {
+      return fetch('https://boutique-kastel-api.vercel.app/api/cancel-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
+        body: JSON.stringify({ orderId: btn.dataset.orderId }),
+      });
+    }).then(function (res) {
+      if (!res.ok) throw new Error('cancel-failed');
+      return res.json();
+    }).then(function () { loadOrders(user.uid); })
       .catch(function () {
         btn.disabled = false;
         btn.textContent = 'Anulează comanda';

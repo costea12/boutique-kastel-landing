@@ -127,12 +127,35 @@
     }).join('');
   }
 
+  const CANCEL_ORDER_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/cancel-order';
+
   ordersList?.addEventListener('change', function (e) {
     const select = e.target.closest('.admin-order-status');
     if (!select) return;
     const uid = select.dataset.uid;
     const orderId = select.dataset.orderId;
     select.disabled = true;
+
+    // Cancelling goes through the server (not a direct Firestore write) so
+    // it also cancels any already-created FAN Courier AWB and emails the
+    // owner's own inbox as a record - see vercel-api/api/cancel-order.js.
+    if (select.value === 'anulata') {
+      auth.currentUser.getIdToken().then(function (idToken) {
+        return fetch(CANCEL_ORDER_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
+          body: JSON.stringify({ uid: uid, orderId: orderId }),
+        });
+      }).then(function (res) { return res.json(); })
+        .then(function (result) {
+          if (!result.canceled) alert('Nu am putut anula comanda. Încearcă din nou.');
+          loadAllOrders();
+        })
+        .catch(function () { alert('Nu am putut anula comanda. Încearcă din nou.'); })
+        .finally(function () { select.disabled = false; });
+      return;
+    }
+
     db.collection('users').doc(uid).collection('orders').doc(orderId)
       .update({ status: select.value })
       .catch(function () {
