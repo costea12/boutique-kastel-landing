@@ -55,12 +55,12 @@ function renderCart() {
       </div>
       <div class="cart-breakdown-line">
         <span>Livrare</span>
-        <span class="cart-breakdown-tbd">se calculează la finalizare</span>
+        <span class="cart-breakdown-tbd" id="shippingFeeLine">completează adresa de livrare</span>
       </div>
     </div>
     <div class="cart-summary">
       <span>Total</span>
-      <strong>${formatPrice(cartTotal())}</strong>
+      <strong id="cartTotalLine">${formatPrice(cartTotal())}</strong>
     </div>
     <div id="checkoutAddress"></div>
     <div class="checkout-payment-method">
@@ -112,6 +112,62 @@ function renderCart() {
 // bouncing the customer to a separate page. Writes go to the same
 // users/{uid} doc that cont.html's address form uses, so both stay in sync.
 let addressState = { user: null, data: null, editing: false };
+
+// Real shipping cost from FAN Courier (vercel-api/api/estimate-shipping.js),
+// fetched once the address is complete. The shop no longer absorbs this -
+// it's charged to the customer as part of the order total, same price FAN
+// will actually collect/bill. fetchId guards against a stale response
+// (e.g. from before the customer switched payment method) overwriting a
+// newer one that resolves first.
+let shippingFee = null;
+let shippingFeeFetchId = 0;
+
+function updateTotalsDisplay() {
+  const feeEl = document.getElementById('shippingFeeLine');
+  const totalEl = document.getElementById('cartTotalLine');
+  if (!feeEl || !totalEl) return;
+  if (shippingFee == null) {
+    feeEl.textContent = hasCompleteAddress(addressState.data) ? 'se calculează...' : 'completează adresa de livrare';
+    feeEl.classList.add('cart-breakdown-tbd');
+  } else {
+    feeEl.textContent = formatPrice(shippingFee);
+    feeEl.classList.remove('cart-breakdown-tbd');
+  }
+  totalEl.textContent = formatPrice(cartTotal() + (shippingFee || 0));
+}
+
+function fetchShippingEstimate() {
+  const d = addressState.data;
+  const user = addressState.user;
+  if (!user || !hasCompleteAddress(d)) {
+    shippingFee = null;
+    updateTotalsDisplay();
+    return;
+  }
+  const paymentMethodInput = document.querySelector('input[name="paymentMethod"]:checked');
+  const paymentMethod = paymentMethodInput ? paymentMethodInput.value : 'card';
+  const fetchId = ++shippingFeeFetchId;
+
+  shippingFee = null;
+  updateTotalsDisplay();
+
+  user.getIdToken().then((idToken) => fetch('https://boutique-kastel-api.vercel.app/api/estimate-shipping', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+    body: JSON.stringify({ county: d.shipCounty, city: d.shipCity, items: getCart(), paymentMethod }),
+  })).then((res) => {
+    if (!res.ok) throw new Error('estimate-failed');
+    return res.json();
+  }).then((data) => {
+    if (fetchId !== shippingFeeFetchId) return; // a newer request already resolved
+    shippingFee = data.shippingFee;
+    updateTotalsDisplay();
+  }).catch(() => {
+    if (fetchId !== shippingFeeFetchId) return;
+    const feeEl = document.getElementById('shippingFeeLine');
+    if (feeEl) { feeEl.textContent = 'eroare - încearcă din nou'; feeEl.classList.add('cart-breakdown-tbd'); }
+  });
+}
 
 const ADDRESS_FIELDS = [
   { key: 'shipName', label: 'Nume complet', type: 'text' },
@@ -179,6 +235,7 @@ function renderAddressBlock() {
       renderAddressBlock();
     });
   }
+  fetchShippingEstimate();
 }
 
 function saveCheckoutAddress(e) {
@@ -230,6 +287,12 @@ function handleCheckout() {
   const cart = getCart();
   if (cart.length === 0) return;
 
+  if (shippingFee == null) {
+    document.getElementById('cartContents').insertAdjacentHTML('beforeend',
+      '<p class="cart-address-warning">Completează adresa de livrare și așteaptă calcularea costului de transport înainte de a plasa comanda.</p>');
+    return;
+  }
+
   // Safety net for the age check: produs.js already hides the "add to cart"
   // button for alcohol (category "ALC") once someone has confirmed they're
   // under 18, but if an item somehow ended up in the cart anyway (e.g.
@@ -270,7 +333,9 @@ function handleCheckout() {
         t.set(orderRef, {
           orderNumber: next,
           items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty, image: i.image || '' })),
-          total: cartTotal(),
+          subtotal: cartTotal(),
+          shippingFee: shippingFee,
+          total: cartTotal() + shippingFee,
           status: 'noua',
           paymentMethod: paymentMethod,
           customerName: user.displayName || '',
@@ -397,5 +462,12 @@ function startCardPayment(orderId, btn) {
     alert('Nu am putut iniția plata online. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
   });
 }
+
+// Delegated on the stable #cartContents element (its innerHTML gets
+// replaced by renderCart, but the element itself doesn't), so this only
+// needs attaching once rather than re-binding on every re-render.
+document.getElementById('cartContents')?.addEventListener('change', (e) => {
+  if (e.target.name === 'paymentMethod') fetchShippingEstimate();
+});
 
 renderCart();
