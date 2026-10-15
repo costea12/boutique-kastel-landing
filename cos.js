@@ -74,7 +74,7 @@ function renderCart() {
         <span>Ramburs (numerar la livrare / confirmare telefonică)</span>
       </label>
     </div>
-    <button class="btn btn-cart" id="checkoutBtn">Finalizează comanda</button>
+    <button class="btn btn-cart" id="checkoutBtn">Comandă cu obligație de plată</button>
     <p class="cart-note">Trebuie să fii autentificat pentru a plasa o comandă. Sau sună direct la <a href="tel:0744377651">0744 377 651</a>.</p>
   `;
 
@@ -314,7 +314,7 @@ function handleCheckout() {
     const hasAddress = required.every((k) => d[k] && d[k].trim());
 
     if (!hasAddress) {
-      if (btn) { btn.disabled = false; btn.textContent = 'Finalizează comanda'; }
+      if (btn) { btn.disabled = false; btn.textContent = 'Comandă cu obligație de plată'; }
       document.getElementById('cartContents').insertAdjacentHTML('beforeend',
         '<p class="cart-address-warning">Completează adresa de livrare din <a href="cont.html">contul tău</a> înainte de a plasa comanda.</p>');
       return null;
@@ -411,7 +411,7 @@ function handleCheckout() {
       `;
     }
   }).catch(function () {
-    if (btn) { btn.disabled = false; btn.textContent = 'Finalizează comanda'; }
+    if (btn) { btn.disabled = false; btn.textContent = 'Comandă cu obligație de plată'; }
     alert('A apărut o eroare la trimiterea comenzii. Te rugăm încearcă din nou sau sună-ne la 0744 377 651.');
   });
 }
