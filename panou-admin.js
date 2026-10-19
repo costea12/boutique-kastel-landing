@@ -388,29 +388,53 @@
     });
   }
 
+  // Fades a modal overlay in/out via the .is-open class (see style.css)
+  // instead of snapping the `hidden` attribute on/off, so opening and
+  // closing any admin modal feels smooth rather than an instant jump cut.
+  function openModal(overlay) {
+    overlay.hidden = false;
+    requestAnimationFrame(function () { overlay.classList.add('is-open'); });
+  }
+  function closeModal(overlay) {
+    overlay.classList.remove('is-open');
+    setTimeout(function () { overlay.hidden = true; }, 220);
+  }
+
   // Shows the AI result next to the original and lets the owner pick one,
   // rather than silently trusting the AI restyle - resolves with the chosen URL.
+  // Closing without picking (✕, backdrop click, Escape) keeps the original
+  // photo rather than leaving the flow stuck with no way out.
   const pickerOverlay = document.getElementById('adminPhotoPickerOverlay');
   const pickerOriginalImg = document.getElementById('pickerOriginalImg');
   const pickerRestyledImg = document.getElementById('pickerRestyledImg');
   const pickerOriginalBtn = document.getElementById('pickerOriginalBtn');
   const pickerRestyledBtn = document.getElementById('pickerRestyledBtn');
+  const pickerCloseBtn = document.getElementById('pickerCloseBtn');
 
   function pickPhoto(originalUrl, restyledUrl) {
     return new Promise(function (resolve) {
       pickerOriginalImg.src = originalUrl;
       pickerRestyledImg.src = restyledUrl;
-      pickerOverlay.hidden = false;
+      openModal(pickerOverlay);
       function cleanup(choice) {
-        pickerOverlay.hidden = true;
+        closeModal(pickerOverlay);
         pickerOriginalBtn.removeEventListener('click', onOriginal);
         pickerRestyledBtn.removeEventListener('click', onRestyled);
+        pickerCloseBtn.removeEventListener('click', onCancel);
+        pickerOverlay.removeEventListener('click', onBackdrop);
+        document.removeEventListener('keydown', onKeydown);
         resolve(choice);
       }
       function onOriginal() { cleanup(originalUrl); }
       function onRestyled() { cleanup(restyledUrl); }
+      function onCancel() { cleanup(originalUrl); }
+      function onBackdrop(e) { if (e.target === pickerOverlay) cleanup(originalUrl); }
+      function onKeydown(e) { if (e.key === 'Escape') cleanup(originalUrl); }
       pickerOriginalBtn.addEventListener('click', onOriginal);
       pickerRestyledBtn.addEventListener('click', onRestyled);
+      pickerCloseBtn.addEventListener('click', onCancel);
+      pickerOverlay.addEventListener('click', onBackdrop);
+      document.addEventListener('keydown', onKeydown);
     });
   }
 
@@ -511,13 +535,16 @@
     productForm.reset();
     productFormError.hidden = true;
     apImagePreview.hidden = true;
-    modalOverlay.hidden = false;
+    openModal(modalOverlay);
   }
-  function closeProductModal() { modalOverlay.hidden = true; }
+  function closeProductModal() { closeModal(modalOverlay); }
 
   addProductBtn?.addEventListener('click', openProductModal);
   modalClose?.addEventListener('click', closeProductModal);
   modalOverlay?.addEventListener('click', function (e) { if (e.target === modalOverlay) closeProductModal(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !modalOverlay.hidden) closeProductModal();
+  });
 
   apImageInput?.addEventListener('change', function () {
     const file = apImageInput.files[0];

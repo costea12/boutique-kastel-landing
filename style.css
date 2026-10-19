@@ -2696,7 +2696,11 @@ body.age-gate-lock { overflow: hidden; }
   justify-content: center;
   padding: 1.5rem;
   z-index: 100;
+  opacity: 0;
+  transition: opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1);
 }
+.admin-modal-overlay.is-open { opacity: 1; }
+.admin-modal-overlay[hidden] { display: flex; pointer-events: none; }
 .admin-modal {
   position: relative;
   width: 100%;
@@ -2706,7 +2710,10 @@ body.age-gate-lock { overflow: hidden; }
   background: var(--white);
   border-radius: 14px;
   padding: 2rem;
+  transform: translateY(10px) scale(0.98);
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
 }
+.admin-modal-overlay.is-open .admin-modal { transform: translateY(0) scale(1); }
 .admin-modal h2 {
   font-family: var(--font-display);
   font-weight: 500;
