@@ -240,7 +240,9 @@
             </label>
             <label>
               <span>Județ</span>
-              <input type="text" id="shipCounty" name="shipCounty" autocomplete="address-level1" required>
+              <select id="shipCounty" name="shipCounty" autocomplete="address-level1" required>
+                <option value="" disabled selected>Alege județul</option>
+              </select>
             </label>
             <label>
               <span>Cod poștal</span>
@@ -407,6 +409,7 @@
 <script src="product-overrides.js"></script>
 <script src="auth.js"></script>
 <script src="favorites.js"></script>
+<script src="ro-counties.js"></script>
 <script src="cont.js"></script>
 <script src="cart.js?v=2"></script>
 <script src="search-utils.js"></script>

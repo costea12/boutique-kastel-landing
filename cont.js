@@ -14,6 +14,16 @@
   const auth = firebase.auth();
   const db = firebase.firestore();
 
+  const shipCountySelect = document.getElementById('shipCounty');
+  if (shipCountySelect && window.RO_COUNTIES) {
+    RO_COUNTIES.forEach(function (county) {
+      const opt = document.createElement('option');
+      opt.value = county;
+      opt.textContent = county;
+      shipCountySelect.appendChild(opt);
+    });
+  }
+
   const loggedOutView = document.getElementById('accountLoggedOut');
   const loggedInView = document.getElementById('accountLoggedIn');
 

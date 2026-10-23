@@ -200,12 +200,29 @@ function renderAddressBlock() {
       <div class="checkout-address">
         <h3>Adresă de livrare</h3>
         <form class="account-form" id="checkoutAddressForm">
-          ${ADDRESS_FIELDS.map((f) => `
+          ${ADDRESS_FIELDS.map((f) => {
+            if (f.key === 'shipCounty') {
+              const current = d[f.key] || '';
+              const options = (window.RO_COUNTIES || []).map((county) => (
+                `<option value="${escapeHtml(county)}" ${county === current ? 'selected' : ''}>${escapeHtml(county)}</option>`
+              )).join('');
+              return `
+            <label>
+              <span>${f.label}</span>
+              <select id="ca-${f.key}" required>
+                <option value="" disabled ${current ? '' : 'selected'}>Alege județul</option>
+                ${options}
+              </select>
+            </label>
+          `;
+            }
+            return `
             <label>
               <span>${f.label}</span>
               <input type="${f.type}" id="ca-${f.key}" value="${escapeHtml(d[f.key] || '')}" required>
             </label>
-          `).join('')}
+          `;
+          }).join('')}
           <div class="checkout-address-actions">
             <button type="submit" class="btn btn-outline">Salvează adresa</button>
             ${complete ? '<button type="button" class="btn-text" id="checkoutAddressCancel">Anulează</button>' : ''}
