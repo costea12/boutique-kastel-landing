@@ -3,7 +3,7 @@
 // dropdown instead of a free-text field for județ, so a customer can't type
 // something Fan Courier won't recognize (which used to fail AWB creation
 // silently after checkout - see fancourier.js's estimateShipment comment).
-const RO_COUNTIES = [
+window.RO_COUNTIES = [
   'Alba', 'Arad', 'Argeș', 'Bacău', 'Bihor', 'Bistrița-Năsăud', 'Botoșani',
   'Brăila', 'Brașov', 'București', 'Buzău', 'Călărași', 'Caraș-Severin',
   'Cluj', 'Constanța', 'Covasna', 'Dâmbovița', 'Dolj', 'Galați', 'Giurgiu',
