@@ -54,8 +54,11 @@ function getUnitPrice(name, price) {
   const amount = parseFloat(match[1].replace(',', '.'));
   const unit = match[2].toLowerCase();
 
-  if (unit === 'ml' || unit === 'l' || unit === 'cl') {
-    const liters = unit === 'ml' ? amount / 1000 : unit === 'cl' ? amount / 100 : amount;
+  if (unit === 'ml') {
+    return `${(price / amount).toLocaleString('ro-RO', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} Lei/ml`;
+  }
+  if (unit === 'l' || unit === 'cl') {
+    const liters = unit === 'cl' ? amount / 100 : amount;
     return `${Math.round(price / liters).toLocaleString('ro-RO')} Lei/L`;
   }
   const kg = unit === 'gr' ? amount / 1000 : amount;

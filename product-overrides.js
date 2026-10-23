@@ -21,6 +21,9 @@ function applyProductOverrides(products) {
           active: o.active !== false,
           bottle_image: o.image || p.bottle_image,
           description: o.description || p.description,
+          name: o.name || p.name,
+          brand: o.brand || p.brand,
+          price: typeof o.price === 'number' ? o.price : p.price,
         });
       });
 

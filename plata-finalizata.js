@@ -12,6 +12,7 @@ function getOrderIdFromUrl() {
 
 function renderStatus(status) {
   const el = document.getElementById('paymentStatus');
+  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   if (status === 'paid') {
     el.innerHTML = `
       <h2>✓ Plata a fost confirmată!</h2>

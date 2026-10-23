@@ -58,6 +58,17 @@ function cartTotal() {
   return getCart().reduce((sum, i) => sum + i.qty * i.price, 0);
 }
 
+// SGR (Sistem Garanție-Returnare) - the mandatory 0.50 lei deposit on
+// returnable beverage containers (law since Dec 2023). Detected from the
+// product name, which already carries "SGR" for every eligible item - same
+// helper duplicated server-side in vercel-api/lib/pricing.js, since the
+// client-side total is only a preview; the server recomputes it for real.
+const SGR_FEE = 0.5;
+function isSgrItem(name) { return /\bSGR\b/i.test(name || ''); }
+function cartSgrTotal() {
+  return getCart().reduce((sum, i) => sum + (isSgrItem(i.name) ? SGR_FEE * i.qty : 0), 0);
+}
+
 function updateCartBadge() {
   const el = document.getElementById('cartCount');
   if (el) el.textContent = cartCount();

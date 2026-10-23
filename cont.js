@@ -239,7 +239,10 @@
 
     db.collection('users').doc(user.uid).set(address, { merge: true }).then(function () {
       addressSaved.hidden = false;
-      setTimeout(function () { addressSaved.hidden = true; }, 2500);
+      // Send them back to the cart after saving/editing the address, so it's
+      // obvious the edit took effect and they can pick up checkout where
+      // they left off - instead of leaving them stranded on the account page.
+      setTimeout(function () { window.location.href = 'cos.html'; }, 900);
     });
   });
 

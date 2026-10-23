@@ -53,6 +53,11 @@ function renderCart() {
         <span>Subtotal</span>
         <span>${formatPrice(cartTotal())}</span>
       </div>
+      ${cartSgrTotal() > 0 ? `
+      <div class="cart-breakdown-line">
+        <span>Garanție SGR</span>
+        <span>${formatPrice(cartSgrTotal())}</span>
+      </div>` : ''}
       <div class="cart-breakdown-line">
         <span>Livrare</span>
         <span class="cart-breakdown-tbd" id="shippingFeeLine">completează adresa de livrare</span>
@@ -60,7 +65,7 @@ function renderCart() {
     </div>
     <div class="cart-summary">
       <span>Total</span>
-      <strong id="cartTotalLine">${formatPrice(cartTotal())}</strong>
+      <strong id="cartTotalLine">${formatPrice(cartTotal() + cartSgrTotal())}</strong>
     </div>
     <div id="checkoutAddress"></div>
     <div class="checkout-payment-method">
@@ -76,6 +81,7 @@ function renderCart() {
     </div>
     <button class="btn btn-cart" id="checkoutBtn">Comandă cu obligație de plată</button>
     <p class="cart-note">Trebuie să fii autentificat pentru a plasa o comandă. Sau sună direct la <a href="tel:0744377651">0744 377 651</a>.</p>
+    <p class="cart-schedule-note">Program: Luni-Vineri 08:00-18:00, Sâmbătă 08:00-14:00.</p>
   `;
 
   document.getElementById('checkoutBtn')?.addEventListener('click', handleCheckout);
@@ -133,7 +139,7 @@ function updateTotalsDisplay() {
     feeEl.textContent = formatPrice(shippingFee);
     feeEl.classList.remove('cart-breakdown-tbd');
   }
-  totalEl.textContent = formatPrice(cartTotal() + (shippingFee || 0));
+  totalEl.textContent = formatPrice(cartTotal() + cartSgrTotal() + (shippingFee || 0));
 }
 
 function fetchShippingEstimate() {
@@ -351,8 +357,9 @@ function handleCheckout() {
           orderNumber: next,
           items: cart.map((i) => ({ cod: i.cod, name: i.name, price: i.price, qty: i.qty, image: i.image || '' })),
           subtotal: cartTotal(),
+          sgrFee: cartSgrTotal(),
           shippingFee: shippingFee,
-          total: cartTotal() + shippingFee,
+          total: cartTotal() + cartSgrTotal() + shippingFee,
           status: 'noua',
           paymentMethod: paymentMethod,
           customerName: user.displayName || '',
@@ -426,6 +433,10 @@ function handleCheckout() {
           <a href="cont.html" class="btn btn-outline">Vezi istoricul comenzilor</a>
         </div>
       `;
+      // Without this, the confirmation can land below the fold (near the
+      // footer) if the page was scrolled while filling in the address -
+      // scroll it into view so "mulțumim" is the first thing visible.
+      document.querySelector('.cart-confirm-block')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }).catch(function () {
     if (btn) { btn.disabled = false; btn.textContent = 'Comandă cu obligație de plată'; }

@@ -2661,6 +2661,19 @@ body.age-gate-lock { overflow: hidden; }
 }
 .admin-product-toggle:hover { background: var(--teal-deep); color: var(--white); }
 .admin-product-toggle:disabled { opacity: 0.6; cursor: wait; }
+.admin-product-edit-btn {
+  margin-top: 0.4rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--gold-deep, var(--ink));
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.admin-product-edit-btn:hover { background: var(--gold); color: var(--white); }
 .admin-product-saved {
   margin-top: 0.3rem;
   font-size: 0.74rem;

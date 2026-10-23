@@ -328,6 +328,7 @@
       + '<button type="button" class="admin-product-toggle" data-cod="' + p.cod + '" data-active="' + (isInactive ? 'false' : 'true') + '">'
       + (isInactive ? 'Repune în vânzare' : 'Scoate din vânzare')
       + '</button>'
+      + '<button type="button" class="admin-product-edit-btn" data-cod="' + p.cod + '">Editează produsul</button>'
       + '<span class="admin-product-saved" data-cod-saved="' + p.cod + '" hidden>Salvat ✓</span>'
       + '</div>'
       + '</div>';
@@ -531,15 +532,55 @@
     });
   });
 
+  // Editing an existing product reuses the same "Produs nou" modal instead
+  // of a separate UI: pre-fill it from the product, lock the cod (it's the
+  // Firestore doc id, can't change after creation), and branch the submit
+  // handler to update() instead of overwriting isNew:true on a real catalog
+  // item. null = add-new mode; a product object = editing that product.
+  let editingProduct = null;
+  const apCodInput = document.getElementById('apCod');
+  const modalTitle = document.getElementById('adminProductModalTitle');
+  const submitBtn = document.getElementById('adminProductFormSubmit');
+
   function openProductModal() {
+    editingProduct = null;
     productForm.reset();
     productFormError.hidden = true;
     apImagePreview.hidden = true;
+    apCodInput.disabled = false;
+    modalTitle.textContent = 'Produs nou';
+    submitBtn.textContent = 'Salvează produsul';
     openModal(modalOverlay);
   }
-  function closeProductModal() { closeModal(modalOverlay); }
+
+  function openEditProductModal(p) {
+    editingProduct = p;
+    productForm.reset();
+    productFormError.hidden = true;
+    document.getElementById('apCod').value = p.cod;
+    apCodInput.disabled = true; // doc id, not editable after creation
+    document.getElementById('apName').value = p.name || '';
+    document.getElementById('apBrand').value = p.brand || '';
+    document.getElementById('apCategory').value = categoryKey(p) || 'PRF';
+    document.getElementById('apPrice').value = p.price != null ? p.price : '';
+    document.getElementById('apStock').value = p.stock != null ? p.stock : 0;
+    apDescriptionInput.value = p.description || '';
+    if (p.bottle_image) { apImagePreview.src = p.bottle_image; apImagePreview.hidden = false; }
+    else { apImagePreview.hidden = true; }
+    modalTitle.textContent = 'Editează produsul';
+    submitBtn.textContent = 'Salvează modificările';
+    openModal(modalOverlay);
+  }
+
+  function closeProductModal() { closeModal(modalOverlay); editingProduct = null; }
 
   addProductBtn?.addEventListener('click', openProductModal);
+  productsGrid?.addEventListener('click', function (e) {
+    const btn = e.target.closest('.admin-product-edit-btn');
+    if (!btn) return;
+    const p = ALL_PRODUCTS.find(function (x) { return x.cod === btn.dataset.cod; });
+    if (p) openEditProductModal(p);
+  });
   modalClose?.addEventListener('click', closeProductModal);
   modalOverlay?.addEventListener('click', function (e) { if (e.target === modalOverlay) closeProductModal(); });
   document.addEventListener('keydown', function (e) {
@@ -571,7 +612,7 @@
       productFormError.hidden = false;
       return;
     }
-    if (ALL_PRODUCTS.some(function (p) { return p.cod === cod; })) {
+    if (!editingProduct && ALL_PRODUCTS.some(function (p) { return p.cod === cod; })) {
       productFormError.textContent = 'Există deja un produs cu acest cod.';
       productFormError.hidden = false;
       return;
@@ -579,15 +620,15 @@
 
     const niche = categoryRaw === 'PRF-niche';
     const category = niche ? 'PRF' : categoryRaw;
+    const isEdit = !!editingProduct;
     const submitBtn = document.getElementById('adminProductFormSubmit');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Se salvează...';
 
-    const imageStep = file ? compressImageFile(file).then(function (dataUrl) { return processProductImage(cod, dataUrl); }) : Promise.resolve('');
+    const imageStep = file ? compressImageFile(file).then(function (dataUrl) { return processProductImage(cod, dataUrl); }) : Promise.resolve(null);
 
     imageStep.then(function (imageUrl) {
-      return db.collection('products').doc(cod).set({
-        isNew: true,
+      const data = {
         name: name,
         brand: brand,
         category: category,
@@ -595,20 +636,26 @@
         niche: niche,
         price: price,
         stock: stock,
-        image: imageUrl,
         description: apDescriptionInput.value.trim(),
-        active: true,
-      });
+      };
+      // Only touch the stored photo if a new file was actually picked -
+      // otherwise an edit with no photo change would blank out the existing one.
+      if (imageUrl) data.image = imageUrl;
+      if (!isEdit) {
+        data.isNew = true; // flags it as admin-added (product-overrides.js
+        data.active = true; // merges it into the catalog even though it has no catalog.json entry
+      }
+      return db.collection('products').doc(cod).set(data, { merge: true });
     }).then(function () {
       closeProductModal();
-      productsLoaded = false; // force a refetch so the new product shows up
+      productsLoaded = false; // force a refetch so the change shows up
       loadProducts();
     }).catch(function () {
       productFormError.textContent = 'Nu am putut salva produsul. Încearcă din nou.';
       productFormError.hidden = false;
     }).finally(function () {
       submitBtn.disabled = false;
-      submitBtn.textContent = 'Salvează produsul';
+      submitBtn.textContent = isEdit ? 'Salvează modificările' : 'Salvează produsul';
     });
   });
 
