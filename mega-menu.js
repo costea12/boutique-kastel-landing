@@ -13,6 +13,16 @@
     'parfumuri.html': {
       columns: [
         {
+          heading: 'Categorii',
+          links: [
+            { label: 'Apă de parfum', href: 'parfumuri.html?tip=edp' },
+            { label: 'Apă de toaletă', href: 'parfumuri.html?tip=edt' },
+            { label: 'Seturi parfumuri', href: 'parfumuri.html?tip=set' },
+            { label: 'Parfumuri niche', href: 'parfumuri-niche.html' },
+            { label: 'Toate parfumurile', href: 'parfumuri.html' },
+          ],
+        },
+        {
           heading: 'Branduri populare',
           links: [
             { label: 'Paco Rabanne', href: 'parfumuri.html?brand=Paco%20Rabanne' },
@@ -20,30 +30,16 @@
             { label: 'Jean Paul Gaultier', href: 'parfumuri.html?brand=Jean%20Paul%20Gaultier' },
             { label: 'Versace', href: 'parfumuri.html?brand=Versace' },
             { label: 'Hugo Boss', href: 'parfumuri.html?brand=Hugo%20Boss' },
-            { label: 'Carolina Herrera', href: 'parfumuri.html?brand=Carolina%20Herrera' },
-            { label: 'Calvin Klein', href: 'parfumuri.html?brand=Calvin%20Klein' },
-            { label: 'Chanel', href: 'parfumuri.html?brand=Chanel' },
           ],
         },
         {
           heading: 'Mai multe branduri',
           links: [
-            { label: 'Giorgio Armani', href: 'parfumuri.html?brand=Giorgio%20Armani' },
-            { label: 'Burberry', href: 'parfumuri.html?brand=Burberry' },
-            { label: 'Lancôme', href: 'parfumuri.html?brand=Lancome' },
-            { label: 'Yves Saint Laurent', href: 'parfumuri.html?brand=Yves%20Saint%20Laurent' },
+            { label: 'Carolina Herrera', href: 'parfumuri.html?brand=Carolina%20Herrera' },
+            { label: 'Calvin Klein', href: 'parfumuri.html?brand=Calvin%20Klein' },
+            { label: 'Chanel', href: 'parfumuri.html?brand=Chanel' },
             { label: 'Dior', href: 'parfumuri.html?brand=Dior' },
-            { label: 'Givenchy', href: 'parfumuri.html?brand=Givenchy' },
-            { label: 'Dolce & Gabbana', href: 'parfumuri.html?brand=Dolce%20%26%20Gabbana' },
-            { label: 'Prada', href: 'parfumuri.html?brand=Prada' },
-          ],
-        },
-        {
-          heading: 'Descoperă',
-          links: [
-            { label: 'Toate parfumurile', href: 'parfumuri.html' },
-            { label: 'Parfumuri niche', href: 'parfumuri-niche.html' },
-            { label: 'Îngrijire corporală', href: 'ingrijire-corporala.html' },
+            { label: 'Yves Saint Laurent', href: 'parfumuri.html?brand=Yves%20Saint%20Laurent' },
           ],
         },
       ],

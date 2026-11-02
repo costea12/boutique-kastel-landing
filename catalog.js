@@ -51,6 +51,14 @@ const TIP_FILTERS = {
     deo: { label: 'Deodorant', re: /\bdeo\b/ },
     'ulei-corp': { label: 'Ulei de corp', re: /ulei de corp/ },
   },
+  PRF: {
+    // No reliable gender field in the catalog (only ~23% of names mark it,
+    // e.g. "W.edp") - EDP/EDT/SET are explicit in the name on the other
+    // hand, so those are the real, trustworthy subcategories here.
+    edp: { label: 'Apă de parfum', re: /\bedp\b/ },
+    edt: { label: 'Apă de toaletă', re: /\bedt\b/ },
+    set: { label: 'Seturi parfumuri', re: /\bset\b/ },
+  },
 };
 
 function normalizeDiacritics(s) {
