@@ -694,11 +694,43 @@
       const overrides = {};
       overridesSnap.forEach(function (doc) { overrides[doc.id] = doc.data(); });
 
+      // Mirrors product-overrides.js's merge exactly (stock/active/image/
+      // description/name/brand/price overrides on existing catalog items),
+      // plus appending brand-new admin-added products that have no
+      // catalog.json entry at all. Missing that second part was the bug:
+      // a product added from "+ Produs nou" saved fine to Firestore (and
+      // showed on the live site, via product-overrides.js) but never
+      // appeared back in this grid, because ALL_PRODUCTS was built by
+      // mapping over catalog alone.
+      const known = new Set(catalog.map(function (p) { return p.cod; }));
       ALL_PRODUCTS = catalog.map(function (p) {
         const o = overrides[p.cod];
         if (!o) return p;
         return Object.assign({}, p, {
           stock: typeof o.stock === 'number' ? o.stock : p.stock,
+          active: o.active !== false,
+          bottle_image: o.image || p.bottle_image,
+          description: o.description || p.description,
+          name: o.name || p.name,
+          brand: o.brand || p.brand,
+          price: typeof o.price === 'number' ? o.price : p.price,
+        });
+      });
+      Object.keys(overrides).forEach(function (cod) {
+        if (known.has(cod)) return;
+        const o = overrides[cod];
+        if (!o.isNew || !o.name) return;
+        ALL_PRODUCTS.push({
+          cod: cod,
+          name: o.name,
+          brand: o.brand || '',
+          category: o.category || '',
+          category_label: o.category_label || '',
+          niche: !!o.niche,
+          price: typeof o.price === 'number' ? o.price : null,
+          stock: typeof o.stock === 'number' ? o.stock : 0,
+          bottle_image: o.image || '',
+          description: o.description || '',
           active: o.active !== false,
         });
       });
