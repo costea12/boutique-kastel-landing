@@ -1,7 +1,50 @@
 let PRODUCTS = [];
 let selectedBrands = new Set();
+let activeTipFilter = null; // { slug, label, re } - set from a mega-menu link (?tip=), not a user-toggled UI filter
 const PAGE_CATEGORY = document.body.dataset.category || null;
 const PAGE_NICHE = document.body.dataset.niche || null; // "true" = niche only, "false" = mainstream only, unset = both
+
+// Word-boundary product-type keywords per category, used by the header mega
+// menu (?tip=slug) so clicking "Whisky" shows only whisky, not a fuzzy
+// substring match that would also catch unrelated names (plain fuzzyMatch
+// matched "Vol." for "vin" and "Romagna" for "rom" - too loose for this).
+const TIP_FILTERS = {
+  ALC: {
+    vin: { label: 'Vin', re: /\bvin\b/ },
+    whisky: { label: 'Whisky', re: /\bwhisk(e)?y\b/ },
+    vodca: { label: 'Vodcă', re: /\bvod(c|k)a\b/ },
+    rom: { label: 'Rom', re: /\brom\b/ },
+    gin: { label: 'Gin', re: /\bgin\b/ },
+    lichior: { label: 'Lichior', re: /\blichior/ },
+    spumant: { label: 'Spumant & Șampanie', re: /\b(spumant|sampanie|prosecco)/ },
+    bere: { label: 'Bere', re: /\bbere\b/ },
+    coniac: { label: 'Coniac & Brandy', re: /\b(coniac|cognac|brandy)\b/ },
+    tequila: { label: 'Tequila', re: /\btequila\b/ },
+  },
+  DLC: {
+    ciocolata: { label: 'Ciocolată', re: /\bciocolata\b/ },
+    praline: { label: 'Praline', re: /\bpraline\b/ },
+    jeleuri: { label: 'Jeleuri', re: /\bjeleuri\b/ },
+    biscuiti: { label: 'Biscuiți', re: /\bbiscuiti\b/ },
+    bomboane: { label: 'Bomboane', re: /\bbomboane\b/ },
+    napolitane: { label: 'Napolitane', re: /\bnapolitane\b/ },
+    caramele: { label: 'Caramele', re: /\bcaramele\b/ },
+  },
+  CAF: {
+    boabe: { label: 'Cafea boabe', re: /\bboabe\b/ },
+    macinata: { label: 'Cafea măcinată', re: /\bmacinata\b/ },
+  },
+  ICP: {
+    'gel-dus': { label: 'Gel de duș', re: /gel dus/ },
+    'crema-corp': { label: 'Cremă de corp', re: /crema de corp/ },
+    deo: { label: 'Deodorant', re: /\bdeo\b/ },
+    'ulei-corp': { label: 'Ulei de corp', re: /ulei de corp/ },
+  },
+};
+
+function normalizeDiacritics(s) {
+  return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
 
 // normalizeText/fuzzyMatch/formatPrice etc. now live in search-utils.js
 // (loaded before this file), shared with header-search.js's suggestions.
@@ -132,6 +175,7 @@ function applyFilters() {
 
   let filtered = categoryProducts().filter((p) => {
     if (q && !fuzzyMatch(q, p.name) && !fuzzyMatch(q, p.brand)) return false;
+    if (activeTipFilter && !activeTipFilter.re.test(normalizeDiacritics(p.name))) return false;
     if (selectedBrands.size > 0 && !selectedBrands.has(p.brand)) return false;
     if (!isNaN(priceMin) && p.price != null && p.price < priceMin) return false;
     if (!isNaN(priceMax) && p.price != null && p.price > priceMax) return false;
@@ -146,7 +190,7 @@ function applyFilters() {
   });
 
   const subtitle = document.getElementById('catalogSubtitle');
-  if (subtitle) subtitle.textContent = `${filtered.length} produse`;
+  if (subtitle) subtitle.textContent = activeTipFilter ? `${filtered.length} produse · ${activeTipFilter.label}` : `${filtered.length} produse`;
 
   updateFilterBadge();
   renderGrid(filtered);
@@ -169,16 +213,25 @@ function clearFilters() {
   document.getElementById('brandSearch').value = '';
   selectedBrands.clear();
   document.querySelectorAll('.brand-checkbox').forEach((cb) => { cb.checked = false; });
+  activeTipFilter = null;
   filterBrandList();
   applyFilters();
 }
 
 // Prefill from a header-search redirect (e.g. parfumuri.html?q=eros) landing here
 // from a page that has no catalog of its own.
-const initialQuery = new URLSearchParams(window.location.search).get('q');
+const urlParams = new URLSearchParams(window.location.search);
+const initialQuery = urlParams.get('q');
 if (initialQuery) {
   const searchBoxEl = document.getElementById('searchBox');
   if (searchBoxEl) searchBoxEl.value = initialQuery;
+}
+// Mega-menu links land here as ?tip=slug or ?brand=Name to jump straight
+// into a pre-filtered view instead of the full category.
+const initialTipSlug = urlParams.get('tip');
+const initialBrand = urlParams.get('brand');
+if (initialTipSlug && PAGE_CATEGORY && TIP_FILTERS[PAGE_CATEGORY] && TIP_FILTERS[PAGE_CATEGORY][initialTipSlug]) {
+  activeTipFilter = TIP_FILTERS[PAGE_CATEGORY][initialTipSlug];
 }
 
 fetch('catalog.json')
@@ -187,6 +240,10 @@ fetch('catalog.json')
   .then((data) => {
     PRODUCTS = data;
     buildBrandList();
+    if (initialBrand) {
+      const cb = document.querySelector(`.brand-checkbox[value="${CSS.escape(initialBrand)}"]`);
+      if (cb) { cb.checked = true; selectedBrands.add(initialBrand); }
+    }
     applyFilters();
   })
   .catch(() => {
