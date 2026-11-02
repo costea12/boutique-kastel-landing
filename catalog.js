@@ -20,6 +20,17 @@ const TIP_FILTERS = {
     bere: { label: 'Bere', re: /\bbere\b/ },
     coniac: { label: 'Coniac & Brandy', re: /\b(coniac|cognac|brandy)\b/ },
     tequila: { label: 'Tequila', re: /\btequila\b/ },
+    // The catalog's "brand" field is unreliable for ALC (parsed wrong on
+    // import, e.g. "Jack" instead of "Jack Daniel's") - these go by name
+    // instead, same word-boundary approach as the type filters above.
+    jack: { label: "Jack Daniel's", re: /jack daniel/ },
+    hennessy: { label: 'Hennessy', re: /\bhennessy\b/ },
+    martini: { label: 'Martini', re: /\bmartini\b/ },
+    jagermeister: { label: 'Jägermeister', re: /jagermeister/ },
+    chivas: { label: 'Chivas Regal', re: /\bchivas\b/ },
+    moet: { label: 'Moët & Chandon', re: /\bmoet\b/ },
+    aperol: { label: 'Aperol', re: /\baperol\b/ },
+    bacardi: { label: 'Bacardi', re: /\bbacardi\b/ },
   },
   DLC: {
     ciocolata: { label: 'Ciocolată', re: /\bciocolata\b/ },
