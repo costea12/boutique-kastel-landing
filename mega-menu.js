@@ -169,7 +169,7 @@
           ],
         },
       ],
-      image: 'assets/products/5000189363069-bottle.jpg',
+      image: 'assets/products/7610400097093-bottle.jpg',
       imageLabel: 'Dulciuri de import',
     },
     'cafea.html': {
