@@ -75,6 +75,41 @@
         </div>
       `;
     }).join('');
+
+    addReviewsToJsonLd(reviews, avg);
+  }
+
+  // Search Console flagged the Product schema (built in produs.js's
+  // setProductSeo, before reviews are fetched) as missing "review" and
+  // "aggregateRating" - this runs after loadReviews() resolves and patches
+  // them into the same <script id="productJsonLd"> tag, only when real
+  // reviews exist (never fabricate them for products with none).
+  function addReviewsToJsonLd(reviews, avg, attempt) {
+    if (!reviews.length) return;
+    const script = document.getElementById('productJsonLd');
+    if (!script) {
+      // produs.js's catalog fetch hasn't created the schema tag yet (it and
+      // this file's Firestore query race independently) - retry briefly
+      // instead of silently losing the reviews data.
+      if ((attempt || 0) < 10) setTimeout(() => addReviewsToJsonLd(reviews, avg, (attempt || 0) + 1), 300);
+      return;
+    }
+    let data;
+    try { data = JSON.parse(script.textContent); } catch { return; }
+
+    data.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: Math.round(avg * 10) / 10,
+      reviewCount: reviews.length,
+    };
+    data.review = reviews.slice(0, 20).map((r) => ({
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5, worstRating: 1 },
+      author: { '@type': 'Person', name: r.authorName || 'Client Boutique Kastel' },
+      reviewBody: r.text,
+    }));
+
+    script.textContent = JSON.stringify(data);
   }
 
   function loadReviews() {

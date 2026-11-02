@@ -502,6 +502,10 @@ function setProductSeo(p) {
     '@context': 'https://schema.org/',
     '@type': 'Product',
     name: p.name,
+    // Google Search Console flagged this as missing 2026-11-02 - falls back
+    // to the same text used for the meta description when there's no real
+    // product description (catalog items don't all have one).
+    description: p.description || `${p.name}, disponibil la Boutique Kastel, Hunedoara.`,
     brand: p.brand ? { '@type': 'Brand', name: p.brand } : undefined,
     image: images,
     url: canonicalUrl,
@@ -512,6 +516,28 @@ function setProductSeo(p) {
       priceCurrency: 'RON',
       price: p.price,
       availability: p.stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+      // Also flagged as missing by Search Console - mirrors retur.html's
+      // real policy (14-day withdrawal, return shipping paid by customer
+      // unless the item is defective/wrong) and the Fan Courier delivery
+      // window actually used for orders (see fancourier.js/estimate-shipping).
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'RO',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 14,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/ReturnShippingFees',
+      },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: { '@type': 'MonetaryAmount', value: 20, currency: 'RON' },
+        shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'RO' },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 1, unitCode: 'DAY' },
+          transitTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 3, unitCode: 'DAY' },
+        },
+      },
     },
   };
 
