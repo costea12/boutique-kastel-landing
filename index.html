@@ -15,7 +15,17 @@
 <meta name="theme-color" content="#0a464e">
 <link rel="canonical" href="https://kastelboutique.ro/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Boutique Kastel">
+<meta property="og:title" content="Boutique Kastel Duty Free Concept | Hunedoara">
+<meta property="og:description" content="Parfumuri, parfumuri niche, îngrijire corporală, băuturi, dulciuri și cafea, la Hunedoara. Descoperă calitatea la preț corect.">
+<meta property="og:url" content="https://kastelboutique.ro/">
+<meta property="og:image" content="https://kastelboutique.ro/assets/hero/hero-masa-1600.jpg">
+<meta property="og:locale" content="ro_RO">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero/hero-masa-1600.jpg" imagesrcset="assets/hero/hero-masa-1600.jpg 1600w, assets/hero/hero-masa.jpg 2560w" imagesizes="100vw" media="(min-width: 901px)">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hero.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
@@ -135,18 +145,18 @@
 </aside>
 
 <!-- Hero -->
-<section class="hero grain" id="top">
-  <svg class="hero-corner tl" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 40 Q2 2 40 2"/><circle cx="40" cy="2" r="2" fill="currentColor" stroke="none"/><circle cx="2" cy="40" r="2" fill="currentColor" stroke="none"/></svg>
-  <svg class="hero-corner br" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 40 Q2 2 40 2"/><circle cx="40" cy="2" r="2" fill="currentColor" stroke="none"/><circle cx="2" cy="40" r="2" fill="currentColor" stroke="none"/></svg>
+<section class="hero hero-v2 grain" id="top">
+  <div class="hero-scene" aria-hidden="true">
+    <picture>
+      <source media="(max-width: 900px)" srcset="assets/hero/hero-masa-mobile.jpg">
+      <img class="hero-photo" src="assets/hero/hero-masa.jpg" srcset="assets/hero/hero-masa-1600.jpg 1600w, assets/hero/hero-masa.jpg 2560w" sizes="100vw" alt="" fetchpriority="high" data-depth-scroll="0.35">
+    </picture>
+    <span class="hero-shade"></span>
+  </div>
 
-  <div class="hero-inner">
+  <div class="hero-inner" data-depth-scroll="0.06">
     <h1>Boutique Kastel<br>Duty Free Concept</h1>
     <p class="sub">Descoperă calitatea la preț corect!</p>
-    <div class="flourish">
-      <span class="line"></span>
-      <svg viewBox="0 0 42 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 8h14M28 8h14M21 2v12M15 8a6 6 0 0 1 12 0"/></svg>
-      <span class="line rev"></span>
-    </div>
     <div class="hero-ctas">
       <a href="parfumuri.html" class="btn btn-gold">Explorează colecția</a>
     </div>
@@ -651,5 +661,6 @@
 <script src="header-search.js"></script>
 <script src="newsletter-popup.js?v=3"></script>
 <script src="mega-menu.js"></script>
+<script src="hero.js"></script>
 </body>
 </html>

@@ -1,0 +1,112 @@
+/* ============================================================
+   Home hero: duty-free table scene. Loaded only by index.html.
+   ============================================================ */
+/* ---------- Hero v2: duty-free table scene ----------
+   Alex's sketch: products on a table on the right, headline on the left.
+   Image: Gemini 3 Pro Image render, 16:9 at 5504px (source kept in
+   projects/boutique-kastel/hero-source/), exported at 1600/2560px plus a
+   product-only crop for phones. Left-side shade keeps the copy readable. */
+
+.hero-v2 {
+  min-height: 86vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  /* Same tone as the photo's wall, so the faded left edge of the photo
+     melts into it with no visible seam. */
+  background: radial-gradient(120% 90% at 70% 20%, #2c403f 0%, #1c2627 55%, #151b1c 100%);
+}
+.hero-v2::after { display: none; }
+.hero-v2 .hero-corner { display: none; }
+
+.hero-v2 .hero-inner {
+  width: 100%;
+  max-width: var(--container, 1200px);
+  z-index: 2;
+}
+.hero-v2 .hero-inner > * { max-width: 540px; }
+/* Headline stays on its two authored lines on desktop, so the block stays
+   short and the tagline sits on the wall, not over the table. */
+.hero-v2 .hero-inner h1 {
+  max-width: none;
+  font-size: clamp(2.4rem, 3.7vw, 3.7rem);
+  white-space: nowrap;  /* note: a text-wrap value after this would undo it (shorthand overlap) */
+}
+.hero-v2 .hero-inner .sub { max-width: none; }
+.hero-v2 .hero-ctas { justify-content: flex-start; margin-top: 2.2rem; }
+
+.hero-scene {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+/* The photo only covers the right part of the hero and fades out to the
+   left, so the table always starts right of the text column, whatever the
+   screen width or browser zoom. */
+.hero-photo {
+  position: absolute;
+  top: -5%;
+  left: 32%;
+  width: 68%;
+  height: 110%;                 /* headroom so the scroll drift never shows an edge */
+  object-fit: cover;
+  object-position: 88% 45%;     /* bottle tops + tabletop stay in frame */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 22%);
+          mask-image: linear-gradient(90deg, transparent 0%, #000 22%);
+  will-change: transform;
+}
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(10, 30, 28, 0.82) 0%, rgba(10, 30, 28, 0.5) 34%, rgba(10, 30, 28, 0) 58%),
+    linear-gradient(0deg, rgba(10, 30, 28, 0.45) 0%, rgba(10, 30, 28, 0) 26%);
+}
+
+/* Small laptops / tablets landscape: text takes a bigger share of the width,
+   so push the table further right. */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .hero-photo { left: 42%; width: 58%; object-position: 92% 45%; }
+  .hero-v2 .hero-inner .sub { font-size: 1.15rem; }
+}
+
+/* Phones: text on top, then the product crop as its own full-bleed band,
+   so the bottles are never cut by a portrait cover-crop. */
+@media (max-width: 900px) {
+  .hero-v2 {
+    min-height: 0;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 3rem;
+    padding-bottom: 0;
+    background: #293938;        /* matches the crop's wall tone */
+  }
+  .hero-v2 .hero-inner { order: 1; }
+  .hero-v2 .hero-inner h1 { white-space: normal; max-width: none; font-size: clamp(2.3rem, 9vw, 3rem); }
+  .hero-v2 .hero-ctas { margin-top: 1.8rem; }
+  .hero-scene {
+    order: 2;
+    position: relative;
+    inset: auto;
+    margin: 2rem calc(-1 * var(--edge)) 0;
+    aspect-ratio: 1200 / 940;
+  }
+  .hero-photo {
+    left: 0;
+    width: 100%;
+    -webkit-mask-image: none;
+            mask-image: none;
+    top: 0;
+    height: 100%;
+    object-position: center;
+    transform: none !important;
+  }
+  .hero-shade {
+    background: linear-gradient(180deg, #293938 0%, rgba(41, 57, 56, 0) 22%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo { transform: none !important; }
+}
