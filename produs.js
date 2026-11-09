@@ -494,8 +494,14 @@ function setProductSeo(p) {
     );
   }
 
-  const canonicalEl = document.getElementById('canonicalLink');
-  if (canonicalEl) canonicalEl.setAttribute('href', canonicalUrl);
+  let canonicalEl = document.getElementById('canonicalLink');
+  if (!canonicalEl) {
+    canonicalEl = document.createElement('link');
+    canonicalEl.rel = 'canonical';
+    canonicalEl.id = 'canonicalLink';
+    document.head.appendChild(canonicalEl);
+  }
+  canonicalEl.setAttribute('href', canonicalUrl);
 
   const images = [p.bottle_image, p.box_image].filter(Boolean).map((img) => `${siteOrigin}/${img}`);
   const jsonLd = {
