@@ -480,9 +480,16 @@ function renderSpecs(p) {
   `;
 }
 
+// Products with a generated static page (produs/<slug>/, see
+// generate-pages.mjs) link there; brand-new admin-panel products that haven't
+// had their page generated yet fall back to the dynamic produs.html?cod= URL.
+function productPath(p) {
+  return p.slug ? `produs/${p.slug}/` : `produs.html?cod=${encodeURIComponent(p.cod)}`;
+}
+
 function setProductSeo(p) {
   const siteOrigin = 'https://kastelboutique.ro';
-  const canonicalUrl = `${siteOrigin}/produs.html?cod=${encodeURIComponent(p.cod)}`;
+  const canonicalUrl = `${siteOrigin}/${productPath(p)}`;
 
   document.title = `${p.name} | Boutique Kastel`;
 
@@ -660,7 +667,7 @@ function renderRelated(product, data) {
   if (!picks.length) return;
 
   grid.innerHTML = picks.map((p) => `
-    <a class="product-card" href="produs.html?cod=${encodeURIComponent(p.cod)}">
+    <a class="product-card" href="${productPath(p)}">
       <div class="product-card-img">
         <img src="${p.bottle_image}" alt="${p.name}" loading="lazy">
         ${window.favoriteButtonHtml ? window.favoriteButtonHtml(p.cod) : ''}
@@ -676,20 +683,46 @@ function renderRelated(product, data) {
   if (window.syncFavoriteHearts) window.syncFavoriteHearts();
 }
 
-const params = new URLSearchParams(window.location.search);
-const cod = params.get('cod');
+// ---- boot ---- (generate-pages.mjs evaluates everything above this line in
+// Node to pre-render the static product pages; keep DOM access out of it)
+
+// Static product pages carry their code in <meta name="product-cod">; the
+// dynamic produs.html still takes it from ?cod=.
+const staticCodMeta = document.querySelector('meta[name="product-cod"]');
+const isStaticProductPage = Boolean(staticCodMeta);
+const cod = isStaticProductPage
+  ? staticCodMeta.content
+  : new URLSearchParams(window.location.search).get('cod');
+
+// Old produs.html?cod= links (bookmarks, carts, Google's existing index)
+// forward to the product's own page once one exists.
+function redirectToStaticPage(slug) {
+  if (isStaticProductPage || !slug) return false;
+  window.location.replace(`produs/${slug}/${window.location.hash}`);
+  return true;
+}
 
 fetch('catalog.json')
   .then((r) => r.json())
   .then((data) => applyProductOverrides(data))
   .then((data) => {
     const product = data.find((p) => p.cod === cod);
-    if (!product) {
-      document.getElementById('productMain').innerHTML = '<p class="product-loading">Produs negăsit. <a href="parfumuri.html">Înapoi la catalog</a></p>';
-      return;
-    }
-    renderProduct(product);
-    renderRelated(product, data);
+    // Products added from the admin panel aren't in catalog.json, so their
+    // slug (once the daily job has generated their page) lives only in the
+    // slug map - look it up before rendering the dynamic fallback.
+    const slugLookup = (!isStaticProductPage && !(product && product.slug))
+      ? fetch('produs/slugs.json').then((r) => (r.ok ? r.json() : {})).catch(() => ({}))
+      : Promise.resolve({});
+    return slugLookup.then((slugs) => {
+      const slug = (product && product.slug) || slugs[cod];
+      if (redirectToStaticPage(slug)) return;
+      if (!product) {
+        document.getElementById('productMain').innerHTML = '<p class="product-loading">Produs negăsit. <a href="parfumuri.html">Înapoi la catalog</a></p>';
+        return;
+      }
+      renderProduct(product);
+      renderRelated(product, data);
+    });
   })
   .catch(() => {
     document.getElementById('productMain').innerHTML = '<p class="product-loading">Catalogul nu a putut fi încărcat.</p>';

@@ -99,7 +99,7 @@
       const top = matches.slice(0, MAX_SUGGESTIONS);
       const rowsHtml = top.map((p) => `
         <li class="header-search-item">
-          <a href="produs.html?cod=${encodeURIComponent(p.cod)}" class="header-search-link">
+          <a href="${p.slug ? `produs/${p.slug}/` : `produs.html?cod=${encodeURIComponent(p.cod)}`}" class="header-search-link">
             <span class="header-search-text">
               <span class="header-search-name">${p.name}</span>
               <span class="header-search-brand">${p.brand}${p.stock <= 0 ? ' · Stoc epuizat' : ''}</span>

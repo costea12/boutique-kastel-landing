@@ -220,7 +220,7 @@ if (document.getElementById('parfumCount') || document.getElementById('bauturiCo
       if (!grid) return;
       const picks = pickDailyRecommended(data);
       grid.innerHTML = picks.map((p) => `
-        <a class="product-card" href="produs.html?cod=${encodeURIComponent(p.cod)}">
+        <a class="product-card" href="${p.slug ? `produs/${p.slug}/` : `produs.html?cod=${encodeURIComponent(p.cod)}`}">
           <div class="product-card-img">
             <img src="${p.bottle_image}" alt="${p.name}" loading="lazy">
             ${window.favoriteButtonHtml ? window.favoriteButtonHtml(p.cod) : ''}

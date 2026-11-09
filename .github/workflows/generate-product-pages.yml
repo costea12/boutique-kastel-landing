@@ -1,0 +1,51 @@
+name: Regenerate product pages
+
+# Rebuilds produs/<slug>/ pages, catalog.json slugs and sitemap.xml from
+# catalog.json + the admin panel's Firestore overlay, so products the owner
+# adds, renames or takes off sale in the admin panel get (or lose) their own
+# indexable page without anyone touching code. Until the next run, new
+# products still work at produs.html?cod=.
+on:
+  schedule:
+    - cron: '30 2 * * *'   # daily, 04:30/05:30 Romania time
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: generate-product-pages
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Fails (and commits nothing) if Firestore can't be read, so a network
+      # blip can never wipe the pages of admin-added products.
+      - name: Generate pages
+        run: node generate-pages.mjs
+
+      - name: Commit and publish if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add -A produs catalog.json sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No product changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Regenerate product pages from catalog + admin panel changes"
+          git push
+          # Pushes made with the workflow token don't always trigger a Pages
+          # build on their own, so request one explicitly.
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true

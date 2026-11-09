@@ -6,8 +6,10 @@
   const section = document.getElementById('reviewsSection');
   if (!section || !window.firebase || !firebase.auth) return;
 
-  const params = new URLSearchParams(window.location.search);
-  const cod = params.get('cod');
+  // Static product pages (produs/<slug>/) carry the code in a meta tag; the
+  // dynamic produs.html still uses ?cod=.
+  const codMeta = document.querySelector('meta[name="product-cod"]');
+  const cod = codMeta ? codMeta.content : new URLSearchParams(window.location.search).get('cod');
   if (!cod) return;
 
   const auth = firebase.auth();

@@ -113,7 +113,7 @@ function renderGrid(products) {
   if (empty) empty.hidden = true;
 
   grid.innerHTML = products.map((p) => `
-    <a class="product-card" href="produs.html?cod=${encodeURIComponent(p.cod)}">
+    <a class="product-card" href="${p.slug ? `produs/${p.slug}/` : `produs.html?cod=${encodeURIComponent(p.cod)}`}">
       <div class="product-card-img">
         <img src="${p.bottle_image}" alt="${p.name}" loading="lazy">
         ${p.stock <= 0 ? '<span class="stock-badge out">Stoc epuizat</span>' : ''}
