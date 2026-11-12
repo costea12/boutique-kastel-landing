@@ -7,7 +7,9 @@ name: Regenerate product pages
 # products still work at produs.html?cod=.
 on:
   schedule:
-    - cron: '30 2 * * *'   # daily, 04:30/05:30 Romania time
+    # Daily, right after Firestore's free quota resets (midnight Pacific =
+    # 08:00 UTC), so a run never fails on a quota exhausted the day before.
+    - cron: '15 8 * * *'
   workflow_dispatch: {}
 
 permissions:
@@ -37,7 +39,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git add -A produs catalog.json sitemap.xml
+          git add -A produs catalog.json sitemap.xml product-overrides.json
           if git diff --cached --quiet; then
             echo "No product changes."
             exit 0

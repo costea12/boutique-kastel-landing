@@ -464,7 +464,7 @@
     compressImageFile(fileInput.files[0])
       .then(function (dataUrl) { return processProductImage(cod, dataUrl); })
       .then(function (url) {
-        return db.collection('products').doc(cod).set({ image: url }, { merge: true }).then(function () { return url; });
+        return db.collection('products').doc(cod).set({ image: url, updatedAt: firebase.firestore.FieldValue.serverTimestamp() }, { merge: true }).then(function () { return url; });
       })
       .then(function (url) {
         const p = ALL_PRODUCTS.find(function (x) { return x.cod === cod; });
@@ -645,6 +645,7 @@
         data.isNew = true; // flags it as admin-added (product-overrides.js
         data.active = true; // merges it into the catalog even though it has no catalog.json entry
       }
+      data.updatedAt = firebase.firestore.FieldValue.serverTimestamp(); // see product-overrides.js
       return db.collection('products').doc(cod).set(data, { merge: true });
     }).then(function () {
       closeProductModal();
@@ -745,7 +746,7 @@
   function saveStock(cod, value) {
     const card = productsGrid.querySelector('.admin-product-card[data-cod="' + cod + '"]');
     const savedEl = productsGrid.querySelector('[data-cod-saved="' + cod + '"]');
-    db.collection('products').doc(cod).set({ stock: value }, { merge: true })
+    db.collection('products').doc(cod).set({ stock: value, updatedAt: firebase.firestore.FieldValue.serverTimestamp() }, { merge: true })
       .then(function () {
         const p = ALL_PRODUCTS.find(function (x) { return x.cod === cod; });
         if (p) p.stock = value;
@@ -781,7 +782,7 @@
     const cod = btn.dataset.cod;
     const willBeActive = btn.dataset.active === 'false';
     btn.disabled = true;
-    db.collection('products').doc(cod).set({ active: willBeActive }, { merge: true })
+    db.collection('products').doc(cod).set({ active: willBeActive, updatedAt: firebase.firestore.FieldValue.serverTimestamp() }, { merge: true })
       .then(function () {
         const p = ALL_PRODUCTS.find(function (x) { return x.cod === cod; });
         if (p) p.active = willBeActive;

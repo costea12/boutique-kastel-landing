@@ -81,23 +81,17 @@ async function fetchOverrides() {
   return docs;
 }
 
-// Runs the site's own product-overrides.js against a fake firebase object,
-// so the merge rules (what an override can change, isNew products, inactive
-// filtering) can never drift from what the browser does.
-async function mergeWithOverrides(catalog, docs) {
-  const fakeFirebase = {
-    firestore: () => ({
-      collection: () => ({
-        get: () => Promise.resolve({ forEach: (fn) => docs.forEach((d) => fn({ id: d.id, data: () => d.data })) }),
-      }),
-    }),
-  };
-  const ctx = { firebase: fakeFirebase, Promise, Object, Set };
+// Runs the site's own merge function from product-overrides.js, so the merge
+// rules (what an override can change, isNew products, inactive filtering)
+// can never drift from what the browser does.
+function mergeWithOverrides(catalog, docs) {
+  const ctx = { Promise, Object, Set };
   ctx.window = ctx;
   vm.createContext(ctx);
   vm.runInContext(read('product-overrides.js'), ctx);
-  return ctx.applyProductOverrides(catalog);
+  return ctx.mergeProductOverrides(catalog, overridesMap(docs));
 }
+const overridesMap = (docs) => Object.fromEntries(docs.map((d) => [d.id, d.data]));
 
 // ---------- 2. Slugs ----------
 
@@ -182,6 +176,8 @@ function makeTemplate() {
     return html
       // All of the site's links and assets are root-relative ("style.css",
       // "cos.html", "catalog.json"); <base> keeps them working from /produs/<slug>/.
+      // The ?cod= shell is noindex; the static product pages must be indexable.
+      .replace(/<meta name="robots"[^>]*id="shellNoindex">\n?/, '')
       .replace('<meta charset="UTF-8">', '<meta charset="UTF-8">\n<base href="/">')
       .replace(/<title>[^<]*<\/title>/, () => `<title>${escAttr(r.title)}</title>`)
       .replace(/(<meta name="description" id="metaDescription" content=")[^"]*(")/, (_, a, b) => `${a}${escAttr(r.description)}${b}`)
@@ -206,8 +202,11 @@ const assignSlug = (p, existing) => {
 };
 const catalog = catalogRaw.map((p) => ({ ...p, slug: assignSlug(p, p.slug || oldSlugs[p.cod]) }));
 
+// Browsers fetch Firestore docs edited after `since`; 15 min of overlap
+// covers clock skew and edits made while this run is in progress.
+const snapshotSince = new Date(Date.now() - 15 * 60 * 1000).toISOString();
 const docs = await fetchOverrides();
-const products = await mergeWithOverrides(catalog, docs);
+const products = mergeWithOverrides(catalog, docs);
 for (const p of products) if (!p.slug) p.slug = assignSlug(p, oldSlugs[p.cod]);
 
 const render = makeRenderer();
@@ -227,6 +226,10 @@ for (const p of products) {
   slugMap[p.cod] = p.slug;
 }
 fs.writeFileSync(SLUG_MAP, JSON.stringify(slugMap));
+
+// Static copy of every override, so storefront pages don't read the whole
+// products collection on each view (see product-overrides.js).
+fs.writeFileSync('product-overrides.json', JSON.stringify({ since: snapshotSince, overrides: overridesMap(docs) }));
 
 // catalog.json carries the slug so every product link on the site can point
 // at the static page without an extra request.
