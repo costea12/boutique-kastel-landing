@@ -15,6 +15,9 @@
      file, so a hardcoded canonical told Google all ~1,900 products were
      duplicates of produs.html (Search Console, 2026-11-09). produs.js adds the
      per-product canonical once it knows which product is shown. -->
+<!-- This ?cod= shell is never the page to index: products with a slug redirect
+     to produs/<slug>/, and admin-added ones get their static page on the next
+     daily generate-pages run. generate-pages.mjs strips this tag. -->
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#0a464e">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
