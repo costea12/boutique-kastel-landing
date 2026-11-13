@@ -539,7 +539,9 @@ function setProductSeo(p) {
         returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
         merchantReturnDays: 14,
         returnMethod: 'https://schema.org/ReturnByMail',
-        returnFees: 'https://schema.org/ReturnShippingFees',
+        // Customer pays return shipping (retur.html), amount depends on their
+        // courier, so no fixed returnShippingFeesAmount to declare.
+        returnFees: 'https://schema.org/ReturnFeesCustomerResponsibility',
       },
       shippingDetails: {
         '@type': 'OfferShippingDetails',
