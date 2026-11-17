@@ -120,7 +120,7 @@
         + '<strong>' + numberLabel + '</strong>'
         + '<span>' + (o.total || 0).toFixed(2).replace('.', ',') + ' Lei</span>'
         + '<span>' + date + '</span>'
-        + '<select class="admin-order-status" data-order-id="' + doc.id + '" data-uid="' + uid + '">'
+        + '<select class="admin-order-status" data-order-id="' + doc.id + '" data-uid="' + uid + '" data-current="' + status + '" data-confirm-email-sent="' + (o.confirmedEmailSentAt ? 'true' : 'false') + '">'
         + Object.keys(STATUS_LABELS).map(function (key) {
           return '<option value="' + key + '"' + (key === status ? ' selected' : '') + '>' + STATUS_LABELS[key] + '</option>';
         }).join('')
@@ -134,7 +134,7 @@
     }).join('');
   }
 
-  const CANCEL_ORDER_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/cancel-order';
+  const UPDATE_STATUS_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/update-order-status';
 
   ordersList?.addEventListener('change', function (e) {
     const select = e.target.closest('.admin-order-status');
@@ -145,13 +145,13 @@
 
     // Cancelling goes through the server (not a direct Firestore write) so
     // it also cancels any already-created FAN Courier AWB and emails the
-    // owner's own inbox as a record - see vercel-api/api/cancel-order.js.
+    // owner's own inbox as a record - see vercel-api/api/update-order-status.js.
     if (select.value === 'anulata') {
       auth.currentUser.getIdToken().then(function (idToken) {
-        return fetch(CANCEL_ORDER_ENDPOINT, {
+        return fetch(UPDATE_STATUS_ENDPOINT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
-          body: JSON.stringify({ uid: uid, orderId: orderId }),
+          body: JSON.stringify({ uid: uid, orderId: orderId, status: 'anulata' }),
         });
       }).then(function (res) { return res.json(); })
         .then(function (result) {
@@ -163,12 +163,34 @@
       return;
     }
 
-    db.collection('users').doc(uid).collection('orders').doc(orderId)
-      .update({ status: select.value })
+    // Other statuses also go through the server: "confirmata" emails the
+    // customer once (see vercel-api/api/update-order-status.js).
+    const newStatus = select.value;
+    if (newStatus === 'confirmata' && select.dataset.confirmEmailSent !== 'true'
+        && !confirm('Clientul va primi un email că a fost confirmată comanda (cu AWB-ul și linkul de urmărire). Continui?')) {
+      select.value = select.dataset.current;
+      select.disabled = false;
+      return;
+    }
+    auth.currentUser.getIdToken().then(function (idToken) {
+      return fetch(UPDATE_STATUS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
+        body: JSON.stringify({ uid: uid, orderId: orderId, status: newStatus }),
+      });
+    }).then(function (res) { return res.json(); })
+      .then(function (result) {
+        if (!result.updated) throw new Error(result.error || 'update-failed');
+        if (newStatus === 'confirmata' && !result.emailSent && result.emailReason !== 'already-sent') {
+          alert('Statusul a fost salvat, dar emailul către client nu a putut fi trimis.');
+        }
+        loadAllOrders();
+      })
       .catch(function () {
         alert('Nu am putut actualiza statusul. Încearcă din nou.');
-      })
-      .finally(function () { select.disabled = false; });
+        select.value = select.dataset.current;
+        select.disabled = false;
+      });
   });
 
   const RETRY_AWB_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/retry-order-awb';
