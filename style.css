@@ -1030,6 +1030,159 @@ section { padding: clamp(4rem, 9vw, 6.5rem) var(--edge); }
 }
 
 /* About - extra story/offer/store blocks below the intro grid */
+/* Google reviews band (homepage, between trust cards and the store block).
+   Same idea as the Service GSM Vic reviews marquee: two identical tracks
+   slide left forever, pause on hover/focus, and with reduced motion the
+   band becomes a plain horizontally scrollable row. */
+.reviews { margin-top: clamp(3.5rem, 7vw, 5.5rem); }
+.reviews-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.2rem 2rem;
+  margin-bottom: clamp(1.8rem, 4vw, 2.6rem);
+}
+.reviews-head h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0.8rem 0 0.7rem;
+}
+.reviews-rating {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.7rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+.reviews-rating strong { color: var(--ink); font-weight: 600; }
+.reviews-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 51, 47, 0.14);
+  background: var(--white);
+  color: var(--teal-mid);
+  font-weight: 600;
+  font-size: 0.86rem;
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s ease, color 0.2s ease;
+}
+.reviews-link svg { width: 15px; height: 15px; }
+.reviews-link:hover { border-color: var(--gold); color: var(--gold-deep); transform: translateY(-2px); }
+.reviews-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.reviews-link:active { transform: translateY(0) scale(0.98); }
+
+.review-stars { display: inline-flex; gap: 2px; color: var(--gold); }
+.review-stars svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* Full-bleed: cancel the section's side padding so the band runs edge to edge. */
+.reviews-marquee {
+  --gap: 1.1rem;
+  --duration: 48s;
+  position: relative;
+  display: flex;
+  gap: var(--gap);
+  overflow: hidden;
+  margin: 0 calc(-1 * var(--edge));
+  padding: 0.6rem 0 1.4rem;
+}
+.reviews-marquee::before,
+.reviews-marquee::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 14%;
+  z-index: 2;
+  pointer-events: none;
+}
+.reviews-marquee::before { left: 0; background: linear-gradient(to right, var(--ivory), transparent); }
+.reviews-marquee::after { right: 0; background: linear-gradient(to left, var(--ivory), transparent); }
+.reviews-track {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--gap);
+  animation: reviews-scroll var(--duration) linear infinite;
+}
+.reviews-marquee:hover .reviews-track,
+.reviews-marquee:focus-within .reviews-track { animation-play-state: paused; }
+@keyframes reviews-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 230px;
+  flex-shrink: 0;
+  padding: 1.4rem 1.4rem 1.5rem;
+  border-radius: 18px;
+  border: 1px solid rgba(22, 51, 47, 0.08);
+  border-top-color: rgba(205, 160, 94, 0.45);
+  background: linear-gradient(170deg, var(--white), #f1e9d8 140%);
+  box-shadow: 0 1px 2px rgba(22, 51, 47, 0.04), 0 12px 28px rgba(22, 51, 47, 0.08);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+a.review-card:hover { transform: translateY(-4px); box-shadow: 0 2px 4px rgba(22, 51, 47, 0.05), 0 20px 40px rgba(22, 51, 47, 0.13); }
+a.review-card:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+a.review-card:active { transform: translateY(-1px); }
+.review-card-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.9rem; }
+.review-avatar {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--teal-deep);
+  color: var(--gold-bright);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.review-card-head strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.review-card-head span:not(.review-avatar) { font-size: 0.74rem; color: var(--ink-soft); }
+.review-card p {
+  margin: 0.8rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (max-width: 640px) {
+  .review-card { width: 270px; }
+  .reviews-marquee::before, .reviews-marquee::after { width: 8%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reviews-marquee { overflow-x: auto; scroll-snap-type: x mandatory; padding-inline: var(--edge); }
+  .reviews-marquee::before, .reviews-marquee::after { display: none; }
+  .reviews-track { animation: none; }
+  .reviews-track[aria-hidden="true"] { display: none; }
+  .review-card { scroll-snap-align: start; }
+}
+
 .about-block {
   max-width: 900px;
   margin: clamp(3.5rem, 7vw, 5.5rem) auto 0;
