@@ -15,19 +15,24 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
-function renderCart() {
+// notices: stock adjustments from refreshCartStock(), shown above the items.
+function renderCart(notices = []) {
   const cart = getCart();
   const el = document.getElementById('cartContents');
+  // Re-rendering rebuilds the payment radios - keep the customer's choice.
+  const chosenPayment = document.querySelector('input[name="paymentMethod"]:checked')?.value;
   const countEl = document.getElementById('cartHeadingCount');
   const itemCount = cart.reduce((sum, i) => sum + i.qty, 0);
   if (countEl) countEl.textContent = itemCount ? `${itemCount} ${itemCount === 1 ? 'produs' : 'produse'}` : '';
 
   if (cart.length === 0) {
-    el.innerHTML = '<p class="cart-empty">Coșul tău este gol. <a href="parfumuri.html">Vezi parfumurile</a></p>';
+    el.innerHTML = notices.map((n) => `<p class="cart-address-warning cart-stock-notice">${escapeHtml(n)}</p>`).join('')
+      + '<p class="cart-empty">Coșul tău este gol. <a href="parfumuri.html">Vezi parfumurile</a></p>';
     return;
   }
 
   el.innerHTML = `
+    ${notices.map((n) => `<p class="cart-address-warning cart-stock-notice">${escapeHtml(n)}</p>`).join('')}
     <div class="cart-items">
       ${cart.map((item) => `
         <div class="cart-item">
@@ -40,8 +45,8 @@ function renderCart() {
           </a>
           <div class="qty-control qty-control-sm" data-cod="${item.cod}">
             <button type="button" class="qty-minus" aria-label="Scade cantitatea">−</button>
-            <input type="number" class="qty-input" value="${item.qty}" min="1">
-            <button type="button" class="qty-plus" aria-label="Crește cantitatea">+</button>
+            <input type="number" class="qty-input" value="${item.qty}" min="1"${typeof item.stock === 'number' ? ` max="${item.stock}"` : ''}>
+            <button type="button" class="qty-plus" aria-label="Crește cantitatea"${typeof item.stock === 'number' && item.qty >= item.stock ? ' disabled title="Stoc maxim atins"' : ''}>+</button>
           </div>
           <span class="cart-item-total">${formatPrice(item.price * item.qty)}</span>
           <button class="cart-item-remove" data-cod="${item.cod}" aria-label="Elimină">✕</button>
@@ -84,6 +89,10 @@ function renderCart() {
     <p class="cart-schedule-note">Program: Luni-Vineri 08:00-18:00, Sâmbătă 08:00-14:00.</p>
   `;
 
+  if (chosenPayment) {
+    const radio = el.querySelector(`input[name="paymentMethod"][value="${chosenPayment}"]`);
+    if (radio) radio.checked = true;
+  }
   document.getElementById('checkoutBtn')?.addEventListener('click', handleCheckout);
   renderAddressBlock();
 
@@ -295,7 +304,24 @@ firebase.auth().onAuthStateChanged((user) => {
   });
 });
 
+// Re-checks live stock right before the order is written, so a customer
+// can't order more than the owner has (e.g. stock lowered in the admin
+// panel while the cart sat open). Any adjustment stops checkout and shows
+// the customer what changed instead of silently ordering a different qty.
 function handleCheckout() {
+  const btn = document.getElementById('checkoutBtn');
+  if (btn) btn.disabled = true;
+  refreshCartStock().then((changes) => {
+    if (changes.length) {
+      renderCart(changes);
+      return;
+    }
+    if (btn) btn.disabled = false;
+    placeOrder();
+  });
+}
+
+function placeOrder() {
   const user = firebase.auth().currentUser;
   if (!user) {
     // Not logged in - an account is required to place an order. Cart stays in
@@ -499,3 +525,4 @@ document.getElementById('cartContents')?.addEventListener('change', (e) => {
 });
 
 renderCart();
+refreshCartStock().then((changes) => renderCart(changes));

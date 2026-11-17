@@ -634,20 +634,29 @@ function renderProduct(p) {
     });
   });
 
+  // Quantity is capped at the live stock (admin panel) - typed values too,
+  // not just the +/- buttons, since a number input's max isn't enforced.
   const qtyInput = document.getElementById('qty');
+  const maxQty = Math.max(p.stock, 1);
+  const clampQty = (v) => Math.min(maxQty, Math.max(1, parseInt(v, 10) || 1));
   document.getElementById('qtyMinus')?.addEventListener('click', () => {
-    qtyInput.value = Math.max(1, parseInt(qtyInput.value || '1') - 1);
+    qtyInput.value = clampQty(parseInt(qtyInput.value || '1') - 1);
   });
   document.getElementById('qtyPlus')?.addEventListener('click', () => {
-    qtyInput.value = Math.min(p.stock || 99, parseInt(qtyInput.value || '1') + 1);
+    qtyInput.value = clampQty(parseInt(qtyInput.value || '1') + 1);
   });
+  qtyInput.addEventListener('change', () => { qtyInput.value = clampQty(qtyInput.value); });
 
   document.getElementById('addToCartBtn')?.addEventListener('click', () => {
-    const qty = parseInt(qtyInput.value || '1');
-    addToCart(p.cod, p.name, p.price, p.bottle_image, qty, p.category);
+    const qty = clampQty(qtyInput.value);
+    qtyInput.value = qty;
+    const result = addToCart(p.cod, p.name, p.price, p.bottle_image, qty, p.category, p.stock) || {};
     const confirm = document.getElementById('cartConfirm');
+    confirm.textContent = result.capped
+      ? `Stoc disponibil: ${p.stock} buc. Ai ${result.qty} în coș (maximul).`
+      : 'Adăugat în coș ✓';
     confirm.hidden = false;
-    setTimeout(() => { confirm.hidden = true; }, 2500);
+    setTimeout(() => { confirm.hidden = true; }, result.capped ? 4000 : 2500);
   });
 
   if (window.syncFavoriteHearts) window.syncFavoriteHearts();

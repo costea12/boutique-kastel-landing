@@ -2162,6 +2162,7 @@ footer {
 .cart-item-remove { background: none; border: none; color: var(--ink-soft); cursor: pointer; font-size: 1rem; }
 .cart-item-remove:hover { color: #a83a3a; }
 .qty-control-sm button { width: 30px; height: 30px; font-size: 0.95rem; }
+.qty-control button:disabled { opacity: 0.35; cursor: not-allowed; }
 .qty-control-sm input { width: 38px; height: 30px; font-size: 0.85rem; }
 
 @media (max-width: 640px) {

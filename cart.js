@@ -19,15 +19,25 @@ function saveCart(cart) {
 // category is optional (only produs.js passes it) - used by the age-gate
 // checkout safety net to catch alcohol items (category "Băuturi") without
 // needing a separate catalog lookup at checkout time.
-function addToCart(cod, name, price, image, qty = 1, category) {
+// Stock (set by the owner in the admin panel, on top of catalog.json) caps
+// how many of one product can be in the cart. Items remember the stock they
+// were added with; refreshCartStock() re-reads the live value on the cart
+// page and again right before checkout.
+function stockCap(stock) {
+  return typeof stock === 'number' && stock >= 0 ? stock : Infinity;
+}
+
+// Returns { qty: final qty in cart, capped: true if the request was cut down }.
+function addToCart(cod, name, price, image, qty = 1, category, stock) {
   const cart = getCart();
   const existing = cart.find((i) => i.cod === cod);
-  if (existing) {
-    existing.qty += qty;
-  } else {
-    cart.push({ cod, name, price, image, qty, category });
-  }
+  const item = existing || { cod, name, price, image, qty: 0, category };
+  if (typeof stock === 'number') item.stock = stock;
+  const wanted = item.qty + qty;
+  item.qty = Math.min(wanted, stockCap(item.stock));
+  if (!existing && item.qty > 0) cart.push(item);
   saveCart(cart);
+  return { qty: item.qty, capped: item.qty < wanted };
 }
 
 function removeFromCart(cod) {
@@ -42,8 +52,43 @@ function setQty(cod, qty) {
     saveCart(cart.filter((i) => i.cod !== cod));
     return;
   }
-  item.qty = qty;
+  item.qty = Math.min(qty, stockCap(item.stock));
   saveCart(cart);
+}
+
+// Re-reads live stock/availability (catalog.json + admin overrides) for
+// everything in the cart, clamps quantities, drops products that are sold
+// out or taken off sale. Resolves to a list of human-readable changes (empty
+// if nothing changed). Fails open: if the catalog can't be loaded, the cart
+// is left as is.
+function refreshCartStock() {
+  const cart = getCart();
+  if (!cart.length) return Promise.resolve([]);
+  return fetch('catalog.json', { cache: 'no-cache' })
+    .then((r) => r.json())
+    .then((data) => (window.applyProductOverrides ? applyProductOverrides(data) : data))
+    .then((products) => {
+      const byCod = new Map(products.map((p) => [p.cod, p]));
+      const changes = [];
+      const next = [];
+      cart.forEach((item) => {
+        const p = byCod.get(item.cod);
+        const stock = p ? p.stock : 0;
+        if (!p || stock <= 0) {
+          changes.push(`„${item.name}” nu mai este în stoc și a fost scos din coș.`);
+          return;
+        }
+        item.stock = stock;
+        if (item.qty > stock) {
+          changes.push(`„${item.name}”: mai sunt doar ${stock} buc. în stoc, am ajustat cantitatea.`);
+          item.qty = stock;
+        }
+        next.push(item);
+      });
+      saveCart(next);
+      return changes;
+    })
+    .catch(() => []);
 }
 
 function clearCart() {
