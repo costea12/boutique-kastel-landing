@@ -81,6 +81,10 @@
     return typeof value.toDate === 'function' ? value.toDate() : new Date(value);
   }
 
+  // Orders as last rendered, so the quantity editor can read an order's
+  // items without another Firestore read.
+  const ordersById = {};
+
   function renderOrders(docs) {
     setBadge('badgeOrders', docs.filter(function (d) { return (d.data().status || 'noua') === 'noua'; }).length);
     if (!docs.length) {
@@ -92,6 +96,7 @@
     ordersList.innerHTML = docs.map(function (doc) {
       const o = doc.data();
       const uid = doc.ref.parent.parent.id;
+      ordersById[doc.id] = { uid: uid, order: o };
       const date = o.createdAt ? toJsDate(o.createdAt).toLocaleString('ro-RO') : '';
       const status = o.status || 'noua';
       const numberLabel = o.orderNumber ? '#' + String(o.orderNumber).padStart(4, '0') : doc.id;
@@ -130,11 +135,127 @@
         + '<div class="admin-order-shipping">' + shipping + '</div>'
         + '<div class="admin-order-awb-line">' + awbLine + '</div>'
         + '<ul class="admin-order-items">' + items + '</ul>'
+        + orderEditLine(doc.id, o, status)
         + '</div>';
     }).join('');
   }
 
   const UPDATE_STATUS_ENDPOINT = 'https://boutique-kastel-api.vercel.app/api/update-order-status';
+
+  // --- Reduce quantities when the shop is short on stock ------------------
+  // The server (vercel-api/lib/order-edit.js) recalculates the total, swaps
+  // the FAN AWB for one with the new ramburs amount, and emails the customer.
+  function lei(n) { return Number(n || 0).toFixed(2).replace('.', ',') + ' Lei'; }
+
+  function orderEditLine(orderId, o, status) {
+    const notes = [];
+    if (o.itemsEditedAt) {
+      notes.push('<span class="admin-order-edited">Cantități modificate din panou · total inițial ' + lei(o.originalTotal) + '</span>');
+    }
+    if (o.refundDue > 0) {
+      notes.push('<span class="admin-order-refund">De returnat clientului: ' + lei(o.refundDue) + ' (din contul NETOPIA)</span>');
+    }
+    const editable = status !== 'anulata' && status !== 'livrata';
+    if (!notes.length && !editable) return '';
+    return '<div class="admin-order-edit-line">' + notes.join('')
+      + (editable ? '<button type="button" class="btn-text admin-order-edit-items" data-order-id="' + orderId + '">Modifică cantitățile</button>' : '')
+      + '</div>';
+  }
+
+  function openItemsEditor(orderEl, orderId) {
+    const entry = ordersById[orderId];
+    if (!entry) return;
+    const list = orderEl.querySelector('.admin-order-items');
+    const line = orderEl.querySelector('.admin-order-edit-line');
+    const items = entry.order.items || [];
+    const editor = document.createElement('div');
+    editor.className = 'admin-items-editor';
+    editor.innerHTML = '<p class="admin-items-editor-hint">Scade cantitatea la cât ai în stoc (0 = scoate produsul). Clientul primește un email cu modificarea, iar AWB-ul se refă automat cu suma nouă.</p>'
+      + items.map(function (i) {
+        return '<label class="admin-items-editor-row">'
+          + '<span>' + escapeHtml(i.name) + '</span>'
+          + '<input type="number" min="0" max="' + i.qty + '" value="' + i.qty + '" data-cod="' + escapeHtml(String(i.cod)) + '" data-price="' + (i.price || 0) + '">'
+          + '<small>din ' + i.qty + '</small>'
+          + '</label>';
+      }).join('')
+      + '<p class="admin-items-editor-preview"></p>'
+      + '<div class="admin-items-editor-actions">'
+      + '<button type="button" class="btn btn-cart admin-items-save">Salvează și anunță clientul</button>'
+      + '<button type="button" class="btn-text admin-items-cancel">Renunță</button>'
+      + '</div>';
+    list.hidden = true;
+    if (line) line.hidden = true;
+    list.after(editor);
+
+    const inputs = editor.querySelectorAll('input');
+    const preview = editor.querySelector('.admin-items-editor-preview');
+    function clampAndPreview() {
+      let subtotal = 0;
+      inputs.forEach(function (input) {
+        const max = Number(input.max);
+        const v = Math.min(max, Math.max(0, parseInt(input.value, 10) || 0));
+        if (String(v) !== input.value) input.value = v;
+        subtotal += v * Number(input.dataset.price);
+      });
+      preview.textContent = 'Produse după modificare: ' + lei(subtotal) + ' (înainte: ' + lei(entry.order.subtotal) + '). Transportul nu crește.';
+    }
+    inputs.forEach(function (input) { input.addEventListener('input', clampAndPreview); });
+    clampAndPreview();
+
+    editor.querySelector('.admin-items-cancel').addEventListener('click', function () {
+      editor.remove();
+      list.hidden = false;
+      if (line) line.hidden = false;
+    });
+
+    editor.querySelector('.admin-items-save').addEventListener('click', function () {
+      const newQty = {};
+      let changed = false;
+      let remaining = 0;
+      inputs.forEach(function (input) {
+        const item = items.find(function (i) { return String(i.cod) === input.dataset.cod; });
+        const v = parseInt(input.value, 10) || 0;
+        newQty[input.dataset.cod] = v;
+        remaining += v;
+        if (item && v !== item.qty) changed = true;
+      });
+      if (!changed) { alert('Nu ai schimbat nicio cantitate.'); return; }
+      if (!remaining) { alert('Nu poți scoate toate produsele. Pentru asta pune comanda pe „Anulată”.'); return; }
+      if (!confirm('Salvezi modificarea? Clientul primește un email, iar dacă există AWB, cel vechi se anulează și se generează unul nou (va trebui să tipărești eticheta nouă).')) return;
+
+      const btn = this;
+      btn.disabled = true;
+      btn.textContent = 'Se salvează...';
+      auth.currentUser.getIdToken().then(function (idToken) {
+        return fetch(UPDATE_STATUS_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + idToken },
+          body: JSON.stringify({ uid: entry.uid, orderId: orderId, items: newQty }),
+        });
+      }).then(function (res) { return res.json(); })
+        .then(function (result) {
+          if (!result.updated) throw new Error(result.error || 'edit-failed');
+          const msgs = ['Comanda a fost modificată. Total nou: ' + lei(result.total) + ' (înainte ' + lei(result.previousTotal) + ').'];
+          if (result.awbCreated === true) msgs.push('AWB nou: ' + result.awbNumber + '. Tipărește eticheta nouă, cea veche nu mai e valabilă.');
+          if (result.awbCreated === false) msgs.push('AWB-ul vechi a fost anulat, dar cel nou nu s-a putut genera. Apasă „Reîncearcă AWB”.');
+          if (result.refundDue > 0) msgs.push('Comanda era plătită cu cardul: returnează clientului ' + lei(result.refundDue) + ' din contul NETOPIA.');
+          if (!result.emailSent) msgs.push('Atenție: emailul către client nu a putut fi trimis.');
+          alert(msgs.join('\n\n'));
+          loadAllOrders();
+        })
+        .catch(function (err) {
+          alert(err && err.message && err.message !== 'edit-failed' ? err.message : 'Nu am putut modifica comanda. Încearcă din nou.');
+          btn.disabled = false;
+          btn.textContent = 'Salvează și anunță clientul';
+        });
+    });
+  }
+
+  ordersList?.addEventListener('click', function (e) {
+    const btn = e.target.closest('.admin-order-edit-items');
+    if (!btn) return;
+    openItemsEditor(btn.closest('.admin-order'), btn.dataset.orderId);
+  });
 
   ordersList?.addEventListener('change', function (e) {
     const select = e.target.closest('.admin-order-status');

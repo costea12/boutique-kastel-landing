@@ -2771,6 +2771,22 @@ body.age-gate-lock { overflow: hidden; }
 .admin-order-awb-label:disabled { opacity: 0.6; cursor: wait; }
 .admin-order-items { font-size: 0.85rem; color: var(--ink-soft); padding-left: 1.1rem; }
 .admin-orders-empty { text-align: center; color: var(--ink-soft); }
+.admin-order-edit-line { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.9rem; margin-top: 0.7rem; }
+.admin-order-edit-items { font-size: 0.78rem; color: var(--teal-mid); text-decoration: underline; cursor: pointer; }
+.admin-order-edit-items:hover { color: var(--gold-deep); }
+.admin-order-edit-items:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.admin-order-edited { font-size: 0.76rem; color: var(--gold-deep); font-weight: 600; }
+.admin-order-refund { font-size: 0.76rem; color: #a83a3a; font-weight: 600; }
+.admin-items-editor { margin-top: 0.6rem; padding: 0.9rem 1rem; border: 1px solid rgba(205, 160, 94, 0.45); border-radius: 10px; background: var(--white); }
+.admin-items-editor-hint { font-size: 0.78rem; color: var(--ink-soft); margin: 0 0 0.7rem; line-height: 1.5; }
+.admin-items-editor-row { display: grid; grid-template-columns: 1fr 64px auto; align-items: center; gap: 0.6rem; padding: 0.35rem 0; font-size: 0.85rem; color: var(--ink); border-bottom: 1px solid rgba(22, 51, 47, 0.06); }
+.admin-items-editor-row input { width: 64px; height: 34px; text-align: center; border: 1px solid rgba(22, 51, 47, 0.2); border-radius: 6px; font: inherit; }
+.admin-items-editor-row input:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.admin-items-editor-row small { font-size: 0.75rem; color: var(--ink-soft); }
+.admin-items-editor-preview { font-size: 0.8rem; color: var(--teal-mid); margin: 0.7rem 0; }
+.admin-items-editor-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem; }
+.admin-items-editor-actions .btn { width: auto; padding-inline: 1.2rem; }
+.admin-items-cancel { font-size: 0.82rem; color: var(--ink-soft); text-decoration: underline; cursor: pointer; }
 
 .admin-products-toolbar {
   display: flex;
