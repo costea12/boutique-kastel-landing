@@ -261,7 +261,7 @@
         ordersList.innerHTML = snap.docs.map(function (doc) {
           const o = doc.data();
           const itemCount = (o.items || []).reduce(function (sum, i) { return sum + (i.qty || 1); }, 0);
-          const date = o.createdAt ? o.createdAt.toDate().toLocaleDateString('ro-RO') : '';
+          const date = o.createdAt ? (o.createdAt.toDate ? o.createdAt.toDate() : new Date(o.createdAt)).toLocaleDateString('ro-RO') : '';
           const isPending = !o.status || o.status === 'noua';
           const isDelivered = o.status === 'livrata';
           const status = statusLabels[o.status] || 'În așteptare confirmare';

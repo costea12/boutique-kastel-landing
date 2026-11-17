@@ -74,6 +74,13 @@
     else { el.hidden = true; }
   }
 
+  // createdAt is normally a Firestore Timestamp, but a doc written by hand or
+  // by a script can hold a string/number instead. One bad doc used to throw
+  // here and blank the whole orders list, so accept all three.
+  function toJsDate(value) {
+    return typeof value.toDate === 'function' ? value.toDate() : new Date(value);
+  }
+
   function renderOrders(docs) {
     setBadge('badgeOrders', docs.filter(function (d) { return (d.data().status || 'noua') === 'noua'; }).length);
     if (!docs.length) {
@@ -85,7 +92,7 @@
     ordersList.innerHTML = docs.map(function (doc) {
       const o = doc.data();
       const uid = doc.ref.parent.parent.id;
-      const date = o.createdAt ? o.createdAt.toDate().toLocaleString('ro-RO') : '';
+      const date = o.createdAt ? toJsDate(o.createdAt).toLocaleString('ro-RO') : '';
       const status = o.status || 'noua';
       const numberLabel = o.orderNumber ? '#' + String(o.orderNumber).padStart(4, '0') : doc.id;
       const items = (o.items || []).map(function (i) {
@@ -240,7 +247,7 @@
     returnsEmpty.hidden = true;
     returnsList.innerHTML = docs.map(function (doc) {
       const r = doc.data();
-      const date = r.createdAt ? r.createdAt.toDate().toLocaleString('ro-RO') : '';
+      const date = r.createdAt ? toJsDate(r.createdAt).toLocaleString('ro-RO') : '';
       const status = r.status || 'noua';
       const numberLabel = r.orderNumber ? '#' + String(r.orderNumber).padStart(4, '0') : r.orderId;
 
