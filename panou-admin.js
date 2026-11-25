@@ -596,6 +596,11 @@
     if (aiRestyleToggle && aiRestyleToggle.checked) {
       return restyleProductImage(cod, dataUrl).then(function (result) {
         return pickPhoto(result.originalUrl, result.restyledUrl);
+      }, function () {
+        // AI restyle is optional - if Gemini is down or out of credit, fall
+        // back to a plain upload so the owner is never blocked from changing
+        // a photo.
+        return uploadProductImage(cod, dataUrl);
       });
     }
     return uploadProductImage(cod, dataUrl);
