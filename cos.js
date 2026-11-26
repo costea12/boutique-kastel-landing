@@ -15,6 +15,28 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
+// Inline line icons for the checkout (same 1.6 stroke as the rest of the site).
+const ICON = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICONS = {
+  bag: ICON('<path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/>'),
+  trash: ICON('<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>'),
+  card: ICON('<rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/>'),
+  cash: ICON('<rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 9.5v5M18 9.5v5"/>'),
+  lock: ICON('<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>'),
+  return: ICON('<path d="M4 9h11a5 5 0 0 1 0 10H8"/><path d="M8 5 4 9l4 4"/>'),
+  phone: ICON('<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>'),
+  truck: ICON('<path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/>'),
+  pin: ICON('<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>'),
+  user: ICON('<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>'),
+};
+
+// Checkout warnings land next to the order button, where the customer is
+// looking, instead of below the whole page.
+function showCheckoutMessage(html) {
+  const box = document.getElementById('checkoutMessages') || document.getElementById('cartContents');
+  box.insertAdjacentHTML('beforeend', html);
+}
+
 // notices: stock adjustments from refreshCartStock(), shown above the items.
 function renderCart(notices = []) {
   const cart = getCart();
@@ -26,67 +48,90 @@ function renderCart(notices = []) {
   if (countEl) countEl.textContent = itemCount ? `${itemCount} ${itemCount === 1 ? 'produs' : 'produse'}` : '';
 
   if (cart.length === 0) {
-    el.innerHTML = notices.map((n) => `<p class="cart-address-warning cart-stock-notice">${escapeHtml(n)}</p>`).join('')
-      + '<p class="cart-empty">Coșul tău este gol. <a href="parfumuri.html">Vezi parfumurile</a></p>';
+    el.innerHTML = notices.map((n) => `<p class="cart-address-warning cart-stock-notice">${escapeHtml(n)}</p>`).join('') + `
+      <div class="co-empty">
+        <span class="co-empty-icon">${ICONS.bag}</span>
+        <h2>Coșul tău este gol</h2>
+        <p>Alege un parfum, ceva de îngrijire sau un dulce de la noi.</p>
+        <a href="parfumuri.html" class="co-cta co-cta-inline">Vezi parfumurile</a>
+      </div>`;
     return;
   }
 
   el.innerHTML = `
     ${notices.map((n) => `<p class="cart-address-warning cart-stock-notice">${escapeHtml(n)}</p>`).join('')}
-    <div class="cart-items">
-      ${cart.map((item) => `
-        <div class="cart-item">
-          <a href="produs.html?cod=${encodeURIComponent(item.cod)}" class="cart-item-link">
-            <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}">
-            <div class="cart-item-info">
-              <h4>${escapeHtml(item.name)}</h4>
-              <span>${formatPrice(item.price)} / buc</span>
-            </div>
-          </a>
-          <div class="qty-control qty-control-sm" data-cod="${item.cod}">
-            <button type="button" class="qty-minus" aria-label="Scade cantitatea">−</button>
-            <input type="number" class="qty-input" value="${item.qty}" min="1"${typeof item.stock === 'number' ? ` max="${item.stock}"` : ''}>
-            <button type="button" class="qty-plus" aria-label="Crește cantitatea"${typeof item.stock === 'number' && item.qty >= item.stock ? ' disabled title="Stoc maxim atins"' : ''}>+</button>
+    <div class="co-grid">
+      <div class="co-main">
+        <section class="co-card" aria-labelledby="coItemsTitle">
+          <h2 class="co-title" id="coItemsTitle"><span class="co-step">1</span> Produsele tale</h2>
+          <ul class="co-items">
+            ${cart.map((item) => `
+              <li class="co-item">
+                <a href="produs.html?cod=${encodeURIComponent(item.cod)}" class="co-item-img">
+                  <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" loading="lazy">
+                </a>
+                <div class="co-item-body">
+                  <div class="co-item-top">
+                    <a href="produs.html?cod=${encodeURIComponent(item.cod)}" class="co-item-name">${escapeHtml(item.name)}</a>
+                    <span class="co-item-total">${formatPrice(item.price * item.qty)}</span>
+                  </div>
+                  <span class="co-item-unit">${formatPrice(item.price)} / buc</span>
+                  <div class="co-item-actions">
+                    <div class="qty-control co-qty" data-cod="${item.cod}">
+                      <button type="button" class="qty-minus" aria-label="Scade cantitatea">−</button>
+                      <input type="number" class="qty-input" value="${item.qty}" min="1" aria-label="Cantitate"${typeof item.stock === 'number' ? ` max="${item.stock}"` : ''}>
+                      <button type="button" class="qty-plus" aria-label="Crește cantitatea"${typeof item.stock === 'number' && item.qty >= item.stock ? ' disabled title="Stoc maxim atins"' : ''}>+</button>
+                    </div>
+                    <button type="button" class="cart-item-remove co-remove" data-cod="${item.cod}">${ICONS.trash}<span>Șterge</span></button>
+                  </div>
+                </div>
+              </li>
+            `).join('')}
+          </ul>
+        </section>
+
+        <section class="co-card" aria-labelledby="coShipTitle">
+          <h2 class="co-title" id="coShipTitle"><span class="co-step">2</span> Livrare</h2>
+          <div id="checkoutAddress"></div>
+        </section>
+
+        <section class="co-card" aria-labelledby="coPayTitle">
+          <h2 class="co-title" id="coPayTitle"><span class="co-step">3</span> Plata</h2>
+          <div class="co-pay" role="radiogroup" aria-labelledby="coPayTitle">
+            <label class="payment-method-option co-pay-option">
+              <input type="radio" name="paymentMethod" value="card" checked>
+              <span class="co-pay-icon">${ICONS.card}</span>
+              <span class="co-pay-text"><strong>Card online</strong><small>Plată securizată prin NETOPIA</small></span>
+            </label>
+            <label class="payment-method-option co-pay-option">
+              <input type="radio" name="paymentMethod" value="ramburs">
+              <span class="co-pay-icon">${ICONS.cash}</span>
+              <span class="co-pay-text"><strong>Ramburs</strong><small>Plătești curierului, la livrare</small></span>
+            </label>
           </div>
-          <span class="cart-item-total">${formatPrice(item.price * item.qty)}</span>
-          <button class="cart-item-remove" data-cod="${item.cod}" aria-label="Elimină">✕</button>
+        </section>
+      </div>
+
+      <aside class="co-summary" aria-labelledby="coSumTitle">
+        <h2 class="co-title" id="coSumTitle">Sumar</h2>
+        <div class="co-lines">
+          <div class="co-line"><span>Produse</span><span>${formatPrice(cartTotal())}</span></div>
+          ${cartSgrTotal() > 0 ? `<div class="co-line"><span>Garanție SGR</span><span>${formatPrice(cartSgrTotal())}</span></div>` : ''}
+          <div class="co-line"><span>Livrare</span><span class="cart-breakdown-tbd" id="shippingFeeLine">completează adresa de livrare</span></div>
         </div>
-      `).join('')}
+        <div class="co-total"><span>Total</span><strong id="cartTotalLine">${formatPrice(cartTotal() + cartSgrTotal())}</strong></div>
+        <div id="checkoutMessages" aria-live="polite"></div>
+        <button type="button" class="co-cta" id="checkoutBtn">Comandă cu obligație de plată</button>
+        <div class="co-badges"><img src="assets/netopia-logo.svg" width="209" height="38" alt="Plăți securizate NETOPIA Payments, Visa și Mastercard"></div>
+        <ul class="co-trust">
+          <li>${ICONS.lock}<span>Plată securizată: datele cardului le introduci doar pe pagina NETOPIA, nu trec prin site-ul nostru</span></li>
+          <li>${ICONS.truck}<span>Livrare prin FAN Courier în toată țara</span></li>
+          <li>${ICONS.return}<span>Retur în 14 zile, conform <a href="retur.html">politicii de retur</a></span></li>
+          <li>${ICONS.phone}<span>Ai o întrebare? Sună-ne la <a href="tel:0744377651">0744&nbsp;377&nbsp;651</a></span></li>
+        </ul>
+        <p class="co-fineprint">Pentru a plasa o comandă trebuie să fii autentificat în contul tău.</p>
+      </aside>
     </div>
-    <div class="cart-breakdown">
-      <div class="cart-breakdown-line">
-        <span>Subtotal</span>
-        <span>${formatPrice(cartTotal())}</span>
-      </div>
-      ${cartSgrTotal() > 0 ? `
-      <div class="cart-breakdown-line">
-        <span>Garanție SGR</span>
-        <span>${formatPrice(cartSgrTotal())}</span>
-      </div>` : ''}
-      <div class="cart-breakdown-line">
-        <span>Livrare</span>
-        <span class="cart-breakdown-tbd" id="shippingFeeLine">completează adresa de livrare</span>
-      </div>
-    </div>
-    <div class="cart-summary">
-      <span>Total</span>
-      <strong id="cartTotalLine">${formatPrice(cartTotal() + cartSgrTotal())}</strong>
-    </div>
-    <div id="checkoutAddress"></div>
-    <div class="checkout-payment-method">
-      <h3>Modalitate de plată</h3>
-      <label class="payment-method-option">
-        <input type="radio" name="paymentMethod" value="card" checked>
-        <span>Plătește online cu cardul</span>
-      </label>
-      <label class="payment-method-option">
-        <input type="radio" name="paymentMethod" value="ramburs">
-        <span>Ramburs (numerar la livrare / confirmare telefonică)</span>
-      </label>
-    </div>
-    <button class="btn btn-cart" id="checkoutBtn">Comandă cu obligație de plată</button>
-    <p class="cart-note">Trebuie să fii autentificat pentru a plasa o comandă. Sau sună direct la <a href="tel:0744377651">0744 377 651</a>.</p>
-    <p class="cart-schedule-note">Program: Luni-Vineri 08:00-18:00, Sâmbătă 08:00-14:00.</p>
   `;
 
   if (chosenPayment) {
@@ -126,7 +171,7 @@ function renderCart(notices = []) {
 // inline for this order, instead of silently using whatever's on file or
 // bouncing the customer to a separate page. Writes go to the same
 // users/{uid} doc that cont.html's address form uses, so both stay in sync.
-let addressState = { user: null, data: null, editing: false };
+let addressState = { user: null, data: null, editing: false, authReady: false };
 
 // Real shipping cost from FAN Courier (vercel-api/api/estimate-shipping.js),
 // fetched once the address is complete. The shop no longer absorbs this -
@@ -202,8 +247,21 @@ function renderAddressBlock() {
   const el = document.getElementById('checkoutAddress');
   if (!el) return; // cart is empty, nothing to show
 
+  if (!addressState.authReady) {
+    el.innerHTML = '<p class="co-muted">Se încarcă...</p>';
+    return;
+  }
+
   if (!addressState.user) {
-    el.innerHTML = '';
+    el.innerHTML = `
+      <div class="co-login">
+        <span class="co-login-icon">${ICONS.user}</span>
+        <div>
+          <p><strong>Intră în cont ca să plasezi comanda.</strong></p>
+          <p class="co-muted">Adresa de livrare o completezi o singură dată, apoi o găsești aici la fiecare comandă. Coșul rămâne salvat.</p>
+          <a href="cont.html" class="co-btn-outline">Intră în cont sau creează unul</a>
+        </div>
+      </div>`;
     return;
   }
 
@@ -213,8 +271,7 @@ function renderAddressBlock() {
   if (addressState.editing || !complete) {
     el.innerHTML = `
       <div class="checkout-address">
-        <h3>Adresă de livrare</h3>
-        <form class="account-form" id="checkoutAddressForm">
+        <form class="account-form co-form" id="checkoutAddressForm">
           ${ADDRESS_FIELDS.map((f) => {
             if (f.key === 'shipCounty') {
               const current = d[f.key] || '';
@@ -232,14 +289,14 @@ function renderAddressBlock() {
           `;
             }
             return `
-            <label>
+            <label${f.key === 'shipAddress' ? ' class="co-field-wide"' : ''}>
               <span>${f.label}</span>
               <input type="${f.type}" id="ca-${f.key}" value="${escapeHtml(d[f.key] || '')}" required>
             </label>
           `;
           }).join('')}
-          <div class="checkout-address-actions">
-            <button type="submit" class="btn btn-outline">Salvează adresa</button>
+          <div class="checkout-address-actions co-field-wide">
+            <button type="submit" class="co-btn-outline">Salvează adresa</button>
             ${complete ? '<button type="button" class="btn-text" id="checkoutAddressCancel">Anulează</button>' : ''}
           </div>
         </form>
@@ -252,14 +309,14 @@ function renderAddressBlock() {
     });
   } else {
     el.innerHTML = `
-      <div class="checkout-address checkout-address-view">
-        <h3>Adresă de livrare</h3>
+      <div class="checkout-address checkout-address-view co-address">
+        <span class="co-address-icon">${ICONS.pin}</span>
         <address>
-          ${escapeHtml(d.shipName)}<br>
+          <strong>${escapeHtml(d.shipName)}</strong><br>
           ${escapeHtml(d.shipAddress)}, ${escapeHtml(d.shipCity)}, ${escapeHtml(d.shipCounty)}, ${escapeHtml(d.shipPostalCode)}<br>
           ${escapeHtml(d.shipCountry)} &middot; ${escapeHtml(d.shipPhone)}
         </address>
-        <button type="button" class="btn-text" id="checkoutAddressEdit">Editează</button>
+        <button type="button" class="co-link" id="checkoutAddressEdit">Editează</button>
       </div>
     `;
     document.getElementById('checkoutAddressEdit').addEventListener('click', () => {
@@ -295,6 +352,7 @@ function saveCheckoutAddress(e) {
 
 firebase.auth().onAuthStateChanged((user) => {
   addressState.user = user;
+  addressState.authReady = true;
   addressState.data = null;
   addressState.editing = false;
   if (!user) { renderAddressBlock(); return; }
@@ -337,7 +395,7 @@ function placeOrder() {
   if (cart.length === 0) return;
 
   if (shippingFee == null) {
-    document.getElementById('cartContents').insertAdjacentHTML('beforeend',
+    showCheckoutMessage(
       '<p class="cart-address-warning">Completează adresa de livrare și așteaptă calcularea costului de transport înainte de a plasa comanda.</p>');
     return;
   }
@@ -348,7 +406,7 @@ function placeOrder() {
   // added before answering the age gate), block it here too rather than
   // trusting only the earlier UI gate.
   if (window.bkIsMinor && window.bkIsMinor() && cart.some((i) => i.category === 'ALC')) {
-    document.getElementById('cartContents').insertAdjacentHTML('beforeend',
+    showCheckoutMessage(
       '<p class="age-restricted-notice">🔞 Coșul conține produse cu conținut alcoolic, iar contul tău e marcat sub 18 ani. Elimină aceste produse din coș pentru a putea finaliza comanda.</p>');
     return;
   }
@@ -364,7 +422,7 @@ function placeOrder() {
 
     if (!hasAddress) {
       if (btn) { btn.disabled = false; btn.textContent = 'Comandă cu obligație de plată'; }
-      document.getElementById('cartContents').insertAdjacentHTML('beforeend',
+      showCheckoutMessage(
         '<p class="cart-address-warning">Completează adresa de livrare din <a href="cont.html">contul tău</a> înainte de a plasa comanda.</p>');
       return null;
     }
